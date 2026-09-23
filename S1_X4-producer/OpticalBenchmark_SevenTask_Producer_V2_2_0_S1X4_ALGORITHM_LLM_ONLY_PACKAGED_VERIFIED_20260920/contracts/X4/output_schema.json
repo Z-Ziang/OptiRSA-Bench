@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "type",
+    "episode_length",
+    "primary_metric",
+    "secondary_metric",
+    "policy_results"
+  ],
+  "properties": {
+    "type": {
+      "const": "POLICY_PANEL"
+    },
+    "episode_length": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "primary_metric": {
+      "const": "RBR"
+    },
+    "secondary_metric": {
+      "const": "MEAN_NETWORK_EFM"
+    },
+    "policy_results": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": false
+}

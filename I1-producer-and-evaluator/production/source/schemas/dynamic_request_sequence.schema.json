@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "p0/dynamic_request_sequence.schema.json",
+  "title": "DynamicRequestSequence",
+  "type": "object",
+  "properties": {
+    "request_sequence_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "dynamic_request_events": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/DynamicRequestEvent"
+      }
+    },
+    "arrival_rate_lambda": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "holding_time_rate_mu": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    }
+  },
+  "required": [
+    "request_sequence_id",
+    "dynamic_request_events",
+    "arrival_rate_lambda",
+    "holding_time_rate_mu"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "DynamicRequestEvent": {
+      "type": "object",
+      "properties": {
+        "request_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_node_id": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "destination_node_id": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "required_slots": {
+          "type": "integer",
+          "enum": [
+            2,
+            3,
+            5,
+            9
+          ]
+        },
+        "arrival_time": {
+          "type": "number",
+          "minimum": 0
+        },
+        "holding_time": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      },
+      "required": [
+        "request_id",
+        "source_node_id",
+        "destination_node_id",
+        "required_slots",
+        "arrival_time",
+        "holding_time"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

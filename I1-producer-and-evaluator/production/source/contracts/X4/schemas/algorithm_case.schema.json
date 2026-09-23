@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "case_id",
+    "task_type",
+    "current_request",
+    "current_network_state",
+    "allowed_action_space"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string"
+    },
+    "task_type": {
+      "const": "X4"
+    },
+    "current_request": {
+      "type": "object"
+    },
+    "current_network_state": {
+      "type": "object"
+    },
+    "allowed_action_space": {
+      "type": "object"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "case_id": "I1_S_000001",
+  "llm_prompt": "请为节点9到节点8建立一项业务连接，该业务请求需要连续使用5个频谱槽位。资源分配时，优先选择资源分配后全网频谱碎片程度最低的方案。",
+  "answer": {
+    "intent_type": "SINGLE",
+    "source_node_id": 9,
+    "destination_node_id": 8,
+    "required_slots": 5,
+    "objectives": [
+      "MIN-FRAGMENTATION"
+    ]
+  }
+}

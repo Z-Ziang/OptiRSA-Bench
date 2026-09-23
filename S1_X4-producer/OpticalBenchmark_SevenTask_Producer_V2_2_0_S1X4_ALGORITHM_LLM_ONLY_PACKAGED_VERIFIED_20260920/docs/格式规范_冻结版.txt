@@ -1,0 +1,6 @@
+OptiRSA-Bench 七任务格式说明
+
+公开 benchmark Case 包含 case_id、任务输入、llm_prompt 与 reference。
+静态任务的算法输入按各任务 algorithm_input.schema.json 序列化；S1/X4 算法评测从 run config 启动，并逐步读取当前 observation。
+LLM 评测文件位于 evaluation_case/<TASK>/llm/，字段为 case_id 与 prompt。
+Reference、真实标签及校验过程保存在内部目录，不作为被测输入。

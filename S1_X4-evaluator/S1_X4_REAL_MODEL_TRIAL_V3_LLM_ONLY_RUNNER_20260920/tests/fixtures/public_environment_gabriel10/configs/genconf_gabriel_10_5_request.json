@@ -1,0 +1,35 @@
+{
+  "generation_config_id": "genconf_gabriel_10_5_request",
+  "production_stage": "REQUEST",
+  "topology_id": "top_gabriel_10_5",
+  "parameter_values": {
+    "request_policy": "ALL_ORDERED_SOURCE_DESTINATION_PAIRS",
+    "request_count": 90,
+    "candidate_path_k": 5,
+    "derivation_anchor_job_id": "kspff_medium_seed01",
+    "resource_state_id": "rs_gabriel_10_5_kspff_medium_seed01",
+    "required_slots_include_guard": true
+  },
+  "generator_name": "PUBLIC_ENVIRONMENT_PRODUCTION_RUNNER",
+  "generator_version": "1.0.0-reconstructed-control",
+  "source_data_ids": [
+    "top_gabriel_10_5",
+    "rs_gabriel_10_5_kspff_medium_seed01"
+  ],
+  "random_seed": 10000521,
+  "time_unit": "SIMULATION_TIME_UNIT",
+  "payload_slot_values": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "payload_slot_distribution": "UNIFORM",
+  "payload_slot_probabilities": [
+    0.25,
+    0.25,
+    0.25,
+    0.25
+  ],
+  "guard_band_slots": 1
+}

@@ -1,0 +1,42 @@
+{
+  "generation_config_id": "genconf_gabriel_10_5_state_kspff_medium_seed01",
+  "production_stage": "RESOURCE_STATE",
+  "topology_id": "top_gabriel_10_5",
+  "parameter_values": {
+    "official_policy": "KSP-FF",
+    "engine_policy_id": "BASE_KSP_FF",
+    "load_band": "MEDIUM",
+    "target_band": [
+      0.25,
+      0.45
+    ],
+    "slot_count": 320,
+    "candidate_path_k": 5,
+    "holding_time_rate_mu": 0.066666666667,
+    "selected_arrival_rate_lambda": 29.692007797271,
+    "load_search_protocol": "LOAD_SEARCH_V1_0",
+    "load_search_status": "TARGET_REACHED",
+    "band_fallback": false
+  },
+  "generator_name": "PUBLIC_ENVIRONMENT_PRODUCTION_RUNNER",
+  "generator_version": "1.0.0-reconstructed-control",
+  "source_data_ids": [
+    "top_gabriel_10_5"
+  ],
+  "random_seed": 10000501,
+  "time_unit": "SIMULATION_TIME_UNIT",
+  "payload_slot_values": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "payload_slot_distribution": "UNIFORM",
+  "payload_slot_probabilities": [
+    0.25,
+    0.25,
+    0.25,
+    0.25
+  ],
+  "guard_band_slots": 1
+}

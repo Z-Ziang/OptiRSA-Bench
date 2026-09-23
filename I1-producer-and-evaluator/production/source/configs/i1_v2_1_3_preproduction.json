@@ -1,0 +1,55 @@
+{
+  "schema_version": "I1_PRODUCTION_V2_1_3",
+  "seed": 20260913,
+  "requested_case_counts": {
+    "I1-S": 100,
+    "I1-C": 100,
+    "I1-D": 100
+  },
+  "objective_profiles": {
+    "I1-S": [
+      [
+        "MIN-FRAGMENTATION"
+      ],
+      [
+        "MIN-HOP-COUNT",
+        "MIN-FRAGMENTATION"
+      ]
+    ],
+    "I1-C": [
+      [
+        "MIN-FRAGMENTATION"
+      ],
+      [
+        "MIN-TOTAL-SLOT-USAGE",
+        "MIN-FRAGMENTATION"
+      ]
+    ],
+    "I1-D": [
+      [
+        "MAX-ACCEPTED-REQUESTS",
+        "MIN-EXTERNAL-FRAGMENTATION"
+      ]
+    ]
+  },
+  "rewrite": {
+    "mode": "openai_compatible",
+    "provider": "SiliconFlow",
+    "base_url": "https://api.siliconflow.cn/v1",
+    "api_key_env": "SILICONFLOW_API_KEY",
+    "model": "Qwen/Qwen3-8B",
+    "temperature": 0.5,
+    "top_p": 0.95,
+    "max_tokens": 512,
+    "max_attempts": 5,
+    "timeout_seconds": 60
+  },
+  "style_cycle": [
+    "DIRECT",
+    "NATURAL",
+    "REORDERED",
+    "PARAPHRASED"
+  ],
+  "max_workers": 4,
+  "source_policy": "use_frozen_source_pool_only; no synthetic_dynamic_request_time_pairing"
+}

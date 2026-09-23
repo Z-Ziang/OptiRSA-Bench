@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "p0/topology_metrics.schema.json",
+  "title": "TopologyMetrics",
+  "type": "object",
+  "properties": {
+    "topology_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "node_count": {
+      "type": "integer",
+      "minimum": 2
+    },
+    "physical_link_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "directed_link_count": {
+      "type": "integer",
+      "minimum": 2
+    },
+    "average_node_degree": {
+      "type": "number",
+      "minimum": 0
+    },
+    "edge_density": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "average_clustering_coefficient": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "diameter_hops": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "average_shortest_path_hops": {
+      "type": "number",
+      "minimum": 1
+    },
+    "global_edge_connectivity": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "bridge_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "bridge_ratio": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "max_normalized_edge_betweenness": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "normalized_algebraic_connectivity": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 2
+    },
+    "average_physical_link_length_km": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "diameter_physical_length_km": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "average_shortest_path_physical_length_km": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    }
+  },
+  "required": [
+    "topology_id",
+    "node_count",
+    "physical_link_count",
+    "directed_link_count",
+    "average_node_degree",
+    "edge_density",
+    "average_clustering_coefficient",
+    "diameter_hops",
+    "average_shortest_path_hops",
+    "global_edge_connectivity",
+    "bridge_count",
+    "bridge_ratio",
+    "max_normalized_edge_betweenness",
+    "normalized_algebraic_connectivity"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "anyOf": [
+          {
+            "required": [
+              "average_physical_link_length_km"
+            ]
+          },
+          {
+            "required": [
+              "diameter_physical_length_km"
+            ]
+          },
+          {
+            "required": [
+              "average_shortest_path_physical_length_km"
+            ]
+          }
+        ]
+      },
+      "then": {
+        "required": [
+          "average_physical_link_length_km",
+          "diameter_physical_length_km",
+          "average_shortest_path_physical_length_km"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": "PUBLIC_ENV_PRODUCTION_CONFIG_V1_0",
+  "batch_id": "EXAMPLE_FORMAL_GABRIEL300",
+  "scientific_profile": {
+    "od_distribution": "UNIFORM",
+    "slot_count": 320,
+    "payload_slot_values": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "payload_slot_probabilities": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "guard_band_slots": 1,
+    "required_slot_values": [
+      2,
+      3,
+      5,
+      9
+    ],
+    "candidate_path_k": 5,
+    "holding_time_rate_mu": 0.06666666666666667,
+    "request_sampling_n_gt_100": 2000,
+    "max_supported_node_count": 500
+  },
+  "resource_state_jobs": [
+    {
+      "job_id": "kspff_medium_seed01",
+      "policy": "KSP-FF",
+      "load_band": "MEDIUM",
+      "seed": 30000701,
+      "confirmation_seed": 30000791
+    }
+  ],
+  "request_generation": {
+    "seed": 30000721,
+    "derivation_anchor_job_id": "kspff_medium_seed01"
+  },
+  "concurrent": {
+    "enabled": true,
+    "set_count": 3,
+    "requests_per_set": 4,
+    "seed": 30000731
+  },
+  "dynamic": {
+    "enabled": true,
+    "sequence_count": 1,
+    "sequence_length": 20,
+    "arrival_rate_lambda": 10.0,
+    "seed": 30000741
+  },
+  "execution": {
+    "resume": true,
+    "continue_on_failure": true
+  },
+  "topologies": [
+    {
+      "topology_id": "top_gabriel_300_7",
+      "source_path": "../inputs/examples/gabriel_300_7.json",
+      "source_type": "GABRIEL_JSON",
+      "source_sha256": "feedb6f5cc2207a26bc61834387390e4f996ac1d55c1be4e376e50843384f7bf"
+    }
+  ]
+}

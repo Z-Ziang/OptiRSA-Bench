@@ -1,0 +1,33 @@
+你需要完成动态光网络中的当前业务请求意图理解任务。你会得到一段自然语言描述的当前到达业务请求。该请求属于一条按照时间连续到达的动态业务请求序列。
+你需要识别：
+1. request：当前业务请求。
+其中包括：
+request_id：当前业务请求编号。
+source_node_id：当前业务请求的源节点编号。
+destination_node_id：当前业务请求的目的节点编号。
+required_slots：当前业务请求需要连续使用的频谱槽位数量。
+arrival_time：当前业务请求到达系统的仿真时刻。
+holding_time：如果该业务请求成功建立，其占用网络资源的持续时间。
+
+2. objectives：整条动态业务请求序列的长期优化目标。objectives 必须按照自然语言中规定的优先级顺序输出。
+
+允许的 objectives 及其含义：
+MIN-HOP-COUNT：优先选择传输路径跳数最少的方案。
+MIN-FRAGMENTATION：优先选择使当前资源分配后的全网频谱碎片程度最小的方案。
+MIN-TOTAL-SLOT-USAGE：优先选择资源分配所占用总槽位数最小的方案。
+MAX-ACCEPTED-REQUESTS：在整条动态业务请求序列中，尽量提高成功建立的业务请求数量，即尽量减少业务阻塞。
+MIN-EXTERNAL-FRAGMENTATION：在整条动态业务请求序列中，尽量降低网络外部频谱碎片程度，为后续请求保留更加连续、更加有利的可用频谱资源。
+
+你的输出有严格的格式要求。请只返回一个 JSON 对象，输出格式固定为：
+{
+  "intent_type": "DYNAMIC",
+  "request": {
+    "request_id": "",
+    "source_node_id": 0,
+    "destination_node_id": 0,
+    "required_slots": 0,
+    "arrival_time": 0.0,
+    "holding_time": 0.0
+  },
+  "objectives": []
+}

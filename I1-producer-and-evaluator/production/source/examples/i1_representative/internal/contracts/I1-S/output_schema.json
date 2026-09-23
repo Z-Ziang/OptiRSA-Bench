@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "intent_type",
+    "source_node_id",
+    "destination_node_id",
+    "required_slots",
+    "objectives"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "intent_type": {
+      "const": "SINGLE"
+    },
+    "source_node_id": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "destination_node_id": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "required_slots": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "objectives": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "MIN-HOP-COUNT",
+          "MIN-FRAGMENTATION",
+          "MIN-TOTAL-SLOT-USAGE",
+          "MAX-ACCEPTED-REQUESTS",
+          "MIN-EXTERNAL-FRAGMENTATION"
+        ]
+      },
+      "uniqueItems": true
+    }
+  }
+}

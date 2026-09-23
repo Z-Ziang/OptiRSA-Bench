@@ -1,0 +1,42 @@
+{
+  "schema_version": "S1_X4_ALGORITHM_RUNTIME_CONTRACT_V1_0",
+  "task_type": "S1",
+  "observation_mode": "DYNAMIC_ONLINE_CURRENT_STEP_ONLY",
+  "bitset": {
+    "free_bit": 1,
+    "occupied_bit": 0,
+    "word_size": 64,
+    "word_index": "slot // 64",
+    "bit_index": "slot % 64"
+  },
+  "s1_action_semantics": [
+    "path_rank",
+    "slot_start"
+  ],
+  "timing_fields": [
+    "load_time",
+    "compile_time",
+    "observation_build_time",
+    "per_step_solve_time",
+    "total_solve_time",
+    "validation_time",
+    "state_commit_time",
+    "environment_time",
+    "end_to_end_time"
+  ],
+  "solve_timer_excludes": [
+    "load",
+    "parse",
+    "compile",
+    "validation",
+    "state_commit"
+  ],
+  "forbidden_public_information": [
+    "future requests",
+    "request_events",
+    "active connection ledger",
+    "difficulty_context",
+    "reference",
+    "private_truth"
+  ]
+}

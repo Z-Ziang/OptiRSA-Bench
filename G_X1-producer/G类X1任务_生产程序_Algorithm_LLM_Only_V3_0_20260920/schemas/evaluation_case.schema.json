@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://opticalbenchmark.local/schemas/evaluation_case.schema.json",
+  "title": "GX1 public unified evaluation_case",
+  "description": "The public two-field evaluation projection. Reference and private scientific evidence are never part of this object.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "case_id",
+    "prompt"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "prompt": {
+      "type": "string"
+    }
+  }
+}

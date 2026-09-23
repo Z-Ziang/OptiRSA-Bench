@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://opticalbenchmark.local/schemas/benchmark_case.schema.json",
+  "title": "GX1 public Algorithm+LLM benchmark_case",
+  "description": "The public three-field LLM case envelope. Algorithm evaluation uses root_case plus the canonical Validator.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "case_id",
+    "llm_prompt",
+    "reference"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "llm_prompt": {
+      "type": "string"
+    },
+    "reference": {
+      "type": "object"
+    }
+  }
+}

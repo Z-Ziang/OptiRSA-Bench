@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "o_family_config",
+    "x2x3_config",
+    "s1x4_config"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "SEVEN_TASK_PROFILE_V2_1_0"
+    },
+    "o_family_config": {
+      "type": "string",
+      "minLength": 1
+    },
+    "x2x3_config": {
+      "type": "string",
+      "minLength": 1
+    },
+    "s1x4_config": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

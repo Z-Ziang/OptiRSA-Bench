@@ -1,0 +1,5 @@
+OptiRSA-Bench 七任务评测格式说明
+
+静态任务的算法响应须符合对应 output_schema.json；LLM Case 位于 evaluation_case/<TASK>/llm/，字段为 case_id 与 prompt。
+S1/X4 算法评测由 run config 启动，每一步只读取当前 observation 并提交一个动作。
+Reference 结果仅用于评分与对比，不属于模型输入。

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "case_id",
+    "llm_prompt",
+    "reference"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "llm_prompt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reference": {
+      "type": "object"
+    }
+  }
+}

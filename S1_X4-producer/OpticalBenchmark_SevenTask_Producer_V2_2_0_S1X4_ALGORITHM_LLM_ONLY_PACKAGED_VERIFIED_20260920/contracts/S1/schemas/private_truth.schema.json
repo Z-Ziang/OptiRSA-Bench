@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "case_id",
+    "evaluation_semantics",
+    "episode_length"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string"
+    },
+    "evaluation_semantics": {
+      "const": "OPERATIONAL_DYNAMIC_RSA"
+    },
+    "episode_length": {
+      "type": "integer",
+      "minimum": 1
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,44 @@
+{
+  "batch_semantics": "SINGLE_REQUEST",
+  "benchmark_case_fields": [
+    "case_id",
+    "instance",
+    "llm_prompt",
+    "reference"
+  ],
+  "benchmark_interface": "DUAL_VIEW_ALGORITHM_LLM_V1_0_COMPILED_NPZ",
+  "contract_id": "O2-S_CASE_CONTRACT_V1_0",
+  "formal_candidate_path_k": [
+    2,
+    3,
+    5
+  ],
+  "frozen_slot_count": 320,
+  "metrics": [
+    "feasible_decision_accuracy",
+    "wufr_gap"
+  ],
+  "official_required_slots": [
+    2,
+    3,
+    5,
+    9
+  ],
+  "path_mode": "CANDIDATE",
+  "path_rank_base": 1,
+  "reference_sent_to_dut": false,
+  "required_slots_probability_field": "required_slots_probabilities",
+  "runtime_case_fields": [
+    "case_id",
+    "prompt"
+  ],
+  "runtime_request": {
+    "llm": "llm_system_prompt + prompt"
+  },
+  "spectrum_binary_semantics": {
+    "free": 1,
+    "occupied": 0
+  },
+  "task_type": "O2-S",
+  "wufr_abs_tolerance": 1e-12
+}

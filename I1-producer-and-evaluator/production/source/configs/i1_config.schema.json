@@ -1,0 +1,155 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "profile",
+    "seed",
+    "case_counts",
+    "objective_profiles",
+    "rewrite",
+    "allow_shortfall",
+    "require_canonical_tokenizer"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "profile": {
+      "type": "string",
+      "minLength": 1
+    },
+    "seed": {
+      "type": "integer"
+    },
+    "case_counts": {
+      "type": "object",
+      "required": [
+        "I1-S",
+        "I1-C",
+        "I1-D"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "I1-S": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "I1-C": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "I1-D": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "objective_profiles": {
+      "type": "object",
+      "required": [
+        "I1-S",
+        "I1-C",
+        "I1-D"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "I1-S": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "enum": [
+              [
+                "MIN-FRAGMENTATION"
+              ],
+              [
+                "MIN-HOP-COUNT",
+                "MIN-FRAGMENTATION"
+              ]
+            ]
+          },
+          "uniqueItems": true
+        },
+        "I1-C": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "enum": [
+              [
+                "MIN-FRAGMENTATION"
+              ],
+              [
+                "MIN-TOTAL-SLOT-USAGE",
+                "MIN-FRAGMENTATION"
+              ]
+            ]
+          },
+          "uniqueItems": true
+        },
+        "I1-D": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "enum": [
+              [
+                "MAX-ACCEPTED-REQUESTS",
+                "MIN-EXTERNAL-FRAGMENTATION"
+              ]
+            ]
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "rewrite": {
+      "type": "object",
+      "required": [
+        "enabled",
+        "mode",
+        "max_attempts"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "mode": {
+          "enum": [
+            "identity",
+            "openai_compatible"
+          ]
+        },
+        "max_attempts": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "base_url": {
+          "type": "string",
+          "minLength": 1
+        },
+        "api_key_env": {
+          "type": "string",
+          "minLength": 1
+        },
+        "model": {
+          "type": "string",
+          "minLength": 1
+        },
+        "provider": {
+          "type": "string"
+        },
+        "temperature": {
+          "type": "number",
+          "minimum": 0
+        },
+        "timeout_seconds": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      }
+    },
+    "allow_shortfall": {
+      "type": "boolean"
+    },
+    "require_canonical_tokenizer": {
+      "type": "boolean"
+    }
+  }
+}

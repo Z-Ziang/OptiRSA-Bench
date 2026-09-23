@@ -1,0 +1,27 @@
+{
+  "schema_version": "SEVEN_TASK_RUNTIME_LOCK_V2_1_0",
+  "python_verified": "3.13.5",
+  "platform_verified": "Linux x86_64",
+  "requirements_file": "requirements.txt",
+  "pytest_note": "Release verification sets PYTEST_DISABLE_PLUGIN_AUTOLOAD=1.",
+  "benchmark_interface": "NATURAL_LANGUAGE_DUAL_ENDPOINT_DYNAMIC_V2_1_0",
+  "canonical_tokenizer": {
+    "backend": "tiktoken",
+    "encoding": "o200k_base",
+    "package_version": "0.14.0"
+  },
+  "release_version": "2.1.0",
+  "engineering_parent": "OpticalBenchmark_FiveTask_Producer_V2_0_1_FINAL",
+  "engineering_parent_zip_sha256": "556027967ebd215ce580def927f1acea29cce637e6dc8d533dabbd9de99329d9",
+  "frozen_existing_tasks": [
+    "O1",
+    "O2-S",
+    "O2-C",
+    "X2",
+    "X3"
+  ],
+  "new_dynamic_tasks": [
+    "S1",
+    "X4"
+  ]
+}

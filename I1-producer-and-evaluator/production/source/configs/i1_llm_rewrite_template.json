@@ -1,0 +1,48 @@
+{
+  "profile": "i1_llm_rewrite",
+  "seed": 20260910,
+  "case_counts": {
+    "I1-S": 100,
+    "I1-C": 100,
+    "I1-D": 100
+  },
+  "objective_profiles": {
+    "I1-S": [
+      [
+        "MIN-FRAGMENTATION"
+      ],
+      [
+        "MIN-HOP-COUNT",
+        "MIN-FRAGMENTATION"
+      ]
+    ],
+    "I1-C": [
+      [
+        "MIN-FRAGMENTATION"
+      ],
+      [
+        "MIN-TOTAL-SLOT-USAGE",
+        "MIN-FRAGMENTATION"
+      ]
+    ],
+    "I1-D": [
+      [
+        "MAX-ACCEPTED-REQUESTS",
+        "MIN-EXTERNAL-FRAGMENTATION"
+      ]
+    ]
+  },
+  "rewrite": {
+    "enabled": true,
+    "mode": "openai_compatible",
+    "provider": "SiliconFlow",
+    "base_url": "https://api.siliconflow.cn/v1",
+    "api_key_env": "SILICONFLOW_API_KEY",
+    "model": "Qwen/Qwen3-8B",
+    "temperature": 0.7,
+    "timeout_seconds": 60,
+    "max_attempts": 5
+  },
+  "allow_shortfall": false,
+  "require_canonical_tokenizer": true
+}

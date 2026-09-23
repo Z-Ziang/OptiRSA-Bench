@@ -1,0 +1,44 @@
+{
+  "schema_version": "O_FAMILY_PRODUCTION_CONFIG_V1_0",
+  "profile": "REPRESENTATIVE",
+  "seed": 20260914,
+  "tasks": {
+    "O1": {
+      "enabled": true,
+      "case_count": 1,
+      "request_count_values": [
+        2
+      ],
+      "fixed_path_rank_values": [
+        1
+      ],
+      "selection": "PREFIX",
+      "max_complete_solutions": 25000
+    },
+    "O2-S": {
+      "enabled": true,
+      "case_count": 1,
+      "candidate_k_values": [
+        2
+      ],
+      "selection": "PREFIX",
+      "max_complete_solutions": 25000
+    },
+    "O2-C": {
+      "enabled": true,
+      "case_count": 1,
+      "request_count_values": [
+        2
+      ],
+      "candidate_k_values": [
+        2
+      ],
+      "selection": "PREFIX",
+      "max_complete_solutions": 25000
+    }
+  },
+  "execution": {
+    "allow_shortfall": false,
+    "resume": false
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "p0/generation_config.schema.json",
+  "title": "GenerationConfig",
+  "type": "object",
+  "properties": {
+    "generation_config_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "production_stage": {
+      "type": "string",
+      "enum": [
+        "TOPOLOGY",
+        "RESOURCE_STATE",
+        "REQUEST",
+        "BASE_SCENARIO",
+        "CASE",
+        "REFERENCE_SOLUTION",
+        "OUTPUT_CHECK"
+      ]
+    },
+    "topology_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "parameter_values": {
+      "type": "object"
+    },
+    "random_seed": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "generator_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "generator_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_data_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "time_unit": {
+      "const": "SIMULATION_TIME_UNIT"
+    },
+    "payload_slot_values": {
+      "const": [
+        1,
+        2,
+        4,
+        8
+      ]
+    },
+    "payload_slot_distribution": {
+      "type": "string",
+      "enum": [
+        "UNIFORM",
+        "LOW_DEMAND",
+        "MEDIUM_DEMAND",
+        "HIGH_DEMAND"
+      ]
+    },
+    "payload_slot_probabilities": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1
+      }
+    },
+    "guard_band_slots": {
+      "const": 1
+    }
+  },
+  "required": [
+    "generation_config_id",
+    "production_stage",
+    "parameter_values",
+    "generator_name",
+    "generator_version",
+    "source_data_ids"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "production_stage": {
+            "enum": [
+              "RESOURCE_STATE",
+              "REQUEST"
+            ]
+          }
+        },
+        "required": [
+          "production_stage"
+        ]
+      },
+      "then": {
+        "required": [
+          "time_unit",
+          "payload_slot_values",
+          "payload_slot_distribution",
+          "payload_slot_probabilities",
+          "guard_band_slots"
+        ]
+      }
+    }
+  ]
+}

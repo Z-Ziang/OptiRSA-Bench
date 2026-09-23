@@ -1,0 +1,42 @@
+{
+  "profile": "i1_small_batch",
+  "seed": 20260910,
+  "case_counts": {
+    "I1-S": 12,
+    "I1-C": 12,
+    "I1-D": 12
+  },
+  "objective_profiles": {
+    "I1-S": [
+      [
+        "MIN-FRAGMENTATION"
+      ],
+      [
+        "MIN-HOP-COUNT",
+        "MIN-FRAGMENTATION"
+      ]
+    ],
+    "I1-C": [
+      [
+        "MIN-FRAGMENTATION"
+      ],
+      [
+        "MIN-TOTAL-SLOT-USAGE",
+        "MIN-FRAGMENTATION"
+      ]
+    ],
+    "I1-D": [
+      [
+        "MAX-ACCEPTED-REQUESTS",
+        "MIN-EXTERNAL-FRAGMENTATION"
+      ]
+    ]
+  },
+  "rewrite": {
+    "enabled": false,
+    "mode": "identity",
+    "max_attempts": 3
+  },
+  "allow_shortfall": false,
+  "require_canonical_tokenizer": false
+}

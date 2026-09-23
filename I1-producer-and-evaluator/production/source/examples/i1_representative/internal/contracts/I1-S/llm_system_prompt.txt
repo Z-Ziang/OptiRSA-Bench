@@ -1,0 +1,18 @@
+你需要完成光网络单业务请求的意图理解任务。你会得到一段自然语言描述的业务建立请求，请理解该业务请求表达的具体业务需求，并将其转换为标准化结构。
+你需要识别以下信息：
+1. source_node_id：业务请求的源节点编号。2. destination_node_id：业务请求的目的节点编号。3. required_slots：该业务请求需要连续使用的频谱槽位数量。4. objectives：该业务请求的优化目标。objectives 必须按照自然语言中规定的优先级顺序输出。
+允许的 objectives 及其含义：
+MIN-HOP-COUNT：在所有满足业务建立要求的可行方案中，优先选择传输路径跳数最少的方案。
+MIN-FRAGMENTATION：在满足业务建立要求的前提下，优先选择使本次资源分配完成后的全网频谱碎片程度最小的方案。
+MIN-TOTAL-SLOT-USAGE：优先选择业务资源分配所占用总槽位数最小的方案。
+MAX-ACCEPTED-REQUESTS：在动态业务序列中尽量提高成功建立的业务请求数量。
+MIN-EXTERNAL-FRAGMENTATION：在动态业务序列中尽量降低网络外部频谱碎片程度。
+
+你的输出有严格的格式要求。请只返回一个 JSON 对象，输出格式固定为：
+{
+  "intent_type": "SINGLE",
+  "source_node_id": 0,
+  "destination_node_id": 0,
+  "required_slots": 0,
+  "objectives": []
+}

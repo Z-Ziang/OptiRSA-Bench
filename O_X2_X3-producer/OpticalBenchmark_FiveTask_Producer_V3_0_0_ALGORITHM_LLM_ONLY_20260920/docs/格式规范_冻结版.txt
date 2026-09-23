@@ -1,0 +1,45 @@
+智能化光网络 Benchmark 7.7
+O1 / O2-S / O2-C / X2 / X3 Algorithm + LLM 公开格式规范
+版本：V3.0.0_ALGORITHM_LLM_ONLY_20260920
+
+一、benchmark_case
+
+每条完整母版严格包含：
+
+{
+  "case_id": "...",
+  "instance": {...},
+  "llm_prompt": "...",
+  "reference": {...}
+}
+
+instance 是 Algorithm 科学输入的可读 JSON 表达。reference 只用于评测端，不得进入无答案 evaluation input。
+
+二、Algorithm evaluation
+
+路径：evaluation_case/<TASK>/algorithm/case_xxxxxx.npz
+
+NPZ 必须由 benchmark_case.instance 确定性编译，使用 np.load(path, allow_pickle=False) 加载，不使用 object dtype 或 pickle，不加入 reference、oracle、truth、隐藏路径或难度标签。
+
+O1 的请求包含 fixed_path；O2-S/O2-C 包含正式 candidate_paths；X2/X3 不包含 fixed_path 或 candidate_paths。
+
+三、LLM evaluation
+
+路径：evaluation_case/<TASK>/llm/case_xxxxxx.json
+
+严格结构：
+
+{
+  "case_id": "...",
+  "prompt": "..."
+}
+
+其中 prompt 必须与 benchmark_case.llm_prompt 完全一致，不得包含 reference、oracle 或 private truth。
+
+四、任务级公开文件
+
+每个任务保留 llm_system_prompt.txt、algorithm_contract.json、algorithm_input.schema.json、algorithm_evaluation_case.schema.json 和 output_schema.json。
+
+五、科学边界
+
+任务目标、ACCEPT/REJECT 规则、路径与频谱约束、WUFR、Reference、Oracle、Validator、Topology、Resource State 和 Request 生成逻辑保持既有冻结定义不变。本版本只精简公开评测接口。

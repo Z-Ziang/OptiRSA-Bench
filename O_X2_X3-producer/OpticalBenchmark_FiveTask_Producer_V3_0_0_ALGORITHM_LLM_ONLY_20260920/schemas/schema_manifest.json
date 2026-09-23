@@ -1,0 +1,57 @@
+{
+  "schema_version": "P0-DRAFT-2020-12-V0.1",
+  "mappings": [
+    {
+      "pattern": "topologies/physical/*.json",
+      "schema": "physical_topology.schema.json"
+    },
+    {
+      "pattern": "topologies/directed/*.json",
+      "schema": "directed_resource_topology.schema.json"
+    },
+    {
+      "pattern": "metrics/topology/*.json",
+      "schema": "topology_metrics.schema.json"
+    },
+    {
+      "pattern": "connections/initial/*.json",
+      "schema": "initial_existing_connection_set.schema.json"
+    },
+    {
+      "pattern": "states/spectrum/*.json",
+      "schema": "spectrum_resource_state.schema.json"
+    },
+    {
+      "pattern": "requests/single/*.json",
+      "schema": "request.schema.json"
+    },
+    {
+      "pattern": "requests/single/*.jsonl",
+      "schema": "request.schema.json"
+    },
+    {
+      "pattern": "requests/derivation/*.json",
+      "schema": "request_derivation.schema.json"
+    },
+    {
+      "pattern": "requests/derivation/*.jsonl",
+      "schema": "request_derivation.schema.json"
+    },
+    {
+      "pattern": "requests/concurrent/*.json",
+      "schema": "concurrent_request_set.schema.json"
+    },
+    {
+      "pattern": "requests/dynamic/*.json",
+      "schema": "dynamic_request_sequence.schema.json"
+    },
+    {
+      "pattern": "scenarios/*.json",
+      "schema": "base_scenario.schema.json"
+    },
+    {
+      "pattern": "configs/*.json",
+      "schema": "generation_config.schema.json"
+    }
+  ]
+}

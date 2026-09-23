@@ -1,0 +1,118 @@
+{
+  "schema_version": "PUBLIC_ENV_PRODUCTION_CONFIG_V1_0",
+  "batch_id": "O_X2_X3_NINE_TOPOLOGY_SMALL_BATCH_V1_20260914",
+  "scientific_profile": {
+    "od_distribution": "UNIFORM",
+    "slot_count": 320,
+    "payload_slot_values": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "payload_slot_probabilities": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "guard_band_slots": 1,
+    "required_slot_values": [
+      2,
+      3,
+      5,
+      9
+    ],
+    "candidate_path_k": 5,
+    "holding_time_rate_mu": 0.06666666666666667,
+    "request_sampling_n_gt_100": 2000,
+    "max_supported_node_count": 500
+  },
+  "resource_state_jobs": [
+    {
+      "job_id": "kspff_medium_nine_topology",
+      "policy": "KSP-FF",
+      "load_band": "MEDIUM",
+      "seed": 501,
+      "confirmation_seed": 901
+    }
+  ],
+  "request_generation": {
+    "seed": 601,
+    "derivation_anchor_job_id": "kspff_medium_nine_topology"
+  },
+  "concurrent": {
+    "enabled": true,
+    "set_count": 4,
+    "requests_per_set": 4,
+    "seed": 701
+  },
+  "dynamic": {
+    "enabled": false,
+    "anchor_job_ids": [],
+    "sequence_length": 0,
+    "sequences_per_condition": 0,
+    "arrival_rate_mode": "MATCH_STATE",
+    "seed": 801
+  },
+  "execution": {
+    "resume": false,
+    "continue_on_failure": false
+  },
+  "topologies": [
+    {
+      "topology_id": "topologybench_netrail",
+      "source_path": "../inputs/canonical_9/topologybench_netrail.json",
+      "source_type": "CANONICAL_PHYSICAL_JSON",
+      "source_sha256": "aed69459358515babf4bc94a50f228bb9dc45fed2978dd5448fbbe0138f9a890"
+    },
+    {
+      "topology_id": "topologybench_elibackbone",
+      "source_path": "../inputs/canonical_9/topologybench_elibackbone.json",
+      "source_type": "CANONICAL_PHYSICAL_JSON",
+      "source_sha256": "b1c670b19d689073e5ca6fd79fe94506bf4641ab655ac881afccce6cd59c073f"
+    },
+    {
+      "topology_id": "topologybench_jpn48",
+      "source_path": "../inputs/canonical_9/topologybench_jpn48.json",
+      "source_type": "CANONICAL_PHYSICAL_JSON",
+      "source_sha256": "21efd442345bc43b6fc7189ac0780c087d3d18ee6b59346e096b4293dd9d19d0"
+    },
+    {
+      "topology_id": "topologybench_conus75",
+      "source_path": "../inputs/canonical_9/topologybench_conus75.json",
+      "source_type": "CANONICAL_PHYSICAL_JSON",
+      "source_sha256": "388bf8305e8da20c59117e749c3cd76aec0a336271c4896fe3fc01e1e9e4040a"
+    },
+    {
+      "topology_id": "topohub_gabriel_125_0",
+      "source_path": "../inputs/canonical_9/topohub_gabriel_125_0.json",
+      "source_type": "CANONICAL_PHYSICAL_JSON",
+      "source_sha256": "91d7ff47cef8964f2d51d0ccb5ad965781f9b213a24f709cdc53abafbf665925"
+    },
+    {
+      "topology_id": "topohub_gabriel_175_2",
+      "source_path": "../inputs/canonical_9/topohub_gabriel_175_2.json",
+      "source_type": "CANONICAL_PHYSICAL_JSON",
+      "source_sha256": "3e71ae0399fb6143fc83e6c1847e862ce1604b2ad030196c3e38fafb2ba07ecd"
+    },
+    {
+      "topology_id": "topohub_gabriel_250_3",
+      "source_path": "../inputs/canonical_9/topohub_gabriel_250_3.json",
+      "source_type": "CANONICAL_PHYSICAL_JSON",
+      "source_sha256": "734832725f2a83cc3509c78e1c9c05152dc899c0b1047f57667daa21e54dc8a5"
+    },
+    {
+      "topology_id": "topohub_gabriel_375_3",
+      "source_path": "../inputs/canonical_9/topohub_gabriel_375_3.json",
+      "source_type": "CANONICAL_PHYSICAL_JSON",
+      "source_sha256": "c7ce4935bf2be7ff9a75f468f774431310d6d6e32525e84634d92f8dd1353562"
+    },
+    {
+      "topology_id": "topohub_gabriel_450_9",
+      "source_path": "../inputs/canonical_9/topohub_gabriel_450_9.json",
+      "source_type": "CANONICAL_PHYSICAL_JSON",
+      "source_sha256": "045498db04560c8489beca8c3b4a2bbe6bdba492ada9853fbb74ed7b05d48363"
+    }
+  ]
+}

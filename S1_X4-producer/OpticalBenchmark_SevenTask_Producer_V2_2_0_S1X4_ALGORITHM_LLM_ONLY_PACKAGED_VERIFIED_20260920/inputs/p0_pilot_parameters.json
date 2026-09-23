@@ -1,0 +1,75 @@
+{
+  "config_status": "PILOT_ONLY_NOT_FROZEN",
+  "purpose": [
+    "跑通NSFNET公共基础环境端到端流水线",
+    "验证冻结字段、对象关系、Schema和程序读取是否一致",
+    "发现参数、指标、字段和上下游接口中的设计问题",
+    "不生成正式难度标签，不宣称参数为最终取值"
+  ],
+  "topology": {
+    "raw_input": "../nsfnet_input/nsfnet14_raw.json",
+    "topology_id": "top_0001",
+    "source_type": "REAL",
+    "length_policy": "OMIT_IF_UNAVAILABLE"
+  },
+  "resource_state": {
+    "slot_count": 320,
+    "time_unit": "SIMULATION_TIME_UNIT",
+    "payload_slot_values": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "payload_slot_distribution": "UNIFORM",
+    "payload_slot_probabilities": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "guard_band_slots": 1,
+    "arrival_rate_lambda_initial": 10.0,
+    "holding_time_rate_mu": 0.06666666666666667,
+    "historical_routing_strategy": "KSP",
+    "historical_candidate_path_k": 5,
+    "historical_spectrum_strategy": "FIRST_FIT",
+    "warmup_request_count": 1000,
+    "maximum_simulated_request_count": 10000,
+    "target_network_spectrum_utilization_band": [
+      0.1,
+      0.25
+    ],
+    "target_band_upper_inclusive": false,
+    "load_search_allowed": true,
+    "state_snapshot_count": 1,
+    "random_seed": 2026080701
+  },
+  "request": {
+    "single_request_policy": "ALL_ORDERED_SOURCE_DESTINATION_PAIRS",
+    "expected_single_request_count": 182,
+    "candidate_path_k": 5,
+    "concurrent_request_set_count": 3,
+    "concurrent_request_count_per_set": 4,
+    "dynamic_sequence_count": 1,
+    "dynamic_sequence_length": 20,
+    "dynamic_arrival_rate_lambda": 10.0,
+    "dynamic_holding_time_rate_mu": 0.06666666666666667,
+    "random_seed": 2026080702
+  },
+  "base_scenario": {
+    "create_none_scene": true,
+    "create_single_scene": true,
+    "create_concurrent_scene": true,
+    "create_dynamic_scene": true,
+    "generator_version": "P0-DRAFT"
+  },
+  "pilot_stop_rule": {
+    "schema_must_pass": true,
+    "domain_validators_must_pass": true,
+    "cross_file_references_must_resolve": true,
+    "state_reconstruction_must_match": true,
+    "dynamic_time_replay_must_match": true,
+    "unresolved_specification_conflicts_must_be_reported": true
+  }
+}

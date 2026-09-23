@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "p0/directed_resource_topology.schema.json",
+  "title": "DirectedResourceTopology",
+  "type": "object",
+  "properties": {
+    "topology_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "directed_link_records": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "$ref": "#/$defs/DirectedLinkRecord"
+      }
+    }
+  },
+  "required": [
+    "topology_id",
+    "directed_link_records"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "DirectedLinkRecord": {
+      "type": "object",
+      "properties": {
+        "link_id": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "source_node_id": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "destination_node_id": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "physical_link_id": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "link_id",
+        "source_node_id",
+        "destination_node_id",
+        "physical_link_id"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

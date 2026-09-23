@@ -1,0 +1,21 @@
+{
+  "schema_version": "GX1_LLM_RUNNER_JSON_SCHEMA_V3_0",
+  "api_base_env": "GX1_API_BASE",
+  "api_key_env": "GX1_API_KEY",
+  "model_env": "GX1_MODEL",
+  "extra_body_env": "GX1_EXTRA_BODY_JSON",
+  "temperature": 0.0,
+  "max_tokens": 16384,
+  "request_timeout_seconds": 180,
+  "request_hard_timeout_seconds": 210,
+  "case_timeout_seconds": 720,
+  "retries": 2,
+  "backoff_seconds": 1,
+  "concurrency": 1,
+  "resume": true,
+  "output_format": {
+    "mode": "json_schema",
+    "strict": true,
+    "preflight": true
+  }
+}

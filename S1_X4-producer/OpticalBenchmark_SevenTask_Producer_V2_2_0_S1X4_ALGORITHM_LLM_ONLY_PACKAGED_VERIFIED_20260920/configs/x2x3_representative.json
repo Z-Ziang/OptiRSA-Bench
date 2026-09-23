@@ -1,0 +1,37 @@
+{
+  "schema_version": "X2X3_PRODUCTION_CONFIG_V1_0",
+  "profile": "REPRESENTATIVE",
+  "seed": 20260908,
+  "tasks": {
+    "X2": {
+      "enabled": true,
+      "case_count": 3,
+      "required_slots_values": [
+        2,
+        3,
+        5,
+        9
+      ],
+      "selection": "LOW_ORACLE_COMPLEXITY",
+      "max_simple_paths": 20000,
+      "max_optimal_actions": 50000
+    },
+    "X3": {
+      "enabled": true,
+      "case_count": 3,
+      "request_count_values": [
+        2
+      ],
+      "selection_values": [
+        "PREFIX",
+        "HIGH_CONFLICT_X3"
+      ],
+      "max_simple_paths_per_request": 5000,
+      "max_search_nodes": 2000000,
+      "max_complete_optimal_solutions": 120000
+    }
+  },
+  "execution": {
+    "allow_shortfall": true
+  }
+}

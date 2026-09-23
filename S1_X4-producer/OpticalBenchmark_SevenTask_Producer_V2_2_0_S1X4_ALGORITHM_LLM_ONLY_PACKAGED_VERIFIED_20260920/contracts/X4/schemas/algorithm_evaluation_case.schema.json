@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "case_id",
+    "task_type",
+    "interface_type",
+    "future_requests_visible",
+    "static_context",
+    "output_schema_ref",
+    "runtime_contract_ref",
+    "opaque_case_handle"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "S1_X4_ALGORITHM_EVALUATION_CASE_V1_1"
+    },
+    "case_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "task_type": {
+      "const": "X4"
+    },
+    "interface_type": {
+      "const": "DYNAMIC_ONLINE_ALGORITHM_EPISODE"
+    },
+    "future_requests_visible": {
+      "const": false
+    },
+    "static_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "case_id",
+        "task_type",
+        "topology_id",
+        "node_ids",
+        "directed_links",
+        "slot_count"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": "S1_X4_ALGORITHM_STATIC_CONTEXT_V1_0"
+        },
+        "case_id": {
+          "type": "string"
+        },
+        "task_type": {
+          "const": "X4"
+        },
+        "topology_id": {
+          "type": "string"
+        },
+        "node_ids": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "directed_links": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "link_id",
+              "source_node_id",
+              "destination_node_id"
+            ],
+            "properties": {
+              "link_id": {
+                "type": "integer"
+              },
+              "source_node_id": {
+                "type": "integer"
+              },
+              "destination_node_id": {
+                "type": "integer"
+              }
+            }
+          }
+        },
+        "slot_count": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "output_schema_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "runtime_contract_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "opaque_case_handle": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

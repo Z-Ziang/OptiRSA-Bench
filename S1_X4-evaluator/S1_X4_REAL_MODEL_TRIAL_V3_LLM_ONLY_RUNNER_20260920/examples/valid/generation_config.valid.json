@@ -1,0 +1,32 @@
+{
+  "generation_config_id": "genconf_0001",
+  "production_stage": "REQUEST",
+  "topology_id": "top_0001",
+  "parameter_values": {
+    "candidate_path_k": 5,
+    "request_count": 182,
+    "pilot_only": true
+  },
+  "random_seed": 2026080701,
+  "generator_name": "p0_request_generator",
+  "generator_version": "0.1.0-draft",
+  "source_data_ids": [
+    "top_0001",
+    "rs_0001"
+  ],
+  "time_unit": "SIMULATION_TIME_UNIT",
+  "payload_slot_values": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "payload_slot_distribution": "UNIFORM",
+  "payload_slot_probabilities": [
+    0.25,
+    0.25,
+    0.25,
+    0.25
+  ],
+  "guard_band_slots": 1
+}

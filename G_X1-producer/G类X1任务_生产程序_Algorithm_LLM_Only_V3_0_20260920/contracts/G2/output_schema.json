@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "required": [
+    "is_valid",
+    "error_type"
+  ],
+  "properties": {
+    "is_valid": {
+      "type": "boolean"
+    },
+    "error_type": {
+      "enum": [
+        "WRONG_DIRECTION",
+        "DISCONNECTED_PATH",
+        "NODE_LINK_MISMATCH",
+        "REPEATED_NODE",
+        null
+      ]
+    }
+  },
+  "additionalProperties": false
+}

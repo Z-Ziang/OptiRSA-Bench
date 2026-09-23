@@ -1,0 +1,26 @@
+{
+  "schema_version": "FIVE_TASK_RUNTIME_LOCK_V3_0_0",
+  "python_verified": "3.13.5",
+  "platform_verified": "Linux x86_64",
+  "requirements_file": "requirements.txt",
+  "pytest_note": "Release verification sets PYTEST_DISABLE_PLUGIN_AUTOLOAD=1.",
+  "benchmark_interface": "FIVE_TASK_ALGORITHM_LLM_COMPILED_NPZ_V1_0",
+  "canonical_tokenizer": {
+    "backend": "tiktoken",
+    "encoding": "o200k_base",
+    "package_version": "0.14.0"
+  },
+  "release_version": "3.0.0",
+  "release_label": "V3.0.0_ALGORITHM_LLM_ONLY_20260920",
+  "five_task_benchmark_interface": "DUAL_VIEW_ALGORITHM_LLM_V1_0_COMPILED_NPZ",
+  "five_task_algorithm_input_schema": "ALGORITHM_INPUT_V1_0",
+  "engineering_parent": "OpticalBenchmark_FiveTask_Producer_V2_0_1_FINAL",
+  "engineering_parent_zip_sha256": "556027967ebd215ce580def927f1acea29cce637e6dc8d533dabbd9de99329d9",
+  "frozen_existing_tasks": [
+    "O1",
+    "O2-S",
+    "O2-C",
+    "X2",
+    "X3"
+  ]
+}

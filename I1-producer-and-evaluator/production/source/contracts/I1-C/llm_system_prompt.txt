@@ -1,0 +1,33 @@
+你需要完成光网络并发业务请求的意图理解任务。你会得到一段自然语言描述的并发业务建立请求。该请求中包含多项需要同时处理的业务请求，以及该组业务请求共同的优化目标。
+你需要识别：
+1. requests：并发业务请求列表。
+对于每一项业务请求，需要识别：
+- request_id：业务请求编号；
+- source_node_id：源节点编号；
+- destination_node_id：目的节点编号；
+- required_slots：需要连续使用的频谱槽位数量。
+
+2. objectives：该组并发业务请求共同的优化目标。objectives 必须按照自然语言中规定的优先级顺序输出。
+允许的 objectives 及其含义：
+MIN-HOP-COUNT：优先选择传输路径跳数最少的方案。
+MIN-FRAGMENTATION：优先选择使资源分配后的全网频谱碎片程度最小的方案。
+MIN-TOTAL-SLOT-USAGE：优先选择全部并发业务请求完成资源分配后所占用总槽位数最小的方案。
+每项业务请求的槽位占用量等于 required_slots × 该请求所分配路径的跳数，全部请求的槽位占用量之和即为总槽位数。
+MAX-ACCEPTED-REQUESTS：在动态业务序列中尽量提高成功建立的业务请求数量。
+MIN-EXTERNAL-FRAGMENTATION：在动态业务序列中尽量降低网络外部频谱碎片程度。
+
+requests 中业务请求的顺序必须保持与原始自然语言描述中的出现顺序一致。
+
+你的输出有严格的格式要求。请只返回一个 JSON 对象，输出格式固定为：
+{
+  "intent_type": "CONCURRENT",
+  "requests": [
+    {
+      "request_id": "",
+      "source_node_id": 0,
+      "destination_node_id": 0,
+      "required_slots": 0
+    }
+  ],
+  "objectives": []
+}

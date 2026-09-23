@@ -1,0 +1,501 @@
+{
+  "tests": [
+    {
+      "name": "physical_topology:valid",
+      "category": "valid",
+      "schema": "../schemas/physical_topology.schema.json",
+      "file": "valid/physical_topology.valid.json",
+      "expected_valid": true
+    },
+    {
+      "name": "physical_topology:missing_required",
+      "category": "missing_required",
+      "schema": "../schemas/physical_topology.schema.json",
+      "file": "invalid/physical_topology/missing_required.json",
+      "expected_valid": false
+    },
+    {
+      "name": "physical_topology:type_error",
+      "category": "type_error",
+      "schema": "../schemas/physical_topology.schema.json",
+      "file": "invalid/physical_topology/type_error.json",
+      "expected_valid": false
+    },
+    {
+      "name": "physical_topology:enum_error",
+      "category": "enum_error",
+      "schema": "../schemas/physical_topology.schema.json",
+      "file": "invalid/physical_topology/enum_error.json",
+      "expected_valid": false
+    },
+    {
+      "name": "physical_topology:range_error",
+      "category": "range_error",
+      "schema": "../schemas/physical_topology.schema.json",
+      "file": "invalid/physical_topology/range_error.json",
+      "expected_valid": false
+    },
+    {
+      "name": "physical_topology:forbidden_legacy_field",
+      "category": "forbidden_legacy_field",
+      "schema": "../schemas/physical_topology.schema.json",
+      "file": "invalid/physical_topology/forbidden_legacy_field.json",
+      "expected_valid": false
+    },
+    {
+      "name": "directed_resource_topology:valid",
+      "category": "valid",
+      "schema": "../schemas/directed_resource_topology.schema.json",
+      "file": "valid/directed_resource_topology.valid.json",
+      "expected_valid": true
+    },
+    {
+      "name": "directed_resource_topology:missing_required",
+      "category": "missing_required",
+      "schema": "../schemas/directed_resource_topology.schema.json",
+      "file": "invalid/directed_resource_topology/missing_required.json",
+      "expected_valid": false
+    },
+    {
+      "name": "directed_resource_topology:type_error",
+      "category": "type_error",
+      "schema": "../schemas/directed_resource_topology.schema.json",
+      "file": "invalid/directed_resource_topology/type_error.json",
+      "expected_valid": false
+    },
+    {
+      "name": "directed_resource_topology:range_error",
+      "category": "range_error",
+      "schema": "../schemas/directed_resource_topology.schema.json",
+      "file": "invalid/directed_resource_topology/range_error.json",
+      "expected_valid": false
+    },
+    {
+      "name": "directed_resource_topology:forbidden_legacy_field",
+      "category": "forbidden_legacy_field",
+      "schema": "../schemas/directed_resource_topology.schema.json",
+      "file": "invalid/directed_resource_topology/forbidden_legacy_field.json",
+      "expected_valid": false
+    },
+    {
+      "name": "topology_metrics:valid",
+      "category": "valid",
+      "schema": "../schemas/topology_metrics.schema.json",
+      "file": "valid/topology_metrics.valid.json",
+      "expected_valid": true
+    },
+    {
+      "name": "topology_metrics:missing_required",
+      "category": "missing_required",
+      "schema": "../schemas/topology_metrics.schema.json",
+      "file": "invalid/topology_metrics/missing_required.json",
+      "expected_valid": false
+    },
+    {
+      "name": "topology_metrics:type_error",
+      "category": "type_error",
+      "schema": "../schemas/topology_metrics.schema.json",
+      "file": "invalid/topology_metrics/type_error.json",
+      "expected_valid": false
+    },
+    {
+      "name": "topology_metrics:range_error",
+      "category": "range_error",
+      "schema": "../schemas/topology_metrics.schema.json",
+      "file": "invalid/topology_metrics/range_error.json",
+      "expected_valid": false
+    },
+    {
+      "name": "topology_metrics:forbidden_legacy_field",
+      "category": "forbidden_legacy_field",
+      "schema": "../schemas/topology_metrics.schema.json",
+      "file": "invalid/topology_metrics/forbidden_legacy_field.json",
+      "expected_valid": false
+    },
+    {
+      "name": "initial_existing_connection_set:valid",
+      "category": "valid",
+      "schema": "../schemas/initial_existing_connection_set.schema.json",
+      "file": "valid/initial_existing_connection_set.valid.json",
+      "expected_valid": true
+    },
+    {
+      "name": "initial_existing_connection_set:missing_required",
+      "category": "missing_required",
+      "schema": "../schemas/initial_existing_connection_set.schema.json",
+      "file": "invalid/initial_existing_connection_set/missing_required.json",
+      "expected_valid": false
+    },
+    {
+      "name": "initial_existing_connection_set:type_error",
+      "category": "type_error",
+      "schema": "../schemas/initial_existing_connection_set.schema.json",
+      "file": "invalid/initial_existing_connection_set/type_error.json",
+      "expected_valid": false
+    },
+    {
+      "name": "initial_existing_connection_set:enum_error",
+      "category": "enum_error",
+      "schema": "../schemas/initial_existing_connection_set.schema.json",
+      "file": "invalid/initial_existing_connection_set/enum_error.json",
+      "expected_valid": false
+    },
+    {
+      "name": "initial_existing_connection_set:range_error",
+      "category": "range_error",
+      "schema": "../schemas/initial_existing_connection_set.schema.json",
+      "file": "invalid/initial_existing_connection_set/range_error.json",
+      "expected_valid": false
+    },
+    {
+      "name": "initial_existing_connection_set:forbidden_legacy_field",
+      "category": "forbidden_legacy_field",
+      "schema": "../schemas/initial_existing_connection_set.schema.json",
+      "file": "invalid/initial_existing_connection_set/forbidden_legacy_field.json",
+      "expected_valid": false
+    },
+    {
+      "name": "spectrum_resource_state:valid",
+      "category": "valid",
+      "schema": "../schemas/spectrum_resource_state.schema.json",
+      "file": "valid/spectrum_resource_state.valid.json",
+      "expected_valid": true
+    },
+    {
+      "name": "spectrum_resource_state:missing_required",
+      "category": "missing_required",
+      "schema": "../schemas/spectrum_resource_state.schema.json",
+      "file": "invalid/spectrum_resource_state/missing_required.json",
+      "expected_valid": false
+    },
+    {
+      "name": "spectrum_resource_state:type_error",
+      "category": "type_error",
+      "schema": "../schemas/spectrum_resource_state.schema.json",
+      "file": "invalid/spectrum_resource_state/type_error.json",
+      "expected_valid": false
+    },
+    {
+      "name": "spectrum_resource_state:enum_error",
+      "category": "enum_error",
+      "schema": "../schemas/spectrum_resource_state.schema.json",
+      "file": "invalid/spectrum_resource_state/enum_error.json",
+      "expected_valid": false
+    },
+    {
+      "name": "spectrum_resource_state:range_error",
+      "category": "range_error",
+      "schema": "../schemas/spectrum_resource_state.schema.json",
+      "file": "invalid/spectrum_resource_state/range_error.json",
+      "expected_valid": false
+    },
+    {
+      "name": "spectrum_resource_state:forbidden_legacy_field",
+      "category": "forbidden_legacy_field",
+      "schema": "../schemas/spectrum_resource_state.schema.json",
+      "file": "invalid/spectrum_resource_state/forbidden_legacy_field.json",
+      "expected_valid": false
+    },
+    {
+      "name": "request:valid",
+      "category": "valid",
+      "schema": "../schemas/request.schema.json",
+      "file": "valid/request.valid.json",
+      "expected_valid": true
+    },
+    {
+      "name": "request:missing_required",
+      "category": "missing_required",
+      "schema": "../schemas/request.schema.json",
+      "file": "invalid/request/missing_required.json",
+      "expected_valid": false
+    },
+    {
+      "name": "request:type_error",
+      "category": "type_error",
+      "schema": "../schemas/request.schema.json",
+      "file": "invalid/request/type_error.json",
+      "expected_valid": false
+    },
+    {
+      "name": "request:enum_error",
+      "category": "enum_error",
+      "schema": "../schemas/request.schema.json",
+      "file": "invalid/request/enum_error.json",
+      "expected_valid": false
+    },
+    {
+      "name": "request:range_error",
+      "category": "range_error",
+      "schema": "../schemas/request.schema.json",
+      "file": "invalid/request/range_error.json",
+      "expected_valid": false
+    },
+    {
+      "name": "request:forbidden_legacy_field",
+      "category": "forbidden_legacy_field",
+      "schema": "../schemas/request.schema.json",
+      "file": "invalid/request/forbidden_legacy_field.json",
+      "expected_valid": false
+    },
+    {
+      "name": "request_derivation:valid",
+      "category": "valid",
+      "schema": "../schemas/request_derivation.schema.json",
+      "file": "valid/request_derivation.valid.json",
+      "expected_valid": true
+    },
+    {
+      "name": "request_derivation:missing_required",
+      "category": "missing_required",
+      "schema": "../schemas/request_derivation.schema.json",
+      "file": "invalid/request_derivation/missing_required.json",
+      "expected_valid": false
+    },
+    {
+      "name": "request_derivation:type_error",
+      "category": "type_error",
+      "schema": "../schemas/request_derivation.schema.json",
+      "file": "invalid/request_derivation/type_error.json",
+      "expected_valid": false
+    },
+    {
+      "name": "request_derivation:range_error",
+      "category": "range_error",
+      "schema": "../schemas/request_derivation.schema.json",
+      "file": "invalid/request_derivation/range_error.json",
+      "expected_valid": false
+    },
+    {
+      "name": "request_derivation:forbidden_legacy_field",
+      "category": "forbidden_legacy_field",
+      "schema": "../schemas/request_derivation.schema.json",
+      "file": "invalid/request_derivation/forbidden_legacy_field.json",
+      "expected_valid": false
+    },
+    {
+      "name": "concurrent_request_set:valid",
+      "category": "valid",
+      "schema": "../schemas/concurrent_request_set.schema.json",
+      "file": "valid/concurrent_request_set.valid.json",
+      "expected_valid": true
+    },
+    {
+      "name": "concurrent_request_set:missing_required",
+      "category": "missing_required",
+      "schema": "../schemas/concurrent_request_set.schema.json",
+      "file": "invalid/concurrent_request_set/missing_required.json",
+      "expected_valid": false
+    },
+    {
+      "name": "concurrent_request_set:type_error",
+      "category": "type_error",
+      "schema": "../schemas/concurrent_request_set.schema.json",
+      "file": "invalid/concurrent_request_set/type_error.json",
+      "expected_valid": false
+    },
+    {
+      "name": "concurrent_request_set:enum_error",
+      "category": "enum_error",
+      "schema": "../schemas/concurrent_request_set.schema.json",
+      "file": "invalid/concurrent_request_set/enum_error.json",
+      "expected_valid": false
+    },
+    {
+      "name": "concurrent_request_set:range_error",
+      "category": "range_error",
+      "schema": "../schemas/concurrent_request_set.schema.json",
+      "file": "invalid/concurrent_request_set/range_error.json",
+      "expected_valid": false
+    },
+    {
+      "name": "concurrent_request_set:forbidden_legacy_field",
+      "category": "forbidden_legacy_field",
+      "schema": "../schemas/concurrent_request_set.schema.json",
+      "file": "invalid/concurrent_request_set/forbidden_legacy_field.json",
+      "expected_valid": false
+    },
+    {
+      "name": "dynamic_request_sequence:valid",
+      "category": "valid",
+      "schema": "../schemas/dynamic_request_sequence.schema.json",
+      "file": "valid/dynamic_request_sequence.valid.json",
+      "expected_valid": true
+    },
+    {
+      "name": "dynamic_request_sequence:missing_required",
+      "category": "missing_required",
+      "schema": "../schemas/dynamic_request_sequence.schema.json",
+      "file": "invalid/dynamic_request_sequence/missing_required.json",
+      "expected_valid": false
+    },
+    {
+      "name": "dynamic_request_sequence:type_error",
+      "category": "type_error",
+      "schema": "../schemas/dynamic_request_sequence.schema.json",
+      "file": "invalid/dynamic_request_sequence/type_error.json",
+      "expected_valid": false
+    },
+    {
+      "name": "dynamic_request_sequence:enum_error",
+      "category": "enum_error",
+      "schema": "../schemas/dynamic_request_sequence.schema.json",
+      "file": "invalid/dynamic_request_sequence/enum_error.json",
+      "expected_valid": false
+    },
+    {
+      "name": "dynamic_request_sequence:range_error",
+      "category": "range_error",
+      "schema": "../schemas/dynamic_request_sequence.schema.json",
+      "file": "invalid/dynamic_request_sequence/range_error.json",
+      "expected_valid": false
+    },
+    {
+      "name": "dynamic_request_sequence:forbidden_legacy_field",
+      "category": "forbidden_legacy_field",
+      "schema": "../schemas/dynamic_request_sequence.schema.json",
+      "file": "invalid/dynamic_request_sequence/forbidden_legacy_field.json",
+      "expected_valid": false
+    },
+    {
+      "name": "base_scenario:valid",
+      "category": "valid",
+      "schema": "../schemas/base_scenario.schema.json",
+      "file": "valid/base_scenario.valid.json",
+      "expected_valid": true
+    },
+    {
+      "name": "base_scenario:missing_required",
+      "category": "missing_required",
+      "schema": "../schemas/base_scenario.schema.json",
+      "file": "invalid/base_scenario/missing_required.json",
+      "expected_valid": false
+    },
+    {
+      "name": "base_scenario:type_error",
+      "category": "type_error",
+      "schema": "../schemas/base_scenario.schema.json",
+      "file": "invalid/base_scenario/type_error.json",
+      "expected_valid": false
+    },
+    {
+      "name": "base_scenario:enum_error",
+      "category": "enum_error",
+      "schema": "../schemas/base_scenario.schema.json",
+      "file": "invalid/base_scenario/enum_error.json",
+      "expected_valid": false
+    },
+    {
+      "name": "base_scenario:range_error",
+      "category": "range_error",
+      "schema": "../schemas/base_scenario.schema.json",
+      "file": "invalid/base_scenario/range_error.json",
+      "expected_valid": false
+    },
+    {
+      "name": "base_scenario:forbidden_legacy_field",
+      "category": "forbidden_legacy_field",
+      "schema": "../schemas/base_scenario.schema.json",
+      "file": "invalid/base_scenario/forbidden_legacy_field.json",
+      "expected_valid": false
+    },
+    {
+      "name": "generation_config:valid",
+      "category": "valid",
+      "schema": "../schemas/generation_config.schema.json",
+      "file": "valid/generation_config.valid.json",
+      "expected_valid": true
+    },
+    {
+      "name": "generation_config:missing_required",
+      "category": "missing_required",
+      "schema": "../schemas/generation_config.schema.json",
+      "file": "invalid/generation_config/missing_required.json",
+      "expected_valid": false
+    },
+    {
+      "name": "generation_config:type_error",
+      "category": "type_error",
+      "schema": "../schemas/generation_config.schema.json",
+      "file": "invalid/generation_config/type_error.json",
+      "expected_valid": false
+    },
+    {
+      "name": "generation_config:enum_error",
+      "category": "enum_error",
+      "schema": "../schemas/generation_config.schema.json",
+      "file": "invalid/generation_config/enum_error.json",
+      "expected_valid": false
+    },
+    {
+      "name": "generation_config:range_error",
+      "category": "range_error",
+      "schema": "../schemas/generation_config.schema.json",
+      "file": "invalid/generation_config/range_error.json",
+      "expected_valid": false
+    },
+    {
+      "name": "generation_config:forbidden_legacy_field",
+      "category": "forbidden_legacy_field",
+      "schema": "../schemas/generation_config.schema.json",
+      "file": "invalid/generation_config/forbidden_legacy_field.json",
+      "expected_valid": false
+    },
+    {
+      "name": "dynamic_request_sequence:release_time",
+      "category": "release_time",
+      "schema": "../schemas/dynamic_request_sequence.schema.json",
+      "file": "invalid/dynamic_request_sequence/release_time.json",
+      "expected_valid": false
+    },
+    {
+      "name": "dynamic_request_sequence:initial_resource_state_id",
+      "category": "initial_resource_state_id",
+      "schema": "../schemas/dynamic_request_sequence.schema.json",
+      "file": "invalid/dynamic_request_sequence/initial_resource_state_id.json",
+      "expected_valid": false
+    },
+    {
+      "name": "dynamic_request_sequence:initial_existing_connection_set_id",
+      "category": "initial_existing_connection_set_id",
+      "schema": "../schemas/dynamic_request_sequence.schema.json",
+      "file": "invalid/dynamic_request_sequence/initial_existing_connection_set_id.json",
+      "expected_valid": false
+    },
+    {
+      "name": "dynamic_request_sequence:holding_time_nonpositive",
+      "category": "holding_time_nonpositive",
+      "schema": "../schemas/dynamic_request_sequence.schema.json",
+      "file": "invalid/dynamic_request_sequence/holding_time_nonpositive.json",
+      "expected_valid": false
+    },
+    {
+      "name": "dynamic_request_sequence:required_slots_4",
+      "category": "required_slots_4",
+      "schema": "../schemas/dynamic_request_sequence.schema.json",
+      "file": "invalid/dynamic_request_sequence/required_slots_4.json",
+      "expected_valid": false
+    },
+    {
+      "name": "dynamic_request_sequence:arrival_rate_lambda_nonpositive",
+      "category": "arrival_rate_lambda_nonpositive",
+      "schema": "../schemas/dynamic_request_sequence.schema.json",
+      "file": "invalid/dynamic_request_sequence/arrival_rate_lambda_nonpositive.json",
+      "expected_valid": false
+    },
+    {
+      "name": "request:valid_jsonl",
+      "category": "jsonl_valid",
+      "schema": "../schemas/request.schema.json",
+      "file": "valid/requests.valid.jsonl",
+      "expected_valid": true
+    },
+    {
+      "name": "request:invalid_jsonl",
+      "category": "jsonl_invalid",
+      "schema": "../schemas/request.schema.json",
+      "file": "invalid/request/requests.invalid.jsonl",
+      "expected_valid": false
+    }
+  ]
+}

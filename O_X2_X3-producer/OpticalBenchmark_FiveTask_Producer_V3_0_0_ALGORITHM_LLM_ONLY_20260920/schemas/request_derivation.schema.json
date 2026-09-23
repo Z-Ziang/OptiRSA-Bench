@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "p0/request_derivation.schema.json",
+  "title": "RequestDerivation",
+  "type": "object",
+  "properties": {
+    "request_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "resource_state_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "shortest_path_hops": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "local_edge_connectivity": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "candidate_path_k": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "candidate_paths": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/CandidatePath"
+      }
+    },
+    "feasible_candidate_path_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "feasible_action_count": {
+      "type": "integer",
+      "minimum": 0
+    }
+  },
+  "required": [
+    "request_id",
+    "resource_state_id",
+    "shortest_path_hops",
+    "local_edge_connectivity",
+    "candidate_path_k",
+    "candidate_paths",
+    "feasible_candidate_path_count",
+    "feasible_action_count"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "CandidatePath": {
+      "type": "object",
+      "properties": {
+        "rank": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "path_link_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "total_length_km": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "common_free_block_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "largest_common_free_block_length": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "feasible_slot_starts": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "rank",
+        "path_link_ids",
+        "common_free_block_count",
+        "largest_common_free_block_length",
+        "feasible_slot_starts"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

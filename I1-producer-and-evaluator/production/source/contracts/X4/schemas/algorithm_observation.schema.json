@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "case_id",
+    "task_type",
+    "step_index",
+    "current_time",
+    "request",
+    "spectrum"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "S1_X4_ALGORITHM_OBSERVATION_V1_0"
+    },
+    "case_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "task_type": {
+      "const": "X4"
+    },
+    "step_index": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "current_time": {
+      "type": "number"
+    },
+    "request": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "request_id",
+        "source_node_id",
+        "destination_node_id",
+        "required_slots",
+        "arrival_time",
+        "holding_time"
+      ],
+      "properties": {
+        "request_id": {
+          "type": "string"
+        },
+        "source_node_id": {
+          "type": "integer"
+        },
+        "destination_node_id": {
+          "type": "integer"
+        },
+        "required_slots": {
+          "type": "integer"
+        },
+        "arrival_time": {
+          "type": "number"
+        },
+        "holding_time": {
+          "type": "number"
+        }
+      }
+    },
+    "spectrum": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "slot_count",
+        "link_spectrum_states"
+      ],
+      "properties": {
+        "slot_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "link_spectrum_states": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "link_id",
+              "slot_availability"
+            ],
+            "properties": {
+              "link_id": {
+                "type": "integer"
+              },
+              "slot_availability": {
+                "type": "array",
+                "items": {
+                  "enum": [
+                    0,
+                    1
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "schema_version": "GX1_PRODUCTION_CONFIG_V2_0",
+  "batch_id": "GX1_EXAMPLE_BATCH",
+  "seed": 20260909,
+  "topologies": [
+    "../examples/topology_small_weighted.json"
+  ],
+  "case_counts": {
+    "G1": 12,
+    "G2": 10,
+    "G3": 8,
+    "X1": 8
+  },
+  "tasks": {
+    "G1": {
+      "conversion_weights": {
+        "EDGE_LIST_TO_ADJACENCY_LIST": 1,
+        "EDGE_LIST_TO_ADJACENCY_MATRIX": 1,
+        "ADJACENCY_LIST_TO_EDGE_LIST": 1,
+        "ADJACENCY_LIST_TO_ADJACENCY_MATRIX": 1,
+        "ADJACENCY_MATRIX_TO_EDGE_LIST": 1,
+        "ADJACENCY_MATRIX_TO_ADJACENCY_LIST": 1
+      },
+      "conversion_schedule": [
+        "EDGE_LIST_TO_ADJACENCY_LIST",
+        "EDGE_LIST_TO_ADJACENCY_MATRIX",
+        "ADJACENCY_LIST_TO_EDGE_LIST",
+        "ADJACENCY_LIST_TO_ADJACENCY_MATRIX",
+        "ADJACENCY_MATRIX_TO_EDGE_LIST",
+        "ADJACENCY_MATRIX_TO_ADJACENCY_LIST"
+      ]
+    },
+    "G2": {
+      "label_weights": {
+        "VALID": 1,
+        "WRONG_DIRECTION": 1,
+        "DISCONNECTED_PATH": 1,
+        "NODE_LINK_MISMATCH": 1,
+        "REPEATED_NODE": 1
+      },
+      "min_hops": 2,
+      "max_hops": 6,
+      "label_schedule": [
+        "VALID",
+        "WRONG_DIRECTION",
+        "DISCONNECTED_PATH",
+        "NODE_LINK_MISMATCH",
+        "REPEATED_NODE"
+      ],
+      "max_sampling_attempts": 256
+    },
+    "G3": {
+      "metric_weights": {
+        "HOP_COUNT": 1,
+        "TOTAL_LENGTH_KM": 1
+      },
+      "shared_weights": {
+        "true": 1,
+        "false": 1
+      },
+      "min_hops": 1,
+      "max_hops": 6,
+      "metric_schedule": [
+        "HOP_COUNT",
+        "HOP_COUNT",
+        "TOTAL_LENGTH_KM",
+        "TOTAL_LENGTH_KM"
+      ],
+      "shared_schedule": [
+        true,
+        false,
+        true,
+        false
+      ],
+      "max_sampling_attempts": 512
+    },
+    "X1": {
+      "metric_weights": {
+        "HOP_COUNT": 1,
+        "TOTAL_LENGTH_KM": 1
+      },
+      "min_hops": 1,
+      "max_hops": 6,
+      "metric_schedule": [
+        "HOP_COUNT",
+        "TOTAL_LENGTH_KM"
+      ],
+      "max_sampling_attempts": 256
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "case_id",
+    "task_type",
+    "pairing_id",
+    "topology_id",
+    "resource_state_id",
+    "initial_existing_connection_set_id",
+    "request_sequence_id",
+    "nodes",
+    "directed_links",
+    "slot_count",
+    "initial_link_spectrum_states",
+    "initial_existing_connections",
+    "episode_length",
+    "request_events",
+    "task_config"
+  ],
+  "properties": {
+    "task_type": {
+      "const": "X4"
+    },
+    "slot_count": {
+      "const": 320
+    },
+    "episode_length": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "request_events": {
+      "type": "array",
+      "minItems": 1
+    }
+  },
+  "additionalProperties": true
+}

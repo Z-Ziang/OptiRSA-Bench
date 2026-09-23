@@ -1,0 +1,266 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "production_config.schema.json",
+  "title": "PUBLIC_ENVIRONMENT V1.0 Production Configuration",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "batch_id",
+    "scientific_profile",
+    "resource_state_jobs",
+    "request_generation",
+    "concurrent",
+    "dynamic",
+    "execution",
+    "topologies"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "PUBLIC_ENV_PRODUCTION_CONFIG_V1_0"
+    },
+    "batch_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scientific_profile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "od_distribution",
+        "slot_count",
+        "payload_slot_values",
+        "payload_slot_probabilities",
+        "guard_band_slots",
+        "required_slot_values",
+        "candidate_path_k",
+        "holding_time_rate_mu",
+        "request_sampling_n_gt_100",
+        "max_supported_node_count"
+      ],
+      "properties": {
+        "od_distribution": {
+          "const": "UNIFORM"
+        },
+        "slot_count": {
+          "const": 320
+        },
+        "payload_slot_values": {
+          "const": [
+            1,
+            2,
+            4,
+            8
+          ]
+        },
+        "payload_slot_probabilities": {
+          "const": [
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ]
+        },
+        "guard_band_slots": {
+          "const": 1
+        },
+        "required_slot_values": {
+          "const": [
+            2,
+            3,
+            5,
+            9
+          ]
+        },
+        "candidate_path_k": {
+          "const": 5
+        },
+        "holding_time_rate_mu": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "request_sampling_n_gt_100": {
+          "const": 2000
+        },
+        "max_supported_node_count": {
+          "const": 500
+        }
+      }
+    },
+    "resource_state_jobs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "job_id",
+          "policy",
+          "load_band",
+          "seed",
+          "confirmation_seed"
+        ],
+        "properties": {
+          "job_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "policy": {
+            "enum": [
+              "KSP-FF",
+              "KSP-RF",
+              "Load-Balanced KSP-FF"
+            ]
+          },
+          "load_band": {
+            "enum": [
+              "LIGHT",
+              "MEDIUM",
+              "HIGH",
+              "HIGH_PRESSURE"
+            ]
+          },
+          "seed": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "confirmation_seed": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "diagnostic": {
+            "type": "boolean",
+            "default": false
+          }
+        }
+      }
+    },
+    "request_generation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "seed",
+        "derivation_anchor_job_id"
+      ],
+      "properties": {
+        "seed": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "derivation_anchor_job_id": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "concurrent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "enabled",
+        "set_count",
+        "requests_per_set",
+        "seed"
+      ],
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "set_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "requests_per_set": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "seed": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "dynamic": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "enabled",
+        "sequence_count",
+        "sequence_length",
+        "arrival_rate_lambda",
+        "seed"
+      ],
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "sequence_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "sequence_length": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "arrival_rate_lambda": {
+          "type": "number",
+          "minimum": 0
+        },
+        "seed": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "execution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "resume",
+        "continue_on_failure"
+      ],
+      "properties": {
+        "resume": {
+          "type": "boolean"
+        },
+        "continue_on_failure": {
+          "type": "boolean"
+        }
+      }
+    },
+    "topologies": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "topology_id",
+          "source_path",
+          "source_type"
+        ],
+        "properties": {
+          "topology_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_type": {
+            "enum": [
+              "GABRIEL_JSON",
+              "TOPOLOGYBENCH_XLSX",
+              "CANONICAL_PHYSICAL_JSON"
+            ]
+          },
+          "source_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-fA-F]{64}$"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "decision",
+    "path_rank",
+    "slot_start"
+  ],
+  "properties": {
+    "decision": {
+      "enum": [
+        "ACCEPT",
+        "REJECT"
+      ]
+    },
+    "path_rank": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "slot_start": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "decision": {
+            "const": "REJECT"
+          }
+        },
+        "required": [
+          "decision"
+        ]
+      },
+      "then": {
+        "properties": {
+          "path_rank": {
+            "type": "null"
+          },
+          "slot_start": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "decision": {
+            "const": "ACCEPT"
+          }
+        },
+        "required": [
+          "decision"
+        ]
+      },
+      "then": {
+        "properties": {
+          "path_rank": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "slot_start": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      }
+    }
+  ]
+}

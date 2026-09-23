@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "profile",
+    "case_count",
+    "allow_shortfall",
+    "k_values",
+    "run_reference_panel"
+  ],
+  "properties": {
+    "profile": {
+      "type": "string",
+      "minLength": 1
+    },
+    "case_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "allow_shortfall": {
+      "type": "boolean"
+    },
+    "k_values": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "enum": [
+          3,
+          5
+        ]
+      }
+    },
+    "run_reference_panel": {
+      "type": "boolean"
+    }
+  }
+}

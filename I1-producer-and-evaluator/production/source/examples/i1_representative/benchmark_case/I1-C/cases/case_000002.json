@@ -1,0 +1,37 @@
+{
+  "case_id": "I1_C_000002",
+  "llm_prompt": "请同时为以下业务请求建立业务连接：\n业务请求req_gabriel_10_5_000031：请为节点3到节点4建立一项业务，需要连续使用9个频谱槽位。\n业务请求req_gabriel_10_5_000082：请为节点9到节点0建立一项业务，需要连续使用3个频谱槽位。\n业务请求req_gabriel_10_5_000009：请为节点0到节点9建立一项业务，需要连续使用5个频谱槽位。\n业务请求req_gabriel_10_5_000020：请为节点2到节点1建立一项业务，需要连续使用2个频谱槽位。\n联合资源分配时，优先选择全部业务请求占用总槽位数最少的方案；总槽位数相同时，优先选择资源分配后全网频谱碎片程度最低的方案。",
+  "answer": {
+    "intent_type": "CONCURRENT",
+    "requests": [
+      {
+        "request_id": "req_gabriel_10_5_000031",
+        "source_node_id": 3,
+        "destination_node_id": 4,
+        "required_slots": 9
+      },
+      {
+        "request_id": "req_gabriel_10_5_000082",
+        "source_node_id": 9,
+        "destination_node_id": 0,
+        "required_slots": 3
+      },
+      {
+        "request_id": "req_gabriel_10_5_000009",
+        "source_node_id": 0,
+        "destination_node_id": 9,
+        "required_slots": 5
+      },
+      {
+        "request_id": "req_gabriel_10_5_000020",
+        "source_node_id": 2,
+        "destination_node_id": 1,
+        "required_slots": 2
+      }
+    ],
+    "objectives": [
+      "MIN-TOTAL-SLOT-USAGE",
+      "MIN-FRAGMENTATION"
+    ]
+  }
+}

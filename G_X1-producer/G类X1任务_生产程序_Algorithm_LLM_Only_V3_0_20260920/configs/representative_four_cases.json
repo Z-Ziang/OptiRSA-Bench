@@ -1,0 +1,45 @@
+{
+  "schema_version": "GX1_PRODUCTION_CONFIG_V2_0",
+  "batch_id": "GX1_REPRESENTATIVE_FOUR_CASES",
+  "seed": 20260909,
+  "topologies": [
+    "../examples/topology_small_weighted.json"
+  ],
+  "case_counts": {
+    "G1": 1,
+    "G2": 1,
+    "G3": 1,
+    "X1": 1
+  },
+  "tasks": {
+    "G1": {
+      "conversion_weights": {
+        "EDGE_LIST_TO_ADJACENCY_LIST": 1
+      }
+    },
+    "G2": {
+      "label_weights": {
+        "WRONG_DIRECTION": 1
+      },
+      "min_hops": 2,
+      "max_hops": 5
+    },
+    "G3": {
+      "metric_weights": {
+        "TOTAL_LENGTH_KM": 1
+      },
+      "shared_weights": {
+        "true": 1
+      },
+      "min_hops": 1,
+      "max_hops": 6
+    },
+    "X1": {
+      "metric_weights": {
+        "TOTAL_LENGTH_KM": 1
+      },
+      "min_hops": 2,
+      "max_hops": 6
+    }
+  }
+}

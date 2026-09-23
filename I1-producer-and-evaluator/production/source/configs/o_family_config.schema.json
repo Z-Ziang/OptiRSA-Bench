@@ -1,0 +1,237 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "o_family_config.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "profile",
+    "seed",
+    "tasks",
+    "execution"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "O_FAMILY_PRODUCTION_CONFIG_V1_0"
+    },
+    "profile": {
+      "enum": [
+        "FORMAL",
+        "REPRESENTATIVE"
+      ]
+    },
+    "seed": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "tasks": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "O1",
+        "O2-S",
+        "O2-C"
+      ],
+      "properties": {
+        "O1": {
+          "$ref": "#/$defs/o1"
+        },
+        "O2-S": {
+          "$ref": "#/$defs/o2s"
+        },
+        "O2-C": {
+          "$ref": "#/$defs/o2c"
+        }
+      }
+    },
+    "execution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "allow_shortfall",
+        "resume"
+      ],
+      "properties": {
+        "allow_shortfall": {
+          "type": "boolean"
+        },
+        "resume": {
+          "type": "boolean"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "common": {
+      "type": "object"
+    },
+    "o1": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "enabled",
+        "case_count",
+        "request_count_values",
+        "fixed_path_rank_values",
+        "selection",
+        "max_complete_solutions"
+      ],
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "case_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "request_count_values": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              14,
+              16
+            ]
+          }
+        },
+        "fixed_path_rank_values": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        },
+        "selection": {
+          "enum": [
+            "PREFIX",
+            "HIGH_CONFLICT_O1",
+            "LOW_ACTION"
+          ]
+        },
+        "max_complete_solutions": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "o2s": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "enabled",
+        "case_count",
+        "candidate_k_values",
+        "selection",
+        "max_complete_solutions"
+      ],
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "case_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "candidate_k_values": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              2,
+              3,
+              5
+            ]
+          }
+        },
+        "selection": {
+          "enum": [
+            "PREFIX",
+            "LOW_ACTION"
+          ]
+        },
+        "max_complete_solutions": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "o2c": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "enabled",
+        "case_count",
+        "request_count_values",
+        "candidate_k_values",
+        "selection",
+        "max_complete_solutions"
+      ],
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "case_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "request_count_values": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              2,
+              4,
+              6,
+              8,
+              9,
+              10,
+              11,
+              12,
+              14,
+              16
+            ]
+          }
+        },
+        "candidate_k_values": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              2,
+              3,
+              5
+            ]
+          }
+        },
+        "selection": {
+          "enum": [
+            "PREFIX",
+            "HIGH_CONFLICT_O2C",
+            "LOW_ACTION"
+          ]
+        },
+        "max_complete_solutions": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    }
+  }
+}

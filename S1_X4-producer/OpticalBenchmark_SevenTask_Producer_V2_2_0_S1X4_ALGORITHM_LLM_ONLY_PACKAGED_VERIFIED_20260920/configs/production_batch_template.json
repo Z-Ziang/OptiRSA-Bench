@@ -1,0 +1,111 @@
+{
+  "schema_version": "PUBLIC_ENV_PRODUCTION_CONFIG_V1_0",
+  "batch_id": "REPLACE_WITH_FORMAL_BATCH_ID",
+  "scientific_profile": {
+    "od_distribution": "UNIFORM",
+    "slot_count": 320,
+    "payload_slot_values": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "payload_slot_probabilities": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "guard_band_slots": 1,
+    "required_slot_values": [
+      2,
+      3,
+      5,
+      9
+    ],
+    "candidate_path_k": 5,
+    "holding_time_rate_mu": 0.06666666666666667,
+    "request_sampling_n_gt_100": 2000,
+    "max_supported_node_count": 500
+  },
+  "resource_state_jobs": [
+    {
+      "job_id": "kspff_medium_s1",
+      "policy": "KSP-FF",
+      "load_band": "MEDIUM",
+      "seed": 1001,
+      "confirmation_seed": 9001
+    },
+    {
+      "job_id": "kspff_high_s1",
+      "policy": "KSP-FF",
+      "load_band": "HIGH",
+      "seed": 1002,
+      "confirmation_seed": 9002
+    },
+    {
+      "job_id": "ksprf_medium_s1",
+      "policy": "KSP-RF",
+      "load_band": "MEDIUM",
+      "seed": 1101,
+      "confirmation_seed": 9101
+    },
+    {
+      "job_id": "ksprf_high_s1",
+      "policy": "KSP-RF",
+      "load_band": "HIGH",
+      "seed": 1102,
+      "confirmation_seed": 9102
+    },
+    {
+      "job_id": "lbkspff_medium_s1",
+      "policy": "Load-Balanced KSP-FF",
+      "load_band": "MEDIUM",
+      "seed": 1201,
+      "confirmation_seed": 9201
+    },
+    {
+      "job_id": "lbkspff_high_s1",
+      "policy": "Load-Balanced KSP-FF",
+      "load_band": "HIGH",
+      "seed": 1202,
+      "confirmation_seed": 9202
+    }
+  ],
+  "request_generation": {
+    "seed": 2001,
+    "derivation_anchor_job_id": "kspff_medium_s1"
+  },
+  "concurrent": {
+    "enabled": false,
+    "set_count": 0,
+    "requests_per_set": 0,
+    "seed": 3001
+  },
+  "dynamic": {
+    "enabled": false,
+    "anchor_job_ids": [],
+    "sequence_length": 0,
+    "sequences_per_condition": 0,
+    "arrival_rate_mode": "MATCH_STATE",
+    "seed": 4001
+  },
+  "execution": {
+    "resume": true,
+    "continue_on_failure": true
+  },
+  "topologies": [
+    {
+      "topology_id": "top_gabriel_125_1",
+      "source_path": "../inputs/examples/gabriel_125_1.json",
+      "source_type": "GABRIEL_JSON",
+      "source_sha256": "6f8c1a1e929134f8fc1238db503d53ca0ed60aaa2ebfe8ad4f193830775626a6"
+    },
+    {
+      "topology_id": "top_gabriel_300_7",
+      "source_path": "../inputs/examples/gabriel_300_7.json",
+      "source_type": "GABRIEL_JSON",
+      "source_sha256": "feedb6f5cc2207a26bc61834387390e4f996ac1d55c1be4e376e50843384f7bf"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "provider": "siliconflow",
+  "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+  "base_url": "https://api.siliconflow.cn/v1",
+  "api_key_env": "SILICONFLOW_API_KEY",
+  "profiles": {
+    "A": {
+      "enable_thinking": false,
+      "thinking_budget": null,
+      "structured_output_mode": "JSON_SCHEMA",
+      "max_tokens": 512
+    },
+    "B": {
+      "enable_thinking": true,
+      "thinking_budget": 1024,
+      "structured_output_mode": "JSON_SCHEMA",
+      "max_tokens": 512
+    }
+  },
+  "note": "This example contains no credential. The key is read only from SILICONFLOW_API_KEY."
+}
