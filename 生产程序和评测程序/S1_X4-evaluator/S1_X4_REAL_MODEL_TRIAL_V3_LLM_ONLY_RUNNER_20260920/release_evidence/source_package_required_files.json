@@ -1,0 +1,27 @@
+{
+  "schema_version": "SOURCE_PACKAGE_REQUIRED_FILES_V1",
+  "purpose": "Required non-scientific assets that must remain in every self-contained source release.",
+  "required_directories": [
+    "configs",
+    "contracts",
+    "docs",
+    "examples",
+    "schemas",
+    "src",
+    "tests"
+  ],
+  "required_files": [
+    "benchmark_s1x4.py",
+    "requirements.txt",
+    "docs/格式规范_冻结版.txt",
+    "contracts/S1/llm_system_prompt.txt",
+    "contracts/X4/llm_system_prompt.txt",
+    "contracts/S1/task_contract.json",
+    "contracts/X4/task_contract.json",
+    "schemas/schema_manifest.json",
+    "src/s1_x4/public_dataset_v2.py",
+    "src/s1_x4/generation_spec.py",
+    "src/s1_x4/algorithm_api/run_config.py",
+    "tests/test_s1x4_public_dataset_v2.py"
+  ]
+}
