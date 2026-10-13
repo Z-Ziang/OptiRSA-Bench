@@ -1,0 +1,25 @@
+{
+  "schema_version": "GX1_V31_SCIENTIFIC_EQUIVALENCE_REPORT_V1_0",
+  "valid": true,
+  "paired_case_count": 8619,
+  "case_id_mismatch_count": 0,
+  "topology_mismatch_count": 0,
+  "root_mismatch_count": 0,
+  "truth_mismatch_count": 0,
+  "reference_mismatch_count": 0,
+  "oracle_truth_mismatch_count": 0,
+  "proof_method": {
+    "root": "byte-for-byte SHA256/bytes comparison of zh and en root_case.json",
+    "truth": "byte-for-byte comparison of zh and en truth.json",
+    "oracle": "direct equality of root_case.answer and truth.answer across zh/en",
+    "reference": "direct equality of every English public benchmark_case.reference with English root_case.answer"
+  },
+  "mismatches": {
+    "case_id": [],
+    "topology": [],
+    "root": [],
+    "truth": [],
+    "reference": [],
+    "oracle_truth": []
+  }
+}

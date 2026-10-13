@@ -1,0 +1,149 @@
+{
+  "case_id": "G3_001204",
+  "task_type": "G3",
+  "answer": {
+    "shortest_paths": [
+      {
+        "pair_id": "pair_A",
+        "path_node_ids": [
+          0,
+          32,
+          83,
+          130,
+          52,
+          54,
+          15,
+          121,
+          123,
+          88,
+          61,
+          76,
+          1
+        ],
+        "path_link_ids": [
+          2,
+          222,
+          456,
+          327,
+          324,
+          115,
+          118,
+          532,
+          469,
+          367,
+          364,
+          9
+        ],
+        "hop_count": 12,
+        "total_length_km": 984.4099870425395
+      },
+      {
+        "pair_id": "pair_B",
+        "path_node_ids": [
+          0,
+          32,
+          83,
+          130,
+          52,
+          54,
+          15,
+          121,
+          123,
+          2
+        ],
+        "path_link_ids": [
+          2,
+          222,
+          456,
+          327,
+          324,
+          115,
+          118,
+          532,
+          25
+        ],
+        "hop_count": 9,
+        "total_length_km": 622.7492399356656
+      }
+    ],
+    "has_shared_directed_link": true,
+    "shared_link_ids": [
+      2,
+      115,
+      118,
+      222,
+      324,
+      327,
+      456,
+      532
+    ]
+  },
+  "oracle_shortest_paths": [
+    {
+      "pair_id": "pair_A",
+      "path_node_ids": [
+        0,
+        32,
+        83,
+        130,
+        52,
+        54,
+        15,
+        121,
+        123,
+        88,
+        61,
+        76,
+        1
+      ],
+      "path_link_ids": [
+        2,
+        222,
+        456,
+        327,
+        324,
+        115,
+        118,
+        532,
+        469,
+        367,
+        364,
+        9
+      ],
+      "hop_count": 12,
+      "total_length_km": 984.4099870425395,
+      "multiplicity": 1,
+      "optimal_cost": 984.4099870425395
+    },
+    {
+      "pair_id": "pair_B",
+      "path_node_ids": [
+        0,
+        32,
+        83,
+        130,
+        52,
+        54,
+        15,
+        121,
+        123,
+        2
+      ],
+      "path_link_ids": [
+        2,
+        222,
+        456,
+        327,
+        324,
+        115,
+        118,
+        532,
+        25
+      ],
+      "hop_count": 9,
+      "total_length_km": 622.7492399356656,
+      "multiplicity": 1,
+      "optimal_cost": 622.7492399356656
+    }
+  ]
+}

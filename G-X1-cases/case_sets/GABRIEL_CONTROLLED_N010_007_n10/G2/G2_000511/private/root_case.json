@@ -1,0 +1,193 @@
+{
+  "schema_version": "GX1_ROOT_CASE_V2_0",
+  "case_id": "G2_000511",
+  "task_type": "G2",
+  "topology_id": "GABRIEL_CONTROLLED_N010_007",
+  "nodes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "directed_links": [
+    {
+      "link_id": 0,
+      "source_node_id": 0,
+      "destination_node_id": 1
+    },
+    {
+      "link_id": 1,
+      "source_node_id": 1,
+      "destination_node_id": 0
+    },
+    {
+      "link_id": 2,
+      "source_node_id": 0,
+      "destination_node_id": 6
+    },
+    {
+      "link_id": 3,
+      "source_node_id": 6,
+      "destination_node_id": 0
+    },
+    {
+      "link_id": 4,
+      "source_node_id": 1,
+      "destination_node_id": 6
+    },
+    {
+      "link_id": 5,
+      "source_node_id": 6,
+      "destination_node_id": 1
+    },
+    {
+      "link_id": 6,
+      "source_node_id": 1,
+      "destination_node_id": 9
+    },
+    {
+      "link_id": 7,
+      "source_node_id": 9,
+      "destination_node_id": 1
+    },
+    {
+      "link_id": 8,
+      "source_node_id": 2,
+      "destination_node_id": 3
+    },
+    {
+      "link_id": 9,
+      "source_node_id": 3,
+      "destination_node_id": 2
+    },
+    {
+      "link_id": 10,
+      "source_node_id": 2,
+      "destination_node_id": 4
+    },
+    {
+      "link_id": 11,
+      "source_node_id": 4,
+      "destination_node_id": 2
+    },
+    {
+      "link_id": 12,
+      "source_node_id": 2,
+      "destination_node_id": 8
+    },
+    {
+      "link_id": 13,
+      "source_node_id": 8,
+      "destination_node_id": 2
+    },
+    {
+      "link_id": 14,
+      "source_node_id": 3,
+      "destination_node_id": 8
+    },
+    {
+      "link_id": 15,
+      "source_node_id": 8,
+      "destination_node_id": 3
+    },
+    {
+      "link_id": 16,
+      "source_node_id": 4,
+      "destination_node_id": 7
+    },
+    {
+      "link_id": 17,
+      "source_node_id": 7,
+      "destination_node_id": 4
+    },
+    {
+      "link_id": 18,
+      "source_node_id": 4,
+      "destination_node_id": 9
+    },
+    {
+      "link_id": 19,
+      "source_node_id": 9,
+      "destination_node_id": 4
+    },
+    {
+      "link_id": 20,
+      "source_node_id": 5,
+      "destination_node_id": 7
+    },
+    {
+      "link_id": 21,
+      "source_node_id": 7,
+      "destination_node_id": 5
+    },
+    {
+      "link_id": 22,
+      "source_node_id": 5,
+      "destination_node_id": 8
+    },
+    {
+      "link_id": 23,
+      "source_node_id": 8,
+      "destination_node_id": 5
+    },
+    {
+      "link_id": 24,
+      "source_node_id": 6,
+      "destination_node_id": 7
+    },
+    {
+      "link_id": 25,
+      "source_node_id": 7,
+      "destination_node_id": 6
+    }
+  ],
+  "source_node_id": 0,
+  "destination_node_id": 3,
+  "candidate_path": {
+    "path_node_ids": [
+      0,
+      1,
+      9,
+      4,
+      2,
+      3
+    ],
+    "path_link_ids": [
+      0,
+      6,
+      19,
+      11,
+      8
+    ]
+  },
+  "oracle_label": "VALID",
+  "answer": {
+    "is_valid": true,
+    "error_type": null
+  },
+  "generation_metadata": {
+    "requested_hop_range": [
+      5,
+      5
+    ],
+    "effective_candidate_hop_count": 5,
+    "topology_diameter_hops": 5,
+    "intended_label": "VALID",
+    "fresh_first_match_label": "VALID",
+    "case_variant": "VALID",
+    "derived_seed": 11272776774743417629,
+    "master_seed": 20260922,
+    "topology_id": "GABRIEL_CONTROLLED_N010_007",
+    "topology_sequence_id": 103,
+    "source_category": "controlled_gabriel_reference_extension",
+    "length_semantics": "synthetic_scaled_geometry_km",
+    "size_bin": "5-10",
+    "production_case_subtype": "long"
+  }
+}

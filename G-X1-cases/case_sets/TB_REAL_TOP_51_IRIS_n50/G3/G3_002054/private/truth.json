@@ -1,0 +1,120 @@
+{
+  "case_id": "G3_002054",
+  "task_type": "G3",
+  "answer": {
+    "shortest_paths": [
+      {
+        "pair_id": "pair_A",
+        "path_node_ids": [
+          0,
+          35,
+          34,
+          13,
+          26,
+          23,
+          24,
+          12,
+          11
+        ],
+        "path_link_ids": [
+          8,
+          105,
+          53,
+          48,
+          79,
+          76,
+          45,
+          41
+        ],
+        "hop_count": 8,
+        "total_length_km": 517.9352881402543
+      },
+      {
+        "pair_id": "pair_B",
+        "path_node_ids": [
+          11,
+          12,
+          24,
+          23,
+          26,
+          13,
+          34,
+          35,
+          0
+        ],
+        "path_link_ids": [
+          40,
+          44,
+          77,
+          78,
+          49,
+          52,
+          104,
+          9
+        ],
+        "hop_count": 8,
+        "total_length_km": 517.9352881402542
+      }
+    ],
+    "has_shared_directed_link": false,
+    "shared_link_ids": []
+  },
+  "oracle_shortest_paths": [
+    {
+      "pair_id": "pair_A",
+      "path_node_ids": [
+        0,
+        35,
+        34,
+        13,
+        26,
+        23,
+        24,
+        12,
+        11
+      ],
+      "path_link_ids": [
+        8,
+        105,
+        53,
+        48,
+        79,
+        76,
+        45,
+        41
+      ],
+      "hop_count": 8,
+      "total_length_km": 517.9352881402543,
+      "multiplicity": 1,
+      "optimal_cost": 517.9352881402543
+    },
+    {
+      "pair_id": "pair_B",
+      "path_node_ids": [
+        11,
+        12,
+        24,
+        23,
+        26,
+        13,
+        34,
+        35,
+        0
+      ],
+      "path_link_ids": [
+        40,
+        44,
+        77,
+        78,
+        49,
+        52,
+        104,
+        9
+      ],
+      "hop_count": 8,
+      "total_length_km": 517.9352881402542,
+      "multiplicity": 1,
+      "optimal_cost": 517.9352881402542
+    }
+  ]
+}

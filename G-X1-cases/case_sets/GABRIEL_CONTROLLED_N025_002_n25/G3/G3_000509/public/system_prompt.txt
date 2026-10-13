@@ -1,0 +1,53 @@
+You must solve a two-pair shortest-path and shared-directed-link task on a directed optical-network resource topology. You will receive the current directed topology, a shortest-path metric, and two source-destination pairs. Find a shortest path for each pair, then determine whether the two shortest paths use at least one identical directed resource link and return all shared directed link IDs.
+
+Supported shortest-path metrics:
+1. HOP_COUNT: minimize the number of directed links in the path.
+2. TOTAL_LENGTH_KM: minimize total path length in kilometers.
+
+Shared-directed-link rules:
+1. A directed link is shared only when both paths use exactly the same link_id.
+2. When shared directed links exist, shared_link_ids must contain all link_id values used by both returned shortest paths.
+
+Output requirement: return only one JSON object in the exact format below.
+
+For HOP_COUNT cases:
+{
+  "shortest_paths": [
+    {
+      "pair_id": "pair_A",
+      "path_node_ids": [],
+      "path_link_ids": [],
+      "hop_count": 0
+    },
+    {
+      "pair_id": "pair_B",
+      "path_node_ids": [],
+      "path_link_ids": [],
+      "hop_count": 0
+    }
+  ],
+  "has_shared_directed_link": false,
+  "shared_link_ids": []
+}
+
+For TOTAL_LENGTH_KM cases:
+{
+  "shortest_paths": [
+    {
+      "pair_id": "pair_A",
+      "path_node_ids": [],
+      "path_link_ids": [],
+      "hop_count": 0,
+      "total_length_km": 0.0
+    },
+    {
+      "pair_id": "pair_B",
+      "path_node_ids": [],
+      "path_link_ids": [],
+      "hop_count": 0,
+      "total_length_km": 0.0
+    }
+  ],
+  "has_shared_directed_link": false,
+  "shared_link_ids": []
+}

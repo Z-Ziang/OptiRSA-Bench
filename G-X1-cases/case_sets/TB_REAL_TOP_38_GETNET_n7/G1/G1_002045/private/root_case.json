@@ -1,0 +1,165 @@
+{
+  "schema_version": "GX1_ROOT_CASE_V2_0",
+  "case_id": "G1_002045",
+  "task_type": "G1",
+  "topology_id": "TB_REAL::TOP_38_GETNET",
+  "nodes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "undirected_edges": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      5,
+      6
+    ]
+  ],
+  "conversion": "ADJACENCY_MATRIX_TO_EDGE_LIST",
+  "source_representation": "ADJACENCY_MATRIX",
+  "target_representation": "EDGE_LIST",
+  "source_payload": [
+    [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0
+    ]
+  ],
+  "answer": {
+    "representation_type": "EDGE_LIST",
+    "edge_list": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        6
+      ]
+    ]
+  },
+  "generation_metadata": {
+    "case_variant": "ADJACENCY_MATRIX_TO_EDGE_LIST",
+    "derived_seed": 2217320888390675324,
+    "master_seed": 20260922,
+    "topology_id": "TB_REAL::TOP_38_GETNET",
+    "topology_sequence_id": 499,
+    "source_category": "real",
+    "length_semantics": "real_trusted_km",
+    "size_bin": "5-10",
+    "production_case_subtype": "representation"
+  }
+}

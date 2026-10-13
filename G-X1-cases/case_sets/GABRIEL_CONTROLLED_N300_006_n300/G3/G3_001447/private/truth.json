@@ -1,0 +1,130 @@
+{
+  "case_id": "G3_001447",
+  "task_type": "G3",
+  "answer": {
+    "shortest_paths": [
+      {
+        "pair_id": "pair_A",
+        "path_node_ids": [
+          0,
+          282,
+          173,
+          116,
+          187,
+          52,
+          1
+        ],
+        "path_link_ids": [
+          10,
+          963,
+          733,
+          734,
+          379,
+          13
+        ],
+        "hop_count": 6
+      },
+      {
+        "pair_id": "pair_B",
+        "path_node_ids": [
+          0,
+          282,
+          173,
+          116,
+          187,
+          52,
+          283,
+          141,
+          220,
+          65,
+          118,
+          80,
+          7
+        ],
+        "path_link_ids": [
+          10,
+          963,
+          733,
+          734,
+          379,
+          382,
+          853,
+          850,
+          451,
+          446,
+          525,
+          61
+        ],
+        "hop_count": 12
+      }
+    ],
+    "has_shared_directed_link": true,
+    "shared_link_ids": [
+      10,
+      379,
+      733,
+      734,
+      963
+    ]
+  },
+  "oracle_shortest_paths": [
+    {
+      "pair_id": "pair_A",
+      "path_node_ids": [
+        0,
+        282,
+        173,
+        116,
+        187,
+        52,
+        1
+      ],
+      "path_link_ids": [
+        10,
+        963,
+        733,
+        734,
+        379,
+        13
+      ],
+      "hop_count": 6,
+      "multiplicity": 1,
+      "optimal_cost": 6.0
+    },
+    {
+      "pair_id": "pair_B",
+      "path_node_ids": [
+        0,
+        282,
+        173,
+        116,
+        187,
+        52,
+        283,
+        141,
+        220,
+        65,
+        118,
+        80,
+        7
+      ],
+      "path_link_ids": [
+        10,
+        963,
+        733,
+        734,
+        379,
+        382,
+        853,
+        850,
+        451,
+        446,
+        525,
+        61
+      ],
+      "hop_count": 12,
+      "multiplicity": 1,
+      "optimal_cost": 12.0
+    }
+  ]
+}

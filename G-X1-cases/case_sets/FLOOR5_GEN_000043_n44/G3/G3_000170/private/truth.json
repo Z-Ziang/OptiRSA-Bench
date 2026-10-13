@@ -1,0 +1,128 @@
+{
+  "case_id": "G3_000170",
+  "task_type": "G3",
+  "answer": {
+    "shortest_paths": [
+      {
+        "pair_id": "pair_A",
+        "path_node_ids": [
+          0,
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          14,
+          15,
+          17
+        ],
+        "path_link_ids": [
+          2,
+          14,
+          24,
+          32,
+          40,
+          48,
+          56,
+          62,
+          68
+        ],
+        "hop_count": 9,
+        "total_length_km": 959.2050873202214
+      },
+      {
+        "pair_id": "pair_B",
+        "path_node_ids": [
+          17,
+          15,
+          14,
+          12,
+          10,
+          8,
+          6,
+          4,
+          2,
+          0
+        ],
+        "path_link_ids": [
+          69,
+          63,
+          57,
+          49,
+          41,
+          33,
+          25,
+          15,
+          3
+        ],
+        "hop_count": 9,
+        "total_length_km": 959.2050873202215
+      }
+    ],
+    "has_shared_directed_link": false,
+    "shared_link_ids": []
+  },
+  "oracle_shortest_paths": [
+    {
+      "pair_id": "pair_A",
+      "path_node_ids": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        15,
+        17
+      ],
+      "path_link_ids": [
+        2,
+        14,
+        24,
+        32,
+        40,
+        48,
+        56,
+        62,
+        68
+      ],
+      "hop_count": 9,
+      "total_length_km": 959.2050873202214,
+      "multiplicity": 1,
+      "optimal_cost": 959.2050873202214
+    },
+    {
+      "pair_id": "pair_B",
+      "path_node_ids": [
+        17,
+        15,
+        14,
+        12,
+        10,
+        8,
+        6,
+        4,
+        2,
+        0
+      ],
+      "path_link_ids": [
+        69,
+        63,
+        57,
+        49,
+        41,
+        33,
+        25,
+        15,
+        3
+      ],
+      "hop_count": 9,
+      "total_length_km": 959.2050873202215,
+      "multiplicity": 1,
+      "optimal_cost": 959.2050873202215
+    }
+  ]
+}

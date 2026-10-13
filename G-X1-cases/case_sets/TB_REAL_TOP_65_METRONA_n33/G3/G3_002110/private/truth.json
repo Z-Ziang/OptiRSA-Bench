@@ -1,0 +1,128 @@
+{
+  "case_id": "G3_002110",
+  "task_type": "G3",
+  "answer": {
+    "shortest_paths": [
+      {
+        "pair_id": "pair_A",
+        "path_node_ids": [
+          0,
+          1,
+          2,
+          3,
+          20,
+          19,
+          15,
+          16,
+          17,
+          18
+        ],
+        "path_link_ids": [
+          0,
+          4,
+          6,
+          10,
+          51,
+          43,
+          40,
+          44,
+          46
+        ],
+        "hop_count": 9,
+        "total_length_km": 672.3599999999999
+      },
+      {
+        "pair_id": "pair_B",
+        "path_node_ids": [
+          18,
+          17,
+          16,
+          15,
+          19,
+          20,
+          3,
+          2,
+          1,
+          0
+        ],
+        "path_link_ids": [
+          47,
+          45,
+          41,
+          42,
+          50,
+          11,
+          7,
+          5,
+          1
+        ],
+        "hop_count": 9,
+        "total_length_km": 672.36
+      }
+    ],
+    "has_shared_directed_link": false,
+    "shared_link_ids": []
+  },
+  "oracle_shortest_paths": [
+    {
+      "pair_id": "pair_A",
+      "path_node_ids": [
+        0,
+        1,
+        2,
+        3,
+        20,
+        19,
+        15,
+        16,
+        17,
+        18
+      ],
+      "path_link_ids": [
+        0,
+        4,
+        6,
+        10,
+        51,
+        43,
+        40,
+        44,
+        46
+      ],
+      "hop_count": 9,
+      "total_length_km": 672.3599999999999,
+      "multiplicity": 1,
+      "optimal_cost": 672.3599999999999
+    },
+    {
+      "pair_id": "pair_B",
+      "path_node_ids": [
+        18,
+        17,
+        16,
+        15,
+        19,
+        20,
+        3,
+        2,
+        1,
+        0
+      ],
+      "path_link_ids": [
+        47,
+        45,
+        41,
+        42,
+        50,
+        11,
+        7,
+        5,
+        1
+      ],
+      "hop_count": 9,
+      "total_length_km": 672.36,
+      "multiplicity": 1,
+      "optimal_cost": 672.36
+    }
+  ]
+}

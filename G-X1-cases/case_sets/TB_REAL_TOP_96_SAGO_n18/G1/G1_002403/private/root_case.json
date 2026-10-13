@@ -1,0 +1,255 @@
+{
+  "schema_version": "GX1_ROOT_CASE_V2_0",
+  "case_id": "G1_002403",
+  "task_type": "G1",
+  "topology_id": "TB_REAL::TOP_96_SAGO",
+  "nodes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "undirected_edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      16
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3,
+      17
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      8,
+      9
+    ],
+    [
+      8,
+      11
+    ],
+    [
+      10,
+      11
+    ],
+    [
+      10,
+      13
+    ],
+    [
+      12,
+      13
+    ],
+    [
+      12,
+      15
+    ],
+    [
+      14,
+      15
+    ],
+    [
+      14,
+      17
+    ],
+    [
+      16,
+      17
+    ]
+  ],
+  "conversion": "ADJACENCY_LIST_TO_EDGE_LIST",
+  "source_representation": "ADJACENCY_LIST",
+  "target_representation": "EDGE_LIST",
+  "source_payload": {
+    "0": [
+      1,
+      4
+    ],
+    "1": [
+      0,
+      16
+    ],
+    "2": [
+      3,
+      5
+    ],
+    "3": [
+      2,
+      17
+    ],
+    "4": [
+      0,
+      7
+    ],
+    "5": [
+      2
+    ],
+    "6": [
+      7
+    ],
+    "7": [
+      4,
+      6
+    ],
+    "8": [
+      9,
+      11
+    ],
+    "9": [
+      8
+    ],
+    "10": [
+      11,
+      13
+    ],
+    "11": [
+      8,
+      10
+    ],
+    "12": [
+      13,
+      15
+    ],
+    "13": [
+      10,
+      12
+    ],
+    "14": [
+      15,
+      17
+    ],
+    "15": [
+      12,
+      14
+    ],
+    "16": [
+      1,
+      17
+    ],
+    "17": [
+      3,
+      14,
+      16
+    ]
+  },
+  "answer": {
+    "representation_type": "EDGE_LIST",
+    "edge_list": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        16
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        17
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        8,
+        11
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        10,
+        13
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        12,
+        15
+      ],
+      [
+        14,
+        15
+      ],
+      [
+        14,
+        17
+      ],
+      [
+        16,
+        17
+      ]
+    ]
+  },
+  "generation_metadata": {
+    "case_variant": "ADJACENCY_LIST_TO_EDGE_LIST",
+    "derived_seed": 5744970521605014273,
+    "master_seed": 20260922,
+    "topology_id": "TB_REAL::TOP_96_SAGO",
+    "topology_sequence_id": 559,
+    "source_category": "real",
+    "length_semantics": "real_trusted_km",
+    "size_bin": "11-29",
+    "production_case_subtype": "representation"
+  }
+}

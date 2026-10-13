@@ -1,0 +1,224 @@
+{
+  "cases": 8619,
+  "tasks": {
+    "G1": 2430,
+    "G2": 2815,
+    "G3": 2248,
+    "X1": 1126
+  },
+  "topology_ids": 563,
+  "canonical_graph_hashes": 561,
+  "node_min": 5,
+  "node_max": 500,
+  "source_categories": {
+    "floor5_generated": 85,
+    "controlled_gabriel_reference_extension": 360,
+    "first_stage_generated": 20,
+    "real": 98
+  },
+  "scale": [
+    {
+      "scale": "5–10",
+      "topologies": 38,
+      "G1": 228,
+      "G2": 190,
+      "G3": 148,
+      "X1": 76,
+      "total": 642
+    },
+    {
+      "scale": "11–29",
+      "topologies": 97,
+      "G1": 582,
+      "G2": 485,
+      "G3": 388,
+      "X1": 194,
+      "total": 1649
+    },
+    {
+      "scale": "30–59",
+      "topologies": 84,
+      "G1": 504,
+      "G2": 420,
+      "G3": 336,
+      "X1": 168,
+      "total": 1428
+    },
+    {
+      "scale": "60–100",
+      "topologies": 107,
+      "G1": 642,
+      "G2": 535,
+      "G3": 428,
+      "X1": 214,
+      "total": 1819
+    },
+    {
+      "scale": "101–142",
+      "topologies": 26,
+      "G1": 52,
+      "G2": 130,
+      "G3": 104,
+      "X1": 52,
+      "total": 338
+    },
+    {
+      "scale": "143–200",
+      "topologies": 44,
+      "G1": 88,
+      "G2": 220,
+      "G3": 176,
+      "X1": 88,
+      "total": 572
+    },
+    {
+      "scale": "201–300",
+      "topologies": 55,
+      "G1": 110,
+      "G2": 275,
+      "G3": 220,
+      "X1": 110,
+      "total": 715
+    },
+    {
+      "scale": "301–400",
+      "topologies": 56,
+      "G1": 112,
+      "G2": 280,
+      "G3": 224,
+      "X1": 112,
+      "total": 728
+    },
+    {
+      "scale": "401–500",
+      "topologies": 56,
+      "G1": 112,
+      "G2": 280,
+      "G3": 224,
+      "X1": 112,
+      "total": 728
+    }
+  ],
+  "variants": [
+    {
+      "task": "G1",
+      "variant": "ADJACENCY_LIST_TO_ADJACENCY_MATRIX",
+      "count": 326
+    },
+    {
+      "task": "G1",
+      "variant": "ADJACENCY_LIST_TO_EDGE_LIST",
+      "count": 563
+    },
+    {
+      "task": "G1",
+      "variant": "ADJACENCY_MATRIX_TO_ADJACENCY_LIST",
+      "count": 326
+    },
+    {
+      "task": "G1",
+      "variant": "ADJACENCY_MATRIX_TO_EDGE_LIST",
+      "count": 326
+    },
+    {
+      "task": "G1",
+      "variant": "EDGE_LIST_TO_ADJACENCY_LIST",
+      "count": 563
+    },
+    {
+      "task": "G1",
+      "variant": "EDGE_LIST_TO_ADJACENCY_MATRIX",
+      "count": 326
+    },
+    {
+      "task": "G2",
+      "variant": "DISCONNECTED_PATH",
+      "count": 563
+    },
+    {
+      "task": "G2",
+      "variant": "NODE_LINK_MISMATCH",
+      "count": 563
+    },
+    {
+      "task": "G2",
+      "variant": "REPEATED_NODE",
+      "count": 563
+    },
+    {
+      "task": "G2",
+      "variant": "VALID",
+      "count": 563
+    },
+    {
+      "task": "G2",
+      "variant": "WRONG_DIRECTION",
+      "count": 563
+    },
+    {
+      "task": "G3",
+      "variant": "HOP_COUNT__shared_false",
+      "count": 563
+    },
+    {
+      "task": "G3",
+      "variant": "HOP_COUNT__shared_true",
+      "count": 560
+    },
+    {
+      "task": "G3",
+      "variant": "TOTAL_LENGTH_KM__shared_false",
+      "count": 563
+    },
+    {
+      "task": "G3",
+      "variant": "TOTAL_LENGTH_KM__shared_true",
+      "count": 562
+    },
+    {
+      "task": "X1",
+      "variant": "HOP_COUNT",
+      "count": 563
+    },
+    {
+      "task": "X1",
+      "variant": "TOTAL_LENGTH_KM",
+      "count": 563
+    }
+  ],
+  "source_archive_sha256": "4f4e875efc78c27c3c1d24ebf43978cde49a763f09c1c55274d651797a385812",
+  "reference_validator_pass": 8619,
+  "exact_public_messages_preserved": true,
+  "new_model_API_calls": 0,
+  "resource_pressure": "NOT_APPLICABLE",
+  "input_character_quantiles": {
+    "G1": {
+      "min": 3231,
+      "max": 24007
+    },
+    "G2": {
+      "min": 2496,
+      "max": 86958
+    },
+    "G3": {
+      "min": 2451,
+      "max": 124577
+    },
+    "X1": {
+      "min": 1474,
+      "max": 123600
+    }
+  },
+  "evaluation_protocol": "V5_R1_SCIENTIFIC_VALIDATOR_WITH_INSPECT_EXECUTION_V1",
+  "eligible_cases": 8618,
+  "review_case_ids": [
+    "G3_000260"
+  ],
+  "source_reference_pass_with_v3": 8619,
+  "evaluation_reference_pass_with_v5": 8619,
+  "weighted_declared_cost_adjusted": 1668,
+  "cohort_case_counts": {
+    "FORMAL_UNSEEN_HELDOUT": 7143,
+    "CALIBRATION_EXPOSED": 1476
+  }
+}

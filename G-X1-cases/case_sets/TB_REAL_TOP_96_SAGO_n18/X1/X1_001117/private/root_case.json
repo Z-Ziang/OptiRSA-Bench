@@ -1,0 +1,252 @@
+{
+  "schema_version": "GX1_ROOT_CASE_V2_0",
+  "case_id": "X1_001117",
+  "task_type": "X1",
+  "topology_id": "TB_REAL::TOP_96_SAGO",
+  "nodes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "directed_links": [
+    {
+      "link_id": 0,
+      "source_node_id": 0,
+      "destination_node_id": 1
+    },
+    {
+      "link_id": 1,
+      "source_node_id": 1,
+      "destination_node_id": 0
+    },
+    {
+      "link_id": 2,
+      "source_node_id": 0,
+      "destination_node_id": 4
+    },
+    {
+      "link_id": 3,
+      "source_node_id": 4,
+      "destination_node_id": 0
+    },
+    {
+      "link_id": 4,
+      "source_node_id": 1,
+      "destination_node_id": 16
+    },
+    {
+      "link_id": 5,
+      "source_node_id": 16,
+      "destination_node_id": 1
+    },
+    {
+      "link_id": 6,
+      "source_node_id": 2,
+      "destination_node_id": 3
+    },
+    {
+      "link_id": 7,
+      "source_node_id": 3,
+      "destination_node_id": 2
+    },
+    {
+      "link_id": 8,
+      "source_node_id": 2,
+      "destination_node_id": 5
+    },
+    {
+      "link_id": 9,
+      "source_node_id": 5,
+      "destination_node_id": 2
+    },
+    {
+      "link_id": 10,
+      "source_node_id": 3,
+      "destination_node_id": 17
+    },
+    {
+      "link_id": 11,
+      "source_node_id": 17,
+      "destination_node_id": 3
+    },
+    {
+      "link_id": 12,
+      "source_node_id": 4,
+      "destination_node_id": 7
+    },
+    {
+      "link_id": 13,
+      "source_node_id": 7,
+      "destination_node_id": 4
+    },
+    {
+      "link_id": 14,
+      "source_node_id": 6,
+      "destination_node_id": 7
+    },
+    {
+      "link_id": 15,
+      "source_node_id": 7,
+      "destination_node_id": 6
+    },
+    {
+      "link_id": 16,
+      "source_node_id": 8,
+      "destination_node_id": 9
+    },
+    {
+      "link_id": 17,
+      "source_node_id": 9,
+      "destination_node_id": 8
+    },
+    {
+      "link_id": 18,
+      "source_node_id": 8,
+      "destination_node_id": 11
+    },
+    {
+      "link_id": 19,
+      "source_node_id": 11,
+      "destination_node_id": 8
+    },
+    {
+      "link_id": 20,
+      "source_node_id": 10,
+      "destination_node_id": 11
+    },
+    {
+      "link_id": 21,
+      "source_node_id": 11,
+      "destination_node_id": 10
+    },
+    {
+      "link_id": 22,
+      "source_node_id": 10,
+      "destination_node_id": 13
+    },
+    {
+      "link_id": 23,
+      "source_node_id": 13,
+      "destination_node_id": 10
+    },
+    {
+      "link_id": 24,
+      "source_node_id": 12,
+      "destination_node_id": 13
+    },
+    {
+      "link_id": 25,
+      "source_node_id": 13,
+      "destination_node_id": 12
+    },
+    {
+      "link_id": 26,
+      "source_node_id": 12,
+      "destination_node_id": 15
+    },
+    {
+      "link_id": 27,
+      "source_node_id": 15,
+      "destination_node_id": 12
+    },
+    {
+      "link_id": 28,
+      "source_node_id": 14,
+      "destination_node_id": 15
+    },
+    {
+      "link_id": 29,
+      "source_node_id": 15,
+      "destination_node_id": 14
+    },
+    {
+      "link_id": 30,
+      "source_node_id": 14,
+      "destination_node_id": 17
+    },
+    {
+      "link_id": 31,
+      "source_node_id": 17,
+      "destination_node_id": 14
+    },
+    {
+      "link_id": 32,
+      "source_node_id": 16,
+      "destination_node_id": 17
+    },
+    {
+      "link_id": 33,
+      "source_node_id": 17,
+      "destination_node_id": 16
+    }
+  ],
+  "source_node_id": 6,
+  "destination_node_id": 9,
+  "path_cost_metric": "HOP_COUNT",
+  "shortest_path_multiplicity": 1,
+  "optimal_cost": 14.0,
+  "answer": {
+    "path_node_ids": [
+      6,
+      7,
+      4,
+      0,
+      1,
+      16,
+      17,
+      14,
+      15,
+      12,
+      13,
+      10,
+      11,
+      8,
+      9
+    ],
+    "path_link_ids": [
+      14,
+      13,
+      3,
+      0,
+      4,
+      32,
+      31,
+      28,
+      27,
+      24,
+      23,
+      20,
+      19,
+      16
+    ],
+    "hop_count": 14
+  },
+  "generation_metadata": {
+    "effective_shortest_path_hop_count": 14,
+    "observed_shortest_path_multiplicity": 1,
+    "case_variant": "HOP_COUNT",
+    "derived_seed": 14826658764765645840,
+    "master_seed": 20260922,
+    "topology_id": "TB_REAL::TOP_96_SAGO",
+    "topology_sequence_id": 559,
+    "source_category": "real",
+    "length_semantics": "real_trusted_km",
+    "size_bin": "11-29",
+    "production_case_subtype": "long"
+  }
+}

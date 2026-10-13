@@ -1,0 +1,121 @@
+{
+  "schema_version": "GX1_ROOT_CASE_V2_0",
+  "case_id": "X1_001052",
+  "task_type": "X1",
+  "topology_id": "TB_REAL::TOP_63_MARWAN",
+  "nodes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "directed_links": [
+    {
+      "link_id": 0,
+      "source_node_id": 0,
+      "destination_node_id": 1,
+      "length_km": 582.627043544287
+    },
+    {
+      "link_id": 1,
+      "source_node_id": 1,
+      "destination_node_id": 0,
+      "length_km": 582.627043544287
+    },
+    {
+      "link_id": 2,
+      "source_node_id": 0,
+      "destination_node_id": 3,
+      "length_km": 303.9301435674128
+    },
+    {
+      "link_id": 3,
+      "source_node_id": 3,
+      "destination_node_id": 0,
+      "length_km": 303.9301435674128
+    },
+    {
+      "link_id": 4,
+      "source_node_id": 1,
+      "destination_node_id": 4,
+      "length_km": 310.6430120065281
+    },
+    {
+      "link_id": 5,
+      "source_node_id": 4,
+      "destination_node_id": 1,
+      "length_km": 310.6430120065281
+    },
+    {
+      "link_id": 6,
+      "source_node_id": 2,
+      "destination_node_id": 3,
+      "length_km": 714.9962255186151
+    },
+    {
+      "link_id": 7,
+      "source_node_id": 3,
+      "destination_node_id": 2,
+      "length_km": 714.9962255186151
+    },
+    {
+      "link_id": 8,
+      "source_node_id": 2,
+      "destination_node_id": 5,
+      "length_km": 129.9864336338506
+    },
+    {
+      "link_id": 9,
+      "source_node_id": 5,
+      "destination_node_id": 2,
+      "length_km": 129.9864336338506
+    },
+    {
+      "link_id": 10,
+      "source_node_id": 4,
+      "destination_node_id": 5,
+      "length_km": 441.6242356589813
+    },
+    {
+      "link_id": 11,
+      "source_node_id": 5,
+      "destination_node_id": 4,
+      "length_km": 441.6242356589813
+    }
+  ],
+  "source_node_id": 3,
+  "destination_node_id": 4,
+  "path_cost_metric": "TOTAL_LENGTH_KM",
+  "shortest_path_multiplicity": 1,
+  "optimal_cost": 1197.2001991182278,
+  "answer": {
+    "path_node_ids": [
+      3,
+      0,
+      1,
+      4
+    ],
+    "path_link_ids": [
+      3,
+      0,
+      4
+    ],
+    "hop_count": 3,
+    "total_length_km": 1197.2001991182278
+  },
+  "generation_metadata": {
+    "effective_shortest_path_hop_count": 3,
+    "observed_shortest_path_multiplicity": 1,
+    "case_variant": "TOTAL_LENGTH_KM",
+    "derived_seed": 6341774577179345953,
+    "master_seed": 20260922,
+    "topology_id": "TB_REAL::TOP_63_MARWAN",
+    "topology_sequence_id": 526,
+    "source_category": "real",
+    "length_semantics": "real_trusted_km",
+    "size_bin": "5-10",
+    "production_case_subtype": "long"
+  }
+}

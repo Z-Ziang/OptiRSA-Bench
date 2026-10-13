@@ -1,0 +1,24 @@
+You must solve a global shortest-path task on a directed optical-network resource topology. You will receive the current directed topology, one source-destination pair, and a shortest-path metric. Find one simple directed path from the specified source node to the specified destination node that is globally optimal under the requested metric.
+
+Supported shortest-path metrics:
+1. HOP_COUNT: minimize the number of directed links in the path.
+2. TOTAL_LENGTH_KM: minimize total path length in kilometers.
+
+If multiple shortest paths have the same optimal metric value, returning any one of them is acceptable.
+
+Output requirement: return only one JSON object in the exact format below.
+
+For HOP_COUNT cases:
+{
+  "path_node_ids": [],
+  "path_link_ids": [],
+  "hop_count": 0
+}
+
+For TOTAL_LENGTH_KM cases:
+{
+  "path_node_ids": [],
+  "path_link_ids": [],
+  "hop_count": 0,
+  "total_length_km": 0.0
+}

@@ -1,0 +1,200 @@
+{
+  "schema_version": "GX1_ROOT_CASE_V2_0",
+  "case_id": "G3_000380",
+  "task_type": "G3",
+  "topology_id": "GABRIEL_CONTROLLED_N005_009",
+  "nodes": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "directed_links": [
+    {
+      "link_id": 0,
+      "source_node_id": 0,
+      "destination_node_id": 2,
+      "length_km": 130.21305686913308
+    },
+    {
+      "link_id": 1,
+      "source_node_id": 2,
+      "destination_node_id": 0,
+      "length_km": 130.21305686913308
+    },
+    {
+      "link_id": 2,
+      "source_node_id": 0,
+      "destination_node_id": 4,
+      "length_km": 144.09586398754368
+    },
+    {
+      "link_id": 3,
+      "source_node_id": 4,
+      "destination_node_id": 0,
+      "length_km": 144.09586398754368
+    },
+    {
+      "link_id": 4,
+      "source_node_id": 1,
+      "destination_node_id": 3,
+      "length_km": 67.5015776668211
+    },
+    {
+      "link_id": 5,
+      "source_node_id": 3,
+      "destination_node_id": 1,
+      "length_km": 67.5015776668211
+    },
+    {
+      "link_id": 6,
+      "source_node_id": 1,
+      "destination_node_id": 4,
+      "length_km": 68.25464545960727
+    },
+    {
+      "link_id": 7,
+      "source_node_id": 4,
+      "destination_node_id": 1,
+      "length_km": 68.25464545960727
+    },
+    {
+      "link_id": 8,
+      "source_node_id": 2,
+      "destination_node_id": 3,
+      "length_km": 114.95672363823411
+    },
+    {
+      "link_id": 9,
+      "source_node_id": 3,
+      "destination_node_id": 2,
+      "length_km": 114.95672363823411
+    },
+    {
+      "link_id": 10,
+      "source_node_id": 2,
+      "destination_node_id": 4,
+      "length_km": 112.6244957340441
+    },
+    {
+      "link_id": 11,
+      "source_node_id": 4,
+      "destination_node_id": 2,
+      "length_km": 112.6244957340441
+    },
+    {
+      "link_id": 12,
+      "source_node_id": 3,
+      "destination_node_id": 4,
+      "length_km": 62.353636644616586
+    },
+    {
+      "link_id": 13,
+      "source_node_id": 4,
+      "destination_node_id": 3,
+      "length_km": 62.353636644616586
+    }
+  ],
+  "path_cost_metric": "TOTAL_LENGTH_KM",
+  "pairs": [
+    {
+      "pair_id": "pair_A",
+      "source_node_id": 0,
+      "destination_node_id": 1
+    },
+    {
+      "pair_id": "pair_B",
+      "source_node_id": 0,
+      "destination_node_id": 3
+    }
+  ],
+  "oracle_shortest_paths": [
+    {
+      "pair_id": "pair_A",
+      "path_node_ids": [
+        0,
+        4,
+        1
+      ],
+      "path_link_ids": [
+        2,
+        7
+      ],
+      "hop_count": 2,
+      "total_length_km": 212.35050944715096,
+      "multiplicity": 1,
+      "optimal_cost": 212.35050944715096
+    },
+    {
+      "pair_id": "pair_B",
+      "path_node_ids": [
+        0,
+        4,
+        3
+      ],
+      "path_link_ids": [
+        2,
+        13
+      ],
+      "hop_count": 2,
+      "total_length_km": 206.44950063216027,
+      "multiplicity": 1,
+      "optimal_cost": 206.44950063216027
+    }
+  ],
+  "answer": {
+    "shortest_paths": [
+      {
+        "pair_id": "pair_A",
+        "path_node_ids": [
+          0,
+          4,
+          1
+        ],
+        "path_link_ids": [
+          2,
+          7
+        ],
+        "hop_count": 2,
+        "total_length_km": 212.35050944715096
+      },
+      {
+        "pair_id": "pair_B",
+        "path_node_ids": [
+          0,
+          4,
+          3
+        ],
+        "path_link_ids": [
+          2,
+          13
+        ],
+        "hop_count": 2,
+        "total_length_km": 206.44950063216027
+      }
+    ],
+    "has_shared_directed_link": true,
+    "shared_link_ids": [
+      2
+    ]
+  },
+  "generation_metadata": {
+    "shared_search": {
+      "method": "deterministic_quick_ordered_pair_search",
+      "quick_ordered_pairs_checked": 3,
+      "exhaustive_confirmation": false
+    },
+    "effective_pair_A_hop_count": 2,
+    "effective_pair_B_hop_count": 2,
+    "case_variant": "TOTAL_LENGTH_KM__shared_true",
+    "derived_seed": 11066064245204544901,
+    "master_seed": 20260922,
+    "topology_id": "GABRIEL_CONTROLLED_N005_009",
+    "topology_sequence_id": 95,
+    "source_category": "controlled_gabriel_reference_extension",
+    "length_semantics": "synthetic_scaled_geometry_km",
+    "size_bin": "5-10",
+    "production_case_subtype": "medium"
+  }
+}

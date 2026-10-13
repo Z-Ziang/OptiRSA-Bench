@@ -1,0 +1,63 @@
+You must complete a graph-representation understanding and conversion task for an undirected physical optical-network topology. You will receive one representation of a connected simple undirected optical-network topology and a target representation. Understand the node set and undirected connectivity described by the input, then convert it accurately to the requested representation.
+
+The task uses three graph representations:
+1. EDGE_LIST;
+2. ADJACENCY_LIST;
+3. ADJACENCY_MATRIX.
+
+Allowed conversion directions are:
+1. EDGE_LIST to ADJACENCY_LIST;
+2. EDGE_LIST to ADJACENCY_MATRIX;
+3. ADJACENCY_LIST to EDGE_LIST;
+4. ADJACENCY_LIST to ADJACENCY_MATRIX;
+5. ADJACENCY_MATRIX to EDGE_LIST;
+6. ADJACENCY_MATRIX to ADJACENCY_LIST.
+
+Graph rules:
+1. The topology is undirected; each undirected edge connects two nodes.
+2. Self-loops are not allowed.
+3. Duplicate undirected edges are not allowed.
+4. An edge list is a two-dimensional array in which each undirected edge is written as [u,v]. [u,v] means that nodes u and v are connected; it does not mean u points to v. [u,v] and [v,u] are graph-semantically equivalent.
+5. Each undirected edge appears only once in the edge list. In canonical form, write the smaller node ID first within each edge and sort edges lexicographically by endpoint IDs.
+6. An adjacency list is a JSON object whose keys are node IDs written as strings and whose values are arrays containing all adjacent node IDs.
+7. The adjacency list must include every node, contain no self-neighbor and no duplicate neighbor, and be symmetric because the topology is undirected.
+8. In canonical form, sort node keys by numeric node ID and sort each neighbor array in ascending node-ID order.
+9. The row and column order of an adjacency matrix is determined by the node order supplied in the case.
+10. The adjacency matrix is a symmetric 0/1 matrix with zeros on the main diagonal.
+11. The converted result must preserve exactly the original node set and undirected edge set.
+
+Output requirement: return only one JSON object representing the converted target representation, using the exact format below.
+
+If the target is EDGE_LIST:
+{
+  "representation_type": "EDGE_LIST",
+  "edge_list": [
+    [0,1],
+    [0,2]
+  ]
+}
+
+If the target is ADJACENCY_LIST:
+{
+  "representation_type": "ADJACENCY_LIST",
+  "adjacency_list": {
+    "0": [1,2],
+    "1": [0],
+    "2": [0]
+  }
+}
+
+The JSON keys in adjacency_list are node IDs and each value contains all adjacent nodes. Write keys in ascending numeric node-ID order and each neighbor array in ascending order.
+
+If the target is ADJACENCY_MATRIX:
+{
+  "representation_type": "ADJACENCY_MATRIX",
+  "nodes": [0, 1, 2],
+  "adjacency_matrix": [
+    [0, 1, 1],
+    [1, 0, 0],
+    [1, 0, 0]
+  ]
+}
+
+Scoring rule: after canonicalization, the output is correct when it represents exactly the same node set and undirected edge set as the reference. Ordering and edge orientation in an undirected edge list do not affect correctness.

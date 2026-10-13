@@ -1,0 +1,81 @@
+{
+  "case_id": "X1_001025",
+  "task_type": "X1",
+  "answer": {
+    "path_node_ids": [
+      1,
+      7,
+      4,
+      5,
+      8,
+      25,
+      10,
+      12
+    ],
+    "path_link_ids": [
+      6,
+      25,
+      20,
+      26,
+      38,
+      43,
+      40
+    ],
+    "hop_count": 7
+  },
+  "optimal_cost": 7.0,
+  "shortest_path_multiplicity": 5,
+  "oracle_evidence": {
+    "path_cost_metric": "HOP_COUNT",
+    "optimal_cost": 7.0,
+    "shortest_path_multiplicity": 5,
+    "optimal_paths": [
+      {
+        "path_node_ids": [
+          1,
+          7,
+          4,
+          5,
+          8,
+          25,
+          10,
+          12
+        ],
+        "path_link_ids": [
+          6,
+          25,
+          20,
+          26,
+          38,
+          43,
+          40
+        ],
+        "hop_count": 7,
+        "cost": 7.0
+      },
+      {
+        "path_node_ids": [
+          1,
+          7,
+          6,
+          23,
+          24,
+          25,
+          10,
+          12
+        ],
+        "path_link_ids": [
+          6,
+          29,
+          30,
+          66,
+          68,
+          43,
+          40
+        ],
+        "hop_count": 7,
+        "cost": 7.0
+      }
+    ]
+  }
+}

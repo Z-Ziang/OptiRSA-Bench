@@ -1,0 +1,181 @@
+{
+  "schema_version": "GX1_ROOT_CASE_V2_0",
+  "case_id": "G1_002395",
+  "task_type": "G1",
+  "topology_id": "TB_REAL::TOP_95_RNPBRAZIL",
+  "nodes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "undirected_edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      6,
+      9
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      8,
+      9
+    ]
+  ],
+  "conversion": "EDGE_LIST_TO_ADJACENCY_LIST",
+  "source_representation": "EDGE_LIST",
+  "target_representation": "ADJACENCY_LIST",
+  "source_payload": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      6,
+      9
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      8,
+      9
+    ]
+  ],
+  "answer": {
+    "representation_type": "ADJACENCY_LIST",
+    "adjacency_list": {
+      "0": [
+        1,
+        3
+      ],
+      "1": [
+        0,
+        2
+      ],
+      "2": [
+        1,
+        4
+      ],
+      "3": [
+        0,
+        4,
+        6
+      ],
+      "4": [
+        2,
+        3,
+        5
+      ],
+      "5": [
+        4,
+        6,
+        7
+      ],
+      "6": [
+        3,
+        5,
+        9
+      ],
+      "7": [
+        5,
+        8
+      ],
+      "8": [
+        7,
+        9
+      ],
+      "9": [
+        6,
+        8
+      ]
+    }
+  },
+  "generation_metadata": {
+    "case_variant": "EDGE_LIST_TO_ADJACENCY_LIST",
+    "derived_seed": 11163617863625124007,
+    "master_seed": 20260922,
+    "topology_id": "TB_REAL::TOP_95_RNPBRAZIL",
+    "topology_sequence_id": 558,
+    "source_category": "real",
+    "length_semantics": "real_trusted_km",
+    "size_bin": "5-10",
+    "production_case_subtype": "representation"
+  }
+}

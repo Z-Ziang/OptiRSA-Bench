@@ -1,0 +1,132 @@
+{
+  "case_id": "G3_001733",
+  "task_type": "G3",
+  "answer": {
+    "shortest_paths": [
+      {
+        "pair_id": "pair_A",
+        "path_node_ids": [
+          0,
+          162,
+          461,
+          355,
+          80,
+          45,
+          136,
+          327,
+          438,
+          369,
+          3
+        ],
+        "path_link_ids": [
+          4,
+          1106,
+          1801,
+          617,
+          355,
+          356,
+          958,
+          1730,
+          1831,
+          35
+        ],
+        "hop_count": 10
+      },
+      {
+        "pair_id": "pair_B",
+        "path_node_ids": [
+          3,
+          369,
+          438,
+          327,
+          136,
+          45,
+          80,
+          355,
+          461,
+          162,
+          0
+        ],
+        "path_link_ids": [
+          34,
+          1830,
+          1731,
+          959,
+          357,
+          354,
+          616,
+          1800,
+          1107,
+          5
+        ],
+        "hop_count": 10
+      }
+    ],
+    "has_shared_directed_link": false,
+    "shared_link_ids": []
+  },
+  "oracle_shortest_paths": [
+    {
+      "pair_id": "pair_A",
+      "path_node_ids": [
+        0,
+        162,
+        461,
+        355,
+        80,
+        45,
+        136,
+        327,
+        438,
+        369,
+        3
+      ],
+      "path_link_ids": [
+        4,
+        1106,
+        1801,
+        617,
+        355,
+        356,
+        958,
+        1730,
+        1831,
+        35
+      ],
+      "hop_count": 10,
+      "multiplicity": 1,
+      "optimal_cost": 10.0
+    },
+    {
+      "pair_id": "pair_B",
+      "path_node_ids": [
+        3,
+        369,
+        438,
+        327,
+        136,
+        45,
+        80,
+        355,
+        461,
+        162,
+        0
+      ],
+      "path_link_ids": [
+        34,
+        1830,
+        1731,
+        959,
+        357,
+        354,
+        616,
+        1800,
+        1107,
+        5
+      ],
+      "hop_count": 10,
+      "multiplicity": 1,
+      "optimal_cost": 10.0
+    }
+  ]
+}

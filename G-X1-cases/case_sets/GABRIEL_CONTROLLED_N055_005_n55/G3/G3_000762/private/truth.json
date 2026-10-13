@@ -1,0 +1,120 @@
+{
+  "case_id": "G3_000762",
+  "task_type": "G3",
+  "answer": {
+    "shortest_paths": [
+      {
+        "pair_id": "pair_A",
+        "path_node_ids": [
+          0,
+          8,
+          50,
+          1,
+          18,
+          53,
+          3,
+          46,
+          5
+        ],
+        "path_link_ids": [
+          0,
+          60,
+          15,
+          10,
+          112,
+          27,
+          24,
+          45
+        ],
+        "hop_count": 8,
+        "total_length_km": 499.92473073323373
+      },
+      {
+        "pair_id": "pair_B",
+        "path_node_ids": [
+          5,
+          46,
+          3,
+          53,
+          18,
+          1,
+          50,
+          8,
+          0
+        ],
+        "path_link_ids": [
+          44,
+          25,
+          26,
+          113,
+          11,
+          14,
+          61,
+          1
+        ],
+        "hop_count": 8,
+        "total_length_km": 499.9247307332336
+      }
+    ],
+    "has_shared_directed_link": false,
+    "shared_link_ids": []
+  },
+  "oracle_shortest_paths": [
+    {
+      "pair_id": "pair_A",
+      "path_node_ids": [
+        0,
+        8,
+        50,
+        1,
+        18,
+        53,
+        3,
+        46,
+        5
+      ],
+      "path_link_ids": [
+        0,
+        60,
+        15,
+        10,
+        112,
+        27,
+        24,
+        45
+      ],
+      "hop_count": 8,
+      "total_length_km": 499.92473073323373,
+      "multiplicity": 1,
+      "optimal_cost": 499.92473073323373
+    },
+    {
+      "pair_id": "pair_B",
+      "path_node_ids": [
+        5,
+        46,
+        3,
+        53,
+        18,
+        1,
+        50,
+        8,
+        0
+      ],
+      "path_link_ids": [
+        44,
+        25,
+        26,
+        113,
+        11,
+        14,
+        61,
+        1
+      ],
+      "hop_count": 8,
+      "total_length_km": 499.9247307332336,
+      "multiplicity": 1,
+      "optimal_cost": 499.9247307332336
+    }
+  ]
+}

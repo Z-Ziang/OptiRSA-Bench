@@ -1,0 +1,182 @@
+{
+  "schema_version": "GX1_ROOT_CASE_V2_0",
+  "case_id": "G3_000370",
+  "task_type": "G3",
+  "topology_id": "GABRIEL_CONTROLLED_N005_007",
+  "nodes": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "directed_links": [
+    {
+      "link_id": 0,
+      "source_node_id": 0,
+      "destination_node_id": 4,
+      "length_km": 76.11683609612706
+    },
+    {
+      "link_id": 1,
+      "source_node_id": 4,
+      "destination_node_id": 0,
+      "length_km": 76.11683609612706
+    },
+    {
+      "link_id": 2,
+      "source_node_id": 1,
+      "destination_node_id": 2,
+      "length_km": 95.81571460187162
+    },
+    {
+      "link_id": 3,
+      "source_node_id": 2,
+      "destination_node_id": 1,
+      "length_km": 95.81571460187162
+    },
+    {
+      "link_id": 4,
+      "source_node_id": 1,
+      "destination_node_id": 3,
+      "length_km": 153.61203231404318
+    },
+    {
+      "link_id": 5,
+      "source_node_id": 3,
+      "destination_node_id": 1,
+      "length_km": 153.61203231404318
+    },
+    {
+      "link_id": 6,
+      "source_node_id": 1,
+      "destination_node_id": 4,
+      "length_km": 80.53664999609317
+    },
+    {
+      "link_id": 7,
+      "source_node_id": 4,
+      "destination_node_id": 1,
+      "length_km": 80.53664999609317
+    },
+    {
+      "link_id": 8,
+      "source_node_id": 2,
+      "destination_node_id": 4,
+      "length_km": 93.918766991865
+    },
+    {
+      "link_id": 9,
+      "source_node_id": 4,
+      "destination_node_id": 2,
+      "length_km": 93.918766991865
+    }
+  ],
+  "path_cost_metric": "TOTAL_LENGTH_KM",
+  "pairs": [
+    {
+      "pair_id": "pair_A",
+      "source_node_id": 0,
+      "destination_node_id": 3
+    },
+    {
+      "pair_id": "pair_B",
+      "source_node_id": 3,
+      "destination_node_id": 0
+    }
+  ],
+  "oracle_shortest_paths": [
+    {
+      "pair_id": "pair_A",
+      "path_node_ids": [
+        0,
+        4,
+        1,
+        3
+      ],
+      "path_link_ids": [
+        0,
+        7,
+        4
+      ],
+      "hop_count": 3,
+      "total_length_km": 310.2655184062634,
+      "multiplicity": 1,
+      "optimal_cost": 310.2655184062634
+    },
+    {
+      "pair_id": "pair_B",
+      "path_node_ids": [
+        3,
+        1,
+        4,
+        0
+      ],
+      "path_link_ids": [
+        5,
+        6,
+        1
+      ],
+      "hop_count": 3,
+      "total_length_km": 310.26551840626337,
+      "multiplicity": 1,
+      "optimal_cost": 310.26551840626337
+    }
+  ],
+  "answer": {
+    "shortest_paths": [
+      {
+        "pair_id": "pair_A",
+        "path_node_ids": [
+          0,
+          4,
+          1,
+          3
+        ],
+        "path_link_ids": [
+          0,
+          7,
+          4
+        ],
+        "hop_count": 3,
+        "total_length_km": 310.2655184062634
+      },
+      {
+        "pair_id": "pair_B",
+        "path_node_ids": [
+          3,
+          1,
+          4,
+          0
+        ],
+        "path_link_ids": [
+          5,
+          6,
+          1
+        ],
+        "hop_count": 3,
+        "total_length_km": 310.26551840626337
+      }
+    ],
+    "has_shared_directed_link": false,
+    "shared_link_ids": []
+  },
+  "generation_metadata": {
+    "shared_search": {
+      "method": "deterministic_unique_path_and_reverse",
+      "effective_pair_A_hop_count": 3,
+      "effective_pair_B_hop_count": 3
+    },
+    "effective_pair_A_hop_count": 3,
+    "effective_pair_B_hop_count": 3,
+    "case_variant": "TOTAL_LENGTH_KM__shared_false",
+    "derived_seed": 11723721206902115688,
+    "master_seed": 20260922,
+    "topology_id": "GABRIEL_CONTROLLED_N005_007",
+    "topology_sequence_id": 93,
+    "source_category": "controlled_gabriel_reference_extension",
+    "length_semantics": "synthetic_scaled_geometry_km",
+    "size_bin": "5-10",
+    "production_case_subtype": "long"
+  }
+}

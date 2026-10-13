@@ -1,0 +1,128 @@
+{
+  "case_id": "G3_000726",
+  "task_type": "G3",
+  "answer": {
+    "shortest_paths": [
+      {
+        "pair_id": "pair_A",
+        "path_node_ids": [
+          0,
+          23,
+          41,
+          25,
+          4,
+          49,
+          30,
+          1,
+          21,
+          2
+        ],
+        "path_link_ids": [
+          2,
+          122,
+          127,
+          29,
+          30,
+          145,
+          11,
+          8,
+          17
+        ],
+        "hop_count": 9,
+        "total_length_km": 687.7610910158227
+      },
+      {
+        "pair_id": "pair_B",
+        "path_node_ids": [
+          2,
+          21,
+          1,
+          30,
+          49,
+          4,
+          25,
+          41,
+          23,
+          0
+        ],
+        "path_link_ids": [
+          16,
+          9,
+          10,
+          144,
+          31,
+          28,
+          126,
+          123,
+          3
+        ],
+        "hop_count": 9,
+        "total_length_km": 687.7610910158227
+      }
+    ],
+    "has_shared_directed_link": false,
+    "shared_link_ids": []
+  },
+  "oracle_shortest_paths": [
+    {
+      "pair_id": "pair_A",
+      "path_node_ids": [
+        0,
+        23,
+        41,
+        25,
+        4,
+        49,
+        30,
+        1,
+        21,
+        2
+      ],
+      "path_link_ids": [
+        2,
+        122,
+        127,
+        29,
+        30,
+        145,
+        11,
+        8,
+        17
+      ],
+      "hop_count": 9,
+      "total_length_km": 687.7610910158227,
+      "multiplicity": 1,
+      "optimal_cost": 687.7610910158227
+    },
+    {
+      "pair_id": "pair_B",
+      "path_node_ids": [
+        2,
+        21,
+        1,
+        30,
+        49,
+        4,
+        25,
+        41,
+        23,
+        0
+      ],
+      "path_link_ids": [
+        16,
+        9,
+        10,
+        144,
+        31,
+        28,
+        126,
+        123,
+        3
+      ],
+      "hop_count": 9,
+      "total_length_km": 687.7610910158227,
+      "multiplicity": 1,
+      "optimal_cost": 687.7610910158227
+    }
+  ]
+}

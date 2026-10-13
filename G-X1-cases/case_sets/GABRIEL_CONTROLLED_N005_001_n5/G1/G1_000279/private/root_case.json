@@ -1,0 +1,86 @@
+{
+  "schema_version": "GX1_ROOT_CASE_V2_0",
+  "case_id": "G1_000279",
+  "task_type": "G1",
+  "topology_id": "GABRIEL_CONTROLLED_N005_001",
+  "nodes": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "undirected_edges": [
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      4
+    ]
+  ],
+  "conversion": "ADJACENCY_LIST_TO_EDGE_LIST",
+  "source_representation": "ADJACENCY_LIST",
+  "target_representation": "EDGE_LIST",
+  "source_payload": {
+    "0": [
+      4
+    ],
+    "1": [
+      2
+    ],
+    "2": [
+      1,
+      3
+    ],
+    "3": [
+      2,
+      4
+    ],
+    "4": [
+      0,
+      3
+    ]
+  },
+  "answer": {
+    "representation_type": "EDGE_LIST",
+    "edge_list": [
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ]
+    ]
+  },
+  "generation_metadata": {
+    "case_variant": "ADJACENCY_LIST_TO_EDGE_LIST",
+    "derived_seed": 2683210664314176369,
+    "master_seed": 20260922,
+    "topology_id": "GABRIEL_CONTROLLED_N005_001",
+    "topology_sequence_id": 87,
+    "source_category": "controlled_gabriel_reference_extension",
+    "length_semantics": "synthetic_scaled_geometry_km",
+    "size_bin": "5-10",
+    "production_case_subtype": "representation"
+  }
+}

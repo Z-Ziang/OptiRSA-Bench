@@ -1,0 +1,120 @@
+{
+  "case_id": "G3_000682",
+  "task_type": "G3",
+  "answer": {
+    "shortest_paths": [
+      {
+        "pair_id": "pair_A",
+        "path_node_ids": [
+          1,
+          20,
+          5,
+          16,
+          43,
+          12,
+          40,
+          8,
+          6
+        ],
+        "path_link_ids": [
+          6,
+          35,
+          30,
+          106,
+          77,
+          74,
+          55,
+          39
+        ],
+        "hop_count": 8,
+        "total_length_km": 648.8672823733492
+      },
+      {
+        "pair_id": "pair_B",
+        "path_node_ids": [
+          6,
+          8,
+          40,
+          12,
+          43,
+          16,
+          5,
+          20,
+          1
+        ],
+        "path_link_ids": [
+          38,
+          54,
+          75,
+          76,
+          107,
+          31,
+          34,
+          7
+        ],
+        "hop_count": 8,
+        "total_length_km": 648.867282373349
+      }
+    ],
+    "has_shared_directed_link": false,
+    "shared_link_ids": []
+  },
+  "oracle_shortest_paths": [
+    {
+      "pair_id": "pair_A",
+      "path_node_ids": [
+        1,
+        20,
+        5,
+        16,
+        43,
+        12,
+        40,
+        8,
+        6
+      ],
+      "path_link_ids": [
+        6,
+        35,
+        30,
+        106,
+        77,
+        74,
+        55,
+        39
+      ],
+      "hop_count": 8,
+      "total_length_km": 648.8672823733492,
+      "multiplicity": 1,
+      "optimal_cost": 648.8672823733492
+    },
+    {
+      "pair_id": "pair_B",
+      "path_node_ids": [
+        6,
+        8,
+        40,
+        12,
+        43,
+        16,
+        5,
+        20,
+        1
+      ],
+      "path_link_ids": [
+        38,
+        54,
+        75,
+        76,
+        107,
+        31,
+        34,
+        7
+      ],
+      "hop_count": 8,
+      "total_length_km": 648.867282373349,
+      "multiplicity": 1,
+      "optimal_cost": 648.867282373349
+    }
+  ]
+}

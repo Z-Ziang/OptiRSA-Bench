@@ -1,0 +1,191 @@
+{
+  "schema_version": "GX1_ROOT_CASE_V2_0",
+  "case_id": "G1_000355",
+  "task_type": "G1",
+  "topology_id": "GABRIEL_CONTROLLED_N010_004",
+  "nodes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "undirected_edges": [
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      3,
+      8
+    ],
+    [
+      4,
+      8
+    ],
+    [
+      4,
+      9
+    ],
+    [
+      5,
+      8
+    ],
+    [
+      5,
+      9
+    ],
+    [
+      6,
+      8
+    ]
+  ],
+  "conversion": "EDGE_LIST_TO_ADJACENCY_LIST",
+  "source_representation": "EDGE_LIST",
+  "target_representation": "ADJACENCY_LIST",
+  "source_payload": [
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      3,
+      8
+    ],
+    [
+      4,
+      8
+    ],
+    [
+      4,
+      9
+    ],
+    [
+      5,
+      8
+    ],
+    [
+      5,
+      9
+    ],
+    [
+      6,
+      8
+    ]
+  ],
+  "answer": {
+    "representation_type": "ADJACENCY_LIST",
+    "adjacency_list": {
+      "0": [
+        2,
+        6
+      ],
+      "1": [
+        5,
+        6
+      ],
+      "2": [
+        0,
+        6
+      ],
+      "3": [
+        4,
+        7,
+        8
+      ],
+      "4": [
+        3,
+        8,
+        9
+      ],
+      "5": [
+        1,
+        8,
+        9
+      ],
+      "6": [
+        0,
+        1,
+        2,
+        8
+      ],
+      "7": [
+        3
+      ],
+      "8": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "9": [
+        4,
+        5
+      ]
+    }
+  },
+  "generation_metadata": {
+    "case_variant": "EDGE_LIST_TO_ADJACENCY_LIST",
+    "derived_seed": 5271813387368317501,
+    "master_seed": 20260922,
+    "topology_id": "GABRIEL_CONTROLLED_N010_004",
+    "topology_sequence_id": 100,
+    "source_category": "controlled_gabriel_reference_extension",
+    "length_semantics": "synthetic_scaled_geometry_km",
+    "size_bin": "5-10",
+    "production_case_subtype": "representation"
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "case_id": "G3_001595",
+  "task_type": "G3",
+  "answer": {
+    "shortest_paths": [
+      {
+        "pair_id": "pair_A",
+        "path_node_ids": [
+          0,
+          318,
+          159,
+          32,
+          207,
+          239,
+          82,
+          294,
+          326,
+          104,
+          76,
+          389,
+          151,
+          301,
+          317,
+          128,
+          3
+        ],
+        "path_link_ids": [
+          6,
+          1019,
+          251,
+          252,
+          1206,
+          581,
+          582,
+          1484,
+          723,
+          535,
+          544,
+          985,
+          982,
+          1496,
+          859,
+          29
+        ],
+        "hop_count": 16
+      },
+      {
+        "pair_id": "pair_B",
+        "path_node_ids": [
+          0,
+          318,
+          159,
+          32,
+          207,
+          4
+        ],
+        "path_link_ids": [
+          6,
+          1019,
+          251,
+          252,
+          35
+        ],
+        "hop_count": 5
+      }
+    ],
+    "has_shared_directed_link": true,
+    "shared_link_ids": [
+      6,
+      251,
+      252,
+      1019
+    ]
+  },
+  "oracle_shortest_paths": [
+    {
+      "pair_id": "pair_A",
+      "path_node_ids": [
+        0,
+        318,
+        159,
+        32,
+        207,
+        239,
+        82,
+        294,
+        326,
+        104,
+        76,
+        389,
+        151,
+        301,
+        317,
+        128,
+        3
+      ],
+      "path_link_ids": [
+        6,
+        1019,
+        251,
+        252,
+        1206,
+        581,
+        582,
+        1484,
+        723,
+        535,
+        544,
+        985,
+        982,
+        1496,
+        859,
+        29
+      ],
+      "hop_count": 16,
+      "multiplicity": 1,
+      "optimal_cost": 16.0
+    },
+    {
+      "pair_id": "pair_B",
+      "path_node_ids": [
+        0,
+        318,
+        159,
+        32,
+        207,
+        4
+      ],
+      "path_link_ids": [
+        6,
+        1019,
+        251,
+        252,
+        35
+      ],
+      "hop_count": 5,
+      "multiplicity": 1,
+      "optimal_cost": 5.0
+    }
+  ]
+}

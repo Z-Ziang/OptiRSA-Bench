@@ -1,0 +1,247 @@
+{
+  "schema_version": "GX1_ROOT_CASE_V2_0",
+  "case_id": "G1_002319",
+  "task_type": "G1",
+  "topology_id": "TB_REAL::TOP_82_POLSKA",
+  "nodes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "undirected_edges": [
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      0,
+      10
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      1,
+      10
+    ],
+    [
+      2,
+      9
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      3,
+      11
+    ],
+    [
+      4,
+      8
+    ],
+    [
+      4,
+      10
+    ],
+    [
+      5,
+      8
+    ],
+    [
+      5,
+      10
+    ],
+    [
+      6,
+      10
+    ],
+    [
+      6,
+      11
+    ],
+    [
+      7,
+      9
+    ],
+    [
+      7,
+      11
+    ]
+  ],
+  "conversion": "ADJACENCY_LIST_TO_EDGE_LIST",
+  "source_representation": "ADJACENCY_LIST",
+  "target_representation": "EDGE_LIST",
+  "source_payload": {
+    "0": [
+      2,
+      5,
+      10
+    ],
+    "1": [
+      2,
+      7,
+      10
+    ],
+    "2": [
+      0,
+      1,
+      9
+    ],
+    "3": [
+      4,
+      6,
+      11
+    ],
+    "4": [
+      3,
+      8,
+      10
+    ],
+    "5": [
+      0,
+      8,
+      10
+    ],
+    "6": [
+      3,
+      10,
+      11
+    ],
+    "7": [
+      1,
+      9,
+      11
+    ],
+    "8": [
+      4,
+      5
+    ],
+    "9": [
+      2,
+      7
+    ],
+    "10": [
+      0,
+      1,
+      4,
+      5,
+      6
+    ],
+    "11": [
+      3,
+      6,
+      7
+    ]
+  },
+  "answer": {
+    "representation_type": "EDGE_LIST",
+    "edge_list": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        10
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        10
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        5,
+        10
+      ],
+      [
+        6,
+        10
+      ],
+      [
+        6,
+        11
+      ],
+      [
+        7,
+        9
+      ],
+      [
+        7,
+        11
+      ]
+    ]
+  },
+  "generation_metadata": {
+    "case_variant": "ADJACENCY_LIST_TO_EDGE_LIST",
+    "derived_seed": 17914344919723817527,
+    "master_seed": 20260922,
+    "topology_id": "TB_REAL::TOP_82_POLSKA",
+    "topology_sequence_id": 545,
+    "source_category": "real",
+    "length_semantics": "real_trusted_km",
+    "size_bin": "11-29",
+    "production_case_subtype": "representation"
+  }
+}

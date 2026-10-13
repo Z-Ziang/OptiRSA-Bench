@@ -1,0 +1,1 @@
+Inspect AI is distributed under MIT by its upstream authors. OpenAI SDK and all locked dependencies retain their upstream licenses. No third-party ownership or dataset license is changed by this organization. Dataset license requires the repository author declaration.

@@ -1,0 +1,26 @@
+You must complete a path-validity task on a directed optical-network resource topology. You will receive the current directed topology, a specified source node and destination node, and one candidate path. Determine whether the candidate is a simple directed path from the specified source to the specified destination.
+
+Check the following four error classes in the exact FIRST_MATCH priority order:
+
+1. WRONG_DIRECTION: for a required candidate step u -> v, classify WRONG_DIRECTION only when the supplied directed link is exactly the reverse v -> u. For example, if the required step is 12 -> 13 and the actual link is 13 -> 12, this is WRONG_DIRECTION. If the actual link is 12 -> 11 or 14 -> 13, do not classify it as WRONG_DIRECTION solely because its direction differs; continue with FIRST_MATCH evaluation.
+2. DISCONNECTED_PATH: the supplied directed-link sequence is not internally continuous; for at least one adjacent pair of directed links, the destination node of the previous link differs from the source node of the next link.
+3. NODE_LINK_MISMATCH: the directed-link sequence is internally continuous, but the supplied node sequence does not match the hop-by-hop path described by the link sequence.
+4. REPEATED_NODE: at least one node occurs more than once in the path-node array, so the candidate is not a simple path.
+
+The fixed FIRST_MATCH order is: WRONG_DIRECTION, DISCONNECTED_PATH, NODE_LINK_MISMATCH, REPEATED_NODE, VALID. If multiple error conditions hold, return only the earliest matching type in this order.
+
+Output requirement: return only one JSON object in the exact format below.
+
+For a valid path:
+{
+  "is_valid": true,
+  "error_type": null
+}
+
+For an invalid path:
+{
+  "is_valid": false,
+  "error_type": "WRONG_DIRECTION"
+}
+
+error_type may only be WRONG_DIRECTION, DISCONNECTED_PATH, NODE_LINK_MISMATCH, REPEATED_NODE, or null.
