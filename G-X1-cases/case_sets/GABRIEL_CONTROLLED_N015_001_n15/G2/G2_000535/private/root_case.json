@@ -1,0 +1,256 @@
+{
+  "schema_version": "GX1_ROOT_CASE_V2_0",
+  "case_id": "G2_000535",
+  "task_type": "G2",
+  "topology_id": "GABRIEL_CONTROLLED_N015_001",
+  "nodes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "directed_links": [
+    {
+      "link_id": 0,
+      "source_node_id": 0,
+      "destination_node_id": 7
+    },
+    {
+      "link_id": 1,
+      "source_node_id": 7,
+      "destination_node_id": 0
+    },
+    {
+      "link_id": 2,
+      "source_node_id": 0,
+      "destination_node_id": 11
+    },
+    {
+      "link_id": 3,
+      "source_node_id": 11,
+      "destination_node_id": 0
+    },
+    {
+      "link_id": 4,
+      "source_node_id": 0,
+      "destination_node_id": 13
+    },
+    {
+      "link_id": 5,
+      "source_node_id": 13,
+      "destination_node_id": 0
+    },
+    {
+      "link_id": 6,
+      "source_node_id": 1,
+      "destination_node_id": 13
+    },
+    {
+      "link_id": 7,
+      "source_node_id": 13,
+      "destination_node_id": 1
+    },
+    {
+      "link_id": 8,
+      "source_node_id": 2,
+      "destination_node_id": 9
+    },
+    {
+      "link_id": 9,
+      "source_node_id": 9,
+      "destination_node_id": 2
+    },
+    {
+      "link_id": 10,
+      "source_node_id": 2,
+      "destination_node_id": 14
+    },
+    {
+      "link_id": 11,
+      "source_node_id": 14,
+      "destination_node_id": 2
+    },
+    {
+      "link_id": 12,
+      "source_node_id": 3,
+      "destination_node_id": 5
+    },
+    {
+      "link_id": 13,
+      "source_node_id": 5,
+      "destination_node_id": 3
+    },
+    {
+      "link_id": 14,
+      "source_node_id": 3,
+      "destination_node_id": 14
+    },
+    {
+      "link_id": 15,
+      "source_node_id": 14,
+      "destination_node_id": 3
+    },
+    {
+      "link_id": 16,
+      "source_node_id": 4,
+      "destination_node_id": 6
+    },
+    {
+      "link_id": 17,
+      "source_node_id": 6,
+      "destination_node_id": 4
+    },
+    {
+      "link_id": 18,
+      "source_node_id": 4,
+      "destination_node_id": 11
+    },
+    {
+      "link_id": 19,
+      "source_node_id": 11,
+      "destination_node_id": 4
+    },
+    {
+      "link_id": 20,
+      "source_node_id": 5,
+      "destination_node_id": 8
+    },
+    {
+      "link_id": 21,
+      "source_node_id": 8,
+      "destination_node_id": 5
+    },
+    {
+      "link_id": 22,
+      "source_node_id": 5,
+      "destination_node_id": 12
+    },
+    {
+      "link_id": 23,
+      "source_node_id": 12,
+      "destination_node_id": 5
+    },
+    {
+      "link_id": 24,
+      "source_node_id": 6,
+      "destination_node_id": 11
+    },
+    {
+      "link_id": 25,
+      "source_node_id": 11,
+      "destination_node_id": 6
+    },
+    {
+      "link_id": 26,
+      "source_node_id": 7,
+      "destination_node_id": 9
+    },
+    {
+      "link_id": 27,
+      "source_node_id": 9,
+      "destination_node_id": 7
+    },
+    {
+      "link_id": 28,
+      "source_node_id": 7,
+      "destination_node_id": 10
+    },
+    {
+      "link_id": 29,
+      "source_node_id": 10,
+      "destination_node_id": 7
+    },
+    {
+      "link_id": 30,
+      "source_node_id": 7,
+      "destination_node_id": 12
+    },
+    {
+      "link_id": 31,
+      "source_node_id": 12,
+      "destination_node_id": 7
+    },
+    {
+      "link_id": 32,
+      "source_node_id": 7,
+      "destination_node_id": 13
+    },
+    {
+      "link_id": 33,
+      "source_node_id": 13,
+      "destination_node_id": 7
+    },
+    {
+      "link_id": 34,
+      "source_node_id": 9,
+      "destination_node_id": 11
+    },
+    {
+      "link_id": 35,
+      "source_node_id": 11,
+      "destination_node_id": 9
+    },
+    {
+      "link_id": 36,
+      "source_node_id": 9,
+      "destination_node_id": 12
+    },
+    {
+      "link_id": 37,
+      "source_node_id": 12,
+      "destination_node_id": 9
+    }
+  ],
+  "source_node_id": 10,
+  "destination_node_id": 12,
+  "candidate_path": {
+    "path_node_ids": [
+      10,
+      7,
+      10,
+      7,
+      12
+    ],
+    "path_link_ids": [
+      29,
+      28,
+      29,
+      30
+    ]
+  },
+  "oracle_label": "REPEATED_NODE",
+  "answer": {
+    "is_valid": false,
+    "error_type": "REPEATED_NODE"
+  },
+  "generation_metadata": {
+    "requested_hop_range": [
+      3,
+      4
+    ],
+    "effective_candidate_hop_count": 4,
+    "topology_diameter_hops": 5,
+    "intended_label": "REPEATED_NODE",
+    "fresh_first_match_label": "REPEATED_NODE",
+    "case_variant": "REPEATED_NODE",
+    "derived_seed": 6727741950049530155,
+    "master_seed": 20260922,
+    "topology_id": "GABRIEL_CONTROLLED_N015_001",
+    "topology_sequence_id": 107,
+    "source_category": "controlled_gabriel_reference_extension",
+    "length_semantics": "synthetic_scaled_geometry_km",
+    "size_bin": "11-29",
+    "production_case_subtype": "medium"
+  }
+}

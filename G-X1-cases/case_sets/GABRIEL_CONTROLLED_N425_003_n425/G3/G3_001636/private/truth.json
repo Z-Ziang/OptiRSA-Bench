@@ -1,0 +1,118 @@
+{
+  "case_id": "G3_001636",
+  "task_type": "G3",
+  "answer": {
+    "shortest_paths": [
+      {
+        "pair_id": "pair_A",
+        "path_node_ids": [
+          0,
+          133,
+          392,
+          215,
+          210,
+          412,
+          292,
+          147,
+          144,
+          44,
+          2
+        ],
+        "path_link_ids": [
+          2,
+          920,
+          1321,
+          1299,
+          1300,
+          1547,
+          985,
+          965,
+          357,
+          17
+        ],
+        "hop_count": 10,
+        "total_length_km": 979.4844326628456
+      },
+      {
+        "pair_id": "pair_B",
+        "path_node_ids": [
+          0,
+          133,
+          240,
+          123,
+          320,
+          4
+        ],
+        "path_link_ids": [
+          2,
+          916,
+          873,
+          876,
+          41
+        ],
+        "hop_count": 5,
+        "total_length_km": 443.2027243659943
+      }
+    ],
+    "has_shared_directed_link": true,
+    "shared_link_ids": [
+      2
+    ]
+  },
+  "oracle_shortest_paths": [
+    {
+      "pair_id": "pair_A",
+      "path_node_ids": [
+        0,
+        133,
+        392,
+        215,
+        210,
+        412,
+        292,
+        147,
+        144,
+        44,
+        2
+      ],
+      "path_link_ids": [
+        2,
+        920,
+        1321,
+        1299,
+        1300,
+        1547,
+        985,
+        965,
+        357,
+        17
+      ],
+      "hop_count": 10,
+      "total_length_km": 979.4844326628456,
+      "multiplicity": 1,
+      "optimal_cost": 979.4844326628456
+    },
+    {
+      "pair_id": "pair_B",
+      "path_node_ids": [
+        0,
+        133,
+        240,
+        123,
+        320,
+        4
+      ],
+      "path_link_ids": [
+        2,
+        916,
+        873,
+        876,
+        41
+      ],
+      "hop_count": 5,
+      "total_length_km": 443.2027243659943,
+      "multiplicity": 1,
+      "optimal_cost": 443.2027243659943
+    }
+  ]
+}

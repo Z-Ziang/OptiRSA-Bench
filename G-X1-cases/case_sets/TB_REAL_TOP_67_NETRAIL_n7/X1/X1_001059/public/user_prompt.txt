@@ -1,0 +1,27 @@
+Find one globally shortest path from node 0 to node 1 in the current directed optical network topology. The shortest-path metric is HOP_COUNT (minimum hop count).
+
+Network nodes: 0, 1, 2, 3, 4, 5, 6.
+
+Current directed links:
+Directed link 0: node 0 -> node 4;
+Directed link 1: node 4 -> node 0;
+Directed link 2: node 0 -> node 6;
+Directed link 3: node 6 -> node 0;
+Directed link 4: node 1 -> node 2;
+Directed link 5: node 2 -> node 1;
+Directed link 6: node 1 -> node 6;
+Directed link 7: node 6 -> node 1;
+Directed link 8: node 2 -> node 3;
+Directed link 9: node 3 -> node 2;
+Directed link 10: node 2 -> node 4;
+Directed link 11: node 4 -> node 2;
+Directed link 12: node 3 -> node 4;
+Directed link 13: node 4 -> node 3;
+Directed link 14: node 4 -> node 5;
+Directed link 15: node 5 -> node 4;
+Directed link 16: node 4 -> node 6;
+Directed link 17: node 6 -> node 4;
+Directed link 18: node 5 -> node 6;
+Directed link 19: node 6 -> node 5.
+
+Return one globally shortest path in the format required by the system prompt.

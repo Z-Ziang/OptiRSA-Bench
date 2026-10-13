@@ -1,0 +1,71 @@
+Determine whether the candidate path below is a simple directed path from node 15 to node 19 in the current directed optical network topology.
+
+Network nodes: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22.
+
+Current directed links:
+Directed link 0: node 0 -> node 1;
+Directed link 1: node 1 -> node 0;
+Directed link 2: node 0 -> node 3;
+Directed link 3: node 3 -> node 0;
+Directed link 4: node 1 -> node 3;
+Directed link 5: node 3 -> node 1;
+Directed link 6: node 1 -> node 6;
+Directed link 7: node 6 -> node 1;
+Directed link 8: node 1 -> node 16;
+Directed link 9: node 16 -> node 1;
+Directed link 10: node 2 -> node 3;
+Directed link 11: node 3 -> node 2;
+Directed link 12: node 2 -> node 13;
+Directed link 13: node 13 -> node 2;
+Directed link 14: node 3 -> node 9;
+Directed link 15: node 9 -> node 3;
+Directed link 16: node 4 -> node 6;
+Directed link 17: node 6 -> node 4;
+Directed link 18: node 4 -> node 7;
+Directed link 19: node 7 -> node 4;
+Directed link 20: node 5 -> node 8;
+Directed link 21: node 8 -> node 5;
+Directed link 22: node 5 -> node 9;
+Directed link 23: node 9 -> node 5;
+Directed link 24: node 5 -> node 18;
+Directed link 25: node 18 -> node 5;
+Directed link 26: node 5 -> node 20;
+Directed link 27: node 20 -> node 5;
+Directed link 28: node 6 -> node 7;
+Directed link 29: node 7 -> node 6;
+Directed link 30: node 6 -> node 17;
+Directed link 31: node 17 -> node 6;
+Directed link 32: node 6 -> node 21;
+Directed link 33: node 21 -> node 6;
+Directed link 34: node 9 -> node 14;
+Directed link 35: node 14 -> node 9;
+Directed link 36: node 10 -> node 11;
+Directed link 37: node 11 -> node 10;
+Directed link 38: node 10 -> node 14;
+Directed link 39: node 14 -> node 10;
+Directed link 40: node 10 -> node 15;
+Directed link 41: node 15 -> node 10;
+Directed link 42: node 11 -> node 12;
+Directed link 43: node 12 -> node 11;
+Directed link 44: node 12 -> node 13;
+Directed link 45: node 13 -> node 12;
+Directed link 46: node 16 -> node 21;
+Directed link 47: node 21 -> node 16;
+Directed link 48: node 16 -> node 22;
+Directed link 49: node 22 -> node 16;
+Directed link 50: node 17 -> node 18;
+Directed link 51: node 18 -> node 17;
+Directed link 52: node 17 -> node 19;
+Directed link 53: node 19 -> node 17;
+Directed link 54: node 19 -> node 20;
+Directed link 55: node 20 -> node 19;
+Directed link 56: node 20 -> node 21;
+Directed link 57: node 21 -> node 20.
+
+Candidate path:
+Source node: 15;
+Destination node: 19;
+Path node IDs: [15,0,14,9,5,20,19];
+Directed link IDs: [41,38,35,23,26,55].
+
+Apply the FIRST_MATCH order defined in the system prompt.

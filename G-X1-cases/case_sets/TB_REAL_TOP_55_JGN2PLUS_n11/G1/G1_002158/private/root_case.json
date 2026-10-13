@@ -1,0 +1,280 @@
+{
+  "schema_version": "GX1_ROOT_CASE_V2_0",
+  "case_id": "G1_002158",
+  "task_type": "G1",
+  "topology_id": "TB_REAL::TOP_55_JGN2PLUS",
+  "nodes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "undirected_edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      2,
+      7
+    ],
+    [
+      4,
+      10
+    ],
+    [
+      5,
+      10
+    ],
+    [
+      6,
+      10
+    ],
+    [
+      8,
+      9
+    ],
+    [
+      9,
+      10
+    ]
+  ],
+  "conversion": "ADJACENCY_LIST_TO_ADJACENCY_MATRIX",
+  "source_representation": "ADJACENCY_LIST",
+  "target_representation": "ADJACENCY_MATRIX",
+  "source_payload": {
+    "0": [
+      1,
+      2
+    ],
+    "1": [
+      0,
+      3,
+      5
+    ],
+    "2": [
+      0,
+      7
+    ],
+    "3": [
+      1
+    ],
+    "4": [
+      10
+    ],
+    "5": [
+      1,
+      10
+    ],
+    "6": [
+      10
+    ],
+    "7": [
+      2
+    ],
+    "8": [
+      9
+    ],
+    "9": [
+      8,
+      10
+    ],
+    "10": [
+      4,
+      5,
+      6,
+      9
+    ]
+  },
+  "answer": {
+    "representation_type": "ADJACENCY_MATRIX",
+    "nodes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "adjacency_matrix": [
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ]
+    ]
+  },
+  "generation_metadata": {
+    "case_variant": "ADJACENCY_LIST_TO_ADJACENCY_MATRIX",
+    "derived_seed": 6141951675665087548,
+    "master_seed": 20260922,
+    "topology_id": "TB_REAL::TOP_55_JGN2PLUS",
+    "topology_sequence_id": 518,
+    "source_category": "real",
+    "length_semantics": "real_trusted_km",
+    "size_bin": "11-29",
+    "production_case_subtype": "representation"
+  }
+}

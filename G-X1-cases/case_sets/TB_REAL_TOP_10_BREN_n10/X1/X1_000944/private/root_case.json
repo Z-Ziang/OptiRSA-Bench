@@ -1,0 +1,189 @@
+{
+  "schema_version": "GX1_ROOT_CASE_V2_0",
+  "case_id": "X1_000944",
+  "task_type": "X1",
+  "topology_id": "TB_REAL::TOP_10_BREN",
+  "nodes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "directed_links": [
+    {
+      "link_id": 0,
+      "source_node_id": 0,
+      "destination_node_id": 1,
+      "length_km": 345.3
+    },
+    {
+      "link_id": 1,
+      "source_node_id": 1,
+      "destination_node_id": 0,
+      "length_km": 345.3
+    },
+    {
+      "link_id": 2,
+      "source_node_id": 0,
+      "destination_node_id": 4,
+      "length_km": 133.545
+    },
+    {
+      "link_id": 3,
+      "source_node_id": 4,
+      "destination_node_id": 0,
+      "length_km": 133.545
+    },
+    {
+      "link_id": 4,
+      "source_node_id": 1,
+      "destination_node_id": 2,
+      "length_km": 251.85
+    },
+    {
+      "link_id": 5,
+      "source_node_id": 2,
+      "destination_node_id": 1,
+      "length_km": 251.85
+    },
+    {
+      "link_id": 6,
+      "source_node_id": 2,
+      "destination_node_id": 3,
+      "length_km": 130.575
+    },
+    {
+      "link_id": 7,
+      "source_node_id": 3,
+      "destination_node_id": 2,
+      "length_km": 130.575
+    },
+    {
+      "link_id": 8,
+      "source_node_id": 3,
+      "destination_node_id": 6,
+      "length_km": 225.45
+    },
+    {
+      "link_id": 9,
+      "source_node_id": 6,
+      "destination_node_id": 3,
+      "length_km": 225.45
+    },
+    {
+      "link_id": 10,
+      "source_node_id": 4,
+      "destination_node_id": 5,
+      "length_km": 48.915
+    },
+    {
+      "link_id": 11,
+      "source_node_id": 5,
+      "destination_node_id": 4,
+      "length_km": 48.915
+    },
+    {
+      "link_id": 12,
+      "source_node_id": 4,
+      "destination_node_id": 7,
+      "length_km": 135.795
+    },
+    {
+      "link_id": 13,
+      "source_node_id": 7,
+      "destination_node_id": 4,
+      "length_km": 135.795
+    },
+    {
+      "link_id": 14,
+      "source_node_id": 5,
+      "destination_node_id": 6,
+      "length_km": 85.57499999999999
+    },
+    {
+      "link_id": 15,
+      "source_node_id": 6,
+      "destination_node_id": 5,
+      "length_km": 85.57499999999999
+    },
+    {
+      "link_id": 16,
+      "source_node_id": 6,
+      "destination_node_id": 9,
+      "length_km": 119.655
+    },
+    {
+      "link_id": 17,
+      "source_node_id": 9,
+      "destination_node_id": 6,
+      "length_km": 119.655
+    },
+    {
+      "link_id": 18,
+      "source_node_id": 7,
+      "destination_node_id": 8,
+      "length_km": 197.1
+    },
+    {
+      "link_id": 19,
+      "source_node_id": 8,
+      "destination_node_id": 7,
+      "length_km": 197.1
+    },
+    {
+      "link_id": 20,
+      "source_node_id": 8,
+      "destination_node_id": 9,
+      "length_km": 199.2
+    },
+    {
+      "link_id": 21,
+      "source_node_id": 9,
+      "destination_node_id": 8,
+      "length_km": 199.2
+    }
+  ],
+  "source_node_id": 2,
+  "destination_node_id": 7,
+  "path_cost_metric": "TOTAL_LENGTH_KM",
+  "shortest_path_multiplicity": 1,
+  "optimal_cost": 626.31,
+  "answer": {
+    "path_node_ids": [
+      2,
+      3,
+      6,
+      5,
+      4,
+      7
+    ],
+    "path_link_ids": [
+      6,
+      8,
+      15,
+      11,
+      12
+    ],
+    "hop_count": 5,
+    "total_length_km": 626.31
+  },
+  "generation_metadata": {
+    "effective_shortest_path_hop_count": 5,
+    "observed_shortest_path_multiplicity": 1,
+    "case_variant": "TOTAL_LENGTH_KM",
+    "derived_seed": 15556732111187459675,
+    "master_seed": 20260922,
+    "topology_id": "TB_REAL::TOP_10_BREN",
+    "topology_sequence_id": 472,
+    "source_category": "real",
+    "length_semantics": "real_trusted_km",
+    "size_bin": "5-10",
+    "production_case_subtype": "long"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "schema_version": "GX1_ROOT_CASE_V2_0",
+  "case_id": "X1_000173",
+  "task_type": "X1",
+  "topology_id": "GABRIEL_CONTROLLED_N005_001",
+  "nodes": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "directed_links": [
+    {
+      "link_id": 0,
+      "source_node_id": 0,
+      "destination_node_id": 4
+    },
+    {
+      "link_id": 1,
+      "source_node_id": 4,
+      "destination_node_id": 0
+    },
+    {
+      "link_id": 2,
+      "source_node_id": 1,
+      "destination_node_id": 2
+    },
+    {
+      "link_id": 3,
+      "source_node_id": 2,
+      "destination_node_id": 1
+    },
+    {
+      "link_id": 4,
+      "source_node_id": 2,
+      "destination_node_id": 3
+    },
+    {
+      "link_id": 5,
+      "source_node_id": 3,
+      "destination_node_id": 2
+    },
+    {
+      "link_id": 6,
+      "source_node_id": 3,
+      "destination_node_id": 4
+    },
+    {
+      "link_id": 7,
+      "source_node_id": 4,
+      "destination_node_id": 3
+    }
+  ],
+  "source_node_id": 0,
+  "destination_node_id": 1,
+  "path_cost_metric": "HOP_COUNT",
+  "shortest_path_multiplicity": 1,
+  "optimal_cost": 4.0,
+  "answer": {
+    "path_node_ids": [
+      0,
+      4,
+      3,
+      2,
+      1
+    ],
+    "path_link_ids": [
+      0,
+      7,
+      5,
+      3
+    ],
+    "hop_count": 4
+  },
+  "generation_metadata": {
+    "effective_shortest_path_hop_count": 4,
+    "observed_shortest_path_multiplicity": 1,
+    "case_variant": "HOP_COUNT",
+    "derived_seed": 15243267312967744491,
+    "master_seed": 20260922,
+    "topology_id": "GABRIEL_CONTROLLED_N005_001",
+    "topology_sequence_id": 87,
+    "source_category": "controlled_gabriel_reference_extension",
+    "length_semantics": "synthetic_scaled_geometry_km",
+    "size_bin": "5-10",
+    "production_case_subtype": "long"
+  }
+}

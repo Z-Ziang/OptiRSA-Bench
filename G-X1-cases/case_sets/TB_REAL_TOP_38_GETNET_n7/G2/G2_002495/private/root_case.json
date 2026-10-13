@@ -1,0 +1,136 @@
+{
+  "schema_version": "GX1_ROOT_CASE_V2_0",
+  "case_id": "G2_002495",
+  "task_type": "G2",
+  "topology_id": "TB_REAL::TOP_38_GETNET",
+  "nodes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "directed_links": [
+    {
+      "link_id": 0,
+      "source_node_id": 0,
+      "destination_node_id": 1
+    },
+    {
+      "link_id": 1,
+      "source_node_id": 1,
+      "destination_node_id": 0
+    },
+    {
+      "link_id": 2,
+      "source_node_id": 1,
+      "destination_node_id": 2
+    },
+    {
+      "link_id": 3,
+      "source_node_id": 2,
+      "destination_node_id": 1
+    },
+    {
+      "link_id": 4,
+      "source_node_id": 1,
+      "destination_node_id": 4
+    },
+    {
+      "link_id": 5,
+      "source_node_id": 4,
+      "destination_node_id": 1
+    },
+    {
+      "link_id": 6,
+      "source_node_id": 1,
+      "destination_node_id": 6
+    },
+    {
+      "link_id": 7,
+      "source_node_id": 6,
+      "destination_node_id": 1
+    },
+    {
+      "link_id": 8,
+      "source_node_id": 2,
+      "destination_node_id": 3
+    },
+    {
+      "link_id": 9,
+      "source_node_id": 3,
+      "destination_node_id": 2
+    },
+    {
+      "link_id": 10,
+      "source_node_id": 2,
+      "destination_node_id": 4
+    },
+    {
+      "link_id": 11,
+      "source_node_id": 4,
+      "destination_node_id": 2
+    },
+    {
+      "link_id": 12,
+      "source_node_id": 4,
+      "destination_node_id": 5
+    },
+    {
+      "link_id": 13,
+      "source_node_id": 5,
+      "destination_node_id": 4
+    },
+    {
+      "link_id": 14,
+      "source_node_id": 5,
+      "destination_node_id": 6
+    },
+    {
+      "link_id": 15,
+      "source_node_id": 6,
+      "destination_node_id": 5
+    }
+  ],
+  "source_node_id": 6,
+  "destination_node_id": 5,
+  "candidate_path": {
+    "path_node_ids": [
+      6,
+      1,
+      6,
+      5
+    ],
+    "path_link_ids": [
+      7,
+      6,
+      15
+    ]
+  },
+  "oracle_label": "REPEATED_NODE",
+  "answer": {
+    "is_valid": false,
+    "error_type": "REPEATED_NODE"
+  },
+  "generation_metadata": {
+    "requested_hop_range": [
+      2,
+      2
+    ],
+    "effective_candidate_hop_count": 3,
+    "topology_diameter_hops": 3,
+    "intended_label": "REPEATED_NODE",
+    "fresh_first_match_label": "REPEATED_NODE",
+    "case_variant": "REPEATED_NODE",
+    "derived_seed": 697205465395674978,
+    "master_seed": 20260922,
+    "topology_id": "TB_REAL::TOP_38_GETNET",
+    "topology_sequence_id": 499,
+    "source_category": "real",
+    "length_semantics": "real_trusted_km",
+    "size_bin": "5-10",
+    "production_case_subtype": "long"
+  }
+}

@@ -1,0 +1,257 @@
+{
+  "schema_version": "GX1_ROOT_CASE_V2_0",
+  "case_id": "G1_001897",
+  "task_type": "G1",
+  "topology_id": "TB_REAL::TOP_14_CESNET",
+  "nodes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "undirected_edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      11
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      6,
+      8
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      8,
+      9
+    ],
+    [
+      8,
+      10
+    ],
+    [
+      8,
+      11
+    ],
+    [
+      9,
+      11
+    ],
+    [
+      10,
+      11
+    ]
+  ],
+  "conversion": "EDGE_LIST_TO_ADJACENCY_LIST",
+  "source_representation": "EDGE_LIST",
+  "target_representation": "ADJACENCY_LIST",
+  "source_payload": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      11
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      6,
+      8
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      8,
+      9
+    ],
+    [
+      8,
+      10
+    ],
+    [
+      8,
+      11
+    ],
+    [
+      9,
+      11
+    ],
+    [
+      10,
+      11
+    ]
+  ],
+  "answer": {
+    "representation_type": "ADJACENCY_LIST",
+    "adjacency_list": {
+      "0": [
+        1,
+        2
+      ],
+      "1": [
+        0,
+        2,
+        3
+      ],
+      "2": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "3": [
+        1,
+        2,
+        4,
+        11
+      ],
+      "4": [
+        2,
+        3
+      ],
+      "5": [
+        2,
+        6
+      ],
+      "6": [
+        2,
+        5,
+        7,
+        8
+      ],
+      "7": [
+        6,
+        8
+      ],
+      "8": [
+        6,
+        7,
+        9,
+        10,
+        11
+      ],
+      "9": [
+        8,
+        11
+      ],
+      "10": [
+        8,
+        11
+      ],
+      "11": [
+        3,
+        8,
+        9,
+        10
+      ]
+    }
+  },
+  "generation_metadata": {
+    "case_variant": "EDGE_LIST_TO_ADJACENCY_LIST",
+    "derived_seed": 471253131478504797,
+    "master_seed": 20260922,
+    "topology_id": "TB_REAL::TOP_14_CESNET",
+    "topology_sequence_id": 475,
+    "source_category": "real",
+    "length_semantics": "real_trusted_km",
+    "size_bin": "11-29",
+    "production_case_subtype": "representation"
+  }
+}

@@ -1,0 +1,85 @@
+Find a shortest path for each of the two source-destination pairs in the current directed optical network topology, then determine whether the two shortest paths share at least one identical directed link. The shortest-path metric is TOTAL_LENGTH_KM (minimum total length in kilometers).
+
+Network nodes: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18.
+
+Current directed links:
+Directed link 0: node 0 -> node 1, length 754.35 km;
+Directed link 1: node 1 -> node 0, length 754.35 km;
+Directed link 2: node 0 -> node 3, length 1982.99 km;
+Directed link 3: node 3 -> node 0, length 1982.99 km;
+Directed link 4: node 1 -> node 2, length 1500 km;
+Directed link 5: node 2 -> node 1, length 1500 km;
+Directed link 6: node 2 -> node 3, length 515.58 km;
+Directed link 7: node 3 -> node 2, length 515.58 km;
+Directed link 8: node 2 -> node 4, length 1171.35 km;
+Directed link 9: node 4 -> node 2, length 1171.35 km;
+Directed link 10: node 2 -> node 5, length 396.105 km;
+Directed link 11: node 5 -> node 2, length 396.105 km;
+Directed link 12: node 2 -> node 6, length 959.385 km;
+Directed link 13: node 6 -> node 2, length 959.385 km;
+Directed link 14: node 2 -> node 8, length 732.15 km;
+Directed link 15: node 8 -> node 2, length 732.15 km;
+Directed link 16: node 3 -> node 4, length 694.965 km;
+Directed link 17: node 4 -> node 3, length 694.965 km;
+Directed link 18: node 3 -> node 5, length 481.11 km;
+Directed link 19: node 5 -> node 3, length 481.11 km;
+Directed link 20: node 3 -> node 7, length 535.89 km;
+Directed link 21: node 7 -> node 3, length 535.89 km;
+Directed link 22: node 3 -> node 12, length 1395.7 km;
+Directed link 23: node 12 -> node 3, length 1395.7 km;
+Directed link 24: node 3 -> node 14, length 1500 km;
+Directed link 25: node 14 -> node 3, length 1500 km;
+Directed link 26: node 5 -> node 7, length 260.7 km;
+Directed link 27: node 7 -> node 5, length 260.7 km;
+Directed link 28: node 5 -> node 8, length 737.715 km;
+Directed link 29: node 8 -> node 5, length 737.715 km;
+Directed link 30: node 6 -> node 8, length 327.225 km;
+Directed link 31: node 8 -> node 6, length 327.225 km;
+Directed link 32: node 6 -> node 9, length 968.25 km;
+Directed link 33: node 9 -> node 6, length 968.25 km;
+Directed link 34: node 6 -> node 10, length 793.455 km;
+Directed link 35: node 10 -> node 6, length 793.455 km;
+Directed link 36: node 6 -> node 12, length 1262.4 km;
+Directed link 37: node 12 -> node 6, length 1262.4 km;
+Directed link 38: node 6 -> node 18, length 715.785 km;
+Directed link 39: node 18 -> node 6, length 715.785 km;
+Directed link 40: node 7 -> node 9, length 1064.74 km;
+Directed link 41: node 9 -> node 7, length 1064.74 km;
+Directed link 42: node 7 -> node 12, length 863.61 km;
+Directed link 43: node 12 -> node 7, length 863.61 km;
+Directed link 44: node 7 -> node 13, length 932.52 km;
+Directed link 45: node 13 -> node 7, length 932.52 km;
+Directed link 46: node 8 -> node 9, length 789.105 km;
+Directed link 47: node 9 -> node 8, length 789.105 km;
+Directed link 48: node 9 -> node 11, length 378.855 km;
+Directed link 49: node 11 -> node 9, length 378.855 km;
+Directed link 50: node 9 -> node 12, length 419.28 km;
+Directed link 51: node 12 -> node 9, length 419.28 km;
+Directed link 52: node 10 -> node 11, length 402.03 km;
+Directed link 53: node 11 -> node 10, length 402.03 km;
+Directed link 54: node 10 -> node 17, length 1500 km;
+Directed link 55: node 17 -> node 10, length 1500 km;
+Directed link 56: node 10 -> node 18, length 777.045 km;
+Directed link 57: node 18 -> node 10, length 777.045 km;
+Directed link 58: node 11 -> node 12, length 785.475 km;
+Directed link 59: node 12 -> node 11, length 785.475 km;
+Directed link 60: node 12 -> node 15, length 1216.21 km;
+Directed link 61: node 15 -> node 12, length 1216.21 km;
+Directed link 62: node 12 -> node 16, length 2012.44 km;
+Directed link 63: node 16 -> node 12, length 2012.44 km;
+Directed link 64: node 13 -> node 14, length 723.435 km;
+Directed link 65: node 14 -> node 13, length 723.435 km;
+Directed link 66: node 13 -> node 15, length 781.29 km;
+Directed link 67: node 15 -> node 13, length 781.29 km;
+Directed link 68: node 14 -> node 15, length 625.89 km;
+Directed link 69: node 15 -> node 14, length 625.89 km;
+Directed link 70: node 15 -> node 16, length 1533.9 km;
+Directed link 71: node 16 -> node 15, length 1533.9 km;
+Directed link 72: node 17 -> node 18, length 1500 km;
+Directed link 73: node 18 -> node 17, length 1500 km.
+
+Source-destination pairs:
+pair_A: node 0 to node 1;
+pair_B: node 0 to node 2.
+
+Return the shortest path for pair_A and pair_B, indicate whether they share any directed link, and if so return every shared directed link ID (link_id).

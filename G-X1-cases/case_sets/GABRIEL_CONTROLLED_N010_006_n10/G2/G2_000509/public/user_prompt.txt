@@ -1,0 +1,39 @@
+Determine whether the candidate path below is a simple directed path from node 3 to node 9 in the current directed optical network topology.
+
+Network nodes: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.
+
+Current directed links:
+Directed link 0: node 0 -> node 3;
+Directed link 1: node 3 -> node 0;
+Directed link 2: node 0 -> node 8;
+Directed link 3: node 8 -> node 0;
+Directed link 4: node 1 -> node 3;
+Directed link 5: node 3 -> node 1;
+Directed link 6: node 1 -> node 6;
+Directed link 7: node 6 -> node 1;
+Directed link 8: node 1 -> node 7;
+Directed link 9: node 7 -> node 1;
+Directed link 10: node 2 -> node 4;
+Directed link 11: node 4 -> node 2;
+Directed link 12: node 2 -> node 8;
+Directed link 13: node 8 -> node 2;
+Directed link 14: node 4 -> node 5;
+Directed link 15: node 5 -> node 4;
+Directed link 16: node 5 -> node 6;
+Directed link 17: node 6 -> node 5;
+Directed link 18: node 5 -> node 8;
+Directed link 19: node 8 -> node 5;
+Directed link 20: node 5 -> node 9;
+Directed link 21: node 9 -> node 5;
+Directed link 22: node 6 -> node 7;
+Directed link 23: node 7 -> node 6;
+Directed link 24: node 7 -> node 8;
+Directed link 25: node 8 -> node 7.
+
+Candidate path:
+Source node: 3;
+Destination node: 9;
+Path node IDs: [3,1,8,5,9];
+Directed link IDs: [1,2,19,20].
+
+Apply the FIRST_MATCH order defined in the system prompt.

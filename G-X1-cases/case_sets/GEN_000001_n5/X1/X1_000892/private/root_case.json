@@ -1,0 +1,164 @@
+{
+  "schema_version": "GX1_ROOT_CASE_V2_0",
+  "case_id": "X1_000892",
+  "task_type": "X1",
+  "topology_id": "GEN_000001",
+  "nodes": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "directed_links": [
+    {
+      "link_id": 0,
+      "source_node_id": 0,
+      "destination_node_id": 1,
+      "length_km": 76.39320222261372
+    },
+    {
+      "link_id": 1,
+      "source_node_id": 1,
+      "destination_node_id": 0,
+      "length_km": 76.39320222261372
+    },
+    {
+      "link_id": 2,
+      "source_node_id": 0,
+      "destination_node_id": 2,
+      "length_km": 123.6067974526227
+    },
+    {
+      "link_id": 3,
+      "source_node_id": 2,
+      "destination_node_id": 0,
+      "length_km": 123.6067974526227
+    },
+    {
+      "link_id": 4,
+      "source_node_id": 0,
+      "destination_node_id": 3,
+      "length_km": 123.60679708870954
+    },
+    {
+      "link_id": 5,
+      "source_node_id": 3,
+      "destination_node_id": 0,
+      "length_km": 123.60679708870954
+    },
+    {
+      "link_id": 6,
+      "source_node_id": 0,
+      "destination_node_id": 4,
+      "length_km": 76.39320046474461
+    },
+    {
+      "link_id": 7,
+      "source_node_id": 4,
+      "destination_node_id": 0,
+      "length_km": 76.39320046474461
+    },
+    {
+      "link_id": 8,
+      "source_node_id": 1,
+      "destination_node_id": 2,
+      "length_km": 76.39320258112721
+    },
+    {
+      "link_id": 9,
+      "source_node_id": 2,
+      "destination_node_id": 1,
+      "length_km": 76.39320258112721
+    },
+    {
+      "link_id": 10,
+      "source_node_id": 1,
+      "destination_node_id": 3,
+      "length_km": 123.60679850221679
+    },
+    {
+      "link_id": 11,
+      "source_node_id": 3,
+      "destination_node_id": 1,
+      "length_km": 123.60679850221679
+    },
+    {
+      "link_id": 12,
+      "source_node_id": 1,
+      "destination_node_id": 4,
+      "length_km": 123.60679744020615
+    },
+    {
+      "link_id": 13,
+      "source_node_id": 4,
+      "destination_node_id": 1,
+      "length_km": 123.60679744020615
+    },
+    {
+      "link_id": 14,
+      "source_node_id": 2,
+      "destination_node_id": 3,
+      "length_km": 76.39320313897052
+    },
+    {
+      "link_id": 15,
+      "source_node_id": 3,
+      "destination_node_id": 2,
+      "length_km": 76.39320313897052
+    },
+    {
+      "link_id": 16,
+      "source_node_id": 2,
+      "destination_node_id": 4,
+      "length_km": 123.60679826613969
+    },
+    {
+      "link_id": 17,
+      "source_node_id": 4,
+      "destination_node_id": 2,
+      "length_km": 123.60679826613969
+    },
+    {
+      "link_id": 18,
+      "source_node_id": 3,
+      "destination_node_id": 4,
+      "length_km": 76.3932028426491
+    },
+    {
+      "link_id": 19,
+      "source_node_id": 4,
+      "destination_node_id": 3,
+      "length_km": 76.3932028426491
+    }
+  ],
+  "source_node_id": 1,
+  "destination_node_id": 3,
+  "path_cost_metric": "TOTAL_LENGTH_KM",
+  "shortest_path_multiplicity": 1,
+  "optimal_cost": 123.60679850221679,
+  "answer": {
+    "path_node_ids": [
+      1,
+      3
+    ],
+    "path_link_ids": [
+      10
+    ],
+    "hop_count": 1,
+    "total_length_km": 123.60679850221679
+  },
+  "generation_metadata": {
+    "effective_shortest_path_hop_count": 1,
+    "observed_shortest_path_multiplicity": 1,
+    "case_variant": "TOTAL_LENGTH_KM",
+    "derived_seed": 7853992613450156330,
+    "master_seed": 20260922,
+    "topology_id": "GEN_000001",
+    "topology_sequence_id": 446,
+    "source_category": "first_stage_generated",
+    "length_semantics": "synthetic_layout_km",
+    "size_bin": "5-10",
+    "production_case_subtype": "short"
+  }
+}

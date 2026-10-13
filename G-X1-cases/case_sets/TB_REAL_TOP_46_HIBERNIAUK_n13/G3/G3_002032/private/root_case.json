@@ -1,0 +1,301 @@
+{
+  "schema_version": "GX1_ROOT_CASE_V2_0",
+  "case_id": "G3_002032",
+  "task_type": "G3",
+  "topology_id": "TB_REAL::TOP_46_HIBERNIAUK",
+  "nodes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "directed_links": [
+    {
+      "link_id": 0,
+      "source_node_id": 0,
+      "destination_node_id": 4,
+      "length_km": 117.9331652049437
+    },
+    {
+      "link_id": 1,
+      "source_node_id": 4,
+      "destination_node_id": 0,
+      "length_km": 117.9331652049437
+    },
+    {
+      "link_id": 2,
+      "source_node_id": 0,
+      "destination_node_id": 11,
+      "length_km": 87.64367488816515
+    },
+    {
+      "link_id": 3,
+      "source_node_id": 11,
+      "destination_node_id": 0,
+      "length_km": 87.64367488816515
+    },
+    {
+      "link_id": 4,
+      "source_node_id": 1,
+      "destination_node_id": 7,
+      "length_km": 91.62093159452056
+    },
+    {
+      "link_id": 5,
+      "source_node_id": 7,
+      "destination_node_id": 1,
+      "length_km": 91.62093159452056
+    },
+    {
+      "link_id": 6,
+      "source_node_id": 1,
+      "destination_node_id": 10,
+      "length_km": 40.14051422646284
+    },
+    {
+      "link_id": 7,
+      "source_node_id": 10,
+      "destination_node_id": 1,
+      "length_km": 40.14051422646284
+    },
+    {
+      "link_id": 8,
+      "source_node_id": 2,
+      "destination_node_id": 9,
+      "length_km": 171.4982865912685
+    },
+    {
+      "link_id": 9,
+      "source_node_id": 9,
+      "destination_node_id": 2,
+      "length_km": 171.4982865912685
+    },
+    {
+      "link_id": 10,
+      "source_node_id": 2,
+      "destination_node_id": 10,
+      "length_km": 74.43306683453827
+    },
+    {
+      "link_id": 11,
+      "source_node_id": 10,
+      "destination_node_id": 2,
+      "length_km": 74.43306683453827
+    },
+    {
+      "link_id": 12,
+      "source_node_id": 3,
+      "destination_node_id": 4,
+      "length_km": 72.29987564362703
+    },
+    {
+      "link_id": 13,
+      "source_node_id": 4,
+      "destination_node_id": 3,
+      "length_km": 72.29987564362703
+    },
+    {
+      "link_id": 14,
+      "source_node_id": 3,
+      "destination_node_id": 6,
+      "length_km": 89.7083602174358
+    },
+    {
+      "link_id": 15,
+      "source_node_id": 6,
+      "destination_node_id": 3,
+      "length_km": 89.7083602174358
+    },
+    {
+      "link_id": 16,
+      "source_node_id": 5,
+      "destination_node_id": 6,
+      "length_km": 129.6648190008794
+    },
+    {
+      "link_id": 17,
+      "source_node_id": 6,
+      "destination_node_id": 5,
+      "length_km": 129.6648190008794
+    },
+    {
+      "link_id": 18,
+      "source_node_id": 5,
+      "destination_node_id": 8,
+      "length_km": 70.49908780911265
+    },
+    {
+      "link_id": 19,
+      "source_node_id": 8,
+      "destination_node_id": 5,
+      "length_km": 70.49908780911265
+    },
+    {
+      "link_id": 20,
+      "source_node_id": 7,
+      "destination_node_id": 8,
+      "length_km": 68.44007076148796
+    },
+    {
+      "link_id": 21,
+      "source_node_id": 8,
+      "destination_node_id": 7,
+      "length_km": 68.44007076148796
+    },
+    {
+      "link_id": 22,
+      "source_node_id": 9,
+      "destination_node_id": 12,
+      "length_km": 183.1512309474041
+    },
+    {
+      "link_id": 23,
+      "source_node_id": 12,
+      "destination_node_id": 9,
+      "length_km": 183.1512309474041
+    },
+    {
+      "link_id": 24,
+      "source_node_id": 11,
+      "destination_node_id": 12,
+      "length_km": 167.3373835976718
+    },
+    {
+      "link_id": 25,
+      "source_node_id": 12,
+      "destination_node_id": 11,
+      "length_km": 167.3373835976718
+    }
+  ],
+  "path_cost_metric": "TOTAL_LENGTH_KM",
+  "pairs": [
+    {
+      "pair_id": "pair_A",
+      "source_node_id": 0,
+      "destination_node_id": 1
+    },
+    {
+      "pair_id": "pair_B",
+      "source_node_id": 0,
+      "destination_node_id": 3
+    }
+  ],
+  "oracle_shortest_paths": [
+    {
+      "pair_id": "pair_A",
+      "path_node_ids": [
+        0,
+        4,
+        3,
+        6,
+        5,
+        8,
+        7,
+        1
+      ],
+      "path_link_ids": [
+        0,
+        13,
+        14,
+        17,
+        18,
+        21,
+        5
+      ],
+      "hop_count": 7,
+      "total_length_km": 640.166310232007,
+      "multiplicity": 1,
+      "optimal_cost": 640.166310232007
+    },
+    {
+      "pair_id": "pair_B",
+      "path_node_ids": [
+        0,
+        4,
+        3
+      ],
+      "path_link_ids": [
+        0,
+        13
+      ],
+      "hop_count": 2,
+      "total_length_km": 190.23304084857074,
+      "multiplicity": 1,
+      "optimal_cost": 190.23304084857074
+    }
+  ],
+  "answer": {
+    "shortest_paths": [
+      {
+        "pair_id": "pair_A",
+        "path_node_ids": [
+          0,
+          4,
+          3,
+          6,
+          5,
+          8,
+          7,
+          1
+        ],
+        "path_link_ids": [
+          0,
+          13,
+          14,
+          17,
+          18,
+          21,
+          5
+        ],
+        "hop_count": 7,
+        "total_length_km": 640.166310232007
+      },
+      {
+        "pair_id": "pair_B",
+        "path_node_ids": [
+          0,
+          4,
+          3
+        ],
+        "path_link_ids": [
+          0,
+          13
+        ],
+        "hop_count": 2,
+        "total_length_km": 190.23304084857074
+      }
+    ],
+    "has_shared_directed_link": true,
+    "shared_link_ids": [
+      0,
+      13
+    ]
+  },
+  "generation_metadata": {
+    "shared_search": {
+      "method": "deterministic_quick_ordered_pair_search",
+      "quick_ordered_pairs_checked": 3,
+      "exhaustive_confirmation": false
+    },
+    "effective_pair_A_hop_count": 7,
+    "effective_pair_B_hop_count": 2,
+    "case_variant": "TOTAL_LENGTH_KM__shared_true",
+    "derived_seed": 4211684694088615416,
+    "master_seed": 20260922,
+    "topology_id": "TB_REAL::TOP_46_HIBERNIAUK",
+    "topology_sequence_id": 508,
+    "source_category": "real",
+    "length_semantics": "real_trusted_km",
+    "size_bin": "11-29",
+    "production_case_subtype": "long"
+  }
+}

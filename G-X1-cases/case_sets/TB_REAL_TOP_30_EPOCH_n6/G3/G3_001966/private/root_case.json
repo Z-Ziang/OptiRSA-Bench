@@ -1,0 +1,207 @@
+{
+  "schema_version": "GX1_ROOT_CASE_V2_0",
+  "case_id": "G3_001966",
+  "task_type": "G3",
+  "topology_id": "TB_REAL::TOP_30_EPOCH",
+  "nodes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "directed_links": [
+    {
+      "link_id": 0,
+      "source_node_id": 0,
+      "destination_node_id": 1,
+      "length_km": 773.4325645850809
+    },
+    {
+      "link_id": 1,
+      "source_node_id": 1,
+      "destination_node_id": 0,
+      "length_km": 773.4325645850809
+    },
+    {
+      "link_id": 2,
+      "source_node_id": 0,
+      "destination_node_id": 2,
+      "length_km": 1888.454439970209
+    },
+    {
+      "link_id": 3,
+      "source_node_id": 2,
+      "destination_node_id": 0,
+      "length_km": 1888.454439970209
+    },
+    {
+      "link_id": 4,
+      "source_node_id": 0,
+      "destination_node_id": 4,
+      "length_km": 4857.418818853637
+    },
+    {
+      "link_id": 5,
+      "source_node_id": 4,
+      "destination_node_id": 0,
+      "length_km": 4857.418818853637
+    },
+    {
+      "link_id": 6,
+      "source_node_id": 1,
+      "destination_node_id": 5,
+      "length_km": 3887.291603216945
+    },
+    {
+      "link_id": 7,
+      "source_node_id": 5,
+      "destination_node_id": 1,
+      "length_km": 3887.291603216945
+    },
+    {
+      "link_id": 8,
+      "source_node_id": 2,
+      "destination_node_id": 3,
+      "length_km": 1843.716434385458
+    },
+    {
+      "link_id": 9,
+      "source_node_id": 3,
+      "destination_node_id": 2,
+      "length_km": 1843.716434385458
+    },
+    {
+      "link_id": 10,
+      "source_node_id": 3,
+      "destination_node_id": 4,
+      "length_km": 1406.590956106817
+    },
+    {
+      "link_id": 11,
+      "source_node_id": 4,
+      "destination_node_id": 3,
+      "length_km": 1406.590956106817
+    },
+    {
+      "link_id": 12,
+      "source_node_id": 4,
+      "destination_node_id": 5,
+      "length_km": 1285.010042656808
+    },
+    {
+      "link_id": 13,
+      "source_node_id": 5,
+      "destination_node_id": 4,
+      "length_km": 1285.010042656808
+    }
+  ],
+  "path_cost_metric": "TOTAL_LENGTH_KM",
+  "pairs": [
+    {
+      "pair_id": "pair_A",
+      "source_node_id": 1,
+      "destination_node_id": 3
+    },
+    {
+      "pair_id": "pair_B",
+      "source_node_id": 3,
+      "destination_node_id": 1
+    }
+  ],
+  "oracle_shortest_paths": [
+    {
+      "pair_id": "pair_A",
+      "path_node_ids": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "path_link_ids": [
+        1,
+        2,
+        8
+      ],
+      "hop_count": 3,
+      "total_length_km": 4505.603438940748,
+      "multiplicity": 1,
+      "optimal_cost": 4505.603438940748
+    },
+    {
+      "pair_id": "pair_B",
+      "path_node_ids": [
+        3,
+        2,
+        0,
+        1
+      ],
+      "path_link_ids": [
+        9,
+        3,
+        0
+      ],
+      "hop_count": 3,
+      "total_length_km": 4505.603438940748,
+      "multiplicity": 1,
+      "optimal_cost": 4505.603438940748
+    }
+  ],
+  "answer": {
+    "shortest_paths": [
+      {
+        "pair_id": "pair_A",
+        "path_node_ids": [
+          1,
+          0,
+          2,
+          3
+        ],
+        "path_link_ids": [
+          1,
+          2,
+          8
+        ],
+        "hop_count": 3,
+        "total_length_km": 4505.603438940748
+      },
+      {
+        "pair_id": "pair_B",
+        "path_node_ids": [
+          3,
+          2,
+          0,
+          1
+        ],
+        "path_link_ids": [
+          9,
+          3,
+          0
+        ],
+        "hop_count": 3,
+        "total_length_km": 4505.603438940748
+      }
+    ],
+    "has_shared_directed_link": false,
+    "shared_link_ids": []
+  },
+  "generation_metadata": {
+    "shared_search": {
+      "method": "deterministic_unique_path_and_reverse",
+      "effective_pair_A_hop_count": 3,
+      "effective_pair_B_hop_count": 3
+    },
+    "effective_pair_A_hop_count": 3,
+    "effective_pair_B_hop_count": 3,
+    "case_variant": "TOTAL_LENGTH_KM__shared_false",
+    "derived_seed": 2139082546702327854,
+    "master_seed": 20260922,
+    "topology_id": "TB_REAL::TOP_30_EPOCH",
+    "topology_sequence_id": 492,
+    "source_category": "real",
+    "length_semantics": "real_trusted_km",
+    "size_bin": "5-10",
+    "production_case_subtype": "long"
+  }
+}

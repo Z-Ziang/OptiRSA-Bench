@@ -1,0 +1,198 @@
+{
+  "schema_version": "GX1_ROOT_CASE_V2_0",
+  "case_id": "X1_000942",
+  "task_type": "X1",
+  "topology_id": "TB_REAL::TOP_105_VIA",
+  "nodes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "directed_links": [
+    {
+      "link_id": 0,
+      "source_node_id": 0,
+      "destination_node_id": 1,
+      "length_km": 754.3499999999999
+    },
+    {
+      "link_id": 1,
+      "source_node_id": 1,
+      "destination_node_id": 0,
+      "length_km": 754.3499999999999
+    },
+    {
+      "link_id": 2,
+      "source_node_id": 0,
+      "destination_node_id": 4,
+      "length_km": 1980.1
+    },
+    {
+      "link_id": 3,
+      "source_node_id": 4,
+      "destination_node_id": 0,
+      "length_km": 1980.1
+    },
+    {
+      "link_id": 4,
+      "source_node_id": 1,
+      "destination_node_id": 2,
+      "length_km": 758.58
+    },
+    {
+      "link_id": 5,
+      "source_node_id": 2,
+      "destination_node_id": 1,
+      "length_km": 758.58
+    },
+    {
+      "link_id": 6,
+      "source_node_id": 2,
+      "destination_node_id": 3,
+      "length_km": 1247.055
+    },
+    {
+      "link_id": 7,
+      "source_node_id": 3,
+      "destination_node_id": 2,
+      "length_km": 1247.055
+    },
+    {
+      "link_id": 8,
+      "source_node_id": 3,
+      "destination_node_id": 4,
+      "length_km": 511.575
+    },
+    {
+      "link_id": 9,
+      "source_node_id": 4,
+      "destination_node_id": 3,
+      "length_km": 511.575
+    },
+    {
+      "link_id": 10,
+      "source_node_id": 3,
+      "destination_node_id": 6,
+      "length_km": 720.03
+    },
+    {
+      "link_id": 11,
+      "source_node_id": 6,
+      "destination_node_id": 3,
+      "length_km": 720.03
+    },
+    {
+      "link_id": 12,
+      "source_node_id": 4,
+      "destination_node_id": 5,
+      "length_km": 538.425
+    },
+    {
+      "link_id": 13,
+      "source_node_id": 5,
+      "destination_node_id": 4,
+      "length_km": 538.425
+    },
+    {
+      "link_id": 14,
+      "source_node_id": 4,
+      "destination_node_id": 6,
+      "length_km": 957.765
+    },
+    {
+      "link_id": 15,
+      "source_node_id": 6,
+      "destination_node_id": 4,
+      "length_km": 957.765
+    },
+    {
+      "link_id": 16,
+      "source_node_id": 5,
+      "destination_node_id": 6,
+      "length_km": 546.66
+    },
+    {
+      "link_id": 17,
+      "source_node_id": 6,
+      "destination_node_id": 5,
+      "length_km": 546.66
+    },
+    {
+      "link_id": 18,
+      "source_node_id": 6,
+      "destination_node_id": 7,
+      "length_km": 456.105
+    },
+    {
+      "link_id": 19,
+      "source_node_id": 7,
+      "destination_node_id": 6,
+      "length_km": 456.105
+    },
+    {
+      "link_id": 20,
+      "source_node_id": 6,
+      "destination_node_id": 8,
+      "length_km": 633.72
+    },
+    {
+      "link_id": 21,
+      "source_node_id": 8,
+      "destination_node_id": 6,
+      "length_km": 633.72
+    },
+    {
+      "link_id": 22,
+      "source_node_id": 7,
+      "destination_node_id": 8,
+      "length_km": 755.5649999999999
+    },
+    {
+      "link_id": 23,
+      "source_node_id": 8,
+      "destination_node_id": 7,
+      "length_km": 755.5649999999999
+    }
+  ],
+  "source_node_id": 1,
+  "destination_node_id": 8,
+  "path_cost_metric": "TOTAL_LENGTH_KM",
+  "shortest_path_multiplicity": 1,
+  "optimal_cost": 3359.385,
+  "answer": {
+    "path_node_ids": [
+      1,
+      2,
+      3,
+      6,
+      8
+    ],
+    "path_link_ids": [
+      4,
+      6,
+      10,
+      20
+    ],
+    "hop_count": 4,
+    "total_length_km": 3359.385
+  },
+  "generation_metadata": {
+    "effective_shortest_path_hop_count": 4,
+    "observed_shortest_path_multiplicity": 1,
+    "case_variant": "TOTAL_LENGTH_KM",
+    "derived_seed": 806035899213481016,
+    "master_seed": 20260922,
+    "topology_id": "TB_REAL::TOP_105_VIA",
+    "topology_sequence_id": 471,
+    "source_category": "real",
+    "length_semantics": "real_trusted_km",
+    "size_bin": "5-10",
+    "production_case_subtype": "long"
+  }
+}

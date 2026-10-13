@@ -1,0 +1,253 @@
+{
+  "schema_version": "GX1_ROOT_CASE_V2_0",
+  "case_id": "G1_002221",
+  "task_type": "G1",
+  "topology_id": "TB_REAL::TOP_66_MZIMA",
+  "nodes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "undirected_edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      8
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      6,
+      9
+    ],
+    [
+      6,
+      10
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      8,
+      11
+    ],
+    [
+      9,
+      10
+    ],
+    [
+      10,
+      12
+    ],
+    [
+      11,
+      13
+    ],
+    [
+      12,
+      13
+    ]
+  ],
+  "conversion": "EDGE_LIST_TO_ADJACENCY_LIST",
+  "source_representation": "EDGE_LIST",
+  "target_representation": "ADJACENCY_LIST",
+  "source_payload": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      8
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      6,
+      9
+    ],
+    [
+      6,
+      10
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      8,
+      11
+    ],
+    [
+      9,
+      10
+    ],
+    [
+      10,
+      12
+    ],
+    [
+      11,
+      13
+    ],
+    [
+      12,
+      13
+    ]
+  ],
+  "answer": {
+    "representation_type": "ADJACENCY_LIST",
+    "adjacency_list": {
+      "0": [
+        1,
+        2
+      ],
+      "1": [
+        0,
+        2,
+        4
+      ],
+      "2": [
+        0,
+        1,
+        3,
+        8
+      ],
+      "3": [
+        2,
+        4
+      ],
+      "4": [
+        1,
+        3,
+        5
+      ],
+      "5": [
+        4,
+        6
+      ],
+      "6": [
+        5,
+        7,
+        9,
+        10
+      ],
+      "7": [
+        6,
+        8
+      ],
+      "8": [
+        2,
+        7,
+        11
+      ],
+      "9": [
+        6,
+        10
+      ],
+      "10": [
+        6,
+        9,
+        12
+      ],
+      "11": [
+        8,
+        13
+      ],
+      "12": [
+        10,
+        13
+      ],
+      "13": [
+        11,
+        12
+      ]
+    }
+  },
+  "generation_metadata": {
+    "case_variant": "EDGE_LIST_TO_ADJACENCY_LIST",
+    "derived_seed": 14090529683474300314,
+    "master_seed": 20260922,
+    "topology_id": "TB_REAL::TOP_66_MZIMA",
+    "topology_sequence_id": 529,
+    "source_category": "real",
+    "length_semantics": "real_trusted_km",
+    "size_bin": "11-29",
+    "production_case_subtype": "representation"
+  }
+}

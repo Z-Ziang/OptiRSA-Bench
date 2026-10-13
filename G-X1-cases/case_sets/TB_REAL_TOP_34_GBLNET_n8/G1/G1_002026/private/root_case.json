@@ -1,0 +1,187 @@
+{
+  "schema_version": "GX1_ROOT_CASE_V2_0",
+  "case_id": "G1_002026",
+  "task_type": "G1",
+  "topology_id": "TB_REAL::TOP_34_GBLNET",
+  "nodes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "undirected_edges": [
+    [
+      0,
+      5
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      5,
+      7
+    ]
+  ],
+  "conversion": "ADJACENCY_LIST_TO_ADJACENCY_MATRIX",
+  "source_representation": "ADJACENCY_LIST",
+  "target_representation": "ADJACENCY_MATRIX",
+  "source_payload": {
+    "0": [
+      5
+    ],
+    "1": [
+      5
+    ],
+    "2": [
+      3,
+      5
+    ],
+    "3": [
+      2,
+      4
+    ],
+    "4": [
+      3
+    ],
+    "5": [
+      0,
+      1,
+      2,
+      6,
+      7
+    ],
+    "6": [
+      5
+    ],
+    "7": [
+      5
+    ]
+  },
+  "answer": {
+    "representation_type": "ADJACENCY_MATRIX",
+    "nodes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "adjacency_matrix": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    ]
+  },
+  "generation_metadata": {
+    "case_variant": "ADJACENCY_LIST_TO_ADJACENCY_MATRIX",
+    "derived_seed": 10133939722085895893,
+    "master_seed": 20260922,
+    "topology_id": "TB_REAL::TOP_34_GBLNET",
+    "topology_sequence_id": 496,
+    "source_category": "real",
+    "length_semantics": "real_trusted_km",
+    "size_bin": "5-10",
+    "production_case_subtype": "representation"
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "schema_version": "GX1_ROOT_CASE_V2_0",
+  "case_id": "G1_001861",
+  "task_type": "G1",
+  "topology_id": "TB_REAL::TOP_103_UNIC",
+  "nodes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "undirected_edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      9
+    ],
+    [
+      2,
+      14
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      5,
+      8
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      9,
+      13
+    ],
+    [
+      10,
+      11
+    ],
+    [
+      10,
+      12
+    ],
+    [
+      11,
+      13
+    ],
+    [
+      12,
+      14
+    ]
+  ],
+  "conversion": "EDGE_LIST_TO_ADJACENCY_LIST",
+  "source_representation": "EDGE_LIST",
+  "target_representation": "ADJACENCY_LIST",
+  "source_payload": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      9
+    ],
+    [
+      2,
+      14
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      5,
+      8
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      9,
+      13
+    ],
+    [
+      10,
+      11
+    ],
+    [
+      10,
+      12
+    ],
+    [
+      11,
+      13
+    ],
+    [
+      12,
+      14
+    ]
+  ],
+  "answer": {
+    "representation_type": "ADJACENCY_LIST",
+    "adjacency_list": {
+      "0": [
+        1,
+        2,
+        3
+      ],
+      "1": [
+        0,
+        6,
+        7
+      ],
+      "2": [
+        0,
+        3,
+        9,
+        14
+      ],
+      "3": [
+        0,
+        2
+      ],
+      "4": [
+        5,
+        6
+      ],
+      "5": [
+        4,
+        8
+      ],
+      "6": [
+        1,
+        4
+      ],
+      "7": [
+        1,
+        8
+      ],
+      "8": [
+        5,
+        7
+      ],
+      "9": [
+        2,
+        13
+      ],
+      "10": [
+        11,
+        12
+      ],
+      "11": [
+        10,
+        13
+      ],
+      "12": [
+        10,
+        14
+      ],
+      "13": [
+        9,
+        11
+      ],
+      "14": [
+        2,
+        12
+      ]
+    }
+  },
+  "generation_metadata": {
+    "case_variant": "EDGE_LIST_TO_ADJACENCY_LIST",
+    "derived_seed": 3139515728812786624,
+    "master_seed": 20260922,
+    "topology_id": "TB_REAL::TOP_103_UNIC",
+    "topology_sequence_id": 469,
+    "source_category": "real",
+    "length_semantics": "real_trusted_km",
+    "size_bin": "11-29",
+    "production_case_subtype": "representation"
+  }
+}

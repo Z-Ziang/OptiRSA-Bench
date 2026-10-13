@@ -1,0 +1,195 @@
+{
+  "schema_version": "GX1_ROOT_CASE_V2_0",
+  "case_id": "G3_001870",
+  "task_type": "G3",
+  "topology_id": "TB_REAL::TOP_102_TELECOMSERBIA",
+  "nodes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "directed_links": [
+    {
+      "link_id": 0,
+      "source_node_id": 0,
+      "destination_node_id": 1,
+      "length_km": 105.5904827819614
+    },
+    {
+      "link_id": 1,
+      "source_node_id": 1,
+      "destination_node_id": 0,
+      "length_km": 105.5904827819614
+    },
+    {
+      "link_id": 2,
+      "source_node_id": 0,
+      "destination_node_id": 5,
+      "length_km": 473.8473643351294
+    },
+    {
+      "link_id": 3,
+      "source_node_id": 5,
+      "destination_node_id": 0,
+      "length_km": 473.8473643351294
+    },
+    {
+      "link_id": 4,
+      "source_node_id": 1,
+      "destination_node_id": 2,
+      "length_km": 140.7127501064379
+    },
+    {
+      "link_id": 5,
+      "source_node_id": 2,
+      "destination_node_id": 1,
+      "length_km": 140.7127501064379
+    },
+    {
+      "link_id": 6,
+      "source_node_id": 2,
+      "destination_node_id": 3,
+      "length_km": 166.162096751931
+    },
+    {
+      "link_id": 7,
+      "source_node_id": 3,
+      "destination_node_id": 2,
+      "length_km": 166.162096751931
+    },
+    {
+      "link_id": 8,
+      "source_node_id": 3,
+      "destination_node_id": 4,
+      "length_km": 81.5124068971401
+    },
+    {
+      "link_id": 9,
+      "source_node_id": 4,
+      "destination_node_id": 3,
+      "length_km": 81.5124068971401
+    },
+    {
+      "link_id": 10,
+      "source_node_id": 4,
+      "destination_node_id": 5,
+      "length_km": 316.0425249015269
+    },
+    {
+      "link_id": 11,
+      "source_node_id": 5,
+      "destination_node_id": 4,
+      "length_km": 316.0425249015269
+    }
+  ],
+  "path_cost_metric": "TOTAL_LENGTH_KM",
+  "pairs": [
+    {
+      "pair_id": "pair_A",
+      "source_node_id": 0,
+      "destination_node_id": 3
+    },
+    {
+      "pair_id": "pair_B",
+      "source_node_id": 3,
+      "destination_node_id": 0
+    }
+  ],
+  "oracle_shortest_paths": [
+    {
+      "pair_id": "pair_A",
+      "path_node_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "path_link_ids": [
+        0,
+        4,
+        6
+      ],
+      "hop_count": 3,
+      "total_length_km": 412.4653296403303,
+      "multiplicity": 1,
+      "optimal_cost": 412.4653296403303
+    },
+    {
+      "pair_id": "pair_B",
+      "path_node_ids": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "path_link_ids": [
+        7,
+        5,
+        1
+      ],
+      "hop_count": 3,
+      "total_length_km": 412.46532964033025,
+      "multiplicity": 1,
+      "optimal_cost": 412.46532964033025
+    }
+  ],
+  "answer": {
+    "shortest_paths": [
+      {
+        "pair_id": "pair_A",
+        "path_node_ids": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "path_link_ids": [
+          0,
+          4,
+          6
+        ],
+        "hop_count": 3,
+        "total_length_km": 412.4653296403303
+      },
+      {
+        "pair_id": "pair_B",
+        "path_node_ids": [
+          3,
+          2,
+          1,
+          0
+        ],
+        "path_link_ids": [
+          7,
+          5,
+          1
+        ],
+        "hop_count": 3,
+        "total_length_km": 412.46532964033025
+      }
+    ],
+    "has_shared_directed_link": false,
+    "shared_link_ids": []
+  },
+  "generation_metadata": {
+    "shared_search": {
+      "method": "deterministic_unique_path_and_reverse",
+      "effective_pair_A_hop_count": 3,
+      "effective_pair_B_hop_count": 3
+    },
+    "effective_pair_A_hop_count": 3,
+    "effective_pair_B_hop_count": 3,
+    "case_variant": "TOTAL_LENGTH_KM__shared_false",
+    "derived_seed": 15520531658596601184,
+    "master_seed": 20260922,
+    "topology_id": "TB_REAL::TOP_102_TELECOMSERBIA",
+    "topology_sequence_id": 468,
+    "source_category": "real",
+    "length_semantics": "real_trusted_km",
+    "size_bin": "5-10",
+    "production_case_subtype": "long"
+  }
+}

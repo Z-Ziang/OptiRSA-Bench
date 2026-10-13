@@ -1,0 +1,119 @@
+{
+  "schema_version": "GX1_ROOT_CASE_V2_0",
+  "case_id": "G1_001999",
+  "task_type": "G1",
+  "topology_id": "TB_REAL::TOP_30_EPOCH",
+  "nodes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "undirected_edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      5
+    ]
+  ],
+  "conversion": "EDGE_LIST_TO_ADJACENCY_LIST",
+  "source_representation": "EDGE_LIST",
+  "target_representation": "ADJACENCY_LIST",
+  "source_payload": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      5
+    ]
+  ],
+  "answer": {
+    "representation_type": "ADJACENCY_LIST",
+    "adjacency_list": {
+      "0": [
+        1,
+        2,
+        4
+      ],
+      "1": [
+        0,
+        5
+      ],
+      "2": [
+        0,
+        3
+      ],
+      "3": [
+        2,
+        4
+      ],
+      "4": [
+        0,
+        3,
+        5
+      ],
+      "5": [
+        1,
+        4
+      ]
+    }
+  },
+  "generation_metadata": {
+    "case_variant": "EDGE_LIST_TO_ADJACENCY_LIST",
+    "derived_seed": 4840996530270511080,
+    "master_seed": 20260922,
+    "topology_id": "TB_REAL::TOP_30_EPOCH",
+    "topology_sequence_id": 492,
+    "source_category": "real",
+    "length_semantics": "real_trusted_km",
+    "size_bin": "5-10",
+    "production_case_subtype": "representation"
+  }
+}

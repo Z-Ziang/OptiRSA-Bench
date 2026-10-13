@@ -1,0 +1,56 @@
+{
+  "case_uid": "00f3cc70a689256cd87a35c1f68c1a3e3af0cd1e9e62cb84feb395d659a12c55",
+  "source_archive": "GX1_V3_1_BILINGUAL_FULLPOOL_FINAL_20261002.zip",
+  "source_archive_sha256": "4f4e875efc78c27c3c1d24ebf43978cde49a763f09c1c55274d651797a385812",
+  "source_internal_case_path": "02_EN_INTERNAL_DATASET/cases/X1/X1_000188",
+  "source_case_id": "X1_000188",
+  "source_contract": "GX1_V3.1_Algorithm_LLM_Only",
+  "files": {
+    "public/system_prompt.txt": {
+      "sha256": "38280f7759dbe17bec6e3656b354e7b9c4603a8ff2f3866412c06245f6f896c0",
+      "bytes": 896
+    },
+    "public/user_prompt.txt": {
+      "sha256": "3c11e87ce2bd6f519273807f37ac8c404e1483cd694c5790aebda159ad8fcd6b",
+      "bytes": 861
+    },
+    "private/root_case.json": {
+      "sha256": "e2467e23ae464c48971a91c097a43ba9c6e9e7208a779408d57b1f4650c5961d",
+      "bytes": 2374
+    },
+    "private/truth.json": {
+      "sha256": "8b90d984289e0b74e458c82f026e11504700bf229185a0729ffc58162a97c1a9",
+      "bytes": 325
+    },
+    "private/reference_output.json": {
+      "sha256": "2bb9d4886217a0f140e213b0835de59155de1256d484e71979960149fa012733",
+      "bytes": 160
+    },
+    "private/validation.json": {
+      "sha256": "76554267d2f0953c3b122fa6af73129809bac7cb7c04b245a70c50aaecb82789",
+      "bytes": 145
+    },
+    "private/evaluation_reference_output.json": {
+      "sha256": "2b8470b3f8a0b126f5adc0d67e4c4b70e510770293921f1c0286b387189ddfb4",
+      "bytes": 164
+    }
+  },
+  "validator_source_sha256": "b69b46bc3f97131727fe92070869c7e6b5edea516236dbc4ca41d45aefd7f460",
+  "source_manifest_record": {
+    "task_type": "X1",
+    "case_id": "X1_000188",
+    "topology_id": "GABRIEL_CONTROLLED_N005_008",
+    "topology_sequence_id": "94",
+    "case_variant": "TOTAL_LENGTH_KM",
+    "derived_seed": "18327612745163102806",
+    "root_sha256": "e2467e23ae464c48971a91c097a43ba9c6e9e7208a779408d57b1f4650c5961d",
+    "truth_sha256": "8b90d984289e0b74e458c82f026e11504700bf229185a0729ffc58162a97c1a9",
+    "reference_oracle_sha256": "7b4edd3c7b110e5f4217889250734eb2653e19e33376a388e0d136685fbcae29",
+    "en_internal_case_path": "cases/X1/X1_000188",
+    "en_public_benchmark_case_path": "benchmark_case/X1/cases/case_000188.json",
+    "en_public_evaluation_case_path": "evaluation_case/X1/llm/case_000188.json"
+  },
+  "source_production_validator_sha256": "3cefe1680ab7e346dc11b7e27fe38b51d84009e362de93359882276bae40dd19",
+  "evaluation_protocol": "GX1_V5_FORMAL_PROTOCOL_FROZEN_R1_20261003",
+  "evaluation_reference_policy": "Same source path and decisions; weighted declared cost summed from V5 public six-significant-digit link values. Source reference and truth retained unchanged."
+}

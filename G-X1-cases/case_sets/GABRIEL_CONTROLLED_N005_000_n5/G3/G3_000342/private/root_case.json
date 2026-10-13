@@ -1,0 +1,186 @@
+{
+  "schema_version": "GX1_ROOT_CASE_V2_0",
+  "case_id": "G3_000342",
+  "task_type": "G3",
+  "topology_id": "GABRIEL_CONTROLLED_N005_000",
+  "nodes": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "directed_links": [
+    {
+      "link_id": 0,
+      "source_node_id": 0,
+      "destination_node_id": 1,
+      "length_km": 51.86141988325417
+    },
+    {
+      "link_id": 1,
+      "source_node_id": 1,
+      "destination_node_id": 0,
+      "length_km": 51.86141988325417
+    },
+    {
+      "link_id": 2,
+      "source_node_id": 0,
+      "destination_node_id": 2,
+      "length_km": 128.4376827616425
+    },
+    {
+      "link_id": 3,
+      "source_node_id": 2,
+      "destination_node_id": 0,
+      "length_km": 128.4376827616425
+    },
+    {
+      "link_id": 4,
+      "source_node_id": 0,
+      "destination_node_id": 3,
+      "length_km": 65.41760002659997
+    },
+    {
+      "link_id": 5,
+      "source_node_id": 3,
+      "destination_node_id": 0,
+      "length_km": 65.41760002659997
+    },
+    {
+      "link_id": 6,
+      "source_node_id": 1,
+      "destination_node_id": 3,
+      "length_km": 64.46600670827402
+    },
+    {
+      "link_id": 7,
+      "source_node_id": 3,
+      "destination_node_id": 1,
+      "length_km": 64.46600670827402
+    },
+    {
+      "link_id": 8,
+      "source_node_id": 2,
+      "destination_node_id": 4,
+      "length_km": 184.41716621053075
+    },
+    {
+      "link_id": 9,
+      "source_node_id": 4,
+      "destination_node_id": 2,
+      "length_km": 184.41716621053075
+    },
+    {
+      "link_id": 10,
+      "source_node_id": 3,
+      "destination_node_id": 4,
+      "length_km": 105.40012440969865
+    },
+    {
+      "link_id": 11,
+      "source_node_id": 4,
+      "destination_node_id": 3,
+      "length_km": 105.40012440969865
+    }
+  ],
+  "path_cost_metric": "TOTAL_LENGTH_KM",
+  "pairs": [
+    {
+      "pair_id": "pair_A",
+      "source_node_id": 0,
+      "destination_node_id": 4
+    },
+    {
+      "pair_id": "pair_B",
+      "source_node_id": 4,
+      "destination_node_id": 0
+    }
+  ],
+  "oracle_shortest_paths": [
+    {
+      "pair_id": "pair_A",
+      "path_node_ids": [
+        0,
+        3,
+        4
+      ],
+      "path_link_ids": [
+        4,
+        10
+      ],
+      "hop_count": 2,
+      "total_length_km": 170.81772443629862,
+      "multiplicity": 1,
+      "optimal_cost": 170.81772443629862
+    },
+    {
+      "pair_id": "pair_B",
+      "path_node_ids": [
+        4,
+        3,
+        0
+      ],
+      "path_link_ids": [
+        11,
+        5
+      ],
+      "hop_count": 2,
+      "total_length_km": 170.81772443629862,
+      "multiplicity": 1,
+      "optimal_cost": 170.81772443629862
+    }
+  ],
+  "answer": {
+    "shortest_paths": [
+      {
+        "pair_id": "pair_A",
+        "path_node_ids": [
+          0,
+          3,
+          4
+        ],
+        "path_link_ids": [
+          4,
+          10
+        ],
+        "hop_count": 2,
+        "total_length_km": 170.81772443629862
+      },
+      {
+        "pair_id": "pair_B",
+        "path_node_ids": [
+          4,
+          3,
+          0
+        ],
+        "path_link_ids": [
+          11,
+          5
+        ],
+        "hop_count": 2,
+        "total_length_km": 170.81772443629862
+      }
+    ],
+    "has_shared_directed_link": false,
+    "shared_link_ids": []
+  },
+  "generation_metadata": {
+    "shared_search": {
+      "method": "deterministic_unique_path_and_reverse",
+      "effective_pair_A_hop_count": 2,
+      "effective_pair_B_hop_count": 2
+    },
+    "effective_pair_A_hop_count": 2,
+    "effective_pair_B_hop_count": 2,
+    "case_variant": "TOTAL_LENGTH_KM__shared_false",
+    "derived_seed": 13333281083320545138,
+    "master_seed": 20260922,
+    "topology_id": "GABRIEL_CONTROLLED_N005_000",
+    "topology_sequence_id": 86,
+    "source_category": "controlled_gabriel_reference_extension",
+    "length_semantics": "synthetic_scaled_geometry_km",
+    "size_bin": "5-10",
+    "production_case_subtype": "medium"
+  }
+}

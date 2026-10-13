@@ -1,0 +1,29 @@
+你需要完成光网络有向资源拓扑中的路径合规性判断任务。你将得到：当前网络的有向拓扑、指定的源节点和目的节点，以及一条待判断的候选路径。请判断该候选路径是否为从指定源节点到指定目的节点的一条简单有向路径。
+
+你需要检查以下四类路径错误，并严格按照 FIRST_MATCH 优先级判断：
+
+1. WRONG_DIRECTION：对于候选路径某一步要求的节点移动 u → v，只有当候选有向链路实际为完全反向的 v → u 时，才判定为 WRONG_DIRECTION。例如，要求 12 → 13、实际链路 13 → 12 属于 WRONG_DIRECTION。若实际链路为 12 → 11 或 14 → 13，则不能仅因为方向不符合就判定为 WRONG_DIRECTION；这类情况继续按照 FIRST_MATCH 顺序检查。
+2. DISCONNECTED_PATH：候选链路序列本身无法首尾连续，即相邻两条有向链路中，前一条链路的目的节点不等于后一条链路的源节点。
+3. NODE_LINK_MISMATCH：候选链路序列本身首尾连续，但给出的节点序列与链路序列所描述的逐跳路径不一致。
+4. REPEATED_NODE：路径节点数组中至少有一个节点重复出现，因此候选路径不是简单路径。
+
+FIRST_MATCH 固定顺序为：WRONG_DIRECTION 、 DISCONNECTED_PATH 、 NODE_LINK_MISMATCH 、 REPEATED_NODE 、 VALID。
+如果多个错误条件同时成立，只返回上述顺序中最先匹配的错误类型。
+
+输出要求：
+输出内容请务必按下面的格式要求返回一个JSON对象即可。
+
+合规路径固定输出：
+{
+  "is_valid": true,
+  "error_type": null
+}
+
+非法路径输出：
+{
+  "is_valid": false,
+  "error_type": "WRONG_DIRECTION"
+}
+
+其中 error_type 只能为：
+WRONG_DIRECTION、DISCONNECTED_PATH、NODE_LINK_MISMATCH、REPEATED_NODE 或 null。

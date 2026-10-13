@@ -1,0 +1,37 @@
+Find a shortest path for each of the two source-destination pairs in the current directed optical network topology, then determine whether the two shortest paths share at least one identical directed link. The shortest-path metric is TOTAL_LENGTH_KM (minimum total length in kilometers).
+
+Network nodes: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.
+
+Current directed links:
+Directed link 0: node 0 -> node 3, length 152.313 km;
+Directed link 1: node 3 -> node 0, length 152.313 km;
+Directed link 2: node 0 -> node 8, length 114.321 km;
+Directed link 3: node 8 -> node 0, length 114.321 km;
+Directed link 4: node 1 -> node 3, length 70.7546 km;
+Directed link 5: node 3 -> node 1, length 70.7546 km;
+Directed link 6: node 1 -> node 6, length 51.2611 km;
+Directed link 7: node 6 -> node 1, length 51.2611 km;
+Directed link 8: node 1 -> node 7, length 41.199 km;
+Directed link 9: node 7 -> node 1, length 41.199 km;
+Directed link 10: node 2 -> node 4, length 129.47 km;
+Directed link 11: node 4 -> node 2, length 129.47 km;
+Directed link 12: node 2 -> node 8, length 112.865 km;
+Directed link 13: node 8 -> node 2, length 112.865 km;
+Directed link 14: node 4 -> node 5, length 70.3152 km;
+Directed link 15: node 5 -> node 4, length 70.3152 km;
+Directed link 16: node 5 -> node 6, length 165.614 km;
+Directed link 17: node 6 -> node 5, length 165.614 km;
+Directed link 18: node 5 -> node 8, length 172.919 km;
+Directed link 19: node 8 -> node 5, length 172.919 km;
+Directed link 20: node 5 -> node 9, length 96.6027 km;
+Directed link 21: node 9 -> node 5, length 96.6027 km;
+Directed link 22: node 6 -> node 7, length 42.9222 km;
+Directed link 23: node 7 -> node 6, length 42.9222 km;
+Directed link 24: node 7 -> node 8, length 79.4418 km;
+Directed link 25: node 8 -> node 7, length 79.4418 km.
+
+Source-destination pairs:
+pair_A: node 2 to node 3;
+pair_B: node 3 to node 2.
+
+Return the shortest path for pair_A and pair_B, indicate whether they share any directed link, and if so return every shared directed link ID (link_id).

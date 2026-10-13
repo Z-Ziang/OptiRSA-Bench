@@ -1,0 +1,203 @@
+{
+  "contract": "PUBLIC_LENGTH_6_SIGNIFICANT_DIGITS",
+  "weighted_query_count": 2813,
+  "optimal_cost_path_set_changed_count": 3,
+  "shortest_path_multiplicity_changed_count": 3,
+  "canonical_reference_ceases_to_be_public_optimal_count": 0,
+  "g3_shared_status_ambiguous_case_ids": [
+    "G3_000260"
+  ],
+  "g3_shared_status_ambiguous_case_count": 1,
+  "changed_examples": [
+    {
+      "case_id": "G3_000258",
+      "task": "G3",
+      "query_id": "pair_A",
+      "hidden_optimal_cost": 732.2870291055463,
+      "public_optimal_cost": 732.2882000000001,
+      "hidden_multiplicity": 1,
+      "public_multiplicity": 5,
+      "canonical_public_cost": 732.2882,
+      "canonical_is_public_optimal": true,
+      "hidden_shortest_edge_ids": [
+        2,
+        16,
+        24,
+        30,
+        36,
+        44
+      ],
+      "public_shortest_edge_ids": [
+        0,
+        2,
+        10,
+        14,
+        16,
+        20,
+        24,
+        28,
+        30,
+        32,
+        36,
+        38,
+        40,
+        44,
+        46
+      ]
+    },
+    {
+      "case_id": "G3_000258",
+      "task": "G3",
+      "query_id": "pair_B",
+      "hidden_optimal_cost": 732.2870291055463,
+      "public_optimal_cost": 732.2882000000001,
+      "hidden_multiplicity": 1,
+      "public_multiplicity": 5,
+      "canonical_public_cost": 732.2882,
+      "canonical_is_public_optimal": true,
+      "hidden_shortest_edge_ids": [
+        3,
+        17,
+        25,
+        31,
+        37,
+        45
+      ],
+      "public_shortest_edge_ids": [
+        1,
+        3,
+        11,
+        15,
+        17,
+        21,
+        25,
+        29,
+        31,
+        33,
+        37,
+        39,
+        41,
+        45,
+        47
+      ]
+    },
+    {
+      "case_id": "G3_000260",
+      "task": "G3",
+      "query_id": "pair_B",
+      "hidden_optimal_cost": 199.99994804795278,
+      "public_optimal_cost": 200.0002,
+      "hidden_multiplicity": 1,
+      "public_multiplicity": 2,
+      "canonical_public_cost": 200.0002,
+      "canonical_is_public_optimal": true,
+      "hidden_shortest_edge_ids": [
+        0,
+        10
+      ],
+      "public_shortest_edge_ids": [
+        0,
+        2,
+        10,
+        14
+      ]
+    }
+  ],
+  "exception_rows": [
+    {
+      "case_id": "G3_000258",
+      "task": "G3",
+      "query_id": "pair_A",
+      "hidden_optimal_cost": 732.2870291055463,
+      "public_optimal_cost": 732.2882000000001,
+      "hidden_multiplicity": 1,
+      "public_multiplicity": 5,
+      "canonical_public_cost": 732.2882,
+      "canonical_is_public_optimal": true,
+      "hidden_shortest_edge_ids": [
+        2,
+        16,
+        24,
+        30,
+        36,
+        44
+      ],
+      "public_shortest_edge_ids": [
+        0,
+        2,
+        10,
+        14,
+        16,
+        20,
+        24,
+        28,
+        30,
+        32,
+        36,
+        38,
+        40,
+        44,
+        46
+      ]
+    },
+    {
+      "case_id": "G3_000258",
+      "task": "G3",
+      "query_id": "pair_B",
+      "hidden_optimal_cost": 732.2870291055463,
+      "public_optimal_cost": 732.2882000000001,
+      "hidden_multiplicity": 1,
+      "public_multiplicity": 5,
+      "canonical_public_cost": 732.2882,
+      "canonical_is_public_optimal": true,
+      "hidden_shortest_edge_ids": [
+        3,
+        17,
+        25,
+        31,
+        37,
+        45
+      ],
+      "public_shortest_edge_ids": [
+        1,
+        3,
+        11,
+        15,
+        17,
+        21,
+        25,
+        29,
+        31,
+        33,
+        37,
+        39,
+        41,
+        45,
+        47
+      ]
+    },
+    {
+      "case_id": "G3_000260",
+      "task": "G3",
+      "query_id": "pair_B",
+      "hidden_optimal_cost": 199.99994804795278,
+      "public_optimal_cost": 200.0002,
+      "hidden_multiplicity": 1,
+      "public_multiplicity": 2,
+      "canonical_public_cost": 200.0002,
+      "canonical_is_public_optimal": true,
+      "hidden_shortest_edge_ids": [
+        0,
+        10
+      ],
+      "public_shortest_edge_ids": [
+        0,
+        2,
+        10,
+        14
+      ]
+    }
+  ],
+  "compatible": true,
+  "analysis_rule": "Use PUBLIC_AMBIGUOUS for G3 shared-status subgroup analysis when multiple valid public-shortest path pairs can yield different shared-link booleans."
+}

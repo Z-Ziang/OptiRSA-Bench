@@ -1,0 +1,124 @@
+{
+  "case_id": "G3_000772",
+  "task_type": "G3",
+  "answer": {
+    "shortest_paths": [
+      {
+        "pair_id": "pair_A",
+        "path_node_ids": [
+          0,
+          8,
+          37,
+          17,
+          13,
+          29,
+          33,
+          25,
+          53,
+          10,
+          1
+        ],
+        "path_link_ids": [
+          0,
+          54,
+          101,
+          81,
+          82,
+          154,
+          139,
+          140,
+          73,
+          5
+        ],
+        "hop_count": 10,
+        "total_length_km": 937.4192712109453
+      },
+      {
+        "pair_id": "pair_B",
+        "path_node_ids": [
+          0,
+          8,
+          37,
+          17,
+          9,
+          18,
+          2
+        ],
+        "path_link_ids": [
+          0,
+          54,
+          101,
+          61,
+          62,
+          13
+        ],
+        "hop_count": 6,
+        "total_length_km": 570.8505428716844
+      }
+    ],
+    "has_shared_directed_link": true,
+    "shared_link_ids": [
+      0,
+      54,
+      101
+    ]
+  },
+  "oracle_shortest_paths": [
+    {
+      "pair_id": "pair_A",
+      "path_node_ids": [
+        0,
+        8,
+        37,
+        17,
+        13,
+        29,
+        33,
+        25,
+        53,
+        10,
+        1
+      ],
+      "path_link_ids": [
+        0,
+        54,
+        101,
+        81,
+        82,
+        154,
+        139,
+        140,
+        73,
+        5
+      ],
+      "hop_count": 10,
+      "total_length_km": 937.4192712109453,
+      "multiplicity": 1,
+      "optimal_cost": 937.4192712109453
+    },
+    {
+      "pair_id": "pair_B",
+      "path_node_ids": [
+        0,
+        8,
+        37,
+        17,
+        9,
+        18,
+        2
+      ],
+      "path_link_ids": [
+        0,
+        54,
+        101,
+        61,
+        62,
+        13
+      ],
+      "hop_count": 6,
+      "total_length_km": 570.8505428716844,
+      "multiplicity": 1,
+      "optimal_cost": 570.8505428716844
+    }
+  ]
+}

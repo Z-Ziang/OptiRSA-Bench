@@ -1,0 +1,70 @@
+{
+  "case_id": "G3_000300",
+  "task_type": "G3",
+  "answer": {
+    "shortest_paths": [
+      {
+        "pair_id": "pair_A",
+        "path_node_ids": [
+          0,
+          1
+        ],
+        "path_link_ids": [
+          0
+        ],
+        "hop_count": 1,
+        "total_length_km": 14.710153227762639
+      },
+      {
+        "pair_id": "pair_B",
+        "path_node_ids": [
+          0,
+          1,
+          4
+        ],
+        "path_link_ids": [
+          0,
+          88
+        ],
+        "hop_count": 2,
+        "total_length_km": 81.23469901970711
+      }
+    ],
+    "has_shared_directed_link": true,
+    "shared_link_ids": [
+      0
+    ]
+  },
+  "oracle_shortest_paths": [
+    {
+      "pair_id": "pair_A",
+      "path_node_ids": [
+        0,
+        1
+      ],
+      "path_link_ids": [
+        0
+      ],
+      "hop_count": 1,
+      "total_length_km": 14.710153227762639,
+      "multiplicity": 1,
+      "optimal_cost": 14.710153227762639
+    },
+    {
+      "pair_id": "pair_B",
+      "path_node_ids": [
+        0,
+        1,
+        4
+      ],
+      "path_link_ids": [
+        0,
+        88
+      ],
+      "hop_count": 2,
+      "total_length_km": 81.23469901970711,
+      "multiplicity": 1,
+      "optimal_cost": 81.23469901970711
+    }
+  ]
+}

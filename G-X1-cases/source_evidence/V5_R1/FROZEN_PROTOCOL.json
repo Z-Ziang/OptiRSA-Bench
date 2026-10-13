@@ -1,0 +1,142 @@
+{
+  "schema_version": "GX1_V5_FROZEN_PROTOCOL_V1",
+  "protocol_version": "GX1_V5_FORMAL_ENGLISH_V1",
+  "freeze_date": "2026-10-03",
+  "status": "FROZEN_VERIFIED_R1",
+  "dataset_release": {
+    "filename": "GX1_V3_1_BILINGUAL_FULLPOOL_FINAL_20261002.zip",
+    "sha256": "4f4e875efc78c27c3c1d24ebf43978cde49a763f09c1c55274d651797a385812",
+    "topologies": 563,
+    "cases": 8619,
+    "task_cases": {
+      "G1": 2430,
+      "G2": 2815,
+      "G3": 2248,
+      "X1": 1126
+    }
+  },
+  "cohorts": {
+    "CALIBRATION_EXPOSED": {
+      "topologies": 100,
+      "cases": 1476
+    },
+    "FORMAL_UNSEEN_HELDOUT": {
+      "topologies": 463,
+      "cases": 7143
+    },
+    "ALL_POOL": {
+      "topologies": 563,
+      "cases": 8619
+    }
+  },
+  "request_contract": {
+    "language": "en-US",
+    "message_roles": [
+      "system",
+      "user"
+    ],
+    "message_count": 2,
+    "runner_added_hint": false,
+    "output_format": "json_object"
+  },
+  "controls": {
+    "temperature": 0.0,
+    "max_tokens": 16384,
+    "stream": false,
+    "request_timeout_seconds": 180.0,
+    "request_hard_timeout_seconds": 210.0,
+    "case_timeout_seconds": 720.0,
+    "transport_retries_after_initial": 2,
+    "max_transport_attempts": 3,
+    "backoff_seconds": 10.0,
+    "backoff_jitter_seconds": 0.0,
+    "concurrency": 1,
+    "transport": "requests",
+    "connect_timeout_seconds": 60.0,
+    "read_timeout_seconds": 300.0
+  },
+  "reasoning_modes": [
+    "native",
+    "enabled",
+    "disabled"
+  ],
+  "public_numeric_contract": {
+    "weighted_length_km": "six significant digits exactly as rendered to DUT",
+    "weighted_query_count": 2813,
+    "additional_tie_queries": 3,
+    "canonical_reference_ceases_public_optimal": 0,
+    "g3_shared_status_ambiguous_cases": [
+      "G3_000260"
+    ]
+  },
+  "authoritative_attempt_policy": "FIRST_COMPLETE_SCIENTIFIC_RESPONSE",
+  "metrics": [
+    "completion_rate",
+    "scientific_accuracy",
+    "end_to_end_pass_rate"
+  ],
+  "frozen_asset_sha256": {
+    "PROMPT_SHA256.json": "595a1eb2de081312ed0b5a4b732e4c95a2924b6be1d76535610b1987be1380f9",
+    "README_FIRST.md": "e08bc7e4d8e5566ae6bbaa40e7054f3dd86b131d43c2e20cffea65a8982471fb",
+    "SOURCE_IDENTITY.json": "28d1f4ff2c1e659d240565080522370835d2393c950dd02b066c1de5557e05eb",
+    "configs/v5_formal_all_pool.json": "7f7361083fa872bf42fcfdf191831877cd7d685f7502a20ac57c37b0f516333b",
+    "configs/v5_formal_calibration_exposed.json": "6a3f54464991c3b423ec33b023acc1491f0b08862051d01b32574caaf12865c5",
+    "configs/v5_formal_english_common.json": "bfc59dcb2713c58eecdd07f477ba3c0f927d112ac1729384805e0ade8dc93be4",
+    "configs/v5_formal_formal_unseen_heldout.json": "2a0c8a2c4fb5cefffdea5ffeee418d990abf823890b8acaafa37b60eecc3f2ed",
+    "docs/AUTHORITATIVE_ATTEMPT_POLICY.md": "c94512e0a4f7673ff2fa458a80f1d58762774b1eb56811b8009c62c896495274",
+    "docs/CODEX_FORMAL_EVALUATION_HANDOFF.md": "258005aab28e4da7843d146387047a5cae0ccc56c2f87aaf94c3f35737f34a7e",
+    "docs/METRIC_POLICY.md": "37cc7bdb9a65274035fa291c1aefa782c1667f90fdf0e1a19e297c9c71ead8f1",
+    "docs/superpowers/plans/2026-10-02-gx1-v5-formal-protocol-freeze.md": "961ae3719ced7540fa81784ba15e86f5f7b485953e915348895fab3464909f47",
+    "docs/superpowers/specs/2026-10-02-gx1-v5-formal-protocol-freeze-design.md": "4b7af524b475b8a22769b2a2de7123902c03b51cf960a6c162f6c9dba5aaf6e2",
+    "evaluator_v5/trial/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "evaluator_v5/trial/output_format.py": "37f227f6580c58e6b68d3059bcd555196e090078f939b872f16fa1016c34e15b",
+    "evaluator_v5/trial/run_openai_compatible_trial.py": "9c4403ea1e5e4e242ee22690fb8a782e0a84388105eed407f333121820e76a2f",
+    "evaluator_v5/trial/token_policy.py": "b9621bc25915cf1a0ad4866eba5892407e7345a925ae8133b5106037df728597",
+    "manifests/all_pool_cases.csv": "6d6f0df77ff4a41efbe71e642a085273237688f4b5d5187a4ea5def2ce840121",
+    "manifests/calibration_exposed_cases.csv": "b3974f87d27e34b248ae18a8be050f1f59767a25a2fcd8a8bab7a2dc97289fad",
+    "manifests/cohort_summary.json": "e9f411265c6c419bfd24af6d0ab8d17e441791d16bb6c500be8f4ebcc6b981ab",
+    "manifests/formal_unseen_heldout_cases.csv": "e37145a8d0190f39d804b4611c43b918a776e23b2c0dc5c070ec3d5918460f9e",
+    "manifests/topology_cohort_manifest.csv": "9262ba077785a0db368be9121d967452a87125a6017d4f2694a6dd43b6f3df1d",
+    "prompts/G1_system_prompt_en.txt": "7c0424551b20f72249355f31a217bf7d1c02ed3dedb7caa9df1df65296846af2",
+    "prompts/G2_system_prompt_en.txt": "2ba724e4d97bf92bbd4decf682e871cd8b8fb84f22cd7b88320723602fd815aa",
+    "prompts/G3_system_prompt_en.txt": "e7350f02394deb48b9a8f9c833d7b846fbc171958ff487875fadd27ab08143da",
+    "prompts/X1_system_prompt_en.txt": "0600475f19b9fc94cd222abe0c011dff3a90cf136d1e00f8bc54cc81d3256608",
+    "prompts/prompt_policy.md": "9e346ccf4de071661fc28c5587d7712d1c9d02ae3d854383d6498f1366ee6c45",
+    "prompts/prompt_sha256.json": "02cd04cb678ce724d4feb99f1ac020dbe5d026ac34e77494b2a20ccae5e37c07",
+    "prompts/system_prompts_en.json": "9e5da99dcd4986e0b44b9891bb5e4c93a788beeed3b6c5a96cdbb49e1f7674ca",
+    "requirements-lock-verification.txt": "bccbaff574cfe86832528936ef52a827e24c4dbb5583b8c9d762b831b4a6d4cc",
+    "requirements.txt": "7973cc81584a6577eff12160c6d6f1372d178f6a1030a063c413998ab4e48bc9",
+    "schemas/run_manifest.schema.json": "9bd1d51de8f848247c94ba0cb45f13cbe6b4996525b342b31f6cc5da30f5724d",
+    "tests/test_v5_authoritative_attempts.py": "12ceba9b53d7e61a522cbf8877f446ed1d6140f690d1b4da95bfeb5a7fb3917d",
+    "tests/test_v5_cohorts.py": "573e93b9973bbb1754915f4e58c85a3e142d342cdfcadab98e73f934e0695181",
+    "tests/test_v5_formal_request_boundary.py": "e88e1f16985473f5eba81a130f8e79936fa2308a2affdf46fdf6c9bb8cf6bd14",
+    "tests/test_v5_formal_run_manifest.py": "aa30bc49bde21a016165330e406235abd5456c3d832cf33746b3e41d778b112d",
+    "tests/test_v5_freeze_verifier.py": "a54a9561bd61efcf456b3c272218a7036af9fee653e8eb41825398ba6cf5b64b",
+    "tests/test_v5_public_weight_contract_fullpool.py": "619a8bd24ce17032a5e026bebc78461cbf202e3cd32b20a8ce4c4aa93c827dcf",
+    "tools/build_authoritative_ledger.py": "c94a7875bede07a0e159ca46cb2c3b97c30bd659d0f41be2dced4ec7d5f32056",
+    "tools/build_v5_cohorts.py": "851a76aba8e9c242e2fe09e3683f129dcbc02f38b89ab2cd7aaf37b12c1b9d81",
+    "tools/verify_public_weight_contract.py": "023f2047f4a2eba4f3de7a16e127513e3297ad31772ccc58419a99e2dc35830b",
+    "tools/verify_v5_frozen_release.py": "565377be93a0839755d9d3813238d01ae72662aa2443090d7a739d067e6d855e",
+    "validator_v5/gx1/__init__.py": "d727133ea3016b28ce48662d38252ea49160b5172c87c59692eca702f38f3db3",
+    "validator_v5/gx1/common.py": "ab052191ad859092a2c4ba9e58b83906e78dab0275fd85cb173e4b26d7462707",
+    "validator_v5/gx1/validators.py": "b69b46bc3f97131727fe92070869c7e6b5edea516236dbc4ca41d45aefd7f460",
+    "manifests/historical/04_CASE_INDEX_400.csv": "75985614a5bcf2d371d68279143a32c115962e138d0347b7db3dce21616d5ab6",
+    "docs/R1_ENGINEERING_PATCH_NOTES.md": "599c9269c69d61f07946ab69dbf08f2fc8f72998f406d1c62de3920f39d58564",
+    "evaluator_v5/tests/test_requests_transport.py": "2903143f9de8b58f53d00e672a768eb9798b4e32656b8c6b500841558d8c6b18",
+    "evaluator_v5/tests/test_resume_recovery_r1.py": "f99d2d5ea4858c64ec016a9ce84f89c5649e3d8fbe60c18676d58a410680a60b"
+  },
+  "protocol_content_fingerprint_sha256": "29d4d657514340a6183f4d9cdd27ef3977499a98dcacc180a5bbc26573e17bbe",
+  "engineering_revision": "R1",
+  "parent_release_filename": "GX1_V5_FORMAL_PROTOCOL_FROZEN_20261002.zip",
+  "parent_release_sha256": "8732f06ff321a68bee31a08591069ffcade5811116a344f334adc844537e03d4",
+  "parent_protocol_content_fingerprint_sha256": "67a4b19527d024536f5411c0a2d34a92fbf96acca47f9d7c7e0183df52d9ccb8",
+  "scientific_protocol_unchanged": true,
+  "verification": {
+    "frozen_tests": "25/25 PASS",
+    "evaluator_v5_tests": "55/55 PASS",
+    "deep_verifier_valid": true,
+    "fullpool_dry_run": "8619/8619 PASS",
+    "historical_exposure_evidence": "400 cases / 100 topologies PASS",
+    "resume_crash_window_regression": "PASS (earliest complete persisted response recovered without API re-request)"
+  }
+}

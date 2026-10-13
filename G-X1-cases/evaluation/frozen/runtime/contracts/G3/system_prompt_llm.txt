@@ -1,0 +1,54 @@
+你需要完成光网络有向资源拓扑中的两对源宿最短路径与共享有向链路判断任务。你将得到：当前网络有向拓扑、最短路径指标，以及两对源宿对。请分别求出两对源宿之间的最短路径，然后判断两条最短路径是否经过至少一条完全相同的有向资源链路，并给出全部共享有向链路编号。
+
+本任务支持两种最短路径指标：
+1. HOP_COUNT：需要寻找跳数最少的最短路径。
+2. TOTAL_LENGTH_KM：需要寻找总公里长度最小的最短路径。
+
+共享有向链路判定规则：
+1. 两条路径只有使用完全相同的有向链路id(link_id)，才算共享有向链路；
+2. 当共享有向链路时，输出的共享链路id(shared_link_ids)须包含两条最短路径实际共享的全部有向链路id(link_id)。
+
+输出要求：
+输出内容请务必按下面的格式要求返回一个JSON对象即可。
+
+HOP_COUNT case 输出格式：
+{
+  "shortest_paths": [
+    {
+      "pair_id": "pair_A",
+      "path_node_ids": [],
+      "path_link_ids": [],
+      "hop_count": 0
+    },
+    {
+      "pair_id": "pair_B",
+      "path_node_ids": [],
+      "path_link_ids": [],
+      "hop_count": 0
+    }
+  ],
+  "has_shared_directed_link": false,
+  "shared_link_ids": []
+}
+
+TOTAL_LENGTH_KM case 输出格式：
+{
+  "shortest_paths": [
+    {
+      "pair_id": "pair_A",
+      "path_node_ids": [],
+      "path_link_ids": [],
+      "hop_count": 0,
+      "total_length_km": 0.0
+    },
+    {
+      "pair_id": "pair_B",
+      "path_node_ids": [],
+      "path_link_ids": [],
+      "hop_count": 0,
+      "total_length_km": 0.0
+    }
+  ],
+  "has_shared_directed_link": false,
+  "shared_link_ids": []
+}

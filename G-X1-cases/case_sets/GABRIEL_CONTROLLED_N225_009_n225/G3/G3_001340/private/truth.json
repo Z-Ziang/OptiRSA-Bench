@@ -1,0 +1,122 @@
+{
+  "case_id": "G3_001340",
+  "task_type": "G3",
+  "answer": {
+    "shortest_paths": [
+      {
+        "pair_id": "pair_A",
+        "path_node_ids": [
+          0,
+          119,
+          113,
+          180,
+          2
+        ],
+        "path_link_ids": [
+          6,
+          709,
+          712,
+          19
+        ],
+        "hop_count": 4,
+        "total_length_km": 471.02701195275915
+      },
+      {
+        "pair_id": "pair_B",
+        "path_node_ids": [
+          0,
+          119,
+          9,
+          221,
+          38,
+          207,
+          138,
+          49,
+          126,
+          53,
+          150,
+          148,
+          3
+        ],
+        "path_link_ids": [
+          6,
+          73,
+          78,
+          279,
+          276,
+          781,
+          359,
+          356,
+          381,
+          382,
+          803,
+          29
+        ],
+        "hop_count": 12,
+        "total_length_km": 1240.3563772899784
+      }
+    ],
+    "has_shared_directed_link": true,
+    "shared_link_ids": [
+      6
+    ]
+  },
+  "oracle_shortest_paths": [
+    {
+      "pair_id": "pair_A",
+      "path_node_ids": [
+        0,
+        119,
+        113,
+        180,
+        2
+      ],
+      "path_link_ids": [
+        6,
+        709,
+        712,
+        19
+      ],
+      "hop_count": 4,
+      "total_length_km": 471.02701195275915,
+      "multiplicity": 1,
+      "optimal_cost": 471.02701195275915
+    },
+    {
+      "pair_id": "pair_B",
+      "path_node_ids": [
+        0,
+        119,
+        9,
+        221,
+        38,
+        207,
+        138,
+        49,
+        126,
+        53,
+        150,
+        148,
+        3
+      ],
+      "path_link_ids": [
+        6,
+        73,
+        78,
+        279,
+        276,
+        781,
+        359,
+        356,
+        381,
+        382,
+        803,
+        29
+      ],
+      "hop_count": 12,
+      "total_length_km": 1240.3563772899784,
+      "multiplicity": 1,
+      "optimal_cost": 1240.3563772899784
+    }
+  ]
+}

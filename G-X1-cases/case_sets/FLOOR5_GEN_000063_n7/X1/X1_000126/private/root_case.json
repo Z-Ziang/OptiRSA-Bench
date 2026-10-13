@@ -1,0 +1,216 @@
+{
+  "schema_version": "GX1_ROOT_CASE_V2_0",
+  "case_id": "X1_000126",
+  "task_type": "X1",
+  "topology_id": "FLOOR5_GEN_000063",
+  "nodes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "directed_links": [
+    {
+      "link_id": 0,
+      "source_node_id": 0,
+      "destination_node_id": 1,
+      "length_km": 84.4326876734524
+    },
+    {
+      "link_id": 1,
+      "source_node_id": 1,
+      "destination_node_id": 0,
+      "length_km": 84.4326876734524
+    },
+    {
+      "link_id": 2,
+      "source_node_id": 0,
+      "destination_node_id": 2,
+      "length_km": 110.19140099017405
+    },
+    {
+      "link_id": 3,
+      "source_node_id": 2,
+      "destination_node_id": 0,
+      "length_km": 110.19140099017405
+    },
+    {
+      "link_id": 4,
+      "source_node_id": 0,
+      "destination_node_id": 4,
+      "length_km": 110.19170614000606
+    },
+    {
+      "link_id": 5,
+      "source_node_id": 4,
+      "destination_node_id": 0,
+      "length_km": 110.19170614000606
+    },
+    {
+      "link_id": 6,
+      "source_node_id": 0,
+      "destination_node_id": 5,
+      "length_km": 84.43365794667348
+    },
+    {
+      "link_id": 7,
+      "source_node_id": 5,
+      "destination_node_id": 0,
+      "length_km": 84.43365794667348
+    },
+    {
+      "link_id": 8,
+      "source_node_id": 0,
+      "destination_node_id": 6,
+      "length_km": 88.77527123172503
+    },
+    {
+      "link_id": 9,
+      "source_node_id": 6,
+      "destination_node_id": 0,
+      "length_km": 88.77527123172503
+    },
+    {
+      "link_id": 10,
+      "source_node_id": 1,
+      "destination_node_id": 2,
+      "length_km": 103.73849437189786
+    },
+    {
+      "link_id": 11,
+      "source_node_id": 2,
+      "destination_node_id": 1,
+      "length_km": 103.73849437189786
+    },
+    {
+      "link_id": 12,
+      "source_node_id": 1,
+      "destination_node_id": 3,
+      "length_km": 112.87498571223875
+    },
+    {
+      "link_id": 13,
+      "source_node_id": 3,
+      "destination_node_id": 1,
+      "length_km": 112.87498571223875
+    },
+    {
+      "link_id": 14,
+      "source_node_id": 1,
+      "destination_node_id": 6,
+      "length_km": 114.54324708583295
+    },
+    {
+      "link_id": 15,
+      "source_node_id": 6,
+      "destination_node_id": 1,
+      "length_km": 114.54324708583295
+    },
+    {
+      "link_id": 16,
+      "source_node_id": 2,
+      "destination_node_id": 3,
+      "length_km": 67.48729590225825
+    },
+    {
+      "link_id": 17,
+      "source_node_id": 3,
+      "destination_node_id": 2,
+      "length_km": 67.48729590225825
+    },
+    {
+      "link_id": 18,
+      "source_node_id": 2,
+      "destination_node_id": 4,
+      "length_km": 124.68973266373902
+    },
+    {
+      "link_id": 19,
+      "source_node_id": 4,
+      "destination_node_id": 2,
+      "length_km": 124.68973266373902
+    },
+    {
+      "link_id": 20,
+      "source_node_id": 3,
+      "destination_node_id": 4,
+      "length_km": 67.48750546075533
+    },
+    {
+      "link_id": 21,
+      "source_node_id": 4,
+      "destination_node_id": 3,
+      "length_km": 67.48750546075533
+    },
+    {
+      "link_id": 22,
+      "source_node_id": 3,
+      "destination_node_id": 5,
+      "length_km": 112.87474802861908
+    },
+    {
+      "link_id": 23,
+      "source_node_id": 5,
+      "destination_node_id": 3,
+      "length_km": 112.87474802861908
+    },
+    {
+      "link_id": 24,
+      "source_node_id": 4,
+      "destination_node_id": 5,
+      "length_km": 103.73737557214251
+    },
+    {
+      "link_id": 25,
+      "source_node_id": 5,
+      "destination_node_id": 4,
+      "length_km": 103.73737557214251
+    },
+    {
+      "link_id": 26,
+      "source_node_id": 5,
+      "destination_node_id": 6,
+      "length_km": 114.54189122048533
+    },
+    {
+      "link_id": 27,
+      "source_node_id": 6,
+      "destination_node_id": 5,
+      "length_km": 114.54189122048533
+    }
+  ],
+  "source_node_id": 3,
+  "destination_node_id": 6,
+  "path_cost_metric": "TOTAL_LENGTH_KM",
+  "shortest_path_multiplicity": 1,
+  "optimal_cost": 227.4166392491044,
+  "answer": {
+    "path_node_ids": [
+      3,
+      5,
+      6
+    ],
+    "path_link_ids": [
+      22,
+      26
+    ],
+    "hop_count": 2,
+    "total_length_km": 227.4166392491044
+  },
+  "generation_metadata": {
+    "effective_shortest_path_hop_count": 2,
+    "observed_shortest_path_multiplicity": 1,
+    "case_variant": "TOTAL_LENGTH_KM",
+    "derived_seed": 4422386909523826201,
+    "master_seed": 20260922,
+    "topology_id": "FLOOR5_GEN_000063",
+    "topology_sequence_id": 63,
+    "source_category": "floor5_generated",
+    "length_semantics": "synthetic_layout_km",
+    "size_bin": "5-10",
+    "production_case_subtype": "medium"
+  }
+}

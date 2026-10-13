@@ -1,0 +1,33 @@
+Convert the following undirected optical network topology from adjacency list to adjacency matrix.
+
+Node order: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23].
+
+Current adjacency list:
+{
+  "0": [15],
+  "1": [6,11],
+  "2": [11,15],
+  "3": [15],
+  "4": [5,11],
+  "5": [4],
+  "6": [1],
+  "7": [10],
+  "8": [10],
+  "9": [12,13],
+  "10": [7,8,11,13],
+  "11": [1,2,4,10,17,18,19,20,21,23],
+  "12": [9],
+  "13": [9,10],
+  "14": [23],
+  "15": [0,2,3],
+  "16": [17],
+  "17": [11,16],
+  "18": [11],
+  "19": [11],
+  "20": [11],
+  "21": [11,22],
+  "22": [21],
+  "23": [11,14]
+}
+
+Build the adjacency matrix using the supplied node order and return it in the format required by the system prompt.

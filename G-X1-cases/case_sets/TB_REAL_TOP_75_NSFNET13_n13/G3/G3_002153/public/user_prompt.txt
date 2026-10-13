@@ -1,0 +1,41 @@
+Find a shortest path for each of the two source-destination pairs in the current directed optical network topology, then determine whether the two shortest paths share at least one identical directed link. The shortest-path metric is HOP_COUNT (minimum hop count).
+
+Network nodes: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12.
+
+Current directed links:
+Directed link 0: node 0 -> node 2;
+Directed link 1: node 2 -> node 0;
+Directed link 2: node 0 -> node 7;
+Directed link 3: node 7 -> node 0;
+Directed link 4: node 0 -> node 11;
+Directed link 5: node 11 -> node 0;
+Directed link 6: node 1 -> node 2;
+Directed link 7: node 2 -> node 1;
+Directed link 8: node 1 -> node 4;
+Directed link 9: node 4 -> node 1;
+Directed link 10: node 3 -> node 12;
+Directed link 11: node 12 -> node 3;
+Directed link 12: node 4 -> node 12;
+Directed link 13: node 12 -> node 4;
+Directed link 14: node 5 -> node 6;
+Directed link 15: node 6 -> node 5;
+Directed link 16: node 5 -> node 9;
+Directed link 17: node 9 -> node 5;
+Directed link 18: node 6 -> node 7;
+Directed link 19: node 7 -> node 6;
+Directed link 20: node 6 -> node 12;
+Directed link 21: node 12 -> node 6;
+Directed link 22: node 8 -> node 9;
+Directed link 23: node 9 -> node 8;
+Directed link 24: node 9 -> node 11;
+Directed link 25: node 11 -> node 9;
+Directed link 26: node 10 -> node 11;
+Directed link 27: node 11 -> node 10;
+Directed link 28: node 11 -> node 12;
+Directed link 29: node 12 -> node 11.
+
+Source-destination pairs:
+pair_A: node 0 to node 1;
+pair_B: node 1 to node 0.
+
+Return the shortest path for pair_A and pair_B, indicate whether they share any directed link, and if so return every shared directed link ID (link_id).

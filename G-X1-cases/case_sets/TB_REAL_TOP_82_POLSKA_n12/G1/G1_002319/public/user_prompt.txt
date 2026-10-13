@@ -1,0 +1,21 @@
+Convert the following undirected optical network topology from adjacency list to edge list.
+
+Network nodes: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11.
+
+Current adjacency list:
+{
+  "0": [2,5,10],
+  "1": [2,7,10],
+  "2": [0,1,9],
+  "3": [4,6,11],
+  "4": [3,8,10],
+  "5": [0,8,10],
+  "6": [3,10,11],
+  "7": [1,9,11],
+  "8": [4,5],
+  "9": [2,7],
+  "10": [0,1,4,5,6],
+  "11": [3,6,7]
+}
+
+Return the edge list in the format required by the system prompt. Output each undirected edge exactly once.

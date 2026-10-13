@@ -1,0 +1,25 @@
+Find a shortest path for each of the two source-destination pairs in the current directed optical network topology, then determine whether the two shortest paths share at least one identical directed link. The shortest-path metric is TOTAL_LENGTH_KM (minimum total length in kilometers).
+
+Network nodes: 0, 1, 2, 3, 4.
+
+Current directed links:
+Directed link 0: node 0 -> node 1, length 92.4106 km;
+Directed link 1: node 1 -> node 0, length 92.4106 km;
+Directed link 2: node 0 -> node 2, length 130.487 km;
+Directed link 3: node 2 -> node 0, length 130.487 km;
+Directed link 4: node 0 -> node 3, length 111.695 km;
+Directed link 5: node 3 -> node 0, length 111.695 km;
+Directed link 6: node 1 -> node 2, length 101.764 km;
+Directed link 7: node 2 -> node 1, length 101.764 km;
+Directed link 8: node 1 -> node 3, length 116.72 km;
+Directed link 9: node 3 -> node 1, length 116.72 km;
+Directed link 10: node 1 -> node 4, length 39.1393 km;
+Directed link 11: node 4 -> node 1, length 39.1393 km;
+Directed link 12: node 2 -> node 4, length 107.784 km;
+Directed link 13: node 4 -> node 2, length 107.784 km.
+
+Source-destination pairs:
+pair_A: node 0 to node 1;
+pair_B: node 0 to node 4.
+
+Return the shortest path for pair_A and pair_B, indicate whether they share any directed link, and if so return every shared directed link ID (link_id).

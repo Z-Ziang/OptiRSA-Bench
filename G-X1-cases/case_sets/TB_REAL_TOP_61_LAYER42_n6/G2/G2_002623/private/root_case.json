@@ -1,0 +1,123 @@
+{
+  "schema_version": "GX1_ROOT_CASE_V2_0",
+  "case_id": "G2_002623",
+  "task_type": "G2",
+  "topology_id": "TB_REAL::TOP_61_LAYER42",
+  "nodes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "directed_links": [
+    {
+      "link_id": 0,
+      "source_node_id": 0,
+      "destination_node_id": 1
+    },
+    {
+      "link_id": 1,
+      "source_node_id": 1,
+      "destination_node_id": 0
+    },
+    {
+      "link_id": 2,
+      "source_node_id": 1,
+      "destination_node_id": 2
+    },
+    {
+      "link_id": 3,
+      "source_node_id": 2,
+      "destination_node_id": 1
+    },
+    {
+      "link_id": 4,
+      "source_node_id": 1,
+      "destination_node_id": 3
+    },
+    {
+      "link_id": 5,
+      "source_node_id": 3,
+      "destination_node_id": 1
+    },
+    {
+      "link_id": 6,
+      "source_node_id": 1,
+      "destination_node_id": 5
+    },
+    {
+      "link_id": 7,
+      "source_node_id": 5,
+      "destination_node_id": 1
+    },
+    {
+      "link_id": 8,
+      "source_node_id": 3,
+      "destination_node_id": 4
+    },
+    {
+      "link_id": 9,
+      "source_node_id": 4,
+      "destination_node_id": 3
+    },
+    {
+      "link_id": 10,
+      "source_node_id": 3,
+      "destination_node_id": 5
+    },
+    {
+      "link_id": 11,
+      "source_node_id": 5,
+      "destination_node_id": 3
+    },
+    {
+      "link_id": 12,
+      "source_node_id": 4,
+      "destination_node_id": 5
+    },
+    {
+      "link_id": 13,
+      "source_node_id": 5,
+      "destination_node_id": 4
+    }
+  ],
+  "source_node_id": 0,
+  "destination_node_id": 2,
+  "candidate_path": {
+    "path_node_ids": [
+      0,
+      1,
+      2
+    ],
+    "path_link_ids": [
+      2,
+      2
+    ]
+  },
+  "oracle_label": "DISCONNECTED_PATH",
+  "answer": {
+    "is_valid": false,
+    "error_type": "DISCONNECTED_PATH"
+  },
+  "generation_metadata": {
+    "requested_hop_range": [
+      2,
+      2
+    ],
+    "effective_candidate_hop_count": 2,
+    "topology_diameter_hops": 3,
+    "intended_label": "DISCONNECTED_PATH",
+    "fresh_first_match_label": "DISCONNECTED_PATH",
+    "case_variant": "DISCONNECTED_PATH",
+    "derived_seed": 2740565547280005157,
+    "master_seed": 20260922,
+    "topology_id": "TB_REAL::TOP_61_LAYER42",
+    "topology_sequence_id": 525,
+    "source_category": "real",
+    "length_semantics": "real_trusted_km",
+    "size_bin": "5-10",
+    "production_case_subtype": "medium"
+  }
+}

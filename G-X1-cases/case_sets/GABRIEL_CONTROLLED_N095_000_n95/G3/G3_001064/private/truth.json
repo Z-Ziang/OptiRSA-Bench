@@ -1,0 +1,122 @@
+{
+  "case_id": "G3_001064",
+  "task_type": "G3",
+  "answer": {
+    "shortest_paths": [
+      {
+        "pair_id": "pair_A",
+        "path_node_ids": [
+          0,
+          41,
+          51,
+          60,
+          64,
+          17,
+          33,
+          3
+        ],
+        "path_link_ids": [
+          6,
+          258,
+          296,
+          326,
+          133,
+          130,
+          23
+        ],
+        "hop_count": 7,
+        "total_length_km": 442.7246268572219
+      },
+      {
+        "pair_id": "pair_B",
+        "path_node_ids": [
+          0,
+          41,
+          51,
+          60,
+          64,
+          17,
+          31,
+          67,
+          5
+        ],
+        "path_link_ids": [
+          6,
+          258,
+          296,
+          326,
+          133,
+          128,
+          216,
+          39
+        ],
+        "hop_count": 8,
+        "total_length_km": 602.2447050437204
+      }
+    ],
+    "has_shared_directed_link": true,
+    "shared_link_ids": [
+      6,
+      133,
+      258,
+      296,
+      326
+    ]
+  },
+  "oracle_shortest_paths": [
+    {
+      "pair_id": "pair_A",
+      "path_node_ids": [
+        0,
+        41,
+        51,
+        60,
+        64,
+        17,
+        33,
+        3
+      ],
+      "path_link_ids": [
+        6,
+        258,
+        296,
+        326,
+        133,
+        130,
+        23
+      ],
+      "hop_count": 7,
+      "total_length_km": 442.7246268572219,
+      "multiplicity": 1,
+      "optimal_cost": 442.7246268572219
+    },
+    {
+      "pair_id": "pair_B",
+      "path_node_ids": [
+        0,
+        41,
+        51,
+        60,
+        64,
+        17,
+        31,
+        67,
+        5
+      ],
+      "path_link_ids": [
+        6,
+        258,
+        296,
+        326,
+        133,
+        128,
+        216,
+        39
+      ],
+      "hop_count": 8,
+      "total_length_km": 602.2447050437204,
+      "multiplicity": 1,
+      "optimal_cost": 602.2447050437204
+    }
+  ]
+}

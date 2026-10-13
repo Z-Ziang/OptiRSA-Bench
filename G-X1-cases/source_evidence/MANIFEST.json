@@ -1,0 +1,63 @@
+{
+  "schema_version": "GX1_V3_1_BILINGUAL_FULLPOOL_FINAL_MANIFEST_V1_0",
+  "release_name": "GX1_V3_1_BILINGUAL_FULLPOOL_FINAL_20261002",
+  "producer_version": "3.1.0-bilingual-fullpool",
+  "source_git_head": "eb279336ee88e3cdc7cfa9ac6bc2d713a13bb450",
+  "scientific_core": "V3.0 Algorithm + LLM Only",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "formal_dataset_language": "en",
+  "topology_source": {
+    "filename": "TOPOLOGY_STANDARDIZATION_V1_CANONICAL_PRODUCTION_POOL_563_FINAL_20260918_R2.zip",
+    "sha256": "4a0de1dece763cb180d494bf349e021ebaf3ee2447b23ec1c62df075752ae640",
+    "canonical_production_topology_count": 563
+  },
+  "master_seed": 20260922,
+  "case_counts": {
+    "G1": 2430,
+    "G2": 2815,
+    "G3": 2248,
+    "X1": 1126
+  },
+  "case_count": 8619,
+  "rule_exclusion_count": 4,
+  "engineering_failure_count": 0,
+  "internal_case_files": [
+    "root_case.json",
+    "llm_case.json",
+    "truth.json",
+    "validation_metadata.json",
+    "actual_llm_request.json"
+  ],
+  "tracks": [
+    "algorithm",
+    "llm"
+  ],
+  "prompt_sha256": {
+    "G1_system_prompt_en.txt": "7c0424551b20f72249355f31a217bf7d1c02ed3dedb7caa9df1df65296846af2",
+    "G2_system_prompt_en.txt": "2ba724e4d97bf92bbd4decf682e871cd8b8fb84f22cd7b88320723602fd815aa",
+    "G3_system_prompt_en.txt": "e7350f02394deb48b9a8f9c833d7b846fbc171958ff487875fadd27ab08143da",
+    "X1_system_prompt_en.txt": "0600475f19b9fc94cd222abe0c011dff3a90cf136d1e00f8bc54cc81d3256608",
+    "system_prompts_en.json": "9e5da99dcd4986e0b44b9891bb5e4c93a788beeed3b6c5a96cdbb49e1f7674ca"
+  },
+  "manifests": {
+    "case_manifest": "05_MANIFESTS/case_manifest.csv",
+    "topology_manifest": "05_MANIFESTS/topology_manifest.csv",
+    "topology_adapter_mapping": "05_MANIFESTS/canonical_gx1_topology_mapping.csv",
+    "zh_en_mapping": "05_MANIFESTS/zh_en_mapping.csv"
+  },
+  "validation": {
+    "scientific_equivalence": "06_VALIDATION/scientific_equivalence_report.json",
+    "validator": "06_VALIDATION/validator_report.json",
+    "chinese_residual": "06_VALIDATION/chinese_residual_audit.json",
+    "replay": "06_VALIDATION/replay_report.json",
+    "production_counts": "06_VALIDATION/production_count_report.json",
+    "topology_traceability": "06_VALIDATION/topology_traceability_report.json",
+    "manifest_integrity": "06_VALIDATION/manifest_integrity_report.json",
+    "dut_leakage": "06_VALIDATION/dut_leakage_audit.json",
+    "agent_track": "06_VALIDATION/agent_track_audit.json"
+  },
+  "scope_exclusion": "No V5 evaluator, model API execution, model scoring, attempt-selection policy or formal evaluation statistics are included."
+}
