@@ -1,0 +1,80 @@
+{
+  "case_uid": "ac624181b231cfcbcd2e28f62d97789d6b5b6468d32d371ca81b6919d5d51477",
+  "case_id": "X2_STATIC_COVER_X2_f31c2cb9ca489ba5db70e34274d1",
+  "task": "X2",
+  "topology_id": "top_TB_REAL%3A%3ATOP_101_TATANID",
+  "graph_hash": "c1797ce5bcf210c7ab3207f172b57535ec0d805c0fdc8534e34a900e022b44d8",
+  "snapshot_hash": "3ed340ef3252da8218b25a7f62ceaaf0d2c3d46696aef5674ef37dd24d417285",
+  "family_ids": [
+    "F_2745479ca71c6962123165dfdc4cfd6461c1c5c85e914548cef09b90c99e8dad"
+  ],
+  "messages_sha256": "de899cb881d7d953d78034836cb3627b760f00140bb302307939da19d5f0a2d6",
+  "validator_source_sha256": "31660b7c47b6875d4332ec8212cfea2bae583ae029b60ce6da54bf0a48393a32",
+  "source_archive": "Benchmark_7_7_STATIC_3500_DELIVERY_FINAL.zip",
+  "source_archive_sha256": "eac50b2cd18603d9c68a185f935188966c6e8fd347ec56e88d3fb0f81f0b3408",
+  "source_dataset_version": "Benchmark_7_7_STATIC_3500_DELIVERY_FINAL",
+  "source_member_hashes": {
+    "root_case": "1c985e3c11397fa34c5320af026a6f383ad586d47e928ad7a34ba1de45e83375",
+    "private_truth": "fcf18c9837eaa50a72ef8fee323e7c3e3ec5e28e5e916f83be6f22fe1dcbe45d",
+    "reference_output": "f2fe9a6eb10b41fdb3b8bb309425a3370e1bcb022ab26682ddd8d71c7060931d",
+    "validation": "caa46d4dc1f146e9e022ee62709c5541333469f6103dd7d11e1c9d6389f395fa",
+    "llm_case": "ba9afdd41eea420e4403d5f881e2dea02d5173b7837861e3333bcb5da5f7ed06",
+    "system_prompt": "7c6ff34237b028ba86b672e8d74289f04dda770840cf86f850965d0c39f33fb6"
+  },
+  "source_member_paths": {
+    "root_case": "cases/X2/f31c2cb9ca489ba5/private/root_case/X2_STATIC_COVER_X2_f31c2cb9ca489ba5db70e34274d1.json",
+    "private_truth": "cases/X2/f31c2cb9ca489ba5/private/private_truth/X2_STATIC_COVER_X2_f31c2cb9ca489ba5db70e34274d1.json",
+    "reference_output": "cases/X2/f31c2cb9ca489ba5/private/reference_output/X2_STATIC_COVER_X2_f31c2cb9ca489ba5db70e34274d1.json",
+    "validation": "cases/X2/f31c2cb9ca489ba5/private/validation/X2_STATIC_COVER_X2_f31c2cb9ca489ba5db70e34274d1.json",
+    "llm_case": "cases/X2/f31c2cb9ca489ba5/public/llm_case/X2_STATIC_COVER_X2_f31c2cb9ca489ba5db70e34274d1.json",
+    "system_prompt": "runtime/contracts/X2/llm_system_prompt.txt"
+  },
+  "source_case_status": "REVIEW_OBJECTIVE_DEFINITION",
+  "package_input_version": "SOURCE_ENGLISH_UNCHANGED_NO_WUFR_FORMULA_V1",
+  "files": {
+    "private/root_case.json": {
+      "sha256": "1c985e3c11397fa34c5320af026a6f383ad586d47e928ad7a34ba1de45e83375",
+      "bytes": 1328651,
+      "source_member": "cases/X2/f31c2cb9ca489ba5/private/root_case/X2_STATIC_COVER_X2_f31c2cb9ca489ba5db70e34274d1.json"
+    },
+    "private/private_truth.json": {
+      "sha256": "fcf18c9837eaa50a72ef8fee323e7c3e3ec5e28e5e916f83be6f22fe1dcbe45d",
+      "bytes": 306,
+      "source_member": "cases/X2/f31c2cb9ca489ba5/private/private_truth/X2_STATIC_COVER_X2_f31c2cb9ca489ba5db70e34274d1.json"
+    },
+    "private/reference_output.json": {
+      "sha256": "f2fe9a6eb10b41fdb3b8bb309425a3370e1bcb022ab26682ddd8d71c7060931d",
+      "bytes": 299,
+      "source_member": "cases/X2/f31c2cb9ca489ba5/private/reference_output/X2_STATIC_COVER_X2_f31c2cb9ca489ba5db70e34274d1.json"
+    },
+    "private/validation.json": {
+      "sha256": "caa46d4dc1f146e9e022ee62709c5541333469f6103dd7d11e1c9d6389f395fa",
+      "bytes": 199,
+      "source_member": "cases/X2/f31c2cb9ca489ba5/private/validation/X2_STATIC_COVER_X2_f31c2cb9ca489ba5db70e34274d1.json"
+    },
+    "public/system_prompt.txt": {
+      "sha256": "7c6ff34237b028ba86b672e8d74289f04dda770840cf86f850965d0c39f33fb6",
+      "bytes": 4072,
+      "source_member": "runtime/contracts/X2/llm_system_prompt.txt"
+    },
+    "public/user_prompt.txt": {
+      "sha256": "82ade1963e10294f49c308fa3c53facc12157d28b29b1a154d4a2d63c19c86c6",
+      "bytes": 95818,
+      "source_member": "cases/X2/f31c2cb9ca489ba5/public/llm_case/X2_STATIC_COVER_X2_f31c2cb9ca489ba5db70e34274d1.json"
+    }
+  },
+  "verification": {
+    "public": {
+      "links_and_spectrum_exact": true,
+      "request_parameters_exact": true,
+      "request_ids_exact": false
+    },
+    "reference_feasibility_primary": {
+      "feasible": true,
+      "primary_matches_source_optimum": true,
+      "no_new_global_optimality_proof": true
+    },
+    "source_validation_bound": true,
+    "all_global_optima_independently_resolved": false
+  }
+}

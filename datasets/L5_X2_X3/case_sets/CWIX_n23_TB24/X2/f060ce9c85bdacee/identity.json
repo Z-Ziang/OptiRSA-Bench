@@ -1,0 +1,80 @@
+{
+  "case_uid": "f060ce9c85bdacee5309abeac0344853eed70ac930b75c76be2bf48ff22abf3e",
+  "case_id": "X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_RECOVER_HANDOFF_R33_STATIC_X2_6ad56bc96bac3133475058fb",
+  "task": "X2",
+  "topology_id": "top_TB_REAL%3A%3ATOP_24_CWIX",
+  "graph_hash": "abff784a9b963530eb699c4b7b015688a61ee00ed893c0c76d8f0e2f57db0013",
+  "snapshot_hash": "155fe96e0c33a8d1c3b18b1d794277cf1400e7a39efe8bd5d8f0cde677ddcc8b",
+  "family_ids": [
+    "F_6efe08e228a9b190262add21d592108401f919b202ae6c2eb1697e420391a119"
+  ],
+  "messages_sha256": "a6bf0eed18a917d6fb36255821f36b2fde6815b6f8ea030b55022fa8cd0ac28c",
+  "validator_source_sha256": "31660b7c47b6875d4332ec8212cfea2bae583ae029b60ce6da54bf0a48393a32",
+  "source_archive": "Benchmark_7_7_HISTORICAL_X2.zip",
+  "source_archive_sha256": "bcd7ae1b863dd30a5c7a0deacae2ed01e5356548a8d6ed95b257ac87178d331d",
+  "source_dataset_version": "Benchmark_7_7_HISTORICAL_X2",
+  "source_member_hashes": {
+    "root_case": "7a78a26df327af1638b9ac01dd64bf2fda5e5dd20522547559d8d6b815f0e3fb",
+    "private_truth": "ed7e8c6f26e0fc662e0a2622d6721f134b8ae7056ce668ca9f7fcd7ebefe6ba3",
+    "reference_output": "cceb01c2f86ba5163dba8241225e017eeb18e947fe9cd618988f7125333b9b1b",
+    "validation": "4d68ebc5754d0c21e4201ebd943fb432b85915b3d114bb2869c1ba70e82d341a",
+    "llm_case": "acc524426ae829f5ee6b113734f90da0ae93eb41a78bb467e1619853c7381edb",
+    "system_prompt": "7c6ff34237b028ba86b672e8d74289f04dda770840cf86f850965d0c39f33fb6"
+  },
+  "source_member_paths": {
+    "root_case": "cases/X2/427269ed516ad07991a0/private/root_case/X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_RECOVER_HANDOFF_R33_STATIC_X2_6ad56bc96bac3133475058fb.json",
+    "private_truth": "cases/X2/427269ed516ad07991a0/private/private_truth/X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_RECOVER_HANDOFF_R33_STATIC_X2_6ad56bc96bac3133475058fb.json",
+    "reference_output": "cases/X2/427269ed516ad07991a0/private/reference_output/X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_RECOVER_HANDOFF_R33_STATIC_X2_6ad56bc96bac3133475058fb.json",
+    "validation": "cases/X2/427269ed516ad07991a0/private/validation/X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_RECOVER_HANDOFF_R33_STATIC_X2_6ad56bc96bac3133475058fb.json",
+    "llm_case": "cases/X2/427269ed516ad07991a0/public/llm_case/X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_RECOVER_HANDOFF_R33_STATIC_X2_6ad56bc96bac3133475058fb.json",
+    "system_prompt": "runtime/contracts/X2/llm_system_prompt.txt"
+  },
+  "source_case_status": "REVIEW_OBJECTIVE_DEFINITION",
+  "package_input_version": "SOURCE_ENGLISH_UNCHANGED_NO_WUFR_FORMULA_V1",
+  "files": {
+    "private/root_case.json": {
+      "sha256": "7a78a26df327af1638b9ac01dd64bf2fda5e5dd20522547559d8d6b815f0e3fb",
+      "bytes": 214387,
+      "source_member": "cases/X2/427269ed516ad07991a0/private/root_case/X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_RECOVER_HANDOFF_R33_STATIC_X2_6ad56bc96bac3133475058fb.json"
+    },
+    "private/private_truth.json": {
+      "sha256": "ed7e8c6f26e0fc662e0a2622d6721f134b8ae7056ce668ca9f7fcd7ebefe6ba3",
+      "bytes": 362,
+      "source_member": "cases/X2/427269ed516ad07991a0/private/private_truth/X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_RECOVER_HANDOFF_R33_STATIC_X2_6ad56bc96bac3133475058fb.json"
+    },
+    "private/reference_output.json": {
+      "sha256": "cceb01c2f86ba5163dba8241225e017eeb18e947fe9cd618988f7125333b9b1b",
+      "bytes": 120,
+      "source_member": "cases/X2/427269ed516ad07991a0/private/reference_output/X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_RECOVER_HANDOFF_R33_STATIC_X2_6ad56bc96bac3133475058fb.json"
+    },
+    "private/validation.json": {
+      "sha256": "4d68ebc5754d0c21e4201ebd943fb432b85915b3d114bb2869c1ba70e82d341a",
+      "bytes": 198,
+      "source_member": "cases/X2/427269ed516ad07991a0/private/validation/X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_RECOVER_HANDOFF_R33_STATIC_X2_6ad56bc96bac3133475058fb.json"
+    },
+    "public/system_prompt.txt": {
+      "sha256": "7c6ff34237b028ba86b672e8d74289f04dda770840cf86f850965d0c39f33fb6",
+      "bytes": 4072,
+      "source_member": "runtime/contracts/X2/llm_system_prompt.txt"
+    },
+    "public/user_prompt.txt": {
+      "sha256": "a29ae3de2cc8b5e558cba5c0407c5f2136f9afbf3ed8e42b0f3a6d7130f96451",
+      "bytes": 11572,
+      "source_member": "cases/X2/427269ed516ad07991a0/public/llm_case/X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_RECOVER_HANDOFF_R33_STATIC_X2_6ad56bc96bac3133475058fb.json"
+    }
+  },
+  "verification": {
+    "public": {
+      "links_and_spectrum_exact": true,
+      "request_parameters_exact": true,
+      "request_ids_exact": false
+    },
+    "reference_feasibility_primary": {
+      "feasible": true,
+      "primary_matches_source_optimum": true,
+      "no_new_global_optimality_proof": true
+    },
+    "source_validation_bound": true,
+    "all_global_optima_independently_resolved": false
+  }
+}

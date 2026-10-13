@@ -1,0 +1,80 @@
+{
+  "case_uid": "e541cd77195e1daa9e5a245f2dcf385ae5e67e5f37a1f45bb9dd44808c400b9e",
+  "case_id": "X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_114f68d74a31ac64b23f",
+  "task": "X2",
+  "topology_id": "top_TB_REAL%3A%3ATOP_54_JANOSUS",
+  "graph_hash": "3998f2bb69f33b80c61d9e16438f6e90728a5ddf60e3b892569d090184e8303b",
+  "snapshot_hash": "0fa901c75965daf9a1d56712d8e437a67ed9733a08da51919904936aa7115cb4",
+  "family_ids": [
+    "F_93460361619dc4844a79fdbaa247d9ce24a655d3158ffc570b38f46aa293c83b"
+  ],
+  "messages_sha256": "c811eb05cc6c3191037780cf0fa9fe93e4e73243872c7c94d85eac9bb419a3f3",
+  "validator_source_sha256": "31660b7c47b6875d4332ec8212cfea2bae583ae029b60ce6da54bf0a48393a32",
+  "source_archive": "Benchmark_7_7_HISTORICAL_X2.zip",
+  "source_archive_sha256": "bcd7ae1b863dd30a5c7a0deacae2ed01e5356548a8d6ed95b257ac87178d331d",
+  "source_dataset_version": "Benchmark_7_7_HISTORICAL_X2",
+  "source_member_hashes": {
+    "root_case": "20b0b8d06ff89df866c509482fa6de92f97e543024a34885ede9ffce98c31693",
+    "private_truth": "f34812f3b42a7253f6679de6459964c81d03400f630fb5d91316f7311eb19648",
+    "reference_output": "0bcf8d46b59d4e8a7caa39e8d7bd7d8bb6adae358981e277a7c994c0960fd8c3",
+    "validation": "2baf4a7e519aeea5b7ea434a1eb5a61d623850b3bcccccb53147738f5b0f109c",
+    "llm_case": "b74d8a07242a070401bc68fe034535879e5fae7c1ad64540287e51425baba116",
+    "system_prompt": "7c6ff34237b028ba86b672e8d74289f04dda770840cf86f850965d0c39f33fb6"
+  },
+  "source_member_paths": {
+    "root_case": "cases/X2/c76b51d35205b18dfae5/private/root_case/X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_114f68d74a31ac64b23f.json",
+    "private_truth": "cases/X2/c76b51d35205b18dfae5/private/private_truth/X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_114f68d74a31ac64b23f.json",
+    "reference_output": "cases/X2/c76b51d35205b18dfae5/private/reference_output/X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_114f68d74a31ac64b23f.json",
+    "validation": "cases/X2/c76b51d35205b18dfae5/private/validation/X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_114f68d74a31ac64b23f.json",
+    "llm_case": "cases/X2/c76b51d35205b18dfae5/public/llm_case/X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_114f68d74a31ac64b23f.json",
+    "system_prompt": "runtime/contracts/X2/llm_system_prompt.txt"
+  },
+  "source_case_status": "REVIEW_OBJECTIVE_DEFINITION",
+  "package_input_version": "SOURCE_ENGLISH_UNCHANGED_NO_WUFR_FORMULA_V1",
+  "files": {
+    "private/root_case.json": {
+      "sha256": "20b0b8d06ff89df866c509482fa6de92f97e543024a34885ede9ffce98c31693",
+      "bytes": 310158,
+      "source_member": "cases/X2/c76b51d35205b18dfae5/private/root_case/X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_114f68d74a31ac64b23f.json"
+    },
+    "private/private_truth.json": {
+      "sha256": "f34812f3b42a7253f6679de6459964c81d03400f630fb5d91316f7311eb19648",
+      "bytes": 327,
+      "source_member": "cases/X2/c76b51d35205b18dfae5/private/private_truth/X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_114f68d74a31ac64b23f.json"
+    },
+    "private/reference_output.json": {
+      "sha256": "0bcf8d46b59d4e8a7caa39e8d7bd7d8bb6adae358981e277a7c994c0960fd8c3",
+      "bytes": 137,
+      "source_member": "cases/X2/c76b51d35205b18dfae5/private/reference_output/X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_114f68d74a31ac64b23f.json"
+    },
+    "private/validation.json": {
+      "sha256": "2baf4a7e519aeea5b7ea434a1eb5a61d623850b3bcccccb53147738f5b0f109c",
+      "bytes": 199,
+      "source_member": "cases/X2/c76b51d35205b18dfae5/private/validation/X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_114f68d74a31ac64b23f.json"
+    },
+    "public/system_prompt.txt": {
+      "sha256": "7c6ff34237b028ba86b672e8d74289f04dda770840cf86f850965d0c39f33fb6",
+      "bytes": 4072,
+      "source_member": "runtime/contracts/X2/llm_system_prompt.txt"
+    },
+    "public/user_prompt.txt": {
+      "sha256": "1ba20630adec121a1780e9434ee015ebc65ad5b40c1aeaf891e0681301af7a1e",
+      "bytes": 16282,
+      "source_member": "cases/X2/c76b51d35205b18dfae5/public/llm_case/X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_114f68d74a31ac64b23f.json"
+    }
+  },
+  "verification": {
+    "public": {
+      "links_and_spectrum_exact": true,
+      "request_parameters_exact": true,
+      "request_ids_exact": false
+    },
+    "reference_feasibility_primary": {
+      "feasible": true,
+      "primary_matches_source_optimum": true,
+      "no_new_global_optimality_proof": true
+    },
+    "source_validation_bound": true,
+    "all_global_optima_independently_resolved": false
+  }
+}

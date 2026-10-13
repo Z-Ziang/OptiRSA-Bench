@@ -1,0 +1,80 @@
+{
+  "case_uid": "b4bd0f5b64fc6548354c11b86f02905c883f023b1e604236abbb2be7ce4ccaf3",
+  "case_id": "X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_196523546fbb460c1857",
+  "task": "X2",
+  "topology_id": "top_TB_REAL%3A%3ATOP_72_NOBELGERMANY",
+  "graph_hash": "8980981dfcd8773a5a7459a8fb77e13fe7776e24d0c621dc831a920d7af01c8d",
+  "snapshot_hash": "c8eb18867cc92fbdeda87f31340a337cbc6a11b7db5b202c3e327381471fd002",
+  "family_ids": [
+    "F_18682576ba655509bcd0c89d344af6d0837228000ebcc441fb12c3f989901bc0"
+  ],
+  "messages_sha256": "3e6bf4494ac83e7a233f21feddfc80646424f678841160e82e66ee0359184ca2",
+  "validator_source_sha256": "31660b7c47b6875d4332ec8212cfea2bae583ae029b60ce6da54bf0a48393a32",
+  "source_archive": "Benchmark_7_7_HISTORICAL_X2.zip",
+  "source_archive_sha256": "bcd7ae1b863dd30a5c7a0deacae2ed01e5356548a8d6ed95b257ac87178d331d",
+  "source_dataset_version": "Benchmark_7_7_HISTORICAL_X2",
+  "source_member_hashes": {
+    "root_case": "5bebfbd234901dae59af8cb78fcb06ec29ec507d0e2f0811df74af12d84a7f80",
+    "private_truth": "5cedaaa6fefcb54ed556d41746af62710b3a2b6a0b9d2351e276ce4f3534ad15",
+    "reference_output": "da1376cc1cf83d5c671bc1c952612eed31b157afc29abcfc053433cedc4b7436",
+    "validation": "cc5b3e7ac00ef8e896d1629365df9013d6c1f88b051a55c7676796407e268d67",
+    "llm_case": "4045581f76d114c03a1e68e3e51cf167479641e0e40e15932cabc8ba1b623d94",
+    "system_prompt": "7c6ff34237b028ba86b672e8d74289f04dda770840cf86f850965d0c39f33fb6"
+  },
+  "source_member_paths": {
+    "root_case": "cases/X2/bec2511323cc1ce142e4/private/root_case/X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_196523546fbb460c1857.json",
+    "private_truth": "cases/X2/bec2511323cc1ce142e4/private/private_truth/X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_196523546fbb460c1857.json",
+    "reference_output": "cases/X2/bec2511323cc1ce142e4/private/reference_output/X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_196523546fbb460c1857.json",
+    "validation": "cases/X2/bec2511323cc1ce142e4/private/validation/X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_196523546fbb460c1857.json",
+    "llm_case": "cases/X2/bec2511323cc1ce142e4/public/llm_case/X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_196523546fbb460c1857.json",
+    "system_prompt": "runtime/contracts/X2/llm_system_prompt.txt"
+  },
+  "source_case_status": "REVIEW_OBJECTIVE_DEFINITION",
+  "package_input_version": "SOURCE_ENGLISH_UNCHANGED_NO_WUFR_FORMULA_V1",
+  "files": {
+    "private/root_case.json": {
+      "sha256": "5bebfbd234901dae59af8cb78fcb06ec29ec507d0e2f0811df74af12d84a7f80",
+      "bytes": 192206,
+      "source_member": "cases/X2/bec2511323cc1ce142e4/private/root_case/X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_196523546fbb460c1857.json"
+    },
+    "private/private_truth.json": {
+      "sha256": "5cedaaa6fefcb54ed556d41746af62710b3a2b6a0b9d2351e276ce4f3534ad15",
+      "bytes": 326,
+      "source_member": "cases/X2/bec2511323cc1ce142e4/private/private_truth/X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_196523546fbb460c1857.json"
+    },
+    "private/reference_output.json": {
+      "sha256": "da1376cc1cf83d5c671bc1c952612eed31b157afc29abcfc053433cedc4b7436",
+      "bytes": 136,
+      "source_member": "cases/X2/bec2511323cc1ce142e4/private/reference_output/X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_196523546fbb460c1857.json"
+    },
+    "private/validation.json": {
+      "sha256": "cc5b3e7ac00ef8e896d1629365df9013d6c1f88b051a55c7676796407e268d67",
+      "bytes": 199,
+      "source_member": "cases/X2/bec2511323cc1ce142e4/private/validation/X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_196523546fbb460c1857.json"
+    },
+    "public/system_prompt.txt": {
+      "sha256": "7c6ff34237b028ba86b672e8d74289f04dda770840cf86f850965d0c39f33fb6",
+      "bytes": 4072,
+      "source_member": "runtime/contracts/X2/llm_system_prompt.txt"
+    },
+    "public/user_prompt.txt": {
+      "sha256": "b613be029ec0682a0518cb2a7b2e3aa30ec43765c98fb1ec3e8bc6ccac975b7c",
+      "bytes": 10104,
+      "source_member": "cases/X2/bec2511323cc1ce142e4/public/llm_case/X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_196523546fbb460c1857.json"
+    }
+  },
+  "verification": {
+    "public": {
+      "links_and_spectrum_exact": true,
+      "request_parameters_exact": true,
+      "request_ids_exact": false
+    },
+    "reference_feasibility_primary": {
+      "feasible": true,
+      "primary_matches_source_optimum": true,
+      "no_new_global_optimality_proof": true
+    },
+    "source_validation_bound": true,
+    "all_global_optima_independently_resolved": false
+  }
+}

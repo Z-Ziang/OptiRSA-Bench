@@ -1,0 +1,80 @@
+{
+  "case_uid": "1d7bc3fe9edfd72778329a99a051fb91a710b4da5b7a84462032420bc9d5e030",
+  "case_id": "X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_6c928ff83620bb2d78629493",
+  "task": "X3",
+  "topology_id": "top_TB_REAL%3A%3ATOP_84_PSINET",
+  "graph_hash": "8e0c618e0d8cb75c94e21f497c99c6c8806ff44a66bd2ac3fa2f68f95d352336",
+  "snapshot_hash": "ebbf093a8372ea199f171642573c0c365d8e57d85655b8f0b34b442f4ef02d25",
+  "family_ids": [
+    "F_cfd34c04ef1cc9ff7cb6663b6f27efb258c1d48e3daa7b2c7c2a533576367c41"
+  ],
+  "messages_sha256": "113a7a0d016df246ee86a989887c754e77ce7e1319d2f9cfe9a0500a9a73da54",
+  "validator_source_sha256": "7e6f21cc8a321d797ee0c0660113200262b64a6f3798806ac920078e478003f5",
+  "source_archive": "Benchmark_7_7_HISTORICAL_REMAINDER_X3.zip",
+  "source_archive_sha256": "d9d387cdeb58fd3deb87d30b9031769f3990101279f7beed4ec2770e2884968e",
+  "source_dataset_version": "Benchmark_7_7_HISTORICAL_REMAINDER_X3",
+  "source_member_hashes": {
+    "root_case": "ba89cc03ef03d457751bc06662d1cde28ed4cb15dc3b33d31682094dc62720b0",
+    "private_truth": "40c97034ada29249ed79fcce0ded69cd54c0201d585f32217839e75991a4dae2",
+    "reference_output": "498dc025ee8ae6ab086406d482a8e0bd72558b502349454bcb13f3cd5aa6b6e7",
+    "validation": "38f871f182663625908e19f1d20ed84c93bc053c8144a503ce41a8058cdda7d9",
+    "llm_case": "762da98bac75b536a6d074272b50d6592d40096b27dfe412094d8a3a871ca7c5",
+    "system_prompt": "2f61efee3110846d99790ed8bb386d150ceeaeb35f02a7a0ebc365df2d96c87c"
+  },
+  "source_member_paths": {
+    "root_case": "cases/X3/03bd084a3ecda1189fad/private/root_case/X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_6c928ff83620bb2d78629493.json",
+    "private_truth": "cases/X3/03bd084a3ecda1189fad/private/private_truth/X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_6c928ff83620bb2d78629493.json",
+    "reference_output": "cases/X3/03bd084a3ecda1189fad/private/reference_output/X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_6c928ff83620bb2d78629493.json",
+    "validation": "cases/X3/03bd084a3ecda1189fad/private/validation/X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_6c928ff83620bb2d78629493.json",
+    "llm_case": "cases/X3/03bd084a3ecda1189fad/public/llm_case/X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_6c928ff83620bb2d78629493.json",
+    "system_prompt": "runtime/contracts/X3/llm_system_prompt.txt"
+  },
+  "source_case_status": "REVIEW_OBJECTIVE_DEFINITION",
+  "package_input_version": "SOURCE_ENGLISH_UNCHANGED_NO_WUFR_FORMULA_V1",
+  "files": {
+    "private/root_case.json": {
+      "sha256": "ba89cc03ef03d457751bc06662d1cde28ed4cb15dc3b33d31682094dc62720b0",
+      "bytes": 185102,
+      "source_member": "cases/X3/03bd084a3ecda1189fad/private/root_case/X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_6c928ff83620bb2d78629493.json"
+    },
+    "private/private_truth.json": {
+      "sha256": "40c97034ada29249ed79fcce0ded69cd54c0201d585f32217839e75991a4dae2",
+      "bytes": 386,
+      "source_member": "cases/X3/03bd084a3ecda1189fad/private/private_truth/X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_6c928ff83620bb2d78629493.json"
+    },
+    "private/reference_output.json": {
+      "sha256": "498dc025ee8ae6ab086406d482a8e0bd72558b502349454bcb13f3cd5aa6b6e7",
+      "bytes": 728,
+      "source_member": "cases/X3/03bd084a3ecda1189fad/private/reference_output/X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_6c928ff83620bb2d78629493.json"
+    },
+    "private/validation.json": {
+      "sha256": "38f871f182663625908e19f1d20ed84c93bc053c8144a503ce41a8058cdda7d9",
+      "bytes": 211,
+      "source_member": "cases/X3/03bd084a3ecda1189fad/private/validation/X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_6c928ff83620bb2d78629493.json"
+    },
+    "public/system_prompt.txt": {
+      "sha256": "2f61efee3110846d99790ed8bb386d150ceeaeb35f02a7a0ebc365df2d96c87c",
+      "bytes": 5955,
+      "source_member": "runtime/contracts/X3/llm_system_prompt.txt"
+    },
+    "public/user_prompt.txt": {
+      "sha256": "1d42087f09e9aea46d2b613a7922f7c0a37100401114e0bdbee96cef1b0358b9",
+      "bytes": 10007,
+      "source_member": "cases/X3/03bd084a3ecda1189fad/public/llm_case/X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_6c928ff83620bb2d78629493.json"
+    }
+  },
+  "verification": {
+    "public": {
+      "links_and_spectrum_exact": true,
+      "request_parameters_exact": true,
+      "request_ids_exact": true
+    },
+    "reference_feasibility_primary": {
+      "feasible": true,
+      "primary_matches_source_optimum": true,
+      "no_new_global_optimality_proof": true
+    },
+    "source_validation_bound": true,
+    "all_global_optima_independently_resolved": false
+  }
+}

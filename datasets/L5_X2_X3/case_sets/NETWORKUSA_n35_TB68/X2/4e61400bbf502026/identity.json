@@ -1,0 +1,80 @@
+{
+  "case_uid": "4e61400bbf502026c8c4427a844768c3c617a8420aba8f5646c50004cf8e4587",
+  "case_id": "X2_STATIC_COMPAT_V2_20261008_184135_860418_R33_STATIC_X2_00bdff74b9b1a8078104b9e7",
+  "task": "X2",
+  "topology_id": "top_TB_REAL%3A%3ATOP_68_NETWORKUSA",
+  "graph_hash": "0309da7a2c8ac687756dbba570a5ce887dfdf455285531ea26081bc7d568d297",
+  "snapshot_hash": "9b10b69a80c63448d896a281033322c3f7368b9c114fc1e50a4d96044a3a3b13",
+  "family_ids": [
+    "F_8c71f1a1c99da3f902916058426de51500f2015dcc953170ad3a8d26dec78ec5"
+  ],
+  "messages_sha256": "2090e743e0fc8799828a8321f4d43a40f62d87f4408acb680a8ad3de0f431534",
+  "validator_source_sha256": "31660b7c47b6875d4332ec8212cfea2bae583ae029b60ce6da54bf0a48393a32",
+  "source_archive": "Benchmark_7_7_HISTORICAL_X2.zip",
+  "source_archive_sha256": "bcd7ae1b863dd30a5c7a0deacae2ed01e5356548a8d6ed95b257ac87178d331d",
+  "source_dataset_version": "Benchmark_7_7_HISTORICAL_X2",
+  "source_member_hashes": {
+    "root_case": "af9e2aa1583d9d022418608f17e3bdd8d2160b5b0a0953ba24cb8316629bef25",
+    "private_truth": "585fabd2ce31306cd2b044170c598f4f97ba116161f73ae1abfc14c77e702106",
+    "reference_output": "1a8db46b4ce97af2ab5dd3ece0fb5649639167ae33f74851cee0c6f4958e5398",
+    "validation": "0f71ba616fab2904508a9c4884baa9468b515cfbefe2286ccb5d732f00a7413b",
+    "llm_case": "785fe08b8c7f5940d61b64cef1319e87d7c9423287aae5abc1cca85493d3bef4",
+    "system_prompt": "7c6ff34237b028ba86b672e8d74289f04dda770840cf86f850965d0c39f33fb6"
+  },
+  "source_member_paths": {
+    "root_case": "cases/X2/1c3672f06676b8a622b9/private/root_case/X2_STATIC_COMPAT_V2_20261008_184135_860418_R33_STATIC_X2_00bdff74b9b1a8078104b9e7.json",
+    "private_truth": "cases/X2/1c3672f06676b8a622b9/private/private_truth/X2_STATIC_COMPAT_V2_20261008_184135_860418_R33_STATIC_X2_00bdff74b9b1a8078104b9e7.json",
+    "reference_output": "cases/X2/1c3672f06676b8a622b9/private/reference_output/X2_STATIC_COMPAT_V2_20261008_184135_860418_R33_STATIC_X2_00bdff74b9b1a8078104b9e7.json",
+    "validation": "cases/X2/1c3672f06676b8a622b9/private/validation/X2_STATIC_COMPAT_V2_20261008_184135_860418_R33_STATIC_X2_00bdff74b9b1a8078104b9e7.json",
+    "llm_case": "cases/X2/1c3672f06676b8a622b9/public/llm_case/X2_STATIC_COMPAT_V2_20261008_184135_860418_R33_STATIC_X2_00bdff74b9b1a8078104b9e7.json",
+    "system_prompt": "runtime/contracts/X2/llm_system_prompt.txt"
+  },
+  "source_case_status": "REVIEW_OBJECTIVE_DEFINITION",
+  "package_input_version": "SOURCE_ENGLISH_UNCHANGED_NO_WUFR_FORMULA_V1",
+  "files": {
+    "private/root_case.json": {
+      "sha256": "af9e2aa1583d9d022418608f17e3bdd8d2160b5b0a0953ba24cb8316629bef25",
+      "bytes": 288168,
+      "source_member": "cases/X2/1c3672f06676b8a622b9/private/root_case/X2_STATIC_COMPAT_V2_20261008_184135_860418_R33_STATIC_X2_00bdff74b9b1a8078104b9e7.json"
+    },
+    "private/private_truth.json": {
+      "sha256": "585fabd2ce31306cd2b044170c598f4f97ba116161f73ae1abfc14c77e702106",
+      "bytes": 340,
+      "source_member": "cases/X2/1c3672f06676b8a622b9/private/private_truth/X2_STATIC_COMPAT_V2_20261008_184135_860418_R33_STATIC_X2_00bdff74b9b1a8078104b9e7.json"
+    },
+    "private/reference_output.json": {
+      "sha256": "1a8db46b4ce97af2ab5dd3ece0fb5649639167ae33f74851cee0c6f4958e5398",
+      "bytes": 152,
+      "source_member": "cases/X2/1c3672f06676b8a622b9/private/reference_output/X2_STATIC_COMPAT_V2_20261008_184135_860418_R33_STATIC_X2_00bdff74b9b1a8078104b9e7.json"
+    },
+    "private/validation.json": {
+      "sha256": "0f71ba616fab2904508a9c4884baa9468b515cfbefe2286ccb5d732f00a7413b",
+      "bytes": 198,
+      "source_member": "cases/X2/1c3672f06676b8a622b9/private/validation/X2_STATIC_COMPAT_V2_20261008_184135_860418_R33_STATIC_X2_00bdff74b9b1a8078104b9e7.json"
+    },
+    "public/system_prompt.txt": {
+      "sha256": "7c6ff34237b028ba86b672e8d74289f04dda770840cf86f850965d0c39f33fb6",
+      "bytes": 4072,
+      "source_member": "runtime/contracts/X2/llm_system_prompt.txt"
+    },
+    "public/user_prompt.txt": {
+      "sha256": "345e3dfc72036a461af182116bfec4cc7490aca22b55ca51743634b4fc951a67",
+      "bytes": 15086,
+      "source_member": "cases/X2/1c3672f06676b8a622b9/public/llm_case/X2_STATIC_COMPAT_V2_20261008_184135_860418_R33_STATIC_X2_00bdff74b9b1a8078104b9e7.json"
+    }
+  },
+  "verification": {
+    "public": {
+      "links_and_spectrum_exact": true,
+      "request_parameters_exact": true,
+      "request_ids_exact": false
+    },
+    "reference_feasibility_primary": {
+      "feasible": true,
+      "primary_matches_source_optimum": true,
+      "no_new_global_optimality_proof": true
+    },
+    "source_validation_bound": true,
+    "all_global_optima_independently_resolved": false
+  }
+}

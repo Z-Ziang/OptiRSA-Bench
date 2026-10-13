@@ -1,0 +1,26 @@
+1. Service request intent:
+
+Please establish service connections for all of the following service requests simultaneously:
+Service request dynreq_TB_REAL%3A%3ATOP_34_GBLNET_001_005001: Please establish a service from node 4 to node 0 that requires 5 contiguous spectrum slots.
+Service request dynreq_TB_REAL%3A%3ATOP_34_GBLNET_001_005002: Please establish a service from node 2 to node 4 that requires 9 contiguous spectrum slots.
+
+For the assignment, give priority to the plan that minimizes total slot usage; when total slot usage is the same, give priority to the plan that yields the lowest network-wide spectrum fragmentation after assignment.
+
+2. Current directed links and spectrum resource states of the network:
+
+Network node identifier range: 0–7, for a total of 8 nodes.
+
+Directed link 0: 0→5; free slot intervals: [7,7],[11,31],[34,44],[54,56],[66,78],[88,319].
+Directed link 1: 5→0; free slot intervals: [2,7],[11,21],[43,59],[62,64],[67,72],[76,78],[88,319].
+Directed link 2: 1→5; free slot intervals: [0,4],[7,7],[10,12],[18,23],[26,30],[54,62],[72,79],[92,319].
+Directed link 3: 5→1; free slot intervals: [0,1],[4,4],[8,9],[12,13],[17,18],[29,31],[34,42],[50,50],[56,78],[88,96],[106,319].
+Directed link 4: 2→3; free slot intervals: [0,7],[10,11],[14,15],[21,23],[26,32],[35,40],[44,56],[66,71],[77,79],[92,319].
+Directed link 5: 3→2; free slot intervals: [0,1],[4,7],[10,16],[37,39],[43,47],[50,55],[72,72],[76,78],[88,96],[115,319].
+Directed link 6: 2→5; free slot intervals: [4,7],[12,14],[37,39],[50,50],[72,72],[76,78],[115,131],[141,319].
+Directed link 7: 5→2; free slot intervals: [2,7],[10,11],[14,15],[18,23],[26,32],[35,40],[44,44],[54,56],[66,71],[77,79],[92,319].
+Directed link 8: 3→4; free slot intervals: [0,7],[10,11],[14,32],[35,56],[66,82],[92,319].
+Directed link 9: 4→3; free slot intervals: [3,7],[10,16],[32,39],[43,47],[50,55],[72,105],[115,319].
+Directed link 10: 5→6; free slot intervals: [2,16],[19,28],[37,39],[54,55],[65,66],[72,105],[115,131],[141,319].
+Directed link 11: 6→5; free slot intervals: [0,4],[11,11],[31,32],[35,71],[77,82],[92,319].
+Directed link 12: 5→7; free slot intervals: [0,14],[17,44],[54,87],[97,319].
+Directed link 13: 7→5; free slot intervals: [2,4],[13,15],[18,40],[44,59],[62,319].

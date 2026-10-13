@@ -1,0 +1,26 @@
+1. Service request intent:
+
+Please establish service connections for all of the following service requests simultaneously:
+Service request dynreq_TB_REAL%3A%3ATOP_61_LAYER42_005_005001: Please establish a service from node 5 to node 1 that requires 3 contiguous spectrum slots.
+Service request dynreq_TB_REAL%3A%3ATOP_61_LAYER42_005_005002: Please establish a service from node 2 to node 5 that requires 9 contiguous spectrum slots.
+
+For the assignment, give priority to the plan that minimizes total slot usage; when total slot usage is the same, give priority to the plan that yields the lowest network-wide spectrum fragmentation after assignment.
+
+2. Current directed links and spectrum resource states of the network:
+
+Network node identifier range: 0–5, for a total of 6 nodes.
+
+Directed link 0: 0→1; free slot intervals: [3,4],[7,8],[14,14],[17,17],[20,24],[28,30],[39,43],[56,62],[77,106],[116,116],[122,125],[135,139],[154,166],[181,197],[207,240],[259,267],[277,319].
+Directed link 1: 1→0; free slot intervals: [0,9],[13,13],[26,28],[39,40],[43,45],[49,50],[62,62],[66,76],[85,89],[95,95],[122,126],[141,142],[157,166],[176,188],[198,319].
+Directed link 2: 1→2; free slot intervals: [0,2],[24,24],[28,29],[34,38],[41,41],[44,44],[58,62],[96,97],[116,118],[124,134],[153,156],[167,179],[189,197],[207,221],[231,240],[259,319].
+Directed link 3: 2→1; free slot intervals: [5,6],[13,13],[32,32],[35,40],[43,45],[51,53],[59,60],[63,64],[108,111],[117,166],[176,188],[194,227],[233,258],[268,319].
+Directed link 4: 1→3; free slot intervals: [4,4],[12,15],[26,30],[34,34],[43,44],[50,52],[56,60],[63,64],[86,88],[98,102],[122,125],[135,139],[154,157],[181,188],[194,209],[219,227],[233,249],[277,319].
+Directed link 5: 3→1; free slot intervals: [4,4],[11,12],[15,16],[58,59],[62,62],[75,77],[89,89],[124,126],[141,142],[167,170],[207,221],[231,249],[259,319].
+Directed link 6: 1→5; free slot intervals: [5,5],[8,8],[18,28],[39,43],[53,81],[96,104],[108,319].
+Directed link 7: 5→1; free slot intervals: [0,1],[10,26],[34,36],[44,45],[54,67],[73,75],[78,81],[95,97],[107,118],[122,126],[136,147],[157,319].
+Directed link 8: 3→4; free slot intervals: [18,22],[34,34],[41,44],[50,60],[63,64],[68,111],[117,139],[154,166],[181,209],[219,319].
+Directed link 9: 4→3; free slot intervals: [15,16],[22,42],[48,52],[58,59],[62,75],[85,89],[96,118],[124,126],[136,142],[157,157],[167,197],[207,221],[231,319].
+Directed link 10: 3→5; free slot intervals: [0,3],[6,9],[28,32],[51,319].
+Directed link 11: 5→3; free slot intervals: [5,8],[11,13],[17,18],[24,319].
+Directed link 12: 4→5; free slot intervals: [0,2],[11,16],[26,28],[39,39],[42,319].
+Directed link 13: 5→4; free slot intervals: [5,9],[26,28],[64,319].

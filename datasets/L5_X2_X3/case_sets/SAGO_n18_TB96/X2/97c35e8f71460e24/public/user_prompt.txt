@@ -1,0 +1,40 @@
+1. Service request intent: Please establish a service from node 12 to node 11 that requires 9 contiguous spectrum slots. For the assignment, give priority to the plan that minimizes path hop count; when the hop count is the same, give priority to the plan that yields the lowest network-wide spectrum fragmentation after assignment.
+
+2. Current directed links and spectrum resource states of the network:
+
+Network node identifier range: 0–17, for a total of 18 nodes.
+
+Directed link 0: 0→1; free slot intervals: [13,23],[33,38],[48,50],[54,68],[71,76],[82,84],[87,120],[135,319].
+Directed link 1: 1→0; free slot intervals: [0,2],[8,8],[11,31],[40,46],[52,65],[76,85],[91,91],[101,109],[115,127],[146,319].
+Directed link 2: 0→4; free slot intervals: [11,31],[35,49],[52,65],[76,91],[101,109],[115,127],[137,319].
+Directed link 3: 4→0; free slot intervals: [6,23],[28,38],[48,50],[54,68],[71,76],[82,84],[87,120],[135,319].
+Directed link 4: 1→16; free slot intervals: [8,10],[13,23],[33,38],[54,59],[71,76],[82,84],[87,91],[101,120],[144,319].
+Directed link 5: 16→1; free slot intervals: [0,2],[8,8],[11,24],[27,29],[40,46],[52,65],[76,76],[91,91],[101,109],[115,127],[146,319].
+Directed link 6: 2→3; free slot intervals: [0,6],[9,11],[14,26],[35,75],[85,106],[116,319].
+Directed link 7: 3→2; free slot intervals: [5,5],[13,23],[26,27],[33,76],[82,84],[101,319].
+Directed link 8: 2→5; free slot intervals: [5,23],[26,76],[82,84],[87,319].
+Directed link 9: 5→2; free slot intervals: [0,6],[9,26],[32,106],[116,319].
+Directed link 10: 3→17; free slot intervals: [0,6],[9,11],[14,26],[35,53],[57,65],[69,70],[85,91],[101,106],[116,319].
+Directed link 11: 17→3; free slot intervals: [5,5],[8,10],[13,23],[33,51],[57,59],[69,76],[82,84],[110,114],[124,319].
+Directed link 12: 4→7; free slot intervals: [9,31],[35,49],[52,65],[76,91],[101,319].
+Directed link 13: 7→4; free slot intervals: [0,25],[28,38],[48,76],[82,84],[87,120],[135,319].
+Directed link 14: 6→7; free slot intervals: [0,38],[48,76],[82,84],[87,120],[126,319].
+Directed link 15: 7→6; free slot intervals: [9,49],[52,91],[101,319].
+Directed link 16: 8→9; free slot intervals: [0,15],[21,31],[37,47],[51,125],[135,319].
+Directed link 17: 9→8; free slot intervals: [2,114],[124,319].
+Directed link 18: 8→11; free slot intervals: [2,34],[40,49],[59,65],[71,91],[101,114],[124,319].
+Directed link 19: 11→8; free slot intervals: [0,6],[9,15],[21,31],[37,47],[51,65],[69,125],[135,319].
+Directed link 20: 10→11; free slot intervals: [0,3],[9,10],[21,31],[39,47],[51,56],[71,125],[135,319].
+Directed link 21: 11→10; free slot intervals: [2,7],[13,29],[32,34],[40,46],[59,65],[71,91],[101,109],[124,319].
+Directed link 22: 10→13; free slot intervals: [2,4],[13,29],[32,34],[40,46],[59,65],[71,85],[91,91],[101,109],[124,319].
+Directed link 23: 13→10; free slot intervals: [0,3],[21,31],[39,47],[51,53],[71,75],[85,91],[101,125],[135,319].
+Directed link 24: 12→13; free slot intervals: [0,3],[13,14],[20,31],[71,75],[85,91],[101,120],[135,319].
+Directed link 25: 13→12; free slot intervals: [13,29],[32,34],[40,46],[52,65],[71,85],[91,91],[101,109],[124,319].
+Directed link 26: 12→15; free slot intervals: [13,29],[32,34],[40,46],[52,65],[71,85],[91,91],[101,109],[124,127],[146,319].
+Directed link 27: 15→12; free slot intervals: [0,3],[6,6],[11,26],[57,65],[71,75],[85,91],[101,106],[116,120],[144,319].
+Directed link 28: 14→15; free slot intervals: [0,3],[6,6],[11,26],[57,65],[71,75],[85,91],[101,106],[116,120],[144,319].
+Directed link 29: 15→14; free slot intervals: [0,1],[5,7],[13,24],[27,29],[32,34],[45,46],[52,65],[71,76],[91,91],[101,109],[124,127],[146,319].
+Directed link 30: 14→17; free slot intervals: [0,1],[5,24],[27,29],[45,46],[57,65],[71,76],[91,91],[124,127],[146,319].
+Directed link 31: 17→14; free slot intervals: [6,6],[11,11],[14,26],[57,65],[71,75],[85,91],[101,106],[116,120],[144,319].
+Directed link 32: 16→17; free slot intervals: [8,8],[13,23],[54,59],[71,76],[82,84],[101,120],[144,319].
+Directed link 33: 17→16; free slot intervals: [0,2],[8,24],[27,29],[45,46],[52,65],[76,76],[91,91],[101,109],[115,127],[146,319].

@@ -1,0 +1,106 @@
+{
+  "offline_semantic_checks": [
+    {
+      "task": "X2",
+      "test": "reference_ACCEPT",
+      "category": "CORRECT",
+      "case_uid": "032f70af25f2fc50992172db98129d4824a25c39a18eff2aeb2dfe9c2826fb9c"
+    },
+    {
+      "task": "X2",
+      "test": "reference_REJECT",
+      "category": "CORRECT",
+      "case_uid": "b0c973f36fdc547932b6b3a128bf99c0ed7808ebe845e6b9250d40d98f07550e"
+    },
+    {
+      "task": "X2",
+      "test": "invalid_json",
+      "category": "MISSING"
+    },
+    {
+      "task": "X2",
+      "test": "schema_violation",
+      "category": "MISSING"
+    },
+    {
+      "task": "X2",
+      "test": "incorrect_reject",
+      "category": "MISSING"
+    },
+    {
+      "task": "X2",
+      "test": "unknown_link",
+      "category": "INFEASIBLE"
+    },
+    {
+      "task": "X2",
+      "test": "single_fence",
+      "normalized": "CORRECT",
+      "strict": "MISSING"
+    },
+    {
+      "task": "X2",
+      "test": "legal_secondary_suboptimal",
+      "case_uid": "032f70af25f2fc50992172db98129d4824a25c39a18eff2aeb2dfe9c2826fb9c",
+      "category": "SUBOPTIMAL"
+    },
+    {
+      "task": "X3",
+      "test": "reference_ACCEPT",
+      "category": "CORRECT",
+      "case_uid": "061c67f4179c653eab82c4fe0a167bf8de523d838c9f6020b04750faa43202ae"
+    },
+    {
+      "task": "X3",
+      "test": "reference_REJECT",
+      "category": "CORRECT",
+      "case_uid": "375899d8dcbac061b997a3150048287b8345e6a8aee1191d79ad8bc45963d6de"
+    },
+    {
+      "task": "X3",
+      "test": "invalid_json",
+      "category": "MISSING"
+    },
+    {
+      "task": "X3",
+      "test": "schema_violation",
+      "category": "MISSING"
+    },
+    {
+      "task": "X3",
+      "test": "incorrect_reject",
+      "category": "MISSING"
+    },
+    {
+      "task": "X3",
+      "test": "unknown_link",
+      "category": "INFEASIBLE"
+    },
+    {
+      "task": "X3",
+      "test": "single_fence",
+      "normalized": "CORRECT",
+      "strict": "MISSING"
+    },
+    {
+      "task": "X3",
+      "test": "legal_secondary_suboptimal",
+      "case_uid": "061c67f4179c653eab82c4fe0a167bf8de523d838c9f6020b04750faa43202ae",
+      "category": "SUBOPTIMAL"
+    }
+  ],
+  "semantic_check_count": 16,
+  "loopback_transport": {
+    "only_public_system_user_inputs": true,
+    "model_id_preserved": true,
+    "synthetic_server_500_recovered": true,
+    "unique_case_requests": 4,
+    "total_loopback_requests": 5,
+    "resume_additional_requests": 0,
+    "completed_scored_answers": 4,
+    "real_model_API_calls": 0,
+    "synthetic_usage_not_model_measurements": true
+  },
+  "python_version": "3.12.14",
+  "tested_environment": "existing_pinned_Inspect_environment"
+}
