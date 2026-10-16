@@ -39,8 +39,20 @@ def export_logs(log_dir,out,run_model):
     summarize(out)
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--config');p.add_argument('--task',choices=['X2','X3','all'],default='all');p.add_argument('--topology',default='');p.add_argument('--scale',default='');p.add_argument('--limit-per-task',type=int,default=0);p.add_argument('--output',required=True);p.add_argument('--resume',action='store_true');p.add_argument('--dry-run',action='store_true');p.add_argument('--offline-reference',action='store_true');p.add_argument('--purpose',choices=['exploratory','formal'],default='exploratory');a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--config');p.add_argument('--case-list',help='Frozen selection JSON produced by stratified_eval.py plan');p.add_argument('--task',choices=['X2','X3','all'],default='all');p.add_argument('--topology',default='');p.add_argument('--scale',default='');p.add_argument('--limit-per-task',type=int,default=0);p.add_argument('--output',required=True);p.add_argument('--resume',action='store_true');p.add_argument('--dry-run',action='store_true');p.add_argument('--offline-reference',action='store_true');p.add_argument('--purpose',choices=['exploratory','formal'],default='exploratory');a=p.parse_args()
     rows=select_cases(a.task,a.topology,a.scale,a.limit_per_task)
+    if a.case_list:
+        if a.task!='all' or a.topology or a.scale or a.limit_per_task:
+            raise SystemExit('--case-list cannot be combined with selection filters')
+        selection=readjson(a.case_list)
+        digest=hashlib.sha256((ROOT/'case_sets/_index/cases.jsonl').read_bytes()).hexdigest()
+        if selection.get('dataset_manifest_sha256')!=digest:raise SystemExit('selection dataset hash mismatch')
+        selected=selection['cases'];uids=[r['case_uid'] for r in selected]
+        if not uids or len(set(uids))!=len(uids):raise SystemExit('case list must be nonempty and unique')
+        inventory={r['case_uid']:r for r in rows}
+        if any(r['case_uid'] not in inventory or inventory[r['case_uid']]['messages_sha256']!=r['messages_sha256'] for r in selected):
+            raise SystemExit('unknown case or input hash mismatch')
+        rows=[inventory[uid] for uid in uids]
     if a.purpose=='formal' and any(r['interface_status'].startswith('REVIEW') for r in rows):raise SystemExit('Formal interface approval is pending. Use exploratory for current unchanged prompt protocol.')
     cfg=readjson(a.config) if a.config else {}
     if not a.offline_reference and not a.dry_run and not a.config:raise SystemExit('--config is required for real model requests')
