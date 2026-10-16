@@ -1,0 +1,110 @@
+{
+  "task": "X2",
+  "case_uid": "83615262ee678106c5f5a9e90fa436d5208c9ec4fed4457bceee930fd90f1676",
+  "case_id": "X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_RECOVER_HANDOFF_R33_STATIC_X2_d95740e1a2c71c6cf1200fc1",
+  "queue_status": "COMPLETE",
+  "attempts": 2,
+  "identity_key": "b9192ea6832c3e13323405d8d11ffcbeeecba2558a6633c21e85351867089c15",
+  "messages_sha256": "e69272540dd4827998893e80d8afad39edb9fe469406ca4ca224e09e9ff31390",
+  "result_category": "INFEASIBLE",
+  "answer_record": {
+    "case_uid": "83615262ee678106c5f5a9e90fa436d5208c9ec4fed4457bceee930fd90f1676",
+    "model": "Qwen/Qwen3-8B",
+    "task": "X2",
+    "identity_key": "b9192ea6832c3e13323405d8d11ffcbeeecba2558a6633c21e85351867089c15",
+    "status": "RESPONSE_RECEIVED",
+    "raw_completion": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [10, 9, 7, 3],\n  \"path_link_ids\": [23, 21, 10],\n  \"slot_start\": 259\n}",
+    "finish_reason": "stop",
+    "usage": {
+      "input_tokens": 4450,
+      "output_tokens": 56,
+      "total_tokens": 4506,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 0,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    },
+    "model_output": {
+      "model": "Qwen/Qwen3-8B",
+      "choices": [
+        {
+          "message": {
+            "id": "KFUAoRKNNbwERGXBW3rpCK",
+            "content": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [10, 9, 7, 3],\n  \"path_link_ids\": [23, 21, 10],\n  \"slot_start\": 259\n}",
+            "source": "generate",
+            "metadata": null,
+            "role": "assistant",
+            "tool_calls": null,
+            "model": "Qwen/Qwen3-8B"
+          },
+          "stop_reason": "stop",
+          "stop_details": null,
+          "logprobs": null,
+          "prompt_logprobs": null
+        }
+      ],
+      "completion": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [10, 9, 7, 3],\n  \"path_link_ids\": [23, 21, 10],\n  \"slot_start\": 259\n}",
+      "usage": {
+        "input_tokens": 4450,
+        "output_tokens": 56,
+        "total_tokens": 4506,
+        "input_tokens_cache_write": null,
+        "input_tokens_cache_read": 0,
+        "reasoning_tokens": 0,
+        "total_cost": null
+      },
+      "fallback": null,
+      "time": 3.7660000000000764,
+      "metadata": null,
+      "error": null,
+      "response_id": "01a1436af8fd456f5f2f2ac6beaa07f8"
+    },
+    "started_at": "2026-10-16T06:34:03.324631+00:00",
+    "completed_at": "2026-10-16T06:34:07.846585+00:00",
+    "messages_sha256": "e69272540dd4827998893e80d8afad39edb9fe469406ca4ca224e09e9ff31390",
+    "protocol_sha256": "2b0ac75ecc79a0b46b67708530f57709f9760617d21b8f55d7c3d9dd952df2e5",
+    "attempt": 2,
+    "inspect_log_dir": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\X2\\batches\\0024dde1ca7a4be693bc03f16479f987\\inspect_logs",
+    "result": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "INFEASIBLE",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "path links are not directionally contiguous"
+        ],
+        "metrics": {
+          "feasible_decision_accuracy": 0,
+          "hop_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_hop_count": null,
+        "submitted_wufr": null
+      }
+    },
+    "strict": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "INFEASIBLE",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "path links are not directionally contiguous"
+        ],
+        "metrics": {
+          "feasible_decision_accuracy": 0,
+          "hop_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_hop_count": null,
+        "submitted_wufr": null
+      }
+    },
+    "graded_at": "2026-10-16T06:34:07.956835+00:00"
+  }
+}

@@ -1,0 +1,86 @@
+You need to complete a joint routing and spectrum assignment task for concurrent service requests in an elastic optical network. You will be given: the current directed network topology, the current spectrum resource state of each directed link, and a set of concurrent service request intents awaiting resource assignment. For each case, determine whether all service requests can simultaneously be assigned resources and all service connections can be established based on the current network information, and output the joint resource assignment plan for the group of service requests.
+
+If all services can be established, you need to select a compliant directed path from its source node to its destination node for each service request and assign the same contiguous block of spectrum slots, with a size equal to the spectrum-slot demand of that service request, on every directed link traversed by the selected path.
+
+The assignment must satisfy all of the following conditions:
+The directed links in the path assigned to each service request must be consecutively connected;
+The path assigned to each service request must start at that request's source node and end at its destination node;
+For each service request, the assigned slot interval must be free on every link of its path;
+For each service request, the starting spectrum-slot index must be the same on every link of its path;
+For each service request, the number of contiguous slots assigned on every link of its path must equal the spectrum-slot demand of that service request;
+If different service requests traverse the same directed link, the spectrum-slot intervals assigned to them on that directed link must not overlap;
+The concurrent service requests must be handled through joint resource assignment. The group of service connections may be established only if all service requests can simultaneously receive resource assignments. If resource assignments cannot be completed simultaneously for all service requests, reject the entire group of service requests.
+
+Network information:
+Each link in the network contains a fixed number of spectrum slots: 320 slots, indexed from 0 to 319.
+[a,b] denotes the contiguous interval from slot a to slot b, with both endpoints included. The complete slot index set on one link is [0,1,2,...,319].
+
+The current network information is represented in the following format:
+
+Information for each directed link:
+Directed link <link_id>: <source_node_id>→<destination_node_id>; free slot intervals: [a,b],[c,d],....
+
+Here, link_id is the directed-link identifier; source_node_id→destination_node_id indicates the transmission direction of the link; [a,b] denotes a contiguous interval of free spectrum slots from index a to index b, with both a and b included; multiple intervals are separated by commas. If a link currently has no free slots, write "free slot intervals: none". Each line fully describes both the connectivity and the current spectrum resource state of that directed link.
+
+A path is represented jointly by a node array and a directed-link array. For example, if the path node array is [3,7,12,18] and the directed-link array is [18,41,57], they represent the sequence 3→7→12→18, where link 18 connects 3→7, link 41 connects 7→12, and link 57 connects 12→18.
+
+The optimization objectives include:
+Subject to feasible joint resource assignment for all concurrent service requests, prefer the resource assignment plan that minimizes the total number of spectrum slots occupied by the concurrent service requests after resource assignment (minimize total slot usage).
+Subject to feasible joint resource assignment for all concurrent service requests, prefer the resource assignment plan that minimizes the network-wide spectrum fragmentation after assignment (minimize spectrum fragmentation).
+Here, the total number of spectrum slots occupied after resource assignment by the concurrent service requests equals the sum of the slot counts of all service requests. For each service request, its slot count equals the spectrum-slot demand of that request multiplied by the hop count of its assigned path.
+
+Output requirements:
+The resource assignment plan must include:
+1. The resource assignment decision for the group of concurrent service requests (decision), including establishing all request connections (ACCEPT) or rejecting the group of requests (REJECT);
+2. If all request connections are established: in the joint resource assignment plan allocations, output the request identifier request_id, the assigned path node array path_node_ids, the assigned directed-link array path_link_ids, and the assigned starting slot index slot_start for each service request;
+3. If the group of requests is rejected: allocations in the joint resource assignment plan must be an empty array.
+Return only one JSON object representing the joint resource assignment plan for the group of concurrent service requests. You must follow the format below exactly:
+{
+  "decision": "",
+  "allocations": [
+    {
+      "request_id": "",
+      "path_node_ids": [],
+      "path_link_ids": [],
+      "slot_start": 0
+    }
+  ]
+}
+
+Example:
+For concurrent service requests whose connections are established, output:
+{
+  "decision": "ACCEPT",
+  "allocations": [
+    {
+      "request_id": "req_001",
+      "path_node_ids": [3, 7, 12, 18],
+      "path_link_ids": [18, 41, 57],
+      "slot_start": 23
+    },
+    {
+      "request_id": "req_002",
+      "path_node_ids": [7, 9, 15],
+      "path_link_ids": [26, 38],
+      "slot_start": 11
+    },
+    {
+      "request_id": "req_003",
+      "path_node_ids": [2, 5, 11],
+      "path_link_ids": [12, 31],
+      "slot_start": 47
+    },
+    {
+      "request_id": "req_004",
+      "path_node_ids": [6, 10, 19],
+      "path_link_ids": [24, 46],
+      "slot_start": 8
+    }
+  ]
+}
+
+For concurrent service requests whose connections are not established, output:
+{
+  "decision": "REJECT",
+  "allocations": []
+}

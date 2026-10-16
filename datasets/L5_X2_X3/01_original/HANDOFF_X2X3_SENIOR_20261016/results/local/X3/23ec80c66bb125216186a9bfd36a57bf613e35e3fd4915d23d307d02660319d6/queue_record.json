@@ -1,0 +1,112 @@
+{
+  "task": "X3",
+  "case_uid": "23ec80c66bb125216186a9bfd36a57bf613e35e3fd4915d23d307d02660319d6",
+  "case_id": "X3_STATIC_COMPAT_V2_20261008_184135_860418_R33_STATIC_X3_046b833e050558ef00352f6e",
+  "queue_status": "COMPLETE",
+  "attempts": 14,
+  "identity_key": "7a2849d25af014a7a54786848a0b3f81b6a24daaa0655c42af8b87c59bc3a0e1",
+  "messages_sha256": "2dcec675562912a01b93523e5fbee8c4eebb9d7fa4bcc59dacb7f7ccdb7d4b56",
+  "result_category": "MISSING",
+  "answer_record": {
+    "case_uid": "23ec80c66bb125216186a9bfd36a57bf613e35e3fd4915d23d307d02660319d6",
+    "model": "Qwen/Qwen3-8B",
+    "task": "X3",
+    "identity_key": "7a2849d25af014a7a54786848a0b3f81b6a24daaa0655c42af8b87c59bc3a0e1",
+    "status": "RESPONSE_RECEIVED",
+    "raw_completion": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+    "finish_reason": "stop",
+    "usage": {
+      "input_tokens": 4527,
+      "output_tokens": 16,
+      "total_tokens": 4543,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 0,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    },
+    "model_output": {
+      "model": "Qwen/Qwen3-8B",
+      "choices": [
+        {
+          "message": {
+            "id": "PvJrAfLpqMehNbAwUB7vpg",
+            "content": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+            "source": "generate",
+            "metadata": null,
+            "role": "assistant",
+            "tool_calls": null,
+            "model": "Qwen/Qwen3-8B"
+          },
+          "stop_reason": "stop",
+          "stop_details": null,
+          "logprobs": null,
+          "prompt_logprobs": null
+        }
+      ],
+      "completion": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+      "usage": {
+        "input_tokens": 4527,
+        "output_tokens": 16,
+        "total_tokens": 4543,
+        "input_tokens_cache_write": null,
+        "input_tokens_cache_read": 0,
+        "reasoning_tokens": 0,
+        "total_cost": null
+      },
+      "fallback": null,
+      "time": 2.061999999999898,
+      "metadata": null,
+      "error": null,
+      "response_id": "01a1436dcdc37435b86188e011bc3558"
+    },
+    "started_at": "2026-10-16T06:37:08.976163+00:00",
+    "completed_at": "2026-10-16T06:37:11.653382+00:00",
+    "messages_sha256": "2dcec675562912a01b93523e5fbee8c4eebb9d7fa4bcc59dacb7f7ccdb7d4b56",
+    "protocol_sha256": "d10b0887dd9ed5544d60a54670a07d52aacebdeb61a3d898ce4dcaabf9314d74",
+    "attempt": 14,
+    "inspect_log_dir": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\X3\\batches\\6ece7e5201c449c79d74064db59225c4\\inspect_logs",
+    "result": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "MISSING",
+      "reason": "INCORRECT_REJECT_NO_ALLOCATION",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "REJECT is incorrect because a full-space joint feasible solution exists"
+        ],
+        "metrics": {
+          "joint_feasible_decision_accuracy": 0,
+          "delta_tso_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_delta_tso": null,
+        "submitted_wufr": null
+      }
+    },
+    "strict": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "MISSING",
+      "reason": "INCORRECT_REJECT_NO_ALLOCATION",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "REJECT is incorrect because a full-space joint feasible solution exists"
+        ],
+        "metrics": {
+          "joint_feasible_decision_accuracy": 0,
+          "delta_tso_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_delta_tso": null,
+        "submitted_wufr": null
+      }
+    },
+    "graded_at": "2026-10-16T06:37:11.761077+00:00"
+  }
+}

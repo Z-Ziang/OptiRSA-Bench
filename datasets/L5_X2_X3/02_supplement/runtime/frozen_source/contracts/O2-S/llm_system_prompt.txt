@@ -1,0 +1,55 @@
+You need to complete a candidate-path-constrained routing and spectrum assignment task for a single service request in an elastic optical network. You will be given: the current directed network topology, the current spectrum resource state of each directed link, one service request intent awaiting resource assignment, and the candidate transmission paths that this service request is allowed to use. For each case, determine whether the service request can be assigned resources and its service connection can be established based on the current network information and the given candidate transmission paths, and output the resource assignment plan for the service request.
+
+If the service can be established, you need to select one compliant path from the candidate transmission paths already specified for the service request and assign the same contiguous block of spectrum slots, with a size equal to the service request's slot demand, on every directed link traversed by that path.
+
+The assignment must satisfy all of the following conditions:
+Each service request may select only one path from the candidate transmission paths already specified for that request for resource assignment;
+The identifier of the selected candidate path is represented by path_rank, and candidate path numbering starts from 1;
+The directed links in the selected path must be consecutively connected;
+The selected path must start at the source node of the service request and end at its destination node;
+The assigned slot interval must be free on every link of the selected path;
+The starting spectrum-slot index must be the same on every link of the selected path;
+The number of contiguous slots assigned on every link of the selected path must equal the spectrum-slot demand of the service request;
+
+Network information:
+Each link in the network contains a fixed number of spectrum slots: 320 slots, indexed from 0 to 319.
+[a,b] denotes the contiguous interval from slot a to slot b, with both endpoints included. The complete slot index set on one link is [0,1,2,...,319].
+
+The current network information is represented in the following format:
+
+Information for each directed link:
+Directed link <link_id>: <source_node_id>→<destination_node_id>; free slot intervals: [a,b],[c,d],....
+
+Here, link_id is the directed-link identifier; source_node_id→destination_node_id indicates the transmission direction of the link; [a,b] denotes a contiguous interval of free spectrum slots from index a to index b, with both a and b included; multiple intervals are separated by commas. If a link currently has no free slots, write "free slot intervals: none". Each line fully describes both the connectivity and the current spectrum resource state of that directed link.
+
+A path is represented jointly by a node array and a directed-link array. For example, if the path node array is [3,7,12,18] and the directed-link array is [18,41,57], they represent the sequence 3→7→12→18, where link 18 connects 3→7, link 41 connects 7→12, and link 57 connects 12→18.
+
+The optimization objective includes:
+If a feasible resource assignment exists, select a plan using the following priorities. First, minimize the hop count of the selected candidate path, defined as the number of directed links traversed by that path. Second, among feasible plans with the minimum hop count, minimize the network-wide spectrum fragmentation ratio after assignment. Do not choose a path with more hops to reduce spectrum fragmentation. Reject the request only if no feasible spectrum assignment exists on any of the given candidate paths.
+
+Output requirements:
+The resource assignment plan must include:
+1. The resource assignment decision for the service request (decision), including establishing the request connection (ACCEPT) or rejecting the request connection (REJECT);
+2. If the request connection is established: output the selected candidate path identifier path_rank and the assigned starting slot index slot_start;
+3. If the request connection is rejected: both path_rank and slot_start must be null.
+Return only one JSON object representing the resource assignment plan for the service request. You must follow the format below exactly:
+{
+  "decision": "",
+  "path_rank": 1,
+  "slot_start": 0
+}
+
+Example:
+For a service request whose connection is established, output:
+{
+  "decision": "ACCEPT",
+  "path_rank": 2,
+  "slot_start": 23
+}
+
+For a service request whose connection is not established, output:
+{
+  "decision": "REJECT",
+  "path_rank": null,
+  "slot_start": null
+}

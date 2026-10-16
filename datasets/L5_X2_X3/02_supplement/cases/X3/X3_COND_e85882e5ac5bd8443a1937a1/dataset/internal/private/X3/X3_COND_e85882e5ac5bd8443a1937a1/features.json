@@ -1,0 +1,94 @@
+{
+  "directed_link_count": 128,
+  "max_required_slots": 3,
+  "mean_required_slots": 3.0,
+  "node_count": 50,
+  "oracle_action_counts": {
+    "req_958c4145449899c861c5d334": 620,
+    "req_c778260be53e2728e4535ff0": 250
+  },
+  "oracle_evaluated_optimal_solutions": 42,
+  "oracle_path_counts": {
+    "req_958c4145449899c861c5d334": 234,
+    "req_c778260be53e2728e4535ff0": 170
+  },
+  "oracle_search_nodes": 92,
+  "reference_algorithms": {
+    "algorithm_1_sp_ff": null,
+    "algorithm_2_ksp5_ff": null,
+    "algorithm_3_joint_backtrack_k12": {
+      "delta_tso": 51,
+      "output": {
+        "allocations": [
+          {
+            "path_link_ids": [
+              38,
+              71,
+              69,
+              67,
+              57,
+              33,
+              13
+            ],
+            "path_node_ids": [
+              10,
+              29,
+              20,
+              19,
+              18,
+              14,
+              6,
+              1
+            ],
+            "request_id": "req_958c4145449899c861c5d334",
+            "slot_start": 317
+          },
+          {
+            "path_link_ids": [
+              37,
+              38,
+              92,
+              91,
+              88,
+              81,
+              82,
+              96,
+              7,
+              2
+            ],
+            "path_node_ids": [
+              22,
+              10,
+              29,
+              30,
+              27,
+              28,
+              23,
+              31,
+              33,
+              0,
+              3
+            ],
+            "request_id": "req_c778260be53e2728e4535ff0",
+            "slot_start": 207
+          }
+        ],
+        "decision": "ACCEPT"
+      },
+      "post_wufr": 0.7461708917172741
+    }
+  },
+  "request_count": 2,
+  "resource_pressure": 0.333154296875,
+  "serialization_metrics": {
+    "canonical_tokenizer": {
+      "backend": "tiktoken",
+      "encoding": "o200k_base",
+      "package_version": "0.14.0"
+    },
+    "llm_prompt_char_count": 25108,
+    "llm_prompt_token_count": 10319,
+    "llm_prompt_utf8_bytes": 25366
+  },
+  "total_required_slots": 6
+}

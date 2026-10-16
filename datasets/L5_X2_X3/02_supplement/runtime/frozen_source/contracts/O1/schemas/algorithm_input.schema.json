@@ -1,0 +1,230 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://opticalbenchmark.local/schemas/O1/algorithm_input.schema.json",
+  "title": "O1 public Algorithm input",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "task_type",
+    "slot_count",
+    "nodes",
+    "directed_links",
+    "link_spectrum_states",
+    "requests"
+  ],
+  "properties": {
+    "task_type": {
+      "const": "O1"
+    },
+    "slot_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "nodes": {
+      "type": "array",
+      "minItems": 2,
+      "uniqueItems": true,
+      "items": {
+        "type": "integer",
+        "minimum": 0
+      }
+    },
+    "directed_links": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/directed_link"
+      }
+    },
+    "link_spectrum_states": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/spectrum_state"
+      }
+    },
+    "requests": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "allOf": [
+          {
+            "$ref": "#/$defs/request"
+          },
+          {
+            "required": [
+              "fixed_path"
+            ]
+          },
+          {
+            "not": {
+              "required": [
+                "candidate_paths"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "$defs": {
+    "directed_link": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "link_id",
+        "source_node_id",
+        "destination_node_id"
+      ],
+      "properties": {
+        "link_id": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "source_node_id": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "destination_node_id": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "range": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "prefixItems": [
+        {
+          "type": "integer",
+          "minimum": 0
+        },
+        {
+          "type": "integer",
+          "minimum": 0
+        }
+      ],
+      "items": false
+    },
+    "spectrum_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "link_id",
+        "occupied_ranges"
+      ],
+      "properties": {
+        "link_id": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "occupied_ranges": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/range"
+          }
+        }
+      }
+    },
+    "fixed_path": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path_node_ids",
+        "path_link_ids"
+      ],
+      "properties": {
+        "path_node_ids": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "path_link_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "candidate_path": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path_rank",
+        "path_node_ids",
+        "path_link_ids"
+      ],
+      "properties": {
+        "path_rank": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "path_node_ids": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "path_link_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "request": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "request_id",
+        "source_node_id",
+        "destination_node_id",
+        "required_slots"
+      ],
+      "properties": {
+        "request_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_node_id": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "destination_node_id": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "required_slots": {
+          "enum": [
+            2,
+            3,
+            5,
+            9
+          ]
+        },
+        "fixed_path": {
+          "$ref": "#/$defs/fixed_path"
+        },
+        "candidate_paths": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/candidate_path"
+          }
+        }
+      }
+    }
+  }
+}

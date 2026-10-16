@@ -1,0 +1,110 @@
+{
+  "task": "X3",
+  "case_uid": "caaa9aa329aecac8b4ede54587f060264f93eabcbde693c91c6c1e893d75f7fd",
+  "case_id": "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_52028b7c4e29e15435f4ef6e",
+  "queue_status": "COMPLETE",
+  "attempts": 20,
+  "identity_key": "5ae1392a0d0677765f71ce6ba1a51cdfd7a3c001b92ed437a481efd271366383",
+  "messages_sha256": "d8ff0792c1fa600ceb5fd774887241233d222ca2968780a454994b9d9a68141d",
+  "result_category": "INFEASIBLE",
+  "answer_record": {
+    "case_uid": "caaa9aa329aecac8b4ede54587f060264f93eabcbde693c91c6c1e893d75f7fd",
+    "model": "Qwen/Qwen3-8B",
+    "task": "X3",
+    "identity_key": "5ae1392a0d0677765f71ce6ba1a51cdfd7a3c001b92ed437a481efd271366383",
+    "status": "RESPONSE_RECEIVED",
+    "raw_completion": "{\n  \"decision\": \"ACCEPT\",\n  \"allocations\": [\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000010\",\n      \"path_node_ids\": [1, 7, 4],\n      \"path_link_ids\": [19, 14],\n      \"slot_start\": 2\n    },\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000047\",\n      \"path_node_ids\": [5, 4, 2, 1],\n      \"path_link_ids\": [12, 10, 8],\n      \"slot_start\": 2\n    }\n  ]\n}",
+    "finish_reason": "stop",
+    "usage": {
+      "input_tokens": 2196,
+      "output_tokens": 173,
+      "total_tokens": 3681,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 1312,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    },
+    "model_output": {
+      "model": "Qwen/Qwen3-8B",
+      "choices": [
+        {
+          "message": {
+            "id": "fskadpfZ5BSVQQZNv4D3jg",
+            "content": "{\n  \"decision\": \"ACCEPT\",\n  \"allocations\": [\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000010\",\n      \"path_node_ids\": [1, 7, 4],\n      \"path_link_ids\": [19, 14],\n      \"slot_start\": 2\n    },\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000047\",\n      \"path_node_ids\": [5, 4, 2, 1],\n      \"path_link_ids\": [12, 10, 8],\n      \"slot_start\": 2\n    }\n  ]\n}",
+            "source": "generate",
+            "metadata": null,
+            "role": "assistant",
+            "tool_calls": null,
+            "model": "Qwen/Qwen3-8B"
+          },
+          "stop_reason": "stop",
+          "stop_details": null,
+          "logprobs": null,
+          "prompt_logprobs": null
+        }
+      ],
+      "completion": "{\n  \"decision\": \"ACCEPT\",\n  \"allocations\": [\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000010\",\n      \"path_node_ids\": [1, 7, 4],\n      \"path_link_ids\": [19, 14],\n      \"slot_start\": 2\n    },\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000047\",\n      \"path_node_ids\": [5, 4, 2, 1],\n      \"path_link_ids\": [12, 10, 8],\n      \"slot_start\": 2\n    }\n  ]\n}",
+      "usage": {
+        "input_tokens": 2196,
+        "output_tokens": 173,
+        "total_tokens": 3681,
+        "input_tokens_cache_write": null,
+        "input_tokens_cache_read": 1312,
+        "reasoning_tokens": 0,
+        "total_cost": null
+      },
+      "fallback": null,
+      "time": 26.875,
+      "metadata": null,
+      "error": null,
+      "response_id": "01a1436be169c6740677769fa3783f14"
+    },
+    "started_at": "2026-10-16T06:35:02.473535+00:00",
+    "completed_at": "2026-10-16T06:35:30.320637+00:00",
+    "messages_sha256": "d8ff0792c1fa600ceb5fd774887241233d222ca2968780a454994b9d9a68141d",
+    "protocol_sha256": "d10b0887dd9ed5544d60a54670a07d52aacebdeb61a3d898ce4dcaabf9314d74",
+    "attempt": 20,
+    "inspect_log_dir": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\X3\\batches\\0a1f4c4bcde047568aa8b17d46eb2e0a\\inspect_logs",
+    "result": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "INFEASIBLE",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000010: path links are not directionally contiguous"
+        ],
+        "metrics": {
+          "joint_feasible_decision_accuracy": 0,
+          "delta_tso_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_delta_tso": null,
+        "submitted_wufr": null
+      }
+    },
+    "strict": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "INFEASIBLE",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000010: path links are not directionally contiguous"
+        ],
+        "metrics": {
+          "joint_feasible_decision_accuracy": 0,
+          "delta_tso_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_delta_tso": null,
+        "submitted_wufr": null
+      }
+    },
+    "graded_at": "2026-10-16T06:35:30.412555+00:00"
+  }
+}

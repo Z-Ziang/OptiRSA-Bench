@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "case_id",
+    "task_type",
+    "feasible",
+    "oracle_certification",
+    "optimal_hop_count",
+    "optimal_wufr_at_optimal_hop",
+    "equivalent_optimum_count",
+    "oracle_evaluated_optimal_actions"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string"
+    },
+    "task_type": {
+      "const": "X2"
+    },
+    "feasible": {
+      "type": "boolean"
+    },
+    "oracle_certification": {
+      "enum": [
+        "EXACT_CERTIFIED",
+        "INFEASIBLE_CERTIFIED"
+      ]
+    },
+    "optimal_hop_count": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "optimal_wufr_at_optimal_hop": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "equivalent_optimum_count": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "oracle_evaluated_optimal_actions": {
+      "type": "integer",
+      "minimum": 0
+    }
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "directed_link_count": 176,
+  "max_required_slots": 9,
+  "mean_required_slots": 7.0,
+  "node_count": 50,
+  "oracle_action_counts": {
+    "req_TB_REAL%3A%3ATOP_37_GERMANY50_000481": 44691,
+    "req_TB_REAL%3A%3ATOP_37_GERMANY50_001130": 648928
+  },
+  "oracle_evaluated_optimal_solutions": 8,
+  "oracle_path_counts": {
+    "req_TB_REAL%3A%3ATOP_37_GERMANY50_000481": 26819,
+    "req_TB_REAL%3A%3ATOP_37_GERMANY50_001130": 386883
+  },
+  "oracle_search_nodes": 22,
+  "reference_algorithms": {
+    "algorithm_1_sp_ff": {
+      "delta_tso": 79,
+      "output": {
+        "allocations": [
+          {
+            "path_link_ids": [
+              118,
+              128,
+              174,
+              163,
+              17
+            ],
+            "path_node_ids": [
+              23,
+              24,
+              45,
+              49,
+              37,
+              2
+            ],
+            "request_id": "req_TB_REAL%3A%3ATOP_37_GERMANY50_001130",
+            "slot_start": 302
+          },
+          {
+            "path_link_ids": [
+              56,
+              88,
+              102,
+              11,
+              6,
+              150
+            ],
+            "path_node_ids": [
+              9,
+              16,
+              18,
+              49,
+              1,
+              34,
+              40
+            ],
+            "request_id": "req_TB_REAL%3A%3ATOP_37_GERMANY50_000481",
+            "slot_start": 242
+          }
+        ],
+        "decision": "ACCEPT"
+      },
+      "post_wufr": 0.7311882058602912
+    },
+    "algorithm_2_ksp5_ff": {
+      "delta_tso": 79,
+      "output": {
+        "allocations": [
+          {
+            "path_link_ids": [
+              118,
+              128,
+              174,
+              163,
+              17
+            ],
+            "path_node_ids": [
+              23,
+              24,
+              45,
+              49,
+              37,
+              2
+            ],
+            "request_id": "req_TB_REAL%3A%3ATOP_37_GERMANY50_001130",
+            "slot_start": 302
+          },
+          {
+            "path_link_ids": [
+              56,
+              88,
+              102,
+              11,
+              6,
+              150
+            ],
+            "path_node_ids": [
+              9,
+              16,
+              18,
+              49,
+              1,
+              34,
+              40
+            ],
+            "request_id": "req_TB_REAL%3A%3ATOP_37_GERMANY50_000481",
+            "slot_start": 242
+          }
+        ],
+        "decision": "ACCEPT"
+      },
+      "post_wufr": 0.7311882058602912
+    },
+    "algorithm_3_joint_backtrack_k12": {
+      "delta_tso": 79,
+      "output": {
+        "allocations": [
+          {
+            "path_link_ids": [
+              118,
+              128,
+              174,
+              163,
+              17
+            ],
+            "path_node_ids": [
+              23,
+              24,
+              45,
+              49,
+              37,
+              2
+            ],
+            "request_id": "req_TB_REAL%3A%3ATOP_37_GERMANY50_001130",
+            "slot_start": 305
+          },
+          {
+            "path_link_ids": [
+              56,
+              88,
+              102,
+              163,
+              149,
+              150
+            ],
+            "path_node_ids": [
+              9,
+              16,
+              18,
+              49,
+              37,
+              34,
+              40
+            ],
+            "request_id": "req_TB_REAL%3A%3ATOP_37_GERMANY50_000481",
+            "slot_start": 242
+          }
+        ],
+        "decision": "ACCEPT"
+      },
+      "post_wufr": 0.7309959368419677
+    }
+  },
+  "request_count": 2,
+  "resource_pressure": 0.343980823864,
+  "serialization_metrics": {
+    "canonical_tokenizer": {
+      "backend": "tiktoken",
+      "encoding": "o200k_base",
+      "package_version": "0.14.0"
+    },
+    "llm_prompt_char_count": 34893,
+    "llm_prompt_token_count": 14367,
+    "llm_prompt_utf8_bytes": 35247
+  },
+  "total_required_slots": 14
+}

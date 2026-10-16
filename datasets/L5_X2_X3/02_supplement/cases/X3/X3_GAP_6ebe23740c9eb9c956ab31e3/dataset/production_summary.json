@@ -1,0 +1,52 @@
+{
+  "benchmark_interface": "DUAL_VIEW_ALGORITHM_LLM_V1_0_COMPILED_NPZ",
+  "case_count": 1,
+  "production_metadata": {
+    "increment": "X2X3_CPU_ADAPTIVE_20261016_120156_924131",
+    "lineage": {
+      "API_calls": 0,
+      "derivation_policy": "FULL_TOPOLOGY_X3_NO_K_LIMIT",
+      "dispatch_worker_code_sha256": "418045b96dea77637d1b9d0d2492cab3e9cf551f2418a8dbfe0073d12dbce9de",
+      "environment_resolution": "READ_ONLY_PRIOR_ENV_QUEUE_RESULT_AND_FULL_STATE_REPLAY",
+      "frozen_R1_unchanged": true,
+      "handoff_gap_id": "X3_GAP_6ebe23740c9eb9c956ab31e3",
+      "handoff_manifest_sha256": "07bff65489dea940884e694f977f04d296a9d2709843799dac38dfd7f662dc01",
+      "input_sha256": "269a86c1f2ec4340420c5a54d770bb2ad7a98438d42170e4ace7960d2f1391a6",
+      "original_source_batch_id": "UNKNOWN",
+      "request_order": [
+        "req_TB_REAL%3A%3ATOP_103_UNIC_000119",
+        "req_TB_REAL%3A%3ATOP_103_UNIC_000019"
+      ],
+      "scientific_key": "0796fde296039b035b5f37242597d21ae18f211296d8ce7f0e88160246f79e3e",
+      "source_batch_id": "UNKNOWN",
+      "source_environment": "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/jobs/ENV_0020_V2/unit/public_environment",
+      "source_graph_hash": "2b77b528c83612a11b083828b045383c28c1f3323531d45ceaed3311b5c0788d",
+      "source_proof_kind": "FROZEN_HANDOFF_REQUEST_BOUND_TO_PUBLIC_ENVIRONMENT",
+      "source_request_ids": [
+        "req_TB_REAL%3A%3ATOP_103_UNIC_000119",
+        "req_TB_REAL%3A%3ATOP_103_UNIC_000019"
+      ],
+      "source_request_provenance": [
+        {
+          "physical_hash": "08ffca4582fb438168292b428fccd4c61dff53045b4145121cbefdc2dbfd20fb",
+          "request_id": "req_TB_REAL%3A%3ATOP_103_UNIC_000119",
+          "source_kind": "EXACT_STATIC_PUBLIC_ENV_REQUEST_ROW"
+        },
+        {
+          "physical_hash": "79c86d26e40f0b8d560c28c8b9b2fa8515e40e8975843ceb9d7ffdd6508a42b4",
+          "request_id": "req_TB_REAL%3A%3ATOP_103_UNIC_000019",
+          "source_kind": "EXACT_STATIC_PUBLIC_ENV_REQUEST_ROW"
+        }
+      ],
+      "source_resource_state_id": "rs_TB_REAL%3A%3ATOP_103_UNIC_kspff_medium_seed01",
+      "source_snapshot_hash": "6f08e0690bb768053b49d0ed8f62d3de3e37153fd75d0128371aac44c4f2c7d8",
+      "source_state_key": "fe9e41820719d2f2b804478241d6441eae40f2561fab831d38a24cdfc2df86fb",
+      "source_topology_id": "top_TB_REAL%3A%3ATOP_103_UNIC"
+    }
+  },
+  "schema_version": "X2X3_PRODUCTION_SUMMARY_V3_0",
+  "task_counts": {
+    "X2": 0,
+    "X3": 1
+  }
+}

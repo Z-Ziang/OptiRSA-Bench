@@ -1,0 +1,110 @@
+{
+  "task": "X2",
+  "case_uid": "8ff263f489daf63e0a5ef00a77a41a7d5cf3577155163169a4821527d57dce13",
+  "case_id": "X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X2_f5b97953d2c1cea1dd74f6a3",
+  "queue_status": "COMPLETE",
+  "attempts": 2,
+  "identity_key": "bb5f86d92d64972ba63f99be66e0b9460d27e84f5501b3ade8392fc23f1b73e5",
+  "messages_sha256": "ffb0b73a33cdaef3acb29322caa4072e9399a99693bfd3c3f7de798f4de41538",
+  "result_category": "SUBOPTIMAL",
+  "answer_record": {
+    "case_uid": "8ff263f489daf63e0a5ef00a77a41a7d5cf3577155163169a4821527d57dce13",
+    "model": "Qwen/Qwen3-8B",
+    "task": "X2",
+    "identity_key": "bb5f86d92d64972ba63f99be66e0b9460d27e84f5501b3ade8392fc23f1b73e5",
+    "status": "RESPONSE_RECEIVED",
+    "raw_completion": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [3, 5, 14],\n  \"path_link_ids\": [10, 14],\n  \"slot_start\": 23\n}",
+    "finish_reason": "stop",
+    "usage": {
+      "input_tokens": 4450,
+      "output_tokens": 48,
+      "total_tokens": 4498,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 0,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    },
+    "model_output": {
+      "model": "Qwen/Qwen3-8B",
+      "choices": [
+        {
+          "message": {
+            "id": "3SoxMQbKbaSEiBBQ63R6JK",
+            "content": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [3, 5, 14],\n  \"path_link_ids\": [10, 14],\n  \"slot_start\": 23\n}",
+            "source": "generate",
+            "metadata": null,
+            "role": "assistant",
+            "tool_calls": null,
+            "model": "Qwen/Qwen3-8B"
+          },
+          "stop_reason": "stop",
+          "stop_details": null,
+          "logprobs": null,
+          "prompt_logprobs": null
+        }
+      ],
+      "completion": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [3, 5, 14],\n  \"path_link_ids\": [10, 14],\n  \"slot_start\": 23\n}",
+      "usage": {
+        "input_tokens": 4450,
+        "output_tokens": 48,
+        "total_tokens": 4498,
+        "input_tokens_cache_write": null,
+        "input_tokens_cache_read": 0,
+        "reasoning_tokens": 0,
+        "total_cost": null
+      },
+      "fallback": null,
+      "time": 3.280999999999949,
+      "metadata": null,
+      "error": null,
+      "response_id": "01a1436ba83d51753e231795d96e5c87"
+    },
+    "started_at": "2026-10-16T06:34:48.072878+00:00",
+    "completed_at": "2026-10-16T06:34:52.154182+00:00",
+    "messages_sha256": "ffb0b73a33cdaef3acb29322caa4072e9399a99693bfd3c3f7de798f4de41538",
+    "protocol_sha256": "2b0ac75ecc79a0b46b67708530f57709f9760617d21b8f55d7c3d9dd952df2e5",
+    "attempt": 2,
+    "inspect_log_dir": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\X2\\batches\\54e5e2c791ec4e0b8a85c7d2b5cdcd36\\inspect_logs",
+    "result": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "SUBOPTIMAL",
+      "correct_reject": false,
+      "result_kind": "ALLOCATION",
+      "validator": {
+        "valid": true,
+        "errors": [],
+        "metrics": {
+          "feasible_decision_accuracy": 1,
+          "hop_gap": 0,
+          "wufr_gap": 0.0006103311081023799
+        },
+        "submitted_hop_count": 2,
+        "submitted_wufr": 0.412859791522732
+      }
+    },
+    "strict": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "SUBOPTIMAL",
+      "correct_reject": false,
+      "result_kind": "ALLOCATION",
+      "validator": {
+        "valid": true,
+        "errors": [],
+        "metrics": {
+          "feasible_decision_accuracy": 1,
+          "hop_gap": 0,
+          "wufr_gap": 0.0006103311081023799
+        },
+        "submitted_hop_count": 2,
+        "submitted_wufr": 0.412859791522732
+      }
+    },
+    "graded_at": "2026-10-16T06:34:52.455903+00:00"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "snapshot_time_local": "2026-10-16T15:06:05.836066+08:00",
+  "source_dataset_archive": "OptiRSA_X2X3_MID_5_60_FILTERED_4608_20261016_R1.zip",
+  "source_dataset_sha256": "5fbc41b253da148911927f7fb49a5cfb0c80f49270edc33e9fbd5892a1d6afa8",
+  "external_600_partial_archive": "OptiRSA_X2_X3_COMPLETED_PARTIAL_HANDOFF_20261016_111920.zip",
+  "external_600_partial_sha256": "dbbf779a98347d588b8d8d0bfe2e0f65f20e9a3ce1c0f7587d71c1a59c8009b9",
+  "total_cases": 4608,
+  "counts": {
+    "X2": {
+      "total": 3342,
+      "evaluated_local": 132,
+      "evaluated_external_600": 4,
+      "external_600_in_progress": 96,
+      "available_for_senior": 3110
+    },
+    "X3": {
+      "total": 1266,
+      "evaluated_local": 86,
+      "evaluated_external_600": 8,
+      "external_600_in_progress": 92,
+      "available_for_senior": 1080
+    },
+    "combined": {
+      "evaluated_unique": 230,
+      "external_600_in_progress": 188,
+      "available_for_senior": 4190
+    }
+  },
+  "local_queue_statuses": {
+    "X2": {
+      "COMPLETE": 106,
+      "RETRY": 454,
+      "PENDING": 2656,
+      "HISTORICAL": 26,
+      "EXTERNAL_RESERVED": 100
+    },
+    "X3": {
+      "COMPLETE": 80,
+      "DEFERRED": 2,
+      "RETRY": 475,
+      "EXTERNAL_RESERVED": 100,
+      "PENDING": 603,
+      "HISTORICAL": 6
+    }
+  },
+  "external_600_queue_statuses": {
+    "X2": {
+      "COMPLETE": 4,
+      "PENDING": 11,
+      "RETRY": 85
+    },
+    "X3": {
+      "COMPLETE": 8,
+      "RETRY": 92
+    }
+  },
+  "result_categories": {
+    "X2": {
+      "SUBOPTIMAL": 23,
+      "INFEASIBLE": 103,
+      "CORRECT": 5,
+      "MISSING": 5
+    },
+    "X3": {
+      "INFEASIBLE": 24,
+      "MISSING": 65,
+      "SUBOPTIMAL": 1,
+      "CORRECT": 4
+    }
+  },
+  "external_600_completed_category_counts": {
+    "X2": {
+      "INFEASIBLE": 4
+    },
+    "X3": {
+      "MISSING": 4,
+      "CORRECT": 4
+    }
+  },
+  "matching_rule": "case_uid plus messages_sha256; all 12 other-session results are among the 200 EXTERNAL_RESERVED rows",
+  "source_archive_was_preserved": true,
+  "x2_x3_local_processes_at_snapshot": false,
+  "model": "Qwen/Qwen3-8B",
+  "thinking": "disabled; the 12 external completed records report reasoning_tokens=0",
+  "status_definitions": {
+    "EVALUATED_LOCAL": "saved graded response in this session, includes historical results",
+    "EVALUATED_EXTERNAL_600": "saved graded response from separate 600-case session",
+    "EXTERNAL_600_IN_PROGRESS": "reserved in other session, still pending/retry/deferred; do not duplicate",
+    "AVAILABLE_FOR_SENIOR": "no saved answer in either source; eligible for evaluation"
+  }
+}

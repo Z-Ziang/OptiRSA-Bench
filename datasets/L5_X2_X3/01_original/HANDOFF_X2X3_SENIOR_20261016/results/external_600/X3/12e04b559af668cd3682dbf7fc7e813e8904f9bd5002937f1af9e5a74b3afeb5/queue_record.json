@@ -1,0 +1,163 @@
+{
+  "task": "X3",
+  "case_uid": "12e04b559af668cd3682dbf7fc7e813e8904f9bd5002937f1af9e5a74b3afeb5",
+  "case_id": "X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_a18d5ec3cd2615134e4b081d",
+  "queue_status": "COMPLETE",
+  "attempts": 1,
+  "identity_key": "44bd4fa6550b72a12b34d85b5122be7b2e5530659e6578790d12e8c8017afc6a",
+  "messages_sha256": "87cc91f092f0339fb4b1c806972398c4c34389e6557a007a404a738e0518a5d9",
+  "result_category": "MISSING",
+  "answer_record": {
+    "case_uid": "12e04b559af668cd3682dbf7fc7e813e8904f9bd5002937f1af9e5a74b3afeb5",
+    "model": "Qwen/Qwen3-8B",
+    "task": "X3",
+    "identity_key": "44bd4fa6550b72a12b34d85b5122be7b2e5530659e6578790d12e8c8017afc6a",
+    "status": "RESPONSE_RECEIVED",
+    "raw_completion": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+    "finish_reason": "stop",
+    "usage": {
+      "input_tokens": 10626,
+      "output_tokens": 16,
+      "total_tokens": 11954,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 1312,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    },
+    "model_output": {
+      "model": "Qwen/Qwen3-8B",
+      "choices": [
+        {
+          "message": {
+            "id": "hofv5q7vLJuWByXu4sToNW",
+            "content": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+            "source": "generate",
+            "metadata": null,
+            "role": "assistant",
+            "tool_calls": null,
+            "model": "Qwen/Qwen3-8B"
+          },
+          "stop_reason": "stop",
+          "stop_details": null,
+          "logprobs": null,
+          "prompt_logprobs": null
+        }
+      ],
+      "completion": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+      "usage": {
+        "input_tokens": 10626,
+        "output_tokens": 16,
+        "total_tokens": 11954,
+        "input_tokens_cache_write": null,
+        "input_tokens_cache_read": 1312,
+        "reasoning_tokens": 0,
+        "total_cost": null
+      },
+      "fallback": null,
+      "time": 3.2970000000000255,
+      "metadata": null,
+      "error": null,
+      "response_id": "01a14363bb97b2f48bed9ebe42fcd802"
+    },
+    "started_at": "2026-10-16T06:26:09.392898+00:00",
+    "completed_at": "2026-10-16T06:26:12.827973+00:00",
+    "messages_sha256": "87cc91f092f0339fb4b1c806972398c4c34389e6557a007a404a738e0518a5d9",
+    "protocol_sha256": "bb324b12f6c16fbc54819cf90aca965fde79a48f86c53729601a3f5bff77c4d0",
+    "attempt": 1,
+    "inspect_log_dir": "F:\\codex\\BENCHMARK\\BENCHMARK9.19\\OptiRSA_EXTERNAL_600_20261016_111920\\OptiRSA_EXTERNAL_600_20261016_111920_NO_THINKING\\output\\tasks\\X3\\batches\\bb05280cd2fd4b8388216c276262f6cd\\inspect_logs",
+    "result": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "MISSING",
+      "reason": "INCORRECT_REJECT_NO_ALLOCATION",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "REJECT is incorrect because a full-space joint feasible solution exists"
+        ],
+        "metrics": {
+          "joint_feasible_decision_accuracy": 0,
+          "delta_tso_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_delta_tso": null,
+        "submitted_wufr": null
+      }
+    },
+    "strict": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "MISSING",
+      "reason": "INCORRECT_REJECT_NO_ALLOCATION",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "REJECT is incorrect because a full-space joint feasible solution exists"
+        ],
+        "metrics": {
+          "joint_feasible_decision_accuracy": 0,
+          "delta_tso_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_delta_tso": null,
+        "submitted_wufr": null
+      }
+    },
+    "graded_at": "2026-10-16T06:26:12.909147+00:00",
+    "_case_metadata": {
+      "case_dir": "case_sets/METRONA_n33_TB65/X3/12e04b559af668cd",
+      "case_id": "X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_a18d5ec3cd2615134e4b081d",
+      "case_uid": "12e04b559af668cd3682dbf7fc7e813e8904f9bd5002937f1af9e5a74b3afeb5",
+      "certificate": "EXACT_CERTIFIED",
+      "contract_version": "UNKNOWN",
+      "decision": "ACCEPT",
+      "exposed": "0",
+      "family_ids": [
+        "F_05e38e8f250f28f705c57b90661250a697c74cc41f4da55249217e80b8c7699b"
+      ],
+      "graph_hash": "bebeeace6ea4bd1a6ff5c54b97ea456f5ecaf189e3cf272abcacf018227d184a",
+      "hop_stratum": "HOP2_BASELINE",
+      "input_characters": 22145,
+      "input_tokens": "UNKNOWN_NOT_MEASURED",
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "load_band": "MID",
+      "messages_sha256": "87cc91f092f0339fb4b1c806972398c4c34389e6557a007a404a738e0518a5d9",
+      "node_count": "33",
+      "occupancy": "0.35076219512195117",
+      "oracle_status": "EXACT_CERTIFIED",
+      "origin": "FORMAL",
+      "primary_objective": "LEX_MIN_DELTA_TSO_THEN_WUFR_FULL_PATH",
+      "producer_version": "UNKNOWN",
+      "request_count": "2",
+      "request_ids": "[\"req_TB_REAL%3A%3ATOP_65_METRONA_000065\",\"req_TB_REAL%3A%3ATOP_65_METRONA_000859\"]",
+      "requested_slots": "[2,3]",
+      "scale": "30-59",
+      "seed": "UNKNOWN",
+      "selection_scale": "30-37",
+      "selection_version": "MID_5TO60_HOP_GE2_BASELINE10PCT_R1",
+      "shortest_hops": [
+        2,
+        2
+      ],
+      "snapshot_hash": "14d589027ab94671387d2d11feee87505fd4935e5ba4b9e091be89455757d97c",
+      "snapshot_id": "rs_TB_REAL%3A%3ATOP_65_METRONA_kspff_medium_seed01",
+      "source_category": "real",
+      "source_member": "OptiRSA_Bench_L5_X2_X3/case_sets/METRONA_n33_TB65/X3/12e04b559af668cd/private/root_case.json",
+      "source_root_sha256": "9ee403cf043ef38124d11a5dd66b567f42254ea772a1f2e9f6d872c22006ae59",
+      "split": "DEVELOPMENT_UNASSESSED",
+      "task": "X3",
+      "topology_folder": "METRONA_n33_TB65",
+      "topology_id": "top_TB_REAL%3A%3ATOP_65_METRONA",
+      "validator_sha256": "7e6f21cc8a321d797ee0c0660113200262b64a6f3798806ac920078e478003f5",
+      "science_sha256": "e504bd98040cd7055a06f9f633bbb95e643b5e7a6158dd9d2847f3ab2fa5493f",
+      "dataset_root": "F:\\codex\\BENCHMARK\\BENCHMARK9.19\\OptiRSA_EXTERNAL_600_20261016_111920\\OptiRSA_EXTERNAL_600_20261016_111920_NO_THINKING\\datasets\\X2X3_MID_R1",
+      "runtime_sha256": "e862943fc4905438d560cabe092aa58af636bae5616cc55a4e4cd9847b5e99d4",
+      "adapter_sha256": "757f93e61f8d50a46974e27ba03d9811024baa745dc48ac5a7328da907d71169"
+    },
+    "queue_status": "COMPLETE"
+  }
+}

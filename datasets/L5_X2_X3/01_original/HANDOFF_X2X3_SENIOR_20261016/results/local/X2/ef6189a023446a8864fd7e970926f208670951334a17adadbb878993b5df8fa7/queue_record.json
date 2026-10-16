@@ -1,0 +1,110 @@
+{
+  "task": "X2",
+  "case_uid": "ef6189a023446a8864fd7e970926f208670951334a17adadbb878993b5df8fa7",
+  "case_id": "X2_UNIFIED_CANDIDATE_20261008_051958_574121_X2_0008_04_05001_N1_V3",
+  "queue_status": "COMPLETE",
+  "attempts": 6,
+  "identity_key": "874c9be687619045fd737a17ba0f42de85f4b638a99295c14ebdd16250559fa2",
+  "messages_sha256": "2b507e2e9bf59f747c985ea49892e4d509aa670af2a2b3a77fa11e77c5ac5927",
+  "result_category": "INFEASIBLE",
+  "answer_record": {
+    "case_uid": "ef6189a023446a8864fd7e970926f208670951334a17adadbb878993b5df8fa7",
+    "model": "Qwen/Qwen3-8B",
+    "task": "X2",
+    "identity_key": "874c9be687619045fd737a17ba0f42de85f4b638a99295c14ebdd16250559fa2",
+    "status": "RESPONSE_RECEIVED",
+    "raw_completion": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [1, 2, 3, 6, 7],\n  \"path_link_ids\": [4, 6, 10, 18],\n  \"slot_start\": 24\n}",
+    "finish_reason": "stop",
+    "usage": {
+      "input_tokens": 3224,
+      "output_tokens": 59,
+      "total_tokens": 3283,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 0,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    },
+    "model_output": {
+      "model": "Qwen/Qwen3-8B",
+      "choices": [
+        {
+          "message": {
+            "id": "2DgVabQVkBJGvQ6yGNLGHH",
+            "content": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [1, 2, 3, 6, 7],\n  \"path_link_ids\": [4, 6, 10, 18],\n  \"slot_start\": 24\n}",
+            "source": "generate",
+            "metadata": null,
+            "role": "assistant",
+            "tool_calls": null,
+            "model": "Qwen/Qwen3-8B"
+          },
+          "stop_reason": "stop",
+          "stop_details": null,
+          "logprobs": null,
+          "prompt_logprobs": null
+        }
+      ],
+      "completion": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [1, 2, 3, 6, 7],\n  \"path_link_ids\": [4, 6, 10, 18],\n  \"slot_start\": 24\n}",
+      "usage": {
+        "input_tokens": 3224,
+        "output_tokens": 59,
+        "total_tokens": 3283,
+        "input_tokens_cache_write": null,
+        "input_tokens_cache_read": 0,
+        "reasoning_tokens": 0,
+        "total_cost": null
+      },
+      "fallback": null,
+      "time": 3.311999999999898,
+      "metadata": null,
+      "error": null,
+      "response_id": "01a1436ddd7e44a8e9674c6abbc33ca5"
+    },
+    "started_at": "2026-10-16T06:37:12.989963+00:00",
+    "completed_at": "2026-10-16T06:37:16.960104+00:00",
+    "messages_sha256": "2b507e2e9bf59f747c985ea49892e4d509aa670af2a2b3a77fa11e77c5ac5927",
+    "protocol_sha256": "2b0ac75ecc79a0b46b67708530f57709f9760617d21b8f55d7c3d9dd952df2e5",
+    "attempt": 6,
+    "inspect_log_dir": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\X2\\batches\\eabf8ec53092437a8f921846c883acec\\inspect_logs",
+    "result": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "INFEASIBLE",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "submitted allocation is not spectrum-feasible"
+        ],
+        "metrics": {
+          "feasible_decision_accuracy": 0,
+          "hop_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_hop_count": null,
+        "submitted_wufr": null
+      }
+    },
+    "strict": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "INFEASIBLE",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "submitted allocation is not spectrum-feasible"
+        ],
+        "metrics": {
+          "feasible_decision_accuracy": 0,
+          "hop_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_hop_count": null,
+        "submitted_wufr": null
+      }
+    },
+    "graded_at": "2026-10-16T06:37:17.060027+00:00"
+  }
+}

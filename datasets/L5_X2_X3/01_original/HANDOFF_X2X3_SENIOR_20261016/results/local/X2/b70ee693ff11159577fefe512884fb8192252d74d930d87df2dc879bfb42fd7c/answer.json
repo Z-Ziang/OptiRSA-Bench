@@ -1,0 +1,100 @@
+{
+  "case_uid": "b70ee693ff11159577fefe512884fb8192252d74d930d87df2dc879bfb42fd7c",
+  "model": "Qwen/Qwen3-8B",
+  "task": "X2",
+  "identity_key": "7111550d58469d1a4a62e27f7a3b22f3b00efeda62ca77ac549a3d0ec92fdac7",
+  "status": "RESPONSE_RECEIVED",
+  "raw_completion": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [0, 4, 8, 7, 9, 10, 11],\n  \"path_link_ids\": [2, 19, 18, 21, 22, 24],\n  \"slot_start\": 23\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "input_tokens": 3554,
+    "output_tokens": 76,
+    "total_tokens": 4526,
+    "input_tokens_cache_write": null,
+    "input_tokens_cache_read": 896,
+    "reasoning_tokens": 0,
+    "total_cost": null
+  },
+  "model_output": {
+    "model": "Qwen/Qwen3-8B",
+    "choices": [
+      {
+        "message": {
+          "id": "T7KTsFp6FKDbJGUbt3DpvP",
+          "content": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [0, 4, 8, 7, 9, 10, 11],\n  \"path_link_ids\": [2, 19, 18, 21, 22, 24],\n  \"slot_start\": 23\n}",
+          "source": "generate",
+          "metadata": null,
+          "role": "assistant",
+          "tool_calls": null,
+          "model": "Qwen/Qwen3-8B"
+        },
+        "stop_reason": "stop",
+        "stop_details": null,
+        "logprobs": null,
+        "prompt_logprobs": null
+      }
+    ],
+    "completion": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [0, 4, 8, 7, 9, 10, 11],\n  \"path_link_ids\": [2, 19, 18, 21, 22, 24],\n  \"slot_start\": 23\n}",
+    "usage": {
+      "input_tokens": 3554,
+      "output_tokens": 76,
+      "total_tokens": 4526,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 896,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    },
+    "fallback": null,
+    "time": 3.9839999999999236,
+    "metadata": null,
+    "error": null,
+    "response_id": "01a1436cc03240e8e8689036ea08194a"
+  },
+  "started_at": "2026-10-16T06:35:59.839820+00:00",
+  "completed_at": "2026-10-16T06:36:04.627933+00:00",
+  "messages_sha256": "31dcdf9781b1666c6cfcfb118fa90b3497996e5dce97e345f2385c87c85aa686",
+  "protocol_sha256": "2b0ac75ecc79a0b46b67708530f57709f9760617d21b8f55d7c3d9dd952df2e5",
+  "attempt": 1,
+  "inspect_log_dir": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\X2\\batches\\e9de7c93c5d74a868c3d5f82968739b5\\inspect_logs",
+  "result": {
+    "truth_feasible": true,
+    "single_outer_fence_removed": false,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+    "category": "INFEASIBLE",
+    "validator": {
+      "valid": false,
+      "errors": [
+        "path links are not directionally contiguous"
+      ],
+      "metrics": {
+        "feasible_decision_accuracy": 0,
+        "hop_gap": null,
+        "wufr_gap": null
+      },
+      "submitted_hop_count": null,
+      "submitted_wufr": null
+    }
+  },
+  "strict": {
+    "truth_feasible": true,
+    "single_outer_fence_removed": false,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+    "category": "INFEASIBLE",
+    "validator": {
+      "valid": false,
+      "errors": [
+        "path links are not directionally contiguous"
+      ],
+      "metrics": {
+        "feasible_decision_accuracy": 0,
+        "hop_gap": null,
+        "wufr_gap": null
+      },
+      "submitted_hop_count": null,
+      "submitted_wufr": null
+    }
+  },
+  "graded_at": "2026-10-16T06:36:04.728885+00:00"
+}

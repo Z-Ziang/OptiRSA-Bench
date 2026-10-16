@@ -1,0 +1,110 @@
+{
+  "task": "X3",
+  "case_uid": "ef7cba45716d2ca619d1d64b87ae4cb5b30a206ed11103d59f73d3849b767898",
+  "case_id": "X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_dbbc7251180215471f739ad3",
+  "queue_status": "COMPLETE",
+  "attempts": 1,
+  "identity_key": "bd9174da36093bae53588ff722b111ffd4efd1148a399e0569a1d229d74cc35f",
+  "messages_sha256": "f0ee3a4cb9abb41416920bc59c6ab6d9124f4c273590c6feb72ea67b069e1fe9",
+  "result_category": "INFEASIBLE",
+  "answer_record": {
+    "case_uid": "ef7cba45716d2ca619d1d64b87ae4cb5b30a206ed11103d59f73d3849b767898",
+    "model": "Qwen/Qwen3-8B",
+    "task": "X3",
+    "identity_key": "bd9174da36093bae53588ff722b111ffd4efd1148a399e0569a1d229d74cc35f",
+    "status": "RESPONSE_RECEIVED",
+    "raw_completion": "{\n  \"decision\": \"ACCEPT\",\n  \"allocations\": [\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_5_ATMNET_000385\",\n      \"path_node_ids\": [19, 18, 17, 16, 11, 12, 6, 9],\n      \"path_link_ids\": [41, 39, 38, 37, 36, 29, 18, 20],\n      \"slot_start\": 252\n    },\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_5_ATMNET_000129\",\n      \"path_node_ids\": [6, 12, 11, 16, 9],\n      \"path_link_ids\": [18, 29, 30, 22, 21],\n      \"slot_start\": 252\n    }\n  ]\n}",
+    "finish_reason": "stop",
+    "usage": {
+      "input_tokens": 6543,
+      "output_tokens": 227,
+      "total_tokens": 6770,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 0,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    },
+    "model_output": {
+      "model": "Qwen/Qwen3-8B",
+      "choices": [
+        {
+          "message": {
+            "id": "D2EuF9YHq6CHery2PErygw",
+            "content": "{\n  \"decision\": \"ACCEPT\",\n  \"allocations\": [\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_5_ATMNET_000385\",\n      \"path_node_ids\": [19, 18, 17, 16, 11, 12, 6, 9],\n      \"path_link_ids\": [41, 39, 38, 37, 36, 29, 18, 20],\n      \"slot_start\": 252\n    },\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_5_ATMNET_000129\",\n      \"path_node_ids\": [6, 12, 11, 16, 9],\n      \"path_link_ids\": [18, 29, 30, 22, 21],\n      \"slot_start\": 252\n    }\n  ]\n}",
+            "source": "generate",
+            "metadata": null,
+            "role": "assistant",
+            "tool_calls": null,
+            "model": "Qwen/Qwen3-8B"
+          },
+          "stop_reason": "stop",
+          "stop_details": null,
+          "logprobs": null,
+          "prompt_logprobs": null
+        }
+      ],
+      "completion": "{\n  \"decision\": \"ACCEPT\",\n  \"allocations\": [\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_5_ATMNET_000385\",\n      \"path_node_ids\": [19, 18, 17, 16, 11, 12, 6, 9],\n      \"path_link_ids\": [41, 39, 38, 37, 36, 29, 18, 20],\n      \"slot_start\": 252\n    },\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_5_ATMNET_000129\",\n      \"path_node_ids\": [6, 12, 11, 16, 9],\n      \"path_link_ids\": [18, 29, 30, 22, 21],\n      \"slot_start\": 252\n    }\n  ]\n}",
+      "usage": {
+        "input_tokens": 6543,
+        "output_tokens": 227,
+        "total_tokens": 6770,
+        "input_tokens_cache_write": null,
+        "input_tokens_cache_read": 0,
+        "reasoning_tokens": 0,
+        "total_cost": null
+      },
+      "fallback": null,
+      "time": 9.530999999999949,
+      "metadata": null,
+      "error": null,
+      "response_id": "01a1437edad758254b8bdd30aae8d7b0"
+    },
+    "started_at": "2026-10-16T06:55:46.473368+00:00",
+    "completed_at": "2026-10-16T06:55:56.367345+00:00",
+    "messages_sha256": "f0ee3a4cb9abb41416920bc59c6ab6d9124f4c273590c6feb72ea67b069e1fe9",
+    "protocol_sha256": "d10b0887dd9ed5544d60a54670a07d52aacebdeb61a3d898ce4dcaabf9314d74",
+    "attempt": 1,
+    "inspect_log_dir": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\X3\\batches\\43c141364fda46c28bbef02ca5f4b5df\\inspect_logs",
+    "result": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "INFEASIBLE",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "req_TB_REAL%3A%3ATOP_5_ATMNET_000385: path links are not directionally contiguous"
+        ],
+        "metrics": {
+          "joint_feasible_decision_accuracy": 0,
+          "delta_tso_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_delta_tso": null,
+        "submitted_wufr": null
+      }
+    },
+    "strict": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "INFEASIBLE",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "req_TB_REAL%3A%3ATOP_5_ATMNET_000385: path links are not directionally contiguous"
+        ],
+        "metrics": {
+          "joint_feasible_decision_accuracy": 0,
+          "delta_tso_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_delta_tso": null,
+        "submitted_wufr": null
+      }
+    },
+    "graded_at": "2026-10-16T06:55:56.478752+00:00"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "task": "X3",
+  "case_uid": "568cca5282e8b77106afaac83ced191532786e8b24ec3e58d75f5f9d3825c038",
+  "case_id": "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_b5e30751b996b7843a22e8d1",
+  "queue_status": "COMPLETE",
+  "attempts": 1,
+  "identity_key": "ef52a9b2c69aa561dba76f732cf6cda98922ee00fd336e46882fa2cfc1c95e32",
+  "messages_sha256": "6eead509af4e9fc7b1121e1aad3141aaa8f57ba6535b452619f42614e41656af",
+  "result_category": "CORRECT",
+  "answer_record": {
+    "case_uid": "568cca5282e8b77106afaac83ced191532786e8b24ec3e58d75f5f9d3825c038",
+    "model": "Qwen/Qwen3-8B",
+    "task": "X3",
+    "identity_key": "ef52a9b2c69aa561dba76f732cf6cda98922ee00fd336e46882fa2cfc1c95e32",
+    "status": "RESPONSE_RECEIVED",
+    "raw_completion": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+    "finish_reason": "stop",
+    "usage": {
+      "input_tokens": 8509,
+      "output_tokens": 16,
+      "total_tokens": 8525,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 0,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    },
+    "model_output": {
+      "model": "Qwen/Qwen3-8B",
+      "choices": [
+        {
+          "message": {
+            "id": "brFPJMxdzjmtqZXaKLofvL",
+            "content": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+            "source": "generate",
+            "metadata": null,
+            "role": "assistant",
+            "tool_calls": null,
+            "model": "Qwen/Qwen3-8B"
+          },
+          "stop_reason": "stop",
+          "stop_details": null,
+          "logprobs": null,
+          "prompt_logprobs": null
+        }
+      ],
+      "completion": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+      "usage": {
+        "input_tokens": 8509,
+        "output_tokens": 16,
+        "total_tokens": 8525,
+        "input_tokens_cache_write": null,
+        "input_tokens_cache_read": 0,
+        "reasoning_tokens": 0,
+        "total_cost": null
+      },
+      "fallback": null,
+      "time": 9.485000000000127,
+      "metadata": null,
+      "error": null,
+      "response_id": "01a143637e7caea12bea3f19a00bf993"
+    },
+    "started_at": "2026-10-16T06:25:53.756132+00:00",
+    "completed_at": "2026-10-16T06:26:03.395816+00:00",
+    "messages_sha256": "6eead509af4e9fc7b1121e1aad3141aaa8f57ba6535b452619f42614e41656af",
+    "protocol_sha256": "bb324b12f6c16fbc54819cf90aca965fde79a48f86c53729601a3f5bff77c4d0",
+    "attempt": 1,
+    "inspect_log_dir": "F:\\codex\\BENCHMARK\\BENCHMARK9.19\\OptiRSA_EXTERNAL_600_20261016_111920\\OptiRSA_EXTERNAL_600_20261016_111920_NO_THINKING\\output\\tasks\\X3\\batches\\769ff044949a47178e9225bdf19bb7fd\\inspect_logs",
+    "result": {
+      "truth_feasible": false,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "CORRECT",
+      "correct_reject": true,
+      "result_kind": "CERTIFIED_REJECT",
+      "validator": {
+        "valid": true,
+        "errors": [],
+        "metrics": {
+          "joint_feasible_decision_accuracy": 1,
+          "delta_tso_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_delta_tso": null,
+        "submitted_wufr": null
+      }
+    },
+    "strict": {
+      "truth_feasible": false,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "CORRECT",
+      "correct_reject": true,
+      "result_kind": "CERTIFIED_REJECT",
+      "validator": {
+        "valid": true,
+        "errors": [],
+        "metrics": {
+          "joint_feasible_decision_accuracy": 1,
+          "delta_tso_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_delta_tso": null,
+        "submitted_wufr": null
+      }
+    },
+    "graded_at": "2026-10-16T06:26:03.479959+00:00",
+    "_case_metadata": {
+      "case_dir": "case_sets/BBNPLANET_n27_TB6/X3/568cca5282e8b771",
+      "case_id": "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_b5e30751b996b7843a22e8d1",
+      "case_uid": "568cca5282e8b77106afaac83ced191532786e8b24ec3e58d75f5f9d3825c038",
+      "certificate": "INFEASIBLE_CERTIFIED",
+      "contract_version": "UNKNOWN",
+      "decision": "REJECT",
+      "exposed": "0",
+      "family_ids": [
+        "F_9bc36c35cb8e100cfb31bd13b7cc84392e3f745d06e94ee807645a51d17d6c9d"
+      ],
+      "graph_hash": "1b0fdf8620226b0d050495ef5e61d390322a9b8384c60afb1c54d44cfaa11253",
+      "hop_stratum": "GE3_MAIN",
+      "input_characters": 17126,
+      "input_tokens": "UNKNOWN_NOT_MEASURED",
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "load_band": "MID",
+      "messages_sha256": "6eead509af4e9fc7b1121e1aad3141aaa8f57ba6535b452619f42614e41656af",
+      "node_count": "27",
+      "occupancy": "0.3497767857142857",
+      "oracle_status": "INFEASIBLE_CERTIFIED",
+      "origin": "FORMAL",
+      "primary_objective": "LEX_MIN_DELTA_TSO_THEN_WUFR_FULL_PATH",
+      "producer_version": "UNKNOWN",
+      "request_count": "2",
+      "request_ids": "[\"req_TB_REAL%3A%3ATOP_6_BBNPLANET_000665\",\"req_TB_REAL%3A%3ATOP_6_BBNPLANET_000033\"]",
+      "requested_slots": "[5,9]",
+      "scale": "11-29",
+      "seed": "UNKNOWN",
+      "selection_scale": "11-29",
+      "selection_version": "MID_5TO60_HOP_GE2_BASELINE10PCT_R1",
+      "shortest_hops": [
+        4,
+        3
+      ],
+      "snapshot_hash": "7cb6f1a576e52b2fd652e016fffb40cf06baf2aa10c50d1a0c8303ecb9d11e5b",
+      "snapshot_id": "rs_TB_REAL%3A%3ATOP_6_BBNPLANET_kspff_medium_seed01",
+      "source_category": "real",
+      "source_member": "OptiRSA_Bench_L5_X2_X3/case_sets/BBNPLANET_n27_TB6/X3/568cca5282e8b771/private/root_case.json",
+      "source_root_sha256": "e58b5662859f130aa454564cb4d610f6e0ae22f3200f7bd4fb750e06fa2e4dd2",
+      "split": "DEVELOPMENT_UNASSESSED",
+      "task": "X3",
+      "topology_folder": "BBNPLANET_n27_TB6",
+      "topology_id": "top_TB_REAL%3A%3ATOP_6_BBNPLANET",
+      "validator_sha256": "7e6f21cc8a321d797ee0c0660113200262b64a6f3798806ac920078e478003f5",
+      "science_sha256": "34f3f03a81cff617337fd98d25486ab878a7a6a6288660e6e528affeaf08d1bd",
+      "dataset_root": "F:\\codex\\BENCHMARK\\BENCHMARK9.19\\OptiRSA_EXTERNAL_600_20261016_111920\\OptiRSA_EXTERNAL_600_20261016_111920_NO_THINKING\\datasets\\X2X3_MID_R1",
+      "runtime_sha256": "e862943fc4905438d560cabe092aa58af636bae5616cc55a4e4cd9847b5e99d4",
+      "adapter_sha256": "757f93e61f8d50a46974e27ba03d9811024baa745dc48ac5a7328da907d71169"
+    },
+    "queue_status": "COMPLETE"
+  }
+}

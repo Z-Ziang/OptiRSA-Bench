@@ -1,0 +1,117 @@
+{
+  "task": "X2",
+  "case_uid": "9f40ea2d9b675ae62596a2112a397c29e83c3d4d85ae27ccdccac3128ddfee1c",
+  "case_id": "X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_RECOVER_HANDOFF_R33_STATIC_X2_0471ecfb24484ddec377fe26",
+  "queue_status": "HISTORICAL",
+  "attempts": 0,
+  "identity_key": "40fe5b18f42cc7eab41aeea8b948e75ca36cb751f7a46623c5ccfd212101866c",
+  "messages_sha256": "f19ebc4c0df67a304112a89c83eacbefdac7758151bc3e8a6556f88be2f02e04",
+  "result_category": "SUBOPTIMAL",
+  "answer_record": {
+    "case_uid": "9f40ea2d9b675ae62596a2112a397c29e83c3d4d85ae27ccdccac3128ddfee1c",
+    "model": "Qwen/Qwen3-8B",
+    "status": "RESPONSE_RECEIVED",
+    "raw_completion": "\n\n{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [1, 2, 3, 4],\n  \"path_link_ids\": [4, 6, 8],\n  \"slot_start\": 233\n}",
+    "finish_reason": "stop",
+    "usage": {
+      "openai-api/Qwen/Qwen3-8B": {
+        "input_tokens": 2063,
+        "output_tokens": 8132,
+        "total_tokens": 10195,
+        "input_tokens_cache_write": null,
+        "input_tokens_cache_read": 0,
+        "reasoning_tokens": 8079,
+        "total_cost": null
+      }
+    },
+    "started_at": "2026-10-15T00:22:58.173036+00:00",
+    "completed_at": "2026-10-15T00:49:46.492147+00:00",
+    "total_seconds": 1608.319,
+    "inspect_log": "inspect_logs/2026-10-15T00-22-58-00-00_x2-x3-cases_P29wUV6dfRJoZRHxjHxXKJ.eval",
+    "result": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "SUBOPTIMAL",
+      "correct_reject": false,
+      "result_kind": "ALLOCATION",
+      "validator": {
+        "valid": true,
+        "errors": [],
+        "metrics": {
+          "feasible_decision_accuracy": 1,
+          "hop_gap": 0,
+          "wufr_gap": 0.005277902494455616
+        },
+        "submitted_hop_count": 3,
+        "submitted_wufr": 0.18816543287725654
+      }
+    },
+    "strict": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "SUBOPTIMAL",
+      "correct_reject": false,
+      "result_kind": "ALLOCATION",
+      "validator": {
+        "valid": true,
+        "errors": [],
+        "metrics": {
+          "feasible_decision_accuracy": 1,
+          "hop_gap": 0,
+          "wufr_gap": 0.005277902494455616
+        },
+        "submitted_hop_count": 3,
+        "submitted_wufr": 0.18816543287725654
+      }
+    },
+    "_source_file": "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/LLM_L5_FIXED2_20261014_153420_896215/results/qwen3_8b/full/results.jsonl",
+    "_all_source_files": [
+      "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/LLM_L5_FIXED2_20261014_153420_896215/results/qwen3_8b/full/answers/9f40ea2d9b675ae62596a2112a397c29e83c3d4d85ae27ccdccac3128ddfee1c.json",
+      "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/LLM_L5_FIXED2_20261014_153420_896215/results/qwen3_8b/full/results.jsonl"
+    ],
+    "_case_metadata": {
+      "node_count": "6",
+      "scale": "5-10",
+      "occupancy": "0.3505208333333333",
+      "load_band": "MID",
+      "decision": "ACCEPT",
+      "request_count": "1",
+      "requested_slots": "[9]",
+      "seed": "UNKNOWN",
+      "snapshot_id": "rs_TB_REAL%3A%3ATOP_102_TELECOMSERBIA_kspff_medium_seed01",
+      "request_ids": "[\"req_TB_REAL%3A%3ATOP_102_TELECOMSERBIA_000009\"]",
+      "source_category": "real",
+      "producer_version": "UNKNOWN",
+      "contract_version": "UNKNOWN",
+      "primary_objective": "LEX_MIN_HOPS_THEN_WUFR_FULL_PATH",
+      "certificate": "EXACT_CERTIFIED",
+      "oracle_status": "EXACT_CERTIFIED",
+      "exposed": "0",
+      "split": "DEVELOPMENT_EXPOSED",
+      "input_tokens": "UNKNOWN_NOT_MEASURED",
+      "case_uid": "9f40ea2d9b675ae62596a2112a397c29e83c3d4d85ae27ccdccac3128ddfee1c",
+      "case_id": "X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_RECOVER_HANDOFF_R33_STATIC_X2_0471ecfb24484ddec377fe26",
+      "task": "X2",
+      "topology_id": "top_TB_REAL%3A%3ATOP_102_TELECOMSERBIA",
+      "topology_folder": "TELECOMSERBIA_n6_TB102",
+      "graph_hash": "2c013d4dbdb21f8b2ebb1160dcd8d5d18268968ce2eca9192f31163d12e7389a",
+      "snapshot_hash": "a9655c8df134d7829e494bcf80ff38501d022cfaec534245f744ad8daab11530",
+      "case_dir": "case_sets/TELECOMSERBIA_n6_TB102/X2/9f40ea2d9b675ae6",
+      "family_ids": [
+        "F_5419b4061ac0ecd2961d72242f3b1da814f023a088a22194a68a988e5e035ac0"
+      ],
+      "messages_sha256": "f19ebc4c0df67a304112a89c83eacbefdac7758151bc3e8a6556f88be2f02e04",
+      "input_characters": 6204,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "validator_sha256": "31660b7c47b6875d4332ec8212cfea2bae583ae029b60ce6da54bf0a48393a32"
+    },
+    "identity_key": "40fe5b18f42cc7eab41aeea8b948e75ca36cb751f7a46623c5ccfd212101866c",
+    "historical": true,
+    "history_answer_count": 1,
+    "historical_selection": "latest received response from FINAL; not normalized formal authority"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "source_cases": {
+    "original": {
+      "X2": 3342,
+      "X3": 1266
+    },
+    "supplement": {
+      "X2": 276,
+      "X3": 485
+    }
+  },
+  "indexed_records": 5369,
+  "unique_semantic_objects": 5369,
+  "unique_by_task": {
+    "X2": 3618,
+    "X3": 1751
+  },
+  "duplicate_groups": 0,
+  "issues": [],
+  "preserved_evaluation_records": 230,
+  "pending_in_supplement": 18,
+  "additional_server_cases_not_downloaded": "UNKNOWN: user reports 10+; server unavailable; not included; distinct from packaged pending list",
+  "verification_scope": "Source payload hashes, ZIP CRC, indexed root and Validator status. No independent exact re-solve, model API call or fresh interface acceptance.",
+  "signature_method": "Same task + labeled nodes/links + full spectrum + slot_count + required_slots_probabilities + request objects excluding only request_id. Request order normalized. Node relabeling not treated as graph isomorphism; not a proof of objective/contract equivalence.",
+  "source_manifest_errors": [],
+  "source_manifest_checked_entries": 76515,
+  "preserved_source_files": 81619,
+  "source_archives": [
+    {
+      "source": "包含部分评测结果的X2X3.zip",
+      "bytes": 200054381,
+      "sha256": "2f1689124b410f811a40ebfced90a4f17902c420ae5af99228d431d10ee79856"
+    },
+    {
+      "source": "X2X3后来补充.zip",
+      "bytes": 133937881,
+      "sha256": "829592719646cdb14cd4a80f36c14dd856ee92203459cd7b200c96254cc7ea42"
+    }
+  ]
+}

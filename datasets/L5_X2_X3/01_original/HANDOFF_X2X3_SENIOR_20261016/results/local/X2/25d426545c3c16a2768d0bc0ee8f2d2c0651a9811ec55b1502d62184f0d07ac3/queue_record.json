@@ -1,0 +1,117 @@
+{
+  "task": "X2",
+  "case_uid": "25d426545c3c16a2768d0bc0ee8f2d2c0651a9811ec55b1502d62184f0d07ac3",
+  "case_id": "X2_STATIC_COMPAT_V2_20261008_184135_860418_R33_STATIC_X2_1aa530a38ff1a79ab1c1ab37",
+  "queue_status": "HISTORICAL",
+  "attempts": 0,
+  "identity_key": "e42edcf03b537c07560549af244fead9ebc65b78b094e8219846868fba082f5f",
+  "messages_sha256": "341336c38da06043af59871e5fbfb5cf1e3319634eec4a9c32e7db1930ef8507",
+  "result_category": "INFEASIBLE",
+  "answer_record": {
+    "case_uid": "25d426545c3c16a2768d0bc0ee8f2d2c0651a9811ec55b1502d62184f0d07ac3",
+    "model": "Qwen/Qwen3-8B",
+    "status": "RESPONSE_RECEIVED",
+    "raw_completion": "\n\n{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [0, 1, 3, 4],\n  \"path_link_ids\": [0, 4, 8],\n  \"slot_start\": 210\n}",
+    "finish_reason": "stop",
+    "usage": {
+      "openai-api/Qwen/Qwen3-8B": {
+        "input_tokens": 2289,
+        "output_tokens": 15239,
+        "total_tokens": 17528,
+        "input_tokens_cache_write": null,
+        "input_tokens_cache_read": 0,
+        "reasoning_tokens": 15186,
+        "total_cost": null
+      }
+    },
+    "started_at": "2026-10-14T13:55:24.536666+00:00",
+    "completed_at": "2026-10-14T14:03:57.488500+00:00",
+    "total_seconds": 512.952,
+    "inspect_log": "inspect_logs/2026-10-14T13-55-24-00-00_x2-x3-cases_kFrpCWNxTCGDf9wUQFQPHR.eval",
+    "result": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "INFEASIBLE",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "submitted allocation is not spectrum-feasible"
+        ],
+        "metrics": {
+          "feasible_decision_accuracy": 0,
+          "hop_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_hop_count": null,
+        "submitted_wufr": null
+      }
+    },
+    "strict": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "INFEASIBLE",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "submitted allocation is not spectrum-feasible"
+        ],
+        "metrics": {
+          "feasible_decision_accuracy": 0,
+          "hop_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_hop_count": null,
+        "submitted_wufr": null
+      }
+    },
+    "_source_file": "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/LLM_L5_FIXED2_20261014_153420_896215/results/qwen3_8b/full/results.jsonl",
+    "_all_source_files": [
+      "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/LLM_L5_FIXED2_20261014_153420_896215/results/qwen3_8b/full/answers/25d426545c3c16a2768d0bc0ee8f2d2c0651a9811ec55b1502d62184f0d07ac3.json",
+      "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/LLM_L5_FIXED2_20261014_153420_896215/results/qwen3_8b/full/results.jsonl"
+    ],
+    "_case_metadata": {
+      "node_count": "6",
+      "scale": "5-10",
+      "occupancy": "0.35022321428571423",
+      "load_band": "MID",
+      "decision": "ACCEPT",
+      "request_count": "1",
+      "requested_slots": "[3]",
+      "seed": "UNKNOWN",
+      "snapshot_id": "rs_TB_REAL%3A%3ATOP_61_LAYER42_kspff_medium_seed01",
+      "request_ids": "[\"req_TB_REAL%3A%3ATOP_61_LAYER42_000004\"]",
+      "source_category": "real",
+      "producer_version": "UNKNOWN",
+      "contract_version": "UNKNOWN",
+      "primary_objective": "LEX_MIN_HOPS_THEN_WUFR_FULL_PATH",
+      "certificate": "EXACT_CERTIFIED",
+      "oracle_status": "EXACT_CERTIFIED",
+      "exposed": "0",
+      "split": "DEVELOPMENT_UNASSESSED",
+      "input_tokens": "UNKNOWN_NOT_MEASURED",
+      "case_uid": "25d426545c3c16a2768d0bc0ee8f2d2c0651a9811ec55b1502d62184f0d07ac3",
+      "case_id": "X2_STATIC_COMPAT_V2_20261008_184135_860418_R33_STATIC_X2_1aa530a38ff1a79ab1c1ab37",
+      "task": "X2",
+      "topology_id": "top_TB_REAL%3A%3ATOP_61_LAYER42",
+      "topology_folder": "LAYER42_n6_TB61",
+      "graph_hash": "215b4a30cdabcfd980c1c032d42a062da6522f9bf2099caed954323f57aa08ea",
+      "snapshot_hash": "6cc9fcf5e31d61d4ad2bb4607d77d704d7c92bd98b59c0e283adf35203098eb5",
+      "case_dir": "case_sets/LAYER42_n6_TB61/X2/25d426545c3c16a2",
+      "family_ids": [
+        "F_d7e753b2bbcbd10ddee570b8252aa43df1dba3d0cb450bf6ad8313e7f189948f"
+      ],
+      "messages_sha256": "341336c38da06043af59871e5fbfb5cf1e3319634eec4a9c32e7db1930ef8507",
+      "input_characters": 6540,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "validator_sha256": "31660b7c47b6875d4332ec8212cfea2bae583ae029b60ce6da54bf0a48393a32"
+    },
+    "identity_key": "e42edcf03b537c07560549af244fead9ebc65b78b094e8219846868fba082f5f",
+    "historical": true,
+    "history_answer_count": 1,
+    "historical_selection": "latest received response from FINAL; not normalized formal authority"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "directed_link_count": 114,
+  "max_required_slots": 9,
+  "mean_required_slots": 9.0,
+  "node_count": 37,
+  "oracle_action_counts": {
+    "req_1ea0483f99240923bdd1daf1": 34,
+    "req_de1ed2a494d9591bb06eecce": 23
+  },
+  "oracle_evaluated_optimal_solutions": 2,
+  "oracle_path_counts": {
+    "req_1ea0483f99240923bdd1daf1": 30,
+    "req_de1ed2a494d9591bb06eecce": 19
+  },
+  "oracle_search_nodes": 14,
+  "reference_algorithms": {
+    "algorithm_1_sp_ff": null,
+    "algorithm_2_ksp5_ff": null,
+    "algorithm_3_joint_backtrack_k12": {
+      "delta_tso": 108,
+      "output": {
+        "allocations": [
+          {
+            "path_link_ids": [
+              66,
+              31,
+              26,
+              56
+            ],
+            "path_node_ids": [
+              12,
+              23,
+              4,
+              9,
+              31
+            ],
+            "request_id": "req_1ea0483f99240923bdd1daf1",
+            "slot_start": 306
+          },
+          {
+            "path_link_ids": [
+              4,
+              29,
+              32,
+              53,
+              50,
+              76,
+              75,
+              72
+            ],
+            "path_node_ids": [
+              0,
+              14,
+              4,
+              27,
+              8,
+              16,
+              34,
+              15,
+              31
+            ],
+            "request_id": "req_de1ed2a494d9591bb06eecce",
+            "slot_start": 152
+          }
+        ],
+        "decision": "ACCEPT"
+      },
+      "post_wufr": 0.6852987855748687
+    }
+  },
+  "request_count": 2,
+  "resource_pressure": 0.347916666667,
+  "serialization_metrics": {
+    "canonical_tokenizer": {
+      "backend": "tiktoken",
+      "encoding": "o200k_base",
+      "package_version": "0.14.0"
+    },
+    "llm_prompt_char_count": 21889,
+    "llm_prompt_token_count": 8950,
+    "llm_prompt_utf8_bytes": 22119
+  },
+  "total_required_slots": 18
+}

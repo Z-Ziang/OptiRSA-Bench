@@ -1,0 +1,112 @@
+{
+  "task": "X3",
+  "case_uid": "aeed86fac88ee4a886be33bc2b3e0e8d7295c6ffce6546573fb2c00dbd4a9f71",
+  "case_id": "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X3_d30d8516b34f6bd21aaad01a",
+  "queue_status": "COMPLETE",
+  "attempts": 2,
+  "identity_key": "1189406cac1b4d338cdd65a9a939e669cd1a6c2dfd001c250b349ecf066043fe",
+  "messages_sha256": "5731ccf2e1e458219fbc65753dc9145dd658fcfb643671c771049462ab627ce2",
+  "result_category": "MISSING",
+  "answer_record": {
+    "case_uid": "aeed86fac88ee4a886be33bc2b3e0e8d7295c6ffce6546573fb2c00dbd4a9f71",
+    "model": "Qwen/Qwen3-8B",
+    "task": "X3",
+    "identity_key": "1189406cac1b4d338cdd65a9a939e669cd1a6c2dfd001c250b349ecf066043fe",
+    "status": "RESPONSE_RECEIVED",
+    "raw_completion": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+    "finish_reason": "stop",
+    "usage": {
+      "input_tokens": 8670,
+      "output_tokens": 16,
+      "total_tokens": 8686,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 0,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    },
+    "model_output": {
+      "model": "Qwen/Qwen3-8B",
+      "choices": [
+        {
+          "message": {
+            "id": "n7hkvY4UVrySHEMBksBoZy",
+            "content": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+            "source": "generate",
+            "metadata": null,
+            "role": "assistant",
+            "tool_calls": null,
+            "model": "Qwen/Qwen3-8B"
+          },
+          "stop_reason": "stop",
+          "stop_details": null,
+          "logprobs": null,
+          "prompt_logprobs": null
+        }
+      ],
+      "completion": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+      "usage": {
+        "input_tokens": 8670,
+        "output_tokens": 16,
+        "total_tokens": 8686,
+        "input_tokens_cache_write": null,
+        "input_tokens_cache_read": 0,
+        "reasoning_tokens": 0,
+        "total_cost": null
+      },
+      "fallback": null,
+      "time": 2.5,
+      "metadata": null,
+      "error": null,
+      "response_id": "01a1436e534f790367dabf6ae1585d4c"
+    },
+    "started_at": "2026-10-16T06:37:43.039276+00:00",
+    "completed_at": "2026-10-16T06:37:46.237748+00:00",
+    "messages_sha256": "5731ccf2e1e458219fbc65753dc9145dd658fcfb643671c771049462ab627ce2",
+    "protocol_sha256": "d10b0887dd9ed5544d60a54670a07d52aacebdeb61a3d898ce4dcaabf9314d74",
+    "attempt": 2,
+    "inspect_log_dir": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\X3\\batches\\a3769fb18f564d44a0dd73fd27567ff4\\inspect_logs",
+    "result": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "MISSING",
+      "reason": "INCORRECT_REJECT_NO_ALLOCATION",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "REJECT is incorrect because a full-space joint feasible solution exists"
+        ],
+        "metrics": {
+          "joint_feasible_decision_accuracy": 0,
+          "delta_tso_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_delta_tso": null,
+        "submitted_wufr": null
+      }
+    },
+    "strict": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "MISSING",
+      "reason": "INCORRECT_REJECT_NO_ALLOCATION",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "REJECT is incorrect because a full-space joint feasible solution exists"
+        ],
+        "metrics": {
+          "joint_feasible_decision_accuracy": 0,
+          "delta_tso_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_delta_tso": null,
+        "submitted_wufr": null
+      }
+    },
+    "graded_at": "2026-10-16T06:37:46.329828+00:00"
+  }
+}

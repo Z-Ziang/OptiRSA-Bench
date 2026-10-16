@@ -1,0 +1,107 @@
+{
+  "case_uid": "b96bfc6a8ea81b24c85029e95c0d1d6d016ce22a2a2366b27f5967e0a94b8cf0",
+  "model": "Qwen/Qwen3-8B",
+  "status": "RESPONSE_RECEIVED",
+  "raw_completion": "\n\n{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [4, 5, 2],\n  \"path_link_ids\": [10, 9],\n  \"slot_start\": 311\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "openai-api/Qwen/Qwen3-8B": {
+      "input_tokens": 2113,
+      "output_tokens": 9503,
+      "total_tokens": 11616,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 0,
+      "reasoning_tokens": 9455,
+      "total_cost": null
+    }
+  },
+  "started_at": "2026-10-14T19:44:07.793815+00:00",
+  "completed_at": "2026-10-14T19:59:52.889007+00:00",
+  "total_seconds": 945.095,
+  "inspect_log": "inspect_logs/2026-10-14T19-44-07-00-00_x2-x3-cases_MzfANEcdJacELGE9y35PLH.eval",
+  "result": {
+    "truth_feasible": true,
+    "single_outer_fence_removed": false,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+    "category": "SUBOPTIMAL",
+    "correct_reject": false,
+    "result_kind": "ALLOCATION",
+    "validator": {
+      "valid": true,
+      "errors": [],
+      "metrics": {
+        "feasible_decision_accuracy": 1,
+        "hop_gap": 0,
+        "wufr_gap": 0.0053047103656113925
+      },
+      "submitted_hop_count": 2,
+      "submitted_wufr": 0.20215567739137721
+    }
+  },
+  "strict": {
+    "truth_feasible": true,
+    "single_outer_fence_removed": false,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+    "category": "SUBOPTIMAL",
+    "correct_reject": false,
+    "result_kind": "ALLOCATION",
+    "validator": {
+      "valid": true,
+      "errors": [],
+      "metrics": {
+        "feasible_decision_accuracy": 1,
+        "hop_gap": 0,
+        "wufr_gap": 0.0053047103656113925
+      },
+      "submitted_hop_count": 2,
+      "submitted_wufr": 0.20215567739137721
+    }
+  },
+  "_source_file": "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/LLM_L5_FIXED2_20261014_153420_896215/results/qwen3_8b/full/results.jsonl",
+  "_all_source_files": [
+    "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/LLM_L5_FIXED2_20261014_153420_896215/results/qwen3_8b/full/answers/b96bfc6a8ea81b24c85029e95c0d1d6d016ce22a2a2366b27f5967e0a94b8cf0.json",
+    "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/LLM_L5_FIXED2_20261014_153420_896215/results/qwen3_8b/full/results.jsonl"
+  ],
+  "_case_metadata": {
+    "node_count": "6",
+    "scale": "5-10",
+    "occupancy": "0.3768229166666667",
+    "load_band": "MID",
+    "decision": "ACCEPT",
+    "request_count": "1",
+    "requested_slots": "[9]",
+    "seed": "UNKNOWN",
+    "snapshot_id": "rs_B03_KSPFF_a04b667c63557c8f976bc79f",
+    "request_ids": "[\"dynreq_TB_REAL%3A%3ATOP_63_MARWAN_005_005001\"]",
+    "source_category": "real",
+    "producer_version": "UNKNOWN",
+    "contract_version": "UNKNOWN",
+    "primary_objective": "LEX_MIN_HOPS_THEN_WUFR_FULL_PATH",
+    "certificate": "EXACT_CERTIFIED",
+    "oracle_status": "EXACT_CERTIFIED",
+    "exposed": "0",
+    "split": "DEVELOPMENT_EXPOSED",
+    "input_tokens": "UNKNOWN_NOT_MEASURED",
+    "case_uid": "b96bfc6a8ea81b24c85029e95c0d1d6d016ce22a2a2366b27f5967e0a94b8cf0",
+    "case_id": "X2_UNIFIED_CANDIDATE_20261008_051958_574121_X2_0004_05_05001_N1_V3",
+    "task": "X2",
+    "topology_id": "top_TB_REAL%3A%3ATOP_63_MARWAN",
+    "topology_folder": "MARWAN_n6_TB63",
+    "graph_hash": "950374c84337a084e1c3d66167f39bfa6c16d043c72ba2f899f9ebeccde49abf",
+    "snapshot_hash": "3712a83887a4cfb6d9a97490977df5cb70c2a580c64380f667f60dcff1aa1e94",
+    "case_dir": "case_sets/MARWAN_n6_TB63/X2/b96bfc6a8ea81b24",
+    "family_ids": [
+      "F_ee0e9dc24ff1e8000cb2b997c01d00fe195079e6b5d1edab752273b2220316a5"
+    ],
+    "messages_sha256": "a1d83962452c339e1dd7deb2543692f5cd6d8ccfc973f77c21a1136060f35b1f",
+    "input_characters": 6270,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "validator_sha256": "31660b7c47b6875d4332ec8212cfea2bae583ae029b60ce6da54bf0a48393a32"
+  },
+  "identity_key": "2bb57aae113a41f135bc2901f01d6580fa10afb31b85e69af6267de94bba6f36",
+  "historical": true,
+  "history_answer_count": 1,
+  "historical_selection": "latest received response from FINAL; not normalized formal authority"
+}

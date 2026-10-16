@@ -1,0 +1,110 @@
+{
+  "task": "X3",
+  "case_uid": "8ea5e49613f841372ce9a83ebfe46a619e3972fe22820e5f1fa81018b25b1c76",
+  "case_id": "X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_3357f8932e18bf3db8ffa146",
+  "queue_status": "COMPLETE",
+  "attempts": 1,
+  "identity_key": "a70609c63b9fff6aa799081549f770f2d400e6022d3d93a083ceaef96b08c3ab",
+  "messages_sha256": "e08d11977a6f0ffcc0e7b4ca3404d9fb96807dec8f3602205a53238a7a48baf7",
+  "result_category": "INFEASIBLE",
+  "answer_record": {
+    "case_uid": "8ea5e49613f841372ce9a83ebfe46a619e3972fe22820e5f1fa81018b25b1c76",
+    "model": "Qwen/Qwen3-8B",
+    "task": "X3",
+    "identity_key": "a70609c63b9fff6aa799081549f770f2d400e6022d3d93a083ceaef96b08c3ab",
+    "status": "RESPONSE_RECEIVED",
+    "raw_completion": "{\n  \"decision\": \"ACCEPT\",\n  \"allocations\": [\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_78_PACKETEXCHANGE_000249\",\n      \"path_node_ids\": [12, 11, 10, 15, 13, 8],\n      \"path_link_ids\": [36, 40, 46, 44, 24, 41],\n      \"slot_start\": 262\n    },\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_78_PACKETEXCHANGE_000112\",\n      \"path_node_ids\": [5, 7, 14, 11],\n      \"path_link_ids\": [20, 26, 41, 36],\n      \"slot_start\": 262\n    }\n  ]\n}",
+    "finish_reason": "stop",
+    "usage": {
+      "input_tokens": 6353,
+      "output_tokens": 206,
+      "total_tokens": 7871,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 1312,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    },
+    "model_output": {
+      "model": "Qwen/Qwen3-8B",
+      "choices": [
+        {
+          "message": {
+            "id": "nq3Y3dcqW8mDuagaryy7Hy",
+            "content": "{\n  \"decision\": \"ACCEPT\",\n  \"allocations\": [\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_78_PACKETEXCHANGE_000249\",\n      \"path_node_ids\": [12, 11, 10, 15, 13, 8],\n      \"path_link_ids\": [36, 40, 46, 44, 24, 41],\n      \"slot_start\": 262\n    },\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_78_PACKETEXCHANGE_000112\",\n      \"path_node_ids\": [5, 7, 14, 11],\n      \"path_link_ids\": [20, 26, 41, 36],\n      \"slot_start\": 262\n    }\n  ]\n}",
+            "source": "generate",
+            "metadata": null,
+            "role": "assistant",
+            "tool_calls": null,
+            "model": "Qwen/Qwen3-8B"
+          },
+          "stop_reason": "stop",
+          "stop_details": null,
+          "logprobs": null,
+          "prompt_logprobs": null
+        }
+      ],
+      "completion": "{\n  \"decision\": \"ACCEPT\",\n  \"allocations\": [\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_78_PACKETEXCHANGE_000249\",\n      \"path_node_ids\": [12, 11, 10, 15, 13, 8],\n      \"path_link_ids\": [36, 40, 46, 44, 24, 41],\n      \"slot_start\": 262\n    },\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_78_PACKETEXCHANGE_000112\",\n      \"path_node_ids\": [5, 7, 14, 11],\n      \"path_link_ids\": [20, 26, 41, 36],\n      \"slot_start\": 262\n    }\n  ]\n}",
+      "usage": {
+        "input_tokens": 6353,
+        "output_tokens": 206,
+        "total_tokens": 7871,
+        "input_tokens_cache_write": null,
+        "input_tokens_cache_read": 1312,
+        "reasoning_tokens": 0,
+        "total_cost": null
+      },
+      "fallback": null,
+      "time": 9.688000000000102,
+      "metadata": null,
+      "error": null,
+      "response_id": "01a1437ff9af1abf4f6d05d444c5ce03"
+    },
+    "started_at": "2026-10-16T06:57:00.014779+00:00",
+    "completed_at": "2026-10-16T06:57:10.110359+00:00",
+    "messages_sha256": "e08d11977a6f0ffcc0e7b4ca3404d9fb96807dec8f3602205a53238a7a48baf7",
+    "protocol_sha256": "d10b0887dd9ed5544d60a54670a07d52aacebdeb61a3d898ce4dcaabf9314d74",
+    "attempt": 1,
+    "inspect_log_dir": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\X3\\batches\\b6a043ab2d414a6cbcd606db10165101\\inspect_logs",
+    "result": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "INFEASIBLE",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "req_TB_REAL%3A%3ATOP_78_PACKETEXCHANGE_000249: path links are not directionally contiguous"
+        ],
+        "metrics": {
+          "joint_feasible_decision_accuracy": 0,
+          "delta_tso_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_delta_tso": null,
+        "submitted_wufr": null
+      }
+    },
+    "strict": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "INFEASIBLE",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "req_TB_REAL%3A%3ATOP_78_PACKETEXCHANGE_000249: path links are not directionally contiguous"
+        ],
+        "metrics": {
+          "joint_feasible_decision_accuracy": 0,
+          "delta_tso_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_delta_tso": null,
+        "submitted_wufr": null
+      }
+    },
+    "graded_at": "2026-10-16T06:57:10.228413+00:00"
+  }
+}

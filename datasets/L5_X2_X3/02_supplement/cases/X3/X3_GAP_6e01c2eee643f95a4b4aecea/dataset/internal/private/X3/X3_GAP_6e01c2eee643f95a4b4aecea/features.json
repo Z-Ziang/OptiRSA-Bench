@@ -1,0 +1,142 @@
+{
+  "directed_link_count": 152,
+  "max_required_slots": 5,
+  "mean_required_slots": 4.0,
+  "node_count": 53,
+  "oracle_action_counts": {
+    "req_TB_REAL%3A%3ATOP_43_HIBERNIAGLOBAL_001815": 684,
+    "req_TB_REAL%3A%3ATOP_43_HIBERNIAGLOBAL_002182": 2318
+  },
+  "oracle_evaluated_optimal_solutions": 6,
+  "oracle_path_counts": {
+    "req_TB_REAL%3A%3ATOP_43_HIBERNIAGLOBAL_001815": 302,
+    "req_TB_REAL%3A%3ATOP_43_HIBERNIAGLOBAL_002182": 960
+  },
+  "oracle_search_nodes": 16,
+  "reference_algorithms": {
+    "algorithm_1_sp_ff": null,
+    "algorithm_2_ksp5_ff": {
+      "delta_tso": 56,
+      "output": {
+        "allocations": [
+          {
+            "path_link_ids": [
+              87,
+              88,
+              123,
+              53,
+              29,
+              32,
+              140
+            ],
+            "path_node_ids": [
+              34,
+              22,
+              39,
+              36,
+              11,
+              6,
+              46,
+              47
+            ],
+            "request_id": "req_TB_REAL%3A%3ATOP_43_HIBERNIAGLOBAL_001815",
+            "slot_start": 87
+          },
+          {
+            "path_link_ids": [
+              130,
+              119,
+              41,
+              38,
+              42,
+              56,
+              146
+            ],
+            "path_node_ids": [
+              41,
+              42,
+              35,
+              8,
+              9,
+              11,
+              48,
+              50
+            ],
+            "request_id": "req_TB_REAL%3A%3ATOP_43_HIBERNIAGLOBAL_002182",
+            "slot_start": 41
+          }
+        ],
+        "decision": "ACCEPT"
+      },
+      "post_wufr": 0.8330690157024632
+    },
+    "algorithm_3_joint_backtrack_k12": {
+      "delta_tso": 56,
+      "output": {
+        "allocations": [
+          {
+            "path_link_ids": [
+              87,
+              88,
+              123,
+              53,
+              29,
+              32,
+              140
+            ],
+            "path_node_ids": [
+              34,
+              22,
+              39,
+              36,
+              11,
+              6,
+              46,
+              47
+            ],
+            "request_id": "req_TB_REAL%3A%3ATOP_43_HIBERNIAGLOBAL_001815",
+            "slot_start": 87
+          },
+          {
+            "path_link_ids": [
+              130,
+              119,
+              41,
+              38,
+              42,
+              56,
+              146
+            ],
+            "path_node_ids": [
+              41,
+              42,
+              35,
+              8,
+              9,
+              11,
+              48,
+              50
+            ],
+            "request_id": "req_TB_REAL%3A%3ATOP_43_HIBERNIAGLOBAL_002182",
+            "slot_start": 41
+          }
+        ],
+        "decision": "ACCEPT"
+      },
+      "post_wufr": 0.8330690157024632
+    }
+  },
+  "request_count": 2,
+  "resource_pressure": 0.350123355263,
+  "serialization_metrics": {
+    "canonical_tokenizer": {
+      "backend": "tiktoken",
+      "encoding": "o200k_base",
+      "package_version": "0.14.0"
+    },
+    "llm_prompt_char_count": 33745,
+    "llm_prompt_token_count": 13847,
+    "llm_prompt_utf8_bytes": 34051
+  },
+  "total_required_slots": 8
+}

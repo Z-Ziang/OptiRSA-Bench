@@ -1,0 +1,138 @@
+{
+  "directed_link_count": 114,
+  "max_required_slots": 5,
+  "mean_required_slots": 5.0,
+  "node_count": 37,
+  "oracle_action_counts": {
+    "req_c20e1b71a4240bd79fcb2c49": 3030,
+    "req_faa83cfc282b245dd642c2df": 1672
+  },
+  "oracle_evaluated_optimal_solutions": 238,
+  "oracle_path_counts": {
+    "req_c20e1b71a4240bd79fcb2c49": 1175,
+    "req_faa83cfc282b245dd642c2df": 721
+  },
+  "oracle_search_nodes": 520,
+  "reference_algorithms": {
+    "algorithm_1_sp_ff": null,
+    "algorithm_2_ksp5_ff": {
+      "delta_tso": 65,
+      "output": {
+        "allocations": [
+          {
+            "path_link_ids": [
+              4,
+              29,
+              30,
+              100,
+              112,
+              13
+            ],
+            "path_node_ids": [
+              0,
+              14,
+              4,
+              23,
+              33,
+              35,
+              1
+            ],
+            "request_id": "req_faa83cfc282b245dd642c2df",
+            "slot_start": 129
+          },
+          {
+            "path_link_ids": [
+              3,
+              4,
+              29,
+              32,
+              106,
+              112,
+              13
+            ],
+            "path_node_ids": [
+              13,
+              0,
+              14,
+              4,
+              27,
+              33,
+              35,
+              1
+            ],
+            "request_id": "req_c20e1b71a4240bd79fcb2c49",
+            "slot_start": 265
+          }
+        ],
+        "decision": "ACCEPT"
+      },
+      "post_wufr": 0.7046814806201237
+    },
+    "algorithm_3_joint_backtrack_k12": {
+      "delta_tso": 65,
+      "output": {
+        "allocations": [
+          {
+            "path_link_ids": [
+              4,
+              65,
+              66,
+              100,
+              112,
+              13
+            ],
+            "path_node_ids": [
+              0,
+              14,
+              12,
+              23,
+              33,
+              35,
+              1
+            ],
+            "request_id": "req_faa83cfc282b245dd642c2df",
+            "slot_start": 256
+          },
+          {
+            "path_link_ids": [
+              3,
+              4,
+              65,
+              66,
+              100,
+              112,
+              13
+            ],
+            "path_node_ids": [
+              13,
+              0,
+              14,
+              12,
+              23,
+              33,
+              35,
+              1
+            ],
+            "request_id": "req_c20e1b71a4240bd79fcb2c49",
+            "slot_start": 315
+          }
+        ],
+        "decision": "ACCEPT"
+      },
+      "post_wufr": 0.7019882787588179
+    }
+  },
+  "request_count": 2,
+  "resource_pressure": 0.350274122807,
+  "serialization_metrics": {
+    "canonical_tokenizer": {
+      "backend": "tiktoken",
+      "encoding": "o200k_base",
+      "package_version": "0.14.0"
+    },
+    "llm_prompt_char_count": 22272,
+    "llm_prompt_token_count": 9148,
+    "llm_prompt_utf8_bytes": 22502
+  },
+  "total_required_slots": 10
+}

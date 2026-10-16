@@ -1,0 +1,100 @@
+{
+  "case_uid": "4ef136839d672755762f7e5822e99007fdc04c55314fa32dcd4654188cf104d0",
+  "model": "Qwen/Qwen3-8B",
+  "task": "X3",
+  "identity_key": "65accc774307f6c24c73b5fc32f34411a748a0ebf8d952056011e665f5b18d5a",
+  "status": "RESPONSE_RECEIVED",
+  "raw_completion": "{\n  \"decision\": \"ACCEPT\",\n  \"allocations\": [\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_78_PACKETEXCHANGE_000030\",\n      \"path_node_ids\": [1, 16, 0, 20],\n      \"path_link_ids\": [0, 1, 14],\n      \"slot_start\": 0\n    },\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_78_PACKETEXCHANGE_000140\",\n      \"path_node_ids\": [6, 1, 3, 4, 7, 19, 16],\n      \"path_link_ids\": [10, 18, 36, 34, 48, 50, 1],\n      \"slot_start\": 12\n    }\n  ]\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "input_tokens": 7665,
+    "output_tokens": 200,
+    "total_tokens": 7865,
+    "input_tokens_cache_write": null,
+    "input_tokens_cache_read": 0,
+    "reasoning_tokens": 0,
+    "total_cost": null
+  },
+  "model_output": {
+    "model": "Qwen/Qwen3-8B",
+    "choices": [
+      {
+        "message": {
+          "id": "CCqbkFEx9ADLbD95e62asx",
+          "content": "{\n  \"decision\": \"ACCEPT\",\n  \"allocations\": [\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_78_PACKETEXCHANGE_000030\",\n      \"path_node_ids\": [1, 16, 0, 20],\n      \"path_link_ids\": [0, 1, 14],\n      \"slot_start\": 0\n    },\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_78_PACKETEXCHANGE_000140\",\n      \"path_node_ids\": [6, 1, 3, 4, 7, 19, 16],\n      \"path_link_ids\": [10, 18, 36, 34, 48, 50, 1],\n      \"slot_start\": 12\n    }\n  ]\n}",
+          "source": "generate",
+          "metadata": null,
+          "role": "assistant",
+          "tool_calls": null,
+          "model": "Qwen/Qwen3-8B"
+        },
+        "stop_reason": "stop",
+        "stop_details": null,
+        "logprobs": null,
+        "prompt_logprobs": null
+      }
+    ],
+    "completion": "{\n  \"decision\": \"ACCEPT\",\n  \"allocations\": [\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_78_PACKETEXCHANGE_000030\",\n      \"path_node_ids\": [1, 16, 0, 20],\n      \"path_link_ids\": [0, 1, 14],\n      \"slot_start\": 0\n    },\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_78_PACKETEXCHANGE_000140\",\n      \"path_node_ids\": [6, 1, 3, 4, 7, 19, 16],\n      \"path_link_ids\": [10, 18, 36, 34, 48, 50, 1],\n      \"slot_start\": 12\n    }\n  ]\n}",
+    "usage": {
+      "input_tokens": 7665,
+      "output_tokens": 200,
+      "total_tokens": 7865,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 0,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    },
+    "fallback": null,
+    "time": 9.42199999999957,
+    "metadata": null,
+    "error": null,
+    "response_id": "01a1437fd1d4b4ab5fbc48eaad4ed073"
+  },
+  "started_at": "2026-10-16T06:56:49.854093+00:00",
+  "completed_at": "2026-10-16T06:56:59.645699+00:00",
+  "messages_sha256": "b084faeb6d293b9a367d8275d40b28c40826af5e859943a03a902df26be7c0c8",
+  "protocol_sha256": "d10b0887dd9ed5544d60a54670a07d52aacebdeb61a3d898ce4dcaabf9314d74",
+  "attempt": 1,
+  "inspect_log_dir": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\X3\\batches\\50ec5fd2dd204bafa73d870532265ddd\\inspect_logs",
+  "result": {
+    "truth_feasible": true,
+    "single_outer_fence_removed": false,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+    "category": "INFEASIBLE",
+    "validator": {
+      "valid": false,
+      "errors": [
+        "req_TB_REAL%3A%3ATOP_78_PACKETEXCHANGE_000030: path links are not directionally contiguous"
+      ],
+      "metrics": {
+        "joint_feasible_decision_accuracy": 0,
+        "delta_tso_gap": null,
+        "wufr_gap": null
+      },
+      "submitted_delta_tso": null,
+      "submitted_wufr": null
+    }
+  },
+  "strict": {
+    "truth_feasible": true,
+    "single_outer_fence_removed": false,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+    "category": "INFEASIBLE",
+    "validator": {
+      "valid": false,
+      "errors": [
+        "req_TB_REAL%3A%3ATOP_78_PACKETEXCHANGE_000030: path links are not directionally contiguous"
+      ],
+      "metrics": {
+        "joint_feasible_decision_accuracy": 0,
+        "delta_tso_gap": null,
+        "wufr_gap": null
+      },
+      "submitted_delta_tso": null,
+      "submitted_wufr": null
+    }
+  },
+  "graded_at": "2026-10-16T06:56:59.759873+00:00"
+}

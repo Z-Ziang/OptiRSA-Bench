@@ -1,0 +1,178 @@
+{
+  "directed_link_count": 110,
+  "max_required_slots": 3,
+  "mean_required_slots": 2.5,
+  "node_count": 46,
+  "oracle_action_counts": {
+    "req_TB_REAL%3A%3ATOP_97_SANET_001596": 70,
+    "req_TB_REAL%3A%3ATOP_97_SANET_001680": 47
+  },
+  "oracle_evaluated_optimal_solutions": 2,
+  "oracle_path_counts": {
+    "req_TB_REAL%3A%3ATOP_97_SANET_001596": 22,
+    "req_TB_REAL%3A%3ATOP_97_SANET_001680": 31
+  },
+  "oracle_search_nodes": 8,
+  "reference_algorithms": {
+    "algorithm_1_sp_ff": {
+      "delta_tso": 26,
+      "output": {
+        "allocations": [
+          {
+            "path_link_ids": [
+              104,
+              53,
+              50,
+              61,
+              55,
+              56,
+              68
+            ],
+            "path_node_ids": [
+              35,
+              37,
+              13,
+              17,
+              15,
+              14,
+              19,
+              20
+            ],
+            "request_id": "req_TB_REAL%3A%3ATOP_97_SANET_001596",
+            "slot_start": 0
+          },
+          {
+            "path_link_ids": [
+              53,
+              50,
+              61,
+              55
+            ],
+            "path_node_ids": [
+              37,
+              13,
+              17,
+              15,
+              14
+            ],
+            "request_id": "req_TB_REAL%3A%3ATOP_97_SANET_001680",
+            "slot_start": 114
+          }
+        ],
+        "decision": "ACCEPT"
+      },
+      "post_wufr": 0.7876282880366913
+    },
+    "algorithm_2_ksp5_ff": {
+      "delta_tso": 26,
+      "output": {
+        "allocations": [
+          {
+            "path_link_ids": [
+              104,
+              53,
+              50,
+              61,
+              55,
+              56,
+              68
+            ],
+            "path_node_ids": [
+              35,
+              37,
+              13,
+              17,
+              15,
+              14,
+              19,
+              20
+            ],
+            "request_id": "req_TB_REAL%3A%3ATOP_97_SANET_001596",
+            "slot_start": 0
+          },
+          {
+            "path_link_ids": [
+              53,
+              50,
+              61,
+              55
+            ],
+            "path_node_ids": [
+              37,
+              13,
+              17,
+              15,
+              14
+            ],
+            "request_id": "req_TB_REAL%3A%3ATOP_97_SANET_001680",
+            "slot_start": 114
+          }
+        ],
+        "decision": "ACCEPT"
+      },
+      "post_wufr": 0.7876282880366913
+    },
+    "algorithm_3_joint_backtrack_k12": {
+      "delta_tso": 26,
+      "output": {
+        "allocations": [
+          {
+            "path_link_ids": [
+              104,
+              53,
+              50,
+              61,
+              55,
+              56,
+              68
+            ],
+            "path_node_ids": [
+              35,
+              37,
+              13,
+              17,
+              15,
+              14,
+              19,
+              20
+            ],
+            "request_id": "req_TB_REAL%3A%3ATOP_97_SANET_001596",
+            "slot_start": 0
+          },
+          {
+            "path_link_ids": [
+              53,
+              50,
+              61,
+              55
+            ],
+            "path_node_ids": [
+              37,
+              13,
+              17,
+              15,
+              14
+            ],
+            "request_id": "req_TB_REAL%3A%3ATOP_97_SANET_001680",
+            "slot_start": 114
+          }
+        ],
+        "decision": "ACCEPT"
+      },
+      "post_wufr": 0.7876282880366913
+    }
+  },
+  "request_count": 2,
+  "resource_pressure": 0.364232954545,
+  "serialization_metrics": {
+    "canonical_tokenizer": {
+      "backend": "tiktoken",
+      "encoding": "o200k_base",
+      "package_version": "0.14.0"
+    },
+    "llm_prompt_char_count": 26167,
+    "llm_prompt_token_count": 10765,
+    "llm_prompt_utf8_bytes": 26389
+  },
+  "total_required_slots": 5
+}

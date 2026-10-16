@@ -1,0 +1,118 @@
+{
+  "directed_link_count": 34,
+  "node_count": 18,
+  "oracle_evaluated_optimal_actions": 72,
+  "reference_algorithms": {
+    "algorithm_1_sp_ff": {
+      "decision": "ACCEPT",
+      "hop_count": 11,
+      "path_link_ids": [
+        22,
+        25,
+        26,
+        29,
+        30,
+        33,
+        5,
+        1,
+        2,
+        12,
+        15
+      ],
+      "path_node_ids": [
+        10,
+        13,
+        12,
+        15,
+        14,
+        17,
+        16,
+        1,
+        0,
+        4,
+        7,
+        6
+      ],
+      "post_wufr": 0.3895969611413004,
+      "slot_start": 97
+    },
+    "algorithm_2_ksp5_lex": {
+      "decision": "ACCEPT",
+      "hop_count": 11,
+      "path_link_ids": [
+        22,
+        25,
+        26,
+        29,
+        30,
+        33,
+        5,
+        1,
+        2,
+        12,
+        15
+      ],
+      "path_node_ids": [
+        10,
+        13,
+        12,
+        15,
+        14,
+        17,
+        16,
+        1,
+        0,
+        4,
+        7,
+        6
+      ],
+      "post_wufr": 0.3860222186745996,
+      "slot_start": 113
+    },
+    "algorithm_3_window_search_lex": {
+      "decision": "ACCEPT",
+      "hop_count": 11,
+      "path_link_ids": [
+        22,
+        25,
+        26,
+        29,
+        30,
+        33,
+        5,
+        1,
+        2,
+        12,
+        15
+      ],
+      "path_node_ids": [
+        10,
+        13,
+        12,
+        15,
+        14,
+        17,
+        16,
+        1,
+        0,
+        4,
+        7,
+        6
+      ],
+      "post_wufr": 0.3860222186745996,
+      "slot_start": 113
+    }
+  },
+  "required_slots": 5,
+  "resource_pressure": 0.32417279411764705,
+  "serialization_metrics": {
+    "canonical_tokenizer": {
+      "backend": "tiktoken",
+      "encoding": "o200k_base",
+      "package_version": "0.14.0"
+    },
+    "llm_prompt_char_count": 5725,
+    "llm_prompt_token_count": 2314,
+    "llm_prompt_utf8_bytes": 5795
+  }
+}

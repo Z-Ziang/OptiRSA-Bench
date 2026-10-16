@@ -1,0 +1,107 @@
+{
+  "case_uid": "da2887ca07f8ed979d0d56e76e0f49264884ed128ee1717d4a5af4ffdb28a931",
+  "model": "Qwen/Qwen3-8B",
+  "status": "RESPONSE_RECEIVED",
+  "raw_completion": "\n\n{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [3, 2, 1, 0],\n  \"path_link_ids\": [7, 5, 1],\n  \"slot_start\": 189\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "openai-api/Qwen/Qwen3-8B": {
+      "input_tokens": 2063,
+      "output_tokens": 8451,
+      "total_tokens": 10514,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 0,
+      "reasoning_tokens": 8398,
+      "total_cost": null
+    }
+  },
+  "started_at": "2026-10-15T02:04:00.337749+00:00",
+  "completed_at": "2026-10-15T02:22:23.419509+00:00",
+  "total_seconds": 1103.082,
+  "inspect_log": "inspect_logs/2026-10-15T02-04-00-00-00_x2-x3-cases_VsFXp3KjHgz5AzvV8yWYyo.eval",
+  "result": {
+    "truth_feasible": true,
+    "single_outer_fence_removed": false,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+    "category": "SUBOPTIMAL",
+    "correct_reject": false,
+    "result_kind": "ALLOCATION",
+    "validator": {
+      "valid": true,
+      "errors": [],
+      "metrics": {
+        "feasible_decision_accuracy": 1,
+        "hop_gap": 0,
+        "wufr_gap": 0.0034192610613936747
+      },
+      "submitted_hop_count": 3,
+      "submitted_wufr": 0.18474993053437722
+    }
+  },
+  "strict": {
+    "truth_feasible": true,
+    "single_outer_fence_removed": false,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+    "category": "SUBOPTIMAL",
+    "correct_reject": false,
+    "result_kind": "ALLOCATION",
+    "validator": {
+      "valid": true,
+      "errors": [],
+      "metrics": {
+        "feasible_decision_accuracy": 1,
+        "hop_gap": 0,
+        "wufr_gap": 0.0034192610613936747
+      },
+      "submitted_hop_count": 3,
+      "submitted_wufr": 0.18474993053437722
+    }
+  },
+  "_source_file": "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/LLM_L5_FIXED2_20261014_153420_896215/results/qwen3_8b/full/results.jsonl",
+  "_all_source_files": [
+    "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/LLM_L5_FIXED2_20261014_153420_896215/results/qwen3_8b/full/answers/da2887ca07f8ed979d0d56e76e0f49264884ed128ee1717d4a5af4ffdb28a931.json",
+    "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/LLM_L5_FIXED2_20261014_153420_896215/results/qwen3_8b/full/results.jsonl"
+  ],
+  "_case_metadata": {
+    "node_count": "6",
+    "scale": "5-10",
+    "occupancy": "0.3505208333333333",
+    "load_band": "MID",
+    "decision": "ACCEPT",
+    "request_count": "1",
+    "requested_slots": "[5]",
+    "seed": "UNKNOWN",
+    "snapshot_id": "rs_TB_REAL%3A%3ATOP_102_TELECOMSERBIA_kspff_medium_seed01",
+    "request_ids": "[\"req_TB_REAL%3A%3ATOP_102_TELECOMSERBIA_000016\"]",
+    "source_category": "real",
+    "producer_version": "UNKNOWN",
+    "contract_version": "UNKNOWN",
+    "primary_objective": "LEX_MIN_HOPS_THEN_WUFR_FULL_PATH",
+    "certificate": "EXACT_CERTIFIED",
+    "oracle_status": "EXACT_CERTIFIED",
+    "exposed": "0",
+    "split": "DEVELOPMENT_EXPOSED",
+    "input_tokens": "UNKNOWN_NOT_MEASURED",
+    "case_uid": "da2887ca07f8ed979d0d56e76e0f49264884ed128ee1717d4a5af4ffdb28a931",
+    "case_id": "X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_RECOVER_HANDOFF_R33_STATIC_X2_9286586f0483f7f4300daf98",
+    "task": "X2",
+    "topology_id": "top_TB_REAL%3A%3ATOP_102_TELECOMSERBIA",
+    "topology_folder": "TELECOMSERBIA_n6_TB102",
+    "graph_hash": "2c013d4dbdb21f8b2ebb1160dcd8d5d18268968ce2eca9192f31163d12e7389a",
+    "snapshot_hash": "a9655c8df134d7829e494bcf80ff38501d022cfaec534245f744ad8daab11530",
+    "case_dir": "case_sets/TELECOMSERBIA_n6_TB102/X2/da2887ca07f8ed97",
+    "family_ids": [
+      "F_2e7e810cf20ea4f9bd9eec75c0413780234301b456615be47f9e1c0e53189aad"
+    ],
+    "messages_sha256": "4bea7e51bbc841442af442e7d4efb20dc0bcd64bc199249490848f3690a08306",
+    "input_characters": 6204,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "validator_sha256": "31660b7c47b6875d4332ec8212cfea2bae583ae029b60ce6da54bf0a48393a32"
+  },
+  "identity_key": "5c5400abbe827785c56cb5046461453547e573d05e602f836a268c5a5055e6aa",
+  "historical": true,
+  "history_answer_count": 1,
+  "historical_selection": "latest received response from FINAL; not normalized formal authority"
+}

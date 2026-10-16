@@ -1,0 +1,149 @@
+{
+  "benchmark_interface": "DUAL_VIEW_ALGORITHM_LLM_V1_0_COMPILED_NPZ",
+  "case_count": 1,
+  "production_metadata": {
+    "increment": "X2X3_SOURCE_RESUME_V4_20261016_173749_184997",
+    "lineage": {
+      "API_calls": 0,
+      "derivation_policy": "FROZEN_REQUEST_DERIVER_METADATA_ONLY; X3_FULL_GRAPH_ORACLE_UNCHANGED",
+      "dispatch_worker_code_sha256": "418045b96dea77637d1b9d0d2492cab3e9cf551f2418a8dbfe0073d12dbce9de",
+      "frozen_R1_unchanged": true,
+      "handoff_gap_id": "X3_GAP_19e45e71765e2635bb450640",
+      "handoff_manifest_sha256": "07bff65489dea940884e694f977f04d296a9d2709843799dac38dfd7f662dc01",
+      "input_sha256": "9c20a7f9846114df1b35014ae0826e3430a6f98b872d396ed17d2d708503290f",
+      "original_source_batch_id": "UNKNOWN",
+      "parent_request_evidence": [
+        {
+          "parent_case_uid": "e72604ee6aa12e0711f66bee707a32c851669de669619586940b71e978525296",
+          "parent_root_path": "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/X2X3_CPU_ADAPTIVE_V3_20261016_171523_935100/handoffs/x3_coverage_challenge_20261016_1719/X3_HANDOFF_R1/source_evidence/parent_cases/e72604ee6aa12e0711f66bee/root_case.json",
+          "parent_root_sha256": "417285975a40147d71b943f26a46a18d229b25548582b0e3d200a9bd9aaa2b49",
+          "request_id": "req_TB_REAL%3A%3ATOP_19_CONUS6079_002797",
+          "source_archive": "D:\\codex\\BENCHMARK\\Benchmark_7_7_STATIC_3500_DELIVERY_FINAL.zip",
+          "source_member": "cases/X3/158d0768c386cb33/private/root_case/X3_STATIC_SCALE_SELECTION_20261009_163946_896870_COVER_X3_158d0768c386cb33cc4d29d7c34e.json"
+        },
+        {
+          "parent_case_uid": "cf2a507ebd65356f1e9aaa1c710b3efd94fdd513ecde23e8ae805322ad27d7f8",
+          "parent_root_path": "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/X2X3_CPU_ADAPTIVE_V3_20261016_171523_935100/handoffs/x3_coverage_challenge_20261016_1719/X3_HANDOFF_R1/source_evidence/parent_cases/cf2a507ebd65356f1e9aaa1c/root_case.json",
+          "parent_root_sha256": "974a45e9efc43ee414876100d0066b2322209172cf59fe3613c8f2ba2cf85206",
+          "request_id": "req_TB_REAL%3A%3ATOP_19_CONUS6079_000172",
+          "source_archive": "D:\\codex\\BENCHMARK\\Benchmark_7_7_STATIC_3500_DELIVERY_FINAL.zip",
+          "source_member": "cases/X2/b0f3da8f780aae35/private/root_case/X2_STATIC_SCALE_SELECTION_20261009_163946_896870_COVER_X2_b0f3da8f780aae35e0d3621f1cc1.json"
+        },
+        {
+          "parent_case_uid": "23b2e29831d3d0dcc06f8e0236a539d435d751ce2534c3329c6bdf5d3a899abc",
+          "parent_root_path": "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/X2X3_CPU_ADAPTIVE_V3_20261016_171523_935100/handoffs/x3_coverage_challenge_20261016_1719/X3_HANDOFF_R1/source_evidence/parent_cases/23b2e29831d3d0dcc06f8e02/root_case.json",
+          "parent_root_sha256": "f6d2351f33ff4a8a33ab942569d66dd1dd6acc0b11fd64b0d36832b962664dac",
+          "request_id": "req_TB_REAL%3A%3ATOP_19_CONUS6079_003169",
+          "source_archive": "D:\\codex\\BENCHMARK\\Benchmark_7_7_STATIC_3500_DELIVERY_FINAL.zip",
+          "source_member": "cases/X3/572845296b7bf703/private/root_case/X3_STATIC_SCALE_SELECTION_20261009_163946_896870_COVER_X3_572845296b7bf7031f3430c89a7e.json"
+        },
+        {
+          "parent_case_uid": "ce8d282b9d184050bc0bf370d77826a53bb77ffcd41fb3181ef5e03b77b4fdb9",
+          "parent_root_path": "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/X2X3_CPU_ADAPTIVE_V3_20261016_171523_935100/handoffs/x3_coverage_challenge_20261016_1719/X3_HANDOFF_R1/source_evidence/parent_cases/ce8d282b9d184050bc0bf370/root_case.json",
+          "parent_root_sha256": "26f8c55e95be775319940b4fcd3ee8a9e4ace3e1678484ad35bc6f451d073755",
+          "request_id": "req_TB_REAL%3A%3ATOP_19_CONUS6079_003121",
+          "source_archive": "D:\\codex\\BENCHMARK\\Benchmark_7_7_STATIC_3500_DELIVERY_FINAL.zip",
+          "source_member": "cases/X3/3f7d27ed92c9515c/private/root_case/X3_STATIC_SCALE_SELECTION_20261009_163946_896870_COVER_X3_3f7d27ed92c9515cbd394575510b.json"
+        },
+        {
+          "parent_case_uid": "9ae6c1786a5e29a761d67e237d231fb7d941a00a3465e2a3ec587772843fdbad",
+          "parent_root_path": "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/X2X3_CPU_ADAPTIVE_V3_20261016_171523_935100/handoffs/x3_coverage_challenge_20261016_1719/X3_HANDOFF_R1/source_evidence/parent_cases/9ae6c1786a5e29a761d67e23/root_case.json",
+          "parent_root_sha256": "4c49347e04ac23edfce9b7cc5e2f8994e18b54f4558d121df06f958a2ffc55a6",
+          "request_id": "req_TB_REAL%3A%3ATOP_19_CONUS6079_002745",
+          "source_archive": "D:\\codex\\BENCHMARK\\Benchmark_7_7_STATIC_3500_DELIVERY_FINAL.zip",
+          "source_member": "cases/X3/121745571d47373d/private/root_case/X3_STATIC_SCALE_SELECTION_20261009_163946_896870_COVER_X3_121745571d47373dbf46a97c3982.json"
+        },
+        {
+          "parent_case_uid": "c8be46e97a68db5aec79563d7e5fa376e334971470c35c466c96618b1518dcde",
+          "parent_root_path": "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/X2X3_CPU_ADAPTIVE_V3_20261016_171523_935100/handoffs/x3_coverage_challenge_20261016_1719/X3_HANDOFF_R1/source_evidence/parent_cases/c8be46e97a68db5aec79563d/root_case.json",
+          "parent_root_sha256": "dd0b0277309343e8b94e5dd7c8193baf90e32cfcaac6942b69417d71ebf54130",
+          "request_id": "req_TB_REAL%3A%3ATOP_19_CONUS6079_001414",
+          "source_archive": "D:\\codex\\BENCHMARK\\Benchmark_7_7_STATIC_3500_DELIVERY_FINAL.zip",
+          "source_member": "cases/X2/43b5cb2eb56e3386/private/root_case/X2_STATIC_SCALE_SELECTION_20261009_163946_896870_COVER_X2_43b5cb2eb56e3386cc6c2d8a27ad.json"
+        },
+        {
+          "parent_case_uid": "113f88774b3f1c1d864ee683d71bef41a086d0c156f803c02d50725a8dbbd15a",
+          "parent_root_path": "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/X2X3_CPU_ADAPTIVE_V3_20261016_171523_935100/handoffs/x3_coverage_challenge_20261016_1719/X3_HANDOFF_R1/source_evidence/parent_cases/113f88774b3f1c1d864ee683/root_case.json",
+          "parent_root_sha256": "af21e2caf8bef1ae1ffe1d3028a724c3b29d6d5b46ff92510f302d12031e58ea",
+          "request_id": "req_TB_REAL%3A%3ATOP_19_CONUS6079_002099",
+          "source_archive": "D:\\codex\\BENCHMARK\\Benchmark_7_7_STATIC_3500_DELIVERY_FINAL.zip",
+          "source_member": "cases/X3/acb06d8fc523ca3b/private/root_case/X3_STATIC_SCALE_SELECTION_20261009_163946_896870_COVER_X3_acb06d8fc523ca3b95433182e981.json"
+        },
+        {
+          "parent_case_uid": "39726a79596658103f79b2d6fcebcd3683a75e8f0374c6630c6b52f06d0d2ca9",
+          "parent_root_path": "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/X2X3_CPU_ADAPTIVE_V3_20261016_171523_935100/handoffs/x3_coverage_challenge_20261016_1719/X3_HANDOFF_R1/source_evidence/parent_cases/39726a79596658103f79b2d6/root_case.json",
+          "parent_root_sha256": "715871052eb2177e998e26b152358fe83f7657a84c65d6abf2cb497f48cd731a",
+          "request_id": "req_TB_REAL%3A%3ATOP_19_CONUS6079_001760",
+          "source_archive": "D:\\codex\\BENCHMARK\\Benchmark_7_7_STATIC_3500_DELIVERY_FINAL.zip",
+          "source_member": "cases/X3/d8058eb7d07c95e9/private/root_case/X3_STATIC_SCALE_SELECTION_20261009_163946_896870_COVER_X3_d8058eb7d07c95e995cd92ce1072.json"
+        }
+      ],
+      "request_order": [
+        "req_TB_REAL%3A%3ATOP_19_CONUS6079_002099",
+        "req_TB_REAL%3A%3ATOP_21_CORONET_001036"
+      ],
+      "scientific_key": "50c94f8ebfeafb8265146b26ba9dec8cee9cc0880c62c3bacc9cb3f17f8ddd76",
+      "source_batch_id": "UNKNOWN",
+      "source_environment": "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/SCHEDULING_RECOVERY_V5_20261008_223402_421810/SCALE_DIFFICULTY_CONTINUATION_20261009_072738_596236/jobs/SCALE_ENV_0081_V2/unit/public_environment",
+      "source_proof_kind": "FIXED_HANDOFF_PARENT_CASE_REQUESTS_ON_IDENTICAL_FROZEN_STATE",
+      "source_request_ids": [
+        "req_TB_REAL%3A%3ATOP_19_CONUS6079_002099",
+        "req_TB_REAL%3A%3ATOP_21_CORONET_001036"
+      ],
+      "source_request_provenance": [
+        {
+          "existing_certified_X2_uid": null,
+          "physical_hash": "3f9fe7556fb8759fc2d638d1d8d4634b18c2cd9c9eb8344e7512c04af7adcd57",
+          "profile_id": "945712abcf3a21c28410c388c78a5086b4c30f705b7e30927e80ee49f3300b8d",
+          "request": {
+            "destination_node_id": 33,
+            "request_id": "req_TB_REAL%3A%3ATOP_19_CONUS6079_002099",
+            "required_slots": 9,
+            "source_node_id": 35
+          },
+          "source_archive": "D:\\codex\\BENCHMARK\\Benchmark_7_7_STATIC_3500_DELIVERY_FINAL.zip",
+          "source_case_uid": "113f88774b3f1c1d864ee683d71bef41a086d0c156f803c02d50725a8dbbd15a",
+          "source_kind": "CERTIFIED_PARENT_CASE_REQUEST",
+          "source_member": "cases/X3/acb06d8fc523ca3b/private/root_case/X3_STATIC_SCALE_SELECTION_20261009_163946_896870_COVER_X3_acb06d8fc523ca3b95433182e981.json",
+          "source_parent_decision": "ACCEPT",
+          "source_parent_local_file": "source_evidence/parent_cases/113f88774b3f1c1d864ee683/root_case.json",
+          "source_parent_task": "X3",
+          "source_priority": 1,
+          "source_root_sha256": "af21e2caf8bef1ae1ffe1d3028a724c3b29d6d5b46ff92510f302d12031e58ea",
+          "state_key": "5d2ff7f429e3217946c8328962e8515fe68be53ccc3a263b7765f5bf9411772e",
+          "topological_hops": 8
+        },
+        {
+          "existing_certified_X2_uid": null,
+          "physical_hash": "3eac1c9897a41cc07fb922ee5d4aaa497af6198da634d0d613525254c1d62cca",
+          "profile_id": "584557d1f632320bd03c0a4a006747d145d922c2301bff0ee090c1ec4f547f12",
+          "request": {
+            "destination_node_id": 33,
+            "request_id": "req_TB_REAL%3A%3ATOP_21_CORONET_001036",
+            "required_slots": 2,
+            "source_node_id": 17
+          },
+          "source_archive": "D:\\codex\\BENCHMARK\\Benchmark_7_7_STATIC_3500_DELIVERY_FINAL.zip",
+          "source_case_uid": "1b23de509205b8ff745059036c0f2a543b5e446692317da89739f30c39cb79d2",
+          "source_kind": "CERTIFIED_PARENT_CASE_REQUEST",
+          "source_member": "cases/O1/050d31ff35100932/private/root_case/O1_STATIC_SCALE_SELECTION_20261009_163946_896870_COVER_O1_050d31ff35100932e99c69d9eb37.json",
+          "source_parent_decision": "REJECT",
+          "source_parent_local_file": "source_evidence/parent_cases/1b23de509205b8ff74505903/root_case.json",
+          "source_parent_task": "O1",
+          "source_priority": 2,
+          "source_root_sha256": "d717c05fdfb33782a48705e16057a8efa87700fa4b873cbba966252cb3985a7a",
+          "state_key": "5d2ff7f429e3217946c8328962e8515fe68be53ccc3a263b7765f5bf9411772e",
+          "topological_hops": 9
+        }
+      ],
+      "source_resource_state_id": "rs_TB_REAL%3A%3ATOP_21_CORONET_kspff_medium_seed01",
+      "source_state_key": "5d2ff7f429e3217946c8328962e8515fe68be53ccc3a263b7765f5bf9411772e",
+      "source_topology_id": "top_TB_REAL%3A%3ATOP_21_CORONET"
+    }
+  },
+  "schema_version": "X2X3_PRODUCTION_SUMMARY_V3_0",
+  "task_counts": {
+    "X2": 0,
+    "X3": 1
+  }
+}

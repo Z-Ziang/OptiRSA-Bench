@@ -1,0 +1,102 @@
+{
+  "case_uid": "b0e936bc1c484ac3ac055295854db542bbb3dc21740da1682320b9fc0a4bee22",
+  "model": "Qwen/Qwen3-8B",
+  "task": "X3",
+  "identity_key": "e6ff4522c93372c555a0480a7948d453214e740c9cd1818a35db43f7cb4a4e91",
+  "status": "RESPONSE_RECEIVED",
+  "raw_completion": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "input_tokens": 8226,
+    "output_tokens": 16,
+    "total_tokens": 8242,
+    "input_tokens_cache_write": null,
+    "input_tokens_cache_read": 0,
+    "reasoning_tokens": 0,
+    "total_cost": null
+  },
+  "model_output": {
+    "model": "Qwen/Qwen3-8B",
+    "choices": [
+      {
+        "message": {
+          "id": "T6s7g9yjD93o9rgPEwYGi4",
+          "content": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+          "source": "generate",
+          "metadata": null,
+          "role": "assistant",
+          "tool_calls": null,
+          "model": "Qwen/Qwen3-8B"
+        },
+        "stop_reason": "stop",
+        "stop_details": null,
+        "logprobs": null,
+        "prompt_logprobs": null
+      }
+    ],
+    "completion": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+    "usage": {
+      "input_tokens": 8226,
+      "output_tokens": 16,
+      "total_tokens": 8242,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 0,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    },
+    "fallback": null,
+    "time": 3.0779999999999745,
+    "metadata": null,
+    "error": null,
+    "response_id": "01a1436fa57f717d823fec535fb9546d"
+  },
+  "started_at": "2026-10-16T06:39:09.609840+00:00",
+  "completed_at": "2026-10-16T06:39:13.310851+00:00",
+  "messages_sha256": "f9ae0f49dca99ff1d25f9299f5f9b0be486c7eb705e5b35882f7d86a2c2ba0f9",
+  "protocol_sha256": "d10b0887dd9ed5544d60a54670a07d52aacebdeb61a3d898ce4dcaabf9314d74",
+  "attempt": 1,
+  "inspect_log_dir": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\X3\\batches\\2901297b7462404bbc4bf4e5aa7e15a4\\inspect_logs",
+  "result": {
+    "truth_feasible": true,
+    "single_outer_fence_removed": false,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+    "category": "MISSING",
+    "reason": "INCORRECT_REJECT_NO_ALLOCATION",
+    "validator": {
+      "valid": false,
+      "errors": [
+        "REJECT is incorrect because a full-space joint feasible solution exists"
+      ],
+      "metrics": {
+        "joint_feasible_decision_accuracy": 0,
+        "delta_tso_gap": null,
+        "wufr_gap": null
+      },
+      "submitted_delta_tso": null,
+      "submitted_wufr": null
+    }
+  },
+  "strict": {
+    "truth_feasible": true,
+    "single_outer_fence_removed": false,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+    "category": "MISSING",
+    "reason": "INCORRECT_REJECT_NO_ALLOCATION",
+    "validator": {
+      "valid": false,
+      "errors": [
+        "REJECT is incorrect because a full-space joint feasible solution exists"
+      ],
+      "metrics": {
+        "joint_feasible_decision_accuracy": 0,
+        "delta_tso_gap": null,
+        "wufr_gap": null
+      },
+      "submitted_delta_tso": null,
+      "submitted_wufr": null
+    }
+  },
+  "graded_at": "2026-10-16T06:39:13.412847+00:00"
+}

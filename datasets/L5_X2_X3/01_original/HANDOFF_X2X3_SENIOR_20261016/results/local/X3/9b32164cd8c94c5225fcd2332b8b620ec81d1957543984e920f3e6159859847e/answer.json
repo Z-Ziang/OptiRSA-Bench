@@ -1,0 +1,100 @@
+{
+  "case_uid": "9b32164cd8c94c5225fcd2332b8b620ec81d1957543984e920f3e6159859847e",
+  "model": "Qwen/Qwen3-8B",
+  "task": "X3",
+  "identity_key": "208a97ccbe7046db04442131e79cd616d2c150c70beed719829d66358a0e8b98",
+  "status": "RESPONSE_RECEIVED",
+  "raw_completion": "{\n  \"decision\": \"ACCEPT\",\n  \"allocations\": [\n    {\n      \"request_id\": \"dynreq_TB_REAL%3A%3ATOP_102_TELECOMSERBIA_005_005001\",\n      \"path_node_ids\": [5, 0, 1],\n      \"path_link_ids\": [2, 1],\n      \"slot_start\": 3\n    },\n    {\n      \"request_id\": \"dynreq_TB_REAL%3A%3ATOP_102_TELECOMSERBIA_005_005002\",\n      \"path_node_ids\": [4, 1, 2],\n      \"path_link_ids\": [9, 4],\n      \"slot_start\": 10\n    }\n  ]\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "input_tokens": 2701,
+    "output_tokens": 174,
+    "total_tokens": 2875,
+    "input_tokens_cache_write": null,
+    "input_tokens_cache_read": 0,
+    "reasoning_tokens": 0,
+    "total_cost": null
+  },
+  "model_output": {
+    "model": "Qwen/Qwen3-8B",
+    "choices": [
+      {
+        "message": {
+          "id": "i8BQpihTgCo2iZac8NJoGE",
+          "content": "{\n  \"decision\": \"ACCEPT\",\n  \"allocations\": [\n    {\n      \"request_id\": \"dynreq_TB_REAL%3A%3ATOP_102_TELECOMSERBIA_005_005001\",\n      \"path_node_ids\": [5, 0, 1],\n      \"path_link_ids\": [2, 1],\n      \"slot_start\": 3\n    },\n    {\n      \"request_id\": \"dynreq_TB_REAL%3A%3ATOP_102_TELECOMSERBIA_005_005002\",\n      \"path_node_ids\": [4, 1, 2],\n      \"path_link_ids\": [9, 4],\n      \"slot_start\": 10\n    }\n  ]\n}",
+          "source": "generate",
+          "metadata": null,
+          "role": "assistant",
+          "tool_calls": null,
+          "model": "Qwen/Qwen3-8B"
+        },
+        "stop_reason": "stop",
+        "stop_details": null,
+        "logprobs": null,
+        "prompt_logprobs": null
+      }
+    ],
+    "completion": "{\n  \"decision\": \"ACCEPT\",\n  \"allocations\": [\n    {\n      \"request_id\": \"dynreq_TB_REAL%3A%3ATOP_102_TELECOMSERBIA_005_005001\",\n      \"path_node_ids\": [5, 0, 1],\n      \"path_link_ids\": [2, 1],\n      \"slot_start\": 3\n    },\n    {\n      \"request_id\": \"dynreq_TB_REAL%3A%3ATOP_102_TELECOMSERBIA_005_005002\",\n      \"path_node_ids\": [4, 1, 2],\n      \"path_link_ids\": [9, 4],\n      \"slot_start\": 10\n    }\n  ]\n}",
+    "usage": {
+      "input_tokens": 2701,
+      "output_tokens": 174,
+      "total_tokens": 2875,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 0,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    },
+    "fallback": null,
+    "time": 5.858999999999924,
+    "metadata": null,
+    "error": null,
+    "response_id": "01a1436915471d1cc51b91fe0c8e21f3"
+  },
+  "started_at": "2026-10-16T06:31:56.205377+00:00",
+  "completed_at": "2026-10-16T06:32:05.915744+00:00",
+  "messages_sha256": "db016305e2c46bc58344d0450492d0746154e8566bedbae0b4f418255435ef81",
+  "protocol_sha256": "d10b0887dd9ed5544d60a54670a07d52aacebdeb61a3d898ce4dcaabf9314d74",
+  "attempt": 7,
+  "inspect_log_dir": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\X3\\batches\\57e6343319434bf2b07fa1aa61832c80\\inspect_logs",
+  "result": {
+    "truth_feasible": true,
+    "single_outer_fence_removed": false,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+    "category": "INFEASIBLE",
+    "validator": {
+      "valid": false,
+      "errors": [
+        "dynreq_TB_REAL%3A%3ATOP_102_TELECOMSERBIA_005_005001: path links are not directionally contiguous"
+      ],
+      "metrics": {
+        "joint_feasible_decision_accuracy": 0,
+        "delta_tso_gap": null,
+        "wufr_gap": null
+      },
+      "submitted_delta_tso": null,
+      "submitted_wufr": null
+    }
+  },
+  "strict": {
+    "truth_feasible": true,
+    "single_outer_fence_removed": false,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+    "category": "INFEASIBLE",
+    "validator": {
+      "valid": false,
+      "errors": [
+        "dynreq_TB_REAL%3A%3ATOP_102_TELECOMSERBIA_005_005001: path links are not directionally contiguous"
+      ],
+      "metrics": {
+        "joint_feasible_decision_accuracy": 0,
+        "delta_tso_gap": null,
+        "wufr_gap": null
+      },
+      "submitted_delta_tso": null,
+      "submitted_wufr": null
+    }
+  },
+  "graded_at": "2026-10-16T06:32:06.374333+00:00"
+}

@@ -1,0 +1,70 @@
+{
+  "directed_link_count": 82,
+  "node_count": 29,
+  "oracle_evaluated_optimal_actions": 7,
+  "reference_algorithms": {
+    "algorithm_1_sp_ff": {
+      "decision": "ACCEPT",
+      "hop_count": 3,
+      "path_link_ids": [
+        38,
+        71,
+        23
+      ],
+      "path_node_ids": [
+        10,
+        23,
+        21,
+        5
+      ],
+      "post_wufr": 0.6485055799768142,
+      "slot_start": 184
+    },
+    "algorithm_2_ksp5_lex": {
+      "decision": "ACCEPT",
+      "hop_count": 3,
+      "path_link_ids": [
+        38,
+        71,
+        23
+      ],
+      "path_node_ids": [
+        10,
+        23,
+        21,
+        5
+      ],
+      "post_wufr": 0.6461682321380039,
+      "slot_start": 213
+    },
+    "algorithm_3_window_search_lex": {
+      "decision": "ACCEPT",
+      "hop_count": 3,
+      "path_link_ids": [
+        38,
+        71,
+        23
+      ],
+      "path_node_ids": [
+        10,
+        23,
+        21,
+        5
+      ],
+      "post_wufr": 0.6461682321380039,
+      "slot_start": 213
+    }
+  },
+  "required_slots": 9,
+  "resource_pressure": 0.3315167682926829,
+  "serialization_metrics": {
+    "canonical_tokenizer": {
+      "backend": "tiktoken",
+      "encoding": "o200k_base",
+      "package_version": "0.14.0"
+    },
+    "llm_prompt_char_count": 15553,
+    "llm_prompt_token_count": 6402,
+    "llm_prompt_utf8_bytes": 15719
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "case_uid": "cafdc41afa638f2ac936b833f809b496b6d346c0976e189745dff3957807f195",
+  "model": "Qwen/Qwen3-8B",
+  "status": "RESPONSE_RECEIVED",
+  "raw_completion": "\n\n{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [4, 3, 2, 1],\n  \"path_link_ids\": [9, 7, 5],\n  \"slot_start\": 157\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "openai-api/Qwen/Qwen3-8B": {
+      "input_tokens": 2063,
+      "output_tokens": 13017,
+      "total_tokens": 15080,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 0,
+      "reasoning_tokens": 12964,
+      "total_cost": null
+    }
+  },
+  "started_at": "2026-10-15T01:19:53.313623+00:00",
+  "completed_at": "2026-10-15T01:29:21.999281+00:00",
+  "total_seconds": 568.686,
+  "inspect_log": "inspect_logs/2026-10-15T01-19-53-00-00_x2-x3-cases_Cn3SyVJiJfh93sbbbhYvj2.eval",
+  "result": {
+    "truth_feasible": true,
+    "single_outer_fence_removed": false,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+    "category": "INFEASIBLE",
+    "validator": {
+      "valid": false,
+      "errors": [
+        "submitted allocation is not spectrum-feasible"
+      ],
+      "metrics": {
+        "feasible_decision_accuracy": 0,
+        "hop_gap": null,
+        "wufr_gap": null
+      },
+      "submitted_hop_count": null,
+      "submitted_wufr": null
+    }
+  },
+  "strict": {
+    "truth_feasible": true,
+    "single_outer_fence_removed": false,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+    "category": "INFEASIBLE",
+    "validator": {
+      "valid": false,
+      "errors": [
+        "submitted allocation is not spectrum-feasible"
+      ],
+      "metrics": {
+        "feasible_decision_accuracy": 0,
+        "hop_gap": null,
+        "wufr_gap": null
+      },
+      "submitted_hop_count": null,
+      "submitted_wufr": null
+    }
+  },
+  "_source_file": "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/LLM_L5_FIXED2_20261014_153420_896215/results/qwen3_8b/full/results.jsonl",
+  "_all_source_files": [
+    "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/LLM_L5_FIXED2_20261014_153420_896215/results/qwen3_8b/full/answers/cafdc41afa638f2ac936b833f809b496b6d346c0976e189745dff3957807f195.json",
+    "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/LLM_L5_FIXED2_20261014_153420_896215/results/qwen3_8b/full/results.jsonl"
+  ],
+  "_case_metadata": {
+    "node_count": "6",
+    "scale": "5-10",
+    "occupancy": "0.3505208333333333",
+    "load_band": "MID",
+    "decision": "ACCEPT",
+    "request_count": "1",
+    "requested_slots": "[5]",
+    "seed": "UNKNOWN",
+    "snapshot_id": "rs_TB_REAL%3A%3ATOP_102_TELECOMSERBIA_kspff_medium_seed01",
+    "request_ids": "[\"req_TB_REAL%3A%3ATOP_102_TELECOMSERBIA_000022\"]",
+    "source_category": "real",
+    "producer_version": "UNKNOWN",
+    "contract_version": "UNKNOWN",
+    "primary_objective": "LEX_MIN_HOPS_THEN_WUFR_FULL_PATH",
+    "certificate": "EXACT_CERTIFIED",
+    "oracle_status": "EXACT_CERTIFIED",
+    "exposed": "0",
+    "split": "DEVELOPMENT_EXPOSED",
+    "input_tokens": "UNKNOWN_NOT_MEASURED",
+    "case_uid": "cafdc41afa638f2ac936b833f809b496b6d346c0976e189745dff3957807f195",
+    "case_id": "X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X2_b0fb7040801d22b4acc588ea",
+    "task": "X2",
+    "topology_id": "top_TB_REAL%3A%3ATOP_102_TELECOMSERBIA",
+    "topology_folder": "TELECOMSERBIA_n6_TB102",
+    "graph_hash": "2c013d4dbdb21f8b2ebb1160dcd8d5d18268968ce2eca9192f31163d12e7389a",
+    "snapshot_hash": "a9655c8df134d7829e494bcf80ff38501d022cfaec534245f744ad8daab11530",
+    "case_dir": "case_sets/TELECOMSERBIA_n6_TB102/X2/cafdc41afa638f2a",
+    "family_ids": [
+      "F_66cad0df6022ceaabf4bd089a90d84631801fcc8b2a976a812ac7be3014dadaf"
+    ],
+    "messages_sha256": "8bb2feb485ac66d5058ebf2beb7aa4e98186f96c4c30861c4b9688ca129007c5",
+    "input_characters": 6204,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "validator_sha256": "31660b7c47b6875d4332ec8212cfea2bae583ae029b60ce6da54bf0a48393a32"
+  },
+  "identity_key": "58a718bdba3cc2cfcab4a4664bbbee47b35c9e7e8e814ea911195f7b02c151f2",
+  "historical": true,
+  "history_answer_count": 1,
+  "historical_selection": "latest received response from FINAL; not normalized formal authority"
+}

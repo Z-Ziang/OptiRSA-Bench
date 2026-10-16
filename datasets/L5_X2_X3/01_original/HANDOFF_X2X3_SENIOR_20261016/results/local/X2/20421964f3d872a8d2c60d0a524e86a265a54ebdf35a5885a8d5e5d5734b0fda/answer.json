@@ -1,0 +1,113 @@
+{
+  "case_uid": "20421964f3d872a8d2c60d0a524e86a265a54ebdf35a5885a8d5e5d5734b0fda",
+  "model": "Qwen/Qwen3-8B",
+  "binding": {
+    "time": 1792081697.795472,
+    "job": "X2_qwen3_8b_w1",
+    "case_uid": "20421964f3d872a8d2c60d0a524e86a265a54ebdf35a5885a8d5e5d5734b0fda",
+    "messages_sha256": "897459019342dfe125aed32b5764a54b9da578d818fb842e3fef9097aea9c54a",
+    "model": "Qwen/Qwen3-8B",
+    "protocol_sha256": "90150c7705cc43c48830c2f5e5cd487ec7c65fa777f4541654da6075d65199bc",
+    "attempt": 7
+  },
+  "raw_completion": "\n\n{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [29, 28, 27],\n  \"path_link_ids\": [64, 63],\n  \"slot_start\": 117\n}",
+  "status": "RESPONSE_RECEIVED",
+  "usage": {
+    "openai-api/Qwen/Qwen3-8B": {
+      "input_tokens": 10735,
+      "output_tokens": 8911,
+      "total_tokens": 19646,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 0,
+      "reasoning_tokens": 8859,
+      "total_cost": null
+    }
+  },
+  "started_at": "2026-10-15T16:28:18.068004+00:00",
+  "completed_at": "2026-10-15T16:34:59.671977+00:00",
+  "total_seconds": 401.604,
+  "result": {
+    "truth_feasible": true,
+    "single_outer_fence_removed": false,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+    "category": "INFEASIBLE",
+    "validator": {
+      "valid": false,
+      "errors": [
+        "path links are not directionally contiguous"
+      ],
+      "metrics": {
+        "feasible_decision_accuracy": 0,
+        "hop_gap": null,
+        "wufr_gap": null
+      },
+      "submitted_hop_count": null,
+      "submitted_wufr": null
+    }
+  },
+  "strict": {
+    "truth_feasible": true,
+    "single_outer_fence_removed": false,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+    "category": "INFEASIBLE",
+    "validator": {
+      "valid": false,
+      "errors": [
+        "path links are not directionally contiguous"
+      ],
+      "metrics": {
+        "feasible_decision_accuracy": 0,
+        "hop_gap": null,
+        "wufr_gap": null
+      },
+      "submitted_hop_count": null,
+      "submitted_wufr": null
+    }
+  },
+  "_source_file": "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/QWEN3_FIXED18_20261015_201811_478721/jobs/X2_qwen3_8b_w1/20421964f3d872a8d2c60d0a524e86a265a54ebdf35a5885a8d5e5d5734b0fda_attempt7/answer.json",
+  "_all_source_files": [
+    "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/QWEN3_FIXED18_20261015_201811_478721/jobs/X2_qwen3_8b_w1/20421964f3d872a8d2c60d0a524e86a265a54ebdf35a5885a8d5e5d5734b0fda_attempt7/answer.json"
+  ],
+  "_case_metadata": {
+    "node_count": "35",
+    "scale": "30-59",
+    "occupancy": "0.35008012820512824",
+    "load_band": "MID",
+    "decision": "ACCEPT",
+    "request_count": "1",
+    "requested_slots": "[5]",
+    "seed": "UNKNOWN",
+    "snapshot_id": "rs_TB_REAL%3A%3ATOP_68_NETWORKUSA_kspff_medium_seed01",
+    "request_ids": "[\"req_TB_REAL%3A%3ATOP_68_NETWORKUSA_001014\"]",
+    "source_category": "real",
+    "producer_version": "UNKNOWN",
+    "contract_version": "UNKNOWN",
+    "primary_objective": "LEX_MIN_HOPS_THEN_WUFR_FULL_PATH",
+    "certificate": "EXACT_CERTIFIED",
+    "oracle_status": "EXACT_CERTIFIED",
+    "exposed": "0",
+    "split": "DEVELOPMENT_UNASSESSED",
+    "input_tokens": "UNKNOWN_NOT_MEASURED",
+    "case_uid": "20421964f3d872a8d2c60d0a524e86a265a54ebdf35a5885a8d5e5d5734b0fda",
+    "case_id": "X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_RECOVER_HANDOFF_R33_STATIC_X2_f78fc88f2654e3075d4aa03e",
+    "task": "X2",
+    "topology_id": "top_TB_REAL%3A%3ATOP_68_NETWORKUSA",
+    "topology_folder": "NETWORKUSA_n35_TB68",
+    "graph_hash": "0309da7a2c8ac687756dbba570a5ce887dfdf455285531ea26081bc7d568d297",
+    "snapshot_hash": "9b10b69a80c63448d896a281033322c3f7368b9c114fc1e50a4d96044a3a3b13",
+    "case_dir": "case_sets/NETWORKUSA_n35_TB68/X2/20421964f3d872a8",
+    "family_ids": [
+      "F_c86705a294cfbc27a4a2564b5020ce874851ad5fe1462dc714467cd4ba73d722"
+    ],
+    "messages_sha256": "897459019342dfe125aed32b5764a54b9da578d818fb842e3fef9097aea9c54a",
+    "input_characters": 18984,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "validator_sha256": "31660b7c47b6875d4332ec8212cfea2bae583ae029b60ce6da54bf0a48393a32"
+  },
+  "identity_key": "2c237427dd09c8d96ae4ca0c8eaad31aea0167ae89efcfbe8505bcd3b5452677",
+  "historical": true,
+  "history_answer_count": 1,
+  "historical_selection": "latest received response from FINAL; not normalized formal authority"
+}

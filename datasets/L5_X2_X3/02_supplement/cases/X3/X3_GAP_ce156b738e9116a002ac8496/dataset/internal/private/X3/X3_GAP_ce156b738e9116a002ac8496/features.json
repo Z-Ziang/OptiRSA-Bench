@@ -1,0 +1,154 @@
+{
+  "directed_link_count": 20,
+  "max_required_slots": 9,
+  "mean_required_slots": 7.0,
+  "node_count": 10,
+  "oracle_action_counts": {
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000023": 81,
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000065": 129
+  },
+  "oracle_evaluated_optimal_solutions": 2360,
+  "oracle_path_counts": {
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000023": 2,
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000065": 2
+  },
+  "oracle_search_nodes": 4802,
+  "reference_algorithms": {
+    "algorithm_1_sp_ff": {
+      "delta_tso": 47,
+      "output": {
+        "allocations": [
+          {
+            "path_link_ids": [
+              15,
+              11,
+              9,
+              5
+            ],
+            "path_node_ids": [
+              7,
+              4,
+              3,
+              2,
+              1
+            ],
+            "request_id": "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000065",
+            "slot_start": 185
+          },
+          {
+            "path_link_ids": [
+              8,
+              10,
+              12
+            ],
+            "path_node_ids": [
+              2,
+              3,
+              4,
+              5
+            ],
+            "request_id": "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000023",
+            "slot_start": 137
+          }
+        ],
+        "decision": "ACCEPT"
+      },
+      "post_wufr": 0.34966016471997075
+    },
+    "algorithm_2_ksp5_ff": {
+      "delta_tso": 47,
+      "output": {
+        "allocations": [
+          {
+            "path_link_ids": [
+              15,
+              11,
+              9,
+              5
+            ],
+            "path_node_ids": [
+              7,
+              4,
+              3,
+              2,
+              1
+            ],
+            "request_id": "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000065",
+            "slot_start": 185
+          },
+          {
+            "path_link_ids": [
+              8,
+              10,
+              12
+            ],
+            "path_node_ids": [
+              2,
+              3,
+              4,
+              5
+            ],
+            "request_id": "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000023",
+            "slot_start": 137
+          }
+        ],
+        "decision": "ACCEPT"
+      },
+      "post_wufr": 0.34966016471997075
+    },
+    "algorithm_3_joint_backtrack_k12": {
+      "delta_tso": 47,
+      "output": {
+        "allocations": [
+          {
+            "path_link_ids": [
+              15,
+              11,
+              9,
+              5
+            ],
+            "path_node_ids": [
+              7,
+              4,
+              3,
+              2,
+              1
+            ],
+            "request_id": "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000065",
+            "slot_start": 185
+          },
+          {
+            "path_link_ids": [
+              8,
+              10,
+              12
+            ],
+            "path_node_ids": [
+              2,
+              3,
+              4,
+              5
+            ],
+            "request_id": "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000023",
+            "slot_start": 137
+          }
+        ],
+        "decision": "ACCEPT"
+      },
+      "post_wufr": 0.34966016471997075
+    }
+  },
+  "request_count": 2,
+  "resource_pressure": 0.35,
+  "serialization_metrics": {
+    "canonical_tokenizer": {
+      "backend": "tiktoken",
+      "encoding": "o200k_base",
+      "package_version": "0.14.0"
+    },
+    "llm_prompt_char_count": 3896,
+    "llm_prompt_token_count": 1505,
+    "llm_prompt_utf8_bytes": 3938
+  },
+  "total_required_slots": 14
+}

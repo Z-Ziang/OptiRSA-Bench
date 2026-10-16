@@ -1,0 +1,112 @@
+{
+  "task": "X3",
+  "case_uid": "918ffa57c11fc189c32274f5cbad04d9c0156ec30566230a5c1a74566d088a66",
+  "case_id": "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X3_88bc1f6f048bf2d718cd2776",
+  "queue_status": "COMPLETE",
+  "attempts": 10,
+  "identity_key": "ecc4987e516c47e9314c48c240c7bc5f3715c1bdc1c968262c53bf3e06d5cb10",
+  "messages_sha256": "bd2f391adad16bd5f02c3015fea57d12a6dd9285647fa9dd5747a12334afebb7",
+  "result_category": "MISSING",
+  "answer_record": {
+    "case_uid": "918ffa57c11fc189c32274f5cbad04d9c0156ec30566230a5c1a74566d088a66",
+    "model": "Qwen/Qwen3-8B",
+    "task": "X3",
+    "identity_key": "ecc4987e516c47e9314c48c240c7bc5f3715c1bdc1c968262c53bf3e06d5cb10",
+    "status": "RESPONSE_RECEIVED",
+    "raw_completion": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+    "finish_reason": "stop",
+    "usage": {
+      "input_tokens": 3508,
+      "output_tokens": 16,
+      "total_tokens": 3524,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 0,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    },
+    "model_output": {
+      "model": "Qwen/Qwen3-8B",
+      "choices": [
+        {
+          "message": {
+            "id": "Bn93oZNsbS8yKxT7FMZU5f",
+            "content": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+            "source": "generate",
+            "metadata": null,
+            "role": "assistant",
+            "tool_calls": null,
+            "model": "Qwen/Qwen3-8B"
+          },
+          "stop_reason": "stop",
+          "stop_details": null,
+          "logprobs": null,
+          "prompt_logprobs": null
+        }
+      ],
+      "completion": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+      "usage": {
+        "input_tokens": 3508,
+        "output_tokens": 16,
+        "total_tokens": 3524,
+        "input_tokens_cache_write": null,
+        "input_tokens_cache_read": 0,
+        "reasoning_tokens": 0,
+        "total_cost": null
+      },
+      "fallback": null,
+      "time": 2.3279999999999745,
+      "metadata": null,
+      "error": null,
+      "response_id": "01a1436b1823fb6e1fc713e10a9cc76d"
+    },
+    "started_at": "2026-10-16T06:34:10.925142+00:00",
+    "completed_at": "2026-10-16T06:34:13.996557+00:00",
+    "messages_sha256": "bd2f391adad16bd5f02c3015fea57d12a6dd9285647fa9dd5747a12334afebb7",
+    "protocol_sha256": "d10b0887dd9ed5544d60a54670a07d52aacebdeb61a3d898ce4dcaabf9314d74",
+    "attempt": 10,
+    "inspect_log_dir": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\X3\\batches\\1086b589d6ae4aaa883e40a67a0a46a8\\inspect_logs",
+    "result": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "MISSING",
+      "reason": "INCORRECT_REJECT_NO_ALLOCATION",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "REJECT is incorrect because a full-space joint feasible solution exists"
+        ],
+        "metrics": {
+          "joint_feasible_decision_accuracy": 0,
+          "delta_tso_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_delta_tso": null,
+        "submitted_wufr": null
+      }
+    },
+    "strict": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "MISSING",
+      "reason": "INCORRECT_REJECT_NO_ALLOCATION",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "REJECT is incorrect because a full-space joint feasible solution exists"
+        ],
+        "metrics": {
+          "joint_feasible_decision_accuracy": 0,
+          "delta_tso_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_delta_tso": null,
+        "submitted_wufr": null
+      }
+    },
+    "graded_at": "2026-10-16T06:34:14.095046+00:00"
+  }
+}

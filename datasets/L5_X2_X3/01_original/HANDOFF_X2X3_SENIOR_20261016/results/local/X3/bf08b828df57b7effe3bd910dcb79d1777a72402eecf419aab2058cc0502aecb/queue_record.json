@@ -1,0 +1,112 @@
+{
+  "task": "X3",
+  "case_uid": "bf08b828df57b7effe3bd910dcb79d1777a72402eecf419aab2058cc0502aecb",
+  "case_id": "X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_8ad24ae416965e1f59469d04",
+  "queue_status": "COMPLETE",
+  "attempts": 1,
+  "identity_key": "01319583664fde029f678e0a309dc6a17eb1087c26c2b1aa06f7492f4743598d",
+  "messages_sha256": "9405c4dd2e4eb9fa67d3897efd9ecbe7461837d8b75b44bd8560959ac3d28473",
+  "result_category": "MISSING",
+  "answer_record": {
+    "case_uid": "bf08b828df57b7effe3bd910dcb79d1777a72402eecf419aab2058cc0502aecb",
+    "model": "Qwen/Qwen3-8B",
+    "task": "X3",
+    "identity_key": "01319583664fde029f678e0a309dc6a17eb1087c26c2b1aa06f7492f4743598d",
+    "status": "RESPONSE_RECEIVED",
+    "raw_completion": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+    "finish_reason": "stop",
+    "usage": {
+      "input_tokens": 6914,
+      "output_tokens": 16,
+      "total_tokens": 8242,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 1312,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    },
+    "model_output": {
+      "model": "Qwen/Qwen3-8B",
+      "choices": [
+        {
+          "message": {
+            "id": "FMrtxA5zKD5i53edsjwyRy",
+            "content": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+            "source": "generate",
+            "metadata": null,
+            "role": "assistant",
+            "tool_calls": null,
+            "model": "Qwen/Qwen3-8B"
+          },
+          "stop_reason": "stop",
+          "stop_details": null,
+          "logprobs": null,
+          "prompt_logprobs": null
+        }
+      ],
+      "completion": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+      "usage": {
+        "input_tokens": 6914,
+        "output_tokens": 16,
+        "total_tokens": 8242,
+        "input_tokens_cache_write": null,
+        "input_tokens_cache_read": 1312,
+        "reasoning_tokens": 0,
+        "total_cost": null
+      },
+      "fallback": null,
+      "time": 4.391000000000076,
+      "metadata": null,
+      "error": null,
+      "response_id": "01a143700574883d5ea196ac2e8417c2"
+    },
+    "started_at": "2026-10-16T06:39:34.194505+00:00",
+    "completed_at": "2026-10-16T06:39:39.303930+00:00",
+    "messages_sha256": "9405c4dd2e4eb9fa67d3897efd9ecbe7461837d8b75b44bd8560959ac3d28473",
+    "protocol_sha256": "d10b0887dd9ed5544d60a54670a07d52aacebdeb61a3d898ce4dcaabf9314d74",
+    "attempt": 1,
+    "inspect_log_dir": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\X3\\batches\\ff6cec9c1c8643d197001d08e99f4060\\inspect_logs",
+    "result": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "MISSING",
+      "reason": "INCORRECT_REJECT_NO_ALLOCATION",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "REJECT is incorrect because a full-space joint feasible solution exists"
+        ],
+        "metrics": {
+          "joint_feasible_decision_accuracy": 0,
+          "delta_tso_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_delta_tso": null,
+        "submitted_wufr": null
+      }
+    },
+    "strict": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "MISSING",
+      "reason": "INCORRECT_REJECT_NO_ALLOCATION",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "REJECT is incorrect because a full-space joint feasible solution exists"
+        ],
+        "metrics": {
+          "joint_feasible_decision_accuracy": 0,
+          "delta_tso_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_delta_tso": null,
+        "submitted_wufr": null
+      }
+    },
+    "graded_at": "2026-10-16T06:39:39.405170+00:00"
+  }
+}

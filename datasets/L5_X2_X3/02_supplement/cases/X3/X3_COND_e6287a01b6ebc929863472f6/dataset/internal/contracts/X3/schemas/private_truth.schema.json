@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "case_id",
+    "task_type",
+    "joint_feasible",
+    "oracle_certification",
+    "optimal_delta_tso",
+    "optimal_wufr_at_optimal_delta_tso",
+    "equivalent_optimum_count",
+    "oracle_search_nodes",
+    "oracle_evaluated_optimal_solutions"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string"
+    },
+    "task_type": {
+      "const": "X3"
+    },
+    "joint_feasible": {
+      "type": "boolean"
+    },
+    "oracle_certification": {
+      "enum": [
+        "EXACT_CERTIFIED",
+        "INFEASIBLE_CERTIFIED"
+      ]
+    },
+    "optimal_delta_tso": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "optimal_wufr_at_optimal_delta_tso": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "equivalent_optimum_count": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "oracle_search_nodes": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "oracle_evaluated_optimal_solutions": {
+      "type": "integer",
+      "minimum": 0
+    }
+  }
+}

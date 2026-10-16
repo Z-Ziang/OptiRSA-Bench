@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "p0/base_scenario.schema.json",
+  "title": "BaseScenario",
+  "type": "object",
+  "properties": {
+    "base_scenario_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "topology_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "resource_state_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "initial_existing_connection_set_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "request_data_type": {
+      "type": "string",
+      "enum": [
+        "SINGLE",
+        "CONCURRENT",
+        "DYNAMIC",
+        "NONE"
+      ]
+    },
+    "request_data_id": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "base_scenario_id",
+    "topology_id",
+    "request_data_type"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "required": [
+          "resource_state_id"
+        ]
+      },
+      "then": {
+        "required": [
+          "initial_existing_connection_set_id"
+        ]
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "initial_existing_connection_set_id"
+        ]
+      },
+      "then": {
+        "required": [
+          "resource_state_id"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "request_data_type": {
+            "const": "NONE"
+          }
+        },
+        "required": [
+          "request_data_type"
+        ]
+      },
+      "then": {
+        "not": {
+          "required": [
+            "request_data_id"
+          ]
+        }
+      },
+      "else": {
+        "required": [
+          "request_data_id"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "request_data_type": {
+            "const": "DYNAMIC"
+          }
+        },
+        "required": [
+          "request_data_type"
+        ]
+      },
+      "then": {
+        "required": [
+          "resource_state_id",
+          "initial_existing_connection_set_id"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "task": "X2",
+  "case_uid": "e0a4655a42362d22f4908e15bb6814c8a9b8f612bf3d762b550b96e7ce8335db",
+  "case_id": "X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X2_6333101f6579200a3a5ee6cf",
+  "queue_status": "COMPLETE",
+  "attempts": 6,
+  "identity_key": "c5baa84bc3dcac81fb1591e15af6cd1223167cdc8102d72dac68e3e789f7ef83",
+  "messages_sha256": "279135454db3301bafa371f03aae234e07a50b01f46e168edebde89f9ee21c4f",
+  "result_category": "INFEASIBLE",
+  "answer_record": {
+    "case_uid": "e0a4655a42362d22f4908e15bb6814c8a9b8f612bf3d762b550b96e7ce8335db",
+    "model": "Qwen/Qwen3-8B",
+    "task": "X2",
+    "identity_key": "c5baa84bc3dcac81fb1591e15af6cd1223167cdc8102d72dac68e3e789f7ef83",
+    "status": "RESPONSE_RECEIVED",
+    "raw_completion": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [3, 6, 7],\n  \"path_link_ids\": [10, 18],\n  \"slot_start\": 2\n}",
+    "finish_reason": "stop",
+    "usage": {
+      "input_tokens": 2565,
+      "output_tokens": 46,
+      "total_tokens": 3507,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 896,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    },
+    "model_output": {
+      "model": "Qwen/Qwen3-8B",
+      "choices": [
+        {
+          "message": {
+            "id": "Nii9n89VjYiCJjyd7Pt2VG",
+            "content": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [3, 6, 7],\n  \"path_link_ids\": [10, 18],\n  \"slot_start\": 2\n}",
+            "source": "generate",
+            "metadata": null,
+            "role": "assistant",
+            "tool_calls": null,
+            "model": "Qwen/Qwen3-8B"
+          },
+          "stop_reason": "stop",
+          "stop_details": null,
+          "logprobs": null,
+          "prompt_logprobs": null
+        }
+      ],
+      "completion": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [3, 6, 7],\n  \"path_link_ids\": [10, 18],\n  \"slot_start\": 2\n}",
+      "usage": {
+        "input_tokens": 2565,
+        "output_tokens": 46,
+        "total_tokens": 3507,
+        "input_tokens_cache_write": null,
+        "input_tokens_cache_read": 896,
+        "reasoning_tokens": 0,
+        "total_cost": null
+      },
+      "fallback": null,
+      "time": 2.844000000000051,
+      "metadata": null,
+      "error": null,
+      "response_id": "01a1436be21e9aff045c35b1bd3ff65f"
+    },
+    "started_at": "2026-10-16T06:35:02.848666+00:00",
+    "completed_at": "2026-10-16T06:35:06.564004+00:00",
+    "messages_sha256": "279135454db3301bafa371f03aae234e07a50b01f46e168edebde89f9ee21c4f",
+    "protocol_sha256": "2b0ac75ecc79a0b46b67708530f57709f9760617d21b8f55d7c3d9dd952df2e5",
+    "attempt": 6,
+    "inspect_log_dir": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\X2\\batches\\ba72d28497854f509b475e3c88377937\\inspect_logs",
+    "result": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "INFEASIBLE",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "submitted allocation is not spectrum-feasible"
+        ],
+        "metrics": {
+          "feasible_decision_accuracy": 0,
+          "hop_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_hop_count": null,
+        "submitted_wufr": null
+      }
+    },
+    "strict": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "INFEASIBLE",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "submitted allocation is not spectrum-feasible"
+        ],
+        "metrics": {
+          "feasible_decision_accuracy": 0,
+          "hop_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_hop_count": null,
+        "submitted_wufr": null
+      }
+    },
+    "graded_at": "2026-10-16T06:35:06.665825+00:00"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "case_uid": "4e7eb907c47428e119370a6e950d5a9aedb519d377804ec0f65e02525a3317b7",
+  "model": "Qwen/Qwen3-8B",
+  "task": "X3",
+  "identity_key": "b3d9a0d33d1cc8c8a9cc0c6a8b683824efbf73bd78fb3d9764251c02afc5b33a",
+  "status": "RESPONSE_RECEIVED",
+  "raw_completion": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "input_tokens": 11534,
+    "output_tokens": 16,
+    "total_tokens": 11550,
+    "input_tokens_cache_write": null,
+    "input_tokens_cache_read": 0,
+    "reasoning_tokens": 0,
+    "total_cost": null
+  },
+  "model_output": {
+    "model": "Qwen/Qwen3-8B",
+    "choices": [
+      {
+        "message": {
+          "id": "9YZhvuHb9i7hJPoR3BnDGv",
+          "content": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+          "source": "generate",
+          "metadata": null,
+          "role": "assistant",
+          "tool_calls": null,
+          "model": "Qwen/Qwen3-8B"
+        },
+        "stop_reason": "stop",
+        "stop_details": null,
+        "logprobs": null,
+        "prompt_logprobs": null
+      }
+    ],
+    "completion": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+    "usage": {
+      "input_tokens": 11534,
+      "output_tokens": 16,
+      "total_tokens": 11550,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 0,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    },
+    "fallback": null,
+    "time": 12.780999999999949,
+    "metadata": null,
+    "error": null,
+    "response_id": "01a14363e29ea0bdc5084fb82be74c2d"
+  },
+  "started_at": "2026-10-16T06:26:19.323222+00:00",
+  "completed_at": "2026-10-16T06:26:32.249796+00:00",
+  "messages_sha256": "7a985c1fb06ad278e0d2839f42f4dc2dfc706e4dbcae553d8dca0da5000dee36",
+  "protocol_sha256": "bb324b12f6c16fbc54819cf90aca965fde79a48f86c53729601a3f5bff77c4d0",
+  "attempt": 1,
+  "inspect_log_dir": "F:\\codex\\BENCHMARK\\BENCHMARK9.19\\OptiRSA_EXTERNAL_600_20261016_111920\\OptiRSA_EXTERNAL_600_20261016_111920_NO_THINKING\\output\\tasks\\X3\\batches\\c723616152834e7e97c96d7669dc48aa\\inspect_logs",
+  "result": {
+    "truth_feasible": false,
+    "single_outer_fence_removed": false,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+    "category": "CORRECT",
+    "correct_reject": true,
+    "result_kind": "CERTIFIED_REJECT",
+    "validator": {
+      "valid": true,
+      "errors": [],
+      "metrics": {
+        "joint_feasible_decision_accuracy": 1,
+        "delta_tso_gap": null,
+        "wufr_gap": null
+      },
+      "submitted_delta_tso": null,
+      "submitted_wufr": null
+    }
+  },
+  "strict": {
+    "truth_feasible": false,
+    "single_outer_fence_removed": false,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+    "category": "CORRECT",
+    "correct_reject": true,
+    "result_kind": "CERTIFIED_REJECT",
+    "validator": {
+      "valid": true,
+      "errors": [],
+      "metrics": {
+        "joint_feasible_decision_accuracy": 1,
+        "delta_tso_gap": null,
+        "wufr_gap": null
+      },
+      "submitted_delta_tso": null,
+      "submitted_wufr": null
+    }
+  },
+  "graded_at": "2026-10-16T06:26:32.314126+00:00"
+}

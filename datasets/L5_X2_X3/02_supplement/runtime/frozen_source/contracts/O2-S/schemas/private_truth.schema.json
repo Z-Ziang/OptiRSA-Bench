@@ -1,0 +1,221 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "case_id",
+    "task_type",
+    "feasible",
+    "optimal_wufr",
+    "reference_output",
+    "objective_contract_id",
+    "optimal_hop_count",
+    "oracle_certification",
+    "solver_work"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string"
+    },
+    "task_type": {
+      "const": "O2-S"
+    },
+    "feasible": {
+      "type": "boolean"
+    },
+    "optimal_wufr": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "equivalent_optimum_count": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "reference_output": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "decision",
+        "path_rank",
+        "slot_start"
+      ],
+      "properties": {
+        "decision": {
+          "enum": [
+            "ACCEPT",
+            "REJECT"
+          ]
+        },
+        "path_rank": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "slot_start": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "decision": {
+                "const": "REJECT"
+              }
+            },
+            "required": [
+              "decision"
+            ]
+          },
+          "then": {
+            "properties": {
+              "path_rank": {
+                "type": "null"
+              },
+              "slot_start": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "decision": {
+                "const": "ACCEPT"
+              }
+            },
+            "required": [
+              "decision"
+            ]
+          },
+          "then": {
+            "properties": {
+              "path_rank": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "slot_start": {
+                "type": "integer",
+                "minimum": 0
+              }
+            }
+          }
+        }
+      ]
+    },
+    "objective_contract_id": {
+      "const": "O2-S_CASE_CONTRACT_V2_0_LEXICOGRAPHIC"
+    },
+    "optimal_hop_count": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "oracle_certification": {
+      "enum": [
+        "EXACT_CERTIFIED",
+        "INFEASIBLE_CERTIFIED"
+      ]
+    },
+    "solver_work": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "search_nodes",
+        "evaluated_complete_solutions",
+        "evaluated_primary_solutions",
+        "evaluated_secondary_solutions"
+      ],
+      "properties": {
+        "search_nodes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "evaluated_complete_solutions": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "evaluated_primary_solutions": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "evaluated_secondary_solutions": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "feasible": {
+            "const": true
+          }
+        },
+        "required": [
+          "feasible"
+        ]
+      },
+      "then": {
+        "properties": {
+          "optimal_hop_count": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "optimal_wufr": {
+            "type": "number",
+            "minimum": 0
+          },
+          "oracle_certification": {
+            "const": "EXACT_CERTIFIED"
+          },
+          "reference_output": {
+            "properties": {
+              "decision": {
+                "const": "ACCEPT"
+              }
+            }
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "optimal_hop_count": {
+            "type": "null"
+          },
+          "optimal_wufr": {
+            "type": "null"
+          },
+          "oracle_certification": {
+            "const": "INFEASIBLE_CERTIFIED"
+          },
+          "reference_output": {
+            "properties": {
+              "decision": {
+                "const": "REJECT"
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

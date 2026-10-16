@@ -1,0 +1,100 @@
+{
+  "case_uid": "c3398386edffa311e9b7c61a9c505752f11b6585431553d49dd7f900ff7911ac",
+  "model": "Qwen/Qwen3-8B",
+  "task": "X3",
+  "identity_key": "da3b5834db3ec8d725bc620dec5e5c9b930439714fc76ca184c99001b87f25aa",
+  "status": "RESPONSE_RECEIVED",
+  "raw_completion": "{\n  \"decision\": \"ACCEPT\",\n  \"allocations\": [\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_5_ATMNET_000282\",\n      \"path_node_ids\": [14, 0, 3, 2, 12],\n      \"path_link_ids\": [36, 2, 6, 8],\n      \"slot_start\": 37\n    },\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_5_ATMNET_000347\",\n      \"path_node_ids\": [17, 10, 15, 14],\n      \"path_link_ids\": [26, 24, 36],\n      \"slot_start\": 220\n    }\n  ]\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "input_tokens": 6544,
+    "output_tokens": 184,
+    "total_tokens": 6728,
+    "input_tokens_cache_write": null,
+    "input_tokens_cache_read": 0,
+    "reasoning_tokens": 0,
+    "total_cost": null
+  },
+  "model_output": {
+    "model": "Qwen/Qwen3-8B",
+    "choices": [
+      {
+        "message": {
+          "id": "guWVsEHFBxvUP8uDknNpDF",
+          "content": "{\n  \"decision\": \"ACCEPT\",\n  \"allocations\": [\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_5_ATMNET_000282\",\n      \"path_node_ids\": [14, 0, 3, 2, 12],\n      \"path_link_ids\": [36, 2, 6, 8],\n      \"slot_start\": 37\n    },\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_5_ATMNET_000347\",\n      \"path_node_ids\": [17, 10, 15, 14],\n      \"path_link_ids\": [26, 24, 36],\n      \"slot_start\": 220\n    }\n  ]\n}",
+          "source": "generate",
+          "metadata": null,
+          "role": "assistant",
+          "tool_calls": null,
+          "model": "Qwen/Qwen3-8B"
+        },
+        "stop_reason": "stop",
+        "stop_details": null,
+        "logprobs": null,
+        "prompt_logprobs": null
+      }
+    ],
+    "completion": "{\n  \"decision\": \"ACCEPT\",\n  \"allocations\": [\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_5_ATMNET_000282\",\n      \"path_node_ids\": [14, 0, 3, 2, 12],\n      \"path_link_ids\": [36, 2, 6, 8],\n      \"slot_start\": 37\n    },\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_5_ATMNET_000347\",\n      \"path_node_ids\": [17, 10, 15, 14],\n      \"path_link_ids\": [26, 24, 36],\n      \"slot_start\": 220\n    }\n  ]\n}",
+    "usage": {
+      "input_tokens": 6544,
+      "output_tokens": 184,
+      "total_tokens": 6728,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 0,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    },
+    "fallback": null,
+    "time": 16.202999999999975,
+    "metadata": null,
+    "error": null,
+    "response_id": "01a14372260e843ec3a5b754e8d703cd"
+  },
+  "started_at": "2026-10-16T06:41:53.714331+00:00",
+  "completed_at": "2026-10-16T06:42:10.502204+00:00",
+  "messages_sha256": "1d9adccd2c2305f6a2e748bb1e6a0fc1bf303d36d0c07afb4b5eaadd8103b3ef",
+  "protocol_sha256": "d10b0887dd9ed5544d60a54670a07d52aacebdeb61a3d898ce4dcaabf9314d74",
+  "attempt": 1,
+  "inspect_log_dir": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\X3\\batches\\c143cba973c641b28cd2e87ae219a510\\inspect_logs",
+  "result": {
+    "truth_feasible": true,
+    "single_outer_fence_removed": false,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+    "category": "INFEASIBLE",
+    "validator": {
+      "valid": false,
+      "errors": [
+        "req_TB_REAL%3A%3ATOP_5_ATMNET_000282: path links are not directionally contiguous"
+      ],
+      "metrics": {
+        "joint_feasible_decision_accuracy": 0,
+        "delta_tso_gap": null,
+        "wufr_gap": null
+      },
+      "submitted_delta_tso": null,
+      "submitted_wufr": null
+    }
+  },
+  "strict": {
+    "truth_feasible": true,
+    "single_outer_fence_removed": false,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+    "category": "INFEASIBLE",
+    "validator": {
+      "valid": false,
+      "errors": [
+        "req_TB_REAL%3A%3ATOP_5_ATMNET_000282: path links are not directionally contiguous"
+      ],
+      "metrics": {
+        "joint_feasible_decision_accuracy": 0,
+        "delta_tso_gap": null,
+        "wufr_gap": null
+      },
+      "submitted_delta_tso": null,
+      "submitted_wufr": null
+    }
+  },
+  "graded_at": "2026-10-16T06:42:10.604322+00:00"
+}

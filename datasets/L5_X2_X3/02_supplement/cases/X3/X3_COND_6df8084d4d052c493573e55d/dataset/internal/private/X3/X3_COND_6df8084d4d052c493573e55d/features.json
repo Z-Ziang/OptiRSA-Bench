@@ -1,0 +1,214 @@
+{
+  "directed_link_count": 164,
+  "max_required_slots": 2,
+  "mean_required_slots": 2.0,
+  "node_count": 48,
+  "oracle_action_counts": {
+    "req_e5ad62b3d73e006f20079944": 117925,
+    "req_ed5edf0c91d2c867e1896222": 318634
+  },
+  "oracle_evaluated_optimal_solutions": 12,
+  "oracle_path_counts": {
+    "req_e5ad62b3d73e006f20079944": 82425,
+    "req_ed5edf0c91d2c867e1896222": 314630
+  },
+  "oracle_search_nodes": 34,
+  "reference_algorithms": {
+    "algorithm_1_sp_ff": {
+      "delta_tso": 34,
+      "output": {
+        "allocations": [
+          {
+            "path_link_ids": [
+              163,
+              157,
+              154,
+              143,
+              137,
+              133,
+              115,
+              95,
+              89,
+              81
+            ],
+            "path_node_ids": [
+              47,
+              46,
+              43,
+              44,
+              38,
+              37,
+              36,
+              30,
+              24,
+              23,
+              20
+            ],
+            "request_id": "req_ed5edf0c91d2c867e1896222",
+            "slot_start": 184
+          },
+          {
+            "path_link_ids": [
+              133,
+              115,
+              95,
+              89,
+              81,
+              45,
+              35
+            ],
+            "path_node_ids": [
+              37,
+              36,
+              30,
+              24,
+              23,
+              20,
+              9,
+              8
+            ],
+            "request_id": "req_e5ad62b3d73e006f20079944",
+            "slot_start": 134
+          }
+        ],
+        "decision": "ACCEPT"
+      },
+      "post_wufr": 0.7937410244000503
+    },
+    "algorithm_2_ksp5_ff": {
+      "delta_tso": 34,
+      "output": {
+        "allocations": [
+          {
+            "path_link_ids": [
+              163,
+              157,
+              154,
+              143,
+              137,
+              133,
+              115,
+              95,
+              89,
+              81
+            ],
+            "path_node_ids": [
+              47,
+              46,
+              43,
+              44,
+              38,
+              37,
+              36,
+              30,
+              24,
+              23,
+              20
+            ],
+            "request_id": "req_ed5edf0c91d2c867e1896222",
+            "slot_start": 184
+          },
+          {
+            "path_link_ids": [
+              133,
+              115,
+              95,
+              89,
+              81,
+              45,
+              35
+            ],
+            "path_node_ids": [
+              37,
+              36,
+              30,
+              24,
+              23,
+              20,
+              9,
+              8
+            ],
+            "request_id": "req_e5ad62b3d73e006f20079944",
+            "slot_start": 134
+          }
+        ],
+        "decision": "ACCEPT"
+      },
+      "post_wufr": 0.7937410244000503
+    },
+    "algorithm_3_joint_backtrack_k12": {
+      "delta_tso": 34,
+      "output": {
+        "allocations": [
+          {
+            "path_link_ids": [
+              163,
+              161,
+              159,
+              143,
+              140,
+              135,
+              115,
+              95,
+              89,
+              81
+            ],
+            "path_node_ids": [
+              47,
+              46,
+              45,
+              44,
+              38,
+              39,
+              36,
+              30,
+              24,
+              23,
+              20
+            ],
+            "request_id": "req_ed5edf0c91d2c867e1896222",
+            "slot_start": 184
+          },
+          {
+            "path_link_ids": [
+              133,
+              115,
+              95,
+              89,
+              81,
+              45,
+              35
+            ],
+            "path_node_ids": [
+              37,
+              36,
+              30,
+              24,
+              23,
+              20,
+              9,
+              8
+            ],
+            "request_id": "req_e5ad62b3d73e006f20079944",
+            "slot_start": 134
+          }
+        ],
+        "decision": "ACCEPT"
+      },
+      "post_wufr": 0.7937264814276189
+    }
+  },
+  "request_count": 2,
+  "resource_pressure": 0.350038109756,
+  "serialization_metrics": {
+    "canonical_tokenizer": {
+      "backend": "tiktoken",
+      "encoding": "o200k_base",
+      "package_version": "0.14.0"
+    },
+    "llm_prompt_char_count": 35442,
+    "llm_prompt_token_count": 14557,
+    "llm_prompt_utf8_bytes": 35772
+  },
+  "total_required_slots": 4
+}

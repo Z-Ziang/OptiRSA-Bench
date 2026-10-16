@@ -1,0 +1,115 @@
+{
+  "case_uid": "0fde9ef256879cd07faf75742e2c8a674a7ccd105418ce3bed1a46b20ad26ce4",
+  "model": "Qwen/Qwen3-8B",
+  "binding": {
+    "time": 1792061666.960883,
+    "job": "X2_qwen3_8b_w2",
+    "case_uid": "0fde9ef256879cd07faf75742e2c8a674a7ccd105418ce3bed1a46b20ad26ce4",
+    "messages_sha256": "169fd727670bf91c851a76bf3a4087b9bb0347baa731db4e46b30790d526b2fd",
+    "model": "Qwen/Qwen3-8B",
+    "protocol_sha256": "90150c7705cc43c48830c2f5e5cd487ec7c65fa777f4541654da6075d65199bc",
+    "attempt": 4
+  },
+  "raw_completion": "\n\n{\n  \"decision\": \"REJECT\",\n  \"path_node_ids\": [],\n  \"path_link_ids\": [],\n  \"slot_start\": null\n}",
+  "status": "RESPONSE_RECEIVED",
+  "usage": {
+    "openai-api/Qwen/Qwen3-8B": {
+      "input_tokens": 10735,
+      "output_tokens": 16015,
+      "total_tokens": 26750,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 0,
+      "reasoning_tokens": 15983,
+      "total_cost": null
+    }
+  },
+  "started_at": "2026-10-15T10:54:27.243586+00:00",
+  "completed_at": "2026-10-15T11:02:55.764980+00:00",
+  "total_seconds": 508.521,
+  "result": {
+    "truth_feasible": true,
+    "single_outer_fence_removed": false,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+    "category": "MISSING",
+    "reason": "INCORRECT_REJECT_NO_ALLOCATION",
+    "validator": {
+      "valid": false,
+      "errors": [
+        "REJECT is incorrect because a full-space feasible RSA action exists"
+      ],
+      "metrics": {
+        "feasible_decision_accuracy": 0,
+        "hop_gap": null,
+        "wufr_gap": null
+      },
+      "submitted_hop_count": null,
+      "submitted_wufr": null
+    }
+  },
+  "strict": {
+    "truth_feasible": true,
+    "single_outer_fence_removed": false,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+    "category": "MISSING",
+    "reason": "INCORRECT_REJECT_NO_ALLOCATION",
+    "validator": {
+      "valid": false,
+      "errors": [
+        "REJECT is incorrect because a full-space feasible RSA action exists"
+      ],
+      "metrics": {
+        "feasible_decision_accuracy": 0,
+        "hop_gap": null,
+        "wufr_gap": null
+      },
+      "submitted_hop_count": null,
+      "submitted_wufr": null
+    }
+  },
+  "_source_file": "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/QWEN3_API_AUTH_RECOVERY_20261015_173201_647650/jobs/X2_qwen3_8b_w2/0fde9ef256879cd07faf75742e2c8a674a7ccd105418ce3bed1a46b20ad26ce4_attempt4/answer.json",
+  "_all_source_files": [
+    "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/QWEN3_API_AUTH_RECOVERY_20261015_173201_647650/jobs/X2_qwen3_8b_w2/0fde9ef256879cd07faf75742e2c8a674a7ccd105418ce3bed1a46b20ad26ce4_attempt4/answer.json"
+  ],
+  "_case_metadata": {
+    "node_count": "35",
+    "scale": "30-59",
+    "occupancy": "0.35008012820512824",
+    "load_band": "MID",
+    "decision": "ACCEPT",
+    "request_count": "1",
+    "requested_slots": "[9]",
+    "seed": "UNKNOWN",
+    "snapshot_id": "rs_TB_REAL%3A%3ATOP_68_NETWORKUSA_kspff_medium_seed01",
+    "request_ids": "[\"req_TB_REAL%3A%3ATOP_68_NETWORKUSA_000866\"]",
+    "source_category": "real",
+    "producer_version": "UNKNOWN",
+    "contract_version": "UNKNOWN",
+    "primary_objective": "LEX_MIN_HOPS_THEN_WUFR_FULL_PATH",
+    "certificate": "EXACT_CERTIFIED",
+    "oracle_status": "EXACT_CERTIFIED",
+    "exposed": "0",
+    "split": "DEVELOPMENT_UNASSESSED",
+    "input_tokens": "UNKNOWN_NOT_MEASURED",
+    "case_uid": "0fde9ef256879cd07faf75742e2c8a674a7ccd105418ce3bed1a46b20ad26ce4",
+    "case_id": "X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_RECOVER_HANDOFF_R33_STATIC_X2_61487a0bbd6ba45dc90f6362",
+    "task": "X2",
+    "topology_id": "top_TB_REAL%3A%3ATOP_68_NETWORKUSA",
+    "topology_folder": "NETWORKUSA_n35_TB68",
+    "graph_hash": "0309da7a2c8ac687756dbba570a5ce887dfdf455285531ea26081bc7d568d297",
+    "snapshot_hash": "9b10b69a80c63448d896a281033322c3f7368b9c114fc1e50a4d96044a3a3b13",
+    "case_dir": "case_sets/NETWORKUSA_n35_TB68/X2/0fde9ef256879cd0",
+    "family_ids": [
+      "F_eb77733ff97126354c766ab25aa185f3ef0a780ea929d7d02ae30bcae2a327c4"
+    ],
+    "messages_sha256": "169fd727670bf91c851a76bf3a4087b9bb0347baa731db4e46b30790d526b2fd",
+    "input_characters": 18984,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "validator_sha256": "31660b7c47b6875d4332ec8212cfea2bae583ae029b60ce6da54bf0a48393a32"
+  },
+  "identity_key": "b349d851d8d3a072238641f3474e93865e1d3f6820ddedec8b71d4862c6ac3fb",
+  "historical": true,
+  "history_answer_count": 1,
+  "historical_selection": "latest received response from FINAL; not normalized formal authority"
+}

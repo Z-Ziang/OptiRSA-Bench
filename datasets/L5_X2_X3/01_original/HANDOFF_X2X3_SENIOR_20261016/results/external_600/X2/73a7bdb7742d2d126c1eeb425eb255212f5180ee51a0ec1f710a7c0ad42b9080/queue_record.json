@@ -1,0 +1,160 @@
+{
+  "task": "X2",
+  "case_uid": "73a7bdb7742d2d126c1eeb425eb255212f5180ee51a0ec1f710a7c0ad42b9080",
+  "case_id": "X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_RECOVER_HANDOFF_R33_STATIC_X2_b1e875300529c4aa42b2a283",
+  "queue_status": "COMPLETE",
+  "attempts": 1,
+  "identity_key": "5e96b329aedd7c50d0b3041544f6920e5074d64985605f88118e7eb3388a1820",
+  "messages_sha256": "c2a7f6d5f84261066dc491a72593c14aa0301e50264acaef9f827b455f3ab99c",
+  "result_category": "INFEASIBLE",
+  "answer_record": {
+    "case_uid": "73a7bdb7742d2d126c1eeb425eb255212f5180ee51a0ec1f710a7c0ad42b9080",
+    "model": "Qwen/Qwen3-8B",
+    "task": "X2",
+    "identity_key": "5e96b329aedd7c50d0b3041544f6920e5074d64985605f88118e7eb3388a1820",
+    "status": "RESPONSE_RECEIVED",
+    "raw_completion": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [13, 12, 23, 22, 21, 19, 15, 16, 17, 18, 20, 11],\n  \"path_link_ids\": [34, 33, 57, 54, 52, 50, 42, 41, 46, 48, 51, 22],\n  \"slot_start\": 2\n}",
+    "finish_reason": "stop",
+    "usage": {
+      "input_tokens": 11459,
+      "output_tokens": 125,
+      "total_tokens": 11584,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 0,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    },
+    "model_output": {
+      "model": "Qwen/Qwen3-8B",
+      "choices": [
+        {
+          "message": {
+            "id": "dWPh27XtSADVihX9HyTWBM",
+            "content": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [13, 12, 23, 22, 21, 19, 15, 16, 17, 18, 20, 11],\n  \"path_link_ids\": [34, 33, 57, 54, 52, 50, 42, 41, 46, 48, 51, 22],\n  \"slot_start\": 2\n}",
+            "source": "generate",
+            "metadata": null,
+            "role": "assistant",
+            "tool_calls": null,
+            "model": "Qwen/Qwen3-8B"
+          },
+          "stop_reason": "stop",
+          "stop_details": null,
+          "logprobs": null,
+          "prompt_logprobs": null
+        }
+      ],
+      "completion": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [13, 12, 23, 22, 21, 19, 15, 16, 17, 18, 20, 11],\n  \"path_link_ids\": [34, 33, 57, 54, 52, 50, 42, 41, 46, 48, 51, 22],\n  \"slot_start\": 2\n}",
+      "usage": {
+        "input_tokens": 11459,
+        "output_tokens": 125,
+        "total_tokens": 11584,
+        "input_tokens_cache_write": null,
+        "input_tokens_cache_read": 0,
+        "reasoning_tokens": 0,
+        "total_cost": null
+      },
+      "fallback": null,
+      "time": 6.186999999999898,
+      "metadata": null,
+      "error": null,
+      "response_id": "01a143654cc91d4e6fea5e31dcd9e9fd"
+    },
+    "started_at": "2026-10-16T06:27:52.099734+00:00",
+    "completed_at": "2026-10-16T06:27:58.451828+00:00",
+    "messages_sha256": "c2a7f6d5f84261066dc491a72593c14aa0301e50264acaef9f827b455f3ab99c",
+    "protocol_sha256": "f425958ba4de453deeef9403d499b323c156386dd5edee911eb652cbcd1824a3",
+    "attempt": 1,
+    "inspect_log_dir": "F:\\codex\\BENCHMARK\\BENCHMARK9.19\\OptiRSA_EXTERNAL_600_20261016_111920\\OptiRSA_EXTERNAL_600_20261016_111920_NO_THINKING\\output\\tasks\\X2\\batches\\dccf1ff70dcb4a148842ff134a21e5ee\\inspect_logs",
+    "result": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "INFEASIBLE",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "path links are not directionally contiguous"
+        ],
+        "metrics": {
+          "feasible_decision_accuracy": 0,
+          "hop_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_hop_count": null,
+        "submitted_wufr": null
+      }
+    },
+    "strict": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "INFEASIBLE",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "path links are not directionally contiguous"
+        ],
+        "metrics": {
+          "feasible_decision_accuracy": 0,
+          "hop_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_hop_count": null,
+        "submitted_wufr": null
+      }
+    },
+    "graded_at": "2026-10-16T06:27:58.533220+00:00",
+    "_case_metadata": {
+      "case_dir": "case_sets/METRONA_n33_TB65/X2/73a7bdb7742d2d12",
+      "case_id": "X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_RECOVER_HANDOFF_R33_STATIC_X2_b1e875300529c4aa42b2a283",
+      "case_uid": "73a7bdb7742d2d126c1eeb425eb255212f5180ee51a0ec1f710a7c0ad42b9080",
+      "certificate": "EXACT_CERTIFIED",
+      "contract_version": "UNKNOWN",
+      "decision": "ACCEPT",
+      "exposed": "0",
+      "family_ids": [
+        "F_c1733a87893971913845f3527e76fc5ff605e13367b8dfbc7599fc8cd0a8477d"
+      ],
+      "graph_hash": "bebeeace6ea4bd1a6ff5c54b97ea456f5ecaf189e3cf272abcacf018227d184a",
+      "hop_stratum": "HOP2_BASELINE",
+      "input_characters": 19956,
+      "input_tokens": "UNKNOWN_NOT_MEASURED",
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "load_band": "MID",
+      "messages_sha256": "c2a7f6d5f84261066dc491a72593c14aa0301e50264acaef9f827b455f3ab99c",
+      "node_count": "33",
+      "occupancy": "0.35076219512195117",
+      "oracle_status": "EXACT_CERTIFIED",
+      "origin": "FORMAL",
+      "primary_objective": "LEX_MIN_HOPS_THEN_WUFR_FULL_PATH",
+      "producer_version": "UNKNOWN",
+      "request_count": "1",
+      "request_ids": "[\"req_TB_REAL%3A%3ATOP_65_METRONA_000428\"]",
+      "requested_slots": "[2]",
+      "scale": "30-59",
+      "seed": "UNKNOWN",
+      "selection_scale": "30-37",
+      "selection_version": "MID_5TO60_HOP_GE2_BASELINE10PCT_R1",
+      "shortest_hops": [
+        2
+      ],
+      "snapshot_hash": "14d589027ab94671387d2d11feee87505fd4935e5ba4b9e091be89455757d97c",
+      "snapshot_id": "rs_TB_REAL%3A%3ATOP_65_METRONA_kspff_medium_seed01",
+      "source_category": "real",
+      "source_member": "OptiRSA_Bench_L5_X2_X3/case_sets/METRONA_n33_TB65/X2/73a7bdb7742d2d12/private/root_case.json",
+      "source_root_sha256": "0ca8bb18cf45b041a68a2654883b79e888d73b2ca1e85e924502a4c9379dc218",
+      "split": "DEVELOPMENT_UNASSESSED",
+      "task": "X2",
+      "topology_folder": "METRONA_n33_TB65",
+      "topology_id": "top_TB_REAL%3A%3ATOP_65_METRONA",
+      "validator_sha256": "31660b7c47b6875d4332ec8212cfea2bae583ae029b60ce6da54bf0a48393a32",
+      "science_sha256": "176b3e4b776e7a0430f1028ab0e0683a7d288b9ee40640583705f5c869aa6a7b",
+      "dataset_root": "F:\\codex\\BENCHMARK\\BENCHMARK9.19\\OptiRSA_EXTERNAL_600_20261016_111920\\OptiRSA_EXTERNAL_600_20261016_111920_NO_THINKING\\datasets\\X2X3_MID_R1",
+      "runtime_sha256": "e862943fc4905438d560cabe092aa58af636bae5616cc55a4e4cd9847b5e99d4",
+      "adapter_sha256": "757f93e61f8d50a46974e27ba03d9811024baa745dc48ac5a7328da907d71169"
+    },
+    "queue_status": "COMPLETE"
+  }
+}

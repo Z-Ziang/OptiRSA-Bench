@@ -1,0 +1,19 @@
+{
+  "version": "R1",
+  "seed": "OptiRSA_HOP2_BASELINE_MID_5TO60_20261016_R1",
+  "population": "8340 original plus 191 audited historical additions",
+  "scope": "English N5-60 MID; X2 R1, X3 R2",
+  "mandatory": "Exclude any OD shortest_hops <2; retain all eligible >=3-hop candidates",
+  "hop2_target": "Each task x selection size bin: floor(GE3_count/9), capped by availability",
+  "hop2_strata": [
+    "topology_id",
+    "truth_decision",
+    "widths"
+  ],
+  "allocation": "Proportional largest remainder, deterministic hash tie breaks; no minimum cell allocation",
+  "within_stratum": "Prefer available exact source member relationships, then deterministic hash rank; X3 sampled first, X2 prefers selected X3 counterparts within fixed strata quotas",
+  "difficulty": "Hop categories describe span, not frozen difficulty labels",
+  "original_sources_modified": false,
+  "interface": "Preserve source REVIEW; supplementary interface REVIEW_SOURCE_INTERFACE_BINDING. No formal interface approval inferred",
+  "source_artifact_sha256_manifest": "provenance/source_archive_sha256.csv"
+}

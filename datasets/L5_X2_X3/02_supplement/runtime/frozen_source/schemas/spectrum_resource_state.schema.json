@@ -1,0 +1,158 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "p0/spectrum_resource_state.schema.json",
+  "title": "SpectrumResourceState",
+  "type": "object",
+  "properties": {
+    "resource_state_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "topology_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reference_time": {
+      "type": "number",
+      "minimum": 0
+    },
+    "slot_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "initial_existing_connection_set_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "link_spectrum_states": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/LinkSpectrumState"
+      }
+    },
+    "spectrum_state_metrics": {
+      "$ref": "#/$defs/SpectrumStateMetrics"
+    }
+  },
+  "required": [
+    "resource_state_id",
+    "topology_id",
+    "reference_time",
+    "slot_count",
+    "initial_existing_connection_set_id",
+    "link_spectrum_states",
+    "spectrum_state_metrics"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "LinkSpectrumState": {
+      "type": "object",
+      "properties": {
+        "link_id": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "slot_availability": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "integer",
+            "enum": [
+              0,
+              1
+            ]
+          }
+        }
+      },
+      "required": [
+        "link_id",
+        "slot_availability"
+      ],
+      "additionalProperties": false
+    },
+    "SpectrumStateMetrics": {
+      "type": "object",
+      "properties": {
+        "network_spectrum_utilization": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "max_link_utilization": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "p90_link_utilization": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "link_utilization_variance": {
+          "type": "number",
+          "minimum": 0
+        },
+        "mean_link_external_fragmentation": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "link_spectrum_metrics": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/LinkSpectrumMetrics"
+          }
+        }
+      },
+      "required": [
+        "network_spectrum_utilization",
+        "max_link_utilization",
+        "p90_link_utilization",
+        "link_utilization_variance",
+        "link_spectrum_metrics"
+      ],
+      "additionalProperties": false
+    },
+    "LinkSpectrumMetrics": {
+      "type": "object",
+      "properties": {
+        "link_id": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "link_utilization": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "free_slot_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "free_block_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "largest_free_block_length": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "external_fragmentation": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": [
+        "link_id",
+        "link_utilization",
+        "free_slot_count",
+        "free_block_count",
+        "largest_free_block_length"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "task": "X2",
+  "case_uid": "6180eec5958ec750d4501e6e4418ff6aec89fe67a4bdd226860fc426ad4d0d1f",
+  "case_id": "X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_RECOVER_HANDOFF_R33_STATIC_X2_be8db812e32fc778e9036bcb",
+  "queue_status": "HISTORICAL",
+  "attempts": 0,
+  "identity_key": "af1714a87bee1f177e4bee806fe01879f2c56c8680d3d5cb79d5519ec4cc6748",
+  "messages_sha256": "42c5909a5ac2f4484dc60dcbd0cc376e5a6be14d67a9a0c09c18c60c9cf19454",
+  "result_category": "INFEASIBLE",
+  "answer_record": {
+    "case_uid": "6180eec5958ec750d4501e6e4418ff6aec89fe67a4bdd226860fc426ad4d0d1f",
+    "model": "Qwen/Qwen3-8B",
+    "status": "RESPONSE_RECEIVED",
+    "raw_completion": "\n\n{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [0, 3, 2, 5],\n  \"path_link_ids\": [2, 6, 8],\n  \"slot_start\": 229\n}",
+    "finish_reason": "stop",
+    "usage": {
+      "openai-api/Qwen/Qwen3-8B": {
+        "input_tokens": 2111,
+        "output_tokens": 17012,
+        "total_tokens": 19123,
+        "input_tokens_cache_write": null,
+        "input_tokens_cache_read": 0,
+        "reasoning_tokens": 16959,
+        "total_cost": null
+      }
+    },
+    "started_at": "2026-10-14T18:55:51.455383+00:00",
+    "completed_at": "2026-10-14T19:04:43.262209+00:00",
+    "total_seconds": 531.807,
+    "inspect_log": "inspect_logs/2026-10-14T18-55-51-00-00_x2-x3-cases_gjddkDuVn25cNkAdvoQmHQ.eval",
+    "result": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "INFEASIBLE",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "path links are not directionally contiguous"
+        ],
+        "metrics": {
+          "feasible_decision_accuracy": 0,
+          "hop_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_hop_count": null,
+        "submitted_wufr": null
+      }
+    },
+    "strict": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "INFEASIBLE",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "path links are not directionally contiguous"
+        ],
+        "metrics": {
+          "feasible_decision_accuracy": 0,
+          "hop_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_hop_count": null,
+        "submitted_wufr": null
+      }
+    },
+    "_source_file": "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/LLM_L5_FIXED2_20261014_153420_896215/results/qwen3_8b/full/results.jsonl",
+    "_all_source_files": [
+      "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/LLM_L5_FIXED2_20261014_153420_896215/results/qwen3_8b/full/answers/6180eec5958ec750d4501e6e4418ff6aec89fe67a4bdd226860fc426ad4d0d1f.json",
+      "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/LLM_L5_FIXED2_20261014_153420_896215/results/qwen3_8b/full/results.jsonl"
+    ],
+    "_case_metadata": {
+      "node_count": "6",
+      "scale": "5-10",
+      "occupancy": "0.3497395833333333",
+      "load_band": "MID",
+      "decision": "ACCEPT",
+      "request_count": "1",
+      "requested_slots": "[5]",
+      "seed": "UNKNOWN",
+      "snapshot_id": "rs_TB_REAL%3A%3ATOP_63_MARWAN_kspff_medium_seed01",
+      "request_ids": "[\"req_TB_REAL%3A%3ATOP_63_MARWAN_000005\"]",
+      "source_category": "real",
+      "producer_version": "UNKNOWN",
+      "contract_version": "UNKNOWN",
+      "primary_objective": "LEX_MIN_HOPS_THEN_WUFR_FULL_PATH",
+      "certificate": "EXACT_CERTIFIED",
+      "oracle_status": "EXACT_CERTIFIED",
+      "exposed": "0",
+      "split": "DEVELOPMENT_EXPOSED",
+      "input_tokens": "UNKNOWN_NOT_MEASURED",
+      "case_uid": "6180eec5958ec750d4501e6e4418ff6aec89fe67a4bdd226860fc426ad4d0d1f",
+      "case_id": "X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_RECOVER_HANDOFF_R33_STATIC_X2_be8db812e32fc778e9036bcb",
+      "task": "X2",
+      "topology_id": "top_TB_REAL%3A%3ATOP_63_MARWAN",
+      "topology_folder": "MARWAN_n6_TB63",
+      "graph_hash": "950374c84337a084e1c3d66167f39bfa6c16d043c72ba2f899f9ebeccde49abf",
+      "snapshot_hash": "91fbbf107a16576bce47553a78e183e0c4a60eb7e76bd37df45c5d3849a6544d",
+      "case_dir": "case_sets/MARWAN_n6_TB63/X2/6180eec5958ec750",
+      "family_ids": [
+        "F_0ac07020e0957020cd8bca5f3c9ed69b7da3eba78f7f01f8de032ed6517e9290"
+      ],
+      "messages_sha256": "42c5909a5ac2f4484dc60dcbd0cc376e5a6be14d67a9a0c09c18c60c9cf19454",
+      "input_characters": 6270,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "validator_sha256": "31660b7c47b6875d4332ec8212cfea2bae583ae029b60ce6da54bf0a48393a32"
+    },
+    "identity_key": "af1714a87bee1f177e4bee806fe01879f2c56c8680d3d5cb79d5519ec4cc6748",
+    "historical": true,
+    "history_answer_count": 1,
+    "historical_selection": "latest received response from FINAL; not normalized formal authority"
+  }
+}

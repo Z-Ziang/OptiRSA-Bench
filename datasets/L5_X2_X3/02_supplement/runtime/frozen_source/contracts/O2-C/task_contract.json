@@ -1,0 +1,59 @@
+{
+  "batch_semantics": "ALL_OR_NOTHING",
+  "benchmark_case_fields": [
+    "case_id",
+    "instance",
+    "llm_prompt",
+    "reference"
+  ],
+  "benchmark_interface": "DUAL_VIEW_ALGORITHM_LLM_V1_0_COMPILED_NPZ",
+  "contract_id": "O2-C_CASE_CONTRACT_V2_0_LEXICOGRAPHIC",
+  "formal_candidate_path_k": [
+    2,
+    3,
+    5
+  ],
+  "frozen_slot_count": 320,
+  "metrics": [
+    "joint_feasible_decision_accuracy",
+    "delta_tso_gap",
+    "wufr_gap"
+  ],
+  "official_required_slots": [
+    2,
+    3,
+    5,
+    9
+  ],
+  "path_mode": "CANDIDATE",
+  "path_rank_base": 1,
+  "reference_sent_to_dut": false,
+  "required_slots_probability_field": "required_slots_probabilities",
+  "runtime_case_fields": [
+    "case_id",
+    "prompt"
+  ],
+  "runtime_request": {
+    "llm": "llm_system_prompt + prompt"
+  },
+  "spectrum_binary_semantics": {
+    "free": 1,
+    "occupied": 0
+  },
+  "task_type": "O2-C",
+  "wufr_abs_tolerance": 1e-12,
+  "objective_order": [
+    "MIN_DELTA_TSO",
+    "MIN_WUFR"
+  ],
+  "objective": "LEXICOGRAPHIC",
+  "objective_source": "Direct user approved O2 V2 objectives; historical candidate set retained",
+  "default_candidate_k": 3,
+  "legacy_candidate_k_preserved": true,
+  "secondary_gap_condition": "only comparable when primary objective is optimal",
+  "metric_definitions": {
+    "delta_tso_gap": "submitted primary - certified minimum; integer; null for rejection",
+    "wufr_gap": "submitted fragmentation - certified minimum conditional on primary optimum; null when primary not optimal or rejection",
+    "valid": "feasible and contract-legal, distinct from lexicographic_optimal"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "case_uid": "eadd4421b08a2a0d9a8b443674783c21dae53e5de9670a7cd9e7eede2a27b614",
+  "model": "Qwen/Qwen3-8B",
+  "task": "X2",
+  "identity_key": "4671499934c31406b040d004c6bf0c8309be513dbe7bc4a1d493e198905d154f",
+  "status": "RESPONSE_RECEIVED",
+  "raw_completion": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [2, 5, 14, 0],\n  \"path_link_ids\": [8, 14, 15],\n  \"slot_start\": 23\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "input_tokens": 3553,
+    "output_tokens": 54,
+    "total_tokens": 4503,
+    "input_tokens_cache_write": null,
+    "input_tokens_cache_read": 896,
+    "reasoning_tokens": 0,
+    "total_cost": null
+  },
+  "model_output": {
+    "model": "Qwen/Qwen3-8B",
+    "choices": [
+      {
+        "message": {
+          "id": "2c2PkvzLQzpScjps4kSEFp",
+          "content": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [2, 5, 14, 0],\n  \"path_link_ids\": [8, 14, 15],\n  \"slot_start\": 23\n}",
+          "source": "generate",
+          "metadata": null,
+          "role": "assistant",
+          "tool_calls": null,
+          "model": "Qwen/Qwen3-8B"
+        },
+        "stop_reason": "stop",
+        "stop_details": null,
+        "logprobs": null,
+        "prompt_logprobs": null
+      }
+    ],
+    "completion": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [2, 5, 14, 0],\n  \"path_link_ids\": [8, 14, 15],\n  \"slot_start\": 23\n}",
+    "usage": {
+      "input_tokens": 3553,
+      "output_tokens": 54,
+      "total_tokens": 4503,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 896,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    },
+    "fallback": null,
+    "time": 3.780999999999949,
+    "metadata": null,
+    "error": null,
+    "response_id": "01a1436fbf938233a9532ab1c97db45a"
+  },
+  "started_at": "2026-10-16T06:39:16.327110+00:00",
+  "completed_at": "2026-10-16T06:39:20.839080+00:00",
+  "messages_sha256": "b0f0744299d07a91bc60905d020836bb2e987d816b7ae3f041f97fbaade7d73f",
+  "protocol_sha256": "2b0ac75ecc79a0b46b67708530f57709f9760617d21b8f55d7c3d9dd952df2e5",
+  "attempt": 1,
+  "inspect_log_dir": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\X2\\batches\\a906d02290d740628403c5cc61b284f5\\inspect_logs",
+  "result": {
+    "truth_feasible": true,
+    "single_outer_fence_removed": false,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+    "category": "INFEASIBLE",
+    "validator": {
+      "valid": false,
+      "errors": [
+        "path_node_ids do not match path_link_ids"
+      ],
+      "metrics": {
+        "feasible_decision_accuracy": 0,
+        "hop_gap": null,
+        "wufr_gap": null
+      },
+      "submitted_hop_count": null,
+      "submitted_wufr": null
+    }
+  },
+  "strict": {
+    "truth_feasible": true,
+    "single_outer_fence_removed": false,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+    "category": "INFEASIBLE",
+    "validator": {
+      "valid": false,
+      "errors": [
+        "path_node_ids do not match path_link_ids"
+      ],
+      "metrics": {
+        "feasible_decision_accuracy": 0,
+        "hop_gap": null,
+        "wufr_gap": null
+      },
+      "submitted_hop_count": null,
+      "submitted_wufr": null
+    }
+  },
+  "graded_at": "2026-10-16T06:39:20.932264+00:00"
+}

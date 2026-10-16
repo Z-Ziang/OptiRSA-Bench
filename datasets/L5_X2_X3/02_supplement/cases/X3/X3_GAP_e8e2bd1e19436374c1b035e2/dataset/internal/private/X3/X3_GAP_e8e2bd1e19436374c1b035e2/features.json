@@ -1,0 +1,92 @@
+{
+  "directed_link_count": 154,
+  "max_required_slots": 9,
+  "mean_required_slots": 7.0,
+  "node_count": 60,
+  "oracle_action_counts": {
+    "req_TB_REAL%3A%3ATOP_18_CONUS6077_002250": 728,
+    "req_TB_REAL%3A%3ATOP_18_CONUS6077_002276": 36
+  },
+  "oracle_evaluated_optimal_solutions": 6,
+  "oracle_path_counts": {
+    "req_TB_REAL%3A%3ATOP_18_CONUS6077_002250": 261,
+    "req_TB_REAL%3A%3ATOP_18_CONUS6077_002276": 34
+  },
+  "oracle_search_nodes": 18,
+  "reference_algorithms": {
+    "algorithm_1_sp_ff": null,
+    "algorithm_2_ksp5_ff": null,
+    "algorithm_3_joint_backtrack_k12": {
+      "delta_tso": 128,
+      "output": {
+        "allocations": [
+          {
+            "path_link_ids": [
+              83,
+              67,
+              72,
+              35,
+              32,
+              51,
+              41,
+              42,
+              3,
+              4,
+              125,
+              122
+            ],
+            "path_node_ids": [
+              38,
+              20,
+              16,
+              52,
+              7,
+              31,
+              11,
+              10,
+              15,
+              0,
+              39,
+              32,
+              33
+            ],
+            "request_id": "req_TB_REAL%3A%3ATOP_18_CONUS6077_002276",
+            "slot_start": 258
+          },
+          {
+            "path_link_ids": [
+              83,
+              67,
+              72,
+              35
+            ],
+            "path_node_ids": [
+              38,
+              20,
+              16,
+              52,
+              7
+            ],
+            "request_id": "req_TB_REAL%3A%3ATOP_18_CONUS6077_002250",
+            "slot_start": 48
+          }
+        ],
+        "decision": "ACCEPT"
+      },
+      "post_wufr": 0.7627343281381035
+    }
+  },
+  "request_count": 2,
+  "resource_pressure": 0.338920454545,
+  "serialization_metrics": {
+    "canonical_tokenizer": {
+      "backend": "tiktoken",
+      "encoding": "o200k_base",
+      "package_version": "0.14.0"
+    },
+    "llm_prompt_char_count": 31533,
+    "llm_prompt_token_count": 12953,
+    "llm_prompt_utf8_bytes": 31843
+  },
+  "total_required_slots": 14
+}

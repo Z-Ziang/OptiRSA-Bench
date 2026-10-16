@@ -1,0 +1,106 @@
+{
+  "directed_link_count": 158,
+  "max_required_slots": 5,
+  "mean_required_slots": 5.0,
+  "node_count": 60,
+  "oracle_action_counts": {
+    "req_8049d5f64e42b3699af367b7": 500,
+    "req_a29fca83b63066bbb007d91d": 966
+  },
+  "oracle_evaluated_optimal_solutions": 34,
+  "oracle_path_counts": {
+    "req_8049d5f64e42b3699af367b7": 265,
+    "req_a29fca83b63066bbb007d91d": 582
+  },
+  "oracle_search_nodes": 104,
+  "reference_algorithms": {
+    "algorithm_1_sp_ff": null,
+    "algorithm_2_ksp5_ff": null,
+    "algorithm_3_joint_backtrack_k12": {
+      "delta_tso": 115,
+      "output": {
+        "allocations": [
+          {
+            "path_link_ids": [
+              4,
+              64,
+              91,
+              92,
+              43,
+              38,
+              68,
+              53,
+              33,
+              34,
+              3,
+              0,
+              30
+            ],
+            "path_node_ids": [
+              1,
+              15,
+              35,
+              22,
+              51,
+              10,
+              16,
+              55,
+              12,
+              8,
+              52,
+              0,
+              7,
+              40
+            ],
+            "request_id": "req_8049d5f64e42b3699af367b7",
+            "slot_start": 253
+          },
+          {
+            "path_link_ids": [
+              106,
+              139,
+              140,
+              73,
+              57,
+              60,
+              104,
+              111,
+              47,
+              44
+            ],
+            "path_node_ids": [
+              25,
+              45,
+              37,
+              56,
+              17,
+              14,
+              24,
+              30,
+              26,
+              11,
+              13
+            ],
+            "request_id": "req_a29fca83b63066bbb007d91d",
+            "slot_start": 210
+          }
+        ],
+        "decision": "ACCEPT"
+      },
+      "post_wufr": 0.765576602650744
+    }
+  },
+  "request_count": 2,
+  "resource_pressure": 0.342761075949,
+  "serialization_metrics": {
+    "canonical_tokenizer": {
+      "backend": "tiktoken",
+      "encoding": "o200k_base",
+      "package_version": "0.14.0"
+    },
+    "llm_prompt_char_count": 32178,
+    "llm_prompt_token_count": 13232,
+    "llm_prompt_utf8_bytes": 32496
+  },
+  "total_required_slots": 10
+}

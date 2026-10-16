@@ -1,0 +1,80 @@
+{
+  "case_uid": "bbdf57cc58915e18862e54001597a3d7ffe2841200cf0c12baa71a32dbba2987",
+  "case_id": "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_f7dde86e29cf10f969866ed9",
+  "task": "X3",
+  "topology_id": "top_TB_REAL%3A%3ATOP_26_DIGEX",
+  "graph_hash": "6f51da3f7ba998268f7582bd70056ac3d175c7f1042b34757415539b1b2c33f1",
+  "snapshot_hash": "875928b14480cf0fc131cd4b259e3dfdf0b8fcaf6e1b8b616a808afe8bedd955",
+  "family_ids": [
+    "F_8de376f986caa83c2ea39c8691a9ef2689a25e2d0b683d1f80d87039b7fcc4fe"
+  ],
+  "messages_sha256": "47dff3d837bdb5d7dc6b66b65d2698d180dc2907a1f0ac765f8a74bc564d448a",
+  "validator_source_sha256": "7e6f21cc8a321d797ee0c0660113200262b64a6f3798806ac920078e478003f5",
+  "source_archive": "Benchmark_7_7_HISTORICAL_REMAINDER_X3.zip",
+  "source_archive_sha256": "d9d387cdeb58fd3deb87d30b9031769f3990101279f7beed4ec2770e2884968e",
+  "source_dataset_version": "Benchmark_7_7_HISTORICAL_REMAINDER_X3",
+  "source_member_hashes": {
+    "root_case": "ec6dfed867b49e9359f1870e11172453e8e918b50f12581acf44ec79cf5fb72e",
+    "private_truth": "493dea9e21e7b59e96bddde2bfb5b4c68c71427dfddc52d11ac6e8a5cd36bd42",
+    "reference_output": "0b77d1c2c346f839b885505e08fb5b092d9d694e7fdba4fd8e2d3e4117a9297d",
+    "validation": "1ccd710bc60fa6566caa28e7aead881568b78f89095ec409163334b9bc2c9bd3",
+    "llm_case": "87bc84a98dde4f5523922b651e249fe05199a035b885ac8b02d429fa68ac0e45",
+    "system_prompt": "2f61efee3110846d99790ed8bb386d150ceeaeb35f02a7a0ebc365df2d96c87c"
+  },
+  "source_member_paths": {
+    "root_case": "cases/X3/d320f24efd1220cba7a8/private/root_case/X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_f7dde86e29cf10f969866ed9.json",
+    "private_truth": "cases/X3/d320f24efd1220cba7a8/private/private_truth/X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_f7dde86e29cf10f969866ed9.json",
+    "reference_output": "cases/X3/d320f24efd1220cba7a8/private/reference_output/X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_f7dde86e29cf10f969866ed9.json",
+    "validation": "cases/X3/d320f24efd1220cba7a8/private/validation/X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_f7dde86e29cf10f969866ed9.json",
+    "llm_case": "cases/X3/d320f24efd1220cba7a8/public/llm_case/X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_f7dde86e29cf10f969866ed9.json",
+    "system_prompt": "runtime/contracts/X3/llm_system_prompt.txt"
+  },
+  "source_case_status": "REVIEW_OBJECTIVE_DEFINITION",
+  "package_input_version": "SOURCE_ENGLISH_UNCHANGED_NO_WUFR_FORMULA_V1",
+  "files": {
+    "private/root_case.json": {
+      "sha256": "ec6dfed867b49e9359f1870e11172453e8e918b50f12581acf44ec79cf5fb72e",
+      "bytes": 258839,
+      "source_member": "cases/X3/d320f24efd1220cba7a8/private/root_case/X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_f7dde86e29cf10f969866ed9.json"
+    },
+    "private/private_truth.json": {
+      "sha256": "493dea9e21e7b59e96bddde2bfb5b4c68c71427dfddc52d11ac6e8a5cd36bd42",
+      "bytes": 393,
+      "source_member": "cases/X3/d320f24efd1220cba7a8/private/private_truth/X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_f7dde86e29cf10f969866ed9.json"
+    },
+    "private/reference_output.json": {
+      "sha256": "0b77d1c2c346f839b885505e08fb5b092d9d694e7fdba4fd8e2d3e4117a9297d",
+      "bytes": 601,
+      "source_member": "cases/X3/d320f24efd1220cba7a8/private/reference_output/X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_f7dde86e29cf10f969866ed9.json"
+    },
+    "private/validation.json": {
+      "sha256": "1ccd710bc60fa6566caa28e7aead881568b78f89095ec409163334b9bc2c9bd3",
+      "bytes": 211,
+      "source_member": "cases/X3/d320f24efd1220cba7a8/private/validation/X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_f7dde86e29cf10f969866ed9.json"
+    },
+    "public/system_prompt.txt": {
+      "sha256": "2f61efee3110846d99790ed8bb386d150ceeaeb35f02a7a0ebc365df2d96c87c",
+      "bytes": 5955,
+      "source_member": "runtime/contracts/X3/llm_system_prompt.txt"
+    },
+    "public/user_prompt.txt": {
+      "sha256": "d7a729ff3dc94af7eee30f57e23ad9dd5d8bf0fc7e859c29b0283a80826cf47d",
+      "bytes": 14210,
+      "source_member": "cases/X3/d320f24efd1220cba7a8/public/llm_case/X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_f7dde86e29cf10f969866ed9.json"
+    }
+  },
+  "verification": {
+    "public": {
+      "links_and_spectrum_exact": true,
+      "request_parameters_exact": true,
+      "request_ids_exact": true
+    },
+    "reference_feasibility_primary": {
+      "feasible": true,
+      "primary_matches_source_optimum": true,
+      "no_new_global_optimality_proof": true
+    },
+    "source_validation_bound": true,
+    "all_global_optima_independently_resolved": false
+  }
+}

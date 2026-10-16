@@ -1,0 +1,110 @@
+{
+  "task": "X2",
+  "case_uid": "d49c48df4cc3414eb017921d36699948dfb1ab5d7abb8b1885ba7746904de3fc",
+  "case_id": "X2_UNIFIED_CANDIDATE_20261008_051958_574121_X2_0001_05_05001_N1_V3",
+  "queue_status": "COMPLETE",
+  "attempts": 17,
+  "identity_key": "eb1780e440d3815bb1e63cd007e2515901cd3dedf36f5268ff3dcc0ebbed6f8e",
+  "messages_sha256": "47b8c17aa6fef8901796e291a9d1063eed7245367e4ebb0d2ffb5f6d8d1ae511",
+  "result_category": "INFEASIBLE",
+  "answer_record": {
+    "case_uid": "d49c48df4cc3414eb017921d36699948dfb1ab5d7abb8b1885ba7746904de3fc",
+    "model": "Qwen/Qwen3-8B",
+    "task": "X2",
+    "identity_key": "eb1780e440d3815bb1e63cd007e2515901cd3dedf36f5268ff3dcc0ebbed6f8e",
+    "status": "RESPONSE_RECEIVED",
+    "raw_completion": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [5, 0, 1, 2],\n  \"path_link_ids\": [3, 2, 4],\n  \"slot_start\": 3\n}",
+    "finish_reason": "stop",
+    "usage": {
+      "input_tokens": 2204,
+      "output_tokens": 50,
+      "total_tokens": 2254,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 0,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    },
+    "model_output": {
+      "model": "Qwen/Qwen3-8B",
+      "choices": [
+        {
+          "message": {
+            "id": "CWGB9LHEaaTmtBJCuGjdqJ",
+            "content": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [5, 0, 1, 2],\n  \"path_link_ids\": [3, 2, 4],\n  \"slot_start\": 3\n}",
+            "source": "generate",
+            "metadata": null,
+            "role": "assistant",
+            "tool_calls": null,
+            "model": "Qwen/Qwen3-8B"
+          },
+          "stop_reason": "stop",
+          "stop_details": null,
+          "logprobs": null,
+          "prompt_logprobs": null
+        }
+      ],
+      "completion": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [5, 0, 1, 2],\n  \"path_link_ids\": [3, 2, 4],\n  \"slot_start\": 3\n}",
+      "usage": {
+        "input_tokens": 2204,
+        "output_tokens": 50,
+        "total_tokens": 2254,
+        "input_tokens_cache_write": null,
+        "input_tokens_cache_read": 0,
+        "reasoning_tokens": 0,
+        "total_cost": null
+      },
+      "fallback": null,
+      "time": 13.389999999999873,
+      "metadata": null,
+      "error": null,
+      "response_id": "01a1436946c32648cb0d3bc7a7783b97"
+    },
+    "started_at": "2026-10-16T06:32:12.296299+00:00",
+    "completed_at": "2026-10-16T06:32:26.324915+00:00",
+    "messages_sha256": "47b8c17aa6fef8901796e291a9d1063eed7245367e4ebb0d2ffb5f6d8d1ae511",
+    "protocol_sha256": "2b0ac75ecc79a0b46b67708530f57709f9760617d21b8f55d7c3d9dd952df2e5",
+    "attempt": 17,
+    "inspect_log_dir": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\X2\\batches\\d7bd2a4cdb2d4ea0a591dcb85673b3a0\\inspect_logs",
+    "result": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "INFEASIBLE",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "path links are not directionally contiguous"
+        ],
+        "metrics": {
+          "feasible_decision_accuracy": 0,
+          "hop_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_hop_count": null,
+        "submitted_wufr": null
+      }
+    },
+    "strict": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "INFEASIBLE",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "path links are not directionally contiguous"
+        ],
+        "metrics": {
+          "feasible_decision_accuracy": 0,
+          "hop_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_hop_count": null,
+        "submitted_wufr": null
+      }
+    },
+    "graded_at": "2026-10-16T06:32:26.430036+00:00"
+  }
+}

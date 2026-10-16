@@ -1,0 +1,633 @@
+{
+  "API_calls": 0,
+  "candidate_path_k": 5,
+  "connection_reconstruction": "PASS",
+  "derivation_count": 90,
+  "frozen_derivation_recompute": "PASS",
+  "graph_hash": "fe1b3a7877ecdd030918a7be200eea7fd2972e773b9a71be1d7be23c5256c46d",
+  "initial_connections_sha256": "ccfa7b1d01940085b0425d0651f2a23346e29cd039141f61ed712379965f5b35",
+  "overlay_derivations_sha256": "fb662af4e5543991036fdc6e3fd50290f50c4f6c9b949d2b1af4ef051740b427",
+  "overlay_environment": "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/jobs/ENV_0009_V2/unit/public_environment",
+  "request_count": 90,
+  "resource_state_id": "rs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_kspff_medium_seed01",
+  "science_contract_modified": false,
+  "snapshot_hash": "b95ae4d27974c0282ddda502f4b562db863cdae44dbf30d11b5aa0b659eb1fd1",
+  "source_core_file_count": 129,
+  "source_core_file_hashes": [
+    {
+      "relative_path": "configs/genconf_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_dynamic.json",
+      "sha256": "c721de2754b404088ef052232ffaefea8f7fb27a4aa09e4b5aa6c9b8b54fc3d5"
+    },
+    {
+      "relative_path": "configs/genconf_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_request.json",
+      "sha256": "6f02777ff9fcc2795374e92f6eaf8e96454369f6609e5aa2a6806f6e7aaa90e1"
+    },
+    {
+      "relative_path": "configs/genconf_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_scenario.json",
+      "sha256": "d3da5253d945561fb9b6bb3b076f201f9075a9728ad7935f69b5c1840bef1273"
+    },
+    {
+      "relative_path": "configs/genconf_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_state_kspff_high_seed01.json",
+      "sha256": "1965fb6b65e18f6a42acde2dfe657348f3e4978e1384d3d09892ba49a34901f6"
+    },
+    {
+      "relative_path": "configs/genconf_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_state_kspff_light_seed01.json",
+      "sha256": "3edacffc3dd904a03a3db80bdb1976695c761d06a36b712526512fc1781ac95e"
+    },
+    {
+      "relative_path": "configs/genconf_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_state_kspff_medium_seed01.json",
+      "sha256": "5fe38bd9502e06b5244c6653315d55ea1b2437e49aa187340d03eb740b5bcb9b"
+    },
+    {
+      "relative_path": "configs/genconf_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_topology.json",
+      "sha256": "bfa38a96ba6ed30033cab9d313ae957ada4ac52ef6eeeb907ee48d26673736ce"
+    },
+    {
+      "relative_path": "connections/initial/icset_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_kspff_high_seed01.json",
+      "sha256": "5a55dc9f515202aa921c719b931aebafb5e9a4170c4eb5c09799f468352370db"
+    },
+    {
+      "relative_path": "connections/initial/icset_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_kspff_light_seed01.json",
+      "sha256": "fba0c937b31f6188b038830ce358cb7df3bacd389b493d2b45425f90fd4bde87"
+    },
+    {
+      "relative_path": "connections/initial/icset_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_kspff_medium_seed01.json",
+      "sha256": "ccfa7b1d01940085b0425d0651f2a23346e29cd039141f61ed712379965f5b35"
+    },
+    {
+      "relative_path": "metrics/topology/top_TB_REAL%3A%3ATOP_42_HIBERNIACANADA.json",
+      "sha256": "b0cf66a7dc8d88b0e905f8db9a2f03ecb25eb487b664c2bc6c4d30acb8370504"
+    },
+    {
+      "relative_path": "requests/derivation/derivations_top_TB_REAL%3A%3ATOP_42_HIBERNIACANADA.jsonl",
+      "sha256": "fb662af4e5543991036fdc6e3fd50290f50c4f6c9b949d2b1af4ef051740b427"
+    },
+    {
+      "relative_path": "requests/dynamic/seq_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_001.json",
+      "sha256": "cf4f5e624e1bf5ffd64a1b51392f89bbb069333b74d20d0908bf6daba86e7ade"
+    },
+    {
+      "relative_path": "requests/dynamic/seq_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_002.json",
+      "sha256": "16186498e3a867cab0d8585a4a6ea29a25757faeb23b63821b3e258c24f49d5c"
+    },
+    {
+      "relative_path": "requests/dynamic/seq_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_003.json",
+      "sha256": "4bac1c384371e11c581ba1a0d3902069d08f55062515ae034f791056e5546021"
+    },
+    {
+      "relative_path": "requests/dynamic/seq_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_004.json",
+      "sha256": "d7dc417c7819a584edb6739bb0b4845779516b40a7a97805c2fa5b4712a76633"
+    },
+    {
+      "relative_path": "requests/dynamic/seq_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_005.json",
+      "sha256": "af36412a0ad2c862abd6b6245b88f2f11f8e12dcd851756e0ce227680f0876a8"
+    },
+    {
+      "relative_path": "requests/dynamic/seq_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_006.json",
+      "sha256": "24e71126881afe57254e5cb6c910af0dc571b512358801961be2cd197d76dea1"
+    },
+    {
+      "relative_path": "requests/dynamic/seq_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_007.json",
+      "sha256": "20895c86519058a444a5f8e8872b8d7260dfe3fe9edb46f9441861bd1569c7db"
+    },
+    {
+      "relative_path": "requests/dynamic/seq_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_008.json",
+      "sha256": "13c2ba38e10fbc99aa8cedf15f14d55aff5aedaed8b1cac2b2c5a4f7c2072cfb"
+    },
+    {
+      "relative_path": "requests/dynamic/seq_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_009.json",
+      "sha256": "2409b09d6ee7bf575da0251978c01cd7028774dcd4ea6cb2ecaf5d1e47e14c65"
+    },
+    {
+      "relative_path": "requests/single/requests_top_TB_REAL%3A%3ATOP_42_HIBERNIACANADA.jsonl",
+      "sha256": "ce3090bcdf800bb6744ecda7b04ae54142d7a37c48ccb71430d609b83c3e55c1"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_001_dynamic.json",
+      "sha256": "ce47a20404a59efd6315dd4bbd74af91ac9a46d9133c4e57cda5b03f4dca410c"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_002_dynamic.json",
+      "sha256": "2545cbe074b36702539e89cfb130ee523a5f233d15ca39ceca288f5ef4daebc1"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_003_dynamic.json",
+      "sha256": "bcff3cba67a7a9307a2431e9bcd87f36a447a2492cb2ef58e2cd5b98187a17bb"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_004_dynamic.json",
+      "sha256": "34b0a148afb979312cc8b4a88fb294cf6abb34142d5c3602171c26a72ee740a0"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_005_dynamic.json",
+      "sha256": "d3d3dd59e27a0453ed46b8deedca112f1e5c5b21806b1513cfbe28237e96e1ea"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_006_dynamic.json",
+      "sha256": "444c3e41f30f41a38245e0c610d91fdbc6f5b78c33fba0d185a727acfe07cdc8"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_007_dynamic.json",
+      "sha256": "8971f2c091e67db36f539f13ca2c2090d7cdada59373d60f0329ff026c84ab57"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_008_dynamic.json",
+      "sha256": "951bebe705188059899e064a51305160bd45523a82b3ce4927b6de76f5159415"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_009_dynamic.json",
+      "sha256": "7e790712ff538f13a768521b6ef5e88b6923b26c5614290380c6c0548a2e9f59"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000001.json",
+      "sha256": "ea3ea71a2535d8d82e0c4933e25e21599469cf43ac7a6e5e28b50ba2336a124b"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000002.json",
+      "sha256": "88a2dc5a5f4a2a80e40f1dc499ffb6b6c5b9684670c22873bb8e41d8eec5366f"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000003.json",
+      "sha256": "d6ccfad5d0fad4d05b2ddd0693a2e0f813c9855300a9c8fb9d15ba78dc6cb179"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000004.json",
+      "sha256": "29597291241c7611b72e206dcf2f534be9a1ef4cb819cfa4a2c148a43e96cbcc"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000005.json",
+      "sha256": "4d9555b8db2763a54c2c0429f88aa82d072278bc78c68daf2cabebdd2e94be3a"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000006.json",
+      "sha256": "89e24034e539c65316d1631e5d5179b9a25e9bde2393f1a1b2e6c04a25ba16c3"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000007.json",
+      "sha256": "aff61e45f6451e3ea792ee62dd6bee67fbc64c8fb50ae2593a9d89bc471f046d"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000008.json",
+      "sha256": "cba33ade0d397b5236d838eb02e72b03d90a93261abe6cc55fef814ecb8cddca"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000009.json",
+      "sha256": "19d85bf3f0e3e3dcf84008cdbfbfa7c6cd9b30dd5143bf5770357e7716c12d13"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000010.json",
+      "sha256": "d434e8c255304de15cd05a3336b35932c3e59d2cbe366bf95bb48d8d2512adbb"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000011.json",
+      "sha256": "50e1e474f768a47f08a7d4bc82643e8ab2cb1a589602a19aa9d04b18cb37e6d5"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000012.json",
+      "sha256": "155e2bcf34e7e8745485557ed988a755a9d08926e36fb2daa45fa5bb254c4464"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000013.json",
+      "sha256": "6beef807ea875614c21a534bde05910e813e45c174fcc26a7f22d4c32d4a90d7"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000014.json",
+      "sha256": "0b216a5a44501f012aad82e200a60c6025055cfdfae8e3355dd1556424c8882f"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000015.json",
+      "sha256": "78522b4a5341f00d89b987cb6e351878ab02882734579e517b7444521f87b9eb"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000016.json",
+      "sha256": "be25bc2a9398ab66835ae555b9fda0201e97173bdfc6ddb3a8f2a813b7e4596e"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000017.json",
+      "sha256": "2b80ee4eb2bbbaea006a74a3fbb6dde0f72409dd0a46cb21b83cda70132d2595"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000018.json",
+      "sha256": "ebf67b0171e8e595cf78dcebfc0a57156e7262a05e3d0a906a8dedae753f870a"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000019.json",
+      "sha256": "c2dcd44e9bda675b05ed59f624988cddd477fd20aaa307e2a426d1bdbf6b6eb0"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000020.json",
+      "sha256": "50afd6c77cf316334a95e27824cea7cbef8f221d45657fbef69e2c9c5ff5463e"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000021.json",
+      "sha256": "5eb46dac73c94661ff19d6fd0e6a5313a821d421eeeba0c0bda907193dd277b7"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000022.json",
+      "sha256": "f59b8a16953ad22f31cafd38519ae53da23f2488cc70eba7452bb36eb85dd047"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000023.json",
+      "sha256": "2db49c7e37263b0d43788929214270fc43e0526d2c58148c475dc5c4f4ce1d90"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000024.json",
+      "sha256": "342361d37d881b0ff671cf4ad4cbb1366dfd9253800c34457d5036d970587be9"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000025.json",
+      "sha256": "b21e60e221dd16cbd07475754d5d7a548ce4cc59389fc554ed5665befa5dc0fa"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000026.json",
+      "sha256": "0a31cf8091ff4bb9f303c5910e602a80a60b09f15a2432f63ec0a98e1bd24a9a"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000027.json",
+      "sha256": "848f39d7b9e0bf48733c945d7abd8af92b90a3d98c01d6e6e4ef8e3ec89559c9"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000028.json",
+      "sha256": "3a73d4e02e6fbfef6a480d712416fdc1c81f26444617257ed45fa66a1927a032"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000029.json",
+      "sha256": "c0fa47f7a85eaa45ad783e2f88386de43209b0657d7ef9c7f2035c2e57fa2863"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000030.json",
+      "sha256": "eed2d14ad80391fcf5513f771d019d954d2d076aedce7e0db0bad9806cc9c6c1"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000031.json",
+      "sha256": "3df6f1b43cb2bc33da1cd8096e53fbb12dfdf2eaa78c08c60d82944c9ff1320a"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000032.json",
+      "sha256": "91981cdf6c51c263d48746eb31cd833ce0da5263e4c7ac6fe3f6ccf7bce3fa53"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000033.json",
+      "sha256": "a1a9afb71673d5bfddaa183d8e6152abc97f3633e25cbbc704c6cf18c00ac2cc"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000034.json",
+      "sha256": "f7e3229cbbd68316ed4f7bd305f8f9da110827b38c32a0b61e2c2010adc92404"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000035.json",
+      "sha256": "0d513d0a37d8146692b3d27cd1d6f6efee659df21209c653785f7698874e20c1"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000036.json",
+      "sha256": "067f189a179631c071cc50c99c61dbad92ce5050c403092e48999cce16afa36d"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000037.json",
+      "sha256": "0ef6b312bbf0fb46ca70c2aa01181a60737de4ff755851be7d672963c5f8dabd"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000038.json",
+      "sha256": "b2a11d736ff7c094d340046cc36cbc15673553e6f0ee68023b7420d5f4446e7e"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000039.json",
+      "sha256": "5afb1e188fba4bcb8062509a0d3ec3ca22a62a203a96302e38e98696b91cd2e4"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000040.json",
+      "sha256": "b14a00e8be6d51d8829d77016774ff71b8e7197b0b1bf4b3d866c345fe1038ed"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000041.json",
+      "sha256": "9e91b025c9b22b3e0d2011c82f335c1399343c2edb2fb34bfd132c9868bbac2b"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000042.json",
+      "sha256": "0fb7f23a56a9d2b837d198776c874e605f823767fabba4e962b53f3d6189fa35"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000043.json",
+      "sha256": "b68286ce66057d84db708523c87e75673219086ddfe7a6dbf2e5f2b0c66ec5bd"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000044.json",
+      "sha256": "9a32d919d2059ef2c54620d3a7a753ec67bf8c9c153d6f8f3937f4883c728370"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000045.json",
+      "sha256": "a304ad496d80d3fa969ec4aed54d26cac0e960fa9d3bace6506945d49797c18d"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000046.json",
+      "sha256": "9ee51ee4f8e3a781efd28eff8f994630606e39b0ac52e75f12dd9aa450c94c9f"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000047.json",
+      "sha256": "23e20d338df9782793a82382419147def762e75c0bde0de2209588faf988b2eb"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000048.json",
+      "sha256": "db19c409c5890787dd47f879ae8061ac6f9c6c6b79c1b464a2cbab8344b8a5fd"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000049.json",
+      "sha256": "eb905f86cc423e545d80526843a06f8e109815132334d3ccc04b1a1cf0f7573e"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000050.json",
+      "sha256": "9aa4c060686627cd36f0cc8827bbde40eedc06a82351b73aae5e293ede4b7dfa"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000051.json",
+      "sha256": "6b10857f207d9aa293e4d3ee16b6cead6ff4e52b378a9951c954fd956187bea6"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000052.json",
+      "sha256": "d458a5aefb942f7128a988ecf664ef614a7cb495b9c9a8e9a1ec029a70d2b96b"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000053.json",
+      "sha256": "97efe31afca7c682f72a7544f53f7d88060d61a135cbbdb1a68def31c895c5d3"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000054.json",
+      "sha256": "a4244350123b8ac18c245d950b8c8ceb1f2a871cacffdddeb70ac7c67f36c8c4"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000055.json",
+      "sha256": "51d84f807cf5133a22a720f8b4720b5ef7b59656087d005278679ea730ce6e0a"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000056.json",
+      "sha256": "8ff6831c8ad0f3188788873646bf32e77f9a11337f5ce13afe47d6d78adf7595"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000057.json",
+      "sha256": "7a1873a4d40d261bc85db2b4e54de27faa6c84ad29b458f99454f116ffe661ef"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000058.json",
+      "sha256": "4758bcb6db86f41e540fe51cf1535130e335d46ac186db860cb0dd77498d4404"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000059.json",
+      "sha256": "75014a37a4f8755627b8af62f705ae3ce3bc459bd3f315f2e7f24f1da6b876a0"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000060.json",
+      "sha256": "8ef8e91391fc01b43751f1459b7b740f95e552564a8421dbe5c87b282fb4cc7c"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000061.json",
+      "sha256": "7ba131358975b58a1d7f05396170f4d79358d7977f5c5908ae81cf3bb25643c5"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000062.json",
+      "sha256": "872bf7e2904dab3372311cf575e41c529c1173e0038dd812797a575ea333150e"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000063.json",
+      "sha256": "2c6355c13391acd8a7a61aa2d937a97c30418a2170e01a7b393790192c2d83f1"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000064.json",
+      "sha256": "5c0461b1e53a2e8e4c7c3acb55367667470766ab2db0daf52ae779e1ec6dee1e"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000065.json",
+      "sha256": "0ce63d22d3a1d1c8abee22db755bbb694e3f6bd9ce991f4f3e4c4589ce724667"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000066.json",
+      "sha256": "cd1810cf5b7450f4d7ea15b18b89107770dd32e655cf7ab08ecc5763b7f6aa96"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000067.json",
+      "sha256": "12f54ba6f4eb3cf6eeb5948aecf8124d4b5b68b2d0159132ed718f16111dafa8"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000068.json",
+      "sha256": "70c741fb3553e1fd9948e4cabd56570801b52f6edb1a00c102d9600ba5d2c7bb"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000069.json",
+      "sha256": "7254afcaf3e7b09ebd08596400815d54545e7175b60c9d31d2ea0155d0ca0293"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000070.json",
+      "sha256": "bc810f34af7d12eedf999ed903106b5f7df05215668e91740b07c5f5a7445699"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000071.json",
+      "sha256": "0d2047071e5a97eb433d4e96c02e890064d51665b835b7280b4c060877c0762c"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000072.json",
+      "sha256": "f30ca286300bfc8ddabf73b36b06504767fe7e79f93f0f0ca17f447233d35a4a"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000073.json",
+      "sha256": "39d9e4a1bee4b6a6ccf827324092d8415c3f0cd33e987398a800fca3a39db970"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000074.json",
+      "sha256": "66ae81ed5b00cae37b413c01c66d47ac79949a2a60aec1275262d905f6745501"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000075.json",
+      "sha256": "652791912593a7be547637c813bc3120c03a528d70397acf8f9c9843c5230214"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000076.json",
+      "sha256": "9e844adf7d1a1392290c8cd8baa83550758426e84501f53b4b7ec1649023bcf0"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000077.json",
+      "sha256": "c627b9acad1d23077f63068de011f610ad95d34606d8a7fb6b4873aa796473a8"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000078.json",
+      "sha256": "dad64d70bd1934bdfbec27765aa6d3605523bb4a05c3e1c29930b560659a59ba"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000079.json",
+      "sha256": "17b584998dfbf76c2d0eb61de6cd13fa6e1ef265fa7e3cef5157acdca2700108"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000080.json",
+      "sha256": "acb1269a9c80877431f4de1626c00e6510fe027c23d8fe52966784c358369bf7"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000081.json",
+      "sha256": "c3a75ccc22378a4e5a7756fef45c659aa8d2fdcfa7e727a674242f4e53793877"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000082.json",
+      "sha256": "73f7f1a800b0ef240c4e1abaac17db75137c7b9955fe5e6195f4652908a3d35c"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000083.json",
+      "sha256": "6b52328ff351b0162868fe060bc43b068f15b4ac1d8ec7f58fd82185e7a4115a"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000084.json",
+      "sha256": "b2186fd7455f26882c55b59775590c6e74a08cecf17a4665da4f485fd9401b79"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000085.json",
+      "sha256": "da55b8ff96314c465b10cd6a91edc0b73218ffc139c42c4f598345e4fbf30cdf"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000086.json",
+      "sha256": "dffe17300874b0a1c388dd265e228ddc60f926e06c153a0618e8f9a11f0343c6"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000087.json",
+      "sha256": "dc4fec7d61071e6c4f95f95e74aea4bc750d7b93f42f37bd9a9576a2ecc678a7"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000088.json",
+      "sha256": "63ef81e2d4d2012b89d16d2ba020785af4b29bc63a486e7c737e61550f394c28"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000089.json",
+      "sha256": "50bea1a6605364f6e03739d2ba892500ccadf5e29c311605899e3bb206b0a287"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_single_000090.json",
+      "sha256": "a5a7259a80cf3a7a31eccf0ee4cba32a4788cda9018ff9bfbfd2e36ec6c1473f"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_state_kspff_high_seed01.json",
+      "sha256": "0f49ec1eb1fee318d0d69e823026fbae6c50889cc36c3bd90ecae3dec825325d"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_state_kspff_light_seed01.json",
+      "sha256": "0f555ba71b76b87a8ec4fae76c511996e39c83666da45cc7b079786a4322e651"
+    },
+    {
+      "relative_path": "scenarios/bs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_state_kspff_medium_seed01.json",
+      "sha256": "db7a26f143cdeae6ffe8e48c0c362402ace4fb4dfbf4ebe05d74f7541d9c8462"
+    },
+    {
+      "relative_path": "states/spectrum/rs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_kspff_high_seed01.json",
+      "sha256": "0d627cd10b770787b3e523b31201c46b1cd36d77f31a50ca6d0cb6f46da09b0a"
+    },
+    {
+      "relative_path": "states/spectrum/rs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_kspff_light_seed01.json",
+      "sha256": "c765028750c97496f12fadac5b2701e32b4d40ff786ee1cff113ac733a098dd8"
+    },
+    {
+      "relative_path": "states/spectrum/rs_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_kspff_medium_seed01.json",
+      "sha256": "782bac419c65e7318a5dd1a6c119c06b5c483286c59341dd9f83a484d7c0de20"
+    },
+    {
+      "relative_path": "topologies/directed/top_TB_REAL%3A%3ATOP_42_HIBERNIACANADA.json",
+      "sha256": "a97933bbb54c6e3b2b9be0d2226996221d074368c2fddd2a82992f48b3199b07"
+    },
+    {
+      "relative_path": "topologies/physical/top_TB_REAL%3A%3ATOP_42_HIBERNIACANADA.json",
+      "sha256": "21ae3961571e4f8dc3f6102db171bb9541514aac6b24bde8cd5a56ab71a7014c"
+    }
+  ],
+  "source_environment": "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/jobs/ENV_0009_V2/unit/public_environment",
+  "source_modified": false,
+  "source_state_request_ids": [
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000001",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000002",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000003",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000004",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000005",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000006",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000007",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000008",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000009",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000010",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000011",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000012",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000013",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000014",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000015",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000016",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000017",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000018",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000019",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000020",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000021",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000022",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000023",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000024",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000025",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000026",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000027",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000028",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000029",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000030",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000031",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000032",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000033",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000034",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000035",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000036",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000037",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000038",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000039",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000040",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000041",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000042",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000043",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000044",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000045",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000046",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000047",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000048",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000049",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000050",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000051",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000052",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000053",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000054",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000055",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000056",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000057",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000058",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000059",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000060",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000061",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000062",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000063",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000064",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000065",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000066",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000067",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000068",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000069",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000070",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000071",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000072",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000073",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000074",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000075",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000076",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000077",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000078",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000079",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000080",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000081",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000082",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000083",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000084",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000085",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000086",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000087",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000088",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000089",
+    "req_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_000090"
+  ],
+  "state_key": "08c4d61052842fe3d236d7260647b532b816e3379fc7c3876821152fc93cce84",
+  "status": "SOURCE_PUBLIC_ENV_RECHECK_PASS",
+  "target_label": "X3_MAIN_REAL_RESOLVED_ENVIRONMENT_HINT",
+  "time": 1792133152.0058744,
+  "topology_id": "top_TB_REAL%3A%3ATOP_42_HIBERNIACANADA"
+}

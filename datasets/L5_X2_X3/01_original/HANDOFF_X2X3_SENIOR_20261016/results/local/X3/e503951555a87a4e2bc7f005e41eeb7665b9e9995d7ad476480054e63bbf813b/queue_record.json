@@ -1,0 +1,112 @@
+{
+  "task": "X3",
+  "case_uid": "e503951555a87a4e2bc7f005e41eeb7665b9e9995d7ad476480054e63bbf813b",
+  "case_id": "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_43b1c988646b6c9a665d8df4",
+  "queue_status": "COMPLETE",
+  "attempts": 1,
+  "identity_key": "76cd5c4344a7386834c26a4c3e17ad9f3ff670da2d3137226db580956c56bd1f",
+  "messages_sha256": "ee10a8af9618e0d4d6a44df353783a67b3cec9d92ba580e979e277efc65a18fd",
+  "result_category": "MISSING",
+  "answer_record": {
+    "case_uid": "e503951555a87a4e2bc7f005e41eeb7665b9e9995d7ad476480054e63bbf813b",
+    "model": "Qwen/Qwen3-8B",
+    "task": "X3",
+    "identity_key": "76cd5c4344a7386834c26a4c3e17ad9f3ff670da2d3137226db580956c56bd1f",
+    "status": "RESPONSE_RECEIVED",
+    "raw_completion": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+    "finish_reason": "stop",
+    "usage": {
+      "input_tokens": 6546,
+      "output_tokens": 16,
+      "total_tokens": 6562,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 0,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    },
+    "model_output": {
+      "model": "Qwen/Qwen3-8B",
+      "choices": [
+        {
+          "message": {
+            "id": "k5vWRsC5NTciTi9fzdh8vj",
+            "content": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+            "source": "generate",
+            "metadata": null,
+            "role": "assistant",
+            "tool_calls": null,
+            "model": "Qwen/Qwen3-8B"
+          },
+          "stop_reason": "stop",
+          "stop_details": null,
+          "logprobs": null,
+          "prompt_logprobs": null
+        }
+      ],
+      "completion": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+      "usage": {
+        "input_tokens": 6546,
+        "output_tokens": 16,
+        "total_tokens": 6562,
+        "input_tokens_cache_write": null,
+        "input_tokens_cache_read": 0,
+        "reasoning_tokens": 0,
+        "total_cost": null
+      },
+      "fallback": null,
+      "time": 6.219000000000051,
+      "metadata": null,
+      "error": null,
+      "response_id": "01a1437ebefcba84e616a3a3226368cd"
+    },
+    "started_at": "2026-10-16T06:55:39.560018+00:00",
+    "completed_at": "2026-10-16T06:55:46.129130+00:00",
+    "messages_sha256": "ee10a8af9618e0d4d6a44df353783a67b3cec9d92ba580e979e277efc65a18fd",
+    "protocol_sha256": "d10b0887dd9ed5544d60a54670a07d52aacebdeb61a3d898ce4dcaabf9314d74",
+    "attempt": 1,
+    "inspect_log_dir": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\X3\\batches\\9645880d45814a09aea81dc6443f87d6\\inspect_logs",
+    "result": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "MISSING",
+      "reason": "INCORRECT_REJECT_NO_ALLOCATION",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "REJECT is incorrect because a full-space joint feasible solution exists"
+        ],
+        "metrics": {
+          "joint_feasible_decision_accuracy": 0,
+          "delta_tso_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_delta_tso": null,
+        "submitted_wufr": null
+      }
+    },
+    "strict": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "MISSING",
+      "reason": "INCORRECT_REJECT_NO_ALLOCATION",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "REJECT is incorrect because a full-space joint feasible solution exists"
+        ],
+        "metrics": {
+          "joint_feasible_decision_accuracy": 0,
+          "delta_tso_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_delta_tso": null,
+        "submitted_wufr": null
+      }
+    },
+    "graded_at": "2026-10-16T06:55:46.238729+00:00"
+  }
+}

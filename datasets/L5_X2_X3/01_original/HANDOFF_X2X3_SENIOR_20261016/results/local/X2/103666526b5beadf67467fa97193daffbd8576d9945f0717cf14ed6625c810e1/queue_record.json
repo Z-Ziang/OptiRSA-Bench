@@ -1,0 +1,110 @@
+{
+  "task": "X2",
+  "case_uid": "103666526b5beadf67467fa97193daffbd8576d9945f0717cf14ed6625c810e1",
+  "case_id": "X2_UNIFIED_CANDIDATE_20261008_051958_574121_X2_0009_04_05001_N1_V3",
+  "queue_status": "COMPLETE",
+  "attempts": 6,
+  "identity_key": "ded8939b41881f543a49ad46e9d637638e42ae908c26a2b4fc866f1fa915da8c",
+  "messages_sha256": "ee70d701ab3dd99b00f94a2aa3aa87d9fca1b16d31e35c14ab150191b921d07f",
+  "result_category": "INFEASIBLE",
+  "answer_record": {
+    "case_uid": "103666526b5beadf67467fa97193daffbd8576d9945f0717cf14ed6625c810e1",
+    "model": "Qwen/Qwen3-8B",
+    "task": "X2",
+    "identity_key": "ded8939b41881f543a49ad46e9d637638e42ae908c26a2b4fc866f1fa915da8c",
+    "status": "RESPONSE_RECEIVED",
+    "raw_completion": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [4, 7, 6, 5, 3, 2, 1],\n  \"path_link_ids\": [14, 19, 17, 16, 9, 8],\n  \"slot_start\": 27\n}",
+    "finish_reason": "stop",
+    "usage": {
+      "input_tokens": 1829,
+      "output_tokens": 73,
+      "total_tokens": 2798,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 896,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    },
+    "model_output": {
+      "model": "Qwen/Qwen3-8B",
+      "choices": [
+        {
+          "message": {
+            "id": "bA5cR6XjAAFvmUktDZKbCM",
+            "content": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [4, 7, 6, 5, 3, 2, 1],\n  \"path_link_ids\": [14, 19, 17, 16, 9, 8],\n  \"slot_start\": 27\n}",
+            "source": "generate",
+            "metadata": null,
+            "role": "assistant",
+            "tool_calls": null,
+            "model": "Qwen/Qwen3-8B"
+          },
+          "stop_reason": "stop",
+          "stop_details": null,
+          "logprobs": null,
+          "prompt_logprobs": null
+        }
+      ],
+      "completion": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [4, 7, 6, 5, 3, 2, 1],\n  \"path_link_ids\": [14, 19, 17, 16, 9, 8],\n  \"slot_start\": 27\n}",
+      "usage": {
+        "input_tokens": 1829,
+        "output_tokens": 73,
+        "total_tokens": 2798,
+        "input_tokens_cache_write": null,
+        "input_tokens_cache_read": 896,
+        "reasoning_tokens": 0,
+        "total_cost": null
+      },
+      "fallback": null,
+      "time": 14.938000000000102,
+      "metadata": null,
+      "error": null,
+      "response_id": "01a1437018409faa8d03ed60770a4209"
+    },
+    "started_at": "2026-10-16T06:39:39.068260+00:00",
+    "completed_at": "2026-10-16T06:39:54.636607+00:00",
+    "messages_sha256": "ee70d701ab3dd99b00f94a2aa3aa87d9fca1b16d31e35c14ab150191b921d07f",
+    "protocol_sha256": "2b0ac75ecc79a0b46b67708530f57709f9760617d21b8f55d7c3d9dd952df2e5",
+    "attempt": 6,
+    "inspect_log_dir": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\X2\\batches\\d7a33990474f4562b315e1f0a45b4f11\\inspect_logs",
+    "result": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "INFEASIBLE",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "path links are not directionally contiguous"
+        ],
+        "metrics": {
+          "feasible_decision_accuracy": 0,
+          "hop_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_hop_count": null,
+        "submitted_wufr": null
+      }
+    },
+    "strict": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "INFEASIBLE",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "path links are not directionally contiguous"
+        ],
+        "metrics": {
+          "feasible_decision_accuracy": 0,
+          "hop_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_hop_count": null,
+        "submitted_wufr": null
+      }
+    },
+    "graded_at": "2026-10-16T06:39:54.742690+00:00"
+  }
+}

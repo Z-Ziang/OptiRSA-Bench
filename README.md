@@ -19,27 +19,13 @@ Follow the module README to install Python 3.12 dependencies, run offline accept
 
 The separate `生产程序和评测程序` directory contains historical program releases. Use the GX1 module's included V5 R1 scientific validator and Inspect entry point for this dataset. Each module's version and scope must be checked before combining results.
 
-## X2 / X3 同源家族评测数据集
+## X2 / X3 合并数据及已有评测记录
 
-完整数据和 Inspect AI 评测程序位于 [`datasets/L5_X2_X3`](datasets/L5_X2_X3)。仓库直接包含全部 Case 文件，无需另行下载 ZIP。
+展开后的数据位于 [`datasets/L5_X2_X3`](datasets/L5_X2_X3/README.md)，clone 后无需另外下载数据压缩包。
 
-- X2：5,238 个；X3：3,102 个；合计 8,340 个唯一 Case。
-- 来自 3,102 个 L5 静态家族，74 个拓扑来源、73 个图哈希。
-- 每个拓扑下按 X2/X3 分类；包含英文模型输入、私有真值、来源、参考答案和冻结 Validator。
-- 使用 Inspect AI 0.3.278 与 Python 3.12；包含 Windows 和 Linux x86_64 离线依赖。
+- 共 **5,369 条**：X2 **3,618**、X3 **1,751**；原 R1 选集 4,608 条，已下载补充 761 条。
+- 保留 **230 条已保存答卷及评分记录**，以及原始回答、用量、耗时、Inspect 日志和来源证据。
+- 目录按原数据、补充数据和统一索引分区，英文公开输入与私有真值分别保留；依赖与平台认证按各版本 README 配置。
+- 本版替换旧 8,340 条发布目录；新合并集不等同于 3,102 个完整 L5 家族。科学合同、版本差异、接口 REVIEW 和服务器未下载部分见[完整说明](datasets/L5_X2_X3/README.md)。
 
-### Windows PowerShell 快速开始
-
-```powershell
-git -c core.longpaths=true clone https://github.com/Z-Ziang/OptiRSA-Bench.git
-cd OptiRSA-Bench/datasets/L5_X2_X3
-powershell -ExecutionPolicy Bypass -File ./evaluation/setup.ps1
-./.venv/Scripts/python.exe ./evaluation/verify_files.py
-./.venv/Scripts/python.exe ./evaluation/run_eval.py --offline-reference --limit-per-task 2 --output results/offline_check
-```
-
-最后一条运行本地参考答案回放，不会调用模型 API。模型平台、API Key 环境变量、并发和续跑步骤见 [X2/X3 完整中文说明](datasets/L5_X2_X3/README_中文.md)。请勿提交个人 API Key 或评测结果。
-
-**科学状态：** X2 按最少跳数、其次 WUFR 优化；X3 按最小 ΔTSO、其次 WUFR 优化。源接口仍标记 `REVIEW_OBJECTIVE_DEFINITION`，默认用于探索性评测；不宣称完成正式接口准入，也未对全池重新独立求解最优值。
-
-[G/X1 中文分布说明](G-X1-cases/README_中文.md) · [X2/X3 使用说明](datasets/L5_X2_X3/README_中文.md) · [评测执行指令](datasets/L5_X2_X3/AI_ASSISTANT_PROMPT_中文.txt)
+[统一 Case 清单](datasets/L5_X2_X3/MERGED_INDEX/case_inventory.csv) · [已有评测记录](datasets/L5_X2_X3/01_original/HANDOFF_X2X3_SENIOR_20261016/README_交接说明.md) · [补充数据说明](datasets/L5_X2_X3/02_supplement/README_中文.md)

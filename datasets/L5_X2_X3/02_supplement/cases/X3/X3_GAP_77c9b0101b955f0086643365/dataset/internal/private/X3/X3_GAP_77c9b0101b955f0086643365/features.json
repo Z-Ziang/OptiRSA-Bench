@@ -1,0 +1,84 @@
+{
+  "directed_link_count": 176,
+  "max_required_slots": 5,
+  "mean_required_slots": 5.0,
+  "node_count": 50,
+  "oracle_action_counts": {
+    "req_TB_REAL%3A%3ATOP_37_GERMANY50_000104": 468967,
+    "req_TB_REAL%3A%3ATOP_37_GERMANY50_002408": 358543
+  },
+  "oracle_evaluated_optimal_solutions": 218,
+  "oracle_path_counts": {
+    "req_TB_REAL%3A%3ATOP_37_GERMANY50_000104": 256172,
+    "req_TB_REAL%3A%3ATOP_37_GERMANY50_002408": 188049
+  },
+  "oracle_search_nodes": 522,
+  "reference_algorithms": {
+    "algorithm_1_sp_ff": null,
+    "algorithm_2_ksp5_ff": null,
+    "algorithm_3_joint_backtrack_k12": {
+      "delta_tso": 60,
+      "output": {
+        "allocations": [
+          {
+            "path_link_ids": [
+              14,
+              144,
+              43,
+              38,
+              47
+            ],
+            "path_node_ids": [
+              2,
+              31,
+              32,
+              5,
+              22,
+              6
+            ],
+            "request_id": "req_TB_REAL%3A%3ATOP_37_GERMANY50_000104",
+            "slot_start": 304
+          },
+          {
+            "path_link_ids": [
+              163,
+              17,
+              14,
+              144,
+              43,
+              38,
+              47
+            ],
+            "path_node_ids": [
+              49,
+              37,
+              2,
+              31,
+              32,
+              5,
+              22,
+              6
+            ],
+            "request_id": "req_TB_REAL%3A%3ATOP_37_GERMANY50_002408",
+            "slot_start": 309
+          }
+        ],
+        "decision": "ACCEPT"
+      },
+      "post_wufr": 0.7300729957277647
+    }
+  },
+  "request_count": 2,
+  "resource_pressure": 0.343980823864,
+  "serialization_metrics": {
+    "canonical_tokenizer": {
+      "backend": "tiktoken",
+      "encoding": "o200k_base",
+      "package_version": "0.14.0"
+    },
+    "llm_prompt_char_count": 34892,
+    "llm_prompt_token_count": 14367,
+    "llm_prompt_utf8_bytes": 35246
+  },
+  "total_required_slots": 10
+}

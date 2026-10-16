@@ -1,0 +1,38 @@
+{
+  "contract_id": "O2-C_ALGORITHM_CONTRACT_V2_0_LEXICOGRAPHIC",
+  "task_type": "O2-C",
+  "input_schema_version": "ALGORITHM_INPUT_V1_0",
+  "input_schema": "schemas/algorithm_input.schema.json",
+  "output_schema": "output_schema.json",
+  "benchmark_interface": "DUAL_VIEW_ALGORITHM_LLM_V1_0_COMPILED_NPZ",
+  "slot_count": 320,
+  "path_mode": "CANDIDATE",
+  "objective": "LEXICOGRAPHIC",
+  "objective_order": [
+    "MIN_DELTA_TSO",
+    "MIN_WUFR"
+  ],
+  "objective_source": "Direct user approved O2 V2 objectives; historical candidate set retained",
+  "metric_contract": {
+    "required_slots_probabilities": {
+      "2": 0.25,
+      "3": 0.25,
+      "5": 0.25,
+      "9": 0.25
+    },
+    "probability_semantics": "\u5f53\u524d\u751f\u4ea7\u914d\u7f6e\u4e0b\u672a\u6765\u4e1a\u52a1\u8bf7\u6c42\u7684 required_slots \u6982\u7387\u5206\u5e03\uff1brequired_slots \u5df2\u7ecf\u5305\u542b\u4fdd\u62a4\u69fd\u3002\u8be5\u5206\u5e03\u7528\u4e8e WUFR \u7684\u7cbe\u786e\u8ba1\u7b97\uff0c\u4f46\u5b83\u672c\u8eab\u4e0d\u662f WUFR \u7684\u9700\u6c42\u6982\u7387\u3002",
+    "included_in_algorithm_input": false,
+    "source": "Frozen production profile and existing WUFR validator contract"
+  },
+  "reference_sent_to_algorithm": false,
+  "timing_contract_version": "ALGORITHM_TIMING_V1_0",
+  "timing_contract": {
+    "load_parse_time_ms": "optional",
+    "compile_time_ms": "optional",
+    "solve_time_ms": "required; measured after compilation",
+    "validation_time_ms": "optional",
+    "end_to_end_time_ms": "optional"
+  },
+  "default_candidate_k": 3,
+  "legacy_candidate_k_preserved": true
+}

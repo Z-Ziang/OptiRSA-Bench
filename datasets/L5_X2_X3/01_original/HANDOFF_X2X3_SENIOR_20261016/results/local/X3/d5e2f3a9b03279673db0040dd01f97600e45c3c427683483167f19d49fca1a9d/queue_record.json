@@ -1,0 +1,112 @@
+{
+  "task": "X3",
+  "case_uid": "d5e2f3a9b03279673db0040dd01f97600e45c3c427683483167f19d49fca1a9d",
+  "case_id": "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_b53e3ba21b02ffd49eb23660",
+  "queue_status": "COMPLETE",
+  "attempts": 1,
+  "identity_key": "634ed97cf80427621cfad69e1d06ee5951ae4a8301ca90f833ca92fc8ef16073",
+  "messages_sha256": "3ee143241deff1fd8bd54e81c59af894a02ad97ef1cc74f8c147c07b39a843c0",
+  "result_category": "MISSING",
+  "answer_record": {
+    "case_uid": "d5e2f3a9b03279673db0040dd01f97600e45c3c427683483167f19d49fca1a9d",
+    "model": "Qwen/Qwen3-8B",
+    "task": "X3",
+    "identity_key": "634ed97cf80427621cfad69e1d06ee5951ae4a8301ca90f833ca92fc8ef16073",
+    "status": "RESPONSE_RECEIVED",
+    "raw_completion": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+    "finish_reason": "stop",
+    "usage": {
+      "input_tokens": 6914,
+      "output_tokens": 16,
+      "total_tokens": 8242,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 1312,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    },
+    "model_output": {
+      "model": "Qwen/Qwen3-8B",
+      "choices": [
+        {
+          "message": {
+            "id": "JtsLmonYyq59zx6xN3GDRp",
+            "content": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+            "source": "generate",
+            "metadata": null,
+            "role": "assistant",
+            "tool_calls": null,
+            "model": "Qwen/Qwen3-8B"
+          },
+          "stop_reason": "stop",
+          "stop_details": null,
+          "logprobs": null,
+          "prompt_logprobs": null
+        }
+      ],
+      "completion": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+      "usage": {
+        "input_tokens": 6914,
+        "output_tokens": 16,
+        "total_tokens": 8242,
+        "input_tokens_cache_write": null,
+        "input_tokens_cache_read": 1312,
+        "reasoning_tokens": 0,
+        "total_cost": null
+      },
+      "fallback": null,
+      "time": 4.655999999999949,
+      "metadata": null,
+      "error": null,
+      "response_id": "01a1437031a2c78b558085ac84bcf8de"
+    },
+    "started_at": "2026-10-16T06:39:45.475737+00:00",
+    "completed_at": "2026-10-16T06:39:50.797391+00:00",
+    "messages_sha256": "3ee143241deff1fd8bd54e81c59af894a02ad97ef1cc74f8c147c07b39a843c0",
+    "protocol_sha256": "d10b0887dd9ed5544d60a54670a07d52aacebdeb61a3d898ce4dcaabf9314d74",
+    "attempt": 1,
+    "inspect_log_dir": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\X3\\batches\\d505d557a7004bf3a8633f0a46c740bc\\inspect_logs",
+    "result": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "MISSING",
+      "reason": "INCORRECT_REJECT_NO_ALLOCATION",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "REJECT is incorrect because a full-space joint feasible solution exists"
+        ],
+        "metrics": {
+          "joint_feasible_decision_accuracy": 0,
+          "delta_tso_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_delta_tso": null,
+        "submitted_wufr": null
+      }
+    },
+    "strict": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "MISSING",
+      "reason": "INCORRECT_REJECT_NO_ALLOCATION",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "REJECT is incorrect because a full-space joint feasible solution exists"
+        ],
+        "metrics": {
+          "joint_feasible_decision_accuracy": 0,
+          "delta_tso_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_delta_tso": null,
+        "submitted_wufr": null
+      }
+    },
+    "graded_at": "2026-10-16T06:39:50.899370+00:00"
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "directed_link_count": 128,
+  "max_required_slots": 3,
+  "mean_required_slots": 2.5,
+  "node_count": 45,
+  "oracle_action_counts": {
+    "req_TB_REAL%3A%3ATOP_79_PALMETTO_000804": 669,
+    "req_TB_REAL%3A%3ATOP_79_PALMETTO_001015": 4989
+  },
+  "oracle_evaluated_optimal_solutions": 7998,
+  "oracle_path_counts": {
+    "req_TB_REAL%3A%3ATOP_79_PALMETTO_000804": 147,
+    "req_TB_REAL%3A%3ATOP_79_PALMETTO_001015": 3287
+  },
+  "oracle_search_nodes": 16184,
+  "reference_algorithms": {
+    "algorithm_1_sp_ff": {
+      "delta_tso": 21,
+      "output": {
+        "allocations": [
+          {
+            "path_link_ids": [
+              39,
+              36,
+              41
+            ],
+            "path_node_ids": [
+              18,
+              10,
+              13,
+              11
+            ],
+            "request_id": "req_TB_REAL%3A%3ATOP_79_PALMETTO_000804",
+            "slot_start": 37
+          },
+          {
+            "path_link_ids": [
+              75,
+              76,
+              79,
+              51,
+              48,
+              13
+            ],
+            "path_node_ids": [
+              23,
+              20,
+              24,
+              21,
+              13,
+              14,
+              2
+            ],
+            "request_id": "req_TB_REAL%3A%3ATOP_79_PALMETTO_001015",
+            "slot_start": 103
+          }
+        ],
+        "decision": "ACCEPT"
+      },
+      "post_wufr": 0.7959849818006139
+    },
+    "algorithm_2_ksp5_ff": {
+      "delta_tso": 21,
+      "output": {
+        "allocations": [
+          {
+            "path_link_ids": [
+              39,
+              36,
+              41
+            ],
+            "path_node_ids": [
+              18,
+              10,
+              13,
+              11
+            ],
+            "request_id": "req_TB_REAL%3A%3ATOP_79_PALMETTO_000804",
+            "slot_start": 37
+          },
+          {
+            "path_link_ids": [
+              75,
+              76,
+              65,
+              61,
+              55,
+              13
+            ],
+            "path_node_ids": [
+              23,
+              20,
+              24,
+              17,
+              16,
+              14,
+              2
+            ],
+            "request_id": "req_TB_REAL%3A%3ATOP_79_PALMETTO_001015",
+            "slot_start": 16
+          }
+        ],
+        "decision": "ACCEPT"
+      },
+      "post_wufr": 0.7956358608652827
+    },
+    "algorithm_3_joint_backtrack_k12": {
+      "delta_tso": 21,
+      "output": {
+        "allocations": [
+          {
+            "path_link_ids": [
+              39,
+              36,
+              41
+            ],
+            "path_node_ids": [
+              18,
+              10,
+              13,
+              11
+            ],
+            "request_id": "req_TB_REAL%3A%3ATOP_79_PALMETTO_000804",
+            "slot_start": 278
+          },
+          {
+            "path_link_ids": [
+              75,
+              76,
+              65,
+              61,
+              55,
+              13
+            ],
+            "path_node_ids": [
+              23,
+              20,
+              24,
+              17,
+              16,
+              14,
+              2
+            ],
+            "request_id": "req_TB_REAL%3A%3ATOP_79_PALMETTO_001015",
+            "slot_start": 16
+          }
+        ],
+        "decision": "ACCEPT"
+      },
+      "post_wufr": 0.7955744244580969
+    }
+  },
+  "request_count": 2,
+  "resource_pressure": 0.361596679687,
+  "serialization_metrics": {
+    "canonical_tokenizer": {
+      "backend": "tiktoken",
+      "encoding": "o200k_base",
+      "package_version": "0.14.0"
+    },
+    "llm_prompt_char_count": 30261,
+    "llm_prompt_token_count": 12427,
+    "llm_prompt_utf8_bytes": 30519
+  },
+  "total_required_slots": 5
+}

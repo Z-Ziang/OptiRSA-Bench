@@ -1,0 +1,100 @@
+{
+  "case_uid": "73a7bdb7742d2d126c1eeb425eb255212f5180ee51a0ec1f710a7c0ad42b9080",
+  "model": "Qwen/Qwen3-8B",
+  "task": "X2",
+  "identity_key": "5e96b329aedd7c50d0b3041544f6920e5074d64985605f88118e7eb3388a1820",
+  "status": "RESPONSE_RECEIVED",
+  "raw_completion": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [13, 12, 23, 22, 21, 19, 15, 16, 17, 18, 20, 11],\n  \"path_link_ids\": [34, 33, 57, 54, 52, 50, 42, 41, 46, 48, 51, 22],\n  \"slot_start\": 2\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "input_tokens": 11459,
+    "output_tokens": 125,
+    "total_tokens": 11584,
+    "input_tokens_cache_write": null,
+    "input_tokens_cache_read": 0,
+    "reasoning_tokens": 0,
+    "total_cost": null
+  },
+  "model_output": {
+    "model": "Qwen/Qwen3-8B",
+    "choices": [
+      {
+        "message": {
+          "id": "dWPh27XtSADVihX9HyTWBM",
+          "content": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [13, 12, 23, 22, 21, 19, 15, 16, 17, 18, 20, 11],\n  \"path_link_ids\": [34, 33, 57, 54, 52, 50, 42, 41, 46, 48, 51, 22],\n  \"slot_start\": 2\n}",
+          "source": "generate",
+          "metadata": null,
+          "role": "assistant",
+          "tool_calls": null,
+          "model": "Qwen/Qwen3-8B"
+        },
+        "stop_reason": "stop",
+        "stop_details": null,
+        "logprobs": null,
+        "prompt_logprobs": null
+      }
+    ],
+    "completion": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [13, 12, 23, 22, 21, 19, 15, 16, 17, 18, 20, 11],\n  \"path_link_ids\": [34, 33, 57, 54, 52, 50, 42, 41, 46, 48, 51, 22],\n  \"slot_start\": 2\n}",
+    "usage": {
+      "input_tokens": 11459,
+      "output_tokens": 125,
+      "total_tokens": 11584,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 0,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    },
+    "fallback": null,
+    "time": 6.186999999999898,
+    "metadata": null,
+    "error": null,
+    "response_id": "01a143654cc91d4e6fea5e31dcd9e9fd"
+  },
+  "started_at": "2026-10-16T06:27:52.099734+00:00",
+  "completed_at": "2026-10-16T06:27:58.451828+00:00",
+  "messages_sha256": "c2a7f6d5f84261066dc491a72593c14aa0301e50264acaef9f827b455f3ab99c",
+  "protocol_sha256": "f425958ba4de453deeef9403d499b323c156386dd5edee911eb652cbcd1824a3",
+  "attempt": 1,
+  "inspect_log_dir": "F:\\codex\\BENCHMARK\\BENCHMARK9.19\\OptiRSA_EXTERNAL_600_20261016_111920\\OptiRSA_EXTERNAL_600_20261016_111920_NO_THINKING\\output\\tasks\\X2\\batches\\dccf1ff70dcb4a148842ff134a21e5ee\\inspect_logs",
+  "result": {
+    "truth_feasible": true,
+    "single_outer_fence_removed": false,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+    "category": "INFEASIBLE",
+    "validator": {
+      "valid": false,
+      "errors": [
+        "path links are not directionally contiguous"
+      ],
+      "metrics": {
+        "feasible_decision_accuracy": 0,
+        "hop_gap": null,
+        "wufr_gap": null
+      },
+      "submitted_hop_count": null,
+      "submitted_wufr": null
+    }
+  },
+  "strict": {
+    "truth_feasible": true,
+    "single_outer_fence_removed": false,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+    "category": "INFEASIBLE",
+    "validator": {
+      "valid": false,
+      "errors": [
+        "path links are not directionally contiguous"
+      ],
+      "metrics": {
+        "feasible_decision_accuracy": 0,
+        "hop_gap": null,
+        "wufr_gap": null
+      },
+      "submitted_hop_count": null,
+      "submitted_wufr": null
+    }
+  },
+  "graded_at": "2026-10-16T06:27:58.533220+00:00"
+}

@@ -1,0 +1,93 @@
+{
+  "benchmark_interface": "DUAL_VIEW_ALGORITHM_LLM_V1_0_COMPILED_NPZ",
+  "case_count": 1,
+  "production_metadata": {
+    "increment": "X2X3_SOURCE_RESUME_V4_20261016_173749_184997",
+    "lineage": {
+      "API_calls": 0,
+      "derivation_policy": "FROZEN_REQUEST_DERIVER_METADATA_ONLY; X3_FULL_GRAPH_ORACLE_UNCHANGED",
+      "dispatch_worker_code_sha256": "418045b96dea77637d1b9d0d2492cab3e9cf551f2418a8dbfe0073d12dbce9de",
+      "frozen_R1_unchanged": true,
+      "handoff_gap_id": "X3_GAP_a0251e2fed34e3e36eb51ded",
+      "handoff_manifest_sha256": "07bff65489dea940884e694f977f04d296a9d2709843799dac38dfd7f662dc01",
+      "input_sha256": "4bd626e660c7e7b626d3a8434a2b357da01bcc5e4200349a14c4e48673528cae",
+      "original_source_batch_id": "UNKNOWN",
+      "parent_request_evidence": [
+        {
+          "parent_case_uid": "f64230ceb60e186d2989c266bb8f73de75f7f8b0daf1689f6467c6c98f0414f1",
+          "parent_root_path": "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/X2X3_CPU_ADAPTIVE_V3_20261016_171523_935100/handoffs/x3_coverage_challenge_20261016_1719/X3_HANDOFF_R1/source_evidence/parent_cases/f64230ceb60e186d2989c266/root_case.json",
+          "parent_root_sha256": "97e296e48d3e41d0227384935d5b4badfe3fcdbae86313bedbbccff1c847774b",
+          "request_id": "dynreq_TB_REAL%3A%3ATOP_103_UNIC_006_000001",
+          "source_archive": "D:\\codex\\BENCHMARK\\Benchmark_7_7_HISTORICAL_X2.zip",
+          "source_member": "cases/X2/9d91bbacb471777b6d18/private/root_case/X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_6de222ec422ed1e32172.json"
+        }
+      ],
+      "request_order": [
+        "dynreq_TB_REAL%3A%3ATOP_103_UNIC_006_000001",
+        "req_TB_REAL%3A%3ATOP_103_UNIC_000125"
+      ],
+      "scientific_key": "abb4046df99f6699221c80c8794a0e5b1742c380cf1f68ad6e275c553e0e2044",
+      "source_batch_id": "UNKNOWN",
+      "source_environment": "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/jobs/ENV_0020_V2/unit/public_environment",
+      "source_proof_kind": "FIXED_HANDOFF_PARENT_CASE_REQUESTS_ON_IDENTICAL_FROZEN_STATE",
+      "source_request_ids": [
+        "dynreq_TB_REAL%3A%3ATOP_103_UNIC_006_000001",
+        "req_TB_REAL%3A%3ATOP_103_UNIC_000125"
+      ],
+      "source_request_provenance": [
+        {
+          "existing_certified_X2_uid": "f64230ceb60e186d2989c266bb8f73de75f7f8b0daf1689f6467c6c98f0414f1",
+          "physical_hash": "0041e7014062496fa68c329e89706e879f95062fea246ec3d3c20f34d10d57ef",
+          "profile_id": "ed91865d1c823d2d12627b641c4ae274af4067e2ae7cd0616248b1c406d7bf02",
+          "request": {
+            "destination_node_id": 9,
+            "request_id": "dynreq_TB_REAL%3A%3ATOP_103_UNIC_006_000001",
+            "required_slots": 5,
+            "source_node_id": 8
+          },
+          "source_archive": "D:\\codex\\BENCHMARK\\Benchmark_7_7_HISTORICAL_X2.zip",
+          "source_case_uid": "f64230ceb60e186d2989c266bb8f73de75f7f8b0daf1689f6467c6c98f0414f1",
+          "source_kind": "CERTIFIED_PARENT_CASE_REQUEST",
+          "source_member": "cases/X2/9d91bbacb471777b6d18/private/root_case/X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_6de222ec422ed1e32172.json",
+          "source_parent_decision": "ACCEPT",
+          "source_parent_local_file": "source_evidence/parent_cases/f64230ceb60e186d2989c266/root_case.json",
+          "source_parent_task": "X2",
+          "source_priority": 0,
+          "source_root_sha256": "97e296e48d3e41d0227384935d5b4badfe3fcdbae86313bedbbccff1c847774b",
+          "state_key": "fe9e41820719d2f2b804478241d6441eae40f2561fab831d38a24cdfc2df86fb",
+          "topological_hops": 5
+        },
+        {
+          "existing_certified_X2_uid": "b1a36d0acaca08214c6588adeecd2a80796128ba11d0c0c04da057623e14f0a7",
+          "physical_hash": "8063bc8287fc4a543b13f9bf6e819f98d52409c965d1a406876680e040b3ab45",
+          "profile_id": "9e1e4bf6da10681bae53aeb044f223ee30ef95bebc316d2b16333d9be256a4f3",
+          "request": {
+            "destination_node_id": 13,
+            "request_id": "req_TB_REAL%3A%3ATOP_103_UNIC_000125",
+            "required_slots": 5,
+            "source_node_id": 8
+          },
+          "source_archive": "D:\\codex\\BENCHMARK\\Benchmark_7_7_HISTORICAL_X2.zip",
+          "source_case_uid": "b1a36d0acaca08214c6588adeecd2a80796128ba11d0c0c04da057623e14f0a7",
+          "source_kind": "CERTIFIED_PARENT_CASE_REQUEST",
+          "source_member": "cases/X2/9144908747ca43a12295/private/root_case/X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_RECOVER_HANDOFF_R33_STATIC_X2_b6c91475c709ef74da842845.json",
+          "source_parent_decision": "ACCEPT",
+          "source_parent_local_file": "source_evidence/parent_cases/b1a36d0acaca08214c6588ad/root_case.json",
+          "source_parent_task": "X2",
+          "source_priority": 0,
+          "source_root_sha256": "b62542081638b7a832cf229d6ee304e78b8060252512ba0cabe827d0105f61b0",
+          "state_key": "fe9e41820719d2f2b804478241d6441eae40f2561fab831d38a24cdfc2df86fb",
+          "topological_hops": 6
+        }
+      ],
+      "source_resource_state_id": "rs_TB_REAL%3A%3ATOP_103_UNIC_kspff_medium_seed01",
+      "source_state_key": "fe9e41820719d2f2b804478241d6441eae40f2561fab831d38a24cdfc2df86fb",
+      "source_topology_id": "top_TB_REAL%3A%3ATOP_103_UNIC"
+    }
+  },
+  "schema_version": "X2X3_PRODUCTION_SUMMARY_V3_0",
+  "task_counts": {
+    "X2": 0,
+    "X3": 1
+  }
+}

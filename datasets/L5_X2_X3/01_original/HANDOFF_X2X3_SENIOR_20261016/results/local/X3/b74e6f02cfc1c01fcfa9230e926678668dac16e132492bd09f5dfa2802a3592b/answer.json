@@ -1,0 +1,100 @@
+{
+  "case_uid": "b74e6f02cfc1c01fcfa9230e926678668dac16e132492bd09f5dfa2802a3592b",
+  "model": "Qwen/Qwen3-8B",
+  "task": "X3",
+  "identity_key": "30c28efd4881e06c6e54e80479b5a135826f920632a491eceafa79cf09e9c222",
+  "status": "RESPONSE_RECEIVED",
+  "raw_completion": "{\n  \"decision\": \"ACCEPT\",\n  \"allocations\": [\n    {\n      \"request_id\": \"dynreq_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_004_000001\",\n      \"path_node_ids\": [6, 7, 4],\n      \"path_link_ids\": [18, 15],\n      \"slot_start\": 2\n    },\n    {\n      \"request_id\": \"dynreq_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_004_000002\",\n      \"path_node_ids\": [4, 3, 2, 1, 0],\n      \"path_link_ids\": [10, 9, 8, 5],\n      \"slot_start\": 133\n    }\n  ]\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "input_tokens": 3518,
+    "output_tokens": 190,
+    "total_tokens": 3708,
+    "input_tokens_cache_write": null,
+    "input_tokens_cache_read": 0,
+    "reasoning_tokens": 0,
+    "total_cost": null
+  },
+  "model_output": {
+    "model": "Qwen/Qwen3-8B",
+    "choices": [
+      {
+        "message": {
+          "id": "dXYwzy2ykmnQdvwwjaQTkh",
+          "content": "{\n  \"decision\": \"ACCEPT\",\n  \"allocations\": [\n    {\n      \"request_id\": \"dynreq_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_004_000001\",\n      \"path_node_ids\": [6, 7, 4],\n      \"path_link_ids\": [18, 15],\n      \"slot_start\": 2\n    },\n    {\n      \"request_id\": \"dynreq_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_004_000002\",\n      \"path_node_ids\": [4, 3, 2, 1, 0],\n      \"path_link_ids\": [10, 9, 8, 5],\n      \"slot_start\": 133\n    }\n  ]\n}",
+          "source": "generate",
+          "metadata": null,
+          "role": "assistant",
+          "tool_calls": null,
+          "model": "Qwen/Qwen3-8B"
+        },
+        "stop_reason": "stop",
+        "stop_details": null,
+        "logprobs": null,
+        "prompt_logprobs": null
+      }
+    ],
+    "completion": "{\n  \"decision\": \"ACCEPT\",\n  \"allocations\": [\n    {\n      \"request_id\": \"dynreq_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_004_000001\",\n      \"path_node_ids\": [6, 7, 4],\n      \"path_link_ids\": [18, 15],\n      \"slot_start\": 2\n    },\n    {\n      \"request_id\": \"dynreq_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_004_000002\",\n      \"path_node_ids\": [4, 3, 2, 1, 0],\n      \"path_link_ids\": [10, 9, 8, 5],\n      \"slot_start\": 133\n    }\n  ]\n}",
+    "usage": {
+      "input_tokens": 3518,
+      "output_tokens": 190,
+      "total_tokens": 3708,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 0,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    },
+    "fallback": null,
+    "time": 20.422000000000025,
+    "metadata": null,
+    "error": null,
+    "response_id": "01a1436b513105ffcf20e0052ba84dc7"
+  },
+  "started_at": "2026-10-16T06:34:26.073753+00:00",
+  "completed_at": "2026-10-16T06:34:47.106281+00:00",
+  "messages_sha256": "a816a135bccbf62ae0d2235c6a936f5ea62797bc5c0951c476b24ed1ce26e61d",
+  "protocol_sha256": "d10b0887dd9ed5544d60a54670a07d52aacebdeb61a3d898ce4dcaabf9314d74",
+  "attempt": 11,
+  "inspect_log_dir": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\X3\\batches\\8bf517b3ca1d4e1191191b5a47ed3888\\inspect_logs",
+  "result": {
+    "truth_feasible": true,
+    "single_outer_fence_removed": false,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+    "category": "INFEASIBLE",
+    "validator": {
+      "valid": false,
+      "errors": [
+        "dynreq_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_004_000001: path endpoints do not match request endpoints"
+      ],
+      "metrics": {
+        "joint_feasible_decision_accuracy": 0,
+        "delta_tso_gap": null,
+        "wufr_gap": null
+      },
+      "submitted_delta_tso": null,
+      "submitted_wufr": null
+    }
+  },
+  "strict": {
+    "truth_feasible": true,
+    "single_outer_fence_removed": false,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+    "category": "INFEASIBLE",
+    "validator": {
+      "valid": false,
+      "errors": [
+        "dynreq_TB_REAL%3A%3ATOP_42_HIBERNIACANADA_004_000001: path endpoints do not match request endpoints"
+      ],
+      "metrics": {
+        "joint_feasible_decision_accuracy": 0,
+        "delta_tso_gap": null,
+        "wufr_gap": null
+      },
+      "submitted_delta_tso": null,
+      "submitted_wufr": null
+    }
+  },
+  "graded_at": "2026-10-16T06:34:47.212395+00:00"
+}

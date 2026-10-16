@@ -1,0 +1,100 @@
+{
+  "case_uid": "38bbc34170805d6c59c127261826c4af2407300c14cfbebca087b4e9d95e6aaa",
+  "model": "Qwen/Qwen3-8B",
+  "task": "X3",
+  "identity_key": "ab519212b6e0b0f451e9499ac192cf15461e8a02bd4114619e625aa68f47e1c2",
+  "status": "RESPONSE_RECEIVED",
+  "raw_completion": "{\n  \"decision\": \"ACCEPT\",\n  \"allocations\": [\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_95_RNPBRAZIL_000024\",\n      \"path_node_ids\": [2, 1, 0, 3, 4, 5, 7],\n      \"path_link_ids\": [4, 6, 8, 12, 16, 17],\n      \"slot_start\": 26\n    },\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_95_RNPBRAZIL_000084\",\n      \"path_node_ids\": [9, 8, 7, 5, 6],\n      \"path_link_ids\": [22, 20, 17, 15],\n      \"slot_start\": 39\n    }\n  ]\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "input_tokens": 2841,
+    "output_tokens": 206,
+    "total_tokens": 4359,
+    "input_tokens_cache_write": null,
+    "input_tokens_cache_read": 1312,
+    "reasoning_tokens": 0,
+    "total_cost": null
+  },
+  "model_output": {
+    "model": "Qwen/Qwen3-8B",
+    "choices": [
+      {
+        "message": {
+          "id": "LhijZiCcpZAmj6XH72ioR4",
+          "content": "{\n  \"decision\": \"ACCEPT\",\n  \"allocations\": [\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_95_RNPBRAZIL_000024\",\n      \"path_node_ids\": [2, 1, 0, 3, 4, 5, 7],\n      \"path_link_ids\": [4, 6, 8, 12, 16, 17],\n      \"slot_start\": 26\n    },\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_95_RNPBRAZIL_000084\",\n      \"path_node_ids\": [9, 8, 7, 5, 6],\n      \"path_link_ids\": [22, 20, 17, 15],\n      \"slot_start\": 39\n    }\n  ]\n}",
+          "source": "generate",
+          "metadata": null,
+          "role": "assistant",
+          "tool_calls": null,
+          "model": "Qwen/Qwen3-8B"
+        },
+        "stop_reason": "stop",
+        "stop_details": null,
+        "logprobs": null,
+        "prompt_logprobs": null
+      }
+    ],
+    "completion": "{\n  \"decision\": \"ACCEPT\",\n  \"allocations\": [\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_95_RNPBRAZIL_000024\",\n      \"path_node_ids\": [2, 1, 0, 3, 4, 5, 7],\n      \"path_link_ids\": [4, 6, 8, 12, 16, 17],\n      \"slot_start\": 26\n    },\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_95_RNPBRAZIL_000084\",\n      \"path_node_ids\": [9, 8, 7, 5, 6],\n      \"path_link_ids\": [22, 20, 17, 15],\n      \"slot_start\": 39\n    }\n  ]\n}",
+    "usage": {
+      "input_tokens": 2841,
+      "output_tokens": 206,
+      "total_tokens": 4359,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 1312,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    },
+    "fallback": null,
+    "time": 37.8119999999999,
+    "metadata": null,
+    "error": null,
+    "response_id": "01a1436ca836d49eb305e8dd0084c3d2"
+  },
+  "started_at": "2026-10-16T06:35:53.559239+00:00",
+  "completed_at": "2026-10-16T06:36:32.277336+00:00",
+  "messages_sha256": "85579121e26e90d201580c53f9b2c15547a79913fc332abc0a61712604e202f3",
+  "protocol_sha256": "d10b0887dd9ed5544d60a54670a07d52aacebdeb61a3d898ce4dcaabf9314d74",
+  "attempt": 8,
+  "inspect_log_dir": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\X3\\batches\\4f6afb9483b647098d7b0133a0742400\\inspect_logs",
+  "result": {
+    "truth_feasible": true,
+    "single_outer_fence_removed": false,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+    "category": "INFEASIBLE",
+    "validator": {
+      "valid": false,
+      "errors": [
+        "req_TB_REAL%3A%3ATOP_95_RNPBRAZIL_000024: path links are not directionally contiguous"
+      ],
+      "metrics": {
+        "joint_feasible_decision_accuracy": 0,
+        "delta_tso_gap": null,
+        "wufr_gap": null
+      },
+      "submitted_delta_tso": null,
+      "submitted_wufr": null
+    }
+  },
+  "strict": {
+    "truth_feasible": true,
+    "single_outer_fence_removed": false,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+    "category": "INFEASIBLE",
+    "validator": {
+      "valid": false,
+      "errors": [
+        "req_TB_REAL%3A%3ATOP_95_RNPBRAZIL_000024: path links are not directionally contiguous"
+      ],
+      "metrics": {
+        "joint_feasible_decision_accuracy": 0,
+        "delta_tso_gap": null,
+        "wufr_gap": null
+      },
+      "submitted_delta_tso": null,
+      "submitted_wufr": null
+    }
+  },
+  "graded_at": "2026-10-16T06:36:32.390141+00:00"
+}

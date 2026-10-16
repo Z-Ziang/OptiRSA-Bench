@@ -1,0 +1,117 @@
+{
+  "task": "X2",
+  "case_uid": "24d0bd417f2e953c3348764f1b947422a57c45adfec616d6ba52a2e9a3915234",
+  "case_id": "X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_RECOVER_HANDOFF_R33_STATIC_X2_607b230987b9c858fd23d7e6",
+  "queue_status": "HISTORICAL",
+  "attempts": 0,
+  "identity_key": "5e43d93a18c11ed477826f321a1ac8759453d87b40417f7bb37e6175729a21a2",
+  "messages_sha256": "e36a87b6735e2fd90aec12832cf8309e40b67793e284176172a5cc7c04a1086a",
+  "result_category": "SUBOPTIMAL",
+  "answer_record": {
+    "case_uid": "24d0bd417f2e953c3348764f1b947422a57c45adfec616d6ba52a2e9a3915234",
+    "model": "Qwen/Qwen3-8B",
+    "status": "RESPONSE_RECEIVED",
+    "raw_completion": "\n\n{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [1, 0, 4, 3],\n  \"path_link_ids\": [1, 4, 11],\n  \"slot_start\": 149\n}",
+    "finish_reason": "stop",
+    "usage": {
+      "openai-api/Qwen/Qwen3-8B": {
+        "input_tokens": 2356,
+        "output_tokens": 15312,
+        "total_tokens": 17668,
+        "input_tokens_cache_write": null,
+        "input_tokens_cache_read": 0,
+        "reasoning_tokens": 15258,
+        "total_cost": null
+      }
+    },
+    "started_at": "2026-10-14T07:35:16.726293+00:00",
+    "completed_at": "2026-10-14T07:45:15.904654+00:00",
+    "total_seconds": 599.178,
+    "inspect_log": "inspect_logs/2026-10-14T07-35-16-00-00_x2-x3-cases_ExEpjMmfJDMvPeNbSTzbMv.eval",
+    "result": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "SUBOPTIMAL",
+      "correct_reject": false,
+      "result_kind": "ALLOCATION",
+      "validator": {
+        "valid": true,
+        "errors": [],
+        "metrics": {
+          "feasible_decision_accuracy": 1,
+          "hop_gap": 0,
+          "wufr_gap": 0.001495982297784304
+        },
+        "submitted_hop_count": 3,
+        "submitted_wufr": 0.23503225615544796
+      }
+    },
+    "strict": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "SUBOPTIMAL",
+      "correct_reject": false,
+      "result_kind": "ALLOCATION",
+      "validator": {
+        "valid": true,
+        "errors": [],
+        "metrics": {
+          "feasible_decision_accuracy": 1,
+          "hop_gap": 0,
+          "wufr_gap": 0.001495982297784304
+        },
+        "submitted_hop_count": 3,
+        "submitted_wufr": 0.23503225615544796
+      }
+    },
+    "_source_file": "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/LLM_L5_FIXED2_20261014_153420_896215/results/qwen3_8b/full/results.jsonl",
+    "_all_source_files": [
+      "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/LLM_L5_FIXED2_20261014_153420_896215/results/qwen3_8b/full/answers/24d0bd417f2e953c3348764f1b947422a57c45adfec616d6ba52a2e9a3915234.json",
+      "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/LLM_L5_FIXED2_20261014_153420_896215/results/qwen3_8b/full/results.jsonl"
+    ],
+    "_case_metadata": {
+      "node_count": "6",
+      "scale": "5-10",
+      "occupancy": "0.34955357142857146",
+      "load_band": "MID",
+      "decision": "ACCEPT",
+      "request_count": "1",
+      "requested_slots": "[3]",
+      "seed": "UNKNOWN",
+      "snapshot_id": "rs_TB_REAL%3A%3ATOP_30_EPOCH_kspff_medium_seed01",
+      "request_ids": "[\"req_TB_REAL%3A%3ATOP_30_EPOCH_000008\"]",
+      "source_category": "real",
+      "producer_version": "UNKNOWN",
+      "contract_version": "UNKNOWN",
+      "primary_objective": "LEX_MIN_HOPS_THEN_WUFR_FULL_PATH",
+      "certificate": "EXACT_CERTIFIED",
+      "oracle_status": "EXACT_CERTIFIED",
+      "exposed": "0",
+      "split": "DEVELOPMENT_UNASSESSED",
+      "input_tokens": "UNKNOWN_NOT_MEASURED",
+      "case_uid": "24d0bd417f2e953c3348764f1b947422a57c45adfec616d6ba52a2e9a3915234",
+      "case_id": "X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_RECOVER_HANDOFF_R33_STATIC_X2_607b230987b9c858fd23d7e6",
+      "task": "X2",
+      "topology_id": "top_TB_REAL%3A%3ATOP_30_EPOCH",
+      "topology_folder": "EPOCH_n6_TB30",
+      "graph_hash": "dd90e75b308dfaa995ce035c1cee6a162cbd12e3b45c5287f38106c0b5bcecc7",
+      "snapshot_hash": "71cef2cfd9074c17e57fe3940cb6a101d01f89cd95ee17b2f115040b3e5d9b44",
+      "case_dir": "case_sets/EPOCH_n6_TB30/X2/24d0bd417f2e953c",
+      "family_ids": [
+        "F_391174537522268f428dfaecf0af955f4ca13c4aa55744ddc6bd8bf8ada65123"
+      ],
+      "messages_sha256": "e36a87b6735e2fd90aec12832cf8309e40b67793e284176172a5cc7c04a1086a",
+      "input_characters": 6625,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "validator_sha256": "31660b7c47b6875d4332ec8212cfea2bae583ae029b60ce6da54bf0a48393a32"
+    },
+    "identity_key": "5e43d93a18c11ed477826f321a1ac8759453d87b40417f7bb37e6175729a21a2",
+    "historical": true,
+    "history_answer_count": 1,
+    "historical_selection": "latest received response from FINAL; not normalized formal authority"
+  }
+}

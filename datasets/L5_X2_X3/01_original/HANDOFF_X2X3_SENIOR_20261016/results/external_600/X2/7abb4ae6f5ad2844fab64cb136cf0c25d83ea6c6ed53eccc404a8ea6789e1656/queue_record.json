@@ -1,0 +1,161 @@
+{
+  "task": "X2",
+  "case_uid": "7abb4ae6f5ad2844fab64cb136cf0c25d83ea6c6ed53eccc404a8ea6789e1656",
+  "case_id": "X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X2_be2f9cd874e959c48f8d1ca1",
+  "queue_status": "COMPLETE",
+  "attempts": 1,
+  "identity_key": "3c61cb69d51d0b90018ebffd7fa42fcb6247bb093e84ee987a5dd8d83d74fe98",
+  "messages_sha256": "0c42d199d8a33f233f243c6aef698f154ea2633080f51f21e922a68ebf723ef6",
+  "result_category": "INFEASIBLE",
+  "answer_record": {
+    "case_uid": "7abb4ae6f5ad2844fab64cb136cf0c25d83ea6c6ed53eccc404a8ea6789e1656",
+    "model": "Qwen/Qwen3-8B",
+    "task": "X2",
+    "identity_key": "3c61cb69d51d0b90018ebffd7fa42fcb6247bb093e84ee987a5dd8d83d74fe98",
+    "status": "RESPONSE_RECEIVED",
+    "raw_completion": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [10, 11, 13, 14, 2, 0, 1],\n  \"path_link_ids\": [26, 30, 25, 32, 14, 0],\n  \"slot_start\": 2\n}",
+    "finish_reason": "stop",
+    "usage": {
+      "input_tokens": 4953,
+      "output_tokens": 77,
+      "total_tokens": 5030,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 0,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    },
+    "model_output": {
+      "model": "Qwen/Qwen3-8B",
+      "choices": [
+        {
+          "message": {
+            "id": "UxcceVKufnDFkAwGgWupr6",
+            "content": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [10, 11, 13, 14, 2, 0, 1],\n  \"path_link_ids\": [26, 30, 25, 32, 14, 0],\n  \"slot_start\": 2\n}",
+            "source": "generate",
+            "metadata": null,
+            "role": "assistant",
+            "tool_calls": null,
+            "model": "Qwen/Qwen3-8B"
+          },
+          "stop_reason": "stop",
+          "stop_details": null,
+          "logprobs": null,
+          "prompt_logprobs": null
+        }
+      ],
+      "completion": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [10, 11, 13, 14, 2, 0, 1],\n  \"path_link_ids\": [26, 30, 25, 32, 14, 0],\n  \"slot_start\": 2\n}",
+      "usage": {
+        "input_tokens": 4953,
+        "output_tokens": 77,
+        "total_tokens": 5030,
+        "input_tokens_cache_write": null,
+        "input_tokens_cache_read": 0,
+        "reasoning_tokens": 0,
+        "total_cost": null
+      },
+      "fallback": null,
+      "time": 28.84400000000005,
+      "metadata": null,
+      "error": null,
+      "response_id": "01a143638ea4b8ad1fee5a5caef28f40"
+    },
+    "started_at": "2026-10-16T06:25:57.949202+00:00",
+    "completed_at": "2026-10-16T06:26:26.964342+00:00",
+    "messages_sha256": "0c42d199d8a33f233f243c6aef698f154ea2633080f51f21e922a68ebf723ef6",
+    "protocol_sha256": "f425958ba4de453deeef9403d499b323c156386dd5edee911eb652cbcd1824a3",
+    "attempt": 1,
+    "inspect_log_dir": "F:\\codex\\BENCHMARK\\BENCHMARK9.19\\OptiRSA_EXTERNAL_600_20261016_111920\\OptiRSA_EXTERNAL_600_20261016_111920_NO_THINKING\\output\\tasks\\X2\\batches\\8e2b7c4e2a4649ce9cc97427040009d9\\inspect_logs",
+    "result": {
+      "truth_feasible": false,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "INFEASIBLE",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "path links are not directionally contiguous"
+        ],
+        "metrics": {
+          "feasible_decision_accuracy": 0,
+          "hop_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_hop_count": null,
+        "submitted_wufr": null
+      }
+    },
+    "strict": {
+      "truth_feasible": false,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "INFEASIBLE",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "path links are not directionally contiguous"
+        ],
+        "metrics": {
+          "feasible_decision_accuracy": 0,
+          "hop_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_hop_count": null,
+        "submitted_wufr": null
+      }
+    },
+    "graded_at": "2026-10-16T06:26:27.027160+00:00",
+    "_case_metadata": {
+      "case_dir": "case_sets/UNIC_n15_TB103/X2/7abb4ae6f5ad2844",
+      "case_id": "X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X2_be2f9cd874e959c48f8d1ca1",
+      "case_uid": "7abb4ae6f5ad2844fab64cb136cf0c25d83ea6c6ed53eccc404a8ea6789e1656",
+      "certificate": "INFEASIBLE_CERTIFIED",
+      "contract_version": "UNKNOWN",
+      "decision": "REJECT",
+      "exposed": "0",
+      "family_ids": [
+        "F_32e3ad18de977d749127615c5b7755fb632e1d6610b5d314147cb2bb49a84aca",
+        "F_581973845add0759ab770fd30af020c16962c402beae3783f84df5926e69abc8"
+      ],
+      "graph_hash": "2b77b528c83612a11b083828b045383c28c1f3323531d45ceaed3311b5c0788d",
+      "hop_stratum": "GE3_MAIN",
+      "input_characters": 10448,
+      "input_tokens": "UNKNOWN_NOT_MEASURED",
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "load_band": "MID",
+      "messages_sha256": "0c42d199d8a33f233f243c6aef698f154ea2633080f51f21e922a68ebf723ef6",
+      "node_count": "15",
+      "occupancy": "0.35",
+      "oracle_status": "INFEASIBLE_CERTIFIED",
+      "origin": "FORMAL",
+      "primary_objective": "LEX_MIN_HOPS_THEN_WUFR_FULL_PATH",
+      "producer_version": "UNKNOWN",
+      "request_count": "1",
+      "request_ids": "[\"req_TB_REAL%3A%3ATOP_103_UNIC_000142\"]",
+      "requested_slots": "[9]",
+      "scale": "11-29",
+      "seed": "UNKNOWN",
+      "selection_scale": "11-29",
+      "selection_version": "MID_5TO60_HOP_GE2_BASELINE10PCT_R1",
+      "shortest_hops": [
+        5
+      ],
+      "snapshot_hash": "6f08e0690bb768053b49d0ed8f62d3de3e37153fd75d0128371aac44c4f2c7d8",
+      "snapshot_id": "rs_TB_REAL%3A%3ATOP_103_UNIC_kspff_medium_seed01",
+      "source_category": "real",
+      "source_member": "OptiRSA_Bench_L5_X2_X3/case_sets/UNIC_n15_TB103/X2/7abb4ae6f5ad2844/private/root_case.json",
+      "source_root_sha256": "e50ae78b8c41e8af4f3fdd2e4a8623c0203e364a0f1e4f672f4b0d9ed06f6614",
+      "split": "DEVELOPMENT_EXPOSED",
+      "task": "X2",
+      "topology_folder": "UNIC_n15_TB103",
+      "topology_id": "top_TB_REAL%3A%3ATOP_103_UNIC",
+      "validator_sha256": "31660b7c47b6875d4332ec8212cfea2bae583ae029b60ce6da54bf0a48393a32",
+      "science_sha256": "f07010ea65e042866aac5632c82db4402bac080589c72a9a2856cf302c5f4835",
+      "dataset_root": "F:\\codex\\BENCHMARK\\BENCHMARK9.19\\OptiRSA_EXTERNAL_600_20261016_111920\\OptiRSA_EXTERNAL_600_20261016_111920_NO_THINKING\\datasets\\X2X3_MID_R1",
+      "runtime_sha256": "e862943fc4905438d560cabe092aa58af636bae5616cc55a4e4cd9847b5e99d4",
+      "adapter_sha256": "757f93e61f8d50a46974e27ba03d9811024baa745dc48ac5a7328da907d71169"
+    },
+    "queue_status": "COMPLETE"
+  }
+}

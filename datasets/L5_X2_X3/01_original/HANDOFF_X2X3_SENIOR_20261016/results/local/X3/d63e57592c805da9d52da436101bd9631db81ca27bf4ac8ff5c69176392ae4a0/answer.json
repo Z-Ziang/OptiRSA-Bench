@@ -1,0 +1,100 @@
+{
+  "case_uid": "d63e57592c805da9d52da436101bd9631db81ca27bf4ac8ff5c69176392ae4a0",
+  "model": "Qwen/Qwen3-8B",
+  "task": "X3",
+  "identity_key": "281bf186cb9abce516987e3a09dfbb9fc7a6b2f64ec7d3f4b2013a8e419e0eed",
+  "status": "RESPONSE_RECEIVED",
+  "raw_completion": "{\n  \"decision\": \"ACCEPT\",\n  \"allocations\": [\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_5_ATMNET_000179\",\n      \"path_node_ids\": [8, 19],\n      \"path_link_ids\": [40],\n      \"slot_start\": 11\n    },\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_5_ATMNET_000194\",\n      \"path_node_ids\": [9, 14],\n      \"path_link_ids\": [34],\n      \"slot_start\": 11\n    }\n  ]\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "input_tokens": 6544,
+    "output_tokens": 147,
+    "total_tokens": 6691,
+    "input_tokens_cache_write": null,
+    "input_tokens_cache_read": 0,
+    "reasoning_tokens": 0,
+    "total_cost": null
+  },
+  "model_output": {
+    "model": "Qwen/Qwen3-8B",
+    "choices": [
+      {
+        "message": {
+          "id": "FH3eGCTXL9Hn5Mo4P5wHeX",
+          "content": "{\n  \"decision\": \"ACCEPT\",\n  \"allocations\": [\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_5_ATMNET_000179\",\n      \"path_node_ids\": [8, 19],\n      \"path_link_ids\": [40],\n      \"slot_start\": 11\n    },\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_5_ATMNET_000194\",\n      \"path_node_ids\": [9, 14],\n      \"path_link_ids\": [34],\n      \"slot_start\": 11\n    }\n  ]\n}",
+          "source": "generate",
+          "metadata": null,
+          "role": "assistant",
+          "tool_calls": null,
+          "model": "Qwen/Qwen3-8B"
+        },
+        "stop_reason": "stop",
+        "stop_details": null,
+        "logprobs": null,
+        "prompt_logprobs": null
+      }
+    ],
+    "completion": "{\n  \"decision\": \"ACCEPT\",\n  \"allocations\": [\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_5_ATMNET_000179\",\n      \"path_node_ids\": [8, 19],\n      \"path_link_ids\": [40],\n      \"slot_start\": 11\n    },\n    {\n      \"request_id\": \"req_TB_REAL%3A%3ATOP_5_ATMNET_000194\",\n      \"path_node_ids\": [9, 14],\n      \"path_link_ids\": [34],\n      \"slot_start\": 11\n    }\n  ]\n}",
+    "usage": {
+      "input_tokens": 6544,
+      "output_tokens": 147,
+      "total_tokens": 6691,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 0,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    },
+    "fallback": null,
+    "time": 6.469000000000051,
+    "metadata": null,
+    "error": null,
+    "response_id": "01a1437daa4172acbaa5b8ecc6107284"
+  },
+  "started_at": "2026-10-16T06:54:28.565373+00:00",
+  "completed_at": "2026-10-16T06:54:35.429889+00:00",
+  "messages_sha256": "6dc5267b0341565577a72832939df16d79326299937c7c5581923aaef6d8a469",
+  "protocol_sha256": "d10b0887dd9ed5544d60a54670a07d52aacebdeb61a3d898ce4dcaabf9314d74",
+  "attempt": 1,
+  "inspect_log_dir": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\X3\\batches\\9514ae5d7d3c45e2b9ca872d4ee93b0f\\inspect_logs",
+  "result": {
+    "truth_feasible": true,
+    "single_outer_fence_removed": false,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+    "category": "INFEASIBLE",
+    "validator": {
+      "valid": false,
+      "errors": [
+        "req_TB_REAL%3A%3ATOP_5_ATMNET_000179: path_node_ids do not match path_link_ids"
+      ],
+      "metrics": {
+        "joint_feasible_decision_accuracy": 0,
+        "delta_tso_gap": null,
+        "wufr_gap": null
+      },
+      "submitted_delta_tso": null,
+      "submitted_wufr": null
+    }
+  },
+  "strict": {
+    "truth_feasible": true,
+    "single_outer_fence_removed": false,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+    "category": "INFEASIBLE",
+    "validator": {
+      "valid": false,
+      "errors": [
+        "req_TB_REAL%3A%3ATOP_5_ATMNET_000179: path_node_ids do not match path_link_ids"
+      ],
+      "metrics": {
+        "joint_feasible_decision_accuracy": 0,
+        "delta_tso_gap": null,
+        "wufr_gap": null
+      },
+      "submitted_delta_tso": null,
+      "submitted_wufr": null
+    }
+  },
+  "graded_at": "2026-10-16T06:54:35.556200+00:00"
+}

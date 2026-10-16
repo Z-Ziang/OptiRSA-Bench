@@ -1,0 +1,123 @@
+{
+  "task": "X2",
+  "case_uid": "2b6addea4be2263dc5a48516e9db4d4c5be84f9f990f9560a0f1f843c436936a",
+  "case_id": "X2_COVERAGE_EVIDENCE_RECOVERY_V3_20261009_105209_133229_SCALE_X2_85db145241af0f79c5e3b52b611d",
+  "queue_status": "HISTORICAL",
+  "attempts": 0,
+  "identity_key": "02cc9d9fbe6ffa6d2e88550ab88af2c31a5dbf4f52a134a3cfb7d9ca5e34aefc",
+  "messages_sha256": "4d7f336eaa909c029da746caae24fc3823fb555ef1c6997d86b549ba8ee43105",
+  "result_category": "INFEASIBLE",
+  "answer_record": {
+    "case_uid": "2b6addea4be2263dc5a48516e9db4d4c5be84f9f990f9560a0f1f843c436936a",
+    "model": "Qwen/Qwen3-8B",
+    "binding": {
+      "time": 1792033454.8335357,
+      "job": "X2_qwen3_8b",
+      "case_uid": "2b6addea4be2263dc5a48516e9db4d4c5be84f9f990f9560a0f1f843c436936a",
+      "messages_sha256": "4d7f336eaa909c029da746caae24fc3823fb555ef1c6997d86b549ba8ee43105",
+      "model": "Qwen/Qwen3-8B",
+      "protocol_sha256": "90150c7705cc43c48830c2f5e5cd487ec7c65fa777f4541654da6075d65199bc",
+      "attempt": 1
+    },
+    "raw_completion": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [0, 7, 40, 19, 32, 33, 36, 58, 3],\n  \"path_link_ids\": [0, 31, 83, 84, 125, 129, 138, 78],\n  \"slot_start\": 286\n}",
+    "status": "RESPONSE_RECEIVED",
+    "usage": {
+      "openai-api/Qwen/Qwen3-8B": {
+        "input_tokens": 22014,
+        "output_tokens": 98,
+        "total_tokens": 22112,
+        "input_tokens_cache_write": null,
+        "input_tokens_cache_read": 0,
+        "reasoning_tokens": 0,
+        "total_cost": null
+      }
+    },
+    "started_at": "2026-10-15T03:04:15.054867+00:00",
+    "completed_at": "2026-10-15T03:04:36.066920+00:00",
+    "total_seconds": 21.012,
+    "result": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "INFEASIBLE",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "path links are not directionally contiguous"
+        ],
+        "metrics": {
+          "feasible_decision_accuracy": 0,
+          "hop_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_hop_count": null,
+        "submitted_wufr": null
+      }
+    },
+    "strict": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "INFEASIBLE",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "path links are not directionally contiguous"
+        ],
+        "metrics": {
+          "feasible_decision_accuracy": 0,
+          "hop_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_hop_count": null,
+        "submitted_wufr": null
+      }
+    },
+    "_source_file": "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/INSPECT_POOL18_20261015_103256_4547ed/jobs/X2_qwen3_8b/2b6addea4be2263dc5a48516e9db4d4c5be84f9f990f9560a0f1f843c436936a_attempt1/answer.json",
+    "_all_source_files": [
+      "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/INSPECT_POOL18_20261015_103256_4547ed/jobs/X2_qwen3_8b/2b6addea4be2263dc5a48516e9db4d4c5be84f9f990f9560a0f1f843c436936a_attempt1/answer.json"
+    ],
+    "_case_metadata": {
+      "node_count": "60",
+      "scale": "60-100",
+      "occupancy": "0.3303204113924051",
+      "load_band": "MID",
+      "decision": "ACCEPT",
+      "request_count": "1",
+      "requested_slots": "[5]",
+      "seed": "UNKNOWN",
+      "snapshot_id": "rs_TB_REAL%3A%3ATOP_21_CORONET_kspff_medium_seed01",
+      "request_ids": "[\"req_TB_REAL%3A%3ATOP_21_CORONET_000003\"]",
+      "source_category": "real",
+      "producer_version": "UNKNOWN",
+      "contract_version": "UNKNOWN",
+      "primary_objective": "LEX_MIN_HOPS_THEN_WUFR_FULL_PATH",
+      "certificate": "EXACT_CERTIFIED",
+      "oracle_status": "EXACT_CERTIFIED",
+      "exposed": "1",
+      "split": "DEVELOPMENT_EXPOSED",
+      "input_tokens": "UNKNOWN_NOT_MEASURED",
+      "case_uid": "2b6addea4be2263dc5a48516e9db4d4c5be84f9f990f9560a0f1f843c436936a",
+      "case_id": "X2_COVERAGE_EVIDENCE_RECOVERY_V3_20261009_105209_133229_SCALE_X2_85db145241af0f79c5e3b52b611d",
+      "task": "X2",
+      "topology_id": "top_TB_REAL%3A%3ATOP_21_CORONET",
+      "topology_folder": "CORONET_n60_TB21",
+      "graph_hash": "80067c43391817b68d6039cfab85d47a6beb3ce2f8552eaab4fd496e328f6559",
+      "snapshot_hash": "c040bbf47143784e17e977d6bc443ea9062d5a5db0144368ebd67e5c955dd6f3",
+      "case_dir": "case_sets/CORONET_n60_TB21/X2/2b6addea4be2263d",
+      "family_ids": [
+        "F_ed1fa40bae27c2af6d419069c9255f33097d1339c4978c30244732df33b5d73a"
+      ],
+      "messages_sha256": "4d7f336eaa909c029da746caae24fc3823fb555ef1c6997d86b549ba8ee43105",
+      "input_characters": 35351,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "validator_sha256": "31660b7c47b6875d4332ec8212cfea2bae583ae029b60ce6da54bf0a48393a32"
+    },
+    "identity_key": "02cc9d9fbe6ffa6d2e88550ab88af2c31a5dbf4f52a134a3cfb7d9ca5e34aefc",
+    "historical": true,
+    "history_answer_count": 1,
+    "historical_selection": "latest received response from FINAL; not normalized formal authority"
+  }
+}

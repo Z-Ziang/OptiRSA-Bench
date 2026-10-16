@@ -1,0 +1,110 @@
+{
+  "task": "X2",
+  "case_uid": "bd9d8e75ab739633eb4a098c9bfc849ca0db5d6fecd0dafdf0d52fcb85ceef6b",
+  "case_id": "X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_9a6123f9b2bbabb52471",
+  "queue_status": "COMPLETE",
+  "attempts": 1,
+  "identity_key": "695218e7ea07882ff36b2fd6a52f0153945466a7e470dc740110203e5922ab60",
+  "messages_sha256": "bcd4b441f33ac21152512ff3ad284a073f1f25817703064e77980bef06b44746",
+  "result_category": "INFEASIBLE",
+  "answer_record": {
+    "case_uid": "bd9d8e75ab739633eb4a098c9bfc849ca0db5d6fecd0dafdf0d52fcb85ceef6b",
+    "model": "Qwen/Qwen3-8B",
+    "task": "X2",
+    "identity_key": "695218e7ea07882ff36b2fd6a52f0153945466a7e470dc740110203e5922ab60",
+    "status": "RESPONSE_RECEIVED",
+    "raw_completion": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [4, 5, 6, 8],\n  \"path_link_ids\": [6, 12, 17],\n  \"slot_start\": 0\n}",
+    "finish_reason": "stop",
+    "usage": {
+      "input_tokens": 5131,
+      "output_tokens": 52,
+      "total_tokens": 5183,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 0,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    },
+    "model_output": {
+      "model": "Qwen/Qwen3-8B",
+      "choices": [
+        {
+          "message": {
+            "id": "3SRx9U4iy7TCAMhqofNZzV",
+            "content": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [4, 5, 6, 8],\n  \"path_link_ids\": [6, 12, 17],\n  \"slot_start\": 0\n}",
+            "source": "generate",
+            "metadata": null,
+            "role": "assistant",
+            "tool_calls": null,
+            "model": "Qwen/Qwen3-8B"
+          },
+          "stop_reason": "stop",
+          "stop_details": null,
+          "logprobs": null,
+          "prompt_logprobs": null
+        }
+      ],
+      "completion": "{\n  \"decision\": \"ACCEPT\",\n  \"path_node_ids\": [4, 5, 6, 8],\n  \"path_link_ids\": [6, 12, 17],\n  \"slot_start\": 0\n}",
+      "usage": {
+        "input_tokens": 5131,
+        "output_tokens": 52,
+        "total_tokens": 5183,
+        "input_tokens_cache_write": null,
+        "input_tokens_cache_read": 0,
+        "reasoning_tokens": 0,
+        "total_cost": null
+      },
+      "fallback": null,
+      "time": 30.04599999999982,
+      "metadata": null,
+      "error": null,
+      "response_id": "01a1436d64628095f97a3fc0ebe7e9bf"
+    },
+    "started_at": "2026-10-16T06:36:41.771865+00:00",
+    "completed_at": "2026-10-16T06:37:12.664041+00:00",
+    "messages_sha256": "bcd4b441f33ac21152512ff3ad284a073f1f25817703064e77980bef06b44746",
+    "protocol_sha256": "2b0ac75ecc79a0b46b67708530f57709f9760617d21b8f55d7c3d9dd952df2e5",
+    "attempt": 1,
+    "inspect_log_dir": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\X2\\batches\\fe1706c5a2a44884ab312c26987cbe74\\inspect_logs",
+    "result": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "INFEASIBLE",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "path links are not directionally contiguous"
+        ],
+        "metrics": {
+          "feasible_decision_accuracy": 0,
+          "hop_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_hop_count": null,
+        "submitted_wufr": null
+      }
+    },
+    "strict": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "INFEASIBLE",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "path links are not directionally contiguous"
+        ],
+        "metrics": {
+          "feasible_decision_accuracy": 0,
+          "hop_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_hop_count": null,
+        "submitted_wufr": null
+      }
+    },
+    "graded_at": "2026-10-16T06:37:12.759704+00:00"
+  }
+}

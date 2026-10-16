@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "p0/concurrent_request_set.schema.json",
+  "title": "ConcurrentRequestSet",
+  "type": "object",
+  "properties": {
+    "request_set_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "resource_state_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "request_ids": {
+      "type": "array",
+      "minItems": 2,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "fixed_path_conflict_density": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "candidate_path_link_overlap_density": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "joint_feasibility_status": {
+      "type": "string",
+      "enum": [
+        "FEASIBLE",
+        "INFEASIBLE",
+        "UNKNOWN"
+      ]
+    }
+  },
+  "required": [
+    "request_set_id",
+    "resource_state_id",
+    "request_ids",
+    "joint_feasibility_status"
+  ],
+  "additionalProperties": false
+}

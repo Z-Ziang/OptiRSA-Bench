@@ -1,0 +1,112 @@
+{
+  "task": "X3",
+  "case_uid": "a2920a9b47bd571898cb278ee4647fd17b7d0c28e802d656492ffb90d0d0b685",
+  "case_id": "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X3_24d5d92b45ff5386102d6736",
+  "queue_status": "COMPLETE",
+  "attempts": 1,
+  "identity_key": "0b8890543f8205583ecba531b24b32c938a91eb83648e47cf0608b912fcd1e99",
+  "messages_sha256": "c7954d8bde0fd7ca9c12e22888f64d0ad0e2d494b9f369d45e0a2e9031fa39de",
+  "result_category": "MISSING",
+  "answer_record": {
+    "case_uid": "a2920a9b47bd571898cb278ee4647fd17b7d0c28e802d656492ffb90d0d0b685",
+    "model": "Qwen/Qwen3-8B",
+    "task": "X3",
+    "identity_key": "0b8890543f8205583ecba531b24b32c938a91eb83648e47cf0608b912fcd1e99",
+    "status": "RESPONSE_RECEIVED",
+    "raw_completion": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+    "finish_reason": "stop",
+    "usage": {
+      "input_tokens": 8227,
+      "output_tokens": 16,
+      "total_tokens": 8243,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 0,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    },
+    "model_output": {
+      "model": "Qwen/Qwen3-8B",
+      "choices": [
+        {
+          "message": {
+            "id": "i7i6oNnLbtVHdUa6ErxJXm",
+            "content": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+            "source": "generate",
+            "metadata": null,
+            "role": "assistant",
+            "tool_calls": null,
+            "model": "Qwen/Qwen3-8B"
+          },
+          "stop_reason": "stop",
+          "stop_details": null,
+          "logprobs": null,
+          "prompt_logprobs": null
+        }
+      ],
+      "completion": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+      "usage": {
+        "input_tokens": 8227,
+        "output_tokens": 16,
+        "total_tokens": 8243,
+        "input_tokens_cache_write": null,
+        "input_tokens_cache_read": 0,
+        "reasoning_tokens": 0,
+        "total_cost": null
+      },
+      "fallback": null,
+      "time": 7.420999999999822,
+      "metadata": null,
+      "error": null,
+      "response_id": "01a1436f845f18ea36a6439bdcb72e8f"
+    },
+    "started_at": "2026-10-16T06:39:01.234497+00:00",
+    "completed_at": "2026-10-16T06:39:09.286090+00:00",
+    "messages_sha256": "c7954d8bde0fd7ca9c12e22888f64d0ad0e2d494b9f369d45e0a2e9031fa39de",
+    "protocol_sha256": "d10b0887dd9ed5544d60a54670a07d52aacebdeb61a3d898ce4dcaabf9314d74",
+    "attempt": 1,
+    "inspect_log_dir": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\X3\\batches\\d1067083a2eb4089a5d00286f0618e60\\inspect_logs",
+    "result": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "MISSING",
+      "reason": "INCORRECT_REJECT_NO_ALLOCATION",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "REJECT is incorrect because a full-space joint feasible solution exists"
+        ],
+        "metrics": {
+          "joint_feasible_decision_accuracy": 0,
+          "delta_tso_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_delta_tso": null,
+        "submitted_wufr": null
+      }
+    },
+    "strict": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "MISSING",
+      "reason": "INCORRECT_REJECT_NO_ALLOCATION",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "REJECT is incorrect because a full-space joint feasible solution exists"
+        ],
+        "metrics": {
+          "joint_feasible_decision_accuracy": 0,
+          "delta_tso_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_delta_tso": null,
+        "submitted_wufr": null
+      }
+    },
+    "graded_at": "2026-10-16T06:39:09.381156+00:00"
+  }
+}

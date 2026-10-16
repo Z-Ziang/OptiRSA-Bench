@@ -1,0 +1,112 @@
+{
+  "task": "X3",
+  "case_uid": "3dc3703e1e02ca9c3f60889f9c0a9f161a510697829c0749485e80ce2df2a4d6",
+  "case_id": "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_1d1cc7463fa3ad5425063f1d",
+  "queue_status": "COMPLETE",
+  "attempts": 1,
+  "identity_key": "a9243b25ce79d2915d55bc5c54953fa1574f8f8520b41a9319ec57febfbf3da6",
+  "messages_sha256": "0801b15752f7e14ec94b0c72d6d23c76acc09912b48192531fc64806755b3db2",
+  "result_category": "MISSING",
+  "answer_record": {
+    "case_uid": "3dc3703e1e02ca9c3f60889f9c0a9f161a510697829c0749485e80ce2df2a4d6",
+    "model": "Qwen/Qwen3-8B",
+    "task": "X3",
+    "identity_key": "a9243b25ce79d2915d55bc5c54953fa1574f8f8520b41a9319ec57febfbf3da6",
+    "status": "RESPONSE_RECEIVED",
+    "raw_completion": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+    "finish_reason": "stop",
+    "usage": {
+      "input_tokens": 6354,
+      "output_tokens": 16,
+      "total_tokens": 7682,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 1312,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    },
+    "model_output": {
+      "model": "Qwen/Qwen3-8B",
+      "choices": [
+        {
+          "message": {
+            "id": "QtMHcQy8iE8pBnXC7jc9vq",
+            "content": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+            "source": "generate",
+            "metadata": null,
+            "role": "assistant",
+            "tool_calls": null,
+            "model": "Qwen/Qwen3-8B"
+          },
+          "stop_reason": "stop",
+          "stop_details": null,
+          "logprobs": null,
+          "prompt_logprobs": null
+        }
+      ],
+      "completion": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+      "usage": {
+        "input_tokens": 6354,
+        "output_tokens": 16,
+        "total_tokens": 7682,
+        "input_tokens_cache_write": null,
+        "input_tokens_cache_read": 1312,
+        "reasoning_tokens": 0,
+        "total_cost": null
+      },
+      "fallback": null,
+      "time": 2.4840000000003783,
+      "metadata": null,
+      "error": null,
+      "response_id": "01a1437fa501230ac5ecb05ec52cd436"
+    },
+    "started_at": "2026-10-16T06:56:38.359946+00:00",
+    "completed_at": "2026-10-16T06:56:41.219005+00:00",
+    "messages_sha256": "0801b15752f7e14ec94b0c72d6d23c76acc09912b48192531fc64806755b3db2",
+    "protocol_sha256": "d10b0887dd9ed5544d60a54670a07d52aacebdeb61a3d898ce4dcaabf9314d74",
+    "attempt": 1,
+    "inspect_log_dir": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\X3\\batches\\07f9d8cf7844426c91705720fe6a4f23\\inspect_logs",
+    "result": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "MISSING",
+      "reason": "INCORRECT_REJECT_NO_ALLOCATION",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "REJECT is incorrect because a full-space joint feasible solution exists"
+        ],
+        "metrics": {
+          "joint_feasible_decision_accuracy": 0,
+          "delta_tso_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_delta_tso": null,
+        "submitted_wufr": null
+      }
+    },
+    "strict": {
+      "truth_feasible": true,
+      "single_outer_fence_removed": false,
+      "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+      "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+      "category": "MISSING",
+      "reason": "INCORRECT_REJECT_NO_ALLOCATION",
+      "validator": {
+        "valid": false,
+        "errors": [
+          "REJECT is incorrect because a full-space joint feasible solution exists"
+        ],
+        "metrics": {
+          "joint_feasible_decision_accuracy": 0,
+          "delta_tso_gap": null,
+          "wufr_gap": null
+        },
+        "submitted_delta_tso": null,
+        "submitted_wufr": null
+      }
+    },
+    "graded_at": "2026-10-16T06:56:41.329227+00:00"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "case_uid": "e36fadb87b6373114f1950cb31d267a5146b42e4572dddecea0ead8959caef59",
+  "model": "Qwen/Qwen3-8B",
+  "binding": {
+    "time": 1792048689.5030653,
+    "job": "X3_qwen3_8b",
+    "case_uid": "e36fadb87b6373114f1950cb31d267a5146b42e4572dddecea0ead8959caef59",
+    "messages_sha256": "621b0ddd0926320895c58b5072492c4b4426317f070075dc581c32b49c2b5c86",
+    "model": "Qwen/Qwen3-8B",
+    "protocol_sha256": "10a08fb937301347c33ad57e4cf90a8fbfe0c3b0555d92b259bd8c305cc0e360",
+    "attempt": 4
+  },
+  "raw_completion": "{\n  \"decision\": \"REJECT\",\n  \"allocations\": []\n}",
+  "status": "RESPONSE_RECEIVED",
+  "usage": {
+    "openai-api/Qwen/Qwen3-8B": {
+      "input_tokens": 22493,
+      "output_tokens": 16,
+      "total_tokens": 22509,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 0,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    }
+  },
+  "started_at": "2026-10-15T07:18:09.805681+00:00",
+  "completed_at": "2026-10-15T07:18:15.312520+00:00",
+  "total_seconds": 5.507,
+  "result": {
+    "truth_feasible": true,
+    "single_outer_fence_removed": false,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+    "category": "MISSING",
+    "reason": "INCORRECT_REJECT_NO_ALLOCATION",
+    "validator": {
+      "valid": false,
+      "errors": [
+        "REJECT is incorrect because a full-space joint feasible solution exists"
+      ],
+      "metrics": {
+        "joint_feasible_decision_accuracy": 0,
+        "delta_tso_gap": null,
+        "wufr_gap": null
+      },
+      "submitted_delta_tso": null,
+      "submitted_wufr": null
+    }
+  },
+  "strict": {
+    "truth_feasible": true,
+    "single_outer_fence_removed": false,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "grading_version": "X2_X3_LOCAL_FOUR_WAY_V1",
+    "category": "MISSING",
+    "reason": "INCORRECT_REJECT_NO_ALLOCATION",
+    "validator": {
+      "valid": false,
+      "errors": [
+        "REJECT is incorrect because a full-space joint feasible solution exists"
+      ],
+      "metrics": {
+        "joint_feasible_decision_accuracy": 0,
+        "delta_tso_gap": null,
+        "wufr_gap": null
+      },
+      "submitted_delta_tso": null,
+      "submitted_wufr": null
+    }
+  },
+  "_source_file": "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/INSPECT_POOL18_RECOVERY_V2_20261015_135458_187948/jobs/X3_qwen3_8b/e36fadb87b6373114f1950cb31d267a5146b42e4572dddecea0ead8959caef59_attempt4/answer.json",
+  "_all_source_files": [
+    "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/INSPECT_POOL18_RECOVERY_V2_20261015_135458_187948/jobs/X3_qwen3_8b/e36fadb87b6373114f1950cb31d267a5146b42e4572dddecea0ead8959caef59_attempt4/answer.json"
+  ],
+  "_case_metadata": {
+    "node_count": "60",
+    "scale": "60-100",
+    "occupancy": "0.3303204113924051",
+    "load_band": "MID",
+    "decision": "ACCEPT",
+    "request_count": "2",
+    "requested_slots": "[5,5]",
+    "seed": "UNKNOWN",
+    "snapshot_id": "rs_TB_REAL%3A%3ATOP_21_CORONET_kspff_medium_seed01",
+    "request_ids": "[\"req_TB_REAL%3A%3ATOP_21_CORONET_000003\",\"req_TB_REAL%3A%3ATOP_21_CORONET_000004\"]",
+    "source_category": "real",
+    "producer_version": "UNKNOWN",
+    "contract_version": "UNKNOWN",
+    "primary_objective": "LEX_MIN_DELTA_TSO_THEN_WUFR_FULL_PATH",
+    "certificate": "EXACT_CERTIFIED",
+    "oracle_status": "EXACT_CERTIFIED",
+    "exposed": "1",
+    "split": "DEVELOPMENT_EXPOSED",
+    "input_tokens": "UNKNOWN_NOT_MEASURED",
+    "case_uid": "e36fadb87b6373114f1950cb31d267a5146b42e4572dddecea0ead8959caef59",
+    "case_id": "X3_COVERAGE_EVIDENCE_RECOVERY_V3_20261009_105209_133229_SCALE_X3_617558c8ca2fac85d9ae76e37b9e",
+    "task": "X3",
+    "topology_id": "top_TB_REAL%3A%3ATOP_21_CORONET",
+    "topology_folder": "CORONET_n60_TB21",
+    "graph_hash": "80067c43391817b68d6039cfab85d47a6beb3ce2f8552eaab4fd496e328f6559",
+    "snapshot_hash": "c040bbf47143784e17e977d6bc443ea9062d5a5db0144368ebd67e5c955dd6f3",
+    "case_dir": "case_sets/CORONET_n60_TB21/X3/e36fadb87b637311",
+    "family_ids": [
+      "F_ed1fa40bae27c2af6d419069c9255f33097d1339c4978c30244732df33b5d73a"
+    ],
+    "messages_sha256": "621b0ddd0926320895c58b5072492c4b4426317f070075dc581c32b49c2b5c86",
+    "input_characters": 37540,
+    "interface_status": "REVIEW_OBJECTIVE_DEFINITION",
+    "validator_sha256": "7e6f21cc8a321d797ee0c0660113200262b64a6f3798806ac920078e478003f5"
+  },
+  "identity_key": "f9df1aea4e707118a33679f055ced4adad37321d0ea50444ad6f94fd7885ca5e",
+  "historical": true,
+  "history_answer_count": 1,
+  "historical_selection": "latest received response from FINAL; not normalized formal authority"
+}

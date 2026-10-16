@@ -1,0 +1,130 @@
+{
+  "directed_link_count": 176,
+  "max_required_slots": 9,
+  "mean_required_slots": 7.0,
+  "node_count": 50,
+  "oracle_action_counts": {
+    "req_TB_REAL%3A%3ATOP_37_GERMANY50_001130": 648928,
+    "req_TB_REAL%3A%3ATOP_37_GERMANY50_002241": 5698
+  },
+  "oracle_evaluated_optimal_solutions": 12,
+  "oracle_path_counts": {
+    "req_TB_REAL%3A%3ATOP_37_GERMANY50_001130": 386883,
+    "req_TB_REAL%3A%3ATOP_37_GERMANY50_002241": 2501
+  },
+  "oracle_search_nodes": 32,
+  "reference_algorithms": {
+    "algorithm_1_sp_ff": null,
+    "algorithm_2_ksp5_ff": {
+      "delta_tso": 79,
+      "output": {
+        "allocations": [
+          {
+            "path_link_ids": [
+              118,
+              128,
+              174,
+              163,
+              17
+            ],
+            "path_node_ids": [
+              23,
+              24,
+              45,
+              49,
+              37,
+              2
+            ],
+            "request_id": "req_TB_REAL%3A%3ATOP_37_GERMANY50_001130",
+            "slot_start": 302
+          },
+          {
+            "path_link_ids": [
+              129,
+              119,
+              120,
+              138,
+              35,
+              32
+            ],
+            "path_node_ids": [
+              45,
+              24,
+              23,
+              28,
+              44,
+              4,
+              35
+            ],
+            "request_id": "req_TB_REAL%3A%3ATOP_37_GERMANY50_002241",
+            "slot_start": 292
+          }
+        ],
+        "decision": "ACCEPT"
+      },
+      "post_wufr": 0.7327509440864908
+    },
+    "algorithm_3_joint_backtrack_k12": {
+      "delta_tso": 79,
+      "output": {
+        "allocations": [
+          {
+            "path_link_ids": [
+              118,
+              128,
+              174,
+              163,
+              17
+            ],
+            "path_node_ids": [
+              23,
+              24,
+              45,
+              49,
+              37,
+              2
+            ],
+            "request_id": "req_TB_REAL%3A%3ATOP_37_GERMANY50_001130",
+            "slot_start": 305
+          },
+          {
+            "path_link_ids": [
+              129,
+              119,
+              120,
+              138,
+              69,
+              66
+            ],
+            "path_node_ids": [
+              45,
+              24,
+              23,
+              28,
+              44,
+              10,
+              35
+            ],
+            "request_id": "req_TB_REAL%3A%3ATOP_37_GERMANY50_002241",
+            "slot_start": 311
+          }
+        ],
+        "decision": "ACCEPT"
+      },
+      "post_wufr": 0.7318439699932313
+    }
+  },
+  "request_count": 2,
+  "resource_pressure": 0.343980823864,
+  "serialization_metrics": {
+    "canonical_tokenizer": {
+      "backend": "tiktoken",
+      "encoding": "o200k_base",
+      "package_version": "0.14.0"
+    },
+    "llm_prompt_char_count": 34894,
+    "llm_prompt_token_count": 14367,
+    "llm_prompt_utf8_bytes": 35248
+  },
+  "total_required_slots": 14
+}

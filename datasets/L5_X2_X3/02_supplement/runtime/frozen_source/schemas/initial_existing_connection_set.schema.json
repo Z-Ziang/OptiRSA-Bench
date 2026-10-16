@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "p0/initial_existing_connection_set.schema.json",
+  "title": "InitialExistingConnectionSet",
+  "type": "object",
+  "properties": {
+    "initial_existing_connection_set_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "topology_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reference_time": {
+      "type": "number",
+      "minimum": 0
+    },
+    "existing_connections": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/ExistingConnection"
+      }
+    }
+  },
+  "required": [
+    "initial_existing_connection_set_id",
+    "topology_id",
+    "reference_time",
+    "existing_connections"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "ExistingConnection": {
+      "type": "object",
+      "properties": {
+        "connection_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_node_id": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "destination_node_id": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "path_link_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "slot_start": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "required_slots": {
+          "type": "integer",
+          "enum": [
+            2,
+            3,
+            5,
+            9
+          ]
+        },
+        "arrival_time": {
+          "type": "number",
+          "minimum": 0
+        },
+        "holding_time": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      },
+      "required": [
+        "connection_id",
+        "source_node_id",
+        "destination_node_id",
+        "path_link_ids",
+        "slot_start",
+        "required_slots",
+        "arrival_time",
+        "holding_time"
+      ],
+      "additionalProperties": false
+    }
+  }
+}
