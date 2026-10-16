@@ -1,0 +1,69 @@
+{
+  "time_utc": "2026-10-15T23:26:23.655Z",
+  "task": "X1",
+  "event": "X1_PAUSED_AFTER_FRESH_300S_TIMEOUTS",
+  "resumption": "The existing X1 backend was resumed at the user's standing direction using the unchanged 2-worker configuration and original queue.",
+  "start_utc": "2026-10-15T23:13:41.005434Z",
+  "stop_requested_utc": "2026-10-15T23:20:00.081165Z",
+  "stopped_and_recovered_utc": "2026-10-15T23:23:51.557103Z",
+  "attempts": [
+    {
+      "uid": "9bab4b384d74d420034428c4e3c203725aaed7d90ab1523dbd912170870c1833",
+      "attempt": 13,
+      "api_dispatch_event": 2683,
+      "service_failure_event": 2685,
+      "failure_utc": "2026-10-15T23:18:51.296558Z"
+    },
+    {
+      "uid": "6c49e49cf5109508b3623fe08f426e29ba7c70cc72cad5ef8a226a1efdf69223",
+      "attempt": 13,
+      "api_dispatch_event": 2684,
+      "service_failure_event": 2687,
+      "failure_utc": "2026-10-15T23:18:51.484021Z"
+    },
+    {
+      "uid": "a0e56d69a8f8d66b4d9ffe77c2a6bfe9d86fb19532a7217c7b4cbe5e0228790f",
+      "attempt": 13,
+      "api_dispatch_event": 2686,
+      "service_failure_event": 2689,
+      "failure_utc": "2026-10-15T23:23:51.374115Z"
+    },
+    {
+      "uid": "8c8d7f2a761b557e8a8eaa696812c481fa5f5fc10e0046babe2b93e99af7651d",
+      "attempt": 13,
+      "api_dispatch_event": 2688,
+      "service_failure_event": 2690,
+      "failure_utc": "2026-10-15T23:23:51.557103Z"
+    }
+  ],
+  "inspect_log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\X1\\batches\\9151534e41674c059986322afe28b483\\inspect_logs\\2026-10-15T23-13-51-00-00_task_dGkk2JQYyt4GvSWpr7SP4i.eval",
+  "inspect_summary": {
+    "samples": 20,
+    "sample_errors": 20,
+    "completion_chars": 0,
+    "choices": 0,
+    "answer_json_files": 0
+  },
+  "fresh_tpm_429": 0,
+  "non_inference_network_check": {
+    "request": "Unauthenticated GET /v1/models",
+    "http_status": 401,
+    "elapsed_seconds": 0.155,
+    "interpretation": "The gateway answered without authentication; this does not verify model inference, account quota, or credentials. No inference call or key was used."
+  },
+  "recovery": {
+    "running": false,
+    "processes": [],
+    "queue_statuses": {
+      "COMPLETE": 22,
+      "HISTORICAL": 111,
+      "PENDING": 580,
+      "RETRY": 413
+    },
+    "workers": 2,
+    "model": "Qwen/Qwen3-8B",
+    "protocol_sha256": "04d10a69267cac64c9b8baab2275fbde703a09003dd527e2ee4b5cb09d73b361"
+  },
+  "next_action": "Keep X1 stopped to avoid repeating 300-second no-output calls. Resume only after original-account TPM/inference availability is resolved or materially confirmed; do not loop retries.",
+  "sqlite_event_id": 2691
+}

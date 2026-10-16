@@ -1,0 +1,50 @@
+{
+  "case_uid": "257afdc79e590bdc30a208b6b514fc984ad7635bd23731ca41e1bbf8d3c3303d",
+  "model": "Qwen/Qwen3.5-4B",
+  "status": "RESPONSE_RECEIVED",
+  "raw_completion": "\n\n{\n  \"is_valid\": true,\n  \"error_type\": null\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "openai-api/Qwen/Qwen3.5-4B": {
+      "input_tokens": 715,
+      "output_tokens": 2932,
+      "total_tokens": 3647,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 0,
+      "reasoning_tokens": 2913,
+      "total_cost": null
+    }
+  },
+  "started_at": "2026-10-14T10:21:24.855468+00:00",
+  "completed_at": "2026-10-14T10:23:12.799266+00:00",
+  "total_seconds": 107.944,
+  "inspect_log": "inspect_logs/2026-10-14T10-19-37-00-00_gx1-cases_eVB7ubrQMehtgLYzKwMmnh.eval",
+  "result": {
+    "category": "CORRECT",
+    "binary_correct": true,
+    "task": "G2",
+    "truth_feasible": true,
+    "correct_reject": false,
+    "single_outer_fence_removed": false,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "grading_version": "GX1_LOCAL_FROZEN_FOUR_WAY_V1",
+    "validator": {
+      "valid": true,
+      "reason": "PASS"
+    }
+  },
+  "strict": {
+    "category": "CORRECT",
+    "binary_correct": true,
+    "task": "G2",
+    "truth_feasible": true,
+    "correct_reject": false,
+    "single_outer_fence_removed": false,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "grading_version": "GX1_LOCAL_FROZEN_FOUR_WAY_V1",
+    "validator": {
+      "valid": true,
+      "reason": "PASS"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "time": 1791970978.855547,
+  "compute_workers": 1,
+  "models": {
+    "qwen3_8b": {
+      "planned": 8618,
+      "saved_unique": 8,
+      "responses": 8,
+      "service_errors": 0,
+      "grading": {
+        "CORRECT": 7,
+        "MISSING": 1
+      },
+      "phase": "FULL_READY"
+    },
+    "deepseek_r1_8b": {
+      "planned": 8618,
+      "saved_unique": 4,
+      "responses": 4,
+      "service_errors": 0,
+      "grading": {
+        "CORRECT": 4
+      },
+      "phase": "RUNNING_PILOT"
+    },
+    "qwen35_4b": {
+      "planned": 8618,
+      "saved_unique": 0,
+      "responses": 0,
+      "service_errors": 0,
+      "grading": {},
+      "phase": "PILOT_PLANNED"
+    }
+  },
+  "source_tasks": {
+    "G1": 2430,
+    "G2": 2815,
+    "G3": 2247,
+    "X1": 1126
+  },
+  "skipped_REVIEW": 1,
+  "shared_Inspect_pool_max": 3,
+  "GX1_max": 1,
+  "global_reserved_GiB": 71.25
+}

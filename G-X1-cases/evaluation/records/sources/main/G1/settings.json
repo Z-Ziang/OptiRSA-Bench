@@ -1,0 +1,36 @@
+{
+  "task": "G1",
+  "scientific_adapter": [
+    "e28afe661d557c62316a034733be8553517cde8f3561b00a28a47a13d2e1f0e8",
+    "906605986768389555160938f9fcf349dac90c1da8e4d40dce17aa700535aad0"
+  ],
+  "g1_pending_first_schedule": {
+    "until": 1792131154.817613,
+    "audit": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G1\\run_history\\chunk_size_repair_20261016T045424Z\\restart_retry_schedule.json",
+    "deferred_count": 623,
+    "preserve_running": true
+  },
+  "coordinator_maintenance_hold": {
+    "active": true,
+    "reason": "User requested all tasks disable thinking; coordinator requires all tasks quiet before unified config/fingerprint migration",
+    "source_thread": "01a1412d-f7e9-7222-8f3a-e48451206d40",
+    "time": 1792128832.2119453,
+    "do_not_restart_locally": true
+  },
+  "protocol_sha256": "b43ad02db1d3256d78d35b23d9a1626cbd3049726f1e67494c2fb6151fa24b73",
+  "rate_limit_state": {
+    "consecutive": 5,
+    "last_429_at": 1792170825.310393,
+    "cooldown_until": 1792174425.310393,
+    "cooldown_seconds": 3600,
+    "last_success_at": 1792156675.2397811
+  },
+  "control": {
+    "stop": true,
+    "reason": "SiliconFlow TPM rate limit; cooldown before low-speed probe",
+    "time": "2026-10-16T17:13:45.331478+00:00",
+    "cooldown_until": 1792174425.310393,
+    "cooldown_seconds": 3600,
+    "consecutive_rate_limits": 5
+  }
+}

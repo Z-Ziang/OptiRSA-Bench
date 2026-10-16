@@ -1,0 +1,51 @@
+{
+  "task": "G2",
+  "event": "restart_with_process_scoped_direct_connection",
+  "started_utc": "2026-10-16T00:54:51.318806+00:00",
+  "model": "Qwen/Qwen3-8B",
+  "workers": 2,
+  "backend": "backend.ps1 -Action start -Task G2",
+  "process_environment_override": {
+    "name": "NO_PROXY",
+    "entry": "api.siliconflow.cn",
+    "scope": "start command and descendants only",
+    "system_or_other_task_settings_changed": false,
+    "verified_g2_processes": [
+      {
+        "pid": 46292,
+        "role": "worker-launcher",
+        "no_proxy_domain_confirmed": true
+      },
+      {
+        "pid": 7572,
+        "role": "supervisor",
+        "no_proxy_domain_confirmed": true
+      },
+      {
+        "pid": 53816,
+        "role": "worker",
+        "no_proxy_domain_confirmed": true
+      }
+    ]
+  },
+  "run_manifest": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\run_manifest.json",
+  "protocol_sha256": "04d10a69267cac64c9b8baab2275fbde703a09003dd527e2ee4b5cb09d73b361",
+  "supervisor": {
+    "pid": 7572,
+    "create_time": 1792112018.997596,
+    "task": "G2",
+    "role": "supervisor",
+    "started_at": "2026-10-16T00:54:51.254803+00:00",
+    "launch_token": "e15bafbc85b740d0b42f2431e4335e4b"
+  },
+  "reason": "Resume remaining G2 work after quarantining seven confirmed ambiguous 300-second timeouts; configuration, queue, model, prompt, and protocol fingerprint unchanged. Start initially exceeded its confirmation wait; the existing supervisor was found active and confirmed later, so no duplicate start was issued.",
+  "post_start_counts": {
+    "COMPLETE": 121,
+    "DEFERRED": 3,
+    "HISTORICAL": 185,
+    "NEEDS_REVIEW": 44,
+    "PENDING": 2139,
+    "RETRY": 303,
+    "RUNNING": 20
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "case_uid": "85e3898410170c9269553a7aaa2b2b1e83380f3e746062c631db16763a75166c",
+  "model": "Qwen/Qwen3-8B",
+  "binding": {
+    "time": 1792037407.9794455,
+    "job": "G3_qwen3_8b",
+    "case_uid": "85e3898410170c9269553a7aaa2b2b1e83380f3e746062c631db16763a75166c",
+    "messages_sha256": "fc0ab39cf78f3629764a8a7423effe8f4736a8c6249154a13345f4cdfd680144",
+    "model": "Qwen/Qwen3-8B",
+    "protocol_sha256": "d568dacee46aa6f3a3482ac8719936bbe8232b55a4c86f4ccf575ef2db8cf034",
+    "attempt": 1
+  },
+  "raw_completion": "{\n  \"shortest_paths\": [\n    {\n      \"pair_id\": \"pair_A\",\n      \"path_node_ids\": [0, 2],\n      \"path_link_ids\": [2],\n      \"hop_count\": 1,\n      \"total_length_km\": 204.058\n    },\n    {\n      \"pair_id\": \"pair_B\",\n      \"path_node_ids\": [0, 37, 107, 2],\n      \"path_link_ids\": [0, 71, 18],\n      \"hop_count\": 3,\n      \"total_length_km\": 82.5306 + 166.107 + 204.058\n    }\n  ],\n  \"has_shared_directed_link\": false,\n  \"shared_link_ids\": []\n}",
+  "status": "RESPONSE_RECEIVED",
+  "usage": {
+    "openai-api/Qwen/Qwen3-8B": {
+      "input_tokens": 59756,
+      "output_tokens": 177,
+      "total_tokens": 59933,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 0,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    }
+  },
+  "started_at": "2026-10-15T04:10:08.331476+00:00",
+  "completed_at": "2026-10-15T04:10:40.872600+00:00",
+  "total_seconds": 32.541,
+  "result": {
+    "category": "MISSING",
+    "binary_correct": false,
+    "task": "G3",
+    "truth_feasible": true,
+    "correct_reject": false,
+    "single_outer_fence_removed": false,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "grading_version": "GX1_LOCAL_FROZEN_FOUR_WAY_V1",
+    "validator": {
+      "valid": false,
+      "reason": "INVALID_JSON",
+      "detail": "Expecting ',' delimiter: line 15 column 34 (char 342)"
+    }
+  },
+  "strict": {
+    "category": "MISSING",
+    "binary_correct": false,
+    "task": "G3",
+    "truth_feasible": true,
+    "correct_reject": false,
+    "single_outer_fence_removed": false,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "grading_version": "GX1_LOCAL_FROZEN_FOUR_WAY_V1",
+    "validator": {
+      "valid": false,
+      "reason": "INVALID_JSON",
+      "detail": "Expecting ',' delimiter: line 15 column 34 (char 342)"
+    }
+  },
+  "_source_file": "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/INSPECT_POOL18_20261015_103256_4547ed/jobs/G3_qwen3_8b/85e3898410170c9269553a7aaa2b2b1e83380f3e746062c631db16763a75166c_attempt1/answer.json",
+  "_all_source_files": [
+    "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/INSPECT_POOL18_20261015_103256_4547ed/jobs/G3_qwen3_8b/85e3898410170c9269553a7aaa2b2b1e83380f3e746062c631db16763a75166c_attempt1/answer.json"
+  ],
+  "_case_metadata": {
+    "case_uid": "85e3898410170c9269553a7aaa2b2b1e83380f3e746062c631db16763a75166c",
+    "case_id": "G3_001736",
+    "task": "G3",
+    "case_dir": "case_sets/GABRIEL_CONTROLLED_N475_008_n475/G3/G3_001736",
+    "topology_id": "GABRIEL_CONTROLLED_N475_008",
+    "topology_folder": "GABRIEL_CONTROLLED_N475_008_n475",
+    "scale": "401–500",
+    "node_count": 475,
+    "canonical_graph_hash": "7c0ff550317529f6c2950e56812cb7bbbc176f76ec84eb3bd0e065c200ebdd07",
+    "source_category": "controlled_gabriel_reference_extension",
+    "messages_sha256": "fc0ab39cf78f3629764a8a7423effe8f4736a8c6249154a13345f4cdfd680144",
+    "input_characters": 118700,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "variant": "TOTAL_LENGTH_KM__shared_true",
+    "seed": "4728668843877457214",
+    "path_cost_metric": "TOTAL_LENGTH_KM",
+    "cohort": "FORMAL_UNSEEN_HELDOUT",
+    "evaluation_eligible": true
+  },
+  "identity_key": "4dc2bc48666cd498b35740e98ae8779292f969c1dcb68955d4fcf523dbb90e83",
+  "historical": true,
+  "history_answer_count": 1,
+  "historical_selection": "latest received response from FINAL; not normalized formal authority"
+}

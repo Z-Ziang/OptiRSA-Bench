@@ -1,0 +1,471 @@
+{
+  "task": "G2",
+  "created_utc": "2026-10-16T05:23:54.003015+00:00",
+  "action": "controlled_exact_case_retry_after_final_inspect_review",
+  "phase": "authorized_and_queued_for_original_G2_worker",
+  "generation": "b7f727d3-a33a-4fb1-b70d-a8bdd8361df9",
+  "model": "Qwen/Qwen3-8B",
+  "workers": 2,
+  "protocol_sha256": "04d10a69267cac64c9b8baab2275fbde703a09003dd527e2ee4b5cb09d73b361",
+  "authorization": "Current G2 monitor instructions authorize controlled per-case retry after finalized evidence; no blanket IncludeUncertain.",
+  "reason": "Both exact UIDs remain NEEDS_REVIEW after local 300-second timeout. Every dispatched attempt has a completed Inspect sample with an error, zero choices, empty completion, no assistant output or usage, and no answer.json/answer_path. The latest attempt-16 samples are in the finalized Inspect archive. Older local samples are individually complete and output-free. No request ID is available to query provider status. The current active Inspect batch does not contain either UID; no local request for these cases remains in flight.",
+  "inspect_log_status": "latest bound attempt-16 archive finalized; all dispatched attempt samples individually complete",
+  "active_inspect_log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\68d1743594004ae895479e4413b47e9b\\inspect_logs\\2026-10-16T05-08-14-00-00_task_jjsazFD7aWRSnJRio3rWjh.eval",
+  "active_inspect_log_contains_target": false,
+  "account_source": "configured original G2 account; credential not read or logged",
+  "remote_status": "unknown; request IDs unavailable",
+  "blanket_include_uncertain": false,
+  "retry_after_utc": "2026-10-16T05:23:54.003015+00:00",
+  "cases": [
+    {
+      "uid": "9c32aeb643f32503ead83d18bd4d8b36b6f363bc7219a2594fc2ddef1fb6aa34",
+      "case_id": "G2_000003",
+      "status_before": "NEEDS_REVIEW",
+      "attempts_before": 16,
+      "retry_base_before": 15,
+      "prior_error_raw": "{\"type\": \"AttemptTimeoutError\", \"message\": \"attempt_timeout '300' exceeded.\", \"wrapper_type\": \"RetryError\"}",
+      "answer_path_before": null,
+      "answer_artifacts_found": 0,
+      "api_dispatch_events": {
+        "1": {
+          "event_id": 2947,
+          "time_utc": "2026-10-15T20:29:29.919398+00:00"
+        },
+        "2": {
+          "event_id": 2977,
+          "time_utc": "2026-10-15T20:35:57.583528+00:00"
+        },
+        "3": {
+          "event_id": 2997,
+          "time_utc": "2026-10-15T20:40:32.290672+00:00"
+        },
+        "4": {
+          "event_id": 2488,
+          "time_utc": "2026-10-15T19:54:54.018438+00:00"
+        },
+        "5": {
+          "event_id": 2688,
+          "time_utc": "2026-10-15T20:00:22.882659+00:00"
+        },
+        "6": {
+          "event_id": 2888,
+          "time_utc": "2026-10-15T20:01:00.815533+00:00"
+        },
+        "7": {
+          "event_id": 2930,
+          "time_utc": "2026-10-15T20:22:19.904871+00:00"
+        },
+        "11": {
+          "event_id": 3174,
+          "time_utc": "2026-10-15T21:29:02.928974+00:00"
+        },
+        "12": {
+          "event_id": 3217,
+          "time_utc": "2026-10-15T21:57:41.075514+00:00"
+        },
+        "13": {
+          "event_id": 3225,
+          "time_utc": "2026-10-15T22:04:20.810783+00:00"
+        },
+        "14": {
+          "event_id": 3584,
+          "time_utc": "2026-10-16T01:52:33.918995+00:00"
+        },
+        "15": {
+          "event_id": 3630,
+          "time_utc": "2026-10-16T02:42:36.642011+00:00"
+        },
+        "16": {
+          "event_id": 3837,
+          "time_utc": "2026-10-16T04:19:50.263073+00:00"
+        }
+      },
+      "inspect_samples": [
+        {
+          "attempt": 1,
+          "log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\674ddb5e48bc4eee947a5b0f2a11f16f\\inspect_logs\\2026-10-15T19-18-10-00-00_task_VVmSJKNfUTPj8yLuGREmgc.eval",
+          "archive_finalized": true,
+          "sample_completed": true,
+          "error_present": true,
+          "choices_count": 0,
+          "completion_chars": 0,
+          "assistant_message_output_present": false,
+          "model_usage_present": false
+        },
+        {
+          "attempt": 2,
+          "log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\0e55ee9f8c9c495dae6004043003ea09\\inspect_logs\\2026-10-15T19-26-47-00-00_task_cHaZMywyH5h6JW38e3jQXD.eval",
+          "archive_finalized": false,
+          "sample_completed": true,
+          "error_present": true,
+          "choices_count": 0,
+          "completion_chars": 0,
+          "assistant_message_output_present": false,
+          "model_usage_present": false
+        },
+        {
+          "attempt": 3,
+          "log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\9b157bddbefb4402b0b059f7be681f5d\\inspect_logs\\2026-10-15T19-27-28-00-00_task_CQsraUMMKoxyvyRCpCwKu7.eval",
+          "archive_finalized": true,
+          "sample_completed": true,
+          "error_present": true,
+          "choices_count": 0,
+          "completion_chars": 0,
+          "assistant_message_output_present": false,
+          "model_usage_present": false
+        },
+        {
+          "attempt": 4,
+          "log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\aaca5f93e1814552b75e884835204002\\inspect_logs\\2026-10-15T19-54-53-00-00_task_RHUqoAZrKmELi2SsYcxt9S.eval",
+          "archive_finalized": false,
+          "sample_completed": true,
+          "error_present": true,
+          "choices_count": 0,
+          "completion_chars": 0,
+          "assistant_message_output_present": false,
+          "model_usage_present": false
+        },
+        {
+          "attempt": 5,
+          "log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\76cfd65737ca45788690aa4b406a030c\\inspect_logs\\2026-10-15T20-00-22-00-00_task_S4bd8guPm5tN66ZSLat85x.eval",
+          "archive_finalized": false,
+          "sample_completed": true,
+          "error_present": true,
+          "choices_count": 0,
+          "completion_chars": 0,
+          "assistant_message_output_present": false,
+          "model_usage_present": false
+        },
+        {
+          "attempt": 6,
+          "log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\a4f241bcc74f442da0f75e4afee1df97\\inspect_logs\\2026-10-15T20-01-00-00-00_task_DrLCBzNb3WWGr9VjwPDDA9.eval",
+          "archive_finalized": false,
+          "sample_completed": true,
+          "error_present": true,
+          "choices_count": 0,
+          "completion_chars": 0,
+          "assistant_message_output_present": false,
+          "model_usage_present": false
+        },
+        {
+          "attempt": 7,
+          "log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\09cc5064bf3f47ac9fbce992d34ec29d\\inspect_logs\\2026-10-15T20-22-19-00-00_task_6shpQwgrp8jaBuwjYGMdT4.eval",
+          "archive_finalized": true,
+          "sample_completed": true,
+          "error_present": true,
+          "choices_count": 0,
+          "completion_chars": 0,
+          "assistant_message_output_present": false,
+          "model_usage_present": false
+        },
+        {
+          "attempt": 11,
+          "log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\33b95e109b114b1798543c82d3b45bb3\\inspect_logs\\2026-10-15T21-29-02-00-00_task_8eBMbVXeCQjdxTrvzfyC5U.eval",
+          "archive_finalized": true,
+          "sample_completed": true,
+          "error_present": true,
+          "choices_count": 0,
+          "completion_chars": 0,
+          "assistant_message_output_present": false,
+          "model_usage_present": false
+        },
+        {
+          "attempt": 12,
+          "log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\3bf1f48d29e14a19bb2215b583514e45\\inspect_logs\\2026-10-15T21-57-40-00-00_task_Uj9A8UXvEzqW3yYyMcKnoC.eval",
+          "archive_finalized": false,
+          "sample_completed": true,
+          "error_present": true,
+          "choices_count": 0,
+          "completion_chars": 0,
+          "assistant_message_output_present": false,
+          "model_usage_present": false
+        },
+        {
+          "attempt": 13,
+          "log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\e0dfa7bc2dc54969ab7a71ab40ddabcf\\inspect_logs\\2026-10-15T22-04-20-00-00_task_8joSbLCqjtArhE6FYUSpNC.eval",
+          "archive_finalized": true,
+          "sample_completed": true,
+          "error_present": true,
+          "choices_count": 0,
+          "completion_chars": 0,
+          "assistant_message_output_present": false,
+          "model_usage_present": false
+        },
+        {
+          "attempt": 14,
+          "log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\eb76657cad54406c8cba292393c59029\\inspect_logs\\2026-10-16T01-52-33-00-00_task_FAUgWv9JubpCoqwTVT3XHH.eval",
+          "archive_finalized": true,
+          "sample_completed": true,
+          "error_present": true,
+          "choices_count": 0,
+          "completion_chars": 0,
+          "assistant_message_output_present": false,
+          "model_usage_present": false
+        },
+        {
+          "attempt": 15,
+          "log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\0df4fdbf4bdf4c4ab295790b86b73e5d\\inspect_logs\\2026-10-16T02-42-36-00-00_task_3UGDeftj2T33dXbekJPQ2c.eval",
+          "archive_finalized": true,
+          "sample_completed": true,
+          "error_present": true,
+          "choices_count": 0,
+          "completion_chars": 0,
+          "assistant_message_output_present": false,
+          "model_usage_present": false
+        },
+        {
+          "attempt": 16,
+          "log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\81dfbb038b7e49a6a43116fa7a5065d3\\inspect_logs\\2026-10-16T04-19-50-00-00_task_JdgLnsFAchVDbvRAPG7gr8.eval",
+          "archive_finalized": true,
+          "sample_completed": true,
+          "error_present": true,
+          "choices_count": 0,
+          "completion_chars": 0,
+          "assistant_message_output_present": false,
+          "model_usage_present": false
+        }
+      ],
+      "missing_dispatched_samples": [],
+      "owner_class": "original_G2",
+      "remote_status": "unknown; no provider request ID available"
+    },
+    {
+      "uid": "8969e8dac21855e5840df255b5011fdbad60b380355c912f74c4374758c4a74e",
+      "case_id": "G2_000008",
+      "status_before": "NEEDS_REVIEW",
+      "attempts_before": 16,
+      "retry_base_before": 15,
+      "prior_error_raw": "{\"type\": \"AttemptTimeoutError\", \"message\": \"attempt_timeout '300' exceeded.\", \"wrapper_type\": \"RetryError\"}",
+      "answer_path_before": null,
+      "answer_artifacts_found": 0,
+      "api_dispatch_events": {
+        "1": {
+          "event_id": 2949,
+          "time_utc": "2026-10-15T20:29:51.191032+00:00"
+        },
+        "2": {
+          "event_id": 2979,
+          "time_utc": "2026-10-15T20:36:03.618791+00:00"
+        },
+        "3": {
+          "event_id": 2999,
+          "time_utc": "2026-10-15T20:40:47.439497+00:00"
+        },
+        "4": {
+          "event_id": 2490,
+          "time_utc": "2026-10-15T19:54:54.077582+00:00"
+        },
+        "5": {
+          "event_id": 2690,
+          "time_utc": "2026-10-15T20:00:22.941935+00:00"
+        },
+        "6": {
+          "event_id": 2890,
+          "time_utc": "2026-10-15T20:01:00.870054+00:00"
+        },
+        "7": {
+          "event_id": 2932,
+          "time_utc": "2026-10-15T20:22:19.954633+00:00"
+        },
+        "11": {
+          "event_id": 3176,
+          "time_utc": "2026-10-15T21:29:02.997698+00:00"
+        },
+        "12": {
+          "event_id": 3221,
+          "time_utc": "2026-10-15T22:00:11.845153+00:00"
+        },
+        "13": {
+          "event_id": 3228,
+          "time_utc": "2026-10-15T22:08:34.579014+00:00"
+        },
+        "14": {
+          "event_id": 3585,
+          "time_utc": "2026-10-16T01:52:33.955506+00:00"
+        },
+        "15": {
+          "event_id": 3631,
+          "time_utc": "2026-10-16T02:42:36.659260+00:00"
+        },
+        "16": {
+          "event_id": 3838,
+          "time_utc": "2026-10-16T04:19:50.289213+00:00"
+        }
+      },
+      "inspect_samples": [
+        {
+          "attempt": 1,
+          "log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\674ddb5e48bc4eee947a5b0f2a11f16f\\inspect_logs\\2026-10-15T19-18-10-00-00_task_VVmSJKNfUTPj8yLuGREmgc.eval",
+          "archive_finalized": true,
+          "sample_completed": true,
+          "error_present": true,
+          "choices_count": 0,
+          "completion_chars": 0,
+          "assistant_message_output_present": false,
+          "model_usage_present": false
+        },
+        {
+          "attempt": 2,
+          "log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\0e55ee9f8c9c495dae6004043003ea09\\inspect_logs\\2026-10-15T19-26-47-00-00_task_cHaZMywyH5h6JW38e3jQXD.eval",
+          "archive_finalized": false,
+          "sample_completed": true,
+          "error_present": true,
+          "choices_count": 0,
+          "completion_chars": 0,
+          "assistant_message_output_present": false,
+          "model_usage_present": false
+        },
+        {
+          "attempt": 3,
+          "log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\9b157bddbefb4402b0b059f7be681f5d\\inspect_logs\\2026-10-15T19-27-28-00-00_task_CQsraUMMKoxyvyRCpCwKu7.eval",
+          "archive_finalized": true,
+          "sample_completed": true,
+          "error_present": true,
+          "choices_count": 0,
+          "completion_chars": 0,
+          "assistant_message_output_present": false,
+          "model_usage_present": false
+        },
+        {
+          "attempt": 4,
+          "log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\aaca5f93e1814552b75e884835204002\\inspect_logs\\2026-10-15T19-54-53-00-00_task_RHUqoAZrKmELi2SsYcxt9S.eval",
+          "archive_finalized": false,
+          "sample_completed": true,
+          "error_present": true,
+          "choices_count": 0,
+          "completion_chars": 0,
+          "assistant_message_output_present": false,
+          "model_usage_present": false
+        },
+        {
+          "attempt": 5,
+          "log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\76cfd65737ca45788690aa4b406a030c\\inspect_logs\\2026-10-15T20-00-22-00-00_task_S4bd8guPm5tN66ZSLat85x.eval",
+          "archive_finalized": false,
+          "sample_completed": true,
+          "error_present": true,
+          "choices_count": 0,
+          "completion_chars": 0,
+          "assistant_message_output_present": false,
+          "model_usage_present": false
+        },
+        {
+          "attempt": 6,
+          "log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\a4f241bcc74f442da0f75e4afee1df97\\inspect_logs\\2026-10-15T20-01-00-00-00_task_DrLCBzNb3WWGr9VjwPDDA9.eval",
+          "archive_finalized": false,
+          "sample_completed": true,
+          "error_present": true,
+          "choices_count": 0,
+          "completion_chars": 0,
+          "assistant_message_output_present": false,
+          "model_usage_present": false
+        },
+        {
+          "attempt": 7,
+          "log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\09cc5064bf3f47ac9fbce992d34ec29d\\inspect_logs\\2026-10-15T20-22-19-00-00_task_6shpQwgrp8jaBuwjYGMdT4.eval",
+          "archive_finalized": true,
+          "sample_completed": true,
+          "error_present": true,
+          "choices_count": 0,
+          "completion_chars": 0,
+          "assistant_message_output_present": false,
+          "model_usage_present": false
+        },
+        {
+          "attempt": 11,
+          "log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\33b95e109b114b1798543c82d3b45bb3\\inspect_logs\\2026-10-15T21-29-02-00-00_task_8eBMbVXeCQjdxTrvzfyC5U.eval",
+          "archive_finalized": true,
+          "sample_completed": true,
+          "error_present": true,
+          "choices_count": 0,
+          "completion_chars": 0,
+          "assistant_message_output_present": false,
+          "model_usage_present": false
+        },
+        {
+          "attempt": 12,
+          "log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\3bf1f48d29e14a19bb2215b583514e45\\inspect_logs\\2026-10-15T21-57-40-00-00_task_Uj9A8UXvEzqW3yYyMcKnoC.eval",
+          "archive_finalized": false,
+          "sample_completed": true,
+          "error_present": true,
+          "choices_count": 0,
+          "completion_chars": 0,
+          "assistant_message_output_present": false,
+          "model_usage_present": false
+        },
+        {
+          "attempt": 13,
+          "log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\e0dfa7bc2dc54969ab7a71ab40ddabcf\\inspect_logs\\2026-10-15T22-04-20-00-00_task_8joSbLCqjtArhE6FYUSpNC.eval",
+          "archive_finalized": true,
+          "sample_completed": true,
+          "error_present": true,
+          "choices_count": 0,
+          "completion_chars": 0,
+          "assistant_message_output_present": false,
+          "model_usage_present": false
+        },
+        {
+          "attempt": 14,
+          "log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\eb76657cad54406c8cba292393c59029\\inspect_logs\\2026-10-16T01-52-33-00-00_task_FAUgWv9JubpCoqwTVT3XHH.eval",
+          "archive_finalized": true,
+          "sample_completed": true,
+          "error_present": true,
+          "choices_count": 0,
+          "completion_chars": 0,
+          "assistant_message_output_present": false,
+          "model_usage_present": false
+        },
+        {
+          "attempt": 15,
+          "log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\0df4fdbf4bdf4c4ab295790b86b73e5d\\inspect_logs\\2026-10-16T02-42-36-00-00_task_3UGDeftj2T33dXbekJPQ2c.eval",
+          "archive_finalized": true,
+          "sample_completed": true,
+          "error_present": true,
+          "choices_count": 0,
+          "completion_chars": 0,
+          "assistant_message_output_present": false,
+          "model_usage_present": false
+        },
+        {
+          "attempt": 16,
+          "log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\81dfbb038b7e49a6a43116fa7a5065d3\\inspect_logs\\2026-10-16T04-19-50-00-00_task_JdgLnsFAchVDbvRAPG7gr8.eval",
+          "archive_finalized": true,
+          "sample_completed": true,
+          "error_present": true,
+          "choices_count": 0,
+          "completion_chars": 0,
+          "assistant_message_output_present": false,
+          "model_usage_present": false
+        }
+      ],
+      "missing_dispatched_samples": [],
+      "owner_class": "original_G2",
+      "remote_status": "unknown; no provider request ID available"
+    }
+  ],
+  "run_history_path": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\run_history\\ambiguous_timeout_retry_authorized_20261016T052354Z_batch2.json",
+  "queue_event_kind": "MANUAL_RETRY_AUTHORIZED",
+  "requeued_uids": [
+    "9c32aeb643f32503ead83d18bd4d8b36b6f363bc7219a2594fc2ddef1fb6aa34",
+    "8969e8dac21855e5840df255b5011fdbad60b380355c912f74c4374758c4a74e"
+  ],
+  "queued_utc": "2026-10-16T05:23:54.070253+00:00",
+  "queue_results": [
+    {
+      "uid": "9c32aeb643f32503ead83d18bd4d8b36b6f363bc7219a2594fc2ddef1fb6aa34",
+      "case_id": "G2_000003",
+      "status_after": "PENDING",
+      "attempts_after": 16,
+      "retry_base_after": 16,
+      "answer_path_after": null
+    },
+    {
+      "uid": "8969e8dac21855e5840df255b5011fdbad60b380355c912f74c4374758c4a74e",
+      "case_id": "G2_000008",
+      "status_after": "PENDING",
+      "attempts_after": 16,
+      "retry_base_after": 16,
+      "answer_path_after": null
+    }
+  ],
+  "verification_utc": "2026-10-16T05:23:54.070253+00:00"
+}

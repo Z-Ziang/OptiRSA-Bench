@@ -1,0 +1,128 @@
+{
+  "task": "G2",
+  "created_utc": "2026-10-15T23:20:28+00:00",
+  "action": "quarantine_ambiguous_300s_timeouts",
+  "reason": "AttemptTimeoutError leaves server completion uncertain; prevent duplicate dispatch until offline answer and Inspect log recovery.",
+  "source_event_ids": [
+    3279,
+    3281,
+    3283,
+    3285,
+    3287,
+    3289,
+    3293,
+    3295,
+    3296
+  ],
+  "cases": [
+    {
+      "uid": "710873d4fe1651ac898623463847cd6087088551c36e997e9b4bf94f6051f207",
+      "attempt": 9,
+      "source_event_id": 3279,
+      "failure_time_utc": "2026-10-15T22:59:04+00:00",
+      "prior_status": "RETRY",
+      "error_type": "AttemptTimeoutError",
+      "error_message": "attempt_timeout '300' exceeded.",
+      "answer_path": null,
+      "answer_files": []
+    },
+    {
+      "uid": "d73c3b7a7f27ca0cd84bb5c7f4d790c8ce7cd77fc821d7d90bb9c5b7541e6397",
+      "attempt": 9,
+      "source_event_id": 3281,
+      "failure_time_utc": "2026-10-15T22:59:04+00:00",
+      "prior_status": "RETRY",
+      "error_type": "AttemptTimeoutError",
+      "error_message": "attempt_timeout '300' exceeded.",
+      "answer_path": null,
+      "answer_files": []
+    },
+    {
+      "uid": "421ebc6762fdcc044a2f386aaef9efc3d06a25325343b156837c65449702a8bf",
+      "attempt": 9,
+      "source_event_id": 3283,
+      "failure_time_utc": "2026-10-15T23:04:04+00:00",
+      "prior_status": "RETRY",
+      "error_type": "AttemptTimeoutError",
+      "error_message": "attempt_timeout '300' exceeded.",
+      "answer_path": null,
+      "answer_files": []
+    },
+    {
+      "uid": "a89a5fd97938fffc4a2c076151065e1713a785b6a859b808ff874002b58de593",
+      "attempt": 9,
+      "source_event_id": 3285,
+      "failure_time_utc": "2026-10-15T23:04:04+00:00",
+      "prior_status": "RETRY",
+      "error_type": "AttemptTimeoutError",
+      "error_message": "attempt_timeout '300' exceeded.",
+      "answer_path": null,
+      "answer_files": []
+    },
+    {
+      "uid": "c4c535c5336d686d4222abddd3ffd186b1c6edc6741b2c75ffc4c075018305c0",
+      "attempt": 11,
+      "source_event_id": 3287,
+      "failure_time_utc": "2026-10-15T23:09:04+00:00",
+      "prior_status": "RETRY",
+      "error_type": "AttemptTimeoutError",
+      "error_message": "attempt_timeout '300' exceeded.",
+      "answer_path": null,
+      "answer_files": []
+    },
+    {
+      "uid": "de672222985f8fbaf47e252c30532a52ab2fc73c2e4f3b4d093816bba8ea4dc4",
+      "attempt": 11,
+      "source_event_id": 3289,
+      "failure_time_utc": "2026-10-15T23:09:04+00:00",
+      "prior_status": "RETRY",
+      "error_type": "AttemptTimeoutError",
+      "error_message": "attempt_timeout '300' exceeded.",
+      "answer_path": null,
+      "answer_files": []
+    },
+    {
+      "uid": "ef25b2dc6815cae1f5379ecbabb5f1b356c7fc5a0e377ac0b36f7af69c34d84d",
+      "attempt": 10,
+      "source_event_id": 3293,
+      "failure_time_utc": "2026-10-15T23:14:04+00:00",
+      "prior_status": "RETRY",
+      "error_type": "AttemptTimeoutError",
+      "error_message": "attempt_timeout '300' exceeded.",
+      "answer_path": null,
+      "answer_files": []
+    },
+    {
+      "uid": "4dfc9d6b596493b624a0bb4f84e5f24ff941589a090c72677162e75ab8493289",
+      "attempt": 9,
+      "source_event_id": 3295,
+      "failure_time_utc": "2026-10-15T23:18:07+00:00",
+      "prior_status": "RETRY",
+      "error_type": "AttemptTimeoutError",
+      "error_message": "attempt_timeout '300' exceeded.",
+      "answer_path": null,
+      "answer_files": []
+    },
+    {
+      "uid": "29aaac5fa99a1cbaea0c66fa3a18536c19d444e95980908dfb692f6c4c4bc204",
+      "attempt": 7,
+      "source_event_id": 3296,
+      "failure_time_utc": "2026-10-15T23:19:04+00:00",
+      "prior_status": "RETRY",
+      "error_type": "AttemptTimeoutError",
+      "error_message": "attempt_timeout '300' exceeded.",
+      "answer_path": null,
+      "answer_files": []
+    }
+  ],
+  "quarantine_count": 9,
+  "next_action": "backend.ps1 -Action recover -Task G2; retain unresolved cases as NEEDS_REVIEW",
+  "recovery": {
+    "completed_utc": "2026-10-15T23:21:51+00:00",
+    "command": "backend.ps1 -Action recover -Task G2",
+    "recoverable_answers_found": 0,
+    "new_timeouts_remaining_needs_review": 9,
+    "total_needs_review": 20,
+    "note": "No answer.json was present for the 9 latest attempts; recover scanned bound Inspect eval logs and found no recoverable output."
+  }
+}

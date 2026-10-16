@@ -1,0 +1,52 @@
+{
+  "time": 1792127593.7990148,
+  "status": {
+    "task": "G1",
+    "total": 2430,
+    "counts": {
+      "COMPLETE": 56,
+      "EXTERNAL_RESERVED": 100,
+      "HISTORICAL": 26,
+      "PENDING": 1595,
+      "RETRY": 623,
+      "RUNNING": 30
+    },
+    "categories": {
+      "CORRECT": 61,
+      "INFEASIBLE": 3,
+      "MISSING": 18
+    },
+    "control": {
+      "stop": false,
+      "reason": "Started explicitly",
+      "time": "2026-10-16T05:12:37.360305+00:00"
+    },
+    "running": true,
+    "processes": [
+      {
+        "pid": 46612,
+        "create_time": 1792127557.424265,
+        "role": "worker-launcher",
+        "task": "G1"
+      },
+      {
+        "pid": 20744,
+        "create_time": 1792127555.9621277,
+        "task": "G1",
+        "role": "supervisor",
+        "started_at": "2026-10-16T05:12:37.356312+00:00",
+        "launch_token": "e980ee7dc4ae4ca799c55c8dc8bd806d"
+      },
+      {
+        "pid": 40528,
+        "create_time": 1792127557.4780378,
+        "task": "G1",
+        "slot": 0,
+        "role": "worker"
+      }
+    ],
+    "phase": "RUNNING"
+  },
+  "config_unchanged": true,
+  "protocol_match": true
+}

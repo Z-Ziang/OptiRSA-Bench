@@ -1,0 +1,24 @@
+{
+  "task": "G2",
+  "event": "restart_with_process_scoped_direct_connection",
+  "started_utc": "2026-10-15T23:56:23.665833+00:00",
+  "model": "Qwen/Qwen3-8B",
+  "workers": 2,
+  "backend": "backend.ps1 -Action start -Task G2",
+  "process_environment_override": {
+    "name": "NO_PROXY",
+    "entry": "api.siliconflow.cn",
+    "scope": "start command and descendants only",
+    "system_or_other_task_settings_changed": false
+  },
+  "run_manifest": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\run_manifest.json",
+  "supervisor": {
+    "pid": 26008,
+    "create_time": 1792108532.0935256,
+    "task": "G2",
+    "role": "supervisor",
+    "started_at": "2026-10-15T23:56:23.600518+00:00",
+    "launch_token": "d70a0d8ba50449c0b6e882a8f696e86f"
+  },
+  "reason": "Resume remaining G2 work after quarantining nine confirmed ambiguous 300-second timeouts; configuration, queue, model, prompt, and protocol fingerprint unchanged."
+}

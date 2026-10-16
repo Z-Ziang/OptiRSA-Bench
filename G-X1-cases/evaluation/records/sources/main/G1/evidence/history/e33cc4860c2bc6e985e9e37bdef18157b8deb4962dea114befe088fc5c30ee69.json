@@ -1,0 +1,81 @@
+{
+  "case_uid": "e33cc4860c2bc6e985e9e37bdef18157b8deb4962dea114befe088fc5c30ee69",
+  "model": "Qwen/Qwen3-8B",
+  "status": "RESPONSE_RECEIVED",
+  "raw_completion": "\n\n{\n  \"representation_type\": \"ADJACENCY_MATRIX\",\n  \"nodes\": [0, 1, 2, 3, 4],\n  \"adjacency_matrix\": [\n    [0, 0, 0, 0, 1],\n    [0, 0, 1, 0, 0],\n    [0, 1, 0, 1, 0],\n    [0, 0, 1, 0, 1],\n    [1, 0, 0, 1, 0]\n  ]\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "openai-api/Qwen/Qwen3-8B": {
+      "input_tokens": 805,
+      "output_tokens": 1481,
+      "total_tokens": 2286,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 0,
+      "reasoning_tokens": 1358,
+      "total_cost": null
+    }
+  },
+  "started_at": "2026-10-14T11:52:02.192783+00:00",
+  "completed_at": "2026-10-14T11:53:09.195747+00:00",
+  "total_seconds": 67.003,
+  "inspect_log": "inspect_logs/2026-10-14T11-51-24-00-00_gx1-cases_QycCH4z6bWdMJwXgNg6RY3.eval",
+  "result": {
+    "category": "CORRECT",
+    "binary_correct": true,
+    "task": "G1",
+    "truth_feasible": true,
+    "correct_reject": false,
+    "single_outer_fence_removed": false,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "grading_version": "GX1_LOCAL_FROZEN_FOUR_WAY_V1",
+    "validator": {
+      "valid": true,
+      "reason": "PASS"
+    }
+  },
+  "strict": {
+    "category": "CORRECT",
+    "binary_correct": true,
+    "task": "G1",
+    "truth_feasible": true,
+    "correct_reject": false,
+    "single_outer_fence_removed": false,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "grading_version": "GX1_LOCAL_FROZEN_FOUR_WAY_V1",
+    "validator": {
+      "valid": true,
+      "reason": "PASS"
+    }
+  },
+  "_source_file": "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/GX1_INSPECT_V3_20261014_180939_268679/results/qwen3_8b/full/results.jsonl",
+  "_all_source_files": [
+    "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/GX1_INSPECT_V3_20261014_180939_268679/results/qwen3_8b/full/answers/e33cc4860c2bc6e985e9e37bdef18157b8deb4962dea114befe088fc5c30ee69.json",
+    "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/GX1_INSPECT_V3_20261014_180939_268679/results/qwen3_8b/full/results.jsonl",
+    "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/GX1_INSPECT_V4_20261014_224241_081409/results/qwen3_8b/full/answers/e33cc4860c2bc6e985e9e37bdef18157b8deb4962dea114befe088fc5c30ee69.json",
+    "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/GX1_INSPECT_V4_20261014_224241_081409/results/qwen3_8b/full/results.jsonl"
+  ],
+  "_case_metadata": {
+    "case_uid": "e33cc4860c2bc6e985e9e37bdef18157b8deb4962dea114befe088fc5c30ee69",
+    "case_id": "G1_000278",
+    "task": "G1",
+    "case_dir": "case_sets/GABRIEL_CONTROLLED_N005_001_n5/G1/G1_000278",
+    "topology_id": "GABRIEL_CONTROLLED_N005_001",
+    "topology_folder": "GABRIEL_CONTROLLED_N005_001_n5",
+    "scale": "5–10",
+    "node_count": 5,
+    "canonical_graph_hash": "df95b71f4fb8cdafe26da81f850850bccded4a3435d93c901900a99fbec32c1c",
+    "source_category": "controlled_gabriel_reference_extension",
+    "messages_sha256": "c9644f3c1648e5691179fd5170f00663205c8459500fff12c4cf2fc9fcab0231",
+    "input_characters": 3264,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "variant": "EDGE_LIST_TO_ADJACENCY_MATRIX",
+    "seed": "10696413309825319203",
+    "path_cost_metric": "NOT_APPLICABLE",
+    "cohort": "FORMAL_UNSEEN_HELDOUT",
+    "evaluation_eligible": true
+  },
+  "identity_key": "a8c82b270d9ea7aa93302e0fa786bcdd9bac9e7d88f2d848d494c3eb0081d306",
+  "historical": true,
+  "history_answer_count": 1,
+  "historical_selection": "latest received response from FINAL; not normalized formal authority"
+}

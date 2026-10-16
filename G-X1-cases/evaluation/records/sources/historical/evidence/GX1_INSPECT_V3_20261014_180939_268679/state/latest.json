@@ -1,0 +1,53 @@
+{
+  "time": 1791987346.3526433,
+  "statistics_watermark": 1791987287.1067007,
+  "compute_workers": 1,
+  "models": {
+    "qwen3_8b": {
+      "planned": 8618,
+      "saved_unique": 36,
+      "responses": 36,
+      "service_errors": 0,
+      "grading": {
+        "CORRECT": 34,
+        "MISSING": 1,
+        "INFEASIBLE": 1
+      },
+      "phase": "RUNNING_FULL"
+    },
+    "deepseek_r1_8b": {
+      "planned": 8618,
+      "saved_unique": 36,
+      "responses": 36,
+      "service_errors": 0,
+      "grading": {
+        "CORRECT": 34,
+        "INFEASIBLE": 2
+      },
+      "phase": "FULL_READY"
+    },
+    "qwen35_4b": {
+      "planned": 8618,
+      "saved_unique": 31,
+      "responses": 22,
+      "service_errors": 9,
+      "grading": {
+        "null": 9,
+        "CORRECT": 22
+      },
+      "phase": "FULL_READY"
+    }
+  },
+  "source_tasks": {
+    "G1": 2430,
+    "G2": 2815,
+    "G3": 2247,
+    "X1": 1126
+  },
+  "skipped_REVIEW": 1,
+  "shared_Inspect_pool_max": 3,
+  "GX1_max": 1,
+  "global_reserved_GiB": 71.25,
+  "statistics_interval_seconds": 60,
+  "report_interval_seconds": 600
+}

@@ -1,0 +1,15 @@
+{
+  "model": "Qwen/Qwen3-8B",
+  "base_url": "https://api.siliconflow.cn/v1",
+  "workers": 1,
+  "temperature": 0,
+  "max_output_tokens": 8192,
+  "timeout_seconds": 300,
+  "max_transport_attempts": 3,
+  "retry_backoff_seconds": 1800,
+  "extra_body": {
+    "enable_thinking": false
+  },
+  "reasoning_mode": "disabled",
+  "chunk_size": 1
+}

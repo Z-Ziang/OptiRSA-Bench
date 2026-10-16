@@ -1,0 +1,16 @@
+{
+  "model": "Qwen/Qwen3-8B",
+  "base_url": "https://api.siliconflow.cn/v1",
+  "workers": 5,
+  "temperature": 0,
+  "max_output_tokens": 32768,
+  "timeout_seconds": 1200,
+  "max_transport_attempts": 3,
+  "retry_backoff_seconds": 10,
+  "extra_body": {
+    "enable_thinking": false
+  },
+  "reasoning_mode": "provider_native",
+  "credential_dpapi": "C:\\Users\\Ang\\AppData\\Local\\OptiRSA\\siliconflow.dpapi",
+  "chunk_size": 5
+}

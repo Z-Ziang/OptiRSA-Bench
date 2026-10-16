@@ -1,0 +1,93 @@
+{
+  "task": "G2",
+  "created_utc": "2026-10-16T03:56:13.168297+00:00",
+  "action": "isolate_exact_timeout_until_inspect_log_finalization",
+  "phase": "quarantined_waiting_for_inspect_log_finalization",
+  "model": "Qwen/Qwen3-8B",
+  "workers": 2,
+  "protocol_sha256": "04d10a69267cac64c9b8baab2275fbde703a09003dd527e2ee4b5cb09d73b361",
+  "authorization": "Current G2 monitor instructions authorize exact per-case controlled retry after finalized evidence.",
+  "reason": "Two local 300-second calls completed with no saved answer; the bound Inspect samples are completed errors with no completion, response ID, or choices, but the shared Inspect log still has no final journal marker. Keep these exact UIDs out of automatic retry claims until finalization.",
+  "inspect_log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\07dd2feb71c04062b5236324d2c3d424\\inspect_logs\\2026-10-16T03-32-40-00-00_task_7TnJ78SPtkpWXcUBbLrwad.eval",
+  "inspect_log_status": "started",
+  "account_source": "configured original G2 account; credential not read or logged",
+  "blanket_include_uncertain": false,
+  "cases": [
+    {
+      "uid": "4dfc9d6b596493b624a0bb4f84e5f24ff941589a090c72677162e75ab8493289",
+      "attempts": 11,
+      "dispatch_event_id": 3794,
+      "failure_event_id": 3809,
+      "case_id": "G2_000049",
+      "prior_status": "RETRY",
+      "retry_base_before": 9,
+      "prior_error": "{\"type\": \"AttemptTimeoutError\", \"message\": \"attempt_timeout '300' exceeded.\", \"wrapper_type\": \"RetryError\"}",
+      "service_error": {
+        "type": "AttemptTimeoutError",
+        "message": "attempt_timeout '300' exceeded.",
+        "wrapper_type": "RetryError"
+      },
+      "answer_artifacts_found": 0,
+      "inspect_log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\07dd2feb71c04062b5236324d2c3d424\\inspect_logs\\2026-10-16T03-32-40-00-00_task_7TnJ78SPtkpWXcUBbLrwad.eval",
+      "inspect_log_status": "started",
+      "inspect_samples": [
+        {
+          "member": "samples/4dfc9d6b596493b624a0bb4f84e5f24ff941589a090c72677162e75ab8493289_epoch_1.json",
+          "completed_at": "2026-10-16T03:52:12.280530+00:00",
+          "error_present": true,
+          "completion_present": false,
+          "response_id_present": false,
+          "choices_count": 0
+        }
+      ],
+      "account_source": "configured original G2 account; credential not read or logged",
+      "answer_path_before": null,
+      "inspect_sample_error_present": true,
+      "completion_present": false,
+      "response_id_present": false,
+      "choices_count": 0,
+      "quarantine_event_id": 3815
+    },
+    {
+      "uid": "4fc9a61cc1d437eb15355297ee9b39926f49250693e33c067f47b1855c87e3ce",
+      "attempts": 9,
+      "dispatch_event_id": 3796,
+      "failure_event_id": 3811,
+      "case_id": "G2_000052",
+      "prior_status": "RETRY",
+      "retry_base_before": 8,
+      "prior_error": "{\"type\": \"AttemptTimeoutError\", \"message\": \"attempt_timeout '300' exceeded.\", \"wrapper_type\": \"RetryError\"}",
+      "service_error": {
+        "type": "AttemptTimeoutError",
+        "message": "attempt_timeout '300' exceeded.",
+        "wrapper_type": "RetryError"
+      },
+      "answer_artifacts_found": 0,
+      "inspect_log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\07dd2feb71c04062b5236324d2c3d424\\inspect_logs\\2026-10-16T03-32-40-00-00_task_7TnJ78SPtkpWXcUBbLrwad.eval",
+      "inspect_log_status": "started",
+      "inspect_samples": [
+        {
+          "member": "samples/4fc9a61cc1d437eb15355297ee9b39926f49250693e33c067f47b1855c87e3ce_epoch_1.json",
+          "completed_at": "2026-10-16T03:52:41.213102+00:00",
+          "error_present": true,
+          "completion_present": false,
+          "response_id_present": false,
+          "choices_count": 0
+        }
+      ],
+      "account_source": "configured original G2 account; credential not read or logged",
+      "answer_path_before": null,
+      "inspect_sample_error_present": true,
+      "completion_present": false,
+      "response_id_present": false,
+      "choices_count": 0,
+      "quarantine_event_id": 3816
+    }
+  ],
+  "run_history_path": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\run_history\\ambiguous_timeout_quarantine_20261016T035613Z_open_batch_2cases.json",
+  "quarantine_event_ids": [
+    3815,
+    3816
+  ],
+  "quarantined_utc": "2026-10-16T03:56:13.176463+00:00"
+}

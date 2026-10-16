@@ -1,0 +1,229 @@
+{
+  "task": "G2",
+  "created_utc": "2026-10-15T23:53:27.815876+00:00",
+  "action": "quarantine_ambiguous_300s_timeouts",
+  "reason": "AttemptTimeoutError leaves server completion uncertain; prevent duplicate dispatch until offline answer and Inspect log recovery.",
+  "baseline_event_id": 3306,
+  "source_event_ids": [
+    3311,
+    3313,
+    3315,
+    3317,
+    3319,
+    3321,
+    3325,
+    3327,
+    3328
+  ],
+  "cases": [
+    {
+      "uid": "4fc9a61cc1d437eb15355297ee9b39926f49250693e33c067f47b1855c87e3ce",
+      "attempt": 8,
+      "source_event_id": 3311,
+      "failure_time_utc": "2026-10-15T23:27:45.291945+00:00",
+      "prior_status": "RETRY",
+      "error_type": "AttemptTimeoutError",
+      "error_message": "attempt_timeout '300' exceeded.",
+      "answer_path": null,
+      "answer_files": [],
+      "inspect_log_dir": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\fd959c4bd63642a9a9609d4fc34ed4f9\\inspect_logs",
+      "inspect_log_files": [
+        "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\fd959c4bd63642a9a9609d4fc34ed4f9\\inspect_logs\\2026-10-15T23-22-44-00-00_task_JNyDbX8ePSsqpUcZ2LMgDW.eval"
+      ],
+      "inspect_sample": {
+        "sample_found": true,
+        "output_present": true,
+        "choices": 0,
+        "completion_chars": 0,
+        "completed_at": "2026-10-15T23:27:45.319956+00:00"
+      }
+    },
+    {
+      "uid": "ed0914b5286cc9685a88e8dbc991bd79b39f1add992d80fa4f85733999a7085c",
+      "attempt": 8,
+      "source_event_id": 3313,
+      "failure_time_utc": "2026-10-15T23:29:56.241888+00:00",
+      "prior_status": "RETRY",
+      "error_type": "AttemptTimeoutError",
+      "error_message": "attempt_timeout '300' exceeded.",
+      "answer_path": null,
+      "answer_files": [],
+      "inspect_log_dir": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\fd959c4bd63642a9a9609d4fc34ed4f9\\inspect_logs",
+      "inspect_log_files": [
+        "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\fd959c4bd63642a9a9609d4fc34ed4f9\\inspect_logs\\2026-10-15T23-22-44-00-00_task_JNyDbX8ePSsqpUcZ2LMgDW.eval"
+      ],
+      "inspect_sample": {
+        "sample_found": true,
+        "output_present": true,
+        "choices": 0,
+        "completion_chars": 0,
+        "completed_at": "2026-10-15T23:29:56.263600+00:00"
+      }
+    },
+    {
+      "uid": "6f02fc8551f48ff5523ca250cc6a380c998ba89fe84ea69119a63d393990b250",
+      "attempt": 8,
+      "source_event_id": 3315,
+      "failure_time_utc": "2026-10-15T23:32:45.376209+00:00",
+      "prior_status": "RETRY",
+      "error_type": "AttemptTimeoutError",
+      "error_message": "attempt_timeout '300' exceeded.",
+      "answer_path": null,
+      "answer_files": [],
+      "inspect_log_dir": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\fd959c4bd63642a9a9609d4fc34ed4f9\\inspect_logs",
+      "inspect_log_files": [
+        "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\fd959c4bd63642a9a9609d4fc34ed4f9\\inspect_logs\\2026-10-15T23-22-44-00-00_task_JNyDbX8ePSsqpUcZ2LMgDW.eval"
+      ],
+      "inspect_sample": {
+        "sample_found": true,
+        "output_present": true,
+        "choices": 0,
+        "completion_chars": 0,
+        "completed_at": "2026-10-15T23:32:45.398170+00:00"
+      }
+    },
+    {
+      "uid": "ef968ddc9a3870d7c3d067c898389eb3c4b4aa3714c77279554f11a9f6a3c4e9",
+      "attempt": 8,
+      "source_event_id": 3317,
+      "failure_time_utc": "2026-10-15T23:34:56.316957+00:00",
+      "prior_status": "RETRY",
+      "error_type": "AttemptTimeoutError",
+      "error_message": "attempt_timeout '300' exceeded.",
+      "answer_path": null,
+      "answer_files": [],
+      "inspect_log_dir": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\fd959c4bd63642a9a9609d4fc34ed4f9\\inspect_logs",
+      "inspect_log_files": [
+        "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\fd959c4bd63642a9a9609d4fc34ed4f9\\inspect_logs\\2026-10-15T23-22-44-00-00_task_JNyDbX8ePSsqpUcZ2LMgDW.eval"
+      ],
+      "inspect_sample": {
+        "sample_found": true,
+        "output_present": true,
+        "choices": 0,
+        "completion_chars": 0,
+        "completed_at": "2026-10-15T23:34:56.337836+00:00"
+      }
+    },
+    {
+      "uid": "a1f874292f16d4b708124d6de17fc8ddd55f79e2238df98016e37ad84b42b420",
+      "attempt": 8,
+      "source_event_id": 3319,
+      "failure_time_utc": "2026-10-15T23:37:45.465147+00:00",
+      "prior_status": "RETRY",
+      "error_type": "AttemptTimeoutError",
+      "error_message": "attempt_timeout '300' exceeded.",
+      "answer_path": null,
+      "answer_files": [],
+      "inspect_log_dir": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\fd959c4bd63642a9a9609d4fc34ed4f9\\inspect_logs",
+      "inspect_log_files": [
+        "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\fd959c4bd63642a9a9609d4fc34ed4f9\\inspect_logs\\2026-10-15T23-22-44-00-00_task_JNyDbX8ePSsqpUcZ2LMgDW.eval"
+      ],
+      "inspect_sample": {
+        "sample_found": true,
+        "output_present": true,
+        "choices": 0,
+        "completion_chars": 0,
+        "completed_at": "2026-10-15T23:37:45.486133+00:00"
+      }
+    },
+    {
+      "uid": "68a7d663eb9ac5eda77b23c49cbaa96c04b887c997676d570e614ad58767aa1b",
+      "attempt": 8,
+      "source_event_id": 3321,
+      "failure_time_utc": "2026-10-15T23:39:56.390709+00:00",
+      "prior_status": "RETRY",
+      "error_type": "AttemptTimeoutError",
+      "error_message": "attempt_timeout '300' exceeded.",
+      "answer_path": null,
+      "answer_files": [],
+      "inspect_log_dir": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\fd959c4bd63642a9a9609d4fc34ed4f9\\inspect_logs",
+      "inspect_log_files": [
+        "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\fd959c4bd63642a9a9609d4fc34ed4f9\\inspect_logs\\2026-10-15T23-22-44-00-00_task_JNyDbX8ePSsqpUcZ2LMgDW.eval"
+      ],
+      "inspect_sample": {
+        "sample_found": true,
+        "output_present": true,
+        "choices": 0,
+        "completion_chars": 0,
+        "completed_at": "2026-10-15T23:39:56.414528+00:00"
+      }
+    },
+    {
+      "uid": "461e301ac043e45a74e1f9659baa307698b25597eac2f1710922377fc5db4b52",
+      "attempt": 8,
+      "source_event_id": 3325,
+      "failure_time_utc": "2026-10-15T23:44:56.466520+00:00",
+      "prior_status": "RETRY",
+      "error_type": "AttemptTimeoutError",
+      "error_message": "attempt_timeout '300' exceeded.",
+      "answer_path": null,
+      "answer_files": [],
+      "inspect_log_dir": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\fd959c4bd63642a9a9609d4fc34ed4f9\\inspect_logs",
+      "inspect_log_files": [
+        "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\fd959c4bd63642a9a9609d4fc34ed4f9\\inspect_logs\\2026-10-15T23-22-44-00-00_task_JNyDbX8ePSsqpUcZ2LMgDW.eval"
+      ],
+      "inspect_sample": {
+        "sample_found": true,
+        "output_present": true,
+        "choices": 0,
+        "completion_chars": 0,
+        "completed_at": "2026-10-15T23:44:56.488538+00:00"
+      }
+    },
+    {
+      "uid": "e5de57f7506662a2b25c63395aecef2045be57a609ecedebfceee099bea8eec0",
+      "attempt": 8,
+      "source_event_id": 3327,
+      "failure_time_utc": "2026-10-15T23:47:20.645106+00:00",
+      "prior_status": "RETRY",
+      "error_type": "AttemptTimeoutError",
+      "error_message": "attempt_timeout '300' exceeded.",
+      "answer_path": null,
+      "answer_files": [],
+      "inspect_log_dir": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\fd959c4bd63642a9a9609d4fc34ed4f9\\inspect_logs",
+      "inspect_log_files": [
+        "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\fd959c4bd63642a9a9609d4fc34ed4f9\\inspect_logs\\2026-10-15T23-22-44-00-00_task_JNyDbX8ePSsqpUcZ2LMgDW.eval"
+      ],
+      "inspect_sample": {
+        "sample_found": true,
+        "output_present": true,
+        "choices": 0,
+        "completion_chars": 0,
+        "completed_at": "2026-10-15T23:47:20.666291+00:00"
+      }
+    },
+    {
+      "uid": "f1e7f8439d56626bfb9e07c9148b5b6d9f9c891eced0accbca0ac71b511546c7",
+      "attempt": 6,
+      "source_event_id": 3328,
+      "failure_time_utc": "2026-10-15T23:49:56.551864+00:00",
+      "prior_status": "RETRY",
+      "error_type": "AttemptTimeoutError",
+      "error_message": "attempt_timeout '300' exceeded.",
+      "answer_path": null,
+      "answer_files": [],
+      "inspect_log_dir": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\fd959c4bd63642a9a9609d4fc34ed4f9\\inspect_logs",
+      "inspect_log_files": [
+        "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\fd959c4bd63642a9a9609d4fc34ed4f9\\inspect_logs\\2026-10-15T23-22-44-00-00_task_JNyDbX8ePSsqpUcZ2LMgDW.eval"
+      ],
+      "inspect_sample": {
+        "sample_found": true,
+        "output_present": true,
+        "choices": 0,
+        "completion_chars": 0,
+        "completed_at": "2026-10-15T23:49:56.573896+00:00"
+      }
+    }
+  ],
+  "quarantine_count": 9,
+  "recoverable_answers_found": 0,
+  "recover_command": "backend.ps1 -Action recover -Task G2",
+  "recovery": {
+    "completed_utc": "2026-10-15T23:55:30.489554+00:00",
+    "command": "backend.ps1 -Action recover -Task G2",
+    "recoverable_answers_found": 0,
+    "new_timeouts_remaining_needs_review": 9,
+    "total_needs_review": 29,
+    "note": "After quarantine, offline recover scanned all NEEDS_REVIEW items. No answer.json or Inspect choices/completion were found for the nine new 300-second timeout cases."
+  }
+}

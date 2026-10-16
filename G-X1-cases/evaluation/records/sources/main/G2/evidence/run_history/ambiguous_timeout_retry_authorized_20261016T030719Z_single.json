@@ -1,0 +1,42 @@
+{
+  "task": "G2",
+  "created_utc": "2026-10-16T03:07:19.485442+00:00",
+  "action": "retry_recovered_ambiguous_timeout_case",
+  "phase": "requeued",
+  "authorization": "Current user G2 heartbeat authorizes controlled exact-case retry after final Inspect evidence; no blanket IncludeUncertain or parallel resend.",
+  "model": "Qwen/Qwen3-8B",
+  "workers": 2,
+  "protocol_sha256": "04d10a69267cac64c9b8baab2275fbde703a09003dd527e2ee4b5cb09d73b361",
+  "account_source": "configured original G2 account; credential not read or logged",
+  "new_retry_generation": "14d81480-cef6-4b90-b286-2b6d0b2b0d24",
+  "inspect_log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\eb76657cad54406c8cba292393c59029\\inspect_logs\\2026-10-16T01-52-33-00-00_task_FAUgWv9JubpCoqwTVT3XHH.eval",
+  "inspect_log_status": "success",
+  "case": {
+    "uid": "de672222985f8fbaf47e252c30532a52ab2fc73c2e4f3b4d093816bba8ea4dc4",
+    "case_id": "G2_000044",
+    "prior_status": "RETRY",
+    "attempts_before": 12,
+    "retry_base_before": 11,
+    "retry_base_after": 12,
+    "prior_error": "{\"type\": \"AttemptTimeoutError\", \"message\": \"attempt_timeout '300' exceeded.\", \"wrapper_type\": \"RetryError\"}",
+    "attempt_service_error": {
+      "type": "AttemptTimeoutError",
+      "message": "attempt_timeout '300' exceeded.",
+      "wrapper_type": "RetryError"
+    },
+    "api_dispatch_event_id": 3627,
+    "service_failure_event_id": 3629,
+    "answer_artifacts_found": 0,
+    "inspect_log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\eb76657cad54406c8cba292393c59029\\inspect_logs\\2026-10-16T01-52-33-00-00_task_FAUgWv9JubpCoqwTVT3XHH.eval",
+    "inspect_log_status": "success",
+    "inspect_sample_error_present": true,
+    "inspect_completion_present": false,
+    "inspect_response_id_present": false,
+    "choices_count": 0,
+    "assistant_message_count": 0,
+    "remote_status_note": "No request/response ID was recorded, so remote status cannot be queried; the exact case had no local model output after the completed Inspect log.",
+    "account_source": "configured original G2 account; credential not read or logged"
+  },
+  "run_history_path": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\run_history\\ambiguous_timeout_retry_authorized_20261016T030719Z_single.json",
+  "requeued_utc": "2026-10-16T03:07:19.547936+00:00"
+}

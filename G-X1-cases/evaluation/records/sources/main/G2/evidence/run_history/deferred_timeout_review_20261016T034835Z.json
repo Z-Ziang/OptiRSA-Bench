@@ -1,0 +1,233 @@
+{
+  "task": "G2",
+  "created_utc": "2026-10-16T03:48:35.991933+00:00",
+  "action": "inspect_deferred_timeout_cases_wait_for_bound_log",
+  "model": "Qwen/Qwen3-8B",
+  "workers": 2,
+  "protocol_sha256": "04d10a69267cac64c9b8baab2275fbde703a09003dd527e2ee4b5cb09d73b361",
+  "queue_counts": {
+    "COMPLETE": 174,
+    "DEFERRED": 4,
+    "EXTERNAL_RESERVED": 100,
+    "HISTORICAL": 185,
+    "PENDING": 2070,
+    "RETRY": 268,
+    "RUNNING": 14
+  },
+  "external_reserved": {
+    "owner": "external:OptiRSA_EXTERNAL_600_20261016_111920",
+    "count": 100,
+    "attempts_min": 0,
+    "attempts_max": 0,
+    "with_answer": 0
+  },
+  "recent_service_failures_since_2026-10-16T03:19:21Z": [
+    {
+      "event_id": 3775,
+      "time_utc": "2026-10-16T03:22:38.210529+00:00",
+      "uid": "a89a5fd97938fffc4a2c076151065e1713a785b6a859b808ff874002b58de593",
+      "attempt": 11,
+      "error": {
+        "type": "AttemptTimeoutError",
+        "message": "attempt_timeout '300' exceeded.",
+        "wrapper_type": "RetryError"
+      }
+    },
+    {
+      "event_id": 3777,
+      "time_utc": "2026-10-16T03:23:16.622905+00:00",
+      "uid": "c4c535c5336d686d4222abddd3ffd186b1c6edc6741b2c75ffc4c075018305c0",
+      "attempt": 13,
+      "error": {
+        "type": "AttemptTimeoutError",
+        "message": "attempt_timeout '300' exceeded.",
+        "wrapper_type": "RetryError"
+      }
+    },
+    {
+      "event_id": 3779,
+      "time_utc": "2026-10-16T03:27:38.358542+00:00",
+      "uid": "ef25b2dc6815cae1f5379ecbabb5f1b356c7fc5a0e377ac0b36f7af69c34d84d",
+      "attempt": 11,
+      "error": {
+        "type": "AttemptTimeoutError",
+        "message": "attempt_timeout '300' exceeded.",
+        "wrapper_type": "RetryError"
+      }
+    },
+    {
+      "event_id": 3781,
+      "time_utc": "2026-10-16T03:28:16.756418+00:00",
+      "uid": "4dfc9d6b596493b624a0bb4f84e5f24ff941589a090c72677162e75ab8493289",
+      "attempt": 10,
+      "error": {
+        "type": "AttemptTimeoutError",
+        "message": "attempt_timeout '300' exceeded.",
+        "wrapper_type": "RetryError"
+      }
+    },
+    {
+      "event_id": 3782,
+      "time_utc": "2026-10-16T03:32:38.498439+00:00",
+      "uid": "29aaac5fa99a1cbaea0c66fa3a18536c19d444e95980908dfb692f6c4c4bc204",
+      "attempt": 8,
+      "error": {
+        "type": "AttemptTimeoutError",
+        "message": "attempt_timeout '300' exceeded.",
+        "wrapper_type": "RetryError"
+      }
+    },
+    {
+      "event_id": 3785,
+      "time_utc": "2026-10-16T03:37:40.578104+00:00",
+      "uid": "d73c3b7a7f27ca0cd84bb5c7f4d790c8ce7cd77fc821d7d90bb9c5b7541e6397",
+      "attempt": 12,
+      "error": {
+        "type": "AttemptTimeoutError",
+        "message": "attempt_timeout '300' exceeded.",
+        "wrapper_type": "RetryError"
+      }
+    },
+    {
+      "event_id": 3786,
+      "time_utc": "2026-10-16T03:37:40.622459+00:00",
+      "uid": "421ebc6762fdcc044a2f386aaef9efc3d06a25325343b156837c65449702a8bf",
+      "attempt": 12,
+      "error": {
+        "type": "AttemptTimeoutError",
+        "message": "attempt_timeout '300' exceeded.",
+        "wrapper_type": "RetryError"
+      }
+    },
+    {
+      "event_id": 3789,
+      "time_utc": "2026-10-16T03:42:40.813222+00:00",
+      "uid": "a89a5fd97938fffc4a2c076151065e1713a785b6a859b808ff874002b58de593",
+      "attempt": 12,
+      "error": {
+        "type": "AttemptTimeoutError",
+        "message": "attempt_timeout '300' exceeded.",
+        "wrapper_type": "RetryError"
+      }
+    },
+    {
+      "event_id": 3790,
+      "time_utc": "2026-10-16T03:42:40.855536+00:00",
+      "uid": "c4c535c5336d686d4222abddd3ffd186b1c6edc6741b2c75ffc4c075018305c0",
+      "attempt": 14,
+      "error": {
+        "type": "AttemptTimeoutError",
+        "message": "attempt_timeout '300' exceeded.",
+        "wrapper_type": "RetryError"
+      }
+    },
+    {
+      "event_id": 3795,
+      "time_utc": "2026-10-16T03:47:41.045294+00:00",
+      "uid": "de672222985f8fbaf47e252c30532a52ab2fc73c2e4f3b4d093816bba8ea4dc4",
+      "attempt": 13,
+      "error": {
+        "type": "AttemptTimeoutError",
+        "message": "attempt_timeout '300' exceeded.",
+        "wrapper_type": "RetryError"
+      }
+    }
+  ],
+  "new_rate_limit_or_balance_errors": 0,
+  "inspect_log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\07dd2feb71c04062b5236324d2c3d424\\inspect_logs\\2026-10-16T03-32-40-00-00_task_7TnJ78SPtkpWXcUBbLrwad.eval",
+  "inspect_log_status": "started",
+  "inspect_sample_count": 6,
+  "deferred_cases": [
+    {
+      "uid": "d73c3b7a7f27ca0cd84bb5c7f4d790c8ce7cd77fc821d7d90bb9c5b7541e6397",
+      "case_id": "G2_000037",
+      "attempts": 12,
+      "retry_base": 9,
+      "answer_path": null,
+      "answer_artifacts_found": 0,
+      "latest_error": {
+        "type": "AttemptTimeoutError",
+        "message": "attempt_timeout '300' exceeded.",
+        "wrapper_type": "RetryError"
+      },
+      "dispatch_event_id": 3785,
+      "inspect_log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\07dd2feb71c04062b5236324d2c3d424\\inspect_logs",
+      "inspect_log_status": "started",
+      "inspect_sample_present": true,
+      "inspect_error_present": true,
+      "completion_present": false,
+      "response_id_present": false,
+      "choices_count": 0,
+      "remote_request_id_available": false
+    },
+    {
+      "uid": "421ebc6762fdcc044a2f386aaef9efc3d06a25325343b156837c65449702a8bf",
+      "case_id": "G2_000038",
+      "attempts": 12,
+      "retry_base": 9,
+      "answer_path": null,
+      "answer_artifacts_found": 0,
+      "latest_error": {
+        "type": "AttemptTimeoutError",
+        "message": "attempt_timeout '300' exceeded.",
+        "wrapper_type": "RetryError"
+      },
+      "dispatch_event_id": 3786,
+      "inspect_log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\07dd2feb71c04062b5236324d2c3d424\\inspect_logs",
+      "inspect_log_status": "started",
+      "inspect_sample_present": true,
+      "inspect_error_present": true,
+      "completion_present": false,
+      "response_id_present": false,
+      "choices_count": 0,
+      "remote_request_id_available": false
+    },
+    {
+      "uid": "a89a5fd97938fffc4a2c076151065e1713a785b6a859b808ff874002b58de593",
+      "case_id": "G2_000039",
+      "attempts": 12,
+      "retry_base": 9,
+      "answer_path": null,
+      "answer_artifacts_found": 0,
+      "latest_error": {
+        "type": "AttemptTimeoutError",
+        "message": "attempt_timeout '300' exceeded.",
+        "wrapper_type": "RetryError"
+      },
+      "dispatch_event_id": 3789,
+      "inspect_log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\07dd2feb71c04062b5236324d2c3d424\\inspect_logs",
+      "inspect_log_status": "started",
+      "inspect_sample_present": true,
+      "inspect_error_present": true,
+      "completion_present": false,
+      "response_id_present": false,
+      "choices_count": 0,
+      "remote_request_id_available": false
+    },
+    {
+      "uid": "c4c535c5336d686d4222abddd3ffd186b1c6edc6741b2c75ffc4c075018305c0",
+      "case_id": "G2_000043",
+      "attempts": 14,
+      "retry_base": 11,
+      "answer_path": null,
+      "answer_artifacts_found": 0,
+      "latest_error": {
+        "type": "AttemptTimeoutError",
+        "message": "attempt_timeout '300' exceeded.",
+        "wrapper_type": "RetryError"
+      },
+      "dispatch_event_id": 3790,
+      "inspect_log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\07dd2feb71c04062b5236324d2c3d424\\inspect_logs",
+      "inspect_log_status": "started",
+      "inspect_sample_present": true,
+      "inspect_error_present": true,
+      "completion_present": false,
+      "response_id_present": false,
+      "choices_count": 0,
+      "remote_request_id_available": false
+    }
+  ],
+  "action_taken": "No queue mutation for these four. They are already DEFERRED and cannot be automatically claimed. Leave their running Inspect batch to finish naturally; once final, recheck all attempts and bound samples, then use exact-case controlled retry with retry_base=attempts and a five-minute per-case delay only if no answer exists.",
+  "next_recovery_rule": "After the current Inspect log is final, revalidate; if answerless, requeue with five-minute delay. For the separately recovered 11 cases, controlled retry eligibility begins at 2026-10-16T03:52:57.484050Z.",
+  "account_source": "configured original G2 account; credential not read or logged"
+}

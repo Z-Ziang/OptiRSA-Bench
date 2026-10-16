@@ -1,0 +1,87 @@
+{
+  "case_uid": "0b32f736ea9e8aa0b401feb13172bf4bcbef9abbcbe53277ef71bd1d628ed451",
+  "model": "Qwen/Qwen3-8B",
+  "binding": {
+    "time": 1792076132.280208,
+    "job": "G3_qwen3_8b_w0",
+    "case_uid": "0b32f736ea9e8aa0b401feb13172bf4bcbef9abbcbe53277ef71bd1d628ed451",
+    "messages_sha256": "667ff7950b90462a93e946be182e48ab4b89f770a6879ed2520d8eb0744945d3",
+    "model": "Qwen/Qwen3-8B",
+    "protocol_sha256": "d568dacee46aa6f3a3482ac8719936bbe8232b55a4c86f4ccf575ef2db8cf034",
+    "attempt": 1
+  },
+  "raw_completion": "{\n  \"shortest_paths\": [\n    {\n      \"pair_id\": \"pair_A\",\n      \"path_node_ids\": [0, 109, 107, 106, 105, 104, 103, 102, 101, 100, 199, 273, 23],\n      \"path_link_ids\": [4, 618, 617, 616, 615, 614, 613, 612, 611, 610, 609, 608],\n      \"hop_count\": 12,\n      \"total_length_km\": 436.446\n    },\n    {\n      \"pair_id\": \"pair_B\",\n      \"path_node_ids\": [23, 229, 109, 0],\n      \"path_link_ids\": [114, 616, 4],\n      \"hop_count\": 3,\n      \"total_length_km\": 146.47\n    }\n  ],\n  \"has_shared_directed_link\": false,\n  \"shared_link_ids\": []\n}",
+  "status": "RESPONSE_RECEIVED",
+  "usage": {
+    "openai-api/Qwen/Qwen3-8B": {
+      "input_tokens": 56327,
+      "output_tokens": 274,
+      "total_tokens": 56601,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 0,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    }
+  },
+  "started_at": "2026-10-15T14:55:32.550284+00:00",
+  "completed_at": "2026-10-15T14:56:00.793040+00:00",
+  "total_seconds": 28.243,
+  "result": {
+    "category": "INFEASIBLE",
+    "binary_correct": false,
+    "task": "G3",
+    "truth_feasible": true,
+    "correct_reject": false,
+    "single_outer_fence_removed": false,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "grading_version": "GX1_LOCAL_FROZEN_FOUR_WAY_V1",
+    "validator": {
+      "valid": false,
+      "reason": "ILLEGAL_DIRECTED_STEP",
+      "pair_id": "pair_A"
+    }
+  },
+  "strict": {
+    "category": "INFEASIBLE",
+    "binary_correct": false,
+    "task": "G3",
+    "truth_feasible": true,
+    "correct_reject": false,
+    "single_outer_fence_removed": false,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "grading_version": "GX1_LOCAL_FROZEN_FOUR_WAY_V1",
+    "validator": {
+      "valid": false,
+      "reason": "ILLEGAL_DIRECTED_STEP",
+      "pair_id": "pair_A"
+    }
+  },
+  "_source_file": "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/QWEN3_FIXED18_20261015_201811_478721/jobs/G3_qwen3_8b_w0/0b32f736ea9e8aa0b401feb13172bf4bcbef9abbcbe53277ef71bd1d628ed451_attempt1/answer.json",
+  "_all_source_files": [
+    "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/QWEN3_FIXED18_20261015_201811_478721/jobs/G3_qwen3_8b_w0/0b32f736ea9e8aa0b401feb13172bf4bcbef9abbcbe53277ef71bd1d628ed451_attempt1/answer.json"
+  ],
+  "_case_metadata": {
+    "case_uid": "0b32f736ea9e8aa0b401feb13172bf4bcbef9abbcbe53277ef71bd1d628ed451",
+    "case_id": "G3_000322",
+    "task": "G3",
+    "case_dir": "case_sets/FLOOR5_GEN_000081_n450/G3/G3_000322",
+    "topology_id": "FLOOR5_GEN_000081",
+    "topology_folder": "FLOOR5_GEN_000081_n450",
+    "scale": "401–500",
+    "node_count": 450,
+    "canonical_graph_hash": "ca1388321b254396b98c5f21d8c78f97c44e4ed48b4d646ffb1dca54e9434a6d",
+    "source_category": "floor5_generated",
+    "messages_sha256": "667ff7950b90462a93e946be182e48ab4b89f770a6879ed2520d8eb0744945d3",
+    "input_characters": 111971,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "variant": "TOTAL_LENGTH_KM__shared_false",
+    "seed": "7555209828324213029",
+    "path_cost_metric": "TOTAL_LENGTH_KM",
+    "cohort": "FORMAL_UNSEEN_HELDOUT",
+    "evaluation_eligible": true
+  },
+  "identity_key": "8fe9242505443cfd0c9c80122d94a7caf2d109f868d6f10b4744aad3ae93c40d",
+  "historical": true,
+  "history_answer_count": 1,
+  "historical_selection": "latest received response from FINAL; not normalized formal authority"
+}

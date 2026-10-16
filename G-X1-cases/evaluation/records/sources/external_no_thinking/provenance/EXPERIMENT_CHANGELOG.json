@@ -1,0 +1,61 @@
+{
+  "experiment_id": "OptiRSA_EXTERNAL_600_20261016_111920_NO_THINKING",
+  "source_batch_id": "OptiRSA_EXTERNAL_600_20261016_111920",
+  "source_partial_run": "../OptiRSA_EXTERNAL_600_20261016_111920",
+  "created_at_utc": "2026-10-16T06:23:56.034Z",
+  "change": "Explicitly disabled Qwen3 thinking for all six tasks.",
+  "request_parameter": {
+    "extra_body": {
+      "enable_thinking": false
+    }
+  },
+  "other_generation_parameters": "Model, prompts, temperatures, output limits, timeouts, retry budget and backoff were preserved. Worker/chunk concurrency is documented by stage below.",
+  "queue_policy": "Separate fresh queue and output. Prior provider-native responses are not mixed into this experiment. Do not automatically retry uncertain requests or deferred cases.",
+  "concurrency": {
+    "initial_attempt": {
+      "tasks": 6,
+      "workers_per_task": {
+        "G1": 3,
+        "G2": 2,
+        "G3": 1,
+        "X1": 2,
+        "X2": 1,
+        "X3": 1
+      },
+      "max_total_workers": 10
+    },
+    "throttled_resume": {
+      "tasks_in_parallel": 1,
+      "workers_per_task": {
+        "G1": 1,
+        "G2": 1,
+        "G3": 1,
+        "X1": 1,
+        "X2": 1,
+        "X3": 1
+      },
+      "max_total_workers": 1,
+      "reason": "Two-task concurrency still produced repeated TPM 429 responses; resumed sequentially in line with README shared-account guidance.; ordered delayed X retry queues later to let their backoff windows expire while earlier tasks progress.",
+      "task_order": [
+        "G2",
+        "G1",
+        "G3",
+        "X2",
+        "X3",
+        "X1"
+      ]
+    },
+    "reason": "Initial 10-worker burst produced provider 429 code 50602 (TPM limit reached); all affected DEFERRED cases were audited before requeue."
+  },
+  "readme_rule": "README_交接.md requires changed model/parameters to be recorded separately; this experiment follows that instruction.",
+  "stages": [
+    {
+      "at_utc": "2026-10-16T06:31:24.937Z",
+      "action": "Gracefully stopped new dispatches after TPM-limit 429s; preserved active response artifacts; reduced total concurrency to two one-worker tasks and reopened only cases whose three recorded attempts were all explicit 429/50602 TPM rejections."
+    },
+    {
+      "at_utc": "2026-10-16T06:44:05.946Z",
+      "action": "Two-worker pass ended after repeated 429/50602 TPM errors. Requeued 24 more cases only where every attempt was an explicit TPM rejection and no answer file existed; left 1 G1 connection-error case deferred. Next pass uses one global worker."
+    }
+  ]
+}

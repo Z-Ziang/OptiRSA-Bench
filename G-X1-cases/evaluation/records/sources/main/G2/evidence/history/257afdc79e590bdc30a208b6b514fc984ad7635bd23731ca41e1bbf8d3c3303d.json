@@ -1,0 +1,85 @@
+{
+  "case_uid": "257afdc79e590bdc30a208b6b514fc984ad7635bd23731ca41e1bbf8d3c3303d",
+  "model": "Qwen/Qwen3-8B",
+  "status": "RESPONSE_RECEIVED",
+  "raw_completion": "\n\n{\n  \"is_valid\": true,\n  \"error_type\": null\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "openai-api/Qwen/Qwen3-8B": {
+      "input_tokens": 676,
+      "output_tokens": 405,
+      "total_tokens": 1081,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 0,
+      "reasoning_tokens": 388,
+      "total_cost": null
+    }
+  },
+  "started_at": "2026-10-14T09:30:45.719104+00:00",
+  "completed_at": "2026-10-14T09:30:59.031695+00:00",
+  "total_seconds": 13.313,
+  "inspect_log": "inspect_logs/2026-10-14T09-29-23-00-00_gx1-cases_oYyWCu9sXTqWkiQwtvjVJG.eval",
+  "result": {
+    "category": "CORRECT",
+    "binary_correct": true,
+    "task": "G2",
+    "truth_feasible": true,
+    "correct_reject": false,
+    "single_outer_fence_removed": false,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "grading_version": "GX1_LOCAL_FROZEN_FOUR_WAY_V1",
+    "validator": {
+      "valid": true,
+      "reason": "PASS"
+    }
+  },
+  "strict": {
+    "category": "CORRECT",
+    "binary_correct": true,
+    "task": "G2",
+    "truth_feasible": true,
+    "correct_reject": false,
+    "single_outer_fence_removed": false,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "grading_version": "GX1_LOCAL_FROZEN_FOUR_WAY_V1",
+    "validator": {
+      "valid": true,
+      "reason": "PASS"
+    }
+  },
+  "_source_file": "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/GX1_INSPECT_20261014_170514_071307/results/qwen3_8b/pilot/results.jsonl",
+  "_all_source_files": [
+    "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/GX1_INSPECT_20261014_170514_071307/results/qwen3_8b/full/answers/257afdc79e590bdc30a208b6b514fc984ad7635bd23731ca41e1bbf8d3c3303d.json",
+    "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/GX1_INSPECT_20261014_170514_071307/results/qwen3_8b/pilot/answers/257afdc79e590bdc30a208b6b514fc984ad7635bd23731ca41e1bbf8d3c3303d.json",
+    "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/GX1_INSPECT_20261014_170514_071307/results/qwen3_8b/pilot/results.jsonl",
+    "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/GX1_INSPECT_V3_20261014_180939_268679/results/qwen3_8b/full/answers/257afdc79e590bdc30a208b6b514fc984ad7635bd23731ca41e1bbf8d3c3303d.json",
+    "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/GX1_INSPECT_V3_20261014_180939_268679/results/qwen3_8b/full/results.jsonl",
+    "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/GX1_INSPECT_V3_20261014_180939_268679/results/qwen3_8b/pilot/answers/257afdc79e590bdc30a208b6b514fc984ad7635bd23731ca41e1bbf8d3c3303d.json",
+    "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/GX1_INSPECT_V4_20261014_224241_081409/results/qwen3_8b/full/answers/257afdc79e590bdc30a208b6b514fc984ad7635bd23731ca41e1bbf8d3c3303d.json",
+    "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/GX1_INSPECT_V4_20261014_224241_081409/results/qwen3_8b/full/results.jsonl"
+  ],
+  "_case_metadata": {
+    "case_uid": "257afdc79e590bdc30a208b6b514fc984ad7635bd23731ca41e1bbf8d3c3303d",
+    "case_id": "G2_000426",
+    "task": "G2",
+    "case_dir": "case_sets/GABRIEL_CONTROLLED_N005_000_n5/G2/G2_000426",
+    "topology_id": "GABRIEL_CONTROLLED_N005_000",
+    "topology_folder": "GABRIEL_CONTROLLED_N005_000_n5",
+    "scale": "5–10",
+    "node_count": 5,
+    "canonical_graph_hash": "d46feec682669705af78c85e2ddfcd9fc611022cd6e00a0ded46a2aa95adb3b2",
+    "source_category": "controlled_gabriel_reference_extension",
+    "messages_sha256": "8efd95a5e01ff5efb44d2669c9ebc002ae72d288422200c95772e1546affbb51",
+    "input_characters": 2642,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "variant": "VALID",
+    "seed": "6379369533524295986",
+    "path_cost_metric": "NOT_APPLICABLE",
+    "cohort": "CALIBRATION_EXPOSED",
+    "evaluation_eligible": true
+  },
+  "identity_key": "a3fc89d8d31e8ec998e9356336db7930bddc02be81de812a47d900f1e3c2b678",
+  "historical": true,
+  "history_answer_count": 1,
+  "historical_selection": "latest received response from FINAL; not normalized formal authority"
+}

@@ -1,0 +1,15 @@
+{
+  "time_utc": "2026-10-15T21:57:49.329929+00:00",
+  "task": "X1",
+  "event": "RUN_CONDITION_CHANGE_AUTHORIZED",
+  "change": "On backend.ps1 start -Task X1, append api.siliconflow.cn to process-scoped NO_PROXY; preserve inherited exclusions.",
+  "scope": "X1 child process only; global Windows/FlClash proxy unchanged.",
+  "reason": "Repeated Inspect HTTP-proxy disconnects on non-streaming calls; direct TCP/443 to api.siliconflow.cn is reachable. Existing G1 launcher has same targeted bypass for local proxy idle timeout.",
+  "account_source": "Original X1 DPAPI credential, unchanged.",
+  "model": "Qwen/Qwen3-8B",
+  "workers": 3,
+  "config_prompt_scorer_queue_unchanged": true,
+  "protocol_sha256_unchanged": "2715f520e5425bd39ef0f822adec64fa9b536b02d8cf154a002df2282864d606",
+  "protocol_hash_note": "manage.py protocol() covers config and core.py/worker.py/manage.py; backend.ps1 launch environment is recorded as a transport event, without changing model/scoring protocol.",
+  "validation_before_restart": "Direct TCP 443 reachable; proxy CONNECT/TLS succeeded but real calls through proxy continued to fail. Direct API completion remains to be validated by the resumed X1 queue."
+}

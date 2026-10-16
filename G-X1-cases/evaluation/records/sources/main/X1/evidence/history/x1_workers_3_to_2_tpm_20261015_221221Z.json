@@ -1,0 +1,44 @@
+{
+  "time_utc": "2026-10-15T22:12:21.223555+00:00",
+  "task": "X1",
+  "event": "RUN_CONDITION_CHANGE_AUTHORIZED",
+  "change": "workers 3 -> 2",
+  "reason": "Fresh SiliconFlow 429 with TPM limit reached during the X1 run started 2026-10-15T21:58:40Z; explicitly authorized by the user.",
+  "latest_new_tpm_429_utc": "2026-10-15T22:04:02.354732+00:00",
+  "evidence": {
+    "new_tpm_429_error_files": 57,
+    "new_attempt_directories": 90,
+    "answer_json_files_in_new_attempts": 0,
+    "timeout_errors": 6,
+    "dispatch_stopped_before_request": 27,
+    "recovery_completed": true,
+    "queue_after_recovery": {
+      "COMPLETE": 22,
+      "HISTORICAL": 111,
+      "PENDING": 569,
+      "RETRY": 424
+    }
+  },
+  "preserved_settings": {
+    "model": "Qwen/Qwen3-8B",
+    "base_url": "https://api.siliconflow.cn/v1",
+    "temperature": 0,
+    "max_output_tokens": 8192,
+    "timeout_seconds": 300,
+    "max_transport_attempts": 3,
+    "retry_backoff_seconds": 10,
+    "extra_body": {},
+    "reasoning_mode": "provider_native",
+    "credential_dpapi": "C:\\Users\\Ang\\AppData\\Local\\OptiRSA\\siliconflow.dpapi"
+  },
+  "previous_workers": 3,
+  "new_workers": 2,
+  "previous_protocol_sha256": "2715f520e5425bd39ef0f822adec64fa9b536b02d8cf154a002df2282864d606",
+  "new_protocol_sha256": "04d10a69267cac64c9b8baab2275fbde703a09003dd527e2ee4b5cb09d73b361",
+  "archives": {
+    "config": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\X1\\history\\config_X1.before_workers2_20261015_221221Z.json",
+    "run_manifest": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\X1\\history\\run_manifest_X1.before_workers2_20261015_221221Z.json",
+    "handoff": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\X1\\history\\HANDOFF_X1.before_workers2_20261015_221221Z.md"
+  },
+  "scope": "X1 only; original account, model, prompt, scorer, queue and all other config fields unchanged."
+}

@@ -1,0 +1,63 @@
+{
+  "task": "G2",
+  "event": "restart_with_process_scoped_direct_connection",
+  "started_utc": "2026-10-16T01:28:35.496468+00:00",
+  "model": "Qwen/Qwen3-8B",
+  "workers": 2,
+  "backend": "backend.ps1 -Action start -Task G2",
+  "start_confirmation": "Initial command timed out waiting for supervisor confirmation; actual G2 process was found active, so no duplicate start was issued. Supervisor completed offline recovery and status now reports running=true.",
+  "process_environment_override": {
+    "name": "NO_PROXY",
+    "entry": "api.siliconflow.cn",
+    "scope": "start command and descendants only",
+    "system_or_other_task_settings_changed": false,
+    "verified_g2_processes": [
+      {
+        "pid": 38136,
+        "role": "supervisor",
+        "no_proxy_domain_confirmed": true
+      },
+      {
+        "pid": 49516,
+        "role": "worker-launcher",
+        "no_proxy_domain_confirmed": true
+      },
+      {
+        "pid": 47120,
+        "role": "worker",
+        "no_proxy_domain_confirmed": true
+      }
+    ]
+  },
+  "run_manifest": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\run_manifest.json",
+  "protocol_sha256": "04d10a69267cac64c9b8baab2275fbde703a09003dd527e2ee4b5cb09d73b361",
+  "supervisor": {
+    "pid": 38136,
+    "create_time": 1792113987.5684953,
+    "task": "G2",
+    "role": "supervisor",
+    "started_at": "2026-10-16T01:28:35.365129+00:00",
+    "launch_token": "749051312a8c4d0ca9d5a44f1e2a12eb"
+  },
+  "post_start_counts": {
+    "COMPLETE": 157,
+    "DEFERRED": 3,
+    "HISTORICAL": 185,
+    "NEEDS_REVIEW": 46,
+    "PENDING": 2139,
+    "RETRY": 265,
+    "RUNNING": 20
+  },
+  "latest_event_id": 3490,
+  "first_observed_dispatch_after_restart": {
+    "id": 3490,
+    "uid": "5a27b84e4d5adf675bf3641cc93f41adeba6cb133b5633999829953fd13f7c40",
+    "detail": {
+      "attempt": 5,
+      "model": "Qwen/Qwen3-8B",
+      "endpoint": "https://api.siliconflow.cn/v1"
+    }
+  },
+  "new_service_failures_after_restart": [],
+  "latest_response_event_id": 3486
+}

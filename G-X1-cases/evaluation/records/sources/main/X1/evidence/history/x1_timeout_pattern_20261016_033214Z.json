@@ -1,0 +1,133 @@
+{
+  "task": "X1",
+  "observed_at_utc": "2026-10-16T03:32:14Z",
+  "run_started_at_utc": "2026-10-16T03:09:42.303774Z",
+  "model": "Qwen/Qwen3-8B",
+  "account_source": "original X1 account; credential intentionally omitted",
+  "config": {
+    "workers": 2,
+    "chunk_size": 1,
+    "timeout_seconds": 300,
+    "retry_backoff_seconds": 1800,
+    "protocol_sha256": "5039f5d67c2e82931b9f7ffe6dcbc094b7bd44d52bc24c424a0b72589c44acaf"
+  },
+  "timed_out_requests": [
+    {
+      "case_id": "X1_000507",
+      "attempt": 1,
+      "next_attempt": 2,
+      "dispatch_event_id": 3246,
+      "failure_event_id": 3247,
+      "dispatch_at_utc": "2026-10-16T03:09:57.889504Z",
+      "failure_at_utc": "2026-10-16T03:14:57.969565Z",
+      "elapsed_seconds": 300.08,
+      "input_characters": 12657,
+      "error": "AttemptTimeoutError",
+      "answer_json_present": false,
+      "inspect_samples": 1,
+      "choices": 0,
+      "completion_characters": 0,
+      "usage_present": false,
+      "provider_side_completion": "unknown after local recovery evidence",
+      "next_retry_after_utc": "2026-10-16T03:44:57.936282Z"
+    },
+    {
+      "case_id": "X1_000003",
+      "attempt": 14,
+      "next_attempt": 15,
+      "dispatch_event_id": 3248,
+      "failure_event_id": 3349,
+      "dispatch_at_utc": "2026-10-16T03:14:58.911892Z",
+      "failure_at_utc": "2026-10-16T03:19:58.974141Z",
+      "elapsed_seconds": 300.062,
+      "input_characters": 12874,
+      "error": "AttemptTimeoutError",
+      "answer_json_present": false,
+      "inspect_samples": 1,
+      "choices": 0,
+      "completion_characters": 0,
+      "usage_present": false,
+      "provider_side_completion": "unknown after local recovery evidence",
+      "next_retry_after_utc": "2026-10-16T03:49:58.948028Z"
+    },
+    {
+      "case_id": "X1_000508",
+      "attempt": 1,
+      "next_attempt": 2,
+      "dispatch_event_id": 3350,
+      "failure_event_id": 3351,
+      "dispatch_at_utc": "2026-10-16T03:20:00.065096Z",
+      "failure_at_utc": "2026-10-16T03:25:00.107516Z",
+      "elapsed_seconds": 300.042,
+      "input_characters": 18157,
+      "error": "AttemptTimeoutError",
+      "answer_json_present": false,
+      "inspect_samples": 1,
+      "choices": 0,
+      "completion_characters": 0,
+      "usage_present": false,
+      "provider_side_completion": "unknown after local recovery evidence",
+      "next_retry_after_utc": "2026-10-16T03:55:00.084511Z"
+    },
+    {
+      "case_id": "X1_000509",
+      "attempt": 1,
+      "next_attempt": 2,
+      "dispatch_event_id": 3352,
+      "failure_event_id": 3353,
+      "dispatch_at_utc": "2026-10-16T03:25:00.901084Z",
+      "failure_at_utc": "2026-10-16T03:30:00.940094Z",
+      "elapsed_seconds": 300.039,
+      "input_characters": 13408,
+      "error": "AttemptTimeoutError",
+      "answer_json_present": false,
+      "inspect_samples": 1,
+      "choices": 0,
+      "completion_characters": 0,
+      "usage_present": false,
+      "provider_side_completion": "unknown after local recovery evidence",
+      "next_retry_after_utc": "2026-10-16T04:00:00.915094Z"
+    }
+  ],
+  "successful_input_comparison": {
+    "saved_answer_count": 23,
+    "attempt_3_success_count": 7,
+    "attempt_3_response_elapsed_seconds_range": [
+      197.114,
+      205.793
+    ],
+    "attempt_3_input_tokens_range": [
+      10162,
+      24723
+    ],
+    "largest_observed_success": {
+      "case_id": "X1_000046",
+      "input_characters": 49782,
+      "input_tokens": 24723,
+      "response_elapsed_seconds": 197.474
+    },
+    "notes": "The three never-dispatched cases timed out at 12,657, 18,157, and 13,408 input characters, below the largest successfully answered case. Length alone does not explain the timeout pattern."
+  },
+  "findings": {
+    "fresh_tpm_429_since_resume": false,
+    "response_saved_events_since_resume": 0,
+    "immediate_failure_condition": "Every checked dispatch ended at the configured local 300-second timeout with AttemptTimeoutError.",
+    "upstream_cause": "Not distinguishable from local artifacts: provider-side request status is unavailable, and no response/usage/choices were recorded. Upstream queueing, inference service delay, or transport stall remain possible."
+  },
+  "checkpoint": {
+    "status_counts": {
+      "COMPLETE": 23,
+      "HISTORICAL": 111,
+      "EXTERNAL_RESERVED": 100,
+      "PENDING": 473,
+      "RETRY": 418,
+      "RUNNING": 1
+    },
+    "active_case": "X1_000510",
+    "active_attempt": 1,
+    "active_input_characters": 19285,
+    "active_dispatch_at_utc": "2026-10-16T03:30:01.756985Z",
+    "active_request_interrupted": false
+  },
+  "next_action": "Leave X1_000510 in flight. Continue eligible PENDING cases with the current backend. Keep timed-out cases on their recorded 30-minute cooldown; before any subsequent retry, verify answer.json and Inspect evidence again."
+}

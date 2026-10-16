@@ -1,0 +1,39 @@
+{
+  "changed_at": "2026-10-15T22:04:05.0797708Z",
+  "task": "G2",
+  "action": "Scoped transport override for this G2 start only",
+  "reason": "Repeated APIConnectionError after approximately 149 seconds; G2 uses non-streaming requests and the deployed backend documents bypassing the local proxy for long non-streaming requests to avoid proxy idle timeouts.",
+  "no_proxy_host": "api.siliconflow.cn",
+  "scope": "Inherited only by the G2 supervisor and worker launched in this start; no other task or global settings changed.",
+  "endpoint": "https://api.siliconflow.cn/v1",
+  "workers": 2,
+  "latest_connection_failures": [
+    {
+      "count": 2,
+      "type": "APIConnectionError",
+      "at": "2026-10-15T22:00:10Z"
+    }
+  ],
+  "probe_observation": "Unauthenticated POST to the same endpoint returned HTTP 401 with both the default proxy and direct bypass, confirming both routes reach the provider edge; no authenticated/model request was used.",
+  "unchanged": [
+    "queue",
+    "model",
+    "temperature",
+    "output budget",
+    "timeout",
+    "reasoning mode",
+    "public prompts",
+    "frozen scorer"
+  ],
+  "verification": {
+    "verified_at": "2026-10-15T22:12:04.8661769Z",
+    "first_direct_route_response_saved_at": "2026-10-15T22:08:34Z",
+    "complete_count_before": 100,
+    "complete_count_after": 101,
+    "additional_deferred": 1,
+    "deferred_error": "AttemptTimeoutError after configured 300-second timeout; no answer artifact; left deferred and not retried",
+    "new_tpm_429_since_previous_latest": false,
+    "task_process_still_running": true,
+    "workers": 2
+  }
+}

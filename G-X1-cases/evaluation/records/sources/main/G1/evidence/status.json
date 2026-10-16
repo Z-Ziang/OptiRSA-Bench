@@ -1,0 +1,30 @@
+{
+  "task": "G1",
+  "total": 2430,
+  "counts": {
+    "COMPLETE": 383,
+    "DEFERRED": 467,
+    "EXTERNAL_RESERVED": 100,
+    "HISTORICAL": 26,
+    "PENDING": 1449,
+    "RETRY": 5
+  },
+  "categories": {
+    "CORRECT": 62,
+    "INFEASIBLE": 32,
+    "MISSING": 315
+  },
+  "control": {
+    "stop": true,
+    "reason": "SiliconFlow TPM rate limit; cooldown before low-speed probe",
+    "time": "2026-10-16T17:13:45.331478+00:00",
+    "cooldown_until": 1792174425.310393,
+    "cooldown_seconds": 3600,
+    "consecutive_rate_limits": 5
+  },
+  "phase": "PAUSED",
+  "worker_exit_codes": [
+    0
+  ],
+  "updated_at": "2026-10-16T17:13:50.071763+00:00"
+}

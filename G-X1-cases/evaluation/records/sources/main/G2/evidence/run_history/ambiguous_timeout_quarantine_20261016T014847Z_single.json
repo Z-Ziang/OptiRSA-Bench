@@ -1,0 +1,36 @@
+{
+  "task": "G2",
+  "created_utc": "2026-10-16T01:48:47.661311+00:00",
+  "action": "isolate_ambiguous_timeout_until_inspect_log_finalized",
+  "phase": "quarantined_waiting_for_inspect_log_finalization",
+  "authorization": "Latest G2 heartbeat authorizes exact per-case controlled retries only after local response evidence is final.",
+  "model": "Qwen/Qwen3-8B",
+  "workers": 2,
+  "protocol_sha256": "04d10a69267cac64c9b8baab2275fbde703a09003dd527e2ee4b5cb09d73b361",
+  "account_source": "configured original G2 account; credential not read or logged",
+  "reason": "Confirmed attempt 5 AttemptTimeoutError, no answer artifact; exact Inspect sample is an error with no completion or response ID, but its shared batch log remains started. Temporarily hold this UID outside automatic RETRY claims until the log is final.",
+  "case": {
+    "uid": "7f4602832bb711179c5ba638c39f3ef9aff9bf4c89a0ef738fadf438d12b9b05",
+    "case_id": "G2_000132",
+    "prior_status": "RETRY",
+    "attempts_before": 5,
+    "retry_base_before": 4,
+    "service_failure_event_id": 3568,
+    "answer_artifacts_found": 0,
+    "inspect_sample_seen": true,
+    "inspect_output_completion": false,
+    "inspect_response_id_present": false,
+    "inspect_sample_error_present": true,
+    "inspect_log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\526dc404cedf4b1d9673ae200276c29d\\inspect_logs\\2026-10-16T01-28-53-00-00_task_nzSShZnBrhUfoxFvHKcBnV.eval",
+    "service_error_path": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\attempts\\7f4602832bb711179c5ba638c39f3ef9aff9bf4c89a0ef738fadf438d12b9b05\\0005\\service_error.json",
+    "prior_error": {
+      "type": "AttemptTimeoutError",
+      "message": "attempt_timeout '300' exceeded.",
+      "wrapper_type": "RetryError"
+    },
+    "owner": "47120:1792114115.5898788",
+    "queue_error": "{\"type\": \"AttemptTimeoutError\", \"message\": \"attempt_timeout '300' exceeded.\", \"wrapper_type\": \"RetryError\"}"
+  },
+  "run_history_path": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\run_history\\ambiguous_timeout_quarantine_20261016T014847Z_single.json",
+  "quarantined_utc": "2026-10-16T01:48:47.682377+00:00"
+}

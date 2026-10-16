@@ -1,0 +1,39 @@
+{
+  "time_utc": "2026-10-15T22:40:20.057458+00:00",
+  "task": "X1",
+  "event": "X1_PAUSED_PROVIDER_TPM_AND_TIMEOUT",
+  "reason": "The original 3-worker run produced fresh TPM-limit 429s. At 2 workers, 14 new TPM 429s were recorded; after the authorized 5-minute wait, the single retry/start produced repeated 300-second request timeouts.",
+  "latest_2_worker_tpm_429_utc": "2026-10-15T22:17:42.860225+00:00",
+  "authorized_retry_started_utc": "2026-10-15T22:23:26.757578+00:00",
+  "authorized_retry_result": {
+    "attempt_directories": 20,
+    "saved_answer_json_files": 0,
+    "attempt_timeouts_300s": 6,
+    "stopped_before_request": 14,
+    "fresh_tpm_429": 0
+  },
+  "network_diagnostic": {
+    "direct_tcp_established_during_run": true,
+    "direct_tls_handshake_ipv4": true,
+    "direct_tls_handshake_ipv6": true,
+    "tls_version": "TLS 1.3",
+    "api_key_or_http_inference_call_used": false
+  },
+  "recovery": {
+    "completed": true,
+    "processes_running": false,
+    "queue_counts": {
+      "COMPLETE": 22,
+      "HISTORICAL": 111,
+      "PENDING": 578,
+      "RETRY": 415
+    }
+  },
+  "current_config": {
+    "workers": 2,
+    "model": "Qwen/Qwen3-8B",
+    "protocol_sha256": "04d10a69267cac64c9b8baab2275fbde703a09003dd527e2ee4b5cb09d73b361"
+  },
+  "next_action": "Keep X1 stopped. Do not automatically restart or reduce concurrency further. Ask the user to resolve/check the original account TPM quota and SiliconFlow API availability; resume only after user direction/provider recovery.",
+  "handoff_archive": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\X1\\history\\HANDOFF_X1.before_provider_pause_20261015_224020Z.md"
+}

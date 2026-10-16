@@ -1,0 +1,110 @@
+{
+  "task": "X1",
+  "observed_at_utc": "2026-10-16T03:48:20Z",
+  "since_checkpoint": "2026-10-16T03:32:14Z",
+  "model": "Qwen/Qwen3-8B",
+  "account_source": "original X1 account; secret omitted",
+  "config": {
+    "workers": 2,
+    "chunk_size": 1,
+    "timeout_seconds": 300,
+    "retry_backoff_seconds": 1800,
+    "protocol_sha256": "5039f5d67c2e82931b9f7ffe6dcbc094b7bd44d52bc24c424a0b72589c44acaf"
+  },
+  "new_failures": [
+    {
+      "case_id": "X1_000510",
+      "attempt": 1,
+      "next_attempt": 2,
+      "dispatch_event_id": 3354,
+      "failure_event_id": 3355,
+      "dispatch_utc": "2026-10-16T03:30:01.756985Z",
+      "failure_utc": "2026-10-16T03:35:01.826843Z",
+      "elapsed_seconds": 300.07,
+      "input_characters": 19285,
+      "error": "AttemptTimeoutError",
+      "answer_json": false,
+      "inspect": {
+        "samples": 1,
+        "choices": 0,
+        "completion_characters": 0,
+        "usage_present": false,
+        "log": "2026-10-16T03-30-01-00-00_task_Z8cvd8fxtc3knFQTEYJ9D4.eval"
+      },
+      "provider_completion": "unknown",
+      "retry_after_utc": "2026-10-16T04:05:01.801552Z"
+    },
+    {
+      "case_id": "X1_000004",
+      "attempt": 14,
+      "next_attempt": 15,
+      "dispatch_event_id": 3356,
+      "failure_event_id": 3357,
+      "dispatch_utc": "2026-10-16T03:35:02.855689Z",
+      "failure_utc": "2026-10-16T03:40:02.903701Z",
+      "elapsed_seconds": 300.048,
+      "input_characters": 17574,
+      "error": "AttemptTimeoutError",
+      "answer_json": false,
+      "inspect": {
+        "samples": 1,
+        "choices": 0,
+        "completion_characters": 0,
+        "usage_present": false,
+        "log": "2026-10-16T03-35-02-00-00_task_5SMmdk2sr89U3NvHU6uSKN.eval"
+      },
+      "provider_completion": "unknown",
+      "retry_after_utc": "2026-10-16T04:10:02.874313Z"
+    },
+    {
+      "case_id": "X1_000512",
+      "attempt": 1,
+      "next_attempt": 2,
+      "dispatch_event_id": 3358,
+      "failure_event_id": 3359,
+      "dispatch_utc": "2026-10-16T03:40:03.727303Z",
+      "failure_utc": "2026-10-16T03:45:03.774852Z",
+      "elapsed_seconds": 300.048,
+      "input_characters": 21162,
+      "error": "AttemptTimeoutError",
+      "answer_json": false,
+      "inspect": {
+        "samples": 1,
+        "choices": 0,
+        "completion_characters": 0,
+        "usage_present": false,
+        "log": "2026-10-16T03-40-03-00-00_task_FBMLqopByM6Aq57xvmMmiL.eval"
+      },
+      "provider_completion": "unknown",
+      "retry_after_utc": "2026-10-16T04:15:03.752412Z"
+    }
+  ],
+  "controlled_retry_in_flight": {
+    "case_id": "X1_000507",
+    "attempt": 2,
+    "dispatch_event_id": 3360,
+    "dispatched_utc": "2026-10-16T03:45:04.603352Z",
+    "prior_attempt": {
+      "attempt": 1,
+      "provider_completion": "unknown",
+      "local_answer_json": false,
+      "inspect_choices": 0
+    },
+    "answer_present_at_checkpoint": false,
+    "in_flight": true
+  },
+  "since_previous_checkpoint": {
+    "additional_failures": 3,
+    "response_saved": 0,
+    "fresh_tpm_429": false,
+    "status_counts": {
+      "COMPLETE": 23,
+      "HISTORICAL": 111,
+      "EXTERNAL_RESERVED": 100,
+      "PENDING": 471,
+      "RETRY": 420,
+      "RUNNING": 1
+    }
+  },
+  "next_action": "Let X1_000507 attempt 2 finish or time out naturally. Keep processing eligible PENDING rows; individual timed-out rows remain on their 30-minute cooldown and must be checked for answer.json/Inspect output before their next controlled round."
+}

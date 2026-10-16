@@ -1,0 +1,240 @@
+{
+  "time_utc": "2026-10-16T03:09:29.783923+00:00",
+  "task": "X1",
+  "root": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016",
+  "queue": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\X1\\queue.sqlite",
+  "run_start_time_utc": "2026-10-16T02:11:59Z",
+  "run_event_window": {
+    "first_event_id": 3218,
+    "last_event_id_before_recovery": 3239,
+    "dispatches": 11,
+    "service_failures": 11,
+    "response_saved": 0
+  },
+  "failure_summary": "All 11 dispatched requests ended in 300-second AttemptTimeoutError; each corresponding Inspect sample had zero choices and zero completion characters; no answer.json was present in any dispatched attempt directory. Provider-side completion is unknown.",
+  "no_key_connectivity_check": {
+    "GET /v1/models via environment proxy": {
+      "status": 401,
+      "elapsed_seconds": 1.25
+    },
+    "GET /v1/models direct": {
+      "status": 401,
+      "elapsed_seconds": 0.16
+    },
+    "interpretation": "Gateway/network responded quickly without credentials; this does not establish inference endpoint or original account availability."
+  },
+  "before_config": {
+    "model": "Qwen/Qwen3-8B",
+    "base_url": "https://api.siliconflow.cn/v1",
+    "workers": 2,
+    "temperature": 0,
+    "max_output_tokens": 8192,
+    "timeout_seconds": 300,
+    "max_transport_attempts": 3,
+    "retry_backoff_seconds": 300,
+    "extra_body": {},
+    "reasoning_mode": "provider_native",
+    "chunk_size": 1
+  },
+  "after_config": {
+    "model": "Qwen/Qwen3-8B",
+    "base_url": "https://api.siliconflow.cn/v1",
+    "workers": 2,
+    "temperature": 0,
+    "max_output_tokens": 8192,
+    "timeout_seconds": 300,
+    "max_transport_attempts": 3,
+    "retry_backoff_seconds": 1800,
+    "extra_body": {},
+    "reasoning_mode": "provider_native",
+    "chunk_size": 1
+  },
+  "old_protocol_sha256": "9c72ad8ec52b6fac351aab888b87510a2690ca1b1e889208d6f5f40b47c5619b",
+  "new_protocol_sha256": "5039f5d67c2e82931b9f7ffe6dcbc094b7bd44d52bc24c424a0b72589c44acaf",
+  "status_before_change": {
+    "COMPLETE": 23,
+    "DEFERRED": 3,
+    "HISTORICAL": 111,
+    "PENDING": 578,
+    "RETRY": 411
+  },
+  "status_after_change": {
+    "COMPLETE": 23,
+    "HISTORICAL": 111,
+    "PENDING": 578,
+    "RETRY": 414
+  },
+  "previously_dispatched_unresolved_schedule_preserved": true,
+  "never_dispatched_pending_remain_immediately_eligible": true,
+  "per_case_schedule": [
+    {
+      "case_id": "X1_000001",
+      "reason": "per-case timeout recovery after stop+recover; all inspected attempts have no answer.json, zero Inspect choices/completion; provider-side completion remains unknown",
+      "dispatch_event_id": 3226,
+      "dispatch_time_utc": "2026-10-16T02:32:39.045893+00:00",
+      "failure_event_id": 3227,
+      "failure": {
+        "kind": "TRANSIENT",
+        "attempt": 16
+      },
+      "previous_status": "DEFERRED",
+      "previous_attempts": 16,
+      "previous_retry_base": 13,
+      "next_status": "RETRY",
+      "next_retry_base": 16,
+      "new_attempts_preserved": 16,
+      "retry_round_action": "next_controlled_round",
+      "account_source": "original X1 account",
+      "include_uncertain": false,
+      "answer_path_found": false,
+      "retry_after_utc": "2026-10-16T05:09:29.783923+00:00"
+    },
+    {
+      "case_id": "X1_000504",
+      "reason": "per-case timeout recovery after stop+recover; all inspected attempts have no answer.json, zero Inspect choices/completion; provider-side completion remains unknown",
+      "dispatch_event_id": 3228,
+      "dispatch_time_utc": "2026-10-16T02:37:39.398029+00:00",
+      "failure_event_id": 3229,
+      "failure": {
+        "kind": "TRANSIENT",
+        "attempt": 3
+      },
+      "previous_status": "DEFERRED",
+      "previous_attempts": 3,
+      "previous_retry_base": 0,
+      "next_status": "RETRY",
+      "next_retry_base": 3,
+      "new_attempts_preserved": 3,
+      "retry_round_action": "next_controlled_round",
+      "account_source": "original X1 account",
+      "include_uncertain": false,
+      "answer_path_found": false,
+      "retry_after_utc": "2026-10-16T05:09:29.783923+00:00"
+    },
+    {
+      "case_id": "X1_000505",
+      "reason": "per-case timeout recovery after stop+recover; all inspected attempts have no answer.json, zero Inspect choices/completion; provider-side completion remains unknown",
+      "dispatch_event_id": 3230,
+      "dispatch_time_utc": "2026-10-16T02:42:39.746452+00:00",
+      "failure_event_id": 3231,
+      "failure": {
+        "kind": "TRANSIENT",
+        "attempt": 3
+      },
+      "previous_status": "DEFERRED",
+      "previous_attempts": 3,
+      "previous_retry_base": 0,
+      "next_status": "RETRY",
+      "next_retry_base": 3,
+      "new_attempts_preserved": 3,
+      "retry_round_action": "next_controlled_round",
+      "account_source": "original X1 account",
+      "include_uncertain": false,
+      "answer_path_found": false,
+      "retry_after_utc": "2026-10-16T05:09:29.783923+00:00"
+    },
+    {
+      "case_id": "X1_000506",
+      "reason": "per-case timeout recovery after stop+recover; all inspected attempts have no answer.json, zero Inspect choices/completion; provider-side completion remains unknown",
+      "dispatch_event_id": 3236,
+      "dispatch_time_utc": "2026-10-16T02:57:41.423189+00:00",
+      "failure_event_id": 3237,
+      "failure": {
+        "kind": "TRANSIENT",
+        "attempt": 2
+      },
+      "previous_status": "RETRY",
+      "previous_attempts": 2,
+      "previous_retry_base": 0,
+      "next_status": "RETRY",
+      "next_retry_base": 0,
+      "new_attempts_preserved": 2,
+      "retry_round_action": "same_round_after_attempt_2",
+      "account_source": "original X1 account",
+      "include_uncertain": false,
+      "answer_path_found": false,
+      "retry_after_utc": "2026-10-16T04:09:29.783923+00:00"
+    },
+    {
+      "case_id": "X1_000002",
+      "reason": "per-case timeout recovery after stop+recover; all inspected attempts have no answer.json, zero Inspect choices/completion; provider-side completion remains unknown",
+      "dispatch_event_id": 3238,
+      "dispatch_time_utc": "2026-10-16T03:02:42.089508+00:00",
+      "failure_event_id": 3239,
+      "failure": {
+        "kind": "TRANSIENT",
+        "attempt": 15
+      },
+      "previous_status": "RETRY",
+      "previous_attempts": 15,
+      "previous_retry_base": 13,
+      "next_status": "RETRY",
+      "next_retry_base": 13,
+      "new_attempts_preserved": 15,
+      "retry_round_action": "same_round_after_attempt_2",
+      "account_source": "original X1 account",
+      "include_uncertain": false,
+      "answer_path_found": false,
+      "retry_after_utc": "2026-10-16T04:09:29.783923+00:00"
+    }
+  ],
+  "audit_event_ids": [
+    3240,
+    3241,
+    3242,
+    3243,
+    3244,
+    3245
+  ],
+  "latest_event_id": 3245,
+  "archives": {
+    "X1.json": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\X1\\history\\config_X1.before_timeout_backoff_20261016_030929Z.json",
+    "run_manifest.json": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\X1\\history\\run_manifest_X1.before_timeout_backoff_20261016_030929Z.json",
+    "HANDOFF_X1.md": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\X1\\history\\HANDOFF_X1.before_timeout_backoff_20261016_030929Z.md"
+  },
+  "no_other_task_or_shared_code_changed": true,
+  "credential_secrets_written": false,
+  "resume": {
+    "started_at_utc": "2026-10-16T03:09:42.303774+00:00",
+    "supervisor_pid": 53344,
+    "first_dispatch_event_id": 3246,
+    "first_dispatch_time_utc": "2026-10-16T03:09:57+00:00",
+    "first_dispatched_case": "X1_000507",
+    "attempt": 1,
+    "prior_api_dispatch_count_for_case": 0,
+    "case_was_never_dispatched": true,
+    "protocol_sha256": "5039f5d67c2e82931b9f7ffe6dcbc094b7bd44d52bc24c424a0b72589c44acaf",
+    "config_matches_manifest": true,
+    "backend_status_running": true,
+    "initial_counts": {
+      "COMPLETE": 23,
+      "HISTORICAL": 111,
+      "PENDING": 577,
+      "RETRY": 414,
+      "RUNNING": 1
+    }
+  },
+  "post_resume_probe": {
+    "case_id": "X1_000507",
+    "attempt": 1,
+    "failed_at_utc": "2026-10-16T03:14:57Z",
+    "status_after_failure": "RETRY",
+    "retry_after_utc": "2026-10-16T03:44:57+00:00",
+    "service_error_type": "AttemptTimeoutError",
+    "answer_json_exists": false,
+    "inspect_choices": 0,
+    "inspect_completion_chars": 0,
+    "remote_completion_state": "unknown",
+    "next_dispatch_event_id": 3248,
+    "next_case_id": "X1_000003",
+    "next_attempt": 14,
+    "next_case_prior_dispatches": 13,
+    "counts": {
+      "COMPLETE": 23,
+      "HISTORICAL": 111,
+      "PENDING": 576,
+      "RETRY": 415,
+      "RUNNING": 1
+    }
+  }
+}

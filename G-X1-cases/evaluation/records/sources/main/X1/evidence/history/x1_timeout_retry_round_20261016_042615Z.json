@@ -1,0 +1,106 @@
+{
+  "task": "X1",
+  "recorded_at_utc": "2026-10-16T04:26:15.600824+00:00",
+  "action": "controlled_retry_of_single_deferred_timeout_after_graceful_drain_and_recover",
+  "case": {
+    "case_id": "X1_000002",
+    "uid": "6c49e49cf5109508b3623fe08f426e29ba7c70cc72cad5ef8a226a1efdf69223",
+    "identity_key": "68d33f060dd52701dab4c27946eb0ffecd58478a36d454c215f3854581c1b1f7",
+    "status_before_retry": "DEFERRED",
+    "attempts_before_retry": 16,
+    "retry_base_before_retry": 13,
+    "retry_after_before_retry": null,
+    "latest_dispatch_event": {
+      "id": 3370,
+      "time_utc": "2026-10-16T04:09:52.172548+00:00",
+      "detail": {
+        "attempt": 16,
+        "model": "Qwen/Qwen3-8B",
+        "endpoint": "https://api.siliconflow.cn/v1"
+      }
+    },
+    "latest_failure_event": {
+      "id": 3371,
+      "time_utc": "2026-10-16T04:14:52.208393+00:00",
+      "detail": {
+        "kind": "TRANSIENT",
+        "attempt": 16
+      }
+    },
+    "local_recovery": {
+      "stop_requested_at_utc": "2026-10-16T04:20:57.790832+00:00",
+      "running_false_confirmed_at_utc": "2026-10-16T04:24:53.915392+00:00",
+      "recover_action_completed": true,
+      "answer_files_found": [],
+      "inspect": {
+        "path": "tasks\\X1\\batches\\732199722cbf4a4898f446393c9f4ca7\\inspect_logs\\2026-10-16T04-09-52-00-00_task_2ibts6UCyEtRRpAgzW9fA8.eval",
+        "error_message": "RetryError(<Future at 0x25067d4a780 state=finished raised AttemptTimeoutError>)",
+        "choices": 0,
+        "completion_characters": 0,
+        "usage_present": false
+      }
+    },
+    "provider_completion_status": "unknown; local logs have no provider request id or status evidence",
+    "account_source": "original X1 account; protected credential was not read or logged",
+    "next_attempt_number": 17
+  },
+  "retry_operation": {
+    "command": "backend.ps1 retry -Task X1",
+    "include_uncertain": false,
+    "eligible_before_retry": [
+      "X1_000002"
+    ],
+    "states_affected": [
+      "DEFERRED",
+      "PROVIDER_PAUSED"
+    ],
+    "manual_retry_event_id": 3376,
+    "manual_retry_time_utc": "2026-10-16T04:25:52.373409+00:00",
+    "manual_retry_detail": {
+      "states": [
+        "DEFERRED",
+        "PROVIDER_PAUSED"
+      ],
+      "potential_uncertain_request_repeat": false
+    },
+    "expected_retry_base_after_requeue": 16,
+    "result_after_requeue": {
+      "status": "PENDING",
+      "attempts": 16,
+      "retry_base": 16,
+      "retry_after_utc": null,
+      "answer_path": null,
+      "answer_files": [],
+      "error": null
+    }
+  },
+  "run_config_unchanged": {
+    "model": "Qwen/Qwen3-8B",
+    "workers": 2,
+    "chunk_size": 1,
+    "timeout_seconds": 300,
+    "retry_backoff_seconds": 1800,
+    "max_transport_attempts": 3
+  },
+  "notes": "Requeued only the sole DEFERRED case after backend stop/drain and recover. RETRY rows remain on their own cooldowns. External-reserved rows untouched.",
+  "resume_observation": {
+    "observed_at_utc": "2026-10-16T04:27:07.663403+00:00",
+    "start_confirmed": true,
+    "dispatch_event": {
+      "id": 3377,
+      "time_utc": "2026-10-16T04:26:39.312899+00:00",
+      "detail": {
+        "attempt": 17,
+        "model": "Qwen/Qwen3-8B",
+        "endpoint": "https://api.siliconflow.cn/v1"
+      }
+    },
+    "case_state": {
+      "status": "RUNNING",
+      "attempts": 17,
+      "retry_base": 16,
+      "answer_path": null
+    },
+    "note": "The backend immediately selected the requeued case before remaining never-dispatched PENDING rows due queue row ordering. This is the single locally controlled attempt 17; it is already in flight and is not being interrupted. The worker can advance remaining PENDING after this call resolves."
+  }
+}

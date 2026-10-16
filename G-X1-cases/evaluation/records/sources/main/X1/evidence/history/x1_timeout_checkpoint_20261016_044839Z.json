@@ -1,0 +1,237 @@
+{
+  "task": "X1",
+  "checkpoint_utc": "2026-10-16T04:48:39.112134+00:00",
+  "after_event_id": 3376,
+  "config": {
+    "model": "Qwen/Qwen3-8B",
+    "workers": 2,
+    "chunk_size": 1,
+    "timeout_seconds": 300,
+    "max_transport_attempts": 3,
+    "retry_backoff_seconds": 1800,
+    "temperature": 0,
+    "max_output_tokens": 8192,
+    "reasoning_mode": "provider_native"
+  },
+  "protocol_fingerprint_matches_manifest": false,
+  "cases": [
+    {
+      "case_id": "X1_000002",
+      "uid": "6c49e49cf5109508b3623fe08f426e29ba7c70cc72cad5ef8a226a1efdf69223",
+      "status": "RETRY",
+      "attempts": 17,
+      "retry_base": 16,
+      "retry_after_utc": "2026-10-16T05:01:39.401739+00:00",
+      "answer_path_exists": false,
+      "answer_files": [],
+      "error": {
+        "type": "AttemptTimeoutError",
+        "message": "attempt_timeout '300' exceeded.",
+        "wrapper_type": "RetryError"
+      },
+      "events": [
+        {
+          "id": 3377,
+          "time_utc": "2026-10-16T04:26:39.312899+00:00",
+          "kind": "API_DISPATCH",
+          "detail": {
+            "attempt": 17,
+            "model": "Qwen/Qwen3-8B",
+            "endpoint": "https://api.siliconflow.cn/v1"
+          }
+        },
+        {
+          "id": 3378,
+          "time_utc": "2026-10-16T04:31:39.423986+00:00",
+          "kind": "SERVICE_FAILURE",
+          "detail": {
+            "kind": "TRANSIENT",
+            "attempt": 17
+          }
+        }
+      ],
+      "inspect": {
+        "path": "tasks\\X1\\batches\\4e9ce3605ab64e448b730868e5d49783\\inspect_logs\\2026-10-16T04-26-39-00-00_task_hGobokcvFhL4w3nCQXfspU.eval",
+        "error_message": "RetryError(<Future at 0x23df8a96ff0 state=finished raised AttemptTimeoutError>)",
+        "choices": 0,
+        "completion_characters": 0,
+        "usage_present": false
+      }
+    },
+    {
+      "case_id": "X1_000506",
+      "uid": "62620a07632d0f4402bf934deba6cb48958834e6810ccb8bdd8d229f0481a9fe",
+      "status": "DEFERRED",
+      "attempts": 3,
+      "retry_base": 0,
+      "retry_after_utc": null,
+      "answer_path_exists": false,
+      "answer_files": [],
+      "error": {
+        "type": "AttemptTimeoutError",
+        "message": "attempt_timeout '300' exceeded.",
+        "wrapper_type": "RetryError"
+      },
+      "events": [
+        {
+          "id": 3379,
+          "time_utc": "2026-10-16T04:31:40.119986+00:00",
+          "kind": "API_DISPATCH",
+          "detail": {
+            "attempt": 3,
+            "model": "Qwen/Qwen3-8B",
+            "endpoint": "https://api.siliconflow.cn/v1"
+          }
+        },
+        {
+          "id": 3380,
+          "time_utc": "2026-10-16T04:36:40.188272+00:00",
+          "kind": "SERVICE_FAILURE",
+          "detail": {
+            "kind": "TRANSIENT",
+            "attempt": 3
+          }
+        }
+      ],
+      "inspect": {
+        "path": "tasks\\X1\\batches\\b7f944362ac34552ad2802ece95b23cb\\inspect_logs\\2026-10-16T04-31-40-00-00_task_MUU8qybmNevomWKNZkesA8.eval",
+        "error_message": "RetryError(<Future at 0x23df8e3eb10 state=finished raised AttemptTimeoutError>)",
+        "choices": 0,
+        "completion_characters": 0,
+        "usage_present": false
+      }
+    },
+    {
+      "case_id": "X1_000007",
+      "uid": "16756ae4276eb6177f99989db2b43a49581d6c8e3bc82efa1a7906ae91bbd050",
+      "status": "RETRY",
+      "attempts": 14,
+      "retry_base": 12,
+      "retry_after_utc": "2026-10-16T05:41:40.834629+00:00",
+      "answer_path_exists": false,
+      "answer_files": [],
+      "error": {
+        "type": "AttemptTimeoutError",
+        "message": "attempt_timeout '300' exceeded.",
+        "wrapper_type": "RetryError"
+      },
+      "events": [
+        {
+          "id": 3381,
+          "time_utc": "2026-10-16T04:36:40.814939+00:00",
+          "kind": "API_DISPATCH",
+          "detail": {
+            "attempt": 14,
+            "model": "Qwen/Qwen3-8B",
+            "endpoint": "https://api.siliconflow.cn/v1"
+          }
+        },
+        {
+          "id": 3382,
+          "time_utc": "2026-10-16T04:41:40.860152+00:00",
+          "kind": "SERVICE_FAILURE",
+          "detail": {
+            "kind": "TRANSIENT",
+            "attempt": 14
+          }
+        }
+      ],
+      "inspect": {
+        "path": "tasks\\X1\\batches\\8ba7c0b0697a4c0fb4089c8c2da66a88\\inspect_logs\\2026-10-16T04-36-40-00-00_task_NtxHrfoHF7tjk4Rwg8uyL5.eval",
+        "error_message": "RetryError(<Future at 0x23df8c42840 state=finished raised AttemptTimeoutError>)",
+        "choices": 0,
+        "completion_characters": 0,
+        "usage_present": false
+      }
+    },
+    {
+      "case_id": "X1_000510",
+      "uid": "8ca4b3562ad87f07ca034ef25cb5ef147edeabcdfca70f4088ce12446de41801",
+      "status": "RETRY",
+      "attempts": 2,
+      "retry_base": 0,
+      "retry_after_utc": "2026-10-16T05:46:41.472058+00:00",
+      "answer_path_exists": false,
+      "answer_files": [],
+      "error": {
+        "type": "AttemptTimeoutError",
+        "message": "attempt_timeout '300' exceeded.",
+        "wrapper_type": "RetryError"
+      },
+      "events": [
+        {
+          "id": 3383,
+          "time_utc": "2026-10-16T04:41:41.445624+00:00",
+          "kind": "API_DISPATCH",
+          "detail": {
+            "attempt": 2,
+            "model": "Qwen/Qwen3-8B",
+            "endpoint": "https://api.siliconflow.cn/v1"
+          }
+        },
+        {
+          "id": 3384,
+          "time_utc": "2026-10-16T04:46:41.498347+00:00",
+          "kind": "SERVICE_FAILURE",
+          "detail": {
+            "kind": "TRANSIENT",
+            "attempt": 2
+          }
+        }
+      ],
+      "inspect": {
+        "path": "tasks\\X1\\batches\\fdbe721577ef446abbf8b1c88231fb7c\\inspect_logs\\2026-10-16T04-41-41-00-00_task_XkAWsiZBPWjkGS7aBUB7ZE.eval",
+        "error_message": "RetryError(<Future at 0x23df8c36540 state=finished raised AttemptTimeoutError>)",
+        "choices": 0,
+        "completion_characters": 0,
+        "usage_present": false
+      }
+    },
+    {
+      "case_id": "X1_000512",
+      "uid": "76812c6e5a4e720c671020dd0f5cd1f120d64dedc4dff3c192501d7a3013ddac",
+      "status": "RUNNING",
+      "attempts": 2,
+      "retry_base": 0,
+      "retry_after_utc": "2026-10-16T04:15:03.752412+00:00",
+      "answer_path_exists": false,
+      "answer_files": [],
+      "error": {
+        "type": "AttemptTimeoutError",
+        "message": "attempt_timeout '300' exceeded.",
+        "wrapper_type": "RetryError"
+      },
+      "events": [
+        {
+          "id": 3385,
+          "time_utc": "2026-10-16T04:46:42.192540+00:00",
+          "kind": "API_DISPATCH",
+          "detail": {
+            "attempt": 2,
+            "model": "Qwen/Qwen3-8B",
+            "endpoint": "https://api.siliconflow.cn/v1"
+          }
+        }
+      ],
+      "inspect": null
+    }
+  ],
+  "queue_counts": {
+    "COMPLETE": 24,
+    "DEFERRED": 1,
+    "EXTERNAL_RESERVED": 100,
+    "HISTORICAL": 111,
+    "PENDING": 469,
+    "RETRY": 420,
+    "RUNNING": 1
+  },
+  "pending_never_dispatched": 433,
+  "response_saved_since_baseline": 0,
+  "fresh_429_or_tpm_markers_since_baseline": 0,
+  "alternate_lease_state_counts": {
+    "RETURNED_TO_PRIMARY": 436
+  },
+  "active_alternate_leases": 0,
+  "plan": "Keep X1_000512 attempt 2 in flight. Continue eligible PENDING work. Keep X1_000506 DEFERRED until it can be separately checked after safe drain/recover and queued behind untouched PENDING work; do not leave permanently deferred. Retry other timeout rows only after their recorded cooldowns and case-specific evidence.",
+  "notes": "Each completed timeout in this checkpoint has no answer file and its Inspect sample has zero choices/completion/usage. Provider-side completion remains unknown; no provider request ID/status is available. No config, model, account, prompt, scorer, or generation setting was changed."
+}

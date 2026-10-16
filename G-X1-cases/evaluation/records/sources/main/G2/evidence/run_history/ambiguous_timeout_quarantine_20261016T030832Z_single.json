@@ -1,0 +1,38 @@
+{
+  "task": "G2",
+  "created_utc": "2026-10-16T03:08:32.704533+00:00",
+  "action": "isolate_exact_timeout_until_inspect_log_finalization",
+  "phase": "quarantined_waiting_for_inspect_log_finalization",
+  "authorization": "Latest G2 heartbeat authorizes per-case controlled retry only after evidence is final.",
+  "model": "Qwen/Qwen3-8B",
+  "workers": 2,
+  "protocol_sha256": "04d10a69267cac64c9b8baab2275fbde703a09003dd527e2ee4b5cb09d73b361",
+  "account_source": "configured original G2 account; credential not read or logged",
+  "reason": "Attempt 12 timed out; no answer artifact or Inspect output; the shared Inspect batch is still started. Hold this exact UID out of automatic RETRY claims.",
+  "case": {
+    "uid": "f7856c5f39a645be84a86482730d043fb13623d553b4d997c5ecd07ba17ae39f",
+    "case_id": "G2_000029",
+    "prior_status": "RETRY",
+    "attempts": 12,
+    "retry_base_before": 10,
+    "prior_error": "{\"type\": \"AttemptTimeoutError\", \"message\": \"attempt_timeout '300' exceeded.\", \"wrapper_type\": \"RetryError\"}",
+    "service_error": {
+      "type": "AttemptTimeoutError",
+      "message": "attempt_timeout '300' exceeded.",
+      "wrapper_type": "RetryError"
+    },
+    "api_dispatch_event_id": 3645,
+    "service_failure_event_id": 3648,
+    "answer_artifacts_found": 0,
+    "inspect_log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\0df4fdbf4bdf4c4ab295790b86b73e5d\\inspect_logs\\2026-10-16T02-42-36-00-00_task_3UGDeftj2T33dXbekJPQ2c.eval",
+    "inspect_log_status": "started",
+    "inspect_sample_error_present": true,
+    "completion_present": false,
+    "response_id_present": false,
+    "choices_count": 0,
+    "assistant_message_count": 0,
+    "account_source": "configured original G2 account; credential not read or logged"
+  },
+  "run_history_path": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\run_history\\ambiguous_timeout_quarantine_20261016T030832Z_single.json",
+  "quarantined_utc": "2026-10-16T03:08:32.721535+00:00"
+}

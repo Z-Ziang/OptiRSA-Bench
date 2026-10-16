@@ -1,0 +1,87 @@
+{
+  "case_uid": "7cfe0e5ab0aa8b010a2248bd4f1539afbb5936206ece69d99ec63976f470e662",
+  "model": "Qwen/Qwen3-8B",
+  "binding": {
+    "time": 1792047908.4263465,
+    "job": "G3_qwen3_8b",
+    "case_uid": "7cfe0e5ab0aa8b010a2248bd4f1539afbb5936206ece69d99ec63976f470e662",
+    "messages_sha256": "3fe8dc6f7f8d90473008d7c454d6861e8bdea5ee03f625ac22fe1167bd21c281",
+    "model": "Qwen/Qwen3-8B",
+    "protocol_sha256": "d568dacee46aa6f3a3482ac8719936bbe8232b55a4c86f4ccf575ef2db8cf034",
+    "attempt": 4
+  },
+  "raw_completion": "{\n  \"shortest_paths\": [\n    {\n      \"pair_id\": \"pair_A\",\n      \"path_node_ids\": [0, 114, 14, 50, 244, 173, 165, 172, 184, 46, 1],\n      \"path_link_ids\": [2, 125, 124, 100, 1120, 1122, 1123, 1124, 1125, 1126, 1127],\n      \"hop_count\": 10,\n      \"total_length_km\": 1023.441\n    },\n    {\n      \"pair_id\": \"pair_B\",\n      \"path_node_ids\": [0, 299, 114, 14, 50, 244, 173, 165, 172, 184, 2],\n      \"path_link_ids\": [2, 128, 125, 100, 1120, 1122, 1123, 1124, 1125, 1126, 1127],\n      \"hop_count\": 10,\n      \"total_length_km\": 1023.441\n    }\n  ],\n  \"has_shared_directed_link\": true,\n  \"shared_link_ids\": [2, 125, 100, 1120, 1122, 1123, 1124, 1125, 1126, 1127]\n}",
+  "status": "RESPONSE_RECEIVED",
+  "usage": {
+    "openai-api/Qwen/Qwen3-8B": {
+      "input_tokens": 61625,
+      "output_tokens": 399,
+      "total_tokens": 62024,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 0,
+      "reasoning_tokens": 0,
+      "total_cost": null
+    }
+  },
+  "started_at": "2026-10-15T07:05:08.775687+00:00",
+  "completed_at": "2026-10-15T07:05:45.377466+00:00",
+  "total_seconds": 36.602,
+  "result": {
+    "category": "INFEASIBLE",
+    "binary_correct": false,
+    "task": "G3",
+    "truth_feasible": true,
+    "correct_reject": false,
+    "single_outer_fence_removed": false,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "grading_version": "GX1_LOCAL_FROZEN_FOUR_WAY_V1",
+    "validator": {
+      "valid": false,
+      "reason": "PATH_SHAPE",
+      "pair_id": "pair_A"
+    }
+  },
+  "strict": {
+    "category": "INFEASIBLE",
+    "binary_correct": false,
+    "task": "G3",
+    "truth_feasible": true,
+    "correct_reject": false,
+    "single_outer_fence_removed": false,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "grading_version": "GX1_LOCAL_FROZEN_FOUR_WAY_V1",
+    "validator": {
+      "valid": false,
+      "reason": "PATH_SHAPE",
+      "pair_id": "pair_A"
+    }
+  },
+  "_source_file": "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/INSPECT_POOL18_RECOVERY_V2_20261015_135458_187948/jobs/G3_qwen3_8b/7cfe0e5ab0aa8b010a2248bd4f1539afbb5936206ece69d99ec63976f470e662_attempt4/answer.json",
+  "_all_source_files": [
+    "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/INSPECT_POOL18_RECOVERY_V2_20261015_135458_187948/jobs/G3_qwen3_8b/7cfe0e5ab0aa8b010a2248bd4f1539afbb5936206ece69d99ec63976f470e662_attempt4/answer.json"
+  ],
+  "_case_metadata": {
+    "case_uid": "7cfe0e5ab0aa8b010a2248bd4f1539afbb5936206ece69d99ec63976f470e662",
+    "case_id": "G3_001744",
+    "task": "G3",
+    "case_dir": "case_sets/GABRIEL_CONTROLLED_N500_000_n500/G3/G3_001744",
+    "topology_id": "GABRIEL_CONTROLLED_N500_000",
+    "topology_folder": "GABRIEL_CONTROLLED_N500_000_n500",
+    "scale": "401–500",
+    "node_count": 500,
+    "canonical_graph_hash": "577fb9f8710f196bd1527fea83e1d80def24fc6be1ea3a1c2510141ec27366a4",
+    "source_category": "controlled_gabriel_reference_extension",
+    "messages_sha256": "3fe8dc6f7f8d90473008d7c454d6861e8bdea5ee03f625ac22fe1167bd21c281",
+    "input_characters": 122189,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "variant": "TOTAL_LENGTH_KM__shared_true",
+    "seed": "1951604247106693011",
+    "path_cost_metric": "TOTAL_LENGTH_KM",
+    "cohort": "FORMAL_UNSEEN_HELDOUT",
+    "evaluation_eligible": true
+  },
+  "identity_key": "4db29de0f345237bbc7c658aff6df9a9ee2ef26b4aa8b76acaa39620e5318e9b",
+  "historical": true,
+  "history_answer_count": 1,
+  "historical_selection": "latest received response from FINAL; not normalized formal authority"
+}

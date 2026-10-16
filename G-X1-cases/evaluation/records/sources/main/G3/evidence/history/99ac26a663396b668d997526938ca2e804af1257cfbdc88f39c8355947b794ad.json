@@ -1,0 +1,81 @@
+{
+  "case_uid": "99ac26a663396b668d997526938ca2e804af1257cfbdc88f39c8355947b794ad",
+  "model": "Qwen/Qwen3-8B",
+  "status": "RESPONSE_RECEIVED",
+  "raw_completion": "\n\n{\n  \"shortest_paths\": [\n    {\n      \"pair_id\": \"pair_A\",\n      \"path_node_ids\": [0, 4, 3, 2, 1],\n      \"path_link_ids\": [0, 7, 5, 3],\n      \"hop_count\": 4,\n      \"total_length_km\": 399.9997\n    },\n    {\n      \"pair_id\": \"pair_B\",\n      \"path_node_ids\": [0, 4, 3, 2],\n      \"path_link_ids\": [0, 7, 5],\n      \"hop_count\": 3,\n      \"total_length_km\": 321.5999\n    }\n  ],\n  \"has_shared_directed_link\": true,\n  \"shared_link_ids\": [0, 7, 5]\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "openai-api/Qwen/Qwen3-8B": {
+      "input_tokens": 288,
+      "output_tokens": 3302,
+      "total_tokens": 4038,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 448,
+      "reasoning_tokens": 3119,
+      "total_cost": null
+    }
+  },
+  "started_at": "2026-10-14T13:11:28.146201+00:00",
+  "completed_at": "2026-10-14T13:13:17.675619+00:00",
+  "total_seconds": 109.529,
+  "inspect_log": "inspect_logs/2026-10-14T13-10-20-00-00_gx1-cases_MwbkgPYMqgucTxEvkdhWAq.eval",
+  "result": {
+    "category": "CORRECT",
+    "binary_correct": true,
+    "task": "G3",
+    "truth_feasible": true,
+    "correct_reject": false,
+    "single_outer_fence_removed": false,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "grading_version": "GX1_LOCAL_FROZEN_FOUR_WAY_V1",
+    "validator": {
+      "valid": true,
+      "reason": "PASS"
+    }
+  },
+  "strict": {
+    "category": "CORRECT",
+    "binary_correct": true,
+    "task": "G3",
+    "truth_feasible": true,
+    "correct_reject": false,
+    "single_outer_fence_removed": false,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "grading_version": "GX1_LOCAL_FROZEN_FOUR_WAY_V1",
+    "validator": {
+      "valid": true,
+      "reason": "PASS"
+    }
+  },
+  "_source_file": "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/GX1_INSPECT_V3_20261014_180939_268679/results/qwen3_8b/full/results.jsonl",
+  "_all_source_files": [
+    "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/GX1_INSPECT_V3_20261014_180939_268679/results/qwen3_8b/full/answers/99ac26a663396b668d997526938ca2e804af1257cfbdc88f39c8355947b794ad.json",
+    "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/GX1_INSPECT_V3_20261014_180939_268679/results/qwen3_8b/full/results.jsonl",
+    "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/GX1_INSPECT_V4_20261014_224241_081409/results/qwen3_8b/full/answers/99ac26a663396b668d997526938ca2e804af1257cfbdc88f39c8355947b794ad.json",
+    "/work/luyuheng/optical_benchmark_cases/UNIFIED_CANDIDATE_20261008_051958_574121/GX1_INSPECT_V4_20261014_224241_081409/results/qwen3_8b/full/results.jsonl"
+  ],
+  "_case_metadata": {
+    "case_uid": "99ac26a663396b668d997526938ca2e804af1257cfbdc88f39c8355947b794ad",
+    "case_id": "G3_000348",
+    "task": "G3",
+    "case_dir": "case_sets/GABRIEL_CONTROLLED_N005_001_n5/G3/G3_000348",
+    "topology_id": "GABRIEL_CONTROLLED_N005_001",
+    "topology_folder": "GABRIEL_CONTROLLED_N005_001_n5",
+    "scale": "5–10",
+    "node_count": 5,
+    "canonical_graph_hash": "df95b71f4fb8cdafe26da81f850850bccded4a3435d93c901900a99fbec32c1c",
+    "source_category": "controlled_gabriel_reference_extension",
+    "messages_sha256": "e618a6bdbd0febd507e7eafe7daa50594ffc4b2689706e2aa6226b453cfbab4f",
+    "input_characters": 2624,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "variant": "TOTAL_LENGTH_KM__shared_true",
+    "seed": "10440349134403372030",
+    "path_cost_metric": "TOTAL_LENGTH_KM",
+    "cohort": "FORMAL_UNSEEN_HELDOUT",
+    "evaluation_eligible": true
+  },
+  "identity_key": "a9ce518d1a2aafbafab57cfeb66f57f032f2266600e9b5f9b2566d408599dd8f",
+  "historical": true,
+  "history_answer_count": 1,
+  "historical_selection": "latest received response from FINAL; not normalized formal authority"
+}

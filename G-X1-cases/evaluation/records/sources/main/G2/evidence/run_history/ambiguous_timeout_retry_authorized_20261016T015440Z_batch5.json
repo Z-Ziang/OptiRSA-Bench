@@ -1,0 +1,188 @@
+{
+  "task": "G2",
+  "created_utc": "2026-10-16T01:54:40.390495+00:00",
+  "action": "retry_recovered_ambiguous_timeout_cases",
+  "phase": "requeued",
+  "authorization": "Latest user G2 automation explicitly authorizes controlled per-case retries when no local output exists, after each local request ends and bound Inspect evidence is final; no blanket IncludeUncertain and no parallel resend.",
+  "model": "Qwen/Qwen3-8B",
+  "workers": 2,
+  "protocol_sha256": "04d10a69267cac64c9b8baab2275fbde703a09003dd527e2ee4b5cb09d73b361",
+  "account_source": "configured original G2 account; credential not read or logged",
+  "new_retry_generation": "23d69051-61e8-498a-a119-8a514d10d49b",
+  "inspect_log_status": "success",
+  "inspect_log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\526dc404cedf4b1d9673ae200276c29d\\inspect_logs\\2026-10-16T01-28-53-00-00_task_nzSShZnBrhUfoxFvHKcBnV.eval",
+  "cases": [
+    {
+      "uid": "6de2148034f3a57fb6ebdb2ab9cacf84831f7786e83b70096274cdc003916506",
+      "case_id": "G2_000149",
+      "prior_status": "NEEDS_REVIEW",
+      "attempts_before": 5,
+      "retry_base_before": 4,
+      "retry_base_after": 5,
+      "prior_error": "{\"type\": \"AttemptTimeoutError\", \"message\": \"attempt_timeout '300' exceeded.\", \"wrapper_type\": \"RetryError\"}",
+      "attempt5_service_error": {
+        "type": "AttemptTimeoutError",
+        "message": "attempt_timeout '300' exceeded.",
+        "wrapper_type": "RetryError"
+      },
+      "api_dispatch_event_id": 3545,
+      "service_failure_event_id": 3550,
+      "prior_quarantine_events": [
+        {
+          "id": 3570,
+          "time": 1792115255.3225367,
+          "kind": "MANUAL_RETRY_QUARANTINE",
+          "detail": "{\"reason\": \"hold exact 300s timeout until batch Inspect log finalization\", \"attempt\": 5, \"inspect_log\": \"D:\\\\codex\\\\BENCHMARK\\\\OptiRSA_SiliconFlow_Backend_20261016\\\\tasks\\\\G2\\\\batches\\\\526dc404cedf4b1d9673ae200276c29d\\\\inspect_logs\\\\2026-10-16T01-28-53-00-00_task_nzSShZnBrhUfoxFvHKcBnV.eval\", \"run_history\": \"D:\\\\codex\\\\BENCHMARK\\\\OptiRSA_SiliconFlow_Backend_20261016\\\\tasks\\\\G2\\\\run_history\\\\ambiguous_timeout_quarantine_20261016T014735Z_inflight_eval.json\"}"
+        }
+      ],
+      "answer_artifacts_found": 0,
+      "inspect_log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\526dc404cedf4b1d9673ae200276c29d\\inspect_logs\\2026-10-16T01-28-53-00-00_task_nzSShZnBrhUfoxFvHKcBnV.eval",
+      "inspect_log_status": "success",
+      "inspect_sample_error_present": true,
+      "inspect_completion_present": false,
+      "inspect_response_id_present": false,
+      "inspect_choices_count": 0,
+      "assistant_message_count": 0,
+      "remote_status_note": "No request/response ID exists in local dispatch records; remote status cannot be queried. User authorization permits a controlled exact-case new round after local evidence finalization.",
+      "account_source": "configured original G2 account; credential not read or logged"
+    },
+    {
+      "uid": "de5022938ef7183a6a33e2fa0ed7c2427a33acfd09657c3c222c69c642e03ad6",
+      "case_id": "G2_000156",
+      "prior_status": "NEEDS_REVIEW",
+      "attempts_before": 5,
+      "retry_base_before": 4,
+      "retry_base_after": 5,
+      "prior_error": "{\"type\": \"AttemptTimeoutError\", \"message\": \"attempt_timeout '300' exceeded.\", \"wrapper_type\": \"RetryError\"}",
+      "attempt5_service_error": {
+        "type": "AttemptTimeoutError",
+        "message": "attempt_timeout '300' exceeded.",
+        "wrapper_type": "RetryError"
+      },
+      "api_dispatch_event_id": 3561,
+      "service_failure_event_id": 3566,
+      "prior_quarantine_events": [
+        {
+          "id": 3571,
+          "time": 1792115255.3225367,
+          "kind": "MANUAL_RETRY_QUARANTINE",
+          "detail": "{\"reason\": \"hold exact 300s timeout until batch Inspect log finalization\", \"attempt\": 5, \"inspect_log\": \"D:\\\\codex\\\\BENCHMARK\\\\OptiRSA_SiliconFlow_Backend_20261016\\\\tasks\\\\G2\\\\batches\\\\526dc404cedf4b1d9673ae200276c29d\\\\inspect_logs\\\\2026-10-16T01-28-53-00-00_task_nzSShZnBrhUfoxFvHKcBnV.eval\", \"run_history\": \"D:\\\\codex\\\\BENCHMARK\\\\OptiRSA_SiliconFlow_Backend_20261016\\\\tasks\\\\G2\\\\run_history\\\\ambiguous_timeout_quarantine_20261016T014735Z_inflight_eval.json\"}"
+        }
+      ],
+      "answer_artifacts_found": 0,
+      "inspect_log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\526dc404cedf4b1d9673ae200276c29d\\inspect_logs\\2026-10-16T01-28-53-00-00_task_nzSShZnBrhUfoxFvHKcBnV.eval",
+      "inspect_log_status": "success",
+      "inspect_sample_error_present": true,
+      "inspect_completion_present": false,
+      "inspect_response_id_present": false,
+      "inspect_choices_count": 0,
+      "assistant_message_count": 0,
+      "remote_status_note": "No request/response ID exists in local dispatch records; remote status cannot be queried. User authorization permits a controlled exact-case new round after local evidence finalization.",
+      "account_source": "configured original G2 account; credential not read or logged"
+    },
+    {
+      "uid": "7f4602832bb711179c5ba638c39f3ef9aff9bf4c89a0ef738fadf438d12b9b05",
+      "case_id": "G2_000158",
+      "prior_status": "NEEDS_REVIEW",
+      "attempts_before": 5,
+      "retry_base_before": 4,
+      "retry_base_after": 5,
+      "prior_error": "{\"type\": \"AttemptTimeoutError\", \"message\": \"attempt_timeout '300' exceeded.\", \"wrapper_type\": \"RetryError\"}",
+      "attempt5_service_error": {
+        "type": "AttemptTimeoutError",
+        "message": "attempt_timeout '300' exceeded.",
+        "wrapper_type": "RetryError"
+      },
+      "api_dispatch_event_id": 3565,
+      "service_failure_event_id": 3568,
+      "prior_quarantine_events": [
+        {
+          "id": 3572,
+          "time": 1792115327.6783767,
+          "kind": "MANUAL_RETRY_QUARANTINE",
+          "detail": "{\"reason\": \"hold exact 300s timeout until shared Inspect log finalization\", \"attempt\": 5, \"inspect_log\": \"D:\\\\codex\\\\BENCHMARK\\\\OptiRSA_SiliconFlow_Backend_20261016\\\\tasks\\\\G2\\\\batches\\\\526dc404cedf4b1d9673ae200276c29d\\\\inspect_logs\\\\2026-10-16T01-28-53-00-00_task_nzSShZnBrhUfoxFvHKcBnV.eval\", \"run_history\": \"D:\\\\codex\\\\BENCHMARK\\\\OptiRSA_SiliconFlow_Backend_20261016\\\\tasks\\\\G2\\\\run_history\\\\ambiguous_timeout_quarantine_20261016T014847Z_single.json\"}"
+        }
+      ],
+      "answer_artifacts_found": 0,
+      "inspect_log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\526dc404cedf4b1d9673ae200276c29d\\inspect_logs\\2026-10-16T01-28-53-00-00_task_nzSShZnBrhUfoxFvHKcBnV.eval",
+      "inspect_log_status": "success",
+      "inspect_sample_error_present": true,
+      "inspect_completion_present": false,
+      "inspect_response_id_present": false,
+      "inspect_choices_count": 0,
+      "assistant_message_count": 0,
+      "remote_status_note": "No request/response ID exists in local dispatch records; remote status cannot be queried. User authorization permits a controlled exact-case new round after local evidence finalization.",
+      "account_source": "configured original G2 account; credential not read or logged"
+    },
+    {
+      "uid": "81f91a7371eb3b8ed47feb840f0824669b5ad9f0cf980cf8521f4ba237fad643",
+      "case_id": "G2_000159",
+      "prior_status": "NEEDS_REVIEW",
+      "attempts_before": 5,
+      "retry_base_before": 4,
+      "retry_base_after": 5,
+      "prior_error": "{\"type\": \"AttemptTimeoutError\", \"message\": \"attempt_timeout '300' exceeded.\", \"wrapper_type\": \"RetryError\"}",
+      "attempt5_service_error": {
+        "type": "AttemptTimeoutError",
+        "message": "attempt_timeout '300' exceeded.",
+        "wrapper_type": "RetryError"
+      },
+      "api_dispatch_event_id": 3567,
+      "service_failure_event_id": 3573,
+      "prior_quarantine_events": [
+        {
+          "id": 3582,
+          "time": 1792115487.0901804,
+          "kind": "MANUAL_RETRY_QUARANTINE",
+          "detail": "{\"reason\": \"hold exact 300s timeout until shared Inspect log finalization\", \"attempt\": 5, \"inspect_log\": \"D:\\\\codex\\\\BENCHMARK\\\\OptiRSA_SiliconFlow_Backend_20261016\\\\tasks\\\\G2\\\\batches\\\\526dc404cedf4b1d9673ae200276c29d\\\\inspect_logs\\\\2026-10-16T01-28-53-00-00_task_nzSShZnBrhUfoxFvHKcBnV.eval\", \"run_history\": \"D:\\\\codex\\\\BENCHMARK\\\\OptiRSA_SiliconFlow_Backend_20261016\\\\tasks\\\\G2\\\\run_history\\\\ambiguous_timeout_quarantine_20261016T015127Z_single.json\"}"
+        }
+      ],
+      "answer_artifacts_found": 0,
+      "inspect_log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\526dc404cedf4b1d9673ae200276c29d\\inspect_logs\\2026-10-16T01-28-53-00-00_task_nzSShZnBrhUfoxFvHKcBnV.eval",
+      "inspect_log_status": "success",
+      "inspect_sample_error_present": true,
+      "inspect_completion_present": false,
+      "inspect_response_id_present": false,
+      "inspect_choices_count": 0,
+      "assistant_message_count": 0,
+      "remote_status_note": "No request/response ID exists in local dispatch records; remote status cannot be queried. User authorization permits a controlled exact-case new round after local evidence finalization.",
+      "account_source": "configured original G2 account; credential not read or logged"
+    },
+    {
+      "uid": "4389b239915f675ea781df3c8d96118be3188a13bf67e794fa2029ab1454d7ce",
+      "case_id": "G2_000160",
+      "prior_status": "RETRY",
+      "attempts_before": 5,
+      "retry_base_before": 4,
+      "retry_base_after": 5,
+      "prior_error": "{\"type\": \"AttemptTimeoutError\", \"message\": \"attempt_timeout '300' exceeded.\", \"wrapper_type\": \"RetryError\"}",
+      "attempt5_service_error": {
+        "type": "AttemptTimeoutError",
+        "message": "attempt_timeout '300' exceeded.",
+        "wrapper_type": "RetryError"
+      },
+      "api_dispatch_event_id": 3569,
+      "service_failure_event_id": 3583,
+      "prior_quarantine_events": [],
+      "answer_artifacts_found": 0,
+      "inspect_log": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\526dc404cedf4b1d9673ae200276c29d\\inspect_logs\\2026-10-16T01-28-53-00-00_task_nzSShZnBrhUfoxFvHKcBnV.eval",
+      "inspect_log_status": "success",
+      "inspect_sample_error_present": true,
+      "inspect_completion_present": false,
+      "inspect_response_id_present": false,
+      "inspect_choices_count": 0,
+      "assistant_message_count": 0,
+      "remote_status_note": "No request/response ID exists in local dispatch records; remote status cannot be queried. User authorization permits a controlled exact-case new round after local evidence finalization.",
+      "account_source": "configured original G2 account; credential not read or logged"
+    }
+  ],
+  "run_history_path": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\run_history\\ambiguous_timeout_retry_authorized_20261016T015440Z_batch5.json",
+  "requeued_utc": "2026-10-16T01:54:40.652103+00:00",
+  "requeued_uids": [
+    "6de2148034f3a57fb6ebdb2ab9cacf84831f7786e83b70096274cdc003916506",
+    "de5022938ef7183a6a33e2fa0ed7c2427a33acfd09657c3c222c69c642e03ad6",
+    "7f4602832bb711179c5ba638c39f3ef9aff9bf4c89a0ef738fadf438d12b9b05",
+    "81f91a7371eb3b8ed47feb840f0824669b5ad9f0cf980cf8521f4ba237fad643",
+    "4389b239915f675ea781df3c8d96118be3188a13bf67e794fa2029ab1454d7ce"
+  ]
+}

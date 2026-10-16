@@ -1,0 +1,108 @@
+{
+  "task": "X1",
+  "observed_at_utc": "2026-10-16T04:00:09Z",
+  "model": "Qwen/Qwen3-8B",
+  "account_source": "original X1 account; secret omitted",
+  "live_worker_route": {
+    "worker_pid": 47660,
+    "proxy_environment": {
+      "http_proxy": "127.0.0.1:7890",
+      "https_proxy": "127.0.0.1:7890",
+      "all_proxy": "127.0.0.1:7890",
+      "no_proxy_includes_api_siliconflow_cn": true
+    },
+    "active_tcp_socket": {
+      "state": "ESTABLISHED",
+      "remote_port": 443,
+      "remote_address_family": "IPv6",
+      "remote_is_local_proxy": false
+    },
+    "launcher_behavior": "backend.ps1 adds api.siliconflow.cn to process-scoped NO_PROXY only for a newly started X1 process; the running worker environment confirms the bypass."
+  },
+  "no_key_read_only_models_probes": [
+    {
+      "route": "direct",
+      "url": "https://api.siliconflow.cn/v1/models",
+      "status": 401,
+      "elapsed_seconds": 0.453,
+      "date_header": true,
+      "server_header": false,
+      "via_header": false,
+      "x_request_id": false
+    },
+    {
+      "route": "configured_proxy",
+      "proxy_endpoint": "127.0.0.1:7890",
+      "url": "https://api.siliconflow.cn/v1/models",
+      "status": 401,
+      "elapsed_seconds": 0.688,
+      "date_header": true,
+      "server_header": false,
+      "via_header": false,
+      "x_request_id": false
+    }
+  ],
+  "inspect_trace_findings": {
+    "examples": [
+      "X1_000507 attempt 2",
+      "X1_000003 attempt 15"
+    ],
+    "request_config": {
+      "timeout": 300,
+      "attempt_timeout": 300,
+      "max_retries": 0,
+      "temperature": 0.0,
+      "max_tokens": 8192
+    },
+    "error_terms": [
+      "AttemptTimeoutError",
+      "TimeoutError"
+    ],
+    "network_exception_terms_found": false,
+    "http_status_codes_in_trace": [],
+    "response_header_or_request_id_fields_in_trace": false,
+    "sample_level_choices": 0,
+    "completion_characters": 0,
+    "usage_present": false,
+    "note": "The ModelEvent contains an empty placeholder choice; it has no content or usage. Traceback contains only the outer timeout path, not an HTTP response or identifiable server request. This does not establish whether the provider received request headers."
+  },
+  "successful_response_near_timeout": {
+    "case_id": "X1_000005",
+    "attempt": 14,
+    "category": "CORRECT",
+    "input_characters": 9307,
+    "input_tokens": 3952,
+    "output_tokens": 9176,
+    "reasoning_tokens": 8761,
+    "total_tokens": 13128,
+    "raw_completion_characters": 456,
+    "dispatch_to_saved_seconds": 282.758,
+    "answer_path": "tasks/X1/attempts/54455cc7a2af9543094443a96c3bc67ca7afb284117c901dea0279eeff118abe/0014/answer.json",
+    "inspect_error": false,
+    "inspect_choices": 1,
+    "inspect_usage_present": true
+  },
+  "interpretation": {
+    "network_route": "The active inference worker uses a direct IPv6 TLS socket to remote port 443, bypassing the local proxy. Direct and proxy no-key GETs both reach the gateway quickly; these checks do not validate inference authorization or account quota.",
+    "immediate_timeout": "The local Inspect request and attempt timeout are both exactly 300 seconds. No HTTP status/header/request ID is recorded on the timed-out inference samples, so whether response headers arrived is unknown.",
+    "latency": "One small-input successful case (9,307 characters; 3,952 input tokens) took 282.758 seconds and recorded 8,761 reasoning tokens. This is consistent with long inference latency, but one response cannot establish the cause of other timeouts.",
+    "local_network_fix": "None indicated. The X1-only proxy bypass is already effective; do not change routing or restart for a network fix based on current evidence.",
+    "conditional_parameter_change": "No timeout or reasoning setting was changed. If explicitly authorized to test whether responses arrive after the current cap, an X1-only config change would need timeout_seconds=600 (which produces timeout=600 and attempt_timeout=600), with archived config/manifest, protocol fingerprint migration, and audit event. This may capture responses taking 300–600 seconds but is not guaranteed and may reduce throughput; current instructions preserve 300 seconds."
+  },
+  "checkpoint": {
+    "status_counts": {
+      "COMPLETE": 24,
+      "HISTORICAL": 111,
+      "EXTERNAL_RESERVED": 100,
+      "PENDING": 470,
+      "RETRY": 420,
+      "RUNNING": 1
+    },
+    "new_response_since_resume": 1,
+    "active_case": "X1_000508",
+    "active_attempt": 2,
+    "active_dispatch_utc": "2026-10-16T03:59:50.586622Z",
+    "active_request_interrupted": false
+  },
+  "next_action": "Leave X1_000508 attempt 2 running; continue only the original X1 backend/queue. No code, timeout, proxy, credential, prompt, scorer, generation, or worker setting was changed."
+}

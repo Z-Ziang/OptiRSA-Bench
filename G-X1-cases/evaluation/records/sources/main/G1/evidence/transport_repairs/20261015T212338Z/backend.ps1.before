@@ -1,0 +1,11 @@
+﻿param(
+    [Parameter(Mandatory=$true)][ValidateSet("start","status","stop","recover","retry","export")][string]$Action,
+    [ValidateSet("G1","G2","G3","X1","X2","X3")][string]$Task,
+    [switch]$IncludeUncertain
+)
+$ErrorActionPreference = "Stop"
+$arguments = @("--root", $PSScriptRoot, $Action)
+if ($Task) { $arguments += @("--task", $Task) }
+if ($IncludeUncertain) { $arguments += "--include-uncertain" }
+& (Join-Path $PSScriptRoot ".venv\Scripts\python.exe") (Join-Path $PSScriptRoot "code\manage.py") @arguments
+if ($LASTEXITCODE -ne 0) { throw "Backend command failed (exit $LASTEXITCODE)" }

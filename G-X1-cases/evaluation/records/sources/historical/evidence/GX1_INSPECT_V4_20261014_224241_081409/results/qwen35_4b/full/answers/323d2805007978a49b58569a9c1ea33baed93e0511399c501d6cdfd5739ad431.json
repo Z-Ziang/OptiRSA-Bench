@@ -1,0 +1,52 @@
+{
+  "case_uid": "323d2805007978a49b58569a9c1ea33baed93e0511399c501d6cdfd5739ad431",
+  "model": "Qwen/Qwen3.5-4B",
+  "status": "RESPONSE_RECEIVED",
+  "raw_completion": "\n\n{\n  \"path_node_ids\": [1, 0, 4],\n  \"path_link_ids\": [1, 6],\n  \"hop_count\": 2\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "openai-api/Qwen/Qwen3.5-4B": {
+      "input_tokens": 504,
+      "output_tokens": 4337,
+      "total_tokens": 4841,
+      "input_tokens_cache_write": null,
+      "input_tokens_cache_read": 0,
+      "reasoning_tokens": 4296,
+      "total_cost": null
+    }
+  },
+  "started_at": "2026-10-14T17:30:02.413581+00:00",
+  "completed_at": "2026-10-14T17:32:58.288095+00:00",
+  "total_seconds": 175.874,
+  "inspect_log": "inspect_logs/2026-10-14T17-29-05-00-00_gx1-cases_KzcM5U5MWetQP8DZFYcJ3r.eval",
+  "result": {
+    "category": "CORRECT",
+    "binary_correct": true,
+    "task": "X1",
+    "truth_feasible": true,
+    "correct_reject": false,
+    "single_outer_fence_removed": false,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "grading_version": "GX1_LOCAL_FROZEN_FOUR_WAY_V1",
+    "validator": {
+      "valid": true,
+      "reason": "PASS",
+      "submitted_cost": 2.0
+    }
+  },
+  "strict": {
+    "category": "CORRECT",
+    "binary_correct": true,
+    "task": "X1",
+    "truth_feasible": true,
+    "correct_reject": false,
+    "single_outer_fence_removed": false,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "grading_version": "GX1_LOCAL_FROZEN_FOUR_WAY_V1",
+    "validator": {
+      "valid": true,
+      "reason": "PASS",
+      "submitted_cost": 2.0
+    }
+  }
+}

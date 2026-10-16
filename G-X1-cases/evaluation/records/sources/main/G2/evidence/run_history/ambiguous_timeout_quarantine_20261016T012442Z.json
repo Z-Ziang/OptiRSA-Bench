@@ -1,0 +1,106 @@
+{
+  "task": "G2",
+  "created_utc": "2026-10-16T01:24:42.470076+00:00",
+  "action": "quarantine_ambiguous_300s_timeouts",
+  "phase": "recovery_completed",
+  "reason": "AttemptTimeoutError leaves server completion uncertain; prevent duplicate dispatch until offline answer and Inspect log recovery.",
+  "baseline_event_id": 3408,
+  "source_event_ids": [
+    3411,
+    3446,
+    3479
+  ],
+  "timeout_event_count": 3,
+  "quarantine_count": 2,
+  "recoverable_answers_found": 0,
+  "cases": [
+    {
+      "uid": "6daebe5aab55fb6f6a717358abd93d3cb88e386a1396fef0dcceb7e2401c1191",
+      "attempts": 8,
+      "failure_attempts": [
+        7,
+        8
+      ],
+      "prior_status": "RETRY",
+      "prior_error": "{\"type\": \"AttemptTimeoutError\", \"message\": \"attempt_timeout '300' exceeded.\", \"wrapper_type\": \"RetryError\"}",
+      "source_event_ids": [
+        3411,
+        3479
+      ],
+      "dispatch_event_ids": [
+        3408,
+        3448
+      ],
+      "answer_path": null,
+      "answer_files": [],
+      "inspect_samples": [
+        {
+          "path": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\233632535a6b4fa795eaeabba43cafd3\\inspect_logs\\2026-10-16T00-55-00-00-00_task_cEb4WEtyK9g6EbpP4Dso2P.eval",
+          "sample_found": true,
+          "output_present": true,
+          "choices": 0,
+          "completion_chars": 0
+        },
+        {
+          "path": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\e5c2e127606d4d1792eba24c221b6696\\inspect_logs\\2026-10-16T01-05-02-00-00_task_Sv9sT5zx8wnNrtKHpo2X2o.eval",
+          "sample_found": true,
+          "output_present": true,
+          "choices": 0,
+          "completion_chars": 0
+        }
+      ],
+      "quarantine_event_id": 3487,
+      "post_status": "NEEDS_REVIEW",
+      "post_recover_status": "NEEDS_REVIEW"
+    },
+    {
+      "uid": "b58cd111f8dc01cc70a8e98517ba48c22eabbb928c3358515a0510bd661299a4",
+      "attempts": 7,
+      "failure_attempts": [
+        7
+      ],
+      "prior_status": "RETRY",
+      "prior_error": "{\"type\": \"AttemptTimeoutError\", \"message\": \"attempt_timeout '300' exceeded.\", \"wrapper_type\": \"RetryError\"}",
+      "source_event_ids": [
+        3446
+      ],
+      "dispatch_event_ids": [
+        3412
+      ],
+      "answer_path": null,
+      "answer_files": [],
+      "inspect_samples": [
+        {
+          "path": "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\tasks\\G2\\batches\\233632535a6b4fa795eaeabba43cafd3\\inspect_logs\\2026-10-16T00-55-00-00-00_task_cEb4WEtyK9g6EbpP4Dso2P.eval",
+          "sample_found": true,
+          "output_present": true,
+          "choices": 0,
+          "completion_chars": 0
+        }
+      ],
+      "quarantine_event_id": 3488,
+      "post_status": "NEEDS_REVIEW",
+      "post_recover_status": "NEEDS_REVIEW"
+    }
+  ],
+  "quarantined_utc": "2026-10-16T01:24:42.541549+00:00",
+  "recovery": {
+    "completed_utc": "2026-10-16T01:26:18.115841+00:00",
+    "command": "backend.ps1 -Action recover -Task G2",
+    "recoverable_answers_found": 0,
+    "new_timeouts_remaining_needs_review": 2,
+    "total_needs_review": 46,
+    "counts": {
+      "COMPLETE": 157,
+      "DEFERRED": 3,
+      "HISTORICAL": 185,
+      "NEEDS_REVIEW": 46,
+      "PENDING": 2139,
+      "RETRY": 285
+    },
+    "latest_event_id": 3488,
+    "latest_api_dispatch_event_id": 3484,
+    "latest_service_failure_event_id": 3479,
+    "note": "Offline recover completed after exact quarantine. No answer.json or Inspect choices/completion were found for the two new 300-second timeout cases."
+  }
+}

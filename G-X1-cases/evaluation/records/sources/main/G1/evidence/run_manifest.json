@@ -1,0 +1,33 @@
+{
+  "model": "Qwen/Qwen3-8B",
+  "config": {
+    "model": "Qwen/Qwen3-8B",
+    "base_url": "https://api.siliconflow.cn/v1",
+    "workers": 5,
+    "temperature": 0,
+    "max_output_tokens": 32768,
+    "timeout_seconds": 1200,
+    "max_transport_attempts": 3,
+    "retry_backoff_seconds": 10,
+    "extra_body": {
+      "enable_thinking": false
+    },
+    "reasoning_mode": "provider_native",
+    "credential_dpapi": "C:\\Users\\Ang\\AppData\\Local\\OptiRSA\\siliconflow.dpapi",
+    "chunk_size": 5
+  },
+  "protocol_sha256": "b43ad02db1d3256d78d35b23d9a1626cbd3049726f1e67494c2fb6151fa24b73",
+  "process": {
+    "pid": 40036,
+    "create_time": 1792156632.2884307,
+    "task": "G1",
+    "role": "supervisor",
+    "started_at": "2026-10-16T13:17:13.481492+00:00",
+    "launch_token": "f3d1b91584db42caa1126e27462c8cfb"
+  },
+  "datasets": [
+    "D:\\codex\\BENCHMARK\\OptiRSA_SiliconFlow_Backend_20261016\\datasets\\GX1_20261014"
+  ],
+  "historical_policy": "skip every identity-matched received response regardless of score",
+  "started_at": "2026-10-16T13:17:13.562957+00:00"
+}
